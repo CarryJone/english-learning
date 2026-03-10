@@ -57,7 +57,6 @@
     #word-popup .pop-badge { font-size: .7rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; background: var(--tag-bg); color: var(--tag-text); white-space: nowrap; }
     #word-popup .pop-badge.vocab  { background: #fffbeb; color: #92400e; }
     #word-popup .pop-badge.phrase { background: #f0fdf4; color: #166534; }
-    #word-popup .pop-zh   { font-size: .95rem; font-weight: 600; margin: .35rem 0 .2rem; }
     #word-popup .pop-note { font-size: .82rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
     #word-popup .pop-def  { font-size: .85rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
     #word-popup .pop-example { font-size: .82rem; color: var(--muted); font-style: italic; margin-top: .4rem; padding-top: .4rem; border-top: 1px solid var(--border); line-height: 1.5; }
@@ -66,6 +65,16 @@
     @keyframes spin { to { transform:rotate(360deg); } }
     #word-popup .pop-close { position:absolute; top:.5rem; right:.6rem; width:20px; height:20px; background:#f3f4f6; border:none; border-radius:50%; cursor:pointer; font-size:.7rem; color:var(--muted); display:flex; align-items:center; justify-content:center; }
     #word-popup .pop-close:hover { background:var(--border); }
+    #word-popup .pop-type-badge { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:4px; background:#eff6ff; color:#1d4ed8; margin:.2rem 0 .35rem; }
+    #word-popup .pop-zh-btn { margin-top:.6rem; padding:.35rem .85rem; background:var(--tag-bg); color:var(--accent); border:1.5px solid var(--accent); border-radius:8px; font-size:.82rem; font-weight:600; cursor:pointer; font-family:sans-serif; transition:all .15s; display:block; width:100%; text-align:center; }
+    #word-popup .pop-zh-btn:hover { background:var(--accent); color:white; }
+    #word-popup .pop-zh { font-size:.95rem; font-weight:700; margin-top:.5rem; color:#166534; padding:.4rem .6rem; background:#f0fdf4; border-radius:6px; }
+
+    /* Review tags */
+    .review-tag { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:99px; white-space:nowrap; }
+    .review-tag.today   { background:#fef3c7; color:#92400e; }
+    .review-tag.overdue { background:#fef2f2; color:#991b1b; }
+    .review-tag.upcoming{ background:#f0fdf4; color:#166534; }
 
     /* Vocab table */
     .vocab-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: .88rem; }
@@ -312,34 +321,48 @@
     'boarding pass':{ pos:'n.',    zh:'登機證',               example:'You can download your boarding pass on your phone.' },
   };
   const PHRASES = {
-    'go through':    { zh:'通過（某個過程或程序）',   note:'文章用法：go through security → 通過安檢' },
-    'take out':      { zh:'取出、拿出',               note:'文章用法：take out your laptop → 把筆電從包包裡拿出來' },
-    'on time':       { zh:'準時',                     note:'文章用法：if your flight is on time → 如果班機準時' },
-    'grab a coffee': { zh:'隨手買杯咖啡',             note:'grab 口語表示快速取得，也可說 grab a bite（隨便吃點東西）' },
+    'go through':    { zh:'通過（某個過程或程序）',   note:'文章用法：go through security → 通過安檢',              type:'Phrasal Verb' },
+    'take out':      { zh:'取出、拿出',               note:'文章用法：take out your laptop → 把筆電從包包裡拿出來', type:'Phrasal Verb' },
+    'on time':       { zh:'準時',                     note:'文章用法：if your flight is on time → 如果班機準時',     type:'Fixed Expression' },
+    'grab a coffee': { zh:'隨手買杯咖啡',             note:'grab 口語表示快速取得，也可說 grab a bite（隨便吃點東西）', type:'Fixed Expression' },
   };
 
   // Popup
   const popup = document.getElementById('word-popup');
   const popContent = document.getElementById('pop-content');
   const defCache = {};
+  let _anchor = null;
 
   function showPopup(word, anchorEl, type) {
+    _anchor = anchorEl;
     popContent.innerHTML = '';
     const key = word.toLowerCase();
     if (type === 'vocab' && VOCAB[key]) {
       const v = VOCAB[key];
       popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge vocab">今日單字</span></div>
-        <div class="pop-zh">${v.zh}</div><div class="pop-example">${v.example}</div>`;
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${v.pos}</span>
+        <div class="pop-example">"${v.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <div class="pop-zh" style="display:none">${v.zh}</div>`;
     } else if (type === 'phrase' && PHRASES[key]) {
       const ph = PHRASES[key];
       popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge phrase">片語</span></div>
-        <div class="pop-zh">${ph.zh}</div><div class="pop-note">${ph.note}</div>`;
+        <span class="pop-type-badge">${ph.type}</span>
+        <div class="pop-note">${ph.note}</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文</button>
+        <div class="pop-zh" style="display:none">${ph.zh}</div>`;
     } else {
       popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查詢中…</div>`;
       fetchDef(key).then(html => { popContent.innerHTML = html; positionPopup(anchorEl); });
     }
     popup.style.display = 'block';
     positionPopup(anchorEl);
+  }
+
+  function revealZh(btn) {
+    btn.nextElementSibling.style.display = 'block';
+    btn.style.display = 'none';
+    if (_anchor) positionPopup(_anchor);
   }
 
   function positionPopup(el) {
