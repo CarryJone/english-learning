@@ -43,6 +43,12 @@
     .phrase-chunk { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); padding: 0 2px; border-radius: 2px; cursor: pointer; transition: background .15s; }
     .phrase-chunk:hover { background: #dcfce7; }
 
+    /* Sentence playback */
+    .sent { display: inline; }
+    .sent-btn { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: none; border: 1.5px solid #c7d2fe; color: var(--accent); cursor: pointer; font-size: .55rem; vertical-align: middle; margin: 0 3px 0 0; flex-shrink: 0; transition: all .15s; padding: 0; line-height: 1; }
+    .sent-btn:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .sent-btn.playing { background: var(--accent); border-color: var(--accent); color: white; }
+
     /* Legend */
     .legend { display: flex; gap: 1rem; font-family: sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: 1rem; flex-wrap: wrap; }
     .legend-item { display: flex; align-items: center; gap: .35rem; }
@@ -154,12 +160,29 @@
     <div class="legend">
       <div class="legend-item"><span class="legend-swatch vocab">word</span> 今日單字</div>
       <div class="legend-item"><span class="legend-swatch phrase">phrase</span> 重要片語</div>
+      <div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 點擊播放單句</div>
     </div>
     <div class="article-body" id="article-body">
-      <p>Traveling by plane can be exciting but also a little <span class="vocab-word" data-word="stressful">stressful</span>. When you arrive at the airport, you need to find the <span class="vocab-word" data-word="check-in">check-in</span> counter first. At the counter, the staff will ask for your <span class="vocab-word" data-word="passport">passport</span> and your ticket. They will also ask if you have any <span class="vocab-word" data-word="luggage">luggage</span> to check in.</p>
-      <p>After check-in, you need to <span class="phrase-chunk" data-phrase="go through">go through</span> <span class="vocab-word" data-word="security">security</span>. You must put your bags on the belt and walk through the scanner. Remember to <span class="phrase-chunk" data-phrase="take out">take out</span> your laptop and any liquids.</p>
-      <p>Then you can find your <span class="vocab-word" data-word="gate">gate</span>. Check the <span class="vocab-word" data-word="departure">departure</span> board to see if your flight is <span class="phrase-chunk" data-phrase="on time">on time</span>. If you have time, you can shop at the duty-free store or <span class="phrase-chunk" data-phrase="grab a coffee">grab a coffee</span>.</p>
-      <p>When your flight is called, go to the gate and have your <span class="vocab-word" data-word="boarding pass">boarding pass</span> ready. Enjoy your trip!</p>
+      <p>
+        <span class="sent" data-text="Traveling by plane can be exciting but also a little stressful."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Traveling by plane can be exciting but also a little <span class="vocab-word" data-word="stressful">stressful</span>.</span>
+        <span class="sent" data-text="When you arrive at the airport, you need to find the check-in counter first."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>When you arrive at the airport, you need to find the <span class="vocab-word" data-word="check-in">check-in</span> counter first.</span>
+        <span class="sent" data-text="At the counter, the staff will ask for your passport and your ticket."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>At the counter, the staff will ask for your <span class="vocab-word" data-word="passport">passport</span> and your ticket.</span>
+        <span class="sent" data-text="They will also ask if you have any luggage to check in."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>They will also ask if you have any <span class="vocab-word" data-word="luggage">luggage</span> to check in.</span>
+      </p>
+      <p>
+        <span class="sent" data-text="After check-in, you need to go through security."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>After check-in, you need to <span class="phrase-chunk" data-phrase="go through">go through</span> <span class="vocab-word" data-word="security">security</span>.</span>
+        <span class="sent" data-text="You must put your bags on the belt and walk through the scanner."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>You must put your bags on the belt and walk through the scanner.</span>
+        <span class="sent" data-text="Remember to take out your laptop and any liquids."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Remember to <span class="phrase-chunk" data-phrase="take out">take out</span> your laptop and any liquids.</span>
+      </p>
+      <p>
+        <span class="sent" data-text="Then you can find your gate."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Then you can find your <span class="vocab-word" data-word="gate">gate</span>.</span>
+        <span class="sent" data-text="Check the departure board to see if your flight is on time."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Check the <span class="vocab-word" data-word="departure">departure</span> board to see if your flight is <span class="phrase-chunk" data-phrase="on time">on time</span>.</span>
+        <span class="sent" data-text="If you have time, you can shop at the duty-free store or grab a coffee."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>If you have time, you can shop at the duty-free store or <span class="phrase-chunk" data-phrase="grab a coffee">grab a coffee</span>.</span>
+      </p>
+      <p>
+        <span class="sent" data-text="When your flight is called, go to the gate and have your boarding pass ready."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>When your flight is called, go to the gate and have your <span class="vocab-word" data-word="boarding pass">boarding pass</span> ready.</span>
+        <span class="sent" data-text="Enjoy your trip!"><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Enjoy your trip!</span>
+      </p>
     </div>
   </div>
 
@@ -296,6 +319,25 @@
 
 </div>
 <script>
+  // Sentence-by-sentence playback (Web Speech API)
+  let activeSentBtn = null;
+  function playSent(btn) {
+    if (!('speechSynthesis' in window)) { alert('您的瀏覽器不支援語音播放'); return; }
+    const text = btn.closest('.sent').dataset.text;
+    if (activeSentBtn === btn && speechSynthesis.speaking) {
+      speechSynthesis.cancel();
+      btn.classList.remove('playing'); btn.textContent = '🔊';
+      activeSentBtn = null; return;
+    }
+    speechSynthesis.cancel();
+    if (activeSentBtn) { activeSentBtn.classList.remove('playing'); activeSentBtn.textContent = '🔊'; }
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang = 'en-US'; utt.rate = 0.85;
+    activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
+    utt.onend = utt.onerror = () => { btn.classList.remove('playing'); btn.textContent = '🔊'; activeSentBtn = null; };
+    speechSynthesis.speak(utt);
+  }
+
   // Quiz
   function answer(el, type) {
     const group = el.closest('.quiz-options');
