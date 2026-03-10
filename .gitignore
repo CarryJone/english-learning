@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 音檔（通常不需要版控，體積大）
+daily/*/article.aiff
+
+# Python cache
+__pycache__/
+*.pyc
+/tmp/
+
+# Claude 本地設定（含權限記錄，不需版控）
+.claude/

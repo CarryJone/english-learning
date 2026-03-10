@@ -1,0 +1,76 @@
+{
+  "words": [
+    {
+      "word": "stressful",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "令人緊張的、有壓力的",
+      "exampleSentence": "Moving to a new city can be stressful.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 0,
+      "nextReview": "2026-03-11"
+    },
+    {
+      "word": "check-in",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "辦理登機手續",
+      "exampleSentence": "The check-in counter opens two hours before the flight.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 0,
+      "nextReview": "2026-03-11"
+    },
+    {
+      "word": "passport",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "護照",
+      "exampleSentence": "Don't forget your passport when you travel abroad.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 0,
+      "nextReview": "2026-03-11"
+    },
+    {
+      "word": "luggage",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "行李",
+      "exampleSentence": "I only have one bag of luggage for my trip.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 0,
+      "nextReview": "2026-03-11"
+    },
+    {
+      "word": "security",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "安全檢查、安檢",
+      "exampleSentence": "Please remove your shoes at security.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 0,
+      "nextReview": "2026-03-11"
+    },
+    {
+      "word": "gate",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "登機門",
+      "exampleSentence": "Our flight departs from gate 12.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 0,
+      "nextReview": "2026-03-11"
+    },
+    {
+      "word": "departure",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "出發、離境",
+      "exampleSentence": "Check the departure board for your flight number.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 0,
+      "nextReview": "2026-03-11"
+    },
+    {
+      "word": "boarding pass",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "登機證",
+      "exampleSentence": "You can download your boarding pass on your phone.",
+      "dateAdded": "2026-03-10",
+      "reviewCount": 0,
+      "nextReview": "2026-03-11"
+    }
+  ]
+}
