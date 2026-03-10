@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📖 Daily English</title>
+  <style>
+    :root {
+      --bg: #f5f4ef; --card: #fff; --accent: #4f7cff; --accent2: #f0a500;
+      --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
+      --green: #22c55e; --tag-bg: #eef2ff; --tag-text: #4f7cff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
+    .container { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+
+    /* Header */
+    .header { text-align: center; padding: 2.5rem 1.5rem 2rem; background: var(--card); border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .header .emoji { font-size: 2.8rem; margin-bottom: .6rem; }
+    .header h1 { font-size: 1.8rem; font-weight: 700; }
+    .header h1 span { color: var(--accent); }
+    .header p { margin-top: .5rem; font-size: .9rem; color: var(--muted); font-family: sans-serif; }
+
+    /* Today button */
+    .today-btn {
+      display: block; width: 100%;
+      padding: 1rem;
+      background: linear-gradient(135deg, #4f7cff 0%, #7c5cfc 100%);
+      color: white; border: none; border-radius: 16px;
+      font-family: sans-serif; font-size: 1rem; font-weight: 700;
+      cursor: pointer; text-align: center; text-decoration: none;
+      box-shadow: 0 4px 16px rgba(79,124,255,.3);
+      transition: opacity .15s;
+    }
+    .today-btn:hover { opacity: .9; }
+    .today-btn .sub { font-size: .8rem; font-weight: 400; opacity: .85; margin-top: .2rem; }
+
+    /* Day list */
+    .card { background: var(--card); border-radius: 20px; padding: 1.6rem 1.8rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .card-title { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.1rem; display: flex; align-items: center; gap: .5rem; }
+    .card-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .day-list { display: flex; flex-direction: column; gap: .5rem; }
+    .day-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: .75rem 1rem;
+      border: 1.5px solid var(--border); border-radius: 12px;
+      text-decoration: none; color: var(--text);
+      font-family: sans-serif; font-size: .9rem;
+      transition: all .15s;
+    }
+    .day-item:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .day-item.today { border-color: var(--accent2); background: #fffbeb; }
+    .day-item .day-date { font-weight: 600; }
+    .day-item .day-title { color: var(--muted); font-size: .82rem; margin-top: .1rem; }
+    .day-item .day-num { font-size: .75rem; font-weight: 700; color: var(--accent); background: var(--tag-bg); padding: .15rem .55rem; border-radius: 99px; white-space: nowrap; }
+    .day-item.today .day-num { background: #fef3c7; color: #92400e; }
+    .day-left { display: flex; flex-direction: column; }
+
+    .empty { text-align: center; color: var(--muted); font-family: sans-serif; font-size: .9rem; padding: 1rem 0; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="emoji">📖</div>
+    <h1>Daily <span>English</span></h1>
+    <p>A2 → B1 · 每天一篇，持續進步</p>
+  </div>
+
+  <a id="today-link" class="today-btn" href="#">
+    前往今天的學習內容
+    <div class="sub" id="today-date-label"></div>
+  </a>
+
+  <div class="card">
+    <div class="card-title">📅 學習記錄</div>
+    <div class="day-list" id="day-list">
+      <!-- DAYS_START -->
+      <a class="day-item today" href="daily/2026-03-10/">
+        <div class="day-left">
+          <div class="day-date">2026-03-10</div>
+          <div class="day-title">A Day at the Airport</div>
+        </div>
+        <div class="day-num">Day 1</div>
+      </a>
+      <!-- DAYS_END -->
+    </div>
+  </div>
+
+</div>
+<script>
+  // 設定「今天」按鈕
+  const today = new Date().toLocaleDateString('zh-TW', {
+    year: 'numeric', month: '2-digit', day: '2-digit'
+  }).replace(/\//g, '-');
+
+  const ymd = new Date().toISOString().slice(0, 10);
+  document.getElementById('today-link').href = `daily/${ymd}/`;
+  document.getElementById('today-date-label').textContent = ymd;
+
+  // 標記今天的項目
+  document.querySelectorAll('.day-item').forEach(el => {
+    if (el.href.includes(ymd)) {
+      el.classList.add('today');
+    } else {
+      el.classList.remove('today');
+    }
+  });
+</script>
+</body>
+</html>
