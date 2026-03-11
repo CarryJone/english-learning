@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily English · 2026-03-11</title>
+  <style>
+    :root {
+      --bg: #f5f4ef; --card: #ffffff; --accent: #4f7cff; --accent2: #f0a500;
+      --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
+      --green: #22c55e; --red: #ef4444;
+      --tag-bg: #eef2ff; --tag-text: #4f7cff; --highlight: #fffbeb;
+      --phrase-bg: #f0fdf4; --phrase-border: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
+    .container { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .header { text-align: center; padding: 2rem 1.5rem 1.5rem; background: var(--card); border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .date-badge { display: inline-block; background: var(--tag-bg); color: var(--tag-text); font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 99px; margin-bottom: .9rem; }
+    .header h1 { font-size: 1.6rem; font-weight: 700; line-height: 1.3; }
+    .header h1 span { color: var(--accent); }
+    .header .subtitle { margin-top: .4rem; font-size: .9rem; color: var(--muted); font-family: sans-serif; }
+
+    .card { background: var(--card); border-radius: 20px; padding: 1.8rem 2rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .card-title { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; display: flex; align-items: center; gap: .5rem; }
+    .card-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .player-card { background: linear-gradient(135deg, #4f7cff 0%, #7c5cfc 100%); color: white; border-radius: 20px; padding: 1.6rem 2rem; box-shadow: 0 4px 20px rgba(79,124,255,.3); }
+    .player-label { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: .6rem; }
+    .player-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.2rem; }
+    audio { width: 100%; height: 40px; border-radius: 99px; }
+
+    .article-body { font-size: 1.05rem; line-height: 1.9; }
+    .article-body p { margin-bottom: 1.1rem; }
+    .article-body p:last-child { margin-bottom: 0; }
+    .vocab-word { background: var(--highlight); border-bottom: 2px solid var(--accent2); padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; transition: background .15s; }
+    .vocab-word:hover { background: #fef3c7; }
+    .phrase-chunk { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); padding: 0 2px; border-radius: 2px; cursor: pointer; transition: background .15s; }
+    .phrase-chunk:hover { background: #dcfce7; }
+
+    .sent { display: inline; }
+    .sent-btn { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: none; border: 1.5px solid #c7d2fe; color: var(--accent); cursor: pointer; font-size: .55rem; vertical-align: middle; margin: 0 3px 0 0; flex-shrink: 0; transition: all .15s; padding: 0; line-height: 1; }
+    .sent-btn:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .sent-btn.playing { background: var(--accent); border-color: var(--accent); color: white; }
+
+    #word-popup { position: fixed; z-index: 9999; max-width: 300px; min-width: 220px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,.18); padding: 1.1rem 1.2rem 1rem; display: none; font-family: sans-serif; animation: popIn .15s ease; border: 1px solid var(--border); }
+    @keyframes popIn { from { opacity:0; transform:translateY(6px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
+    #word-popup .pop-word { font-size: 1.1rem; font-weight: 700; margin-bottom: .25rem; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+    #word-popup .pop-badge { font-size: .7rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; background: var(--tag-bg); color: var(--tag-text); white-space: nowrap; }
+    #word-popup .pop-badge.vocab { background: #fffbeb; color: #92400e; }
+    #word-popup .pop-badge.phrase { background: #f0fdf4; color: #166534; }
+    #word-popup .pop-note { font-size: .82rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-def { font-size: .85rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-example { font-size: .82rem; color: var(--muted); font-style: italic; margin-top: .4rem; padding-top: .4rem; border-top: 1px solid var(--border); line-height: 1.5; }
+    #word-popup .pop-loading { font-size: .85rem; color: var(--muted); display: flex; align-items: center; gap: .4rem; margin-top: .3rem; }
+    #word-popup .pop-loading::before { content:''; width:12px; height:12px; border:2px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin .6s linear infinite; flex-shrink:0; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    #word-popup .pop-close { position:absolute; top:.5rem; right:.6rem; width:20px; height:20px; background:#f3f4f6; border:none; border-radius:50%; cursor:pointer; font-size:.7rem; color:var(--muted); display:flex; align-items:center; justify-content:center; }
+    #word-popup .pop-close:hover { background:var(--border); }
+    #word-popup .pop-type-badge { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:4px; background:#eff6ff; color:#1d4ed8; margin:.2rem 0 .35rem; }
+    #word-popup .pop-zh-btn { margin-top:.6rem; padding:.35rem .85rem; background:var(--tag-bg); color:var(--accent); border:1.5px solid var(--accent); border-radius:8px; font-size:.82rem; font-weight:600; cursor:pointer; font-family:sans-serif; transition:all .15s; display:block; width:100%; text-align:center; }
+    #word-popup .pop-zh-btn:hover { background:var(--accent); color:white; }
+    #word-popup .pop-zh { font-size:.95rem; font-weight:700; margin-top:.5rem; color:#166534; padding:.4rem .6rem; background:#f0fdf4; border-radius:6px; }
+
+    .review-tag { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:99px; white-space:nowrap; }
+    .review-tag.today { background:#fef3c7; color:#92400e; }
+    .review-tag.overdue { background:#fef2f2; color:#991b1b; }
+    .review-tag.upcoming { background:#f0fdf4; color:#166534; }
+
+    .vocab-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: .88rem; }
+    .vocab-table thead tr { background: var(--tag-bg); }
+    .vocab-table th { text-align: left; padding: .6rem .9rem; font-weight: 700; color: var(--tag-text); font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+    .vocab-table td { padding: .7rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+    .vocab-table tr:last-child td { border-bottom: none; }
+    .vocab-table tr:hover td { background: #fafafa; }
+    .pos-badge { display:inline-block; background:#f3f4f6; color:var(--muted); font-size:.72rem; padding:.15rem .5rem; border-radius:4px; font-weight:600; }
+    .zh-meaning { font-weight: 600; }
+    .example-sent { color: var(--muted); font-style: italic; margin-top: .15rem; font-size: .83rem; }
+
+    .phrase-list { display: flex; flex-direction: column; gap: .85rem; }
+    .phrase-item { padding: .8rem 1rem; background: var(--phrase-bg); border-left: 3px solid var(--phrase-border); border-radius: 0 10px 10px 0; }
+    .phrase-item .ph-text { font-weight: 700; font-size: .95rem; font-family: sans-serif; }
+    .phrase-item .ph-zh { font-size: .88rem; color: #166534; margin-top: .2rem; }
+    .phrase-item .ph-note { font-size: .82rem; color: var(--muted); margin-top: .25rem; font-style: italic; }
+
+    .quiz-q { margin-bottom: 1.6rem; }
+    .quiz-q:last-child { margin-bottom: 0; }
+    .quiz-question { font-size: 1rem; font-weight: 600; margin-bottom: .75rem; line-height: 1.5; }
+    .quiz-options { display: flex; flex-direction: column; gap: .45rem; }
+    .quiz-option { display: flex; align-items: center; gap: .7rem; padding: .65rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; cursor: pointer; font-family: sans-serif; font-size: .9rem; transition: all .15s; background: white; }
+    .quiz-option:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .quiz-option.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 600; }
+    .quiz-option.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; }
+    .opt-key { width:24px; height:24px; border-radius:6px; background:var(--tag-bg); color:var(--accent); font-weight:700; font-size:.8rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:all .15s; }
+    .quiz-option.correct .opt-key { background: var(--green); color: white; }
+    .quiz-option.wrong .opt-key { background: var(--red); color: white; }
+    .answers-btn { margin-top: 1.2rem; padding: .65rem 1.4rem; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: sans-serif; font-size: .88rem; font-weight: 600; cursor: pointer; }
+    .answers-btn:hover { background: #3a66e0; }
+    .answers-reveal { display: none; margin-top: 1rem; padding: .9rem 1.1rem; background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 10px; font-family: sans-serif; font-size: .9rem; color: #166534; font-weight: 600; }
+
+    .tips-box { background: var(--highlight); border-left: 4px solid var(--accent2); border-radius: 0 12px 12px 0; padding: 1rem 1.2rem; font-family: sans-serif; font-size: .92rem; line-height: 1.7; color: #78350f; }
+
+    .review-msg { font-family: sans-serif; font-size: .95rem; color: var(--muted); text-align: center; padding: 1rem 0; }
+
+    .legend { display: flex; gap: 1rem; font-family: sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: 1rem; flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: .35rem; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+    .legend-dot.vocab { background: #fef3c7; border-bottom: 2px solid var(--accent2); }
+    .legend-dot.phrase { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+
+    @media (max-width: 500px) {
+      .card { padding: 1.4rem 1.2rem; }
+      .player-card { padding: 1.3rem 1.2rem; }
+      .header h1 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="date-badge">March 11, 2026 · Day 2</div>
+    <h1>A Day in the Life of a <span>City Worker</span></h1>
+    <p class="subtitle">A2 → B1 · Daily English Reading</p>
+  </div>
+
+  <div class="player-card">
+    <div class="player-label">🎧 Listen to the Article</div>
+    <div class="player-title">A Day in the Life of a City Worker</div>
+    <audio controls>
+      <source src="article.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <div id="word-popup">
+    <button class="pop-close" onclick="closePopup()">✕</button>
+    <div id="pop-content"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📖 Today's Article</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot vocab"></div>今日單字</div>
+      <div class="legend-item"><div class="legend-dot phrase"></div>重要片語</div>
+      <div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 點擊播放單句</div>
+    </div>
+    <div class="article-body" id="article-body">
+      <p>
+        <span class="sent" data-idx="1" data-text="Every morning, Li Mei follows the same routine."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Every morning, Li Mei follows the same <span class="vocab-word" data-word="routine">routine</span>.</span>
+        <span class="sent" data-idx="2" data-text="She wakes up at seven, makes a cup of coffee, and gets ready for work."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She wakes up at seven, makes a cup of coffee, and <span class="phrase-chunk" data-phrase="get ready for work">gets ready for work</span>.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="3" data-text="Her daily commute takes about thirty minutes by subway."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Her daily <span class="vocab-word" data-word="commute">commute</span> takes about thirty minutes by subway.</span>
+        <span class="sent" data-idx="4" data-text="She usually reads on her phone or listens to a podcast during the ride."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She usually reads on her phone or listens to a podcast during the ride.</span>
+        <span class="sent" data-idx="5" data-text="It is a good way to start the day."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>It is a good way to start the day.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="6" data-text="At lunchtime, she often runs a quick errand near her office."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>At lunchtime, she often <span class="phrase-chunk" data-phrase="run an errand">runs a quick <span class="vocab-word" data-word="errand">errand</span></span> near her office.</span>
+        <span class="sent" data-idx="7" data-text="She stops at the grocery store to pick up fresh vegetables for dinner."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She stops at the <span class="vocab-word" data-word="grocery">grocery</span> store to <span class="phrase-chunk" data-phrase="pick up">pick up</span> fresh vegetables for dinner.</span>
+        <span class="sent" data-idx="8" data-text="Li Mei always checks her budget carefully before buying anything extra."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Li Mei always <span class="phrase-chunk" data-phrase="checks her budget">checks her <span class="vocab-word" data-word="budget">budget</span></span> carefully before buying anything extra.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="9" data-text="After work, she returns to her neighborhood and cooks at home."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>After work, she returns to her <span class="vocab-word" data-word="neighborhood">neighborhood</span> and cooks at home.</span>
+        <span class="sent" data-idx="10" data-text="She is very efficient in the kitchen and dinner is usually ready in less than twenty minutes."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She is very <span class="vocab-word" data-word="efficient">efficient</span> in the kitchen — dinner is usually ready in less than twenty minutes.</span>
+        <span class="sent" data-idx="11" data-text="Sometimes she makes extra food and saves the leftovers for the next day."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Sometimes she makes extra food and <span class="phrase-chunk" data-phrase="saves the leftovers">saves the <span class="vocab-word" data-word="leftovers">leftovers</span></span> for the next day.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="12" data-text="Before bed, Li Mei packs her bag and sets her alarm."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Before bed, Li Mei packs her bag and sets her alarm.</span>
+        <span class="sent" data-idx="13" data-text="It is a simple but satisfying life."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>It is a simple but satisfying life.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📚 New Words Today</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>routine</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">日常慣例</div><div class="example-sent">I try to keep a healthy morning routine.</div></td>
+        </tr>
+        <tr>
+          <td><strong>commute</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">通勤時間、通勤</div><div class="example-sent">My commute to work takes forty minutes.</div></td>
+        </tr>
+        <tr>
+          <td><strong>errand</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">差事、雜事</div><div class="example-sent">I need to run a few errands after lunch.</div></td>
+        </tr>
+        <tr>
+          <td><strong>grocery</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">食品雜貨</div><div class="example-sent">We need to buy some groceries for the week.</div></td>
+        </tr>
+        <tr>
+          <td><strong>budget</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">預算</div><div class="example-sent">We have a tight budget this month.</div></td>
+        </tr>
+        <tr>
+          <td><strong>efficient</strong></td>
+          <td><span class="pos-badge">adj.</span></td>
+          <td><div class="zh-meaning">有效率的</div><div class="example-sent">She is very efficient and always finishes her work on time.</div></td>
+        </tr>
+        <tr>
+          <td><strong>neighborhood</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">鄰里、社區</div><div class="example-sent">I love my neighborhood because everyone is friendly.</div></td>
+        </tr>
+        <tr>
+          <td><strong>leftovers</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">剩菜、剩飯</div><div class="example-sent">We can have the leftovers for lunch tomorrow.</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔗 Key Phrases</div>
+    <div class="phrase-list">
+      <div class="phrase-item">
+        <div class="ph-text">get ready for work <span style="font-size:.75rem;font-weight:400;color:var(--muted);">— Fixed Expression</span></div>
+        <div class="ph-zh">準備上班</div>
+        <div class="ph-note">文章用法：gets ready for work → 整理好準備去上班，也可說 get ready for school / get ready for bed</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">run an errand <span style="font-size:.75rem;font-weight:400;color:var(--muted);">— Phrasal Verb</span></div>
+        <div class="ph-zh">跑腿、辦差事</div>
+        <div class="ph-note">文章用法：runs a quick errand → 辦個小差事，常用複數：run errands（跑好幾件事）</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">pick up <span style="font-size:.75rem;font-weight:400;color:var(--muted);">— Phrasal Verb</span></div>
+        <div class="ph-zh">順手取拿、順手買</div>
+        <div class="ph-note">文章用法：pick up fresh vegetables → 順手買些蔬菜，也可說 pick up a coffee / pick up the kids</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">check one's budget <span style="font-size:.75rem;font-weight:400;color:var(--muted);">— Collocation</span></div>
+        <div class="ph-zh">核查預算</div>
+        <div class="ph-note">文章用法：checks her budget carefully → 仔細核查預算，相關搭配：plan a budget、stick to a budget</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">save the leftovers <span style="font-size:.75rem;font-weight:400;color:var(--muted);">— Collocation</span></div>
+        <div class="ph-zh">保存剩菜</div>
+        <div class="ph-note">文章用法：saves the leftovers for the next day → 把剩菜留到隔天吃，也常說 eat the leftovers</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">✏️ Quiz</div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q1. How does Li Mei travel to work each day?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>By bus</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span>By subway</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>By car</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>On foot</div>
+      </div>
+    </div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q2. The word "efficient" in the article means:</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>緩慢的</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span>有效率的</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>昂貴的</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>疲憊的</div>
+      </div>
+    </div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q3. You need to go to the post office and buy groceries during your lunch break. What are you doing?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>Going on vacation</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>Doing your homework</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">C</span>Running errands</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>Making a budget</div>
+      </div>
+    </div>
+    <button class="answers-btn" onclick="toggleAnswers()">顯示答案</button>
+    <div class="answers-reveal" id="answers-reveal">
+      ✅ &nbsp;Q1: <strong>B — By subway</strong> &nbsp;｜&nbsp; Q2: <strong>B — 有效率的</strong> &nbsp;｜&nbsp; Q3: <strong>C — Running errands</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💡 Learning Tips</div>
+    <div class="tips-box">今天的主題是城市日常生活。注意文章中描述時間順序的詞語：<strong>every morning、at lunchtime、after work、before bed</strong>，這些在日常對話和寫作中非常實用！另外，<strong>run an errand</strong> 和 <strong>pick up</strong> 這兩個動詞片語很常見，例如：I need to pick up some milk（我要去買牛奶）或 Can you run an errand for me?（你能幫我辦個事嗎？）多練習這些片語，你的口語會更自然。</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔁 Review Words</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th><th>狀態</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>stressful</strong></td>
+          <td><span class="pos-badge">adj.</span></td>
+          <td><div class="zh-meaning">令人緊張的、有壓力的</div><div class="example-sent">Moving to a new city can be stressful.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>check-in</strong></td>
+          <td><span class="pos-badge">n./v.</span></td>
+          <td><div class="zh-meaning">辦理登機手續</div><div class="example-sent">The check-in counter opens two hours before the flight.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>passport</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">護照</div><div class="example-sent">Don't forget your passport when you travel abroad.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>luggage</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">行李</div><div class="example-sent">I only have one bag of luggage for my trip.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>security</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">安全檢查、安檢</div><div class="example-sent">Please remove your shoes at security.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>gate</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">登機門</div><div class="example-sent">Our flight departs from gate 12.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>departure</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">出發、離境</div><div class="example-sent">Check the departure board for your flight number.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>boarding pass</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">登機證</div><div class="example-sent">You can download your boarding pass on your phone.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<script>
+  // Sentence-by-sentence playback
+  const sentAudio = new Audio();
+  let activeSentBtn = null;
+  function playSent(btn) {
+    const idx = btn.closest('.sent').dataset.idx;
+    const src = `s${String(idx).padStart(2,'0')}.mp3`;
+    if (activeSentBtn === btn && !sentAudio.paused) {
+      sentAudio.pause(); sentAudio.currentTime = 0;
+      btn.classList.remove('playing'); btn.textContent = '🔊';
+      activeSentBtn = null; return;
+    }
+    sentAudio.pause(); sentAudio.currentTime = 0;
+    if (activeSentBtn) { activeSentBtn.classList.remove('playing'); activeSentBtn.textContent = '🔊'; }
+    sentAudio.src = src;
+    activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
+    sentAudio.onended = sentAudio.onerror = () => { btn.classList.remove('playing'); btn.textContent = '🔊'; activeSentBtn = null; };
+    sentAudio.play();
+  }
+
+  // Quiz
+  function answer(el, type) {
+    const group = el.closest('.quiz-options');
+    if (group.querySelector('.correct, .wrong')) return;
+    el.classList.add(type);
+  }
+  function toggleAnswers() {
+    const el = document.getElementById('answers-reveal');
+    const btn = document.querySelector('.answers-btn');
+    if (el.style.display === 'block') { el.style.display='none'; btn.textContent='顯示答案'; }
+    else { el.style.display='block'; btn.textContent='隱藏答案'; }
+  }
+
+  // Vocab & Phrase data
+  const VOCAB = {
+    'routine': { pos:'n.', zh:'日常慣例', example:'I try to keep a healthy morning routine.' },
+    'commute': { pos:'n.', zh:'通勤時間、通勤', example:'My commute to work takes forty minutes.' },
+    'errand': { pos:'n.', zh:'差事、雜事', example:'I need to run a few errands after lunch.' },
+    'grocery': { pos:'n.', zh:'食品雜貨', example:'We need to buy some groceries for the week.' },
+    'budget': { pos:'n.', zh:'預算', example:'We have a tight budget this month.' },
+    'efficient': { pos:'adj.', zh:'有效率的', example:'She is very efficient and always finishes her work on time.' },
+    'neighborhood': { pos:'n.', zh:'鄰里、社區', example:'I love my neighborhood because everyone is friendly.' },
+    'leftovers': { pos:'n.', zh:'剩菜、剩飯', example:'We can have the leftovers for lunch tomorrow.' },
+  };
+  const PHRASES = {
+    'get ready for work': { zh:'準備上班', note:'文章用法：gets ready for work → 整理好準備去上班', type:'Fixed Expression' },
+    'run an errand': { zh:'跑腿、辦差事', note:'文章用法：runs a quick errand → 辦個小差事', type:'Phrasal Verb' },
+    'pick up': { zh:'順手取拿、順手買', note:'文章用法：pick up fresh vegetables → 順手買蔬菜', type:'Phrasal Verb' },
+    'checks her budget': { zh:'核查預算', note:'文章用法：checks her budget carefully → 仔細核查預算', type:'Collocation' },
+    'saves the leftovers': { zh:'保存剩菜', note:'文章用法：saves the leftovers for the next day → 把剩菜留到隔天', type:'Collocation' },
+  };
+
+  // Popup
+  const popup = document.getElementById('word-popup');
+  const popContent = document.getElementById('pop-content');
+  const defCache = {};
+  let _anchor = null;
+
+  function showPopup(word, anchorEl, type) {
+    _anchor = anchorEl;
+    popContent.innerHTML = '';
+    const key = word.toLowerCase();
+    if (type === 'vocab' && VOCAB[key]) {
+      const v = VOCAB[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge vocab">今日單字</span></div>
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${v.pos}</span>
+        <div class="pop-example">"${v.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <div class="pop-zh" style="display:none">${v.zh}</div>`;
+    } else if (type === 'phrase' && PHRASES[key]) {
+      const ph = PHRASES[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge phrase">片語</span></div>
+        <span class="pop-type-badge">${ph.type}</span>
+        <div class="pop-note">${ph.note}</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文</button>
+        <div class="pop-zh" style="display:none">${ph.zh}</div>`;
+    } else {
+      popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查詢中…</div>`;
+      fetchDef(key).then(html => { popContent.innerHTML = html; positionPopup(anchorEl); });
+    }
+    popup.style.display = 'block';
+    positionPopup(anchorEl);
+  }
+
+  function revealZh(btn) {
+    btn.nextElementSibling.style.display = 'block';
+    btn.style.display = 'none';
+    if (_anchor) positionPopup(_anchor);
+  }
+
+  function positionPopup(el) {
+    const r = el.getBoundingClientRect();
+    const pw = popup.offsetWidth || 260, ph = popup.offsetHeight || 120;
+    let left = r.left + window.scrollX;
+    let top = r.bottom + window.scrollY + 8;
+    if (left + pw > window.innerWidth - 12) left = window.innerWidth - pw - 12;
+    if (r.bottom + ph + 8 > window.innerHeight) top = r.top + window.scrollY - ph - 8;
+    popup.style.left = left + 'px';
+    popup.style.top = top + 'px';
+  }
+
+  function closePopup() { popup.style.display = 'none'; }
+
+  async function fetchDef(word) {
+    if (defCache[word]) return defCache[word];
+    try {
+      const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      const entry = data[0];
+      const meanings = entry.meanings.slice(0,2).map(m => {
+        const def = m.definitions[0];
+        const ex = def.example ? `<div class="pop-example">"${def.example}"</div>` : '';
+        return `<div style="margin-top:.4rem"><span class="pop-badge">${m.partOfSpeech}</span><div class="pop-def">${def.definition}</div>${ex}</div>`;
+      }).join('');
+      const html = `<div class="pop-word">${entry.word}</div>${meanings}`;
+      return defCache[word] = html;
+    } catch {
+      return defCache[word] = `<div class="pop-word">${word}</div><div class="pop-def" style="margin-top:.3rem">查無結果</div>`;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('article-body').addEventListener('click', e => {
+      const v  = e.target.closest('.vocab-word');
+      const ph = e.target.closest('.phrase-chunk');
+      if (v)       showPopup(v.dataset.word,    v,  'vocab');
+      else if (ph) showPopup(ph.dataset.phrase, ph, 'phrase');
+    });
+    document.addEventListener('click', e => {
+      if (!popup.contains(e.target) && !e.target.closest('.vocab-word,.phrase-chunk')) closePopup();
+    });
+  });
+</script>
+</body>
+</html>

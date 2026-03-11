@@ -6,8 +6,8 @@
       "chineseMeaning": "令人緊張的、有壓力的",
       "exampleSentence": "Moving to a new city can be stressful.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 0,
-      "nextReview": "2026-03-11"
+      "reviewCount": 1,
+      "nextReview": "2026-03-14"
     },
     {
       "word": "check-in",
@@ -15,8 +15,8 @@
       "chineseMeaning": "辦理登機手續",
       "exampleSentence": "The check-in counter opens two hours before the flight.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 0,
-      "nextReview": "2026-03-11"
+      "reviewCount": 1,
+      "nextReview": "2026-03-14"
     },
     {
       "word": "passport",
@@ -24,8 +24,8 @@
       "chineseMeaning": "護照",
       "exampleSentence": "Don't forget your passport when you travel abroad.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 0,
-      "nextReview": "2026-03-11"
+      "reviewCount": 1,
+      "nextReview": "2026-03-14"
     },
     {
       "word": "luggage",
@@ -33,8 +33,8 @@
       "chineseMeaning": "行李",
       "exampleSentence": "I only have one bag of luggage for my trip.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 0,
-      "nextReview": "2026-03-11"
+      "reviewCount": 1,
+      "nextReview": "2026-03-14"
     },
     {
       "word": "security",
@@ -42,8 +42,8 @@
       "chineseMeaning": "安全檢查、安檢",
       "exampleSentence": "Please remove your shoes at security.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 0,
-      "nextReview": "2026-03-11"
+      "reviewCount": 1,
+      "nextReview": "2026-03-14"
     },
     {
       "word": "gate",
@@ -51,8 +51,8 @@
       "chineseMeaning": "登機門",
       "exampleSentence": "Our flight departs from gate 12.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 0,
-      "nextReview": "2026-03-11"
+      "reviewCount": 1,
+      "nextReview": "2026-03-14"
     },
     {
       "word": "departure",
@@ -60,8 +60,8 @@
       "chineseMeaning": "出發、離境",
       "exampleSentence": "Check the departure board for your flight number.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 0,
-      "nextReview": "2026-03-11"
+      "reviewCount": 1,
+      "nextReview": "2026-03-14"
     },
     {
       "word": "boarding pass",
@@ -69,8 +69,80 @@
       "chineseMeaning": "登機證",
       "exampleSentence": "You can download your boarding pass on your phone.",
       "dateAdded": "2026-03-10",
+      "reviewCount": 1,
+      "nextReview": "2026-03-14"
+    },
+    {
+      "word": "routine",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "日常慣例",
+      "exampleSentence": "I try to keep a healthy morning routine.",
+      "dateAdded": "2026-03-11",
       "reviewCount": 0,
-      "nextReview": "2026-03-11"
+      "nextReview": "2026-03-12"
+    },
+    {
+      "word": "commute",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "通勤時間、通勤",
+      "exampleSentence": "My commute to work takes forty minutes.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 0,
+      "nextReview": "2026-03-12"
+    },
+    {
+      "word": "errand",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "差事、雜事",
+      "exampleSentence": "I need to run a few errands after lunch.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 0,
+      "nextReview": "2026-03-12"
+    },
+    {
+      "word": "grocery",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "食品雜貨",
+      "exampleSentence": "We need to buy some groceries for the week.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 0,
+      "nextReview": "2026-03-12"
+    },
+    {
+      "word": "budget",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "預算",
+      "exampleSentence": "We have a tight budget this month.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 0,
+      "nextReview": "2026-03-12"
+    },
+    {
+      "word": "efficient",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有效率的",
+      "exampleSentence": "She is very efficient and always finishes her work on time.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 0,
+      "nextReview": "2026-03-12"
+    },
+    {
+      "word": "neighborhood",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鄰里、社區",
+      "exampleSentence": "I love my neighborhood because everyone is friendly.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 0,
+      "nextReview": "2026-03-12"
+    },
+    {
+      "word": "leftovers",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "剩菜、剩飯",
+      "exampleSentence": "We can have the leftovers for lunch tomorrow.",
+      "dateAdded": "2026-03-11",
+      "reviewCount": 0,
+      "nextReview": "2026-03-12"
     }
   ]
 }
