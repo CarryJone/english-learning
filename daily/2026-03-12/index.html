@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily English · March 12, 2026</title>
+  <style>
+    :root {
+      --bg: #f5f4ef; --card: #ffffff; --accent: #4f7cff; --accent2: #f0a500;
+      --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
+      --green: #22c55e; --red: #ef4444;
+      --tag-bg: #eef2ff; --tag-text: #4f7cff; --highlight: #fffbeb;
+      --phrase-bg: #f0fdf4; --phrase-border: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
+    .container { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+
+    /* Header */
+    .header { text-align: center; padding: 2rem 1.5rem 1.5rem; background: var(--card); border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .date-badge { display: inline-block; background: var(--tag-bg); color: var(--tag-text); font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 99px; margin-bottom: .9rem; }
+    .header h1 { font-size: 1.6rem; font-weight: 700; line-height: 1.3; }
+    .header h1 span { color: var(--accent); }
+    .header .subtitle { margin-top: .4rem; font-size: .9rem; color: var(--muted); font-family: sans-serif; }
+
+    /* Card */
+    .card { background: var(--card); border-radius: 20px; padding: 1.8rem 2rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .card-title { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; display: flex; align-items: center; gap: .5rem; }
+    .card-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    /* Player */
+    .player-card { background: linear-gradient(135deg, #4f7cff 0%, #7c5cfc 100%); color: white; border-radius: 20px; padding: 1.6rem 2rem; box-shadow: 0 4px 20px rgba(79,124,255,.3); }
+    .player-label { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: .6rem; }
+    .player-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.2rem; }
+    audio { width: 100%; height: 40px; border-radius: 99px; }
+
+    /* Article */
+    .article-body { font-size: 1.05rem; line-height: 1.9; }
+    .article-body p { margin-bottom: 1.1rem; }
+    .article-body p:last-child { margin-bottom: 0; }
+    .vocab-word { background: var(--highlight); border-bottom: 2px solid var(--accent2); padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; transition: background .15s; }
+    .vocab-word:hover { background: #fef3c7; }
+    .phrase-chunk { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); padding: 0 2px; border-radius: 2px; cursor: pointer; transition: background .15s; }
+    .phrase-chunk:hover { background: #dcfce7; }
+
+    /* Sentence playback */
+    .sent { display: inline; }
+    .sent-btn { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: none; border: 1.5px solid #c7d2fe; color: var(--accent); cursor: pointer; font-size: .55rem; vertical-align: middle; margin: 0 3px 0 0; flex-shrink: 0; transition: all .15s; padding: 0; line-height: 1; }
+    .sent-btn:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .sent-btn.playing { background: var(--accent); border-color: var(--accent); color: white; }
+
+    /* Popup */
+    #word-popup { position: fixed; z-index: 9999; max-width: 300px; min-width: 220px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,.18); padding: 1.1rem 1.2rem 1rem; display: none; font-family: sans-serif; animation: popIn .15s ease; border: 1px solid var(--border); }
+    @keyframes popIn { from { opacity:0; transform:translateY(6px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
+    #word-popup .pop-word { font-size: 1.1rem; font-weight: 700; margin-bottom: .25rem; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+    #word-popup .pop-badge { font-size: .7rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; background: var(--tag-bg); color: var(--tag-text); white-space: nowrap; }
+    #word-popup .pop-badge.vocab { background: #fffbeb; color: #92400e; }
+    #word-popup .pop-badge.phrase { background: #f0fdf4; color: #166534; }
+    #word-popup .pop-note { font-size: .82rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-def { font-size: .85rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-example { font-size: .82rem; color: var(--muted); font-style: italic; margin-top: .4rem; padding-top: .4rem; border-top: 1px solid var(--border); line-height: 1.5; }
+    #word-popup .pop-loading { font-size: .85rem; color: var(--muted); display: flex; align-items: center; gap: .4rem; margin-top: .3rem; }
+    #word-popup .pop-loading::before { content:''; width:12px; height:12px; border:2px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin .6s linear infinite; flex-shrink:0; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    #word-popup .pop-close { position:absolute; top:.5rem; right:.6rem; width:20px; height:20px; background:#f3f4f6; border:none; border-radius:50%; cursor:pointer; font-size:.7rem; color:var(--muted); display:flex; align-items:center; justify-content:center; }
+    #word-popup .pop-close:hover { background:var(--border); }
+    #word-popup .pop-type-badge { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:4px; background:#eff6ff; color:#1d4ed8; margin:.2rem 0 .35rem; }
+    #word-popup .pop-zh-btn { margin-top:.6rem; padding:.35rem .85rem; background:var(--tag-bg); color:var(--accent); border:1.5px solid var(--accent); border-radius:8px; font-size:.82rem; font-weight:600; cursor:pointer; font-family:sans-serif; transition:all .15s; display:block; width:100%; text-align:center; }
+    #word-popup .pop-zh-btn:hover { background:var(--accent); color:white; }
+    #word-popup .pop-zh { font-size:.95rem; font-weight:700; margin-top:.5rem; color:#166534; padding:.4rem .6rem; background:#f0fdf4; border-radius:6px; }
+
+    /* Review tags */
+    .review-tag { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:99px; white-space:nowrap; }
+    .review-tag.today { background:#fef3c7; color:#92400e; }
+    .review-tag.overdue { background:#fef2f2; color:#991b1b; }
+    .review-tag.upcoming { background:#f0fdf4; color:#166534; }
+
+    /* Vocab table */
+    .vocab-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: .88rem; }
+    .vocab-table thead tr { background: var(--tag-bg); }
+    .vocab-table th { text-align: left; padding: .6rem .9rem; font-weight: 700; color: var(--tag-text); font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+    .vocab-table td { padding: .7rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+    .vocab-table tr:last-child td { border-bottom: none; }
+    .vocab-table tr:hover td { background: #fafafa; }
+    .pos-badge { display:inline-block; background:#f3f4f6; color:var(--muted); font-size:.72rem; padding:.15rem .5rem; border-radius:4px; font-weight:600; }
+    .zh-meaning { font-weight: 600; }
+    .example-sent { color: var(--muted); font-style: italic; margin-top: .15rem; font-size: .83rem; }
+
+    /* Phrase list */
+    .phrase-list { display: flex; flex-direction: column; gap: .85rem; }
+    .phrase-item { padding: .8rem 1rem; background: var(--phrase-bg); border-left: 3px solid var(--phrase-border); border-radius: 0 10px 10px 0; }
+    .phrase-item .ph-text { font-weight: 700; font-size: .95rem; font-family: sans-serif; }
+    .phrase-item .ph-zh { font-size: .88rem; color: #166534; margin-top: .2rem; }
+    .phrase-item .ph-note { font-size: .82rem; color: var(--muted); margin-top: .25rem; font-style: italic; }
+
+    /* Quiz */
+    .quiz-q { margin-bottom: 1.6rem; }
+    .quiz-q:last-child { margin-bottom: 0; }
+    .quiz-question { font-size: 1rem; font-weight: 600; margin-bottom: .75rem; line-height: 1.5; }
+    .quiz-options { display: flex; flex-direction: column; gap: .45rem; }
+    .quiz-option { display: flex; align-items: center; gap: .7rem; padding: .65rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; cursor: pointer; font-family: sans-serif; font-size: .9rem; transition: all .15s; background: white; }
+    .quiz-option:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .quiz-option.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 600; }
+    .quiz-option.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; }
+    .opt-key { width:24px; height:24px; border-radius:6px; background:var(--tag-bg); color:var(--accent); font-weight:700; font-size:.8rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:all .15s; }
+    .quiz-option.correct .opt-key { background: var(--green); color: white; }
+    .quiz-option.wrong .opt-key { background: var(--red); color: white; }
+    .answers-btn { margin-top: 1.2rem; padding: .65rem 1.4rem; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: sans-serif; font-size: .88rem; font-weight: 600; cursor: pointer; }
+    .answers-btn:hover { background: #3a66e0; }
+    .answers-reveal { display: none; margin-top: 1rem; padding: .9rem 1.1rem; background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 10px; font-family: sans-serif; font-size: .9rem; color: #166534; font-weight: 600; }
+
+    /* Tips */
+    .tips-box { background: var(--highlight); border-left: 4px solid var(--accent2); border-radius: 0 12px 12px 0; padding: 1rem 1.2rem; font-family: sans-serif; font-size: .92rem; line-height: 1.7; color: #78350f; }
+
+    /* Review */
+    .review-msg { font-family: sans-serif; font-size: .95rem; color: var(--muted); text-align: center; padding: 1rem 0; }
+
+    /* Legend */
+    .legend { display: flex; gap: 1rem; font-family: sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: 1rem; flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: .35rem; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+    .legend-dot.vocab { background: #fef3c7; border-bottom: 2px solid var(--accent2); }
+    .legend-dot.phrase { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+
+    @media (max-width: 500px) {
+      .card { padding: 1.4rem 1.2rem; }
+      .player-card { padding: 1.3rem 1.2rem; }
+      .header h1 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="date-badge">March 12, 2026 · Day 3</div>
+    <h1>A First Night at the <span>Hotel</span></h1>
+    <p class="subtitle">A2 → B1 · Daily English Reading</p>
+  </div>
+
+  <div class="player-card">
+    <div class="player-label">🎧 Listen to the Article</div>
+    <div class="player-title">A First Night at the Hotel</div>
+    <audio controls>
+      <source src="article.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <div id="word-popup">
+    <button class="pop-close" onclick="closePopup()">✕</button>
+    <div id="pop-content"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📖 Today's Article</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot vocab"></div>今日單字</div>
+      <div class="legend-item"><div class="legend-dot phrase"></div>重要片語</div>
+      <div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 點擊播放單句</div>
+    </div>
+    <div class="article-body" id="article-body">
+      <p>
+        <span class="sent" data-idx="1" data-text="Sarah arrived at the hotel after a long flight."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Sarah arrived at the hotel after a long flight.</span>
+        <span class="sent" data-idx="2" data-text="She walked up to the front desk and handed over her ID."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She walked up to the front desk and <span class="phrase-chunk" data-phrase="hand over">handed over</span> her ID.</span>
+        <span class="sent" data-idx="3" data-text="The receptionist smiled and said, Welcome! We have your reservation. Would you like a room with a city view?"><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The <span class="vocab-word" data-word="receptionist">receptionist</span> smiled and said, "Welcome! We have your <span class="vocab-word" data-word="reservation">reservation</span>. Would you like a room with a <span class="phrase-chunk" data-phrase="city view">city view</span>?"</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="4" data-text="Sarah nodded and asked about the breakfast time."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Sarah nodded and asked about the breakfast time.</span>
+        <span class="sent" data-idx="5" data-text="Breakfast is served from seven to ten in the morning, the receptionist replied."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>"Breakfast is served from seven to ten in the morning," the <span class="vocab-word" data-word="receptionist">receptionist</span> replied.</span>
+        <span class="sent" data-idx="6" data-text="You can also use the rooftop pool and the gym."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>"You can also use the <span class="vocab-word" data-word="rooftop">rooftop</span> pool and the gym."</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="7" data-text="After getting her key card, Sarah took the elevator to the fifth floor."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>After getting her key card, Sarah took the <span class="vocab-word" data-word="elevator">elevator</span> to the fifth floor.</span>
+        <span class="sent" data-idx="8" data-text="Her room was clean and comfortable."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Her room was clean and comfortable.</span>
+        <span class="sent" data-idx="9" data-text="She opened the curtains and saw the bright city lights below."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She opened the <span class="vocab-word" data-word="curtain">curtains</span> and saw the bright city lights below.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="10" data-text="She was exhausted from the trip, so she decided to order room service instead of going out for dinner."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She was <span class="vocab-word" data-word="exhausted">exhausted</span> from the trip, so she decided to order <span class="vocab-word" data-word="room service">room service</span> <span class="phrase-chunk" data-phrase="instead of">instead of</span> going out for dinner.</span>
+        <span class="sent" data-idx="11" data-text="She looked at the menu, picked a simple meal, and called the front desk."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She looked at the menu, picked a simple meal, and called the front desk.</span>
+        <span class="sent" data-idx="12" data-text="Twenty minutes later, someone knocked on her door with a tray of hot food."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Twenty minutes later, someone knocked on her door with a <span class="vocab-word" data-word="tray">tray</span> of hot food.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="13" data-text="Sarah ate slowly and thought, This is a great start to my trip."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Sarah ate slowly and thought, "This is <span class="phrase-chunk" data-phrase="a great start">a great start</span> to my trip."</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📚 New Words Today</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>receptionist</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">接待員</div><div class="example-sent">The receptionist gave us the room keys.</div></td>
+        </tr>
+        <tr>
+          <td><strong>reservation</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">訂房、預訂</div><div class="example-sent">I made a reservation online yesterday.</div></td>
+        </tr>
+        <tr>
+          <td><strong>rooftop</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">頂樓、屋頂</div><div class="example-sent">The hotel has a rooftop pool with a great view.</div></td>
+        </tr>
+        <tr>
+          <td><strong>elevator</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">電梯</div><div class="example-sent">Take the elevator to the third floor.</div></td>
+        </tr>
+        <tr>
+          <td><strong>curtain</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">窗簾</div><div class="example-sent">Please close the curtains before going to sleep.</div></td>
+        </tr>
+        <tr>
+          <td><strong>exhausted</strong></td>
+          <td><span class="pos-badge">adj.</span></td>
+          <td><div class="zh-meaning">筋疲力盡的</div><div class="example-sent">I was exhausted after the long flight.</div></td>
+        </tr>
+        <tr>
+          <td><strong>room service</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">客房服務</div><div class="example-sent">We ordered room service because we were too tired to go out.</div></td>
+        </tr>
+        <tr>
+          <td><strong>tray</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">托盤</div><div class="example-sent">The waiter brought the food on a tray.</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔗 Key Phrases</div>
+    <div class="phrase-list">
+      <div class="phrase-item">
+        <div class="ph-text">hand over <span style="font-size:.75rem;font-weight:400;color:var(--muted);">· Phrasal Verb</span></div>
+        <div class="ph-zh">交出、遞交</div>
+        <div class="ph-note">文章用法：handed over her ID → 把 ID 遞給對方</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">city view <span style="font-size:.75rem;font-weight:400;color:var(--muted);">· Collocation</span></div>
+        <div class="ph-zh">城市景觀</div>
+        <div class="ph-note">文章用法：a room with a city view → 有城市景觀的房間</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">order room service <span style="font-size:.75rem;font-weight:400;color:var(--muted);">· Collocation</span></div>
+        <div class="ph-zh">叫客房服務</div>
+        <div class="ph-note">文章用法：decided to order room service → 決定叫客房服務，不出門</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">instead of <span style="font-size:.75rem;font-weight:400;color:var(--muted);">· Fixed Expression</span></div>
+        <div class="ph-zh">而不是、替代</div>
+        <div class="ph-note">文章用法：instead of going out → 而不是出去吃飯</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">a great start <span style="font-size:.75rem;font-weight:400;color:var(--muted);">· Fixed Expression</span></div>
+        <div class="ph-zh">一個好的開始</div>
+        <div class="ph-note">文章用法：a great start to my trip → 旅行的美好開始</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">✏️ Quiz</div>
+
+    <div class="quiz-q">
+      <div class="quiz-question">Q1. After getting her key card, what floor does Sarah go to?</div>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span> The first floor</button>
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span> The third floor</button>
+        <button class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">C</span> The fifth floor</button>
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span> The tenth floor</button>
+      </div>
+    </div>
+
+    <div class="quiz-q">
+      <div class="quiz-question">Q2. What does "exhausted" mean?</div>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span> Very happy</button>
+        <button class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span> Very tired</button>
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span> Very hungry</button>
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span> Very excited</button>
+      </div>
+    </div>
+
+    <div class="quiz-q">
+      <div class="quiz-question">Q3. You are in your hotel room and don't want to go out for dinner. What do you say to the front desk?</div>
+      <div class="quiz-options">
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span> "Can I eat in the kitchen?"</button>
+        <button class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span> "I'd like to order room service, please."</button>
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span> "Please bring me to the restaurant."</button>
+        <button class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span> "Can I use the rooftop for dinner?"</button>
+      </div>
+    </div>
+
+    <button class="answers-btn" onclick="toggleAnswers()">顯示答案</button>
+    <div class="answers-reveal" id="answers-reveal">
+      ✅ &nbsp;Q1: <strong>C（The fifth floor）</strong> &nbsp;｜&nbsp; Q2: <strong>B（Very tired）</strong> &nbsp;｜&nbsp; Q3: <strong>B（I'd like to order room service, please.）</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💡 Learning Tips</div>
+    <div class="tips-box">
+      飯店英文很實用！記住「I have a reservation under [你的名字]」（我有用我的名字訂房），這是最常用的 Check-in 開場白。另外，「instead of」是很好用的替換連接詞，練習用它造句：I stayed in instead of going out. / I had tea instead of coffee.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔁 Review Words</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th><th>狀態</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>routine</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">日常慣例</div><div class="example-sent">I try to keep a healthy morning routine.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>commute</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">通勤時間、通勤</div><div class="example-sent">My commute to work takes forty minutes.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>errand</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">差事、雜事</div><div class="example-sent">I need to run a few errands after lunch.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>grocery</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">食品雜貨</div><div class="example-sent">We need to buy some groceries for the week.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>budget</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">預算</div><div class="example-sent">We have a tight budget this month.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>efficient</strong></td>
+          <td><span class="pos-badge">adj.</span></td>
+          <td><div class="zh-meaning">有效率的</div><div class="example-sent">She is very efficient and always finishes her work on time.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>neighborhood</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">鄰里、社區</div><div class="example-sent">I love my neighborhood because everyone is friendly.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>leftovers</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">剩菜、剩飯</div><div class="example-sent">We can have the leftovers for lunch tomorrow.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<script>
+  // Sentence-by-sentence playback
+  const sentAudio = new Audio();
+  let activeSentBtn = null;
+  function playSent(btn) {
+    const idx = btn.closest('.sent').dataset.idx;
+    const src = `s${String(idx).padStart(2,'0')}.mp3`;
+    if (activeSentBtn === btn && !sentAudio.paused) {
+      sentAudio.pause(); sentAudio.currentTime = 0;
+      btn.classList.remove('playing'); btn.textContent = '🔊';
+      activeSentBtn = null; return;
+    }
+    sentAudio.pause(); sentAudio.currentTime = 0;
+    if (activeSentBtn) { activeSentBtn.classList.remove('playing'); activeSentBtn.textContent = '🔊'; }
+    sentAudio.src = src;
+    activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
+    sentAudio.onended = sentAudio.onerror = () => { btn.classList.remove('playing'); btn.textContent = '🔊'; activeSentBtn = null; };
+    sentAudio.play();
+  }
+
+  // Quiz
+  function answer(el, type) {
+    const group = el.closest('.quiz-options');
+    if (group.querySelector('.correct, .wrong')) return;
+    el.classList.add(type);
+  }
+  function toggleAnswers() {
+    const el = document.getElementById('answers-reveal');
+    const btn = document.querySelector('.answers-btn');
+    if (el.style.display === 'block') { el.style.display='none'; btn.textContent='顯示答案'; }
+    else { el.style.display='block'; btn.textContent='隱藏答案'; }
+  }
+
+  // Vocab & Phrase data
+  const VOCAB = {
+    'receptionist': { pos:'n.', zh:'接待員', example:'The receptionist gave us the room keys.' },
+    'reservation': { pos:'n.', zh:'訂房、預訂', example:'I made a reservation online yesterday.' },
+    'rooftop': { pos:'n.', zh:'頂樓、屋頂', example:'The hotel has a rooftop pool with a great view.' },
+    'elevator': { pos:'n.', zh:'電梯', example:'Take the elevator to the third floor.' },
+    'curtain': { pos:'n.', zh:'窗簾', example:'Please close the curtains before going to sleep.' },
+    'exhausted': { pos:'adj.', zh:'筋疲力盡的', example:'I was exhausted after the long flight.' },
+    'room service': { pos:'n.', zh:'客房服務', example:'We ordered room service because we were too tired to go out.' },
+    'tray': { pos:'n.', zh:'托盤', example:'The waiter brought the food on a tray.' },
+  };
+  const PHRASES = {
+    'hand over': { zh:'交出、遞交', note:'文章用法：handed over her ID → 把 ID 遞給對方', type:'Phrasal Verb' },
+    'city view': { zh:'城市景觀', note:'文章用法：a room with a city view → 有城市景觀的房間', type:'Collocation' },
+    'order room service': { zh:'叫客房服務', note:'文章用法：decided to order room service → 決定叫客房服務', type:'Collocation' },
+    'instead of': { zh:'而不是、替代', note:'文章用法：instead of going out → 而不是出去吃飯', type:'Fixed Expression' },
+    'a great start': { zh:'一個好的開始', note:'文章用法：a great start to my trip → 旅行的美好開始', type:'Fixed Expression' },
+  };
+
+  // Popup
+  const popup = document.getElementById('word-popup');
+  const popContent = document.getElementById('pop-content');
+  const defCache = {};
+  let _anchor = null;
+
+  function showPopup(word, anchorEl, type) {
+    _anchor = anchorEl;
+    popContent.innerHTML = '';
+    const key = word.toLowerCase();
+    if (type === 'vocab' && VOCAB[key]) {
+      const v = VOCAB[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge vocab">今日單字</span></div>
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${v.pos}</span>
+        <div class="pop-example">"${v.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <div class="pop-zh" style="display:none">${v.zh}</div>`;
+    } else if (type === 'phrase' && PHRASES[key]) {
+      const ph = PHRASES[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge phrase">片語</span></div>
+        <span class="pop-type-badge">${ph.type}</span>
+        <div class="pop-note">${ph.note}</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文</button>
+        <div class="pop-zh" style="display:none">${ph.zh}</div>`;
+    } else {
+      popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查詢中…</div>`;
+      fetchDef(key).then(html => { popContent.innerHTML = html; positionPopup(anchorEl); });
+    }
+    popup.style.display = 'block';
+    positionPopup(anchorEl);
+  }
+
+  function revealZh(btn) {
+    btn.nextElementSibling.style.display = 'block';
+    btn.style.display = 'none';
+    if (_anchor) positionPopup(_anchor);
+  }
+
+  function positionPopup(el) {
+    const r = el.getBoundingClientRect();
+    const pw = popup.offsetWidth || 260, ph = popup.offsetHeight || 120;
+    let left = r.left + window.scrollX;
+    let top = r.bottom + window.scrollY + 8;
+    if (left + pw > window.innerWidth - 12) left = window.innerWidth - pw - 12;
+    if (r.bottom + ph + 8 > window.innerHeight) top = r.top + window.scrollY - ph - 8;
+    popup.style.left = left + 'px';
+    popup.style.top = top + 'px';
+  }
+
+  function closePopup() { popup.style.display = 'none'; }
+
+  async function fetchDef(word) {
+    if (defCache[word]) return defCache[word];
+    try {
+      const res = await fetch(`https://api.dictionarapi.dev/api/v2/entries/en/${word}`);
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      const entry = data[0];
+      const meanings = entry.meanings.slice(0,2).map(m => {
+        const def = m.definitions[0];
+        const ex = def.example ? `<div class="pop-example">"${def.example}"</div>` : '';
+        return `<div style="margin-top:.4rem"><span class="pop-badge">${m.partOfSpeech}</span><div class="pop-def">${def.definition}</div>${ex}</div>`;
+      }).join('');
+      const html = `<div class="pop-word">${entry.word}</div>${meanings}`;
+      return defCache[word] = html;
+    } catch {
+      return defCache[word] = `<div class="pop-word">${word}</div><div class="pop-def" style="margin-top:.3rem">查無結果</div>`;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('article-body').addEventListener('click', e => {
+      const v  = e.target.closest('.vocab-word');
+      const ph = e.target.closest('.phrase-chunk');
+      if (v)       showPopup(v.dataset.word,    v,  'vocab');
+      else if (ph) showPopup(ph.dataset.phrase, ph, 'phrase');
+    });
+    document.addEventListener('click', e => {
+      if (!popup.contains(e.target) && !e.target.closest('.vocab-word,.phrase-chunk')) closePopup();
+    });
+  });
+</script>
+</body>
+</html>

@@ -78,8 +78,8 @@
       "chineseMeaning": "日常慣例",
       "exampleSentence": "I try to keep a healthy morning routine.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-03-12"
+      "reviewCount": 1,
+      "nextReview": "2026-03-15"
     },
     {
       "word": "commute",
@@ -87,8 +87,8 @@
       "chineseMeaning": "通勤時間、通勤",
       "exampleSentence": "My commute to work takes forty minutes.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-03-12"
+      "reviewCount": 1,
+      "nextReview": "2026-03-15"
     },
     {
       "word": "errand",
@@ -96,8 +96,8 @@
       "chineseMeaning": "差事、雜事",
       "exampleSentence": "I need to run a few errands after lunch.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-03-12"
+      "reviewCount": 1,
+      "nextReview": "2026-03-15"
     },
     {
       "word": "grocery",
@@ -105,8 +105,8 @@
       "chineseMeaning": "食品雜貨",
       "exampleSentence": "We need to buy some groceries for the week.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-03-12"
+      "reviewCount": 1,
+      "nextReview": "2026-03-15"
     },
     {
       "word": "budget",
@@ -114,8 +114,8 @@
       "chineseMeaning": "預算",
       "exampleSentence": "We have a tight budget this month.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-03-12"
+      "reviewCount": 1,
+      "nextReview": "2026-03-15"
     },
     {
       "word": "efficient",
@@ -123,8 +123,8 @@
       "chineseMeaning": "有效率的",
       "exampleSentence": "She is very efficient and always finishes her work on time.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-03-12"
+      "reviewCount": 1,
+      "nextReview": "2026-03-15"
     },
     {
       "word": "neighborhood",
@@ -132,8 +132,8 @@
       "chineseMeaning": "鄰里、社區",
       "exampleSentence": "I love my neighborhood because everyone is friendly.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-03-12"
+      "reviewCount": 1,
+      "nextReview": "2026-03-15"
     },
     {
       "word": "leftovers",
@@ -141,8 +141,80 @@
       "chineseMeaning": "剩菜、剩飯",
       "exampleSentence": "We can have the leftovers for lunch tomorrow.",
       "dateAdded": "2026-03-11",
+      "reviewCount": 1,
+      "nextReview": "2026-03-15"
+    },
+    {
+      "word": "receptionist",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "接待員",
+      "exampleSentence": "The receptionist gave us the room keys.",
+      "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-12"
+      "nextReview": "2026-03-13"
+    },
+    {
+      "word": "reservation",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "訂房、預訂",
+      "exampleSentence": "I made a reservation online yesterday.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 0,
+      "nextReview": "2026-03-13"
+    },
+    {
+      "word": "rooftop",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "頂樓、屋頂",
+      "exampleSentence": "The hotel has a rooftop pool with a great view.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 0,
+      "nextReview": "2026-03-13"
+    },
+    {
+      "word": "elevator",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "電梯",
+      "exampleSentence": "Take the elevator to the third floor.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 0,
+      "nextReview": "2026-03-13"
+    },
+    {
+      "word": "curtain",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "窗簾",
+      "exampleSentence": "Please close the curtains before going to sleep.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 0,
+      "nextReview": "2026-03-13"
+    },
+    {
+      "word": "exhausted",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "筋疲力盡的",
+      "exampleSentence": "I was exhausted after the long flight.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 0,
+      "nextReview": "2026-03-13"
+    },
+    {
+      "word": "room service",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "客房服務",
+      "exampleSentence": "We ordered room service because we were too tired to go out.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 0,
+      "nextReview": "2026-03-13"
+    },
+    {
+      "word": "tray",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "托盤",
+      "exampleSentence": "The waiter brought the food on a tray.",
+      "dateAdded": "2026-03-12",
+      "reviewCount": 0,
+      "nextReview": "2026-03-13"
     }
   ]
 }
