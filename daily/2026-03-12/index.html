@@ -462,10 +462,12 @@
   function positionPopup(el) {
     const r = el.getBoundingClientRect();
     const pw = popup.offsetWidth || 260, ph = popup.offsetHeight || 120;
-    let left = r.left + window.scrollX;
-    let top = r.bottom + window.scrollY + 8;
+    let left = r.left;
+    let top = r.bottom + 8;
     if (left + pw > window.innerWidth - 12) left = window.innerWidth - pw - 12;
-    if (r.bottom + ph + 8 > window.innerHeight) top = r.top + window.scrollY - ph - 8;
+    if (left < 12) left = 12;
+    if (r.bottom + ph + 8 > window.innerHeight) top = r.top - ph - 8;
+    if (top < 8) top = 8;
     popup.style.left = left + 'px';
     popup.style.top = top + 'px';
   }
