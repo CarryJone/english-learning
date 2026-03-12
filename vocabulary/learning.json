@@ -7,7 +7,8 @@
       "exampleSentence": "Moving to a new city can be stressful.",
       "dateAdded": "2026-03-10",
       "reviewCount": 1,
-      "nextReview": "2026-03-14"
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     },
     {
       "word": "check-in",
@@ -16,7 +17,8 @@
       "exampleSentence": "The check-in counter opens two hours before the flight.",
       "dateAdded": "2026-03-10",
       "reviewCount": 1,
-      "nextReview": "2026-03-14"
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     },
     {
       "word": "passport",
@@ -25,7 +27,8 @@
       "exampleSentence": "Don't forget your passport when you travel abroad.",
       "dateAdded": "2026-03-10",
       "reviewCount": 1,
-      "nextReview": "2026-03-14"
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     },
     {
       "word": "luggage",
@@ -34,7 +37,8 @@
       "exampleSentence": "I only have one bag of luggage for my trip.",
       "dateAdded": "2026-03-10",
       "reviewCount": 1,
-      "nextReview": "2026-03-14"
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     },
     {
       "word": "security",
@@ -43,7 +47,8 @@
       "exampleSentence": "Please remove your shoes at security.",
       "dateAdded": "2026-03-10",
       "reviewCount": 1,
-      "nextReview": "2026-03-14"
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     },
     {
       "word": "gate",
@@ -52,7 +57,8 @@
       "exampleSentence": "Our flight departs from gate 12.",
       "dateAdded": "2026-03-10",
       "reviewCount": 1,
-      "nextReview": "2026-03-14"
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     },
     {
       "word": "departure",
@@ -61,7 +67,8 @@
       "exampleSentence": "Check the departure board for your flight number.",
       "dateAdded": "2026-03-10",
       "reviewCount": 1,
-      "nextReview": "2026-03-14"
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     },
     {
       "word": "boarding pass",
@@ -70,7 +77,8 @@
       "exampleSentence": "You can download your boarding pass on your phone.",
       "dateAdded": "2026-03-10",
       "reviewCount": 1,
-      "nextReview": "2026-03-14"
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     },
     {
       "word": "routine",
@@ -79,7 +87,8 @@
       "exampleSentence": "I try to keep a healthy morning routine.",
       "dateAdded": "2026-03-11",
       "reviewCount": 1,
-      "nextReview": "2026-03-15"
+      "nextReview": "2026-03-15",
+      "lastReviewedDate": null
     },
     {
       "word": "commute",
@@ -88,7 +97,8 @@
       "exampleSentence": "My commute to work takes forty minutes.",
       "dateAdded": "2026-03-11",
       "reviewCount": 1,
-      "nextReview": "2026-03-15"
+      "nextReview": "2026-03-15",
+      "lastReviewedDate": null
     },
     {
       "word": "errand",
@@ -97,7 +107,8 @@
       "exampleSentence": "I need to run a few errands after lunch.",
       "dateAdded": "2026-03-11",
       "reviewCount": 1,
-      "nextReview": "2026-03-15"
+      "nextReview": "2026-03-15",
+      "lastReviewedDate": null
     },
     {
       "word": "grocery",
@@ -106,7 +117,8 @@
       "exampleSentence": "We need to buy some groceries for the week.",
       "dateAdded": "2026-03-11",
       "reviewCount": 1,
-      "nextReview": "2026-03-15"
+      "nextReview": "2026-03-15",
+      "lastReviewedDate": null
     },
     {
       "word": "budget",
@@ -115,7 +127,8 @@
       "exampleSentence": "We have a tight budget this month.",
       "dateAdded": "2026-03-11",
       "reviewCount": 1,
-      "nextReview": "2026-03-15"
+      "nextReview": "2026-03-15",
+      "lastReviewedDate": null
     },
     {
       "word": "efficient",
@@ -124,7 +137,8 @@
       "exampleSentence": "She is very efficient and always finishes her work on time.",
       "dateAdded": "2026-03-11",
       "reviewCount": 1,
-      "nextReview": "2026-03-15"
+      "nextReview": "2026-03-15",
+      "lastReviewedDate": null
     },
     {
       "word": "neighborhood",
@@ -133,7 +147,8 @@
       "exampleSentence": "I love my neighborhood because everyone is friendly.",
       "dateAdded": "2026-03-11",
       "reviewCount": 1,
-      "nextReview": "2026-03-15"
+      "nextReview": "2026-03-15",
+      "lastReviewedDate": null
     },
     {
       "word": "leftovers",
@@ -142,7 +157,8 @@
       "exampleSentence": "We can have the leftovers for lunch tomorrow.",
       "dateAdded": "2026-03-11",
       "reviewCount": 1,
-      "nextReview": "2026-03-15"
+      "nextReview": "2026-03-15",
+      "lastReviewedDate": null
     },
     {
       "word": "receptionist",
@@ -151,7 +167,8 @@
       "exampleSentence": "The receptionist gave us the room keys.",
       "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-13"
+      "nextReview": "2026-03-13",
+      "lastReviewedDate": null
     },
     {
       "word": "reservation",
@@ -160,7 +177,8 @@
       "exampleSentence": "I made a reservation online yesterday.",
       "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-13"
+      "nextReview": "2026-03-13",
+      "lastReviewedDate": null
     },
     {
       "word": "rooftop",
@@ -169,7 +187,8 @@
       "exampleSentence": "The hotel has a rooftop pool with a great view.",
       "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-13"
+      "nextReview": "2026-03-13",
+      "lastReviewedDate": null
     },
     {
       "word": "elevator",
@@ -178,7 +197,8 @@
       "exampleSentence": "Take the elevator to the third floor.",
       "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-13"
+      "nextReview": "2026-03-13",
+      "lastReviewedDate": null
     },
     {
       "word": "curtain",
@@ -187,7 +207,8 @@
       "exampleSentence": "Please close the curtains before going to sleep.",
       "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-13"
+      "nextReview": "2026-03-13",
+      "lastReviewedDate": null
     },
     {
       "word": "exhausted",
@@ -196,7 +217,8 @@
       "exampleSentence": "I was exhausted after the long flight.",
       "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-13"
+      "nextReview": "2026-03-13",
+      "lastReviewedDate": null
     },
     {
       "word": "room service",
@@ -205,7 +227,8 @@
       "exampleSentence": "We ordered room service because we were too tired to go out.",
       "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-13"
+      "nextReview": "2026-03-13",
+      "lastReviewedDate": null
     },
     {
       "word": "tray",
@@ -214,7 +237,8 @@
       "exampleSentence": "The waiter brought the food on a tray.",
       "dateAdded": "2026-03-12",
       "reviewCount": 0,
-      "nextReview": "2026-03-13"
+      "nextReview": "2026-03-13",
+      "lastReviewedDate": null
     }
   ]
 }
