@@ -128,6 +128,7 @@
     .rq-item:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
     .rq-zh { font-size: 1rem; font-weight: 700; margin-bottom: .6rem; }
     .rq-pos { font-size: .75rem; font-weight: 400; color: var(--muted); font-family: sans-serif; margin-left: .3rem; }
+    .rq-hint { font-size: .85rem; color: var(--muted); font-style: italic; margin-bottom: .6rem; line-height: 1.5; }
     .rq-opts { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; }
     .rq-opt { padding: .6rem .8rem; border: 1.5px solid var(--border); border-radius: 10px; background: white; cursor: pointer; font-family: 'Georgia', serif; font-size: .88rem; transition: all .15s; text-align: left; }
     .rq-opt:hover:not([disabled]) { border-color: var(--accent); background: var(--tag-bg); }
@@ -330,6 +331,7 @@
 
     <div class="rq-item" data-word="routine" data-correct="routine">
       <div class="rq-zh">日常慣例 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">I try to keep a healthy morning ____.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="luggage" onclick="rqSelect(this)">luggage</button>
         <button class="rq-opt" data-val="routine" onclick="rqSelect(this)">routine</button>
@@ -340,6 +342,7 @@
 
     <div class="rq-item" data-word="commute" data-correct="commute">
       <div class="rq-zh">通勤時間、通勤 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">My ____ to work takes forty minutes.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="commute" onclick="rqSelect(this)">commute</button>
         <button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button>
@@ -350,6 +353,7 @@
 
     <div class="rq-item" data-word="errand" data-correct="errand">
       <div class="rq-zh">差事、雜事 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">I need to run a few ____s after lunch.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="passport" onclick="rqSelect(this)">passport</button>
         <button class="rq-opt" data-val="reservation" onclick="rqSelect(this)">reservation</button>
@@ -360,6 +364,7 @@
 
     <div class="rq-item" data-word="grocery" data-correct="grocery">
       <div class="rq-zh">食品雜貨 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">We need to buy some ____s for the week.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
         <button class="rq-opt" data-val="security" onclick="rqSelect(this)">security</button>
@@ -370,6 +375,7 @@
 
     <div class="rq-item" data-word="budget" data-correct="budget">
       <div class="rq-zh">預算 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">We have a tight ____ this month.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
         <button class="rq-opt" data-val="budget" onclick="rqSelect(this)">budget</button>
@@ -380,6 +386,7 @@
 
     <div class="rq-item" data-word="efficient" data-correct="efficient">
       <div class="rq-zh">有效率的 <span class="rq-pos">adj.</span></div>
+      <div class="rq-hint">She is very ____ and always finishes her work on time.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="stressful" onclick="rqSelect(this)">stressful</button>
         <button class="rq-opt" data-val="exhausted" onclick="rqSelect(this)">exhausted</button>
@@ -390,6 +397,7 @@
 
     <div class="rq-item" data-word="neighborhood" data-correct="neighborhood">
       <div class="rq-zh">鄰里、社區 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">I love my ____ because everyone is friendly.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="neighborhood" onclick="rqSelect(this)">neighborhood</button>
         <button class="rq-opt" data-val="commute" onclick="rqSelect(this)">commute</button>
@@ -400,6 +408,7 @@
 
     <div class="rq-item" data-word="leftovers" data-correct="leftovers">
       <div class="rq-zh">剩菜、剩飯 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">We can have the ____ for lunch tomorrow.</div>
       <div class="rq-opts">
         <button class="rq-opt" data-val="check-in" onclick="rqSelect(this)">check-in</button>
         <button class="rq-opt" data-val="curtain" onclick="rqSelect(this)">curtain</button>
