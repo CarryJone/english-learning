@@ -239,6 +239,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-13",
       "lastReviewedDate": null
+    },
+    {
+      "word": "laundry",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "洗衣、待洗衣物",
+      "exampleSentence": "I need to do the laundry before the weekend.",
+      "dateAdded": "2026-03-13",
+      "reviewCount": 0,
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "ingredient",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "食材、原料",
+      "exampleSentence": "Fresh ingredients make the dish taste better.",
+      "dateAdded": "2026-03-13",
+      "reviewCount": 0,
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "landlord",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "房東",
+      "exampleSentence": "My landlord fixed the broken window last week.",
+      "dateAdded": "2026-03-13",
+      "reviewCount": 0,
+      "nextReview": "2026-03-14",
+      "lastReviewedDate": null
     }
   ]
 }
