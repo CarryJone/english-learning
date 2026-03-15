@@ -299,6 +299,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-16",
       "lastReviewedDate": null
+    },
+    {
+      "word": "organize",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "整理、規劃",
+      "exampleSentence": "I organize my schedule every Sunday evening.",
+      "dateAdded": "2026-03-16",
+      "reviewCount": 0,
+      "nextReview": "2026-03-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "schedule",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "時間表、行程",
+      "exampleSentence": "I keep a schedule to manage my time better.",
+      "dateAdded": "2026-03-16",
+      "reviewCount": 0,
+      "nextReview": "2026-03-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "appointment",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "約定、預約",
+      "exampleSentence": "I have a dentist appointment on Friday.",
+      "dateAdded": "2026-03-16",
+      "reviewCount": 0,
+      "nextReview": "2026-03-17",
+      "lastReviewedDate": null
     }
   ]
 }
