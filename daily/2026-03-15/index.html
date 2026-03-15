@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily English · 2026-03-15</title>
+  <style>
+    :root {
+      --bg: #f5f4ef; --card: #ffffff; --accent: #4f7cff; --accent2: #f0a500;
+      --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
+      --green: #22c55e; --red: #ef4444;
+      --tag-bg: #eef2ff; --tag-text: #4f7cff; --highlight: #fffbeb;
+      --phrase-bg: #f0fdf4; --phrase-border: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
+    .container { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+    .header { text-align: center; padding: 2rem 1.5rem 1.5rem; background: var(--card); border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .date-badge { display: inline-block; background: var(--tag-bg); color: var(--tag-text); font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 99px; margin-bottom: .9rem; }
+    .header h1 { font-size: 1.6rem; font-weight: 700; line-height: 1.3; }
+    .header h1 span { color: var(--accent); }
+    .header .subtitle { margin-top: .4rem; font-size: .9rem; color: var(--muted); font-family: sans-serif; }
+    .card { background: var(--card); border-radius: 20px; padding: 1.8rem 2rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .card-title { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; display: flex; align-items: center; gap: .5rem; }
+    .card-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .player-card { background: linear-gradient(135deg, #4f7cff 0%, #7c5cfc 100%); color: white; border-radius: 20px; padding: 1.6rem 2rem; box-shadow: 0 4px 20px rgba(79,124,255,.3); }
+    .player-label { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: .6rem; }
+    .player-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.2rem; }
+    audio { width: 100%; height: 40px; border-radius: 99px; }
+    .article-body { font-size: 1.05rem; line-height: 1.9; }
+    .article-body p { margin-bottom: 1.1rem; }
+    .article-body p:last-child { margin-bottom: 0; }
+    .vocab-word { background: var(--highlight); border-bottom: 2px solid var(--accent2); padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; transition: background .15s; }
+    .vocab-word:hover { background: #fef3c7; }
+    .phrase-chunk { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); padding: 0 2px; border-radius: 2px; cursor: pointer; transition: background .15s; }
+    .phrase-chunk:hover { background: #dcfce7; }
+    .review-word { background: #f3e8ff; border-bottom: 2px solid #a855f7; padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; transition: background .15s; }
+    .review-word:hover { background: #ede9fe; }
+    .sent { display: inline; }
+    .sent-btn { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: none; border: 1.5px solid #c7d2fe; color: var(--accent); cursor: pointer; font-size: .55rem; vertical-align: middle; margin: 0 3px 0 0; flex-shrink: 0; transition: all .15s; padding: 0; line-height: 1; }
+    .sent-btn:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .sent-btn.playing { background: var(--accent); border-color: var(--accent); color: white; }
+    #word-popup { position: fixed; z-index: 9999; max-width: 300px; min-width: 220px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,.18); padding: 1.1rem 1.2rem 1rem; display: none; font-family: sans-serif; animation: popIn .15s ease; border: 1px solid var(--border); }
+    @keyframes popIn { from { opacity:0; transform:translateY(6px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
+    #word-popup .pop-word { font-size: 1.1rem; font-weight: 700; margin-bottom: .25rem; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+    #word-popup .pop-badge { font-size: .7rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; background: var(--tag-bg); color: var(--tag-text); white-space: nowrap; }
+    #word-popup .pop-badge.vocab { background: #fffbeb; color: #92400e; }
+    #word-popup .pop-badge.phrase { background: #f0fdf4; color: #166534; }
+    #word-popup .pop-badge.review { background: #f3e8ff; color: #7e22ce; }
+    #word-popup .pop-note { font-size: .82rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-def { font-size: .85rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-example { font-size: .82rem; color: var(--muted); font-style: italic; margin-top: .4rem; padding-top: .4rem; border-top: 1px solid var(--border); line-height: 1.5; }
+    #word-popup .pop-loading { font-size: .85rem; color: var(--muted); display: flex; align-items: center; gap: .4rem; margin-top: .3rem; }
+    #word-popup .pop-loading::before { content:''; width:12px; height:12px; border:2px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin .6s linear infinite; flex-shrink:0; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    #word-popup .pop-close { position:absolute; top:.5rem; right:.6rem; width:20px; height:20px; background:#f3f4f6; border:none; border-radius:50%; cursor:pointer; font-size:.7rem; color:var(--muted); display:flex; align-items:center; justify-content:center; }
+    #word-popup .pop-close:hover { background:var(--border); }
+    #word-popup .pop-type-badge { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:4px; background:#eff6ff; color:#1d4ed8; margin:.2rem 0 .35rem; }
+    #word-popup .pop-zh-btn { margin-top:.6rem; padding:.35rem .85rem; background:var(--tag-bg); color:var(--accent); border:1.5px solid var(--accent); border-radius:8px; font-size:.82rem; font-weight:600; cursor:pointer; font-family:sans-serif; transition:all .15s; display:block; width:100%; text-align:center; }
+    #word-popup .pop-zh-btn:hover { background:var(--accent); color:white; }
+    #word-popup .pop-zh { font-size:.95rem; font-weight:700; margin-top:.5rem; color:#166534; padding:.4rem .6rem; background:#f0fdf4; border-radius:6px; }
+    .review-tag { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:99px; white-space:nowrap; }
+    .review-tag.today { background:#fef3c7; color:#92400e; }
+    .review-tag.overdue { background:#fef2f2; color:#991b1b; }
+    .review-tag.upcoming { background:#f0fdf4; color:#166534; }
+    .vocab-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: .88rem; }
+    .vocab-table thead tr { background: var(--tag-bg); }
+    .vocab-table th { text-align: left; padding: .6rem .9rem; font-weight: 700; color: var(--tag-text); font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+    .vocab-table td { padding: .7rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+    .vocab-table tr:last-child td { border-bottom: none; }
+    .vocab-table tr:hover td { background: #fafafa; }
+    .pos-badge { display:inline-block; background:#f3f4f6; color:var(--muted); font-size:.72rem; padding:.15rem .5rem; border-radius:4px; font-weight:600; }
+    .zh-meaning { font-weight: 600; }
+    .example-sent { color: var(--muted); font-style: italic; margin-top: .15rem; font-size: .83rem; }
+    .phrase-list { display: flex; flex-direction: column; gap: .85rem; }
+    .phrase-item { padding: .8rem 1rem; background: var(--phrase-bg); border-left: 3px solid var(--phrase-border); border-radius: 0 10px 10px 0; }
+    .phrase-item .ph-text { font-weight: 700; font-size: .95rem; font-family: sans-serif; }
+    .phrase-item .ph-zh { font-size: .88rem; color: #166534; margin-top: .2rem; }
+    .phrase-item .ph-note { font-size: .82rem; color: var(--muted); margin-top: .25rem; font-style: italic; }
+    .quiz-q { margin-bottom: 1.6rem; }
+    .quiz-q:last-child { margin-bottom: 0; }
+    .quiz-question { font-size: 1rem; font-weight: 600; margin-bottom: .75rem; line-height: 1.5; }
+    .quiz-options { display: flex; flex-direction: column; gap: .45rem; }
+    .quiz-option { display: flex; align-items: center; gap: .7rem; padding: .65rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; cursor: pointer; font-family: sans-serif; font-size: .9rem; transition: all .15s; background: white; }
+    .quiz-option:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .quiz-option.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 600; }
+    .quiz-option.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; }
+    .opt-key { width:24px; height:24px; border-radius:6px; background:var(--tag-bg); color:var(--accent); font-weight:700; font-size:.8rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:all .15s; }
+    .quiz-option.correct .opt-key { background: var(--green); color: white; }
+    .quiz-option.wrong .opt-key { background: var(--red); color: white; }
+    .answers-btn { margin-top: 1.2rem; padding: .65rem 1.4rem; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: sans-serif; font-size: .88rem; font-weight: 600; cursor: pointer; }
+    .answers-btn:hover { background: #3a66e0; }
+    .answers-reveal { display: none; margin-top: 1rem; padding: .9rem 1.1rem; background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 10px; font-family: sans-serif; font-size: .9rem; color: #166534; font-weight: 600; }
+    .tips-box { background: var(--highlight); border-left: 4px solid var(--accent2); border-radius: 0 12px 12px 0; padding: 1rem 1.2rem; font-family: sans-serif; font-size: .92rem; line-height: 1.7; color: #78350f; }
+    .review-msg { font-family: sans-serif; font-size: .95rem; color: var(--muted); text-align: center; padding: 1rem 0; }
+    .legend { display: flex; gap: 1rem; font-family: sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: 1rem; flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: .35rem; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+    .legend-dot.vocab { background: #fef3c7; border-bottom: 2px solid var(--accent2); }
+    .legend-dot.review { background: #f3e8ff; border-bottom: 2px solid #a855f7; }
+    .legend-dot.phrase { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+    .rq-subtitle { font-family: sans-serif; font-size: .88rem; color: var(--muted); margin-bottom: 1.3rem; }
+    .rq-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .rq-item:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+    .rq-zh { font-size: 1rem; font-weight: 700; margin-bottom: .6rem; }
+    .rq-pos { font-size: .75rem; font-weight: 400; color: var(--muted); font-family: sans-serif; margin-left: .3rem; }
+    .rq-opts { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; }
+    .rq-opt { padding: .6rem .8rem; border: 1.5px solid var(--border); border-radius: 10px; background: white; cursor: pointer; font-family: 'Georgia', serif; font-size: .88rem; transition: all .15s; text-align: left; }
+    .rq-opt:hover:not([disabled]) { border-color: var(--accent); background: var(--tag-bg); }
+    .rq-opt.selected { border-color: var(--accent); background: var(--tag-bg); font-weight: 700; }
+    .rq-opt.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 700; }
+    .rq-opt.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; font-weight: 700; }
+    #rq-submit-btn { margin-top: 1.4rem; padding: .75rem 1.4rem; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: sans-serif; font-size: .92rem; font-weight: 700; cursor: pointer; width: 100%; transition: background .15s; }
+    #rq-submit-btn:hover:not([disabled]) { background: #3a66e0; }
+    #rq-submit-btn:disabled { background: var(--muted); cursor: default; }
+    #rq-result { margin-top: 1rem; padding: 1rem 1.2rem; border-radius: 10px; font-family: sans-serif; font-size: .9rem; line-height: 1.7; }
+    #rq-result.success { background: #f0fdf4; border: 1.5px solid #bbf7d0; color: #166534; }
+    #rq-result.partial { background: #fffbeb; border: 1.5px solid #fde68a; color: #92400e; }
+    @media (max-width: 500px) {
+      .card { padding: 1.4rem 1.2rem; }
+      .player-card { padding: 1.3rem 1.2rem; }
+      .header h1 { font-size: 1.3rem; }
+      .rq-opts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="date-badge">March 15, 2026 · Day 5</div>
+    <h1>Planning a <span>Trip</span></h1>
+    <p class="subtitle">A2 → B1 · Daily English Reading</p>
+  </div>
+
+  <div class="player-card">
+    <div class="player-label">🎧 Listen to the Article</div>
+    <div class="player-title">Planning a Trip</div>
+    <audio controls>
+      <source src="article.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <div id="word-popup">
+    <button class="pop-close" onclick="closePopup()">✕</button>
+    <div id="pop-content"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📖 Today's Article</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot vocab"></div>今日單字</div>
+      <div class="legend-item"><div class="legend-dot review"></div>複習單字</div>
+      <div class="legend-item"><div class="legend-dot phrase"></div>重要片語</div>
+      <div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 點擊播放單句</div>
+    </div>
+    <div class="article-body" id="article-body">
+      <p>
+        <span class="sent" data-idx="1" data-text="Planning a trip is one of the most exciting things to do."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Planning a trip is one of the most exciting things to do.</span>
+        <span class="sent" data-idx="2" data-text="First, I set a budget so I know how much money I can spend."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>First, I set a <span class="review-word" data-word="budget">budget</span> so I know how much money I can spend.</span>
+        <span class="sent" data-idx="3" data-text="Then, I look for flights and check the departure times online."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Then, I <span class="phrase-chunk" data-phrase="look for">look for</span> flights and check the <span class="review-word" data-word="departure">departure</span> times online.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="4" data-text="I always try to pack light because heavy luggage can slow you down at the airport."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I always try to <span class="vocab-word" data-word="pack">pack</span> light because heavy <span class="review-word" data-word="luggage">luggage</span> can <span class="phrase-chunk" data-phrase="slow down">slow you down</span> at the airport.</span>
+        <span class="sent" data-idx="5" data-text="Before I leave, I always make sure my passport is in my bag."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Before I leave, I always make sure my passport is in my bag.</span>
+        <span class="sent" data-idx="6" data-text="On the day of travel, I take the early bus to the airport."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>On the day of travel, I take the early bus to the airport.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="7" data-text="I check in at the counter and then walk through security."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I <span class="phrase-chunk" data-phrase="check in">check in</span> at the counter and then walk through security.</span>
+        <span class="sent" data-idx="8" data-text="After that, I find my gate and wait to board the plane."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>After that, I find my gate and wait to <span class="vocab-word" data-word="board">board</span> the plane.</span>
+        <span class="sent" data-idx="9" data-text="Sitting on the plane, I feel excited to explore a new place."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Sitting on the plane, I feel excited to <span class="vocab-word" data-word="explore">explore</span> a new place.</span>
+        <span class="sent" data-idx="10" data-text="Even when the journey feels long, the joy of arriving makes it all worth it."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Even when the journey feels long, the joy of arriving makes it all worth it.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="11" data-text="At my destination, I like to walk around and explore the local neighborhood."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>At my destination, I like to walk around and explore the <span class="phrase-chunk" data-phrase="local food">local</span> neighborhood.</span>
+        <span class="sent" data-idx="12" data-text="I try local food, visit new places, and take many photos."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I try <span class="phrase-chunk" data-phrase="local food">local food</span>, visit new places, and take many photos.</span>
+        <span class="sent" data-idx="13" data-text="Every trip is a chance to break your routine and see the world in a new way."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Every trip is a chance to <span class="phrase-chunk" data-phrase="break your routine">break your routine</span> and see the world in a new way.</span>
+        <span class="sent" data-idx="14" data-text="I always come home feeling happy and ready for everyday life again."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I always <span class="phrase-chunk" data-phrase="come home">come home</span> feeling happy and ready for everyday life again.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📚 New Words Today</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>pack</strong></td>
+          <td><span class="pos-badge">v.</span></td>
+          <td><div class="zh-meaning">打包、收拾行李</div><div class="example-sent">I need to pack my bags before the early morning flight.</div></td>
+        </tr>
+        <tr>
+          <td><strong>board</strong></td>
+          <td><span class="pos-badge">v.</span></td>
+          <td><div class="zh-meaning">登（飛機/船）、搭乘</div><div class="example-sent">Passengers, please board the plane from gate 12.</div></td>
+        </tr>
+        <tr>
+          <td><strong>explore</strong></td>
+          <td><span class="pos-badge">v.</span></td>
+          <td><div class="zh-meaning">探索、探查</div><div class="example-sent">I love to explore new cities on foot.</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔗 Key Phrases</div>
+    <div class="phrase-list">
+      <div class="phrase-item">
+        <div class="ph-text">look for</div>
+        <div class="ph-zh">尋找、搜尋</div>
+        <div class="ph-note">文章用法：I look for flights → 我搜尋航班</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">slow down</div>
+        <div class="ph-zh">使減速、拖慢</div>
+        <div class="ph-note">文章用法：luggage can slow you down → 行李會拖慢你的速度</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">check in</div>
+        <div class="ph-zh">辦理（登機）手續、報到</div>
+        <div class="ph-note">文章用法：I check in at the counter → 在櫃台辦理登機手續</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">local food</div>
+        <div class="ph-zh">當地食物、在地美食</div>
+        <div class="ph-note">文章用法：I try local food → 我嘗試當地美食</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">break your routine</div>
+        <div class="ph-zh">打破日常慣例、跳脫固定模式</div>
+        <div class="ph-note">文章用法：a chance to break your routine → 打破慣例的好機會</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">come home</div>
+        <div class="ph-zh">回家</div>
+        <div class="ph-note">文章用法：come home feeling happy → 帶著快樂的心情回家</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">✏️ Quiz</div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q1. What is the first thing the writer does when planning a trip?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>Buy a plane ticket right away.</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>Check the departure times online.</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">C</span>Set a budget to know how much to spend.</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>Pack their bags.</div>
+      </div>
+    </div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q2. In the sentence "I find my gate and wait to board the plane," what does "board" mean?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>等待（wait）</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span>登上（飛機）</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>找到（find）</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>取消（cancel）</div>
+      </div>
+    </div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q3. You arrive in a new city and want to walk around to discover interesting places. What verb describes this activity?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>commuting</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>packing</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>boarding</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">D</span>exploring</div>
+      </div>
+    </div>
+    <button class="answers-btn" onclick="toggleAnswers()">顯示答案</button>
+    <div class="answers-reveal" id="answers-reveal">
+      ✅ &nbsp;Q1: <strong>C</strong> &nbsp;｜&nbsp; Q2: <strong>B</strong> &nbsp;｜&nbsp; Q3: <strong>D</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🧠 Active Recall Quiz</div>
+    <p class="rq-subtitle">看中文意思，選出正確的英文單字（共 27 題）</p>
+
+    <div class="rq-item" data-word="stressful" data-correct="stressful">
+      <div class="rq-zh">令人緊張的、有壓力的 <span class="rq-pos">adj.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="efficient" onclick="rqSelect(this)">efficient</button>
+        <button class="rq-opt" data-val="routine" onclick="rqSelect(this)">routine</button>
+        <button class="rq-opt" data-val="stressful" onclick="rqSelect(this)">stressful</button>
+        <button class="rq-opt" data-val="exhausted" onclick="rqSelect(this)">exhausted</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="check-in" data-correct="check-in">
+      <div class="rq-zh">辦理登機手續 <span class="rq-pos">n./v.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="boarding pass" onclick="rqSelect(this)">boarding pass</button>
+        <button class="rq-opt" data-val="check-in" onclick="rqSelect(this)">check-in</button>
+        <button class="rq-opt" data-val="gate" onclick="rqSelect(this)">gate</button>
+        <button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="passport" data-correct="passport">
+      <div class="rq-zh">護照 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="gate" onclick="rqSelect(this)">gate</button>
+        <button class="rq-opt" data-val="passport" onclick="rqSelect(this)">passport</button>
+        <button class="rq-opt" data-val="boarding pass" onclick="rqSelect(this)">boarding pass</button>
+        <button class="rq-opt" data-val="luggage" onclick="rqSelect(this)">luggage</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="luggage" data-correct="luggage">
+      <div class="rq-zh">行李 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
+        <button class="rq-opt" data-val="luggage" onclick="rqSelect(this)">luggage</button>
+        <button class="rq-opt" data-val="passport" onclick="rqSelect(this)">passport</button>
+        <button class="rq-opt" data-val="rooftop" onclick="rqSelect(this)">rooftop</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="security" data-correct="security">
+      <div class="rq-zh">安全檢查、安檢 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="gate" onclick="rqSelect(this)">gate</button>
+        <button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button>
+        <button class="rq-opt" data-val="check-in" onclick="rqSelect(this)">check-in</button>
+        <button class="rq-opt" data-val="security" onclick="rqSelect(this)">security</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="gate" data-correct="gate">
+      <div class="rq-zh">登機門 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="gate" onclick="rqSelect(this)">gate</button>
+        <button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button>
+        <button class="rq-opt" data-val="security" onclick="rqSelect(this)">security</button>
+        <button class="rq-opt" data-val="boarding pass" onclick="rqSelect(this)">boarding pass</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="departure" data-correct="departure">
+      <div class="rq-zh">出發、離境 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="gate" onclick="rqSelect(this)">gate</button>
+        <button class="rq-opt" data-val="boarding pass" onclick="rqSelect(this)">boarding pass</button>
+        <button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button>
+        <button class="rq-opt" data-val="check-in" onclick="rqSelect(this)">check-in</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="boarding pass" data-correct="boarding pass">
+      <div class="rq-zh">登機證 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="boarding pass" onclick="rqSelect(this)">boarding pass</button>
+        <button class="rq-opt" data-val="passport" onclick="rqSelect(this)">passport</button>
+        <button class="rq-opt" data-val="luggage" onclick="rqSelect(this)">luggage</button>
+        <button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="routine" data-correct="routine">
+      <div class="rq-zh">日常慣例 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="commute" onclick="rqSelect(this)">commute</button>
+        <button class="rq-opt" data-val="errand" onclick="rqSelect(this)">errand</button>
+        <button class="rq-opt" data-val="routine" onclick="rqSelect(this)">routine</button>
+        <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="commute" data-correct="commute">
+      <div class="rq-zh">通勤、通勤時間 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="commute" onclick="rqSelect(this)">commute</button>
+        <button class="rq-opt" data-val="routine" onclick="rqSelect(this)">routine</button>
+        <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
+        <button class="rq-opt" data-val="errand" onclick="rqSelect(this)">errand</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="errand" data-correct="errand">
+      <div class="rq-zh">差事、雜事 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="routine" onclick="rqSelect(this)">routine</button>
+        <button class="rq-opt" data-val="errand" onclick="rqSelect(this)">errand</button>
+        <button class="rq-opt" data-val="commute" onclick="rqSelect(this)">commute</button>
+        <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="grocery" data-correct="grocery">
+      <div class="rq-zh">食品雜貨 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="ingredient" onclick="rqSelect(this)">ingredient</button>
+        <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
+        <button class="rq-opt" data-val="leftovers" onclick="rqSelect(this)">leftovers</button>
+        <button class="rq-opt" data-val="errand" onclick="rqSelect(this)">errand</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="budget" data-correct="budget">
+      <div class="rq-zh">預算 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="errand" onclick="rqSelect(this)">errand</button>
+        <button class="rq-opt" data-val="leftovers" onclick="rqSelect(this)">leftovers</button>
+        <button class="rq-opt" data-val="budget" onclick="rqSelect(this)">budget</button>
+        <button class="rq-opt" data-val="neighborhood" onclick="rqSelect(this)">neighborhood</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="efficient" data-correct="efficient">
+      <div class="rq-zh">有效率的 <span class="rq-pos">adj.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="stressful" onclick="rqSelect(this)">stressful</button>
+        <button class="rq-opt" data-val="efficient" onclick="rqSelect(this)">efficient</button>
+        <button class="rq-opt" data-val="exhausted" onclick="rqSelect(this)">exhausted</button>
+        <button class="rq-opt" data-val="commute" onclick="rqSelect(this)">commute</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="neighborhood" data-correct="neighborhood">
+      <div class="rq-zh">鄰里、社區 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="commute" onclick="rqSelect(this)">commute</button>
+        <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
+        <button class="rq-opt" data-val="errand" onclick="rqSelect(this)">errand</button>
+        <button class="rq-opt" data-val="neighborhood" onclick="rqSelect(this)">neighborhood</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="leftovers" data-correct="leftovers">
+      <div class="rq-zh">剩菜、剩飯 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
+        <button class="rq-opt" data-val="ingredient" onclick="rqSelect(this)">ingredient</button>
+        <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
+        <button class="rq-opt" data-val="leftovers" onclick="rqSelect(this)">leftovers</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="receptionist" data-correct="receptionist">
+      <div class="rq-zh">接待員 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="reservation" onclick="rqSelect(this)">reservation</button>
+        <button class="rq-opt" data-val="receptionist" onclick="rqSelect(this)">receptionist</button>
+        <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
+        <button class="rq-opt" data-val="elevator" onclick="rqSelect(this)">elevator</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="reservation" data-correct="reservation">
+      <div class="rq-zh">訂房、預訂 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="rooftop" onclick="rqSelect(this)">rooftop</button>
+        <button class="rq-opt" data-val="reservation" onclick="rqSelect(this)">reservation</button>
+        <button class="rq-opt" data-val="curtain" onclick="rqSelect(this)">curtain</button>
+        <button class="rq-opt" data-val="receptionist" onclick="rqSelect(this)">receptionist</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="rooftop" data-correct="rooftop">
+      <div class="rq-zh">頂樓、屋頂 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="elevator" onclick="rqSelect(this)">elevator</button>
+        <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
+        <button class="rq-opt" data-val="curtain" onclick="rqSelect(this)">curtain</button>
+        <button class="rq-opt" data-val="rooftop" onclick="rqSelect(this)">rooftop</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="elevator" data-correct="elevator">
+      <div class="rq-zh">電梯 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="elevator" onclick="rqSelect(this)">elevator</button>
+        <button class="rq-opt" data-val="receptionist" onclick="rqSelect(this)">receptionist</button>
+        <button class="rq-opt" data-val="rooftop" onclick="rqSelect(this)">rooftop</button>
+        <button class="rq-opt" data-val="curtain" onclick="rqSelect(this)">curtain</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="curtain" data-correct="curtain">
+      <div class="rq-zh">窗簾 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="curtain" onclick="rqSelect(this)">curtain</button>
+        <button class="rq-opt" data-val="rooftop" onclick="rqSelect(this)">rooftop</button>
+        <button class="rq-opt" data-val="elevator" onclick="rqSelect(this)">elevator</button>
+        <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="exhausted" data-correct="exhausted">
+      <div class="rq-zh">筋疲力盡的 <span class="rq-pos">adj.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="efficient" onclick="rqSelect(this)">efficient</button>
+        <button class="rq-opt" data-val="stressful" onclick="rqSelect(this)">stressful</button>
+        <button class="rq-opt" data-val="exhausted" onclick="rqSelect(this)">exhausted</button>
+        <button class="rq-opt" data-val="routine" onclick="rqSelect(this)">routine</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="room service" data-correct="room service">
+      <div class="rq-zh">客房服務 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="receptionist" onclick="rqSelect(this)">receptionist</button>
+        <button class="rq-opt" data-val="room service" onclick="rqSelect(this)">room service</button>
+        <button class="rq-opt" data-val="reservation" onclick="rqSelect(this)">reservation</button>
+        <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="tray" data-correct="tray">
+      <div class="rq-zh">托盤 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="rooftop" onclick="rqSelect(this)">rooftop</button>
+        <button class="rq-opt" data-val="elevator" onclick="rqSelect(this)">elevator</button>
+        <button class="rq-opt" data-val="curtain" onclick="rqSelect(this)">curtain</button>
+        <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="laundry" data-correct="laundry">
+      <div class="rq-zh">洗衣、待洗衣物 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="laundry" onclick="rqSelect(this)">laundry</button>
+        <button class="rq-opt" data-val="errand" onclick="rqSelect(this)">errand</button>
+        <button class="rq-opt" data-val="ingredient" onclick="rqSelect(this)">ingredient</button>
+        <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="ingredient" data-correct="ingredient">
+      <div class="rq-zh">食材、原料 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="grocery" onclick="rqSelect(this)">grocery</button>
+        <button class="rq-opt" data-val="ingredient" onclick="rqSelect(this)">ingredient</button>
+        <button class="rq-opt" data-val="leftovers" onclick="rqSelect(this)">leftovers</button>
+        <button class="rq-opt" data-val="laundry" onclick="rqSelect(this)">laundry</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="landlord" data-correct="landlord">
+      <div class="rq-zh">房東 <span class="rq-pos">n.</span></div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="commute" onclick="rqSelect(this)">commute</button>
+        <button class="rq-opt" data-val="landlord" onclick="rqSelect(this)">landlord</button>
+        <button class="rq-opt" data-val="receptionist" onclick="rqSelect(this)">receptionist</button>
+        <button class="rq-opt" data-val="neighborhood" onclick="rqSelect(this)">neighborhood</button>
+      </div>
+    </div>
+
+    <div id="rq-result" style="display:none"></div>
+    <button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 同步 SRS 記錄</button>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💡 Learning Tips</div>
+    <div class="tips-box">
+      💡 <strong>explore 的用法：</strong>「explore」後面可直接接名詞，例如 "explore a city"、"explore the neighborhood"。它比 "visit" 更有「深入探索」的意味，強調主動發現的過程。<br><br>
+      💡 <strong>board 在機場廣播中的用法：</strong>機場常聽到 "Now boarding at gate 3."（現在在 3 號登機門登機）。注意 "board the plane" 和 "get on the plane" 意思相同，但 "board" 更正式。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔁 Review Words</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th><th>狀態</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>receptionist</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">接待員</div><div class="example-sent">The receptionist gave us the room keys.</div></td>
+          <td><span class="review-tag overdue">逾期 2 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>reservation</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">訂房、預訂</div><div class="example-sent">I made a reservation online yesterday.</div></td>
+          <td><span class="review-tag overdue">逾期 2 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>rooftop</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">頂樓、屋頂</div><div class="example-sent">The hotel has a rooftop pool with a great view.</div></td>
+          <td><span class="review-tag overdue">逾期 2 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>elevator</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">電梯</div><div class="example-sent">Take the elevator to the third floor.</div></td>
+          <td><span class="review-tag overdue">逾期 2 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>curtain</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">窗簾</div><div class="example-sent">Please close the curtains before going to sleep.</div></td>
+          <td><span class="review-tag overdue">逾期 2 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>exhausted</strong></td><td><span class="pos-badge">adj.</span></td>
+          <td><div class="zh-meaning">筋疲力盡的</div><div class="example-sent">I was exhausted after the long flight.</div></td>
+          <td><span class="review-tag overdue">逾期 2 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>room service</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">客房服務</div><div class="example-sent">We ordered room service because we were too tired to go out.</div></td>
+          <td><span class="review-tag overdue">逾期 2 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>tray</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">托盤</div><div class="example-sent">The waiter brought the food on a tray.</div></td>
+          <td><span class="review-tag overdue">逾期 2 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>stressful</strong></td><td><span class="pos-badge">adj.</span></td>
+          <td><div class="zh-meaning">令人緊張的、有壓力的</div><div class="example-sent">Moving to a new city can be stressful.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>check-in</strong></td><td><span class="pos-badge">n./v.</span></td>
+          <td><div class="zh-meaning">辦理登機手續</div><div class="example-sent">The check-in counter opens two hours before the flight.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>passport</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">護照</div><div class="example-sent">Don't forget your passport when you travel abroad.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>luggage</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">行李</div><div class="example-sent">I only have one bag of luggage for my trip.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>security</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">安全檢查、安檢</div><div class="example-sent">Please remove your shoes at security.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>gate</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">登機門</div><div class="example-sent">Our flight departs from gate 12.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>departure</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">出發、離境</div><div class="example-sent">Check the departure board for your flight number.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>boarding pass</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">登機證</div><div class="example-sent">You can download your boarding pass on your phone.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>laundry</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">洗衣、待洗衣物</div><div class="example-sent">I need to do the laundry before the weekend.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>ingredient</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">食材、原料</div><div class="example-sent">Fresh ingredients make the dish taste better.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>landlord</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">房東</div><div class="example-sent">My landlord fixed the broken window last week.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>routine</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">日常慣例</div><div class="example-sent">I try to keep a healthy morning routine.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>commute</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">通勤、通勤時間</div><div class="example-sent">My commute to work takes forty minutes.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>errand</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">差事、雜事</div><div class="example-sent">I need to run a few errands after lunch.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>grocery</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">食品雜貨</div><div class="example-sent">We need to buy some groceries for the week.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>budget</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">預算</div><div class="example-sent">We have a tight budget this month.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>efficient</strong></td><td><span class="pos-badge">adj.</span></td>
+          <td><div class="zh-meaning">有效率的</div><div class="example-sent">She is very efficient and always finishes her work on time.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>neighborhood</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">鄰里、社區</div><div class="example-sent">I love my neighborhood because everyone is friendly.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>leftovers</strong></td><td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">剩菜、剩飯</div><div class="example-sent">We can have the leftovers for lunch tomorrow.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<script>
+  const sentAudio = new Audio();
+  let activeSentBtn = null;
+  function playSent(btn) {
+    const idx = btn.closest('.sent').dataset.idx;
+    const src = `s${String(idx).padStart(2,'0')}.mp3`;
+    if (activeSentBtn === btn && !sentAudio.paused) {
+      sentAudio.pause(); sentAudio.currentTime = 0;
+      btn.classList.remove('playing'); btn.textContent = '🔊';
+      activeSentBtn = null; return;
+    }
+    sentAudio.pause(); sentAudio.currentTime = 0;
+    if (activeSentBtn) { activeSentBtn.classList.remove('playing'); activeSentBtn.textContent = '🔊'; }
+    sentAudio.src = src;
+    activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
+    sentAudio.onended = sentAudio.onerror = () => { btn.classList.remove('playing'); btn.textContent = '🔊'; activeSentBtn = null; };
+    sentAudio.play();
+  }
+
+  function answer(el, type) {
+    const group = el.closest('.quiz-options');
+    if (group.querySelector('.correct, .wrong')) return;
+    el.classList.add(type);
+  }
+  function toggleAnswers() {
+    const el = document.getElementById('answers-reveal');
+    const btn = document.querySelector('.answers-btn');
+    if (el.style.display === 'block') { el.style.display='none'; btn.textContent='顯示答案'; }
+    else { el.style.display='block'; btn.textContent='隱藏答案'; }
+  }
+
+  function rqSelect(btn) {
+    const opts = btn.closest('.rq-opts').querySelectorAll('.rq-opt');
+    opts.forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+  }
+
+  async function submitReviewQuiz() {
+    const items = document.querySelectorAll('.rq-item');
+    if (!items.length) return;
+    const results = [];
+    let allAnswered = true;
+    items.forEach(item => {
+      const sel = item.querySelector('.rq-opt.selected');
+      if (!sel) { allAnswered = false; return; }
+      results.push({ word: item.dataset.word, correct: sel.dataset.val === item.dataset.correct });
+    });
+    if (!allAnswered) { alert('請先回答所有題目！'); return; }
+    items.forEach(item => {
+      const correct = item.dataset.correct;
+      item.querySelectorAll('.rq-opt').forEach(b => {
+        b.setAttribute('disabled', '');
+        if (b.dataset.val === correct) b.classList.add('correct');
+        else if (b.classList.contains('selected')) b.classList.add('wrong');
+        b.classList.remove('selected');
+      });
+    });
+    const today = new Date().toISOString().slice(0, 10);
+    const storageKey = 'rq_done_' + today;
+    const score = results.filter(r => r.correct).length;
+    const submitBtn = document.getElementById('rq-submit-btn');
+    const resultEl = document.getElementById('rq-result');
+    if (localStorage.getItem(storageKey)) {
+      resultEl.innerHTML = '✅ 今天已完成複習（額外練習）：' + score + '/' + results.length + ' 題答對，SRS 未更新';
+      resultEl.className = 'success'; resultEl.style.display = 'block';
+      submitBtn.textContent = '已完成'; submitBtn.disabled = true; return;
+    }
+    submitBtn.disabled = true; submitBtn.textContent = '同步中...';
+    try {
+      let token = localStorage.getItem('github_pat');
+      if (!token) {
+        token = prompt('首次使用：請輸入 GitHub Personal Access Token（repo write 權限，儲存在本機）：');
+        if (!token) throw new Error('未提供 Token，無法同步');
+        localStorage.setItem('github_pat', token);
+      }
+      const owner = 'CarryJone', repo = 'english-learning', filePath = 'vocabulary/learning.json';
+      const apiBase = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + filePath;
+      const getResp = await fetch(apiBase, { headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' } });
+      if (!getResp.ok) throw new Error('讀取 learning.json 失敗 (' + getResp.status + ')');
+      const fileData = await getResp.json();
+      const sha = fileData.sha;
+      const raw = atob(fileData.content.replace(/\n/g, ''));
+      const rawBytes = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) rawBytes[i] = raw.charCodeAt(i);
+      const vocab = JSON.parse(new TextDecoder('utf-8').decode(rawBytes));
+      const SRS = [1, 3, 7, 14, 30, 60, 90];
+      for (const r of results) {
+        const w = vocab.words.find(x => x.word === r.word);
+        if (!w || w.lastReviewedDate === today) continue;
+        w.lastReviewedDate = today;
+        const next = new Date();
+        if (r.correct) {
+          w.reviewCount = (w.reviewCount || 0) + 1;
+          next.setDate(next.getDate() + (SRS[Math.min(w.reviewCount, SRS.length - 1)] || 90));
+        } else {
+          w.reviewCount = 0;
+          next.setDate(next.getDate() + 1);
+        }
+        w.nextReview = next.toISOString().slice(0, 10);
+      }
+      const newJson = JSON.stringify(vocab, null, 2);
+      const newBytes = new TextEncoder().encode(newJson);
+      let binary = ''; newBytes.forEach(b => binary += String.fromCharCode(b));
+      const encoded = btoa(binary);
+      const putResp = await fetch(apiBase, {
+        method: 'PUT',
+        headers: { Authorization: 'token ' + token, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: 'SRS update: review quiz ' + today, content: encoded, sha })
+      });
+      if (!putResp.ok) throw new Error('更新失敗 (' + putResp.status + ')');
+      localStorage.setItem(storageKey, '1');
+      resultEl.innerHTML = '🎉 複習完成！' + score + '/' + results.length + ' 題答對，SRS 記錄已更新 ✅';
+      resultEl.className = (score === results.length) ? 'success' : 'partial';
+      resultEl.style.display = 'block';
+      submitBtn.textContent = '✅ 已同步';
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = '提交答案 & 同步 SRS 記錄';
+      alert('同步失敗：' + err.message);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!document.querySelector('.rq-item')) {
+      const btn = document.getElementById('rq-submit-btn');
+      if (btn) btn.style.display = 'none';
+    }
+  });
+
+  const VOCAB = {
+    'pack': { pos:'v.', zh:'打包、收拾行李', example:"I need to pack my bags before the early morning flight." },
+    'board': { pos:'v.', zh:'登（飛機/船）、搭乘', example:"Passengers, please board the plane from gate 12." },
+    'explore': { pos:'v.', zh:'探索、探查', example:"I love to explore new cities on foot." },
+  };
+  const REVIEW = {
+    'budget': { pos:'n.', zh:'預算', example:'We have a tight budget this month.' },
+    'departure': { pos:'n.', zh:'出發、離境', example:'Check the departure board for your flight number.' },
+    'luggage': { pos:'n.', zh:'行李', example:'I only have one bag of luggage for my trip.' },
+  };
+  const PHRASES = {
+    'look for': { zh:'尋找、搜尋', note:'文章用法：I look for flights → 我搜尋航班', type:'Phrasal Verb' },
+    'slow down': { zh:'使減速、拖慢', note:'文章用法：luggage can slow you down → 行李會拖慢你的速度', type:'Phrasal Verb' },
+    'check in': { zh:'辦理（登機）手續、報到', note:'文章用法：I check in at the counter → 在櫃台辦理手續', type:'Phrasal Verb' },
+    'local food': { zh:'當地食物、在地美食', note:'文章用法：I try local food → 我嘗試當地美食', type:'Collocation' },
+    'break your routine': { zh:'打破日常慣例、跳脫固定模式', note:'文章用法：a chance to break your routine → 打破慣例的好機會', type:'Collocation' },
+    'come home': { zh:'回家', note:'文章用法：come home feeling happy → 帶著快樂的心情回家', type:'Phrasal Verb' },
+  };
+
+  const popup = document.getElementById('word-popup');
+  const popContent = document.getElementById('pop-content');
+  const defCache = {};
+  let _anchor = null;
+
+  function showPopup(word, anchorEl, type) {
+    _anchor = anchorEl;
+    popContent.innerHTML = '';
+    const key = word.toLowerCase();
+    if (type === 'vocab' && VOCAB[key]) {
+      const v = VOCAB[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge vocab">今日單字</span></div>
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${v.pos}</span>
+        <div class="pop-example">"${v.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <div class="pop-zh" style="display:none">${v.zh}</div>`;
+    } else if (type === 'review' && REVIEW[key]) {
+      const rv = REVIEW[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge review">複習單字</span></div>
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${rv.pos}</span>
+        <div class="pop-example">"${rv.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <div class="pop-zh" style="display:none">${rv.zh}</div>`;
+    } else if (type === 'phrase' && PHRASES[key]) {
+      const ph = PHRASES[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge phrase">片語</span></div>
+        <span class="pop-type-badge">${ph.type}</span>
+        <div class="pop-note">${ph.note}</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文</button>
+        <div class="pop-zh" style="display:none">${ph.zh}</div>`;
+    } else {
+      popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查詢中…</div>`;
+      fetchDef(key).then(html => { popContent.innerHTML = html; positionPopup(anchorEl); });
+    }
+    popup.style.display = 'block';
+    positionPopup(anchorEl);
+  }
+
+  function revealZh(btn) {
+    btn.nextElementSibling.style.display = 'block';
+    btn.style.display = 'none';
+    if (_anchor) positionPopup(_anchor);
+  }
+
+  function positionPopup(el) {
+    const r = el.getBoundingClientRect();
+    const pw = popup.offsetWidth || 260, ph = popup.offsetHeight || 120;
+    let left = r.left, top = r.bottom + 8;
+    if (left + pw > window.innerWidth - 12) left = window.innerWidth - pw - 12;
+    if (left < 12) left = 12;
+    if (r.bottom + ph + 8 > window.innerHeight) top = r.top - ph - 8;
+    if (top < 8) top = 8;
+    popup.style.left = left + 'px'; popup.style.top = top + 'px';
+  }
+
+  function closePopup() { popup.style.display = 'none'; }
+
+  async function fetchDef(word) {
+    if (defCache[word]) return defCache[word];
+    try {
+      const res = await fetch(`https://api.dictionarapi.dev/api/v2/entries/en/${word}`);
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      const entry = data[0];
+      const meanings = entry.meanings.slice(0,2).map(m => {
+        const def = m.definitions[0];
+        const ex = def.example ? `<div class="pop-example">"${def.example}"</div>` : '';
+        return `<div style="margin-top:.4rem"><span class="pop-badge">${m.partOfSpeech}</span><div class="pop-def">${def.definition}</div>${ex}</div>`;
+      }).join('');
+      return defCache[word] = `<div class="pop-word">${entry.word}</div>${meanings}`;
+    } catch {
+      return defCache[word] = `<div class="pop-word">${word}</div><div class="pop-def" style="margin-top:.3rem">查無結果</div>`;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('article-body').addEventListener('click', e => {
+      const v  = e.target.closest('.vocab-word');
+      const rv = e.target.closest('.review-word');
+      const ph = e.target.closest('.phrase-chunk');
+      if (v)       showPopup(v.dataset.word,    v,  'vocab');
+      else if (rv) showPopup(rv.dataset.word,   rv, 'review');
+      else if (ph) showPopup(ph.dataset.phrase, ph, 'phrase');
+    });
+    document.addEventListener('click', e => {
+      if (!popup.contains(e.target) && !e.target.closest('.vocab-word,.review-word,.phrase-chunk')) closePopup();
+    });
+  });
+</script>
+</body>
+</html>

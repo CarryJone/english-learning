@@ -269,6 +269,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-14",
       "lastReviewedDate": null
+    },
+    {
+      "word": "pack",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "打包、收拾行李",
+      "exampleSentence": "I need to pack my bags before the early morning flight.",
+      "dateAdded": "2026-03-15",
+      "reviewCount": 0,
+      "nextReview": "2026-03-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "board",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "登（飛機/船）、搭乘",
+      "exampleSentence": "Passengers, please board the plane from gate 12.",
+      "dateAdded": "2026-03-15",
+      "reviewCount": 0,
+      "nextReview": "2026-03-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "explore",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "探索、探查",
+      "exampleSentence": "I love to explore new cities on foot.",
+      "dateAdded": "2026-03-15",
+      "reviewCount": 0,
+      "nextReview": "2026-03-16",
+      "lastReviewedDate": null
     }
   ]
 }
