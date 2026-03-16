@@ -6,9 +6,9 @@
       "chineseMeaning": "令人緊張的、有壓力的",
       "exampleSentence": "Moving to a new city can be stressful.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 1,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 0,
+      "nextReview": "2026-03-17",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "check-in",
@@ -16,9 +16,9 @@
       "chineseMeaning": "辦理登機手續",
       "exampleSentence": "The check-in counter opens two hours before the flight.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 1,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 2,
+      "nextReview": "2026-03-23",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "passport",
@@ -26,9 +26,9 @@
       "chineseMeaning": "護照",
       "exampleSentence": "Don't forget your passport when you travel abroad.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 1,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 2,
+      "nextReview": "2026-03-23",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "luggage",
@@ -36,9 +36,9 @@
       "chineseMeaning": "行李",
       "exampleSentence": "I only have one bag of luggage for my trip.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 1,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 2,
+      "nextReview": "2026-03-23",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "security",
@@ -46,9 +46,9 @@
       "chineseMeaning": "安全檢查、安檢",
       "exampleSentence": "Please remove your shoes at security.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 1,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 2,
+      "nextReview": "2026-03-23",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "gate",
@@ -56,9 +56,9 @@
       "chineseMeaning": "登機門",
       "exampleSentence": "Our flight departs from gate 12.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 1,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 2,
+      "nextReview": "2026-03-23",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "departure",
@@ -66,9 +66,9 @@
       "chineseMeaning": "出發、離境",
       "exampleSentence": "Check the departure board for your flight number.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 1,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 2,
+      "nextReview": "2026-03-23",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "boarding pass",
@@ -76,9 +76,9 @@
       "chineseMeaning": "登機證",
       "exampleSentence": "You can download your boarding pass on your phone.",
       "dateAdded": "2026-03-10",
-      "reviewCount": 1,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 2,
+      "nextReview": "2026-03-23",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "routine",
@@ -86,9 +86,9 @@
       "chineseMeaning": "日常慣例",
       "exampleSentence": "I try to keep a healthy morning routine.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 2,
-      "nextReview": "2026-03-19",
-      "lastReviewedDate": "2026-03-12"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "commute",
@@ -96,9 +96,9 @@
       "chineseMeaning": "通勤時間、通勤",
       "exampleSentence": "My commute to work takes forty minutes.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 2,
-      "nextReview": "2026-03-19",
-      "lastReviewedDate": "2026-03-12"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "errand",
@@ -106,9 +106,9 @@
       "chineseMeaning": "差事、雜事",
       "exampleSentence": "I need to run a few errands after lunch.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 2,
-      "nextReview": "2026-03-19",
-      "lastReviewedDate": "2026-03-12"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "grocery",
@@ -116,9 +116,9 @@
       "chineseMeaning": "食品雜貨",
       "exampleSentence": "We need to buy some groceries for the week.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 2,
-      "nextReview": "2026-03-19",
-      "lastReviewedDate": "2026-03-12"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "budget",
@@ -126,9 +126,9 @@
       "chineseMeaning": "預算",
       "exampleSentence": "We have a tight budget this month.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 2,
-      "nextReview": "2026-03-19",
-      "lastReviewedDate": "2026-03-12"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "efficient",
@@ -136,9 +136,9 @@
       "chineseMeaning": "有效率的",
       "exampleSentence": "She is very efficient and always finishes her work on time.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 2,
-      "nextReview": "2026-03-19",
-      "lastReviewedDate": "2026-03-12"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "neighborhood",
@@ -146,9 +146,9 @@
       "chineseMeaning": "鄰里、社區",
       "exampleSentence": "I love my neighborhood because everyone is friendly.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 2,
-      "nextReview": "2026-03-19",
-      "lastReviewedDate": "2026-03-12"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "leftovers",
@@ -156,9 +156,9 @@
       "chineseMeaning": "剩菜、剩飯",
       "exampleSentence": "We can have the leftovers for lunch tomorrow.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 2,
-      "nextReview": "2026-03-19",
-      "lastReviewedDate": "2026-03-12"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "receptionist",
@@ -166,9 +166,9 @@
       "chineseMeaning": "接待員",
       "exampleSentence": "The receptionist gave us the room keys.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 2,
-      "nextReview": "2026-03-21",
-      "lastReviewedDate": "2026-03-14"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "reservation",
@@ -176,9 +176,9 @@
       "chineseMeaning": "訂房、預訂",
       "exampleSentence": "I made a reservation online yesterday.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 2,
-      "nextReview": "2026-03-21",
-      "lastReviewedDate": "2026-03-14"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "rooftop",
@@ -186,9 +186,9 @@
       "chineseMeaning": "頂樓、屋頂",
       "exampleSentence": "The hotel has a rooftop pool with a great view.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 2,
-      "nextReview": "2026-03-21",
-      "lastReviewedDate": "2026-03-14"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "elevator",
@@ -196,9 +196,9 @@
       "chineseMeaning": "電梯",
       "exampleSentence": "Take the elevator to the third floor.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 2,
-      "nextReview": "2026-03-21",
-      "lastReviewedDate": "2026-03-14"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "curtain",
@@ -206,9 +206,9 @@
       "chineseMeaning": "窗簾",
       "exampleSentence": "Please close the curtains before going to sleep.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 2,
-      "nextReview": "2026-03-21",
-      "lastReviewedDate": "2026-03-14"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "exhausted",
@@ -216,9 +216,9 @@
       "chineseMeaning": "筋疲力盡的",
       "exampleSentence": "I was exhausted after the long flight.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 2,
-      "nextReview": "2026-03-21",
-      "lastReviewedDate": "2026-03-14"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "room service",
@@ -226,9 +226,9 @@
       "chineseMeaning": "客房服務",
       "exampleSentence": "We ordered room service because we were too tired to go out.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 2,
-      "nextReview": "2026-03-21",
-      "lastReviewedDate": "2026-03-14"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "tray",
@@ -236,9 +236,9 @@
       "chineseMeaning": "托盤",
       "exampleSentence": "The waiter brought the food on a tray.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 2,
-      "nextReview": "2026-03-21",
-      "lastReviewedDate": "2026-03-14"
+      "reviewCount": 3,
+      "nextReview": "2026-03-30",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "laundry",
@@ -246,9 +246,9 @@
       "chineseMeaning": "洗衣、待洗衣物",
       "exampleSentence": "I need to do the laundry before the weekend.",
       "dateAdded": "2026-03-13",
-      "reviewCount": 0,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-03-19",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "ingredient",
@@ -256,9 +256,9 @@
       "chineseMeaning": "食材、原料",
       "exampleSentence": "Fresh ingredients make the dish taste better.",
       "dateAdded": "2026-03-13",
-      "reviewCount": 0,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-03-19",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "landlord",
@@ -266,9 +266,9 @@
       "chineseMeaning": "房東",
       "exampleSentence": "My landlord fixed the broken window last week.",
       "dateAdded": "2026-03-13",
-      "reviewCount": 0,
-      "nextReview": "2026-03-14",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-03-19",
+      "lastReviewedDate": "2026-03-16"
     },
     {
       "word": "pack",
