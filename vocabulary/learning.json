@@ -329,6 +329,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-17",
       "lastReviewedDate": null
+    },
+    {
+      "word": "landmark",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地標、著名景點",
+      "exampleSentence": "The Eiffel Tower is one of the most famous landmarks in the world.",
+      "dateAdded": "2026-03-17",
+      "reviewCount": 0,
+      "nextReview": "2026-03-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "souvenir",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "紀念品",
+      "exampleSentence": "I bought a souvenir magnet for my sister.",
+      "dateAdded": "2026-03-17",
+      "reviewCount": 0,
+      "nextReview": "2026-03-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "guide",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "嚮導、指南；帶領",
+      "exampleSentence": "A local guide showed us around the old part of the city.",
+      "dateAdded": "2026-03-17",
+      "reviewCount": 0,
+      "nextReview": "2026-03-18",
+      "lastReviewedDate": null
     }
   ]
 }
