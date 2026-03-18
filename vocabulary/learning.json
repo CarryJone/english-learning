@@ -359,6 +359,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-18",
       "lastReviewedDate": null
+    },
+    {
+      "word": "alarm",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鬧鐘",
+      "exampleSentence": "My alarm goes off at seven every morning.",
+      "dateAdded": "2026-03-18",
+      "reviewCount": 0,
+      "nextReview": "2026-03-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "stretch",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "伸展身體",
+      "exampleSentence": "I stretch for ten minutes every morning to wake up my body.",
+      "dateAdded": "2026-03-18",
+      "reviewCount": 0,
+      "nextReview": "2026-03-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "prefer",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "更喜歡、偏好",
+      "exampleSentence": "I prefer to wake up early and enjoy a quiet morning.",
+      "dateAdded": "2026-03-18",
+      "reviewCount": 0,
+      "nextReview": "2026-03-19",
+      "lastReviewedDate": null
     }
   ]
 }
