@@ -389,6 +389,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-19",
       "lastReviewedDate": null
+    },
+    {
+      "word": "itinerary",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "行程表",
+      "exampleSentence": "I always check my itinerary the night before a trip.",
+      "dateAdded": "2026-03-19",
+      "reviewCount": 0,
+      "nextReview": "2026-03-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "currency",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "貨幣、外幣",
+      "exampleSentence": "You can exchange currency at the airport or at a local bank.",
+      "dateAdded": "2026-03-19",
+      "reviewCount": 0,
+      "nextReview": "2026-03-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "customs",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "海關",
+      "exampleSentence": "Please declare any food items when you go through customs.",
+      "dateAdded": "2026-03-19",
+      "reviewCount": 0,
+      "nextReview": "2026-03-20",
+      "lastReviewedDate": null
     }
   ]
 }
