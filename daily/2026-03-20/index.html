@@ -147,6 +147,24 @@
     #rq-result.success { background: #f0fdf4; border: 1.5px solid #bbf7d0; color: #166534; }
     #rq-result.partial { background: #fffbeb; border: 1.5px solid #fde68a; color: #92400e; }
 
+    /* Speaking Bridge */
+    .bridge-subtitle { font-family: sans-serif; font-size: .88rem; color: var(--muted); margin-bottom: 1.3rem; line-height: 1.6; }
+    .bridge-item { border: 1.5px solid var(--border); border-radius: 14px; padding: 1.2rem 1.3rem; margin-bottom: 1.1rem; }
+    .bridge-item:last-child { margin-bottom: 0; }
+    .bridge-word-header { display: flex; align-items: center; gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .bridge-word { font-size: 1.05rem; font-weight: 700; font-family: 'Georgia', serif; }
+    .bridge-day-badge { margin-left: auto; font-family: sans-serif; font-size: .72rem; font-weight: 700; padding: .15rem .55rem; border-radius: 99px; background: #fef3c7; color: #92400e; }
+    .bridge-level { margin-bottom: .85rem; padding-bottom: .85rem; border-bottom: 1px dashed var(--border); }
+    .bridge-level:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .bridge-level-label { font-family: sans-serif; font-size: .7rem; font-weight: 700; color: var(--accent); letter-spacing: .06em; text-transform: uppercase; margin-bottom: .45rem; }
+    .bridge-sentence { font-size: .95rem; line-height: 1.75; margin-bottom: .5rem; }
+    .bridge-blank { font-weight: 700; color: #9ca3af; letter-spacing: .12em; }
+    .bridge-zh-prompt { font-family: sans-serif; font-size: .9rem; color: #166534; background: #f0fdf4; padding: .4rem .75rem; border-radius: 8px; margin-bottom: .5rem; line-height: 1.65; }
+    .bridge-scramble { font-family: sans-serif; font-size: .86rem; color: var(--muted); background: #f3f4f6; padding: .45rem .8rem; border-radius: 8px; margin-bottom: .5rem; line-height: 1.85; word-break: break-word; }
+    .bridge-reveal-btn { padding: .38rem 1rem; border: 1.5px solid var(--accent); color: var(--accent); background: white; border-radius: 8px; font-family: sans-serif; font-size: .82rem; font-weight: 600; cursor: pointer; transition: all .15s; }
+    .bridge-reveal-btn:hover { background: var(--accent); color: white; }
+    .bridge-answer { margin-top: .5rem; padding: .5rem .85rem; background: var(--tag-bg); border-radius: 8px; font-size: .9rem; font-weight: 600; color: var(--accent); font-family: sans-serif; line-height: 1.6; }
+
     @media (max-width: 500px) {
       .card { padding: 1.4rem 1.2rem; }
       .player-card { padding: 1.3rem 1.2rem; }
@@ -383,6 +401,119 @@
 
     <div id="rq-result" style="display:none"></div>
     <button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 同步 SRS 記錄</button>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🌉 Speaking Bridge</div>
+    <p class="bridge-subtitle">用 2–7 天前學的單字練習開口<br>短期記憶已淡，這才是真正的記憶測試 💪</p>
+
+    <!-- alarm：2 天前 (2026-03-18) -->
+    <div class="bridge-item">
+      <div class="bridge-word-header">
+        <span class="bridge-word">alarm</span>
+        <span class="pos-badge">n.</span>
+        <span class="bridge-day-badge">2 天前</span>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.1 填空</div>
+        <div class="bridge-sentence">My <span class="bridge-blank">____</span> goes off at seven every morning.</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <div class="bridge-answer" style="display:none">alarm</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.2 中翻英</div>
+        <div class="bridge-zh-prompt">「我每天早上七點鬧鐘會響。」先試著說出英文，再點顯示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+        <div class="bridge-answer" style="display:none">My alarm goes off at seven every morning.</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.3 重組句子</div>
+        <div class="bridge-scramble">goes / My / seven / at / alarm / every / off / morning</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <div class="bridge-answer" style="display:none">My alarm goes off at seven every morning.</div>
+      </div>
+    </div>
+
+    <!-- stretch：2 天前 (2026-03-18) -->
+    <div class="bridge-item">
+      <div class="bridge-word-header">
+        <span class="bridge-word">stretch</span>
+        <span class="pos-badge">v.</span>
+        <span class="bridge-day-badge">2 天前</span>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.1 填空</div>
+        <div class="bridge-sentence">I <span class="bridge-blank">____</span> for ten minutes every morning to wake up my body.</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <div class="bridge-answer" style="display:none">stretch</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.2 中翻英</div>
+        <div class="bridge-zh-prompt">「我每天早上做十分鐘伸展讓身體清醒。」先試著說出英文，再點顯示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+        <div class="bridge-answer" style="display:none">I stretch for ten minutes every morning to wake up my body.</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.3 重組句子</div>
+        <div class="bridge-scramble">for / I / every / to / up / stretch / ten / my / morning / wake / minutes / body</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <div class="bridge-answer" style="display:none">I stretch for ten minutes every morning to wake up my body.</div>
+      </div>
+    </div>
+
+    <!-- prefer：2 天前 (2026-03-18) -->
+    <div class="bridge-item">
+      <div class="bridge-word-header">
+        <span class="bridge-word">prefer</span>
+        <span class="pos-badge">v.</span>
+        <span class="bridge-day-badge">2 天前</span>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.1 填空</div>
+        <div class="bridge-sentence">I <span class="bridge-blank">____</span> to wake up early and enjoy a quiet morning.</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <div class="bridge-answer" style="display:none">prefer</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.2 中翻英</div>
+        <div class="bridge-zh-prompt">「我比較喜歡早起，享受安靜的早晨。」先試著說出英文，再點顯示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+        <div class="bridge-answer" style="display:none">I prefer to wake up early and enjoy a quiet morning.</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.3 重組句子</div>
+        <div class="bridge-scramble">I / up / and / to / a / prefer / enjoy / early / morning / wake / quiet</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <div class="bridge-answer" style="display:none">I prefer to wake up early and enjoy a quiet morning.</div>
+      </div>
+    </div>
+
+    <!-- laundry：7 天前 (2026-03-13) -->
+    <div class="bridge-item">
+      <div class="bridge-word-header">
+        <span class="bridge-word">laundry</span>
+        <span class="pos-badge">n.</span>
+        <span class="bridge-day-badge">7 天前</span>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.1 填空</div>
+        <div class="bridge-sentence">I need to do the <span class="bridge-blank">____</span> before the weekend.</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <div class="bridge-answer" style="display:none">laundry</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.2 中翻英</div>
+        <div class="bridge-zh-prompt">「我需要在週末前洗衣服。」先試著說出英文，再點顯示。</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+        <div class="bridge-answer" style="display:none">I need to do the laundry before the weekend.</div>
+      </div>
+      <div class="bridge-level">
+        <div class="bridge-level-label">Lv.3 重組句子</div>
+        <div class="bridge-scramble">the / to / before / I / weekend / do / need / laundry / the</div>
+        <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
+        <div class="bridge-answer" style="display:none">I need to do the laundry before the weekend.</div>
+      </div>
+    </div>
   </div>
 
   <div class="card">
@@ -704,6 +835,18 @@
       if (!popup.contains(e.target) && !e.target.closest('.vocab-word,.review-word,.phrase-chunk')) closePopup();
     });
   });
+
+  // Speaking Bridge reveal toggle
+  function bridgeReveal(btn) {
+    const ans = btn.nextElementSibling;
+    if (ans.style.display === 'block') {
+      ans.style.display = 'none';
+      btn.textContent = btn.textContent.replace('隱藏', '顯示');
+    } else {
+      ans.style.display = 'block';
+      btn.textContent = btn.textContent.replace('顯示', '隱藏');
+    }
+  }
 </script>
 </body>
 </html>
