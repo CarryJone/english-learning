@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily English · 2026-03-20</title>
+  <style>
+    :root {
+      --bg: #f5f4ef; --card: #ffffff; --accent: #4f7cff; --accent2: #f0a500;
+      --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
+      --green: #22c55e; --red: #ef4444;
+      --tag-bg: #eef2ff; --tag-text: #4f7cff; --highlight: #fffbeb;
+      --phrase-bg: #f0fdf4; --phrase-border: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
+    .container { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+
+    /* Header */
+    .header { text-align: center; padding: 2rem 1.5rem 1.5rem; background: var(--card); border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .date-badge { display: inline-block; background: var(--tag-bg); color: var(--tag-text); font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 99px; margin-bottom: .9rem; }
+    .header h1 { font-size: 1.6rem; font-weight: 700; line-height: 1.3; }
+    .header h1 span { color: var(--accent); }
+    .header .subtitle { margin-top: .4rem; font-size: .9rem; color: var(--muted); font-family: sans-serif; }
+
+    /* Card */
+    .card { background: var(--card); border-radius: 20px; padding: 1.8rem 2rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .card-title { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; display: flex; align-items: center; gap: .5rem; }
+    .card-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    /* Player */
+    .player-card { background: linear-gradient(135deg, #4f7cff 0%, #7c5cfc 100%); color: white; border-radius: 20px; padding: 1.6rem 2rem; box-shadow: 0 4px 20px rgba(79,124,255,.3); }
+    .player-label { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: .6rem; }
+    .player-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.2rem; }
+    audio { width: 100%; height: 40px; border-radius: 99px; }
+
+    /* Article */
+    .article-body { font-size: 1.05rem; line-height: 1.9; }
+    .article-body p { margin-bottom: 1.1rem; }
+    .article-body p:last-child { margin-bottom: 0; }
+    .vocab-word { background: var(--highlight); border-bottom: 2px solid var(--accent2); padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; transition: background .15s; }
+    .vocab-word:hover { background: #fef3c7; }
+    .phrase-chunk { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); padding: 0 2px; border-radius: 2px; cursor: pointer; transition: background .15s; }
+    .phrase-chunk:hover { background: #dcfce7; }
+    .review-word { background: #f3e8ff; border-bottom: 2px solid #a855f7; padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; transition: background .15s; }
+    .review-word:hover { background: #ede9fe; }
+
+    /* Sentence playback */
+    .sent { display: inline; }
+    .sent-btn { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: none; border: 1.5px solid #c7d2fe; color: var(--accent); cursor: pointer; font-size: .55rem; vertical-align: middle; margin: 0 3px 0 0; flex-shrink: 0; transition: all .15s; padding: 0; line-height: 1; }
+    .sent-btn:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .sent-btn.playing { background: var(--accent); border-color: var(--accent); color: white; }
+
+    /* Popup */
+    #word-popup { position: fixed; z-index: 9999; max-width: 300px; min-width: 220px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,.18); padding: 1.1rem 1.2rem 1rem; display: none; font-family: sans-serif; animation: popIn .15s ease; border: 1px solid var(--border); }
+    @keyframes popIn { from { opacity:0; transform:translateY(6px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
+    #word-popup .pop-word { font-size: 1.1rem; font-weight: 700; margin-bottom: .25rem; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+    #word-popup .pop-badge { font-size: .7rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; background: var(--tag-bg); color: var(--tag-text); white-space: nowrap; }
+    #word-popup .pop-badge.vocab { background: #fffbeb; color: #92400e; }
+    #word-popup .pop-badge.phrase { background: #f0fdf4; color: #166534; }
+    #word-popup .pop-badge.review { background: #f3e8ff; color: #7e22ce; }
+    #word-popup .pop-note { font-size: .82rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-def { font-size: .85rem; color: var(--muted); line-height: 1.5; margin-top: .2rem; }
+    #word-popup .pop-example { font-size: .82rem; color: var(--muted); font-style: italic; margin-top: .4rem; padding-top: .4rem; border-top: 1px solid var(--border); line-height: 1.5; }
+    #word-popup .pop-loading { font-size: .85rem; color: var(--muted); display: flex; align-items: center; gap: .4rem; margin-top: .3rem; }
+    #word-popup .pop-loading::before { content:''; width:12px; height:12px; border:2px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin .6s linear infinite; flex-shrink:0; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    #word-popup .pop-close { position:absolute; top:.5rem; right:.6rem; width:20px; height:20px; background:#f3f4f6; border:none; border-radius:50%; cursor:pointer; font-size:.7rem; color:var(--muted); display:flex; align-items:center; justify-content:center; }
+    #word-popup .pop-close:hover { background:var(--border); }
+    #word-popup .pop-type-badge { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:4px; background:#eff6ff; color:#1d4ed8; margin:.2rem 0 .35rem; }
+    #word-popup .pop-zh-btn { margin-top:.6rem; padding:.35rem .85rem; background:var(--tag-bg); color:var(--accent); border:1.5px solid var(--accent); border-radius:8px; font-size:.82rem; font-weight:600; cursor:pointer; font-family:sans-serif; transition:all .15s; display:block; width:100%; text-align:center; }
+    #word-popup .pop-zh-btn:hover { background:var(--accent); color:white; }
+    #word-popup .pop-zh { font-size:.95rem; font-weight:700; margin-top:.5rem; color:#166534; padding:.4rem .6rem; background:#f0fdf4; border-radius:6px; }
+
+    /* Review tags */
+    .review-tag { display:inline-block; font-size:.7rem; font-weight:700; padding:.15rem .5rem; border-radius:99px; white-space:nowrap; }
+    .review-tag.today { background:#fef3c7; color:#92400e; }
+    .review-tag.overdue { background:#fef2f2; color:#991b1b; }
+    .review-tag.upcoming { background:#f0fdf4; color:#166534; }
+
+    /* Vocab table */
+    .vocab-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: .88rem; }
+    .vocab-table thead tr { background: var(--tag-bg); }
+    .vocab-table th { text-align: left; padding: .6rem .9rem; font-weight: 700; color: var(--tag-text); font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+    .vocab-table td { padding: .7rem .9rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+    .vocab-table tr:last-child td { border-bottom: none; }
+    .vocab-table tr:hover td { background: #fafafa; }
+    .pos-badge { display:inline-block; background:#f3f4f6; color:var(--muted); font-size:.72rem; padding:.15rem .5rem; border-radius:4px; font-weight:600; }
+    .zh-meaning { font-weight: 600; }
+    .example-sent { color: var(--muted); font-style: italic; margin-top: .15rem; font-size: .83rem; }
+
+    /* Phrase list */
+    .phrase-list { display: flex; flex-direction: column; gap: .85rem; }
+    .phrase-item { padding: .8rem 1rem; background: var(--phrase-bg); border-left: 3px solid var(--phrase-border); border-radius: 0 10px 10px 0; }
+    .phrase-item .ph-text { font-weight: 700; font-size: .95rem; font-family: sans-serif; }
+    .phrase-item .ph-type { font-size: .72rem; font-weight: 700; padding: .12rem .45rem; border-radius: 4px; background: #eff6ff; color: #1d4ed8; margin-left: .4rem; }
+    .phrase-item .ph-zh { font-size: .88rem; color: #166534; margin-top: .2rem; }
+    .phrase-item .ph-note { font-size: .82rem; color: var(--muted); margin-top: .25rem; font-style: italic; }
+
+    /* Quiz */
+    .quiz-q { margin-bottom: 1.6rem; }
+    .quiz-q:last-child { margin-bottom: 0; }
+    .quiz-question { font-size: 1rem; font-weight: 600; margin-bottom: .75rem; line-height: 1.5; }
+    .quiz-options { display: flex; flex-direction: column; gap: .45rem; }
+    .quiz-option { display: flex; align-items: center; gap: .7rem; padding: .65rem 1rem; border: 1.5px solid var(--border); border-radius: 10px; cursor: pointer; font-family: sans-serif; font-size: .9rem; transition: all .15s; background: white; }
+    .quiz-option:hover { border-color: var(--accent); background: var(--tag-bg); }
+    .quiz-option.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 600; }
+    .quiz-option.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; }
+    .opt-key { width:24px; height:24px; border-radius:6px; background:var(--tag-bg); color:var(--accent); font-weight:700; font-size:.8rem; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:all .15s; }
+    .quiz-option.correct .opt-key { background: var(--green); color: white; }
+    .quiz-option.wrong .opt-key { background: var(--red); color: white; }
+    .answers-btn { margin-top: 1.2rem; padding: .65rem 1.4rem; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: sans-serif; font-size: .88rem; font-weight: 600; cursor: pointer; }
+    .answers-btn:hover { background: #3a66e0; }
+    .answers-reveal { display: none; margin-top: 1rem; padding: .9rem 1.1rem; background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 10px; font-family: sans-serif; font-size: .9rem; color: #166534; font-weight: 600; }
+
+    /* Tips */
+    .tips-box { background: var(--highlight); border-left: 4px solid var(--accent2); border-radius: 0 12px 12px 0; padding: 1rem 1.2rem; font-family: sans-serif; font-size: .92rem; line-height: 1.7; color: #78350f; }
+
+    /* Review */
+    .review-msg { font-family: sans-serif; font-size: .95rem; color: var(--muted); text-align: center; padding: 1rem 0; }
+
+    /* Legend */
+    .legend { display: flex; gap: 1rem; font-family: sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: 1rem; flex-wrap: wrap; }
+    .legend-item { display: flex; align-items: center; gap: .35rem; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+    .legend-dot.vocab { background: #fef3c7; border-bottom: 2px solid var(--accent2); }
+    .legend-dot.review { background: #f3e8ff; border-bottom: 2px solid #a855f7; }
+    .legend-dot.phrase { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+
+    /* Active Recall Quiz */
+    .rq-subtitle { font-family: sans-serif; font-size: .88rem; color: var(--muted); margin-bottom: 1.3rem; }
+    .rq-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    .rq-item:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+    .rq-zh { font-size: 1rem; font-weight: 700; margin-bottom: .6rem; }
+    .rq-pos { font-size: .75rem; font-weight: 400; color: var(--muted); font-family: sans-serif; margin-left: .3rem; }
+    .rq-hint { font-size: .85rem; color: var(--muted); font-style: italic; margin-bottom: .6rem; line-height: 1.5; }
+    .rq-opts { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; }
+    .rq-opt { padding: .6rem .8rem; border: 1.5px solid var(--border); border-radius: 10px; background: white; cursor: pointer; font-family: 'Georgia', serif; font-size: .88rem; transition: all .15s; text-align: left; }
+    .rq-opt:hover:not([disabled]) { border-color: var(--accent); background: var(--tag-bg); }
+    .rq-opt.selected { border-color: var(--accent); background: var(--tag-bg); font-weight: 700; }
+    .rq-opt.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 700; }
+    .rq-opt.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; font-weight: 700; }
+    #rq-submit-btn { margin-top: 1.4rem; padding: .75rem 1.4rem; background: var(--accent); color: white; border: none; border-radius: 10px; font-family: sans-serif; font-size: .92rem; font-weight: 700; cursor: pointer; width: 100%; transition: background .15s; }
+    #rq-submit-btn:hover:not([disabled]) { background: #3a66e0; }
+    #rq-submit-btn:disabled { background: var(--muted); cursor: default; }
+    #rq-result { margin-top: 1rem; padding: 1rem 1.2rem; border-radius: 10px; font-family: sans-serif; font-size: .9rem; line-height: 1.7; }
+    #rq-result.success { background: #f0fdf4; border: 1.5px solid #bbf7d0; color: #166534; }
+    #rq-result.partial { background: #fffbeb; border: 1.5px solid #fde68a; color: #92400e; }
+
+    @media (max-width: 500px) {
+      .card { padding: 1.4rem 1.2rem; }
+      .player-card { padding: 1.3rem 1.2rem; }
+      .header h1 { font-size: 1.3rem; }
+      .rq-opts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="date-badge">March 20, 2026 · Day 10</div>
+    <h1>A Quiet <span>Morning</span> at Home</h1>
+    <p class="subtitle">A2 → B1 · Daily English Reading</p>
+  </div>
+
+  <div class="player-card">
+    <div class="player-label">🎧 Listen to the Article</div>
+    <div class="player-title">A Quiet Morning at Home</div>
+    <audio controls>
+      <source src="article.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <div id="word-popup">
+    <button class="pop-close" onclick="closePopup()">✕</button>
+    <div id="pop-content"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📖 Today's Article</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot vocab"></div>今日單字</div>
+      <div class="legend-item"><div class="legend-dot review"></div>複習單字</div>
+      <div class="legend-item"><div class="legend-dot phrase"></div>重要片語</div>
+      <div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 點擊播放單句</div>
+    </div>
+    <div class="article-body" id="article-body">
+      <p>
+        <span class="sent" data-idx="1" data-text="I wake up when my alarm goes off at seven."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I wake up when my <span class="review-word" data-word="alarm">alarm</span> <span class="phrase-chunk" data-phrase="go off">goes off</span> at seven.</span>
+        <span class="sent" data-idx="2" data-text="I stretch my arms and legs in bed."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I <span class="review-word" data-word="stretch">stretch</span> my arms and legs in bed.</span>
+        <span class="sent" data-idx="3" data-text="Then I yawn and sit up slowly."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Then I <span class="vocab-word" data-word="yawn">yawn</span> and <span class="phrase-chunk" data-phrase="sit up">sit up</span> slowly.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="4" data-text="I go to the kitchen and make some tea."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I go to the kitchen and <span class="phrase-chunk" data-phrase="make tea">make some tea</span>.</span>
+        <span class="sent" data-idx="5" data-text="I prefer tea to coffee in the morning."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I <span class="review-word" data-word="prefer">prefer</span> tea to coffee in the morning.</span>
+        <span class="sent" data-idx="6" data-text="I sit by the window and drink my tea slowly."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I sit by the window and drink my tea slowly.</span>
+        <span class="sent" data-idx="7" data-text="The morning is quiet and calm."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The morning is quiet and calm.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="8" data-text="I look outside and see the sky."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I look outside and see the sky.</span>
+        <span class="sent" data-idx="9" data-text="The sun is coming up."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The sun is <span class="phrase-chunk" data-phrase="come up">coming up</span>.</span>
+        <span class="sent" data-idx="10" data-text="After tea, I go back to my room."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>After tea, I go back to my room.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="11" data-text="I tidy my desk and put things away."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I <span class="vocab-word" data-word="tidy">tidy</span> my desk and <span class="phrase-chunk" data-phrase="put away">put things away</span>.</span>
+        <span class="sent" data-idx="12" data-text="I put my books and pens in the right place."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I put my books and pens <span class="phrase-chunk" data-phrase="in the right place">in the right place</span>.</span>
+        <span class="sent" data-idx="13" data-text="Then I have a small snack before I start work."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Then I have a small <span class="vocab-word" data-word="snack">snack</span> before I <span class="phrase-chunk" data-phrase="start work">start work</span>.</span>
+        <span class="sent" data-idx="14" data-text="I like this quiet morning time."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>I like this quiet morning time.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📚 New Words Today</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>yawn</strong></td>
+          <td><span class="pos-badge">v.</span></td>
+          <td><div class="zh-meaning">打哈欠</div><div class="example-sent">I always yawn when I wake up.</div></td>
+        </tr>
+        <tr>
+          <td><strong>tidy</strong></td>
+          <td><span class="pos-badge">v./adj.</span></td>
+          <td><div class="zh-meaning">整理；整齊的</div><div class="example-sent">I tidy my room every morning.</div></td>
+        </tr>
+        <tr>
+          <td><strong>snack</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">點心、零食</div><div class="example-sent">I have a small snack in the afternoon.</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔗 Key Phrases</div>
+    <div class="phrase-list">
+      <div class="phrase-item">
+        <div class="ph-text">go off <span class="ph-type">Phrasal Verb</span></div>
+        <div class="ph-zh">（鬧鐘）響起</div>
+        <div class="ph-note">文章用法：my alarm goes off at seven → 鬧鐘七點響起</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">sit up <span class="ph-type">Phrasal Verb</span></div>
+        <div class="ph-zh">坐起來</div>
+        <div class="ph-note">文章用法：sit up slowly → 慢慢坐起來</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">come up <span class="ph-type">Phrasal Verb</span></div>
+        <div class="ph-zh">升起（太陽）</div>
+        <div class="ph-note">文章用法：the sun is coming up → 太陽正在升起</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">put away <span class="ph-type">Phrasal Verb</span></div>
+        <div class="ph-zh">把東西收好、放回原位</div>
+        <div class="ph-note">文章用法：put things away → 把東西收好</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">make tea <span class="ph-type">Collocation</span></div>
+        <div class="ph-zh">泡茶</div>
+        <div class="ph-note">文章用法：make some tea → 泡一杯茶</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">start work <span class="ph-type">Collocation</span></div>
+        <div class="ph-zh">開始工作</div>
+        <div class="ph-note">文章用法：before I start work → 在我開始工作之前</div>
+      </div>
+      <div class="phrase-item">
+        <div class="ph-text">in the right place <span class="ph-type">Fixed Expression</span></div>
+        <div class="ph-zh">在正確的位置、放好</div>
+        <div class="ph-note">文章用法：put books in the right place → 把書放在正確的地方</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">✏️ Quiz</div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q1. What does the writer drink in the morning?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span> Coffee</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span> Juice</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">C</span> Tea</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span> Water</div>
+      </div>
+    </div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q2. What does "yawn" mean?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span> 伸展</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span> 打哈欠</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span> 整理</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span> 泡茶</div>
+      </div>
+    </div>
+    <div class="quiz-q">
+      <div class="quiz-question">Q3. You just woke up and want to get ready for the day. What do you do?</div>
+      <div class="quiz-options">
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span> I go to work right away.</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span> I have a big meal first.</div>
+        <div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">C</span> I stretch and sit up slowly.</div>
+        <div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span> I tidy the whole house.</div>
+      </div>
+    </div>
+    <button class="answers-btn" onclick="toggleAnswers()">顯示答案</button>
+    <div class="answers-reveal" id="answers-reveal">
+      ✅ &nbsp;Q1: <strong>C – Tea</strong> &nbsp;｜&nbsp; Q2: <strong>B – 打哈欠</strong> &nbsp;｜&nbsp; Q3: <strong>C – I stretch and sit up slowly.</strong>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🧠 Active Recall Quiz</div>
+    <p class="rq-subtitle">看中文意思，選出正確的英文單字</p>
+
+    <div class="rq-item" data-word="alarm" data-correct="alarm">
+      <div class="rq-zh">鬧鐘 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">My ____ goes off at seven every morning.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="curtain" onclick="rqSelect(this)">curtain</button>
+        <button class="rq-opt" data-val="alarm" onclick="rqSelect(this)">alarm</button>
+        <button class="rq-opt" data-val="routine" onclick="rqSelect(this)">routine</button>
+        <button class="rq-opt" data-val="tray" onclick="rqSelect(this)">tray</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="stretch" data-correct="stretch">
+      <div class="rq-zh">伸展身體 <span class="rq-pos">v.</span></div>
+      <div class="rq-hint">I ____ for ten minutes every morning to wake up my body.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="organize" onclick="rqSelect(this)">organize</button>
+        <button class="rq-opt" data-val="prefer" onclick="rqSelect(this)">prefer</button>
+        <button class="rq-opt" data-val="stretch" onclick="rqSelect(this)">stretch</button>
+        <button class="rq-opt" data-val="explore" onclick="rqSelect(this)">explore</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="prefer" data-correct="prefer">
+      <div class="rq-zh">更喜歡、偏好 <span class="rq-pos">v.</span></div>
+      <div class="rq-hint">I ____ to wake up early and enjoy a quiet morning.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="explore" onclick="rqSelect(this)">explore</button>
+        <button class="rq-opt" data-val="prefer" onclick="rqSelect(this)">prefer</button>
+        <button class="rq-opt" data-val="board" onclick="rqSelect(this)">board</button>
+        <button class="rq-opt" data-val="pack" onclick="rqSelect(this)">pack</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="itinerary" data-correct="itinerary">
+      <div class="rq-zh">行程表 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">I always check my ____ the night before a trip.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="schedule" onclick="rqSelect(this)">schedule</button>
+        <button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button>
+        <button class="rq-opt" data-val="itinerary" onclick="rqSelect(this)">itinerary</button>
+        <button class="rq-opt" data-val="reservation" onclick="rqSelect(this)">reservation</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="currency" data-correct="currency">
+      <div class="rq-zh">貨幣、外幣 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">You can exchange ____ at the airport or at a local bank.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="souvenir" onclick="rqSelect(this)">souvenir</button>
+        <button class="rq-opt" data-val="currency" onclick="rqSelect(this)">currency</button>
+        <button class="rq-opt" data-val="luggage" onclick="rqSelect(this)">luggage</button>
+        <button class="rq-opt" data-val="budget" onclick="rqSelect(this)">budget</button>
+      </div>
+    </div>
+
+    <div class="rq-item" data-word="customs" data-correct="customs">
+      <div class="rq-zh">海關 <span class="rq-pos">n.</span></div>
+      <div class="rq-hint">Please declare any food items when you go through ____.</div>
+      <div class="rq-opts">
+        <button class="rq-opt" data-val="gate" onclick="rqSelect(this)">gate</button>
+        <button class="rq-opt" data-val="security" onclick="rqSelect(this)">security</button>
+        <button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button>
+        <button class="rq-opt" data-val="customs" onclick="rqSelect(this)">customs</button>
+      </div>
+    </div>
+
+    <div id="rq-result" style="display:none"></div>
+    <button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 同步 SRS 記錄</button>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💡 Learning Tips</div>
+    <div class="tips-box">
+      動詞片語「go off」很常用，特別是形容鬧鐘響起。下次鬧鐘響的時候，試著在心裡說：「My alarm is going off!」這樣練習，片語自然就記住了。<br><br>
+      「tidy」和「clean」意思不同：tidy 是把東西整理好、放回原位；clean 是清潔、去除髒污。「I tidy my desk.」是整理桌子，「I clean my desk.」是擦乾淨桌子。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔁 Review Words</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th><th>狀態</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>alarm</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">鬧鐘</div><div class="example-sent">My alarm goes off at seven every morning.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>stretch</strong></td>
+          <td><span class="pos-badge">v.</span></td>
+          <td><div class="zh-meaning">伸展身體</div><div class="example-sent">I stretch for ten minutes every morning to wake up my body.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>prefer</strong></td>
+          <td><span class="pos-badge">v.</span></td>
+          <td><div class="zh-meaning">更喜歡、偏好</div><div class="example-sent">I prefer to wake up early and enjoy a quiet morning.</div></td>
+          <td><span class="review-tag overdue">逾期 1 天 ⚠️</span></td>
+        </tr>
+        <tr>
+          <td><strong>itinerary</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">行程表</div><div class="example-sent">I always check my itinerary the night before a trip.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>currency</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">貨幣、外幣</div><div class="example-sent">You can exchange currency at the airport or at a local bank.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+        <tr>
+          <td><strong>customs</strong></td>
+          <td><span class="pos-badge">n.</span></td>
+          <td><div class="zh-meaning">海關</div><div class="example-sent">Please declare any food items when you go through customs.</div></td>
+          <td><span class="review-tag today">今天複習 🔔</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<script>
+  // Sentence-by-sentence playback
+  const sentAudio = new Audio();
+  let activeSentBtn = null;
+  function playSent(btn) {
+    const idx = btn.closest('.sent').dataset.idx;
+    const src = `s${String(idx).padStart(2,'0')}.mp3`;
+    if (activeSentBtn === btn && !sentAudio.paused) {
+      sentAudio.pause(); sentAudio.currentTime = 0;
+      btn.classList.remove('playing'); btn.textContent = '🔊';
+      activeSentBtn = null; return;
+    }
+    sentAudio.pause(); sentAudio.currentTime = 0;
+    if (activeSentBtn) { activeSentBtn.classList.remove('playing'); activeSentBtn.textContent = '🔊'; }
+    sentAudio.src = src;
+    activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
+    sentAudio.onended = sentAudio.onerror = () => { btn.classList.remove('playing'); btn.textContent = '🔊'; activeSentBtn = null; };
+    sentAudio.play();
+  }
+
+  // Quiz
+  function answer(el, type) {
+    const group = el.closest('.quiz-options');
+    if (group.querySelector('.correct, .wrong')) return;
+    el.classList.add(type);
+  }
+  function toggleAnswers() {
+    const el = document.getElementById('answers-reveal');
+    const btn = document.querySelector('.answers-btn');
+    if (el.style.display === 'block') { el.style.display='none'; btn.textContent='顯示答案'; }
+    else { el.style.display='block'; btn.textContent='隱藏答案'; }
+  }
+
+  // Active Recall Quiz
+  function rqSelect(btn) {
+    const opts = btn.closest('.rq-opts').querySelectorAll('.rq-opt');
+    opts.forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+  }
+
+  async function submitReviewQuiz() {
+    const items = document.querySelectorAll('.rq-item');
+    if (!items.length) return;
+
+    const results = [];
+    let allAnswered = true;
+    items.forEach(item => {
+      const sel = item.querySelector('.rq-opt.selected');
+      if (!sel) { allAnswered = false; return; }
+      results.push({ word: item.dataset.word, correct: sel.dataset.val === item.dataset.correct });
+    });
+    if (!allAnswered) { alert('請先回答所有題目！'); return; }
+
+    items.forEach(item => {
+      const correct = item.dataset.correct;
+      item.querySelectorAll('.rq-opt').forEach(b => {
+        b.setAttribute('disabled', '');
+        if (b.dataset.val === correct) b.classList.add('correct');
+        else if (b.classList.contains('selected')) b.classList.add('wrong');
+        b.classList.remove('selected');
+      });
+    });
+
+    const today = new Date().toISOString().slice(0, 10);
+    const storageKey = 'rq_done_' + today;
+    const score = results.filter(r => r.correct).length;
+    const submitBtn = document.getElementById('rq-submit-btn');
+    const resultEl = document.getElementById('rq-result');
+
+    if (localStorage.getItem(storageKey)) {
+      resultEl.innerHTML = '✅ 今天已完成複習（額外練習）：' + score + '/' + results.length + ' 題答對，SRS 未更新';
+      resultEl.className = 'success';
+      resultEl.style.display = 'block';
+      submitBtn.textContent = '已完成'; submitBtn.disabled = true;
+      return;
+    }
+
+    submitBtn.disabled = true; submitBtn.textContent = '同步中...';
+
+    try {
+      let token = localStorage.getItem('github_pat');
+      if (!token) {
+        token = prompt('首次使用：請輸入 GitHub Personal Access Token（repo write 權限，儲存在本機）：');
+        if (!token) throw new Error('未提供 Token，無法同步');
+        localStorage.setItem('github_pat', token);
+      }
+
+      const owner = 'CarryJone', repo = 'english-learning', filePath = 'vocabulary/learning.json';
+      const apiBase = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + filePath;
+
+      const getResp = await fetch(apiBase, {
+        headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+      });
+      if (!getResp.ok) throw new Error('讀取 learning.json 失敗 (' + getResp.status + ')');
+      const fileData = await getResp.json();
+      const sha = fileData.sha;
+
+      const raw = atob(fileData.content.replace(/\n/g, ''));
+      const rawBytes = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) rawBytes[i] = raw.charCodeAt(i);
+      const vocab = JSON.parse(new TextDecoder('utf-8').decode(rawBytes));
+
+      const SRS = [1, 3, 7, 14, 30, 60, 90];
+
+      for (const r of results) {
+        const w = vocab.words.find(x => x.word === r.word);
+        if (!w || w.lastReviewedDate === today) continue;
+        w.lastReviewedDate = today;
+        const next = new Date();
+        if (r.correct) {
+          w.reviewCount = (w.reviewCount || 0) + 1;
+          next.setDate(next.getDate() + (SRS[Math.min(w.reviewCount, SRS.length - 1)] || 90));
+        } else {
+          w.reviewCount = 0;
+          next.setDate(next.getDate() + 1);
+        }
+        w.nextReview = next.toISOString().slice(0, 10);
+      }
+
+      const newJson = JSON.stringify(vocab, null, 2);
+      const newBytes = new TextEncoder().encode(newJson);
+      let binary = '';
+      newBytes.forEach(b => binary += String.fromCharCode(b));
+      const encoded = btoa(binary);
+
+      const putResp = await fetch(apiBase, {
+        method: 'PUT',
+        headers: { Authorization: 'token ' + token, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: 'SRS update: review quiz ' + today, content: encoded, sha })
+      });
+      if (!putResp.ok) throw new Error('更新失敗 (' + putResp.status + ')');
+
+      localStorage.setItem(storageKey, '1');
+      resultEl.innerHTML = '🎉 複習完成！' + score + '/' + results.length + ' 題答對，SRS 記錄已更新 ✅';
+      resultEl.className = (score === results.length) ? 'success' : 'partial';
+      resultEl.style.display = 'block';
+      submitBtn.textContent = '✅ 已同步';
+
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = '提交答案 & 同步 SRS 記錄';
+      alert('同步失敗：' + err.message);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!document.querySelector('.rq-item')) {
+      const btn = document.getElementById('rq-submit-btn');
+      if (btn) btn.style.display = 'none';
+    }
+  });
+
+  // Vocab, Review & Phrase data
+  const VOCAB = {
+    'yawn': { pos: 'v.', zh: '打哈欠', example: 'I always yawn when I wake up.' },
+    'tidy': { pos: 'v./adj.', zh: '整理；整齊的', example: 'I tidy my room every morning.' },
+    'snack': { pos: 'n.', zh: '點心、零食', example: 'I have a small snack in the afternoon.' },
+  };
+  const REVIEW = {
+    'alarm': { pos: 'n.', zh: '鬧鐘', example: 'My alarm goes off at seven every morning.' },
+    'stretch': { pos: 'v.', zh: '伸展身體', example: 'I stretch for ten minutes every morning to wake up my body.' },
+    'prefer': { pos: 'v.', zh: '更喜歡、偏好', example: 'I prefer to wake up early and enjoy a quiet morning.' },
+  };
+  const PHRASES = {
+    'go off': { zh: '（鬧鐘）響起', note: '文章用法：my alarm goes off → 鬧鐘響起', type: 'Phrasal Verb' },
+    'sit up': { zh: '坐起來', note: '文章用法：sit up slowly → 慢慢坐起來', type: 'Phrasal Verb' },
+    'come up': { zh: '升起（太陽）', note: '文章用法：the sun is coming up → 太陽正在升起', type: 'Phrasal Verb' },
+    'put away': { zh: '把東西收好、放回原位', note: '文章用法：put things away → 把東西收好', type: 'Phrasal Verb' },
+    'make tea': { zh: '泡茶', note: '文章用法：make some tea → 泡一杯茶', type: 'Collocation' },
+    'start work': { zh: '開始工作', note: '文章用法：before I start work → 在我開始工作之前', type: 'Collocation' },
+    'in the right place': { zh: '在正確的位置', note: '文章用法：put books in the right place → 把書放好', type: 'Fixed Expression' },
+  };
+
+  // Popup
+  const popup = document.getElementById('word-popup');
+  const popContent = document.getElementById('pop-content');
+  const defCache = {};
+  let _anchor = null;
+
+  function showPopup(word, anchorEl, type) {
+    _anchor = anchorEl;
+    popContent.innerHTML = '';
+    const key = word.toLowerCase();
+    if (type === 'vocab' && VOCAB[key]) {
+      const v = VOCAB[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge vocab">今日單字</span></div>
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${v.pos}</span>
+        <div class="pop-example">"${v.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <div class="pop-zh" style="display:none">${v.zh}</div>`;
+    } else if (type === 'review' && REVIEW[key]) {
+      const rv = REVIEW[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge review">複習單字</span></div>
+        <span class="pop-badge" style="margin:.2rem 0 .3rem;display:inline-block">${rv.pos}</span>
+        <div class="pop-example">"${rv.example}"</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文翻譯</button>
+        <div class="pop-zh" style="display:none">${rv.zh}</div>`;
+    } else if (type === 'phrase' && PHRASES[key]) {
+      const ph = PHRASES[key];
+      popContent.innerHTML = `<div class="pop-word">${word} <span class="pop-badge phrase">片語</span></div>
+        <span class="pop-type-badge">${ph.type}</span>
+        <div class="pop-note">${ph.note}</div>
+        <button class="pop-zh-btn" onclick="revealZh(this)">👁 看中文</button>
+        <div class="pop-zh" style="display:none">${ph.zh}</div>`;
+    } else {
+      popContent.innerHTML = `<div class="pop-word">${word}</div><div class="pop-loading">查詢中…</div>`;
+      fetchDef(key).then(html => { popContent.innerHTML = html; positionPopup(anchorEl); });
+    }
+    popup.style.display = 'block';
+    positionPopup(anchorEl);
+  }
+
+  function revealZh(btn) {
+    btn.nextElementSibling.style.display = 'block';
+    btn.style.display = 'none';
+    if (_anchor) positionPopup(_anchor);
+  }
+
+  function positionPopup(el) {
+    const r = el.getBoundingClientRect();
+    const pw = popup.offsetWidth || 260, ph = popup.offsetHeight || 120;
+    let left = r.left;
+    let top = r.bottom + 8;
+    if (left + pw > window.innerWidth - 12) left = window.innerWidth - pw - 12;
+    if (left < 12) left = 12;
+    if (r.bottom + ph + 8 > window.innerHeight) top = r.top - ph - 8;
+    if (top < 8) top = 8;
+    popup.style.left = left + 'px';
+    popup.style.top = top + 'px';
+  }
+
+  function closePopup() { popup.style.display = 'none'; }
+
+  async function fetchDef(word) {
+    if (defCache[word]) return defCache[word];
+    try {
+      const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      const entry = data[0];
+      const meanings = entry.meanings.slice(0,2).map(m => {
+        const def = m.definitions[0];
+        const ex = def.example ? `<div class="pop-example">"${def.example}"</div>` : '';
+        return `<div style="margin-top:.4rem"><span class="pop-badge">${m.partOfSpeech}</span><div class="pop-def">${def.definition}</div>${ex}</div>`;
+      }).join('');
+      const html = `<div class="pop-word">${entry.word}</div>${meanings}`;
+      return defCache[word] = html;
+    } catch {
+      return defCache[word] = `<div class="pop-word">${word}</div><div class="pop-def" style="margin-top:.3rem">查無結果</div>`;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('article-body').addEventListener('click', e => {
+      const v  = e.target.closest('.vocab-word');
+      const rv = e.target.closest('.review-word');
+      const ph = e.target.closest('.phrase-chunk');
+      if (v)       showPopup(v.dataset.word,    v,  'vocab');
+      else if (rv) showPopup(rv.dataset.word,   rv, 'review');
+      else if (ph) showPopup(ph.dataset.phrase, ph, 'phrase');
+    });
+    document.addEventListener('click', e => {
+      if (!popup.contains(e.target) && !e.target.closest('.vocab-word,.review-word,.phrase-chunk')) closePopup();
+    });
+  });
+</script>
+</body>
+</html>

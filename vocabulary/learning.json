@@ -419,6 +419,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-20",
       "lastReviewedDate": null
+    },
+    {
+      "word": "yawn",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "打哈欠",
+      "exampleSentence": "I always yawn when I wake up.",
+      "dateAdded": "2026-03-20",
+      "reviewCount": 0,
+      "nextReview": "2026-03-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tidy",
+      "partOfSpeech": "v./adj.",
+      "chineseMeaning": "整理；整齊的",
+      "exampleSentence": "I tidy my room every morning.",
+      "dateAdded": "2026-03-20",
+      "reviewCount": 0,
+      "nextReview": "2026-03-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "snack",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "點心、零食",
+      "exampleSentence": "I have a small snack in the afternoon.",
+      "dateAdded": "2026-03-20",
+      "reviewCount": 0,
+      "nextReview": "2026-03-21",
+      "lastReviewedDate": null
     }
   ]
 }
