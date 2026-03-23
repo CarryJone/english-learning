@@ -449,6 +449,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-21",
       "lastReviewedDate": null
+    },
+    {
+      "word": "brochure",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "旅遊手冊、宣傳冊",
+      "exampleSentence": "I picked up a travel brochure at the hotel.",
+      "dateAdded": "2026-03-23",
+      "reviewCount": 0,
+      "nextReview": "2026-03-24",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "delay",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "誤點、延遲",
+      "exampleSentence": "There was a delay, so the train came late.",
+      "dateAdded": "2026-03-23",
+      "reviewCount": 0,
+      "nextReview": "2026-03-24",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "platform",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "月台",
+      "exampleSentence": "Please wait for the train on the platform.",
+      "dateAdded": "2026-03-23",
+      "reviewCount": 0,
+      "nextReview": "2026-03-24",
+      "lastReviewedDate": null
     }
   ]
 }
