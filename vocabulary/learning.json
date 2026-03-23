@@ -479,6 +479,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-24",
       "lastReviewedDate": null
+    },
+    {
+      "word": "meal",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "餐食、一餐",
+      "exampleSentence": "I cook a simple meal for dinner.",
+      "dateAdded": "2026-03-24",
+      "reviewCount": 0,
+      "nextReview": "2026-03-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "shelf",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "架子、書架",
+      "exampleSentence": "I put my books on the shelf.",
+      "dateAdded": "2026-03-24",
+      "reviewCount": 0,
+      "nextReview": "2026-03-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "remind",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "提醒",
+      "exampleSentence": "Please remind me to call my mom.",
+      "dateAdded": "2026-03-24",
+      "reviewCount": 0,
+      "nextReview": "2026-03-25",
+      "lastReviewedDate": null
     }
   ]
 }
