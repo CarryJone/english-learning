@@ -510,5 +510,36 @@
       "nextReview": "2026-03-25",
       "lastReviewedDate": null
     }
+    ,
+    {
+      "word": "arrive",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "到達",
+      "exampleSentence": "We arrived at nine in the morning.",
+      "dateAdded": "2026-03-25",
+      "reviewCount": 0,
+      "nextReview": "2026-03-26",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "view",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "景色",
+      "exampleSentence": "The view of the sea was very beautiful.",
+      "dateAdded": "2026-03-25",
+      "reviewCount": 0,
+      "nextReview": "2026-03-26",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "rest",
+      "partOfSpeech": "v./n.",
+      "chineseMeaning": "休息",
+      "exampleSentence": "We rested under a big tree for a while.",
+      "dateAdded": "2026-03-25",
+      "reviewCount": 0,
+      "nextReview": "2026-03-26",
+      "lastReviewedDate": null
+    }
   ]
 }
