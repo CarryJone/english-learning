@@ -539,6 +539,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-26",
       "lastReviewedDate": null
+    },
+    {
+      "word": "cozy",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "舒適的、溫馨的",
+      "exampleSentence": "My room feels cozy and warm.",
+      "dateAdded": "2026-03-26",
+      "reviewCount": 0,
+      "nextReview": "2026-03-27",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "pour",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "倒（液體）",
+      "exampleSentence": "I pour a glass of water every morning.",
+      "dateAdded": "2026-03-26",
+      "reviewCount": 0,
+      "nextReview": "2026-03-27",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "notice",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "注意到",
+      "exampleSentence": "I notice the table is a bit messy.",
+      "dateAdded": "2026-03-26",
+      "reviewCount": 0,
+      "nextReview": "2026-03-27",
+      "lastReviewedDate": null
     }
   ]
 }
