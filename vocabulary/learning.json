@@ -569,6 +569,36 @@
       "reviewCount": 0,
       "nextReview": "2026-03-27",
       "lastReviewedDate": null
+    },
+    {
+      "word": "map",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地圖",
+      "exampleSentence": "I use a map to find my way in a new city.",
+      "dateAdded": "2026-03-27",
+      "reviewCount": 0,
+      "nextReview": "2026-03-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "local",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "當地的",
+      "exampleSentence": "A local guide helped us find the best places to eat.",
+      "dateAdded": "2026-03-27",
+      "reviewCount": 0,
+      "nextReview": "2026-03-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "path",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "小路、路徑",
+      "exampleSentence": "We walked along a quiet path by the river.",
+      "dateAdded": "2026-03-27",
+      "reviewCount": 0,
+      "nextReview": "2026-03-28",
+      "lastReviewedDate": null
     }
   ]
 }
