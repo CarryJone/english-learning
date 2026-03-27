@@ -30,6 +30,10 @@
     .player-label { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: .6rem; }
     .player-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.2rem; }
     audio { width: 100%; height: 40px; border-radius: 99px; }
+    .player-controls { display: flex; align-items: center; gap: .6rem; margin-top: .7rem; }
+    .loop-btn { display: inline-flex; align-items: center; gap: .35rem; padding: .35rem .85rem; border: 1.5px solid rgba(255,255,255,.45); background: rgba(255,255,255,.15); color: white; border-radius: 99px; font-family: sans-serif; font-size: .78rem; font-weight: 600; cursor: pointer; transition: all .2s; }
+    .loop-btn:hover { background: rgba(255,255,255,.25); }
+    .loop-btn.active { background: rgba(255,255,255,.92); color: #4f7cff; border-color: transparent; }
 
     .article-body { font-size: 1.05rem; line-height: 1.9; }
     .article-body p { margin-bottom: 1.1rem; }
@@ -171,9 +175,12 @@
   <div class="player-card">
     <div class="player-label">🎧 Listen to the Article</div>
     <div class="player-title">A Walk Through the Old Town</div>
-    <audio controls>
+    <audio id="article-audio" controls>
       <source src="article.mp3" type="audio/mpeg" />
     </audio>
+    <div class="player-controls">
+      <button class="loop-btn" onclick="toggleLoop(this)">🔁 循環播放</button>
+    </div>
   </div>
 
   <div id="word-popup">
@@ -443,6 +450,7 @@
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.1 重組＋填空</div>
+        <div class="bridge-zh-prompt">「我們早上九點到達。」</div>
         <div class="bridge-scramble">at / in / morning / nine / the / We / <span class="bridge-blank">____</span></div>
         <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
         <div class="bridge-answer" style="display:none">We arrived at nine in the morning.</div>
@@ -464,6 +472,7 @@
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.1 重組＋填空</div>
+        <div class="bridge-zh-prompt">「海的景色非常美麗。」</div>
         <div class="bridge-scramble">beautiful / of / sea / The / the / very / was / <span class="bridge-blank">____</span></div>
         <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
         <div class="bridge-answer" style="display:none">The view of the sea was very beautiful.</div>
@@ -485,6 +494,7 @@
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.1 重組＋填空</div>
+        <div class="bridge-zh-prompt">「我們在一棵大樹下休息了一會兒。」</div>
         <div class="bridge-scramble">a / a / big / for / tree / under / We / while / <span class="bridge-blank">____</span></div>
         <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
         <div class="bridge-answer" style="display:none">We rested under a big tree for a while.</div>
@@ -506,6 +516,7 @@
       </div>
       <div class="bridge-level">
         <div class="bridge-level-label">Lv.1 重組＋填空</div>
+        <div class="bridge-zh-prompt">「我晚餐煮一頓簡單的餐食。」</div>
         <div class="bridge-scramble">a / cook / dinner / for / I / simple / <span class="bridge-blank">____</span></div>
         <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button>
         <div class="bridge-answer" style="display:none">I cook a simple meal for dinner.</div>
@@ -745,6 +756,13 @@
       if (btn) btn.style.display = 'none';
     }
   });
+
+  // Loop playback toggle
+  function toggleLoop(btn) {
+    const audio = document.getElementById('article-audio');
+    audio.loop = !audio.loop;
+    btn.classList.toggle('active', audio.loop);
+  }
 
   // Speaking Bridge reveal toggle
   function bridgeReveal(btn) {
