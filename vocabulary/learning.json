@@ -241,6 +241,36 @@
       "lastReviewedDate": "2026-03-16"
     },
     {
+      "word": "sunny",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "晴朗的",
+      "exampleSentence": "Today is a sunny day and the sky is blue.",
+      "dateAdded": "2026-03-30",
+      "reviewCount": 0,
+      "nextReview": "2026-03-31",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "neighbor",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鄰居",
+      "exampleSentence": "My neighbor helped me carry my bags.",
+      "dateAdded": "2026-03-30",
+      "reviewCount": 0,
+      "nextReview": "2026-03-31",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "trash",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "垃圾",
+      "exampleSentence": "I take out the trash every morning.",
+      "dateAdded": "2026-03-30",
+      "reviewCount": 0,
+      "nextReview": "2026-03-31",
+      "lastReviewedDate": null
+    },
+    {
       "word": "laundry",
       "partOfSpeech": "n.",
       "chineseMeaning": "洗衣、待洗衣物",
