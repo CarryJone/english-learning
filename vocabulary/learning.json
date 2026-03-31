@@ -629,6 +629,36 @@
       "reviewCount": 1,
       "nextReview": "2026-04-02",
       "lastReviewedDate": "2026-03-30"
+    },
+    {
+      "word": "ferry",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "渡輪",
+      "exampleSentence": "I took a ferry to the island.",
+      "dateAdded": "2026-03-31",
+      "reviewCount": 0,
+      "nextReview": "2026-04-01",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tip",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "小訣竅、建議",
+      "exampleSentence": "She gave me a good tip about the restaurant.",
+      "dateAdded": "2026-03-31",
+      "reviewCount": 0,
+      "nextReview": "2026-04-01",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "return",
+      "partOfSpeech": "adj./n.",
+      "chineseMeaning": "回程的；回程",
+      "exampleSentence": "I bought a return ticket for the trip.",
+      "dateAdded": "2026-03-31",
+      "reviewCount": 0,
+      "nextReview": "2026-04-01",
+      "lastReviewedDate": null
     }
   ]
 }
