@@ -659,6 +659,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-01",
       "lastReviewedDate": null
+    },
+    {
+      "word": "nap",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "小睡",
+      "exampleSentence": "I take a short nap after lunch.",
+      "dateAdded": "2026-04-01",
+      "reviewCount": 0,
+      "nextReview": "2026-04-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "chore",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "家務、家事",
+      "exampleSentence": "Washing dishes is a simple chore.",
+      "dateAdded": "2026-04-01",
+      "reviewCount": 0,
+      "nextReview": "2026-04-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "towel",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "毛巾",
+      "exampleSentence": "I use a fresh towel after my shower.",
+      "dateAdded": "2026-04-01",
+      "reviewCount": 0,
+      "nextReview": "2026-04-02",
+      "lastReviewedDate": null
     }
   ]
 }
