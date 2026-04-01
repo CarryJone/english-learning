@@ -689,6 +689,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-02",
       "lastReviewedDate": null
+    },
+    {
+      "word": "sightseeing",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "觀光",
+      "exampleSentence": "We did some sightseeing near the old temple.",
+      "dateAdded": "2026-04-02",
+      "reviewCount": 0,
+      "nextReview": "2026-04-03",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "hostel",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "青年旅館",
+      "exampleSentence": "The hostel is a cheap place to stay when you travel.",
+      "dateAdded": "2026-04-02",
+      "reviewCount": 0,
+      "nextReview": "2026-04-03",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "transfer",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "轉乘",
+      "exampleSentence": "We need to transfer to bus number 3 at this stop.",
+      "dateAdded": "2026-04-02",
+      "reviewCount": 0,
+      "nextReview": "2026-04-03",
+      "lastReviewedDate": null
     }
   ]
 }
