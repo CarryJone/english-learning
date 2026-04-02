@@ -719,6 +719,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-03",
       "lastReviewedDate": null
+    },
+    {
+      "word": "sweep",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "掃地",
+      "exampleSentence": "I sweep the floor every afternoon.",
+      "dateAdded": "2026-04-03",
+      "reviewCount": 0,
+      "nextReview": "2026-04-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "pillow",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "枕頭",
+      "exampleSentence": "My pillow is soft and comfortable.",
+      "dateAdded": "2026-04-03",
+      "reviewCount": 0,
+      "nextReview": "2026-04-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "vitamin",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "維他命",
+      "exampleSentence": "I take a vitamin every day to stay healthy.",
+      "dateAdded": "2026-04-03",
+      "reviewCount": 0,
+      "nextReview": "2026-04-04",
+      "lastReviewedDate": null
     }
   ]
 }
