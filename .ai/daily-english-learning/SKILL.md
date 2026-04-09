@@ -508,6 +508,17 @@ mkdir -p ./daily/$TODAY
 
 </div>
 <script>
+  function getAssetBasePath() {
+    const path = window.location.pathname;
+    if (path.endsWith('/')) return path;
+    if (/\.[^/]+$/.test(path)) return path.replace(/[^/]+$/, '');
+    return path + '/';
+  }
+
+  function buildAssetUrl(filename) {
+    return getAssetBasePath() + filename;
+  }
+
   // Sentence-by-sentence playback
   const sentAudio = new Audio();
   let activeSentBtn = null;
@@ -543,7 +554,7 @@ mkdir -p ./daily/$TODAY
 
   function playSent(btn) {
     const idx = btn.closest('.sent').dataset.idx;
-    const src = `s${String(idx).padStart(2,'0')}.mp3`;
+    const src = buildAssetUrl(`s${String(idx).padStart(2,'0')}.mp3`);
     if (activeSentBtn === btn && !sentAudio.paused) {
       stopSentencePlayback();
       return;
@@ -698,6 +709,12 @@ mkdir -p ./daily/$TODAY
 
   // Hide submit button if no review quiz items
   document.addEventListener('DOMContentLoaded', () => {
+    const articleAudio = document.getElementById('article-audio');
+    const articleSrc = buildAssetUrl('article.mp3');
+    articleAudio.src = articleSrc;
+    articleAudio.preload = 'metadata';
+    articleAudio.load();
+
     syncSentenceModeButtons();
     if (!document.querySelector('.rq-item')) {
       const btn = document.getElementById('rq-submit-btn');

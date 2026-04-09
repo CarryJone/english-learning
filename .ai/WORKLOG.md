@@ -5,6 +5,10 @@
 ---
 
 ## 2026-04-09
+- 完成：修補文章播放器抓音檔路徑的方式，改成依目前頁面所在資料夾組裝 `article.mp3` / `sNN.mp3`，並同步更新本地 SKILL 模板
+- 修改：`daily/2026-04-09/index.html`、`.ai/daily-english-learning/SKILL.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+## 2026-04-09
 - 完成：將正式規則與本地 SKILL 模板中的機器絕對路徑改為專案內相對路徑／專案根目錄寫法，降低跨電腦開啟時的路徑相依
 - 修改：`AGENTS.md`、`.ai/daily-english-learning/SKILL.md`、`.ai/DECISIONS.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
 

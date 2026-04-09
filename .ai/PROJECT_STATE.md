@@ -15,6 +15,7 @@
 - [x] 今日頁面已改為單句播放「全域模式切換」版本
 - [x] 正式 SKILL 模板已搬入 `.ai/daily-english-learning/SKILL.md`
 - [x] AGENTS 與本地 SKILL 模板中的主路徑已改為專案內相對寫法
+- [x] 已補強文章音檔與單句音檔的資產路徑解析，避免不同開法下抓錯資料夾
 - [ ] 後續每日產出持續同步 `profile.json`、`vocabulary/learning.json`、首頁 `index.html` 與 `.ai/`
 - [ ] 視需要批次回補既有 `daily/` 歷史頁面的單句播放 UI
 
@@ -22,7 +23,7 @@
 - 無
 
 ## 下一步
-- 以 `.ai/daily-english-learning/SKILL.md` 為主模板繼續維護；若要統一體驗，再批次回補既有 `daily/` 頁面與檢查歷史文件中的舊絕對路徑
+- 先確認文章播放器在目前開啟方式下已恢復正常；若要統一體驗，再批次回補既有 `daily/` 頁面與檢查歷史文件中的舊絕對路徑
 
 ## 活躍工作區
 - `index.html`
