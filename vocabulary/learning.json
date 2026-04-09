@@ -749,6 +749,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-04",
       "lastReviewedDate": null
+    },
+    {
+      "word": "harbor",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "港口",
+      "exampleSentence": "The harbor is full of small boats.",
+      "dateAdded": "2026-04-09",
+      "reviewCount": 0,
+      "nextReview": "2026-04-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bench",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "長椅",
+      "exampleSentence": "We sat on a bench near the river.",
+      "dateAdded": "2026-04-09",
+      "reviewCount": 0,
+      "nextReview": "2026-04-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "postcard",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "明信片",
+      "exampleSentence": "I sent a postcard to my friend from Tainan.",
+      "dateAdded": "2026-04-09",
+      "reviewCount": 0,
+      "nextReview": "2026-04-10",
+      "lastReviewedDate": null
     }
   ]
 }
