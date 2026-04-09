@@ -9,7 +9,7 @@
 ## 英文學習材料產出規則
 
 - 只要需求涉及「每日英文學習材料」、「英文練習頁」、「正式學習內容產出」，第一步必讀：
-  - `/Users/mds-macm3pro/.claude/scheduled-tasks/daily-english-learning/SKILL.md`
+  - `.ai/daily-english-learning/SKILL.md`
 - 正式產出必須依上面那份 SKILL 的流程執行，不可自行簡化成 demo。
 - 若使用者要求「先看成果」，預設理解為：
   - 要看正式格式成果
@@ -37,13 +37,13 @@
 ## 資料來源優先順序
 
 - 正式內容規格：以
-  `/Users/mds-macm3pro/.claude/scheduled-tasks/daily-english-learning/SKILL.md`
+  `.ai/daily-english-learning/SKILL.md`
   為準。
 - 複習資料現況：以
-  `/Users/mds-macm3pro/english-learning/vocabulary/learning.json`
+  `vocabulary/learning.json`
   為準。
 - 學習者狀態：以
-  `/Users/mds-macm3pro/english-learning/profile.json`
+  `profile.json`
   為準。
 - 若 `daily/*.html` 與 `vocabulary/learning.json` 衝突：
   - 以 `learning.json` 現況為 source of truth
@@ -54,6 +54,7 @@
 - Review Quiz、Review Words、Speaking Bridge 都必須從 `vocabulary/learning.json` 即時生成。
 - 不要直接複製既有某一天頁面中的 review 內容。
 - Speaking Bridge 不可使用今天剛新增的新單字，應依正式 SKILL 規則從 2–7 天前的單字中挑選。
+- 正式 SKILL 模板已搬到專案內 `.ai/daily-english-learning/SKILL.md`，後續以這份本地模板為主。
 
 ## 驗證與音檔
 
@@ -67,4 +68,4 @@
 
 - 本專案目前沒有 `README.md`，不要假設 repo 內已有完整操作說明。
 - 今天的背景筆記可參考：
-  - `/Users/mds-macm3pro/english-learning/SESSION_LEARNINGS_2026-04-02.md`
+  - `SESSION_LEARNINGS_2026-04-02.md`

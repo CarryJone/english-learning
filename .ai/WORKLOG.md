@@ -5,6 +5,18 @@
 ---
 
 ## 2026-04-09
+- 完成：將正式規則與本地 SKILL 模板中的機器絕對路徑改為專案內相對路徑／專案根目錄寫法，降低跨電腦開啟時的路徑相依
+- 修改：`AGENTS.md`、`.ai/daily-english-learning/SKILL.md`、`.ai/DECISIONS.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+## 2026-04-09
+- 完成：將今日頁面的單句播放改為全域模式切換，並把正式 SKILL 模板搬入專案 `.ai/` 後同步更新規則路徑
+- 修改：`daily/2026-04-09/index.html`、`.ai/daily-english-learning/SKILL.md`、`AGENTS.md`、`.ai/DECISIONS.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+## 2026-04-09
+- 完成：評估單句播放的單次 / 循環做法，確認主修改點應優先放在正式 SKILL 模板，並辨識既有歷史頁的相容性差異
+- 修改：`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+## 2026-04-09
 - 完成：修正首頁學習記錄，補上 2026-04-09 條目，並在 `.ai` 記錄每日產出後須同步更新首頁
 - 修改：`index.html`、`.ai/DECISIONS.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
 

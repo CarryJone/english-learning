@@ -117,6 +117,12 @@
     .legend-dot.vocab { background: #fef3c7; border-bottom: 2px solid var(--accent2); }
     .legend-dot.review { background: #f3e8ff; border-bottom: 2px solid #a855f7; }
     .legend-dot.phrase { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+    .sentence-mode { display: inline-flex; align-items: center; gap: .45rem; }
+    .sentence-mode-label { color: var(--accent); font-weight: 700; }
+    .sentence-mode-group { display: inline-flex; align-items: center; gap: .2rem; padding: .2rem; background: var(--tag-bg); border-radius: 99px; }
+    .sentence-mode-btn { border: none; background: transparent; color: var(--accent); border-radius: 99px; padding: .28rem .72rem; font-family: sans-serif; font-size: .76rem; font-weight: 700; cursor: pointer; transition: all .15s; }
+    .sentence-mode-btn:hover { background: rgba(79,124,255,.12); }
+    .sentence-mode-btn.active { background: var(--accent); color: white; }
 
     .rq-subtitle { font-family: sans-serif; font-size: .88rem; color: var(--muted); margin-bottom: 1.3rem; }
     .rq-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
@@ -196,6 +202,13 @@
       <div class="legend-item"><div class="legend-dot review"></div>複習單字</div>
       <div class="legend-item"><div class="legend-dot phrase"></div>重要片語</div>
       <div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 點擊播放單句</div>
+      <div class="legend-item sentence-mode">
+        <span class="sentence-mode-label">單句模式</span>
+        <span class="sentence-mode-group" role="group" aria-label="單句播放模式">
+          <button type="button" class="sentence-mode-btn active" data-mode="once" onclick="setSentenceMode('once', this)">單次</button>
+          <button type="button" class="sentence-mode-btn" data-mode="loop" onclick="setSentenceMode('loop', this)">循環</button>
+        </span>
+      </div>
     </div>
     <div class="article-body" id="article-body">
       <p>
@@ -963,19 +976,55 @@
   // Sentence-by-sentence playback
   const sentAudio = new Audio();
   let activeSentBtn = null;
+  let sentencePlaybackMode = 'once';
+
+  function resetSentBtn(btn) {
+    if (!btn) return;
+    btn.classList.remove('playing');
+    btn.textContent = '🔊';
+  }
+
+  function stopSentencePlayback() {
+    sentAudio.pause();
+    sentAudio.currentTime = 0;
+    sentAudio.loop = false;
+    resetSentBtn(activeSentBtn);
+    activeSentBtn = null;
+  }
+
+  function syncSentenceModeButtons() {
+    document.querySelectorAll('.sentence-mode-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.mode === sentencePlaybackMode);
+    });
+  }
+
+  function setSentenceMode(mode) {
+    sentencePlaybackMode = mode;
+    syncSentenceModeButtons();
+    if (activeSentBtn && !sentAudio.paused) {
+      sentAudio.loop = sentencePlaybackMode === 'loop';
+    }
+  }
+
   function playSent(btn) {
     const idx = btn.closest('.sent').dataset.idx;
     const src = `s${String(idx).padStart(2,'0')}.mp3`;
     if (activeSentBtn === btn && !sentAudio.paused) {
-      sentAudio.pause(); sentAudio.currentTime = 0;
-      btn.classList.remove('playing'); btn.textContent = '🔊';
-      activeSentBtn = null; return;
+      stopSentencePlayback();
+      return;
     }
-    sentAudio.pause(); sentAudio.currentTime = 0;
-    if (activeSentBtn) { activeSentBtn.classList.remove('playing'); activeSentBtn.textContent = '🔊'; }
+    stopSentencePlayback();
     sentAudio.src = src;
+    sentAudio.loop = sentencePlaybackMode === 'loop';
     activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
-    sentAudio.onended = sentAudio.onerror = () => { btn.classList.remove('playing'); btn.textContent = '🔊'; activeSentBtn = null; };
+    sentAudio.onended = () => {
+      if (sentAudio.loop) return;
+      resetSentBtn(btn);
+      activeSentBtn = null;
+    };
+    sentAudio.onerror = () => {
+      stopSentencePlayback();
+    };
     sentAudio.play();
   }
 
@@ -1090,6 +1139,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
+    syncSentenceModeButtons();
     if (!document.querySelector('.rq-item')) {
       const btn = document.getElementById('rq-submit-btn');
       if (btn) btn.style.display = 'none';
