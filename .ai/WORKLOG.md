@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-10
+- 完成：產出 2026-04-10 正式英文學習材料，補齊 HTML、整篇音檔、16 句分句音檔，並同步首頁與字彙資料
+- 修改：`daily/2026-04-10/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
 ## 2026-04-09
 - 完成：修補文章播放器抓音檔路徑的方式，改成依目前頁面所在資料夾組裝 `article.mp3` / `sNN.mp3`，並同步更新本地 SKILL 模板
 - 修改：`daily/2026-04-09/index.html`、`.ai/daily-english-learning/SKILL.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`

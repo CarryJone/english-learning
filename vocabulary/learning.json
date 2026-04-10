@@ -779,6 +779,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-10",
       "lastReviewedDate": null
+    },
+    {
+      "word": "blanket",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "毛毯、毯子",
+      "exampleSentence": "I put a blanket on the sofa for movie night.",
+      "dateAdded": "2026-04-10",
+      "reviewCount": 0,
+      "nextReview": "2026-04-11",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "fold",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "摺疊",
+      "exampleSentence": "Please fold the clean clothes after they dry.",
+      "dateAdded": "2026-04-10",
+      "reviewCount": 0,
+      "nextReview": "2026-04-11",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "balcony",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "陽台",
+      "exampleSentence": "She grows flowers on her balcony.",
+      "dateAdded": "2026-04-10",
+      "reviewCount": 0,
+      "nextReview": "2026-04-11",
+      "lastReviewedDate": null
     }
   ]
 }

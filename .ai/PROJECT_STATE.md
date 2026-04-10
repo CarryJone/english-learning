@@ -1,21 +1,17 @@
 # 專案當前狀態
 
-> 最後更新：2026-04-09
+> 最後更新：2026-04-10
 > 更新者：Agent
 
 ## 目前目標
-- 維持每日英文學習材料的正式產出流程，並讓模板與規則在不同電腦都可攜使用
+- 維持每日英文學習材料的正式產出流程，並持續同步首頁、字彙庫與專案記憶
 
 ## 目前進度
-- [x] 2026-04-09 的正式學習材料已生成
-- [x] 首頁學習記錄已補上 2026-04-09 條目
-- [x] `.ai/` 專案記憶系統已初始化
-- [x] `.ai/` 已改為納入版本控制
-- [x] 已完成單句播放「單次 / 循環」功能落點與相容性評估
-- [x] 今日頁面已改為單句播放「全域模式切換」版本
-- [x] 正式 SKILL 模板已搬入 `.ai/daily-english-learning/SKILL.md`
-- [x] AGENTS 與本地 SKILL 模板中的主路徑已改為專案內相對寫法
-- [x] 已補強文章音檔與單句音檔的資產路徑解析，避免不同開法下抓錯資料夾
+- [x] 2026-04-10 的正式學習材料已生成
+- [x] `daily/2026-04-10/` 已補齊 `index.html`、`article.mp3`、`s01.mp3` 到 `s16.mp3`
+- [x] 首頁學習記錄已補上 2026-04-10 條目
+- [x] `profile.json` 已更新到 Day 22，並切回 `daily life` 主題
+- [x] `vocabulary/learning.json` 已加入 `blanket`、`fold`、`balcony`
 - [ ] 後續每日產出持續同步 `profile.json`、`vocabulary/learning.json`、首頁 `index.html` 與 `.ai/`
 - [ ] 視需要批次回補既有 `daily/` 歷史頁面的單句播放 UI
 
@@ -23,14 +19,12 @@
 - 無
 
 ## 下一步
-- 先確認文章播放器在目前開啟方式下已恢復正常；若要統一體驗，再批次回補既有 `daily/` 頁面與檢查歷史文件中的舊絕對路徑
+- 明天產出新教材前，延續主題輪替規則，並再次確認複習題與 bridge 區塊都依 `learning.json` 現況生成
 
 ## 活躍工作區
+- `daily/2026-04-10/`
 - `index.html`
-- `daily/2026-04-09/`
-- `daily/2026-03-10/`
-- `.ai/daily-english-learning/SKILL.md`
-- `AGENTS.md`
 - `vocabulary/learning.json`
 - `profile.json`
+- `.ai/daily-english-learning/SKILL.md`
 - `.ai/`
