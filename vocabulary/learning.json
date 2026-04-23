@@ -809,6 +809,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-11",
       "lastReviewedDate": null
+    },
+    {
+      "word": "bakery",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "麵包店",
+      "exampleSentence": "We bought breakfast at the bakery near the station.",
+      "dateAdded": "2026-04-23",
+      "reviewCount": 0,
+      "nextReview": "2026-04-24",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "corner",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "街角、轉角",
+      "exampleSentence": "There is a small cafe on the corner.",
+      "dateAdded": "2026-04-23",
+      "reviewCount": 0,
+      "nextReview": "2026-04-24",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "crosswalk",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "人行道、斑馬線",
+      "exampleSentence": "Please stop before you walk across the crosswalk.",
+      "dateAdded": "2026-04-23",
+      "reviewCount": 0,
+      "nextReview": "2026-04-24",
+      "lastReviewedDate": null
     }
   ]
 }
