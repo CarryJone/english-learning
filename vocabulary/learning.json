@@ -839,6 +839,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-24",
       "lastReviewedDate": null
+    },
+    {
+      "word": "sink",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "水槽、洗手台",
+      "exampleSentence": "Please put the dirty dishes in the sink.",
+      "dateAdded": "2026-04-24",
+      "reviewCount": 0,
+      "nextReview": "2026-04-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "soap",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "肥皂、清潔皂",
+      "exampleSentence": "I use soap and water to wash my hands.",
+      "dateAdded": "2026-04-24",
+      "reviewCount": 0,
+      "nextReview": "2026-04-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "mirror",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鏡子",
+      "exampleSentence": "She checks her hair in the mirror.",
+      "dateAdded": "2026-04-24",
+      "reviewCount": 0,
+      "nextReview": "2026-04-25",
+      "lastReviewedDate": null
     }
   ]
 }
