@@ -869,6 +869,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-25",
       "lastReviewedDate": null
+    },
+    {
+      "word": "route",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "路線",
+      "exampleSentence": "This bus route goes to the park and the station.",
+      "dateAdded": "2026-04-27",
+      "reviewCount": 0,
+      "nextReview": "2026-04-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "fare",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "車資、票價",
+      "exampleSentence": "The bus fare is cheap, so I ride it often.",
+      "dateAdded": "2026-04-27",
+      "reviewCount": 0,
+      "nextReview": "2026-04-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "entrance",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "入口",
+      "exampleSentence": "Please wait for me at the park entrance.",
+      "dateAdded": "2026-04-27",
+      "reviewCount": 0,
+      "nextReview": "2026-04-28",
+      "lastReviewedDate": null
     }
   ]
 }
