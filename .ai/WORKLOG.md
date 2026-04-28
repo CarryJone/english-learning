@@ -4,6 +4,12 @@
 
 ---
 
+## 2026-04-28
+- 完成：產出 2026-04-28 正式英文學習材料，補齊 HTML、整篇音檔、18 句分句音檔，並同步首頁、字彙庫、profile 與專案記憶
+- 修改：`daily/2026-04-28/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
+
 ## 2026-04-27
 - 完成：產出 2026-04-27 正式英文學習材料，補齊 HTML、整篇音檔、18 句分句音檔，並同步首頁、字彙庫、profile 與專案記憶
 - 修改：`daily/2026-04-27/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`

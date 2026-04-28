@@ -899,6 +899,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-28",
       "lastReviewedDate": null
+    },
+    {
+      "word": "drawer",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "抽屜",
+      "exampleSentence": "I keep my keys in the top drawer.",
+      "dateAdded": "2026-04-28",
+      "reviewCount": 0,
+      "nextReview": "2026-04-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "charger",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "充電器",
+      "exampleSentence": "My phone charger is next to the bed.",
+      "dateAdded": "2026-04-28",
+      "reviewCount": 0,
+      "nextReview": "2026-04-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tissue",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "面紙、紙巾",
+      "exampleSentence": "Please give me a tissue for the table.",
+      "dateAdded": "2026-04-28",
+      "reviewCount": 0,
+      "nextReview": "2026-04-29",
+      "lastReviewedDate": null
     }
   ]
 }
