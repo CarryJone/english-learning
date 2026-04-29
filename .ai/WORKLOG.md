@@ -4,6 +4,12 @@
 
 ---
 ## 2026-04-29
+- 完成：確認 2026-04-29 語音停頓異常是 TTS 設定偏離正式 SKILL，已將整篇與逐句音檔重生並恢復與前兩天一致的節奏。
+- 修改：`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+- 問題：首次生成 2026-04-29 音檔時誤用 `en-US-EmmaNeural` 與 `RATE=-8%`；正式規格應固定為 `en-US-JennyNeural` 與 `RATE=-10%`。
+
+---
+## 2026-04-29
 - 完成：產出 Day 27 正式英文學習材料，主題為旅館附近吃早餐，並同步首頁與 SRS 資料。
 - 修改：daily/2026-04-29/index.html、vocabulary/learning.json、profile.json、index.html、.ai/PROJECT_STATE.md
 
