@@ -3,6 +3,11 @@
 > 新紀錄加在最上方。超過 30 天的紀錄應移至 archive/。
 
 ---
+## 2026-04-29
+- 完成：產出 Day 27 正式英文學習材料，主題為旅館附近吃早餐，並同步首頁與 SRS 資料。
+- 修改：daily/2026-04-29/index.html、vocabulary/learning.json、profile.json、index.html、.ai/PROJECT_STATE.md
+
+---
 
 ## 2026-04-28
 - 完成：產出 2026-04-28 正式英文學習材料，補齊 HTML、整篇音檔、18 句分句音檔，並同步首頁、字彙庫、profile 與專案記憶

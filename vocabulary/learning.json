@@ -929,6 +929,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-29",
       "lastReviewedDate": null
+    },
+    {
+      "word": "menu",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "菜單",
+      "exampleSentence": "Please look at the menu before you order.",
+      "dateAdded": "2026-04-29",
+      "reviewCount": 0,
+      "nextReview": "2026-04-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "counter",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "櫃檯",
+      "exampleSentence": "You can pay at the front counter.",
+      "dateAdded": "2026-04-29",
+      "reviewCount": 0,
+      "nextReview": "2026-04-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "cash",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "現金",
+      "exampleSentence": "I only have a little cash in my bag.",
+      "dateAdded": "2026-04-29",
+      "reviewCount": 0,
+      "nextReview": "2026-04-30",
+      "lastReviewedDate": null
     }
   ]
 }
