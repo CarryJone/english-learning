@@ -4,6 +4,16 @@
 
 ---
 ## 2026-04-30
+- 完成：將「主題固定 daily / travel 交替」與「日常口語、高頻片語優先」沉澱到 `AGENTS.md` 與 `.ai/DECISIONS.md`，讓後續正式產出規則不只留在 SKILL。
+- 修改：`AGENTS.md`、`.ai/DECISIONS.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
+## 2026-04-30
+- 完成：強化正式學習材料規格，將主題輪替改為固定 `daily → travel → daily → travel`，並補上更貼近日常口語、高頻片語與實用單字的產出要求。
+- 修改：`.ai/daily-english-learning/SKILL.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
+## 2026-04-30
 - 完成：產出 Day 28 正式英文學習材料，主題為洗衣夜晚，並同步首頁、SRS 字彙資料與 18 句分句音檔。
 - 修改：`daily/2026-04-30/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
 
