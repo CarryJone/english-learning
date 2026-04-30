@@ -3,6 +3,11 @@
 > 新紀錄加在最上方。超過 30 天的紀錄應移至 archive/。
 
 ---
+## 2026-04-30
+- 完成：產出 Day 28 正式英文學習材料，主題為洗衣夜晚，並同步首頁、SRS 字彙資料與 18 句分句音檔。
+- 修改：`daily/2026-04-30/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
 ## 2026-04-29
 - 完成：確認 2026-04-29 語音停頓異常是 TTS 設定偏離正式 SKILL，已將整篇與逐句音檔重生並恢復與前兩天一致的節奏。
 - 修改：`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`

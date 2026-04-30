@@ -959,6 +959,36 @@
       "reviewCount": 0,
       "nextReview": "2026-04-30",
       "lastReviewedDate": null
+    },
+    {
+      "word": "detergent",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "洗衣精",
+      "exampleSentence": "Please add detergent before you start the machine.",
+      "dateAdded": "2026-04-30",
+      "reviewCount": 0,
+      "nextReview": "2026-05-01",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "dryer",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "烘衣機",
+      "exampleSentence": "The dryer makes the clothes warm and dry.",
+      "dateAdded": "2026-04-30",
+      "reviewCount": 0,
+      "nextReview": "2026-05-01",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "coin",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "硬幣",
+      "exampleSentence": "I found a coin in my jacket pocket.",
+      "dateAdded": "2026-04-30",
+      "reviewCount": 0,
+      "nextReview": "2026-05-01",
+      "lastReviewedDate": null
     }
   ]
 }
