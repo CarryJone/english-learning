@@ -1,6 +1,27 @@
 # 工作日誌
 
 > 新紀錄加在最上方。超過 30 天的紀錄應移至 archive/。
+> 本檔只記錄已發生的工作，不作為正式教材產出規格；正式規格以 `.ai/daily-english-learning/SKILL.md` 為準。
+
+---
+## 2026-04-30
+- 完成：整理專案文件職責，降低規則分散造成的干擾；明確 `SKILL.md` 是正式教材唯一產出規格，`WORKLOG.md` 僅保留日誌身份。
+- 修改：`AGENTS.md`、`.ai/daily-english-learning/SKILL.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
+## 2026-04-30
+- 完成：把「無聊感來源」分析落成後續教材調整規則，更新專案規則、正式 SKILL 與架構決策，強化旅行溝通與查資料目標對齊。
+- 修改：`AGENTS.md`、`.ai/daily-english-learning/SKILL.md`、`.ai/DECISIONS.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
+## 2026-04-30
+- 完成：根據近期正式教材頁面與學習者目標，分析目前練習讓人覺得無聊或無力的原因，聚焦題材回報、查資料訓練缺口與成就感不足。
+- 修改：`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
+## 2026-04-30
+- 完成：讀取專案主流程、記憶檔、正式 SKILL、學習者狀態與近期正式頁面，確認目前練習主實作面與題材分布。
+- 修改：`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
 
 ---
 ## 2026-04-30

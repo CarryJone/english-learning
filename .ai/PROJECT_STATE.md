@@ -4,28 +4,25 @@
 > 更新者：Agent
 
 ## 目前目標
-- 持續每日產出正式英文學習材料並維持首頁與 SRS 同步
+- 用整理後的正式規則產出下一篇英文教材，確認內容更貼近旅行與查資料目標
 
 ## 目前進度
-- [x] 已完成 2026-04-28 正式材料與單句播放修正
-- [x] 已完成 2026-04-29 正式材料（Day 27，travel 主題）與音檔重生
-- [x] 已完成 2026-04-30 正式材料（Day 28，daily 主題）含 HTML、音檔與首頁同步
-- [x] 已強化正式 SKILL：主題固定 `daily → travel` 輪替，並提高日常口語 / 高頻片語優先度
-- [x] 已將主題輪替與日常口語優先規則沉澱到 `AGENTS.md` 與 `.ai/DECISIONS.md`
-- [ ] 待產出下一天正式材料
+- [x] 已確認 `.ai/daily-english-learning/SKILL.md` 是唯一正式教材產出規格
+- [x] 已整理 `AGENTS.md`、`PROJECT_STATE.md`、`WORKLOG.md`、`SKILL.md` 的文件職責，降低規則分散造成的干擾
+- [x] 已將旅行溝通與英文網路查資料目標寫入正式 SKILL 的最高優先產出摘要
+- [ ] 待用新規則產出下一篇正式教材並驗證體感是否改善
 
 ## 目前 Blocker
 - 無
 
 ## 下一步
-- 產出下一天內容時，嚴格依 `daily → travel → daily → travel` 輪替，並固定使用 `en-US-JennyNeural` 與 `RATE=-10%` 生成音檔
+- 產出下一篇正式教材時，先讀 `profile.json`、`vocabulary/learning.json`、`.ai/daily-english-learning/SKILL.md`，並依 Step 2.5 摘要規劃內容
 
 ## 活躍工作區
-- daily/2026-04-30/
-- .ai/daily-english-learning/SKILL.md
-- .ai/DECISIONS.md
 - AGENTS.md
+- .ai/daily-english-learning/SKILL.md
+- .ai/PROJECT_STATE.md
+- .ai/WORKLOG.md
 - vocabulary/learning.json
 - profile.json
 - index.html
-- .ai/
