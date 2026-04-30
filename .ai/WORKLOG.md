@@ -1,7 +1,13 @@
 # 工作日誌
 
-> 新紀錄加在最上方。超過 30 天的紀錄應移至 archive/。
-> 本檔只記錄已發生的工作，不作為正式教材產出規格；正式規格以 `.ai/daily-english-learning/SKILL.md` 為準。
+> 用途：記錄已發生的工作事件，最新紀錄放最上方。
+> 注意：本檔不是開發規則、不是待辦清單、不是規格來源；不要依本檔決定實作方式。
+> 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
+
+---
+## 2026-04-30
+- 完成：精簡全域 `.ai/` 記憶系統規則，明確各記憶檔角色，並在目前專案 `.ai/` 檔案開頭補上「是否可作規則來源」說明。
+- 修改：`/Users/mds-macm3pro/AGENTS.md`、`/Users/mds-macm3pro/.codex/AGENTS.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`、`.ai/DECISIONS.md`、`.ai/USER_CONTEXT.md`
 
 ---
 ## 2026-04-30
