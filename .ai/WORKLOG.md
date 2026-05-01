@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-05-01
+- 完成：產出 Day 29 正式英文學習材料，主題為車站找出口與確認路線，並同步首頁、profile、SRS 字彙資料與 16 句分句音檔。
+- 修改：`daily/2026-05-01/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
 ## 2026-04-30
 - 完成：精簡全域 `.ai/` 記憶系統規則，明確各記憶檔角色，並在目前專案 `.ai/` 檔案開頭補上「是否可作規則來源」說明。
 - 修改：`/Users/mds-macm3pro/AGENTS.md`、`/Users/mds-macm3pro/.codex/AGENTS.md`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`、`.ai/DECISIONS.md`、`.ai/USER_CONTEXT.md`

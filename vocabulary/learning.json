@@ -989,6 +989,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-01",
       "lastReviewedDate": null
+    },
+    {
+      "word": "station",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "車站",
+      "exampleSentence": "The station is busy in the morning.",
+      "dateAdded": "2026-05-01",
+      "reviewCount": 0,
+      "nextReview": "2026-05-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "screen",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "螢幕、顯示看板",
+      "exampleSentence": "Please check the screen for the train time.",
+      "dateAdded": "2026-05-01",
+      "reviewCount": 0,
+      "nextReview": "2026-05-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "line",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "線、路線",
+      "exampleSentence": "Follow the green line to the exit.",
+      "dateAdded": "2026-05-01",
+      "reviewCount": 0,
+      "nextReview": "2026-05-02",
+      "lastReviewedDate": null
     }
   ]
 }
