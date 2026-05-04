@@ -53,6 +53,7 @@ mkdir -p ./daily/$TODAY
 - **主題輪替**：依 `profile.json.lastTopic` 嚴格交替 `daily ↔ travel`，不可連續同主題，除非使用者明確覆寫。
 - **核心目標**：每篇都要支援「旅行溝通」或「英文網路查資料」；不能只是完成一篇簡單文章。
 - **每日帶走**：每篇至少讓學習者得到 1 句旅行 / 外出可直接套用的英文，以及 1 個查資料可辨識或可搜尋的說法。
+- **任務感設計**：每篇都必須有一個 real-life mission，並在內容中自然放入 survival sentence 與 mini dialogue，讓練習像真實生活任務，不像單純寫作業。
 - **題材選擇**：`daily` 優先外出互動、資訊取得、流程判斷；避免再次落回房間整理、清潔、低回報居家物件。
 - **難度控制**：保持 A2，句子短、字彙高頻、自然口語；寧可更簡單，也不要為了題材或單字變難。
 - **必要產物**：必須產出完整 HTML、`article.mp3`、`s01.mp3` 到 `sNN.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`。
@@ -74,6 +75,11 @@ mkdir -p ./daily/$TODAY
   - 文章至少要包含：
     - 1 句可直接套用在旅行 / 外出互動的英文
     - 1 句偏資訊辨識 / 查資料用途的英文，例如看菜單、看路線、看標示、看時間、看簡單說明
+- **Real-life mission / survival sentence / mini dialogue（避免作業感）**：
+  - 每篇先設定 1 個真實生活任務（real-life mission），例如「到櫃檯取餐」、「確認車票時間」、「問旅館能不能寄放行李」、「看 app 找到正確入口」
+  - 文章中必須自然出現 1 句最值得直接背起來的 survival sentence，能在真實情境直接開口使用，例如 `Is my order ready?`、`Where is the ticket counter?`、`Can I leave my bag here?`
+  - 文章中至少放入 1 段極短 mini dialogue（2–4 句即可），讓學習者看到「對方問什麼、我怎麼回」；句子必須維持 A2、自然口語
+  - Quiz 或 Speaking Bridge 至少有 1 題要回扣這個 mission，讓學習者練「當下反應」，不是只考文章記憶
 - **主題輪替規則（嚴格執行，不可自行漂移）**：
   - 若 `profile.json` 的 `lastTopic` 是 `daily`，今天**必須**產出 `travel`
   - 若 `profile.json` 的 `lastTopic` 是 `travel`，今天**必須**產出 `daily`
