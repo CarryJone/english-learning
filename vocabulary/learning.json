@@ -1019,6 +1019,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-02",
       "lastReviewedDate": null
+    },
+    {
+      "word": "pickup",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "取貨、取餐",
+      "exampleSentence": "The pickup time is six thirty.",
+      "dateAdded": "2026-05-04",
+      "reviewCount": 0,
+      "nextReview": "2026-05-05",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "order",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "訂單；點餐、下單",
+      "exampleSentence": "I have an order for Leo.",
+      "dateAdded": "2026-05-04",
+      "reviewCount": 0,
+      "nextReview": "2026-05-05",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "receipt",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "收據",
+      "exampleSentence": "Please keep the receipt after you pay.",
+      "dateAdded": "2026-05-04",
+      "reviewCount": 0,
+      "nextReview": "2026-05-05",
+      "lastReviewedDate": null
     }
   ]
 }

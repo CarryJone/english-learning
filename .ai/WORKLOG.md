@@ -115,3 +115,7 @@
 ## 2026-04-09
 - 完成：初始化 `.ai/` 記憶系統，建立狀態檔與工作日誌
 - 修改：`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`、`.ai/DECISIONS.md`、`.ai/USER_CONTEXT.md`、`.gitignore`
+
+## 2026-05-04
+- 同步 GitHub `main` 後，新增 Day 30 正式英文學習材料 `Checking the Pickup Time`，主題為 daily。
+- 更新 `daily/2026-05-04/`、首頁、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
