@@ -119,3 +119,8 @@
 ## 2026-05-04
 - 同步 GitHub `main` 後，新增 Day 30 正式英文學習材料 `Checking the Pickup Time`，主題為 daily。
 - 更新 `daily/2026-05-04/`、首頁、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+
+---
+## 2026-05-05
+- 完成：新增 Day 31 正式英文學習材料 `Buying a Train Ticket`，主題為 travel，任務是小車站買票與確認月台。
+- 修改：`daily/2026-05-05/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`

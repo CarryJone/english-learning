@@ -1049,6 +1049,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-05",
       "lastReviewedDate": null
+    },
+    {
+      "word": "ticket",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "票、車票",
+      "exampleSentence": "I need a ticket to Old Town.",
+      "dateAdded": "2026-05-05",
+      "reviewCount": 0,
+      "nextReview": "2026-05-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "machine",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "機器、售票機",
+      "exampleSentence": "The ticket machine is near the counter.",
+      "dateAdded": "2026-05-05",
+      "reviewCount": 0,
+      "nextReview": "2026-05-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "one-way",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "單程的",
+      "exampleSentence": "I need a one-way ticket, please.",
+      "dateAdded": "2026-05-05",
+      "reviewCount": 0,
+      "nextReview": "2026-05-06",
+      "lastReviewedDate": null
     }
   ]
 }
