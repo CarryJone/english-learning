@@ -124,3 +124,8 @@
 ## 2026-05-05
 - 完成：新增 Day 31 正式英文學習材料 `Buying a Train Ticket`，主題為 travel，任務是小車站買票與確認月台。
 - 修改：`daily/2026-05-05/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
+## 2026-05-06
+- 完成：新增 Day 32 正式英文學習材料 `Picking Up Medicine`，主題為 daily，任務是到藥局取藥、看號碼與確認櫃檯流程。
+- 修改：`daily/2026-05-06/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`

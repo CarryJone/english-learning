@@ -1079,6 +1079,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-06",
       "lastReviewedDate": null
+    },
+    {
+      "word": "pharmacy",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "藥局",
+      "exampleSentence": "The pharmacy is next to the clinic.",
+      "dateAdded": "2026-05-06",
+      "reviewCount": 0,
+      "nextReview": "2026-05-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "medicine",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "藥、藥品",
+      "exampleSentence": "I need to pick up medicine for my mom.",
+      "dateAdded": "2026-05-06",
+      "reviewCount": 0,
+      "nextReview": "2026-05-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "number",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "號碼",
+      "exampleSentence": "Please take a number and wait.",
+      "dateAdded": "2026-05-06",
+      "reviewCount": 0,
+      "nextReview": "2026-05-07",
+      "lastReviewedDate": null
     }
   ]
 }
