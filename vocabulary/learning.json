@@ -1136,6 +1136,36 @@
       "dateAdded": "2026-05-07",
       "reviewCount": 0,
       "nextReview": "2026-05-08"
+    },
+    {
+      "word": "refund",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "退款；退款給某人",
+      "exampleSentence": "Can I get a refund for this shirt?",
+      "dateAdded": "2026-05-08",
+      "reviewCount": 0,
+      "nextReview": "2026-05-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "exchange",
+      "partOfSpeech": "v./n.",
+      "chineseMeaning": "交換、換貨",
+      "exampleSentence": "Can I exchange this shirt for a larger size?",
+      "dateAdded": "2026-05-08",
+      "reviewCount": 0,
+      "nextReview": "2026-05-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "policy",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "政策、規定",
+      "exampleSentence": "Please read the return policy before you buy it.",
+      "dateAdded": "2026-05-08",
+      "reviewCount": 0,
+      "nextReview": "2026-05-09",
+      "lastReviewedDate": null
     }
   ]
 }

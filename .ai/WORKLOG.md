@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-05-08
+- 完成：新增 Day 34 正式英文學習材料 `Checking a Return Policy`，主題為 daily，任務是看懂商店退換貨規定並到服務櫃檯詢問換貨。
+- 修改：`daily/2026-05-08/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
 ## 2026-05-07
 - 完成：產出 Day 33 正式英文學習材料，主題為車站置物櫃與看懂費用提示，並同步首頁、profile、SRS 字彙資料與 16 句分句音檔。
 - 修改：`daily/2026-05-07/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
