@@ -1169,6 +1169,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-09",
       "lastReviewedDate": null
+    },
+    {
+      "word": "stop",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "車站、停靠站",
+      "exampleSentence": "Bus stop B is near the hotel.",
+      "dateAdded": "2026-05-11",
+      "reviewCount": 0,
+      "nextReview": "2026-05-12",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "sign",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "標誌、招牌",
+      "exampleSentence": "Look for the blue sign at the station.",
+      "dateAdded": "2026-05-11",
+      "reviewCount": 0,
+      "nextReview": "2026-05-12",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "driver",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "司機、駕駛",
+      "exampleSentence": "The driver can help you find the right stop.",
+      "dateAdded": "2026-05-11",
+      "reviewCount": 0,
+      "nextReview": "2026-05-12",
+      "lastReviewedDate": null
     }
   ]
 }

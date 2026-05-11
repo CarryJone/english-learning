@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-05-11
+- 完成：新增 Day 35 正式英文學習材料 `Finding the Right Bus Stop`，主題為 travel，任務是在陌生城市看 app / 站牌確認正確公車站並向司機確認方向。
+- 修改：`daily/2026-05-11/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
 ## 2026-05-08
 - 完成：新增 Day 34 正式英文學習材料 `Checking a Return Policy`，主題為 daily，任務是看懂商店退換貨規定並到服務櫃檯詢問換貨。
 - 修改：`daily/2026-05-08/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
