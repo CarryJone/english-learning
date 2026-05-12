@@ -1199,6 +1199,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-12",
       "lastReviewedDate": null
+    },
+    {
+      "word": "hours",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "營業時間",
+      "exampleSentence": "The cafe hours are on the website.",
+      "dateAdded": "2026-05-12",
+      "reviewCount": 0,
+      "nextReview": "2026-05-13",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "seat",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "座位",
+      "exampleSentence": "Is there a seat near the window?",
+      "dateAdded": "2026-05-12",
+      "reviewCount": 0,
+      "nextReview": "2026-05-13",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "crowded",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "擁擠的、人多的",
+      "exampleSentence": "The cafe is crowded at lunch time.",
+      "dateAdded": "2026-05-12",
+      "reviewCount": 0,
+      "nextReview": "2026-05-13",
+      "lastReviewedDate": null
     }
   ]
 }
