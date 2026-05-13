@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-05-13
+- 完成：新增 Day 37 正式英文學習材料 `Finding the Hotel Shuttle`，主題為 travel，任務是看懂接駁集合資訊並向現場人員確認是否搭對車。
+- 修改：`daily/2026-05-13/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
 ## 2026-05-12
 - 完成：新增 Day 36 正式英文學習材料 `Checking Cafe Hours`，主題為 daily，任務是先看店家時間資訊，再到現場等位並確認兩人座位。
 - 修改：`daily/2026-05-12/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`

@@ -1229,6 +1229,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-13",
       "lastReviewedDate": null
+    },
+    {
+      "word": "arrival",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "抵達、到達",
+      "exampleSentence": "After arrival, we looked for the hotel bus.",
+      "dateAdded": "2026-05-13",
+      "reviewCount": 0,
+      "nextReview": "2026-05-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "shuttle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "接駁車",
+      "exampleSentence": "The hotel shuttle comes every thirty minutes.",
+      "dateAdded": "2026-05-13",
+      "reviewCount": 0,
+      "nextReview": "2026-05-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "lobby",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "大廳",
+      "exampleSentence": "Please wait in the hotel lobby.",
+      "dateAdded": "2026-05-13",
+      "reviewCount": 0,
+      "nextReview": "2026-05-14",
+      "lastReviewedDate": null
     }
   ]
 }
