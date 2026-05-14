@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-05-14
+- 完成：先同步遠端 `vocabulary/learning.json`，再新增 Day 38 正式英文學習材料 `Reading the Station App`，主題為 daily，任務是看懂站內 app / 告示並向工作人員確認改道後的正確路線。
+- 修改：`daily/2026-05-14/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
 ## 2026-05-13
 - 完成：新增 Day 37 正式英文學習材料 `Finding the Hotel Shuttle`，主題為 travel，任務是看懂接駁集合資訊並向現場人員確認是否搭對車。
 - 修改：`daily/2026-05-13/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`

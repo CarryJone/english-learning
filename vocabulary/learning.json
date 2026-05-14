@@ -1056,9 +1056,9 @@
       "chineseMeaning": "票、車票",
       "exampleSentence": "I need a ticket to Old Town.",
       "dateAdded": "2026-05-05",
-      "reviewCount": 2,
-      "nextReview": "2026-05-14",
-      "lastReviewedDate": "2026-05-07"
+      "reviewCount": 3,
+      "nextReview": "2026-05-28",
+      "lastReviewedDate": "2026-05-14"
     },
     {
       "word": "machine",
@@ -1066,9 +1066,9 @@
       "chineseMeaning": "機器、售票機",
       "exampleSentence": "The ticket machine is near the counter.",
       "dateAdded": "2026-05-05",
-      "reviewCount": 2,
-      "nextReview": "2026-05-14",
-      "lastReviewedDate": "2026-05-07"
+      "reviewCount": 3,
+      "nextReview": "2026-05-28",
+      "lastReviewedDate": "2026-05-14"
     },
     {
       "word": "one-way",
@@ -1076,9 +1076,9 @@
       "chineseMeaning": "單程的",
       "exampleSentence": "I need a one-way ticket, please.",
       "dateAdded": "2026-05-05",
-      "reviewCount": 2,
-      "nextReview": "2026-05-14",
-      "lastReviewedDate": "2026-05-07"
+      "reviewCount": 3,
+      "nextReview": "2026-05-28",
+      "lastReviewedDate": "2026-05-14"
     },
     {
       "word": "pharmacy",
@@ -1236,9 +1236,9 @@
       "chineseMeaning": "抵達、到達",
       "exampleSentence": "After arrival, we looked for the hotel bus.",
       "dateAdded": "2026-05-13",
-      "reviewCount": 0,
-      "nextReview": "2026-05-14",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-05-17",
+      "lastReviewedDate": "2026-05-14"
     },
     {
       "word": "shuttle",
@@ -1246,9 +1246,9 @@
       "chineseMeaning": "接駁車",
       "exampleSentence": "The hotel shuttle comes every thirty minutes.",
       "dateAdded": "2026-05-13",
-      "reviewCount": 0,
-      "nextReview": "2026-05-14",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-05-17",
+      "lastReviewedDate": "2026-05-14"
     },
     {
       "word": "lobby",
@@ -1256,8 +1256,38 @@
       "chineseMeaning": "大廳",
       "exampleSentence": "Please wait in the hotel lobby.",
       "dateAdded": "2026-05-13",
+      "reviewCount": 1,
+      "nextReview": "2026-05-17",
+      "lastReviewedDate": "2026-05-14"
+    },
+    {
+      "word": "app",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "應用程式、app",
+      "exampleSentence": "I check the train app before I leave work.",
+      "dateAdded": "2026-05-14",
       "reviewCount": 0,
-      "nextReview": "2026-05-14",
+      "nextReview": "2026-05-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "closed",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "關閉的、沒開的",
+      "exampleSentence": "The west door is closed today.",
+      "dateAdded": "2026-05-14",
+      "reviewCount": 0,
+      "nextReview": "2026-05-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "stairs",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "樓梯",
+      "exampleSentence": "Go down the stairs to the train.",
+      "dateAdded": "2026-05-14",
+      "reviewCount": 0,
+      "nextReview": "2026-05-15",
       "lastReviewedDate": null
     }
   ]
