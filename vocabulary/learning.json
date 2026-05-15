@@ -1289,6 +1289,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-15",
       "lastReviewedDate": null
+    },
+    {
+      "word": "hold",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "暫時保管、留放",
+      "exampleSentence": "Can you hold my bag until this evening?",
+      "dateAdded": "2026-05-15",
+      "reviewCount": 0,
+      "nextReview": "2026-05-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tag",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "標籤、牌子",
+      "exampleSentence": "Please put this tag on your suitcase.",
+      "dateAdded": "2026-05-15",
+      "reviewCount": 0,
+      "nextReview": "2026-05-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "desk",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "櫃台、桌台",
+      "exampleSentence": "Ask the hotel desk if they can hold your bag.",
+      "dateAdded": "2026-05-15",
+      "reviewCount": 0,
+      "nextReview": "2026-05-16",
+      "lastReviewedDate": null
     }
   ]
 }

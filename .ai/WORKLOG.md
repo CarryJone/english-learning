@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-05-15
+- 完成：先同步遠端 `vocabulary/learning.json`，再新增 Day 39 正式英文學習材料 `Leaving a Bag at the Hotel`，主題為 travel，任務是看懂旅館寄放行李規則並向櫃檯確認是否可保管到晚上。
+- 修改：`daily/2026-05-15/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
+
+---
 ## 2026-05-14
 - 完成：先同步遠端 `vocabulary/learning.json`，再新增 Day 38 正式英文學習材料 `Reading the Station App`，主題為 daily，任務是看懂站內 app / 告示並向工作人員確認改道後的正確路線。
 - 修改：`daily/2026-05-14/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`
