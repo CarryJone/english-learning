@@ -1349,6 +1349,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-19",
       "lastReviewedDate": null
+    },
+    {
+      "word": "aisle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "走道；走道側座位",
+      "exampleSentence": "I have an aisle seat near the back.",
+      "dateAdded": "2026-05-19",
+      "reviewCount": 0,
+      "nextReview": "2026-05-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "window",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "窗邊；窗戶",
+      "exampleSentence": "Can I change to a window seat?",
+      "dateAdded": "2026-05-19",
+      "reviewCount": 0,
+      "nextReview": "2026-05-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "row",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "排；一排座位",
+      "exampleSentence": "My seat is in row 21.",
+      "dateAdded": "2026-05-19",
+      "reviewCount": 0,
+      "nextReview": "2026-05-20",
+      "lastReviewedDate": null
     }
   ]
 }
