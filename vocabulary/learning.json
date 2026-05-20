@@ -1379,6 +1379,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-20",
       "lastReviewedDate": null
+    },
+    {
+      "word": "empty",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "空的；沒人在用的",
+      "exampleSentence": "This machine is empty now.",
+      "dateAdded": "2026-05-20",
+      "reviewCount": 0,
+      "nextReview": "2026-05-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "load",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "一次的洗衣量；一批衣物",
+      "exampleSentence": "I only have one small load today.",
+      "dateAdded": "2026-05-20",
+      "reviewCount": 0,
+      "nextReview": "2026-05-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "card",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "卡片；付款卡",
+      "exampleSentence": "Does this machine take a card?",
+      "dateAdded": "2026-05-20",
+      "reviewCount": 0,
+      "nextReview": "2026-05-21",
+      "lastReviewedDate": null
     }
   ]
 }
