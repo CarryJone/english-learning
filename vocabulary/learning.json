@@ -966,9 +966,9 @@
       "chineseMeaning": "洗衣精",
       "exampleSentence": "Please add detergent before you start the machine.",
       "dateAdded": "2026-04-30",
-      "reviewCount": 3,
-      "nextReview": "2026-05-20",
-      "lastReviewedDate": "2026-05-06"
+      "reviewCount": 4,
+      "nextReview": "2026-06-19",
+      "lastReviewedDate": "2026-05-20"
     },
     {
       "word": "dryer",
@@ -976,9 +976,9 @@
       "chineseMeaning": "烘衣機",
       "exampleSentence": "The dryer makes the clothes warm and dry.",
       "dateAdded": "2026-04-30",
-      "reviewCount": 3,
-      "nextReview": "2026-05-20",
-      "lastReviewedDate": "2026-05-06"
+      "reviewCount": 4,
+      "nextReview": "2026-06-19",
+      "lastReviewedDate": "2026-05-20"
     },
     {
       "word": "coin",
@@ -986,9 +986,9 @@
       "chineseMeaning": "硬幣",
       "exampleSentence": "I found a coin in my jacket pocket.",
       "dateAdded": "2026-04-30",
-      "reviewCount": 3,
-      "nextReview": "2026-05-20",
-      "lastReviewedDate": "2026-05-06"
+      "reviewCount": 4,
+      "nextReview": "2026-06-19",
+      "lastReviewedDate": "2026-05-20"
     },
     {
       "word": "station",
@@ -1357,8 +1357,8 @@
       "exampleSentence": "I have an aisle seat near the back.",
       "dateAdded": "2026-05-19",
       "reviewCount": 0,
-      "nextReview": "2026-05-20",
-      "lastReviewedDate": null
+      "nextReview": "2026-05-21",
+      "lastReviewedDate": "2026-05-20"
     },
     {
       "word": "window",
@@ -1366,9 +1366,9 @@
       "chineseMeaning": "窗邊；窗戶",
       "exampleSentence": "Can I change to a window seat?",
       "dateAdded": "2026-05-19",
-      "reviewCount": 0,
-      "nextReview": "2026-05-20",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-05-23",
+      "lastReviewedDate": "2026-05-20"
     },
     {
       "word": "row",
@@ -1376,9 +1376,9 @@
       "chineseMeaning": "排；一排座位",
       "exampleSentence": "My seat is in row 21.",
       "dateAdded": "2026-05-19",
-      "reviewCount": 0,
-      "nextReview": "2026-05-20",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-05-23",
+      "lastReviewedDate": "2026-05-20"
     },
     {
       "word": "empty",
