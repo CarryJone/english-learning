@@ -1409,6 +1409,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-21",
       "lastReviewedDate": null
+    },
+    {
+      "word": "track",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "月台；軌道",
+      "exampleSentence": "The airport train leaves from Track 4.",
+      "dateAdded": "2026-05-21",
+      "reviewCount": 0,
+      "nextReview": "2026-05-22",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "direct",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "直達的",
+      "exampleSentence": "We took a direct train to the airport.",
+      "dateAdded": "2026-05-21",
+      "reviewCount": 0,
+      "nextReview": "2026-05-22",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "full",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "已滿的；沒有空位的",
+      "exampleSentence": "The lockers are full today.",
+      "dateAdded": "2026-05-21",
+      "reviewCount": 0,
+      "nextReview": "2026-05-22",
+      "lastReviewedDate": null
     }
   ]
 }
