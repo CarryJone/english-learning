@@ -996,9 +996,9 @@
       "chineseMeaning": "車站",
       "exampleSentence": "The station is busy in the morning.",
       "dateAdded": "2026-05-01",
-      "reviewCount": 3,
-      "nextReview": "2026-05-26",
-      "lastReviewedDate": "2026-05-12"
+      "reviewCount": 4,
+      "nextReview": "2026-06-25",
+      "lastReviewedDate": "2026-05-26"
     },
     {
       "word": "screen",
@@ -1006,9 +1006,9 @@
       "chineseMeaning": "螢幕、顯示看板",
       "exampleSentence": "Please check the screen for the train time.",
       "dateAdded": "2026-05-01",
-      "reviewCount": 3,
-      "nextReview": "2026-05-26",
-      "lastReviewedDate": "2026-05-12"
+      "reviewCount": 4,
+      "nextReview": "2026-06-25",
+      "lastReviewedDate": "2026-05-26"
     },
     {
       "word": "line",
@@ -1016,9 +1016,9 @@
       "chineseMeaning": "線、路線",
       "exampleSentence": "Follow the green line to the exit.",
       "dateAdded": "2026-05-01",
-      "reviewCount": 3,
-      "nextReview": "2026-05-26",
-      "lastReviewedDate": "2026-05-12"
+      "reviewCount": 4,
+      "nextReview": "2026-06-25",
+      "lastReviewedDate": "2026-05-26"
     },
     {
       "word": "pickup",
@@ -1126,9 +1126,9 @@
       "chineseMeaning": "費用、手續費",
       "exampleSentence": "The locker fee is three dollars.",
       "dateAdded": "2026-05-07",
-      "reviewCount": 3,
-      "nextReview": "2026-05-26",
-      "lastReviewedDate": "2026-05-12"
+      "reviewCount": 4,
+      "nextReview": "2026-06-25",
+      "lastReviewedDate": "2026-05-26"
     },
     {
       "word": "available",
@@ -1136,9 +1136,9 @@
       "chineseMeaning": "可用的、有空的",
       "exampleSentence": "Is there an available locker near the entrance?",
       "dateAdded": "2026-05-07",
-      "reviewCount": 3,
-      "nextReview": "2026-05-26",
-      "lastReviewedDate": "2026-05-12"
+      "reviewCount": 0,
+      "nextReview": "2026-05-27",
+      "lastReviewedDate": "2026-05-26"
     },
     {
       "word": "refund",
@@ -1446,9 +1446,9 @@
       "chineseMeaning": "優惠券",
       "exampleSentence": "Can I use this coupon?",
       "dateAdded": "2026-05-25",
-      "reviewCount": 0,
-      "nextReview": "2026-05-26",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-05-29",
+      "lastReviewedDate": "2026-05-26"
     },
     {
       "word": "cashier",
@@ -1456,9 +1456,9 @@
       "chineseMeaning": "收銀員",
       "exampleSentence": "The cashier smiles and asks, \"Are you ready?\"",
       "dateAdded": "2026-05-25",
-      "reviewCount": 0,
-      "nextReview": "2026-05-26",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-05-29",
+      "lastReviewedDate": "2026-05-26"
     },
     {
       "word": "total",
@@ -1466,9 +1466,9 @@
       "chineseMeaning": "總金額、總數",
       "exampleSentence": "The total is 90 dollars.",
       "dateAdded": "2026-05-25",
-      "reviewCount": 0,
-      "nextReview": "2026-05-26",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-05-29",
+      "lastReviewedDate": "2026-05-26"
     },
     {
       "word": "breakfast",
