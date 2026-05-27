@@ -1499,6 +1499,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-27",
       "lastReviewedDate": null
+    },
+    {
+      "word": "checkout",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "結帳區；結帳",
+      "exampleSentence": "The checkout near the door is fast.",
+      "dateAdded": "2026-05-27",
+      "reviewCount": 0,
+      "nextReview": "2026-05-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "price",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "價格",
+      "exampleSentence": "I check the price before I pay.",
+      "dateAdded": "2026-05-27",
+      "reviewCount": 0,
+      "nextReview": "2026-05-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "wallet",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "錢包",
+      "exampleSentence": "I keep my card in my wallet.",
+      "dateAdded": "2026-05-27",
+      "reviewCount": 0,
+      "nextReview": "2026-05-28",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -95,3 +95,12 @@
 - 新增單字：`breakfast`、`confirm`、`floor`；文章融入複習字：`screen`、`available`、`fee`。
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
 - 驗證：JSON parse、句子編號、Review Quiz 8 題、瀏覽器載入、HTTP 200、音檔存在。
+
+---
+## 2026-05-27 — Day 46 今日英文練習產出
+
+- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
+- 新增 `daily/2026-05-27/`，主題 `Reading a Self-Checkout Sign`，包含完整 HTML 與 16 個逐句音檔。
+- 新增單字：`checkout`、`price`、`wallet`；文章融入複習字：`order`、`available`、`receipt`。
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：JSON parse、句子編號、Review Quiz 15 題、瀏覽器載入、HTTP 200、音檔存在。
