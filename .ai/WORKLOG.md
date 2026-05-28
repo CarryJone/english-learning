@@ -5,6 +5,14 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-05-28 — Day 47 今日英文練習產出
+
+- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = daily` 產出 travel 主題。
+- 新增 `daily/2026-05-28/`，主題 `Reading a Subway Exit Map`，包含完整 HTML 與 17 個逐句音檔。
+- 新增單字：`subway`、`exit`、`escalator`；文章融入複習字：`ticket`、`machine`、`direct`。
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：JSON parse、句子編號、Review Quiz 12 題、瀏覽器載入、HTTP 200、音檔存在。
+
 ## 2026-05-21
 - 完成：先同步遠端 `vocabulary/learning.json`，再新增 Day 43 正式英文學習材料 `Checking the Train Board`，主題為 travel，任務是先看車站出發看板確認直達車月台，再到資訊櫃台開口詢問是否可暫放行李。
 - 修改：`daily/2026-05-21/`、`index.html`、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/WORKLOG.md`

@@ -1529,6 +1529,36 @@
       "reviewCount": 0,
       "nextReview": "2026-05-28",
       "lastReviewedDate": null
+    },
+    {
+      "word": "subway",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地鐵",
+      "exampleSentence": "The subway is fast in this city.",
+      "dateAdded": "2026-05-28",
+      "reviewCount": 0,
+      "nextReview": "2026-05-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "exit",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "出口",
+      "exampleSentence": "Exit A is near the bus stop.",
+      "dateAdded": "2026-05-28",
+      "reviewCount": 0,
+      "nextReview": "2026-05-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "escalator",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "手扶梯",
+      "exampleSentence": "Take the escalator to the street level.",
+      "dateAdded": "2026-05-28",
+      "reviewCount": 0,
+      "nextReview": "2026-05-29",
+      "lastReviewedDate": null
     }
   ]
 }
