@@ -106,9 +106,9 @@
       "chineseMeaning": "差事、雜事",
       "exampleSentence": "I need to run a few errands after lunch.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-06-02",
-      "lastReviewedDate": "2026-06-01"
+      "reviewCount": 1,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": "2026-06-02"
     },
     {
       "word": "grocery",
@@ -166,9 +166,9 @@
       "chineseMeaning": "接待員",
       "exampleSentence": "The receptionist gave us the room keys.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 0,
-      "nextReview": "2026-06-02",
-      "lastReviewedDate": "2026-06-01"
+      "reviewCount": 1,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": "2026-06-02"
     },
     {
       "word": "reservation",
@@ -216,9 +216,9 @@
       "chineseMeaning": "筋疲力盡的",
       "exampleSentence": "I was exhausted after the long flight.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 0,
-      "nextReview": "2026-06-02",
-      "lastReviewedDate": "2026-06-01"
+      "reviewCount": 1,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": "2026-06-02"
     },
     {
       "word": "room service",
@@ -1146,9 +1146,9 @@
       "chineseMeaning": "退款；退款給某人",
       "exampleSentence": "Can I get a refund for this shirt?",
       "dateAdded": "2026-05-08",
-      "reviewCount": 3,
-      "nextReview": "2026-06-02",
-      "lastReviewedDate": "2026-05-19"
+      "reviewCount": 4,
+      "nextReview": "2026-07-02",
+      "lastReviewedDate": "2026-06-02"
     },
     {
       "word": "exchange",
@@ -1156,9 +1156,9 @@
       "chineseMeaning": "交換、換貨",
       "exampleSentence": "Can I exchange this shirt for a larger size?",
       "dateAdded": "2026-05-08",
-      "reviewCount": 3,
-      "nextReview": "2026-06-02",
-      "lastReviewedDate": "2026-05-19"
+      "reviewCount": 4,
+      "nextReview": "2026-07-02",
+      "lastReviewedDate": "2026-06-02"
     },
     {
       "word": "policy",
@@ -1596,9 +1596,9 @@
       "chineseMeaning": "變更；改變",
       "exampleSentence": "The gate change is on the screen.",
       "dateAdded": "2026-06-01",
-      "reviewCount": 0,
-      "nextReview": "2026-06-02",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": "2026-06-02"
     },
     {
       "word": "wrong",
@@ -1606,9 +1606,9 @@
       "chineseMeaning": "錯的；不對的",
       "exampleSentence": "This is the wrong line for the airport.",
       "dateAdded": "2026-06-01",
-      "reviewCount": 0,
-      "nextReview": "2026-06-02",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": "2026-06-02"
     },
     {
       "word": "late",
@@ -1616,9 +1616,9 @@
       "chineseMeaning": "晚的；延誤的",
       "exampleSentence": "The bus is late this morning.",
       "dateAdded": "2026-06-01",
-      "reviewCount": 0,
-      "nextReview": "2026-06-02",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": "2026-06-02"
     },
     {
       "word": "message",
