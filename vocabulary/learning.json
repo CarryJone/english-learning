@@ -1621,33 +1621,33 @@
       "lastReviewedDate": null
     },
     {
-      "word": "change",
-      "partOfSpeech": "n./v.",
-      "chineseMeaning": "變更；改變",
-      "exampleSentence": "The gate change is on the screen.",
-      "dateAdded": "2026-06-01",
+      "word": "message",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "訊息",
+      "exampleSentence": "I got a message from the store today.",
+      "dateAdded": "2026-06-02",
       "reviewCount": 0,
-      "nextReview": "2026-06-02",
+      "nextReview": "2026-06-03",
       "lastReviewedDate": null
     },
     {
-      "word": "wrong",
+      "word": "busy",
       "partOfSpeech": "adj.",
-      "chineseMeaning": "錯的；不對的",
-      "exampleSentence": "This is the wrong line for the airport.",
-      "dateAdded": "2026-06-01",
+      "chineseMeaning": "忙碌的",
+      "exampleSentence": "The cafe is busy at lunch time.",
+      "dateAdded": "2026-06-02",
       "reviewCount": 0,
-      "nextReview": "2026-06-02",
+      "nextReview": "2026-06-03",
       "lastReviewedDate": null
     },
     {
-      "word": "late",
-      "partOfSpeech": "adj.",
-      "chineseMeaning": "晚的；延誤的",
-      "exampleSentence": "The bus is late this morning.",
-      "dateAdded": "2026-06-01",
+      "word": "minute",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "分鐘",
+      "exampleSentence": "The bus stop is five minutes from here.",
+      "dateAdded": "2026-06-02",
       "reviewCount": 0,
-      "nextReview": "2026-06-02",
+      "nextReview": "2026-06-03",
       "lastReviewedDate": null
     }
   ]
