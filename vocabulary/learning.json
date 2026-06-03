@@ -1649,6 +1649,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-03",
       "lastReviewedDate": null
+    },
+    {
+      "word": "bay",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "乘車區；月台區",
+      "exampleSentence": "Wait at Bay 12 for the airport bus.",
+      "dateAdded": "2026-06-03",
+      "reviewCount": 0,
+      "nextReview": "2026-06-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "express",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "直達的；快速的",
+      "exampleSentence": "This is the express train to the city.",
+      "dateAdded": "2026-06-03",
+      "reviewCount": 0,
+      "nextReview": "2026-06-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "staff",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "工作人員",
+      "exampleSentence": "The station staff can help you.",
+      "dateAdded": "2026-06-03",
+      "reviewCount": 0,
+      "nextReview": "2026-06-04",
+      "lastReviewedDate": null
     }
   ]
 }
