@@ -1679,6 +1679,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-04",
       "lastReviewedDate": null
+    },
+    {
+      "word": "ready",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "準備好的；可取的",
+      "exampleSentence": "Your food is ready now.",
+      "dateAdded": "2026-06-04",
+      "reviewCount": 0,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "queue",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "排隊隊伍",
+      "exampleSentence": "Please wait in the queue near the window.",
+      "dateAdded": "2026-06-04",
+      "reviewCount": 0,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "section",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "區域；區段",
+      "exampleSentence": "Pickup orders are in Section B.",
+      "dateAdded": "2026-06-04",
+      "reviewCount": 0,
+      "nextReview": "2026-06-05",
+      "lastReviewedDate": null
     }
   ]
 }
