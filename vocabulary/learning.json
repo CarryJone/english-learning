@@ -106,9 +106,9 @@
       "chineseMeaning": "差事、雜事",
       "exampleSentence": "I need to run a few errands after lunch.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 1,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-06-02"
+      "reviewCount": 0,
+      "nextReview": "2026-06-06",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "grocery",
@@ -166,9 +166,9 @@
       "chineseMeaning": "接待員",
       "exampleSentence": "The receptionist gave us the room keys.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 1,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-06-02"
+      "reviewCount": 2,
+      "nextReview": "2026-06-12",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "reservation",
@@ -216,9 +216,9 @@
       "chineseMeaning": "筋疲力盡的",
       "exampleSentence": "I was exhausted after the long flight.",
       "dateAdded": "2026-03-12",
-      "reviewCount": 1,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-06-02"
+      "reviewCount": 2,
+      "nextReview": "2026-06-12",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "room service",
@@ -696,9 +696,9 @@
       "chineseMeaning": "觀光",
       "exampleSentence": "We did some sightseeing near the old temple.",
       "dateAdded": "2026-04-02",
-      "reviewCount": 4,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-05-06"
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "hostel",
@@ -806,9 +806,9 @@
       "chineseMeaning": "陽台",
       "exampleSentence": "She grows flowers on her balcony.",
       "dateAdded": "2026-04-10",
-      "reviewCount": 4,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-05-06"
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "bakery",
@@ -816,9 +816,9 @@
       "chineseMeaning": "麵包店",
       "exampleSentence": "We bought breakfast at the bakery near the station.",
       "dateAdded": "2026-04-23",
-      "reviewCount": 4,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-05-06"
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "corner",
@@ -826,9 +826,9 @@
       "chineseMeaning": "街角、轉角",
       "exampleSentence": "There is a small cafe on the corner.",
       "dateAdded": "2026-04-23",
-      "reviewCount": 4,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-05-06"
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "crosswalk",
@@ -836,9 +836,9 @@
       "chineseMeaning": "人行道、斑馬線",
       "exampleSentence": "Please stop before you walk across the crosswalk.",
       "dateAdded": "2026-04-23",
-      "reviewCount": 4,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-05-06"
+      "reviewCount": 5,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "sink",
@@ -1446,9 +1446,9 @@
       "chineseMeaning": "優惠券",
       "exampleSentence": "Can I use this coupon?",
       "dateAdded": "2026-05-25",
-      "reviewCount": 2,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-05-29"
+      "reviewCount": 3,
+      "nextReview": "2026-06-19",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "cashier",
@@ -1456,9 +1456,9 @@
       "chineseMeaning": "收銀員",
       "exampleSentence": "The cashier smiles and asks, \"Are you ready?\"",
       "dateAdded": "2026-05-25",
-      "reviewCount": 2,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-05-29"
+      "reviewCount": 3,
+      "nextReview": "2026-06-19",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "total",
@@ -1466,9 +1466,9 @@
       "chineseMeaning": "總金額、總數",
       "exampleSentence": "The total is 90 dollars.",
       "dateAdded": "2026-05-25",
-      "reviewCount": 2,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-05-29"
+      "reviewCount": 3,
+      "nextReview": "2026-06-19",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "breakfast",
@@ -1596,9 +1596,9 @@
       "chineseMeaning": "變更；改變",
       "exampleSentence": "The gate change is on the screen.",
       "dateAdded": "2026-06-01",
-      "reviewCount": 1,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-06-02"
+      "reviewCount": 2,
+      "nextReview": "2026-06-12",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "wrong",
@@ -1606,9 +1606,9 @@
       "chineseMeaning": "錯的；不對的",
       "exampleSentence": "This is the wrong line for the airport.",
       "dateAdded": "2026-06-01",
-      "reviewCount": 1,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-06-02"
+      "reviewCount": 2,
+      "nextReview": "2026-06-12",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "late",
@@ -1616,9 +1616,9 @@
       "chineseMeaning": "晚的；延誤的",
       "exampleSentence": "The bus is late this morning.",
       "dateAdded": "2026-06-01",
-      "reviewCount": 1,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-06-02"
+      "reviewCount": 2,
+      "nextReview": "2026-06-12",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "message",
@@ -1657,8 +1657,8 @@
       "exampleSentence": "Wait at Bay 12 for the airport bus.",
       "dateAdded": "2026-06-03",
       "reviewCount": 0,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": "2026-06-04"
+      "nextReview": "2026-06-06",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "express",
@@ -1686,9 +1686,9 @@
       "chineseMeaning": "準備好的；可取的",
       "exampleSentence": "Your food is ready now.",
       "dateAdded": "2026-06-04",
-      "reviewCount": 0,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-06-08",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "queue",
@@ -1697,8 +1697,8 @@
       "exampleSentence": "Please wait in the queue near the window.",
       "dateAdded": "2026-06-04",
       "reviewCount": 0,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": null
+      "nextReview": "2026-06-06",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "section",
@@ -1706,9 +1706,9 @@
       "chineseMeaning": "區域；區段",
       "exampleSentence": "Pickup orders are in Section B.",
       "dateAdded": "2026-06-04",
-      "reviewCount": 0,
-      "nextReview": "2026-06-05",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-06-08",
+      "lastReviewedDate": "2026-06-05"
     },
     {
       "word": "claim",
