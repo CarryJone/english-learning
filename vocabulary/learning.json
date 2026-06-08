@@ -1739,6 +1739,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-06",
       "lastReviewedDate": null
+    },
+    {
+      "word": "reload",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "儲值；重新加值",
+      "exampleSentence": "I need to reload my bus card.",
+      "dateAdded": "2026-06-08",
+      "reviewCount": 0,
+      "nextReview": "2026-06-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "balance",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "餘額",
+      "exampleSentence": "The balance is 30 dollars now.",
+      "dateAdded": "2026-06-08",
+      "reviewCount": 0,
+      "nextReview": "2026-06-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "payment",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "付款；付款方式",
+      "exampleSentence": "Select your payment on the screen.",
+      "dateAdded": "2026-06-08",
+      "reviewCount": 0,
+      "nextReview": "2026-06-09",
+      "lastReviewedDate": null
     }
   ]
 }
