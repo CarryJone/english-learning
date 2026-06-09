@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-06-09 — Day 55 今日英文練習產出
+
+- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = daily` 產出 travel 主題。
+- 新增 `daily/2026-06-09/`，主題 `Reading the Shuttle Zone Sign`，包含完整 HTML、`article.mp3` 與 `s01.mp3` 到 `s18.mp3`。
+- 新增單字：`terminal`、`zone`、`direction`；文章融入複習字：`shuttle`、`staff`、`ready`。
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：HTML 區塊完整、句子編號連續、18 個單句音檔存在、本機 HTTP 200。
+
+---
 ## 2026-06-08 — Day 54 今日英文練習產出
 
 - 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。

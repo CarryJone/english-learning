@@ -1769,6 +1769,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-09",
       "lastReviewedDate": null
+    },
+    {
+      "word": "terminal",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "航廈；總站",
+      "exampleSentence": "Terminal 2 is for many international flights.",
+      "dateAdded": "2026-06-09",
+      "reviewCount": 0,
+      "nextReview": "2026-06-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "zone",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "區域",
+      "exampleSentence": "Please wait in Zone B for the shuttle.",
+      "dateAdded": "2026-06-09",
+      "reviewCount": 0,
+      "nextReview": "2026-06-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "direction",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "方向；指示",
+      "exampleSentence": "Check the direction on the sign first.",
+      "dateAdded": "2026-06-09",
+      "reviewCount": 0,
+      "nextReview": "2026-06-10",
+      "lastReviewedDate": null
     }
   ]
 }
