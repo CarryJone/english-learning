@@ -1799,6 +1799,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-10",
       "lastReviewedDate": null
+    },
+    {
+      "word": "combo",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "套餐組合",
+      "exampleSentence": "This combo comes with a drink.",
+      "dateAdded": "2026-06-10",
+      "reviewCount": 0,
+      "nextReview": "2026-06-11",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "sauce",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "醬料",
+      "exampleSentence": "The sauce is on the table.",
+      "dateAdded": "2026-06-10",
+      "reviewCount": 0,
+      "nextReview": "2026-06-11",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "allergy",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "過敏",
+      "exampleSentence": "Please tell us about any allergy.",
+      "dateAdded": "2026-06-10",
+      "reviewCount": 0,
+      "nextReview": "2026-06-11",
+      "lastReviewedDate": null
     }
   ]
 }
