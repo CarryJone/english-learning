@@ -189,3 +189,11 @@
 - 依 `profile.json.lastTopic = daily` 產出 travel 主題，新增 `daily/2026-06-05/`，標題為 `Checking the Baggage Claim Screen`
 - 今日新字：`claim`、`belt`、`hall`；文章融入複習字：`late`、`wrong`、`staff`
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`
+
+## 2026-06-12 — Day 57 今日英文練習產出
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，避免用過期 SRS 生成 review。
+- 依 `profile.json.lastTopic = daily` 產出 `travel` 主題，新增 `daily/2026-06-12/`，標題為 `Reading a Passport Control Sign`。
+- 新增單字：`passport control`、`visa`、`stamp`；文章融入複習字：`hall`、`wrong`、`number`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s20.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
+- 驗證：句子編號連續、20 個單句音檔存在、Review Quiz 36 題、首頁條目存在、本機 HTTP 200。

@@ -1829,6 +1829,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-11",
       "lastReviewedDate": null
+    },
+    {
+      "word": "passport control",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "護照查驗",
+      "exampleSentence": "Passport control is next to baggage claim.",
+      "dateAdded": "2026-06-12",
+      "reviewCount": 0,
+      "nextReview": "2026-06-13",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "visa",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "簽證",
+      "exampleSentence": "Do I need a visa for this trip?",
+      "dateAdded": "2026-06-12",
+      "reviewCount": 0,
+      "nextReview": "2026-06-13",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "stamp",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "印章；蓋章",
+      "exampleSentence": "The officer puts a stamp in my passport.",
+      "dateAdded": "2026-06-12",
+      "reviewCount": 0,
+      "nextReview": "2026-06-13",
+      "lastReviewedDate": null
     }
   ]
 }
