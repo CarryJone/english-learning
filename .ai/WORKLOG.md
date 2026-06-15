@@ -197,3 +197,11 @@
 - 新增單字：`passport control`、`visa`、`stamp`；文章融入複習字：`hall`、`wrong`、`number`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s20.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
 - 驗證：句子編號連續、20 個單句音檔存在、Review Quiz 36 題、首頁條目存在、本機 HTTP 200。
+
+## 2026-06-15 — Day 58 今日英文練習產出
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，確保 review 區塊使用最新 SRS。
+- 依 `profile.json.lastTopic = travel` 產出 `daily` 主題，新增 `daily/2026-06-15/`，標題為 `Reading a Cafe Wi-Fi Sign`。
+- 新增單字：`Wi-Fi code`、`outlet`、`refill`；文章融入複習字：`busy`、`message`、`card`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
+- 驗證：句子編號連續、18 個單句音檔存在、Review Quiz 24 題、首頁條目存在、本機 HTTP 200。
