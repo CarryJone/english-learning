@@ -224,3 +224,13 @@
 - 新增單字：`bottom`、`printed`、`warning`；文章融入複習字：`window`、`Wi-Fi code`、`outlet`、`refill`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、18 個單句音檔存在、Review Quiz 3 題、首頁條目存在、本機 HTTP 200。
+
+## 2026-06-22 — Day 61 正式教材產出
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，避免用過期 SRS 生成 review。
+- 延續 serial story continuity，新增 `daily/2026-06-22/`，標題為 `The Blue Receipt · Episode 3`。
+- 今日新字：`front`、`saved`、`ride`；文章融入複習字：`warning`、`nearby`、`block`。
+- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 50 個到期複習字。
+- Speaking Bridge 使用 `block`、`listed`、`nearby`、`warning`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s20.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、20 個單句音檔存在、本機 HTTP 200。

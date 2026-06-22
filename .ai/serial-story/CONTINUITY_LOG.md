@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 2, `The Blue Receipt · Episode 2`
+- Current episode: Episode 3, `The Blue Receipt · Episode 3`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -20,7 +20,12 @@
   - The worker warned Mina not to take the blue bus and told her to use Stop B after 8 p.m.
   - Mina confirmed on the route app that a notice really said: `Use Stop B after 8 p.m.`
   - A second message appeared on her phone screen: `Do not wait alone.`
-  - The blue bus door opened again at the end of the episode.
+  - The blue bus door opened again at the end of Episode 2.
+  - The cafe worker used a side door to send Mina out quickly.
+  - Mina reached Stop B and boarded a gray bus instead of the blue bus.
+  - A card on an empty seat said: `This seat is saved for M.L.`
+  - The card later showed a second line: `Do not miss your ride.`
+  - Someone or something on the bus knows Mina's initials and route choice in real time.
 
 ## Open Threads
 
@@ -51,6 +56,17 @@
 - New danger signal: another line appears on Mina's screen, `Do not wait alone.`
 - Hook: the blue bus door opens again just as Mina turns toward the window.
 
+### 2026-06-22 — Episode 3: The Empty Seat
+
+- Location: outside the cafe, Stop B, then a gray bus moving away from the street.
+- The cafe worker quietly helps Mina leave through the side door.
+- Useful sentence: `Does this bus stop at River Street?`
+- Mina chooses the gray bus before the blue bus can reach her.
+- English clue on the bus: `This seat is saved for M.L.`
+- Second clue: `Do not miss your ride.`
+- The card uses Mina's initials even though she did not tell anyone her plan.
+- Hook: the gray bus starts moving just after the card flips over by itself.
+
 ## Next Episode Pointer
 
-Episode 3 should move Mina out of the cafe or to the edge of leaving it. Keep the worker cautious and still partially informed. The next step should explore why someone can change everyday English text in real time, but do not reveal the sender yet. The bus door opening should create immediate pressure.
+Episode 4 should let Mina contact Lina or compare what just happened on the bus with something searchable online. Keep the mystery quiet and practical: route information, public screens, or old local posts. The next step should answer one small question about `M.L.` while opening a bigger question about who is guiding Mina.

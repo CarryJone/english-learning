@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>📖 Daily English</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>📖 Daily English</title>
+<style>
     :root {
       --bg: #f5f4ef; --card: #fff; --accent: #4f7cff; --accent2: #f0a500;
       --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
@@ -62,446 +64,448 @@
 </head>
 <body>
 <div class="container">
-
-  <div class="header">
-    <div class="emoji">📖</div>
-    <h1>Daily <span>English</span></h1>
-    <p>A2 → B1 · 每天一篇，持續進步</p>
-  </div>
-
-  <a id="today-link" class="today-btn" href="#">
+<div class="header">
+<div class="emoji">📖</div>
+<h1>Daily <span>English</span></h1>
+<p>A2 → B1 · 每天一篇，持續進步</p>
+</div>
+<a class="today-btn" href="#" id="today-link">
     前往今天的學習內容
     <div class="sub" id="today-date-label"></div>
-  </a>
-
-    <div class="card">
-      <div class="card-title">📅 學習記錄</div>
-      <div class="day-list" id="day-list">
-      <!-- DAYS_START -->
-      <a class="day-item" href="daily/2026-06-17/">
-        <div class="day-left">
-          <div class="day-date">2026-06-17</div>
-          <div class="day-title">The Blue Receipt · Episode 2</div>
-        </div>
-        <div class="day-num">Day 60</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-16/">
-        <div class="day-left">
-          <div class="day-date">2026-06-16</div>
-          <div class="day-title">The Blue Receipt · Episode 1</div>
-        </div>
-        <div class="day-num">Day 59</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-15/">
-        <div class="day-left">
-          <div class="day-date">2026-06-15</div>
-          <div class="day-title">Reading a Cafe Wi-Fi Sign</div>
-        </div>
-        <div class="day-num">Day 58</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-12/">
-        <div class="day-left">
-          <div class="day-date">2026-06-12</div>
-          <div class="day-title">Reading a Passport Control Sign</div>
-        </div>
-        <div class="day-num">Day 57</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-10/">
-        <div class="day-left">
-          <div class="day-date">2026-06-10</div>
-          <div class="day-title">Reading a Lunch Combo Sign</div>
-        </div>
-        <div class="day-num">Day 56</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-09/">
-        <div class="day-left">
-          <div class="day-date">2026-06-09</div>
-          <div class="day-title">Reading the Shuttle Zone Sign</div>
-        </div>
-        <div class="day-num">Day 55</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-08/">
-        <div class="day-left">
-          <div class="day-date">2026-06-08</div>
-          <div class="day-title">Reloading a Bus Card</div>
-        </div>
-        <div class="day-num">Day 54</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-05/">
-        <div class="day-left">
-          <div class="day-date">2026-06-05</div>
-          <div class="day-title">Checking the Baggage Claim Screen</div>
-        </div>
-        <div class="day-num">Day 53</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-04/">
-        <div class="day-left">
-          <div class="day-date">2026-06-04</div>
-          <div class="day-title">Checking a Food Court Pickup Screen</div>
-        </div>
-        <div class="day-num">Day 52</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-03/">
-        <div class="day-left">
-          <div class="day-date">2026-06-03</div>
-          <div class="day-title">Finding the Airport Bus Bay</div>
-        </div>
-        <div class="day-num">Day 51</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-02/">
-        <div class="day-left">
-          <div class="day-date">2026-06-02</div>
-          <div class="day-title">Reading a Doctor's Message</div>
-        </div>
-        <div class="day-num">Day 50</div>
-      </a>
-      <a class="day-item" href="daily/2026-06-01/">
-        <div class="day-left">
-          <div class="day-date">2026-06-01</div>
-          <div class="day-title">Checking a Gate Change</div>
-        </div>
-        <div class="day-num">Day 49</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-29/">
-        <div class="day-left">
-          <div class="day-date">2026-05-29</div>
-          <div class="day-title">Reading a Lunch Menu Board</div>
-        </div>
-        <div class="day-num">Day 48</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-28/">
-        <div class="day-left">
-          <div class="day-date">2026-05-28</div>
-          <div class="day-title">Reading a Subway Exit Map</div>
-        </div>
-        <div class="day-num">Day 47</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-27/">
-        <div class="day-left">
-          <div class="day-date">2026-05-27</div>
-          <div class="day-title">Reading a Self-Checkout Sign</div>
-        </div>
-        <div class="day-num">Day 46</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-26/">
-        <div class="day-left">
-          <div class="day-date">2026-05-26</div>
-          <div class="day-title">Confirming Hotel Breakfast</div>
-        </div>
-        <div class="day-num">Day 45</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-25/">
-        <div class="day-left">
-          <div class="day-date">2026-05-25</div>
-          <div class="day-title">Using a Cafe Coupon</div>
-        </div>
-        <div class="day-num">Day 44</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-21/">
-        <div class="day-left">
-          <div class="day-date">2026-05-21</div>
-          <div class="day-title">Checking the Train Board</div>
-        </div>
-        <div class="day-num">Day 43</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-20/">
-        <div class="day-left">
-          <div class="day-date">2026-05-20</div>
-          <div class="day-title">Reading Laundry Room Signs</div>
-        </div>
-        <div class="day-num">Day 42</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-19/">
-        <div class="day-left">
-          <div class="day-date">2026-05-19</div>
-          <div class="day-title">Changing to a Window Seat</div>
-        </div>
-        <div class="day-num">Day 41</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-18/">
-        <div class="day-left">
-          <div class="day-date">2026-05-18</div>
-          <div class="day-title">Picking Up a Package</div>
-        </div>
-        <div class="day-num">Day 40</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-15/">
-        <div class="day-left">
-          <div class="day-date">2026-05-15</div>
-          <div class="day-title">Leaving a Bag at the Hotel</div>
-        </div>
-        <div class="day-num">Day 39</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-14/">
-        <div class="day-left">
-          <div class="day-date">2026-05-14</div>
-          <div class="day-title">Reading the Station App</div>
-        </div>
-        <div class="day-num">Day 38</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-13/">
-        <div class="day-left">
-          <div class="day-date">2026-05-13</div>
-          <div class="day-title">Finding the Hotel Shuttle</div>
-        </div>
-        <div class="day-num">Day 37</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-12/">
-        <div class="day-left">
-          <div class="day-date">2026-05-12</div>
-          <div class="day-title">Checking Cafe Hours</div>
-        </div>
-        <div class="day-num">Day 36</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-11/">
-        <div class="day-left">
-          <div class="day-date">2026-05-11</div>
-          <div class="day-title">Finding the Right Bus Stop</div>
-        </div>
-        <div class="day-num">Day 35</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-08/">
-        <div class="day-left">
-          <div class="day-date">2026-05-08</div>
-          <div class="day-title">Checking a Return Policy</div>
-        </div>
-        <div class="day-num">Day 34</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-07/">
-        <div class="day-left">
-          <div class="day-date">2026-05-07</div>
-          <div class="day-title">Using a Station Locker</div>
-        </div>
-        <div class="day-num">Day 33</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-06/">
-        <div class="day-left">
-          <div class="day-date">2026-05-06</div>
-          <div class="day-title">Picking Up Medicine</div>
-        </div>
-        <div class="day-num">Day 32</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-05/">
-        <div class="day-left">
-          <div class="day-date">2026-05-05</div>
-          <div class="day-title">Buying a Train Ticket</div>
-        </div>
-        <div class="day-num">Day 31</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-04/">
-        <div class="day-left">
-          <div class="day-date">2026-05-04</div>
-          <div class="day-title">Checking the Pickup Time</div>
-        </div>
-        <div class="day-num">Day 30</div>
-      </a>
-      <a class="day-item" href="daily/2026-05-01/">
-        <div class="day-left">
-          <div class="day-date">2026-05-01</div>
-          <div class="day-title">Finding the Right Exit</div>
-        </div>
-        <div class="day-num">Day 29</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-30/">
-        <div class="day-left">
-          <div class="day-date">2026-04-30</div>
-          <div class="day-title">A Quiet Laundry Night</div>
-        </div>
-        <div class="day-num">Day 28</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-29/">
-        <div class="day-left">
-          <div class="day-date">2026-04-29</div>
-          <div class="day-title">Breakfast Near the Hotel</div>
-        </div>
-        <div class="day-num">Day 27</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-28/">
-        <div class="day-left">
-          <div class="day-date">2026-04-28</div>
-          <div class="day-title">Ten Minutes Before Bed</div>
-        </div>
-        <div class="day-num">Day 26</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-27/">
-        <div class="day-left">
-          <div class="day-date">2026-04-27</div>
-          <div class="day-title">A Bus Ride to the Park</div>
-        </div>
-        <div class="day-num">Day 25</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-24/">
-        <div class="day-left">
-          <div class="day-date">2026-04-24</div>
-          <div class="day-title">A Quick Clean After Breakfast</div>
-        </div>
-        <div class="day-num">Day 24</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-23/">
-        <div class="day-left">
-          <div class="day-date">2026-04-23</div>
-          <div class="day-title">A Short Walk to the Bakery</div>
-        </div>
-        <div class="day-num">Day 23</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-10/">
-        <div class="day-left">
-          <div class="day-date">2026-04-10</div>
-          <div class="day-title">A Quiet Morning on the Balcony</div>
-        </div>
-        <div class="day-num">Day 22</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-09/">
-        <div class="day-left">
-          <div class="day-date">2026-04-09</div>
-          <div class="day-title">A Calm Morning by the Harbor</div>
-        </div>
-        <div class="day-num">Day 21</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-03/">
-        <div class="day-left">
-          <div class="day-date">2026-04-03</div>
-          <div class="day-title">A Quiet Day at Home</div>
-        </div>
-        <div class="day-num">Day 20</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-02/">
-        <div class="day-left">
-          <div class="day-date">2026-04-02</div>
-          <div class="day-title">A Short Trip by Ferry</div>
-        </div>
-        <div class="day-num">Day 19</div>
-      </a>
-      <a class="day-item" href="daily/2026-04-01/">
-        <div class="day-left">
-          <div class="day-date">2026-04-01</div>
-          <div class="day-title">A Simple Day at Home</div>
-        </div>
-        <div class="day-num">Day 18</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-31/">
-        <div class="day-left">
-          <div class="day-date">2026-03-31</div>
-          <div class="day-title">A Short Ferry Trip</div>
-        </div>
-        <div class="day-num">Day 17</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-30/">
-        <div class="day-left">
-          <div class="day-date">2026-03-30</div>
-          <div class="day-title">A Sunny Morning at Home</div>
-        </div>
-        <div class="day-num">Day 16</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-27/">
-        <div class="day-left">
-          <div class="day-date">2026-03-27</div>
-          <div class="day-title">A Walk Through the Old Town</div>
-        </div>
-        <div class="day-num">Day 15</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-26/">
-        <div class="day-left">
-          <div class="day-date">2026-03-26</div>
-          <div class="day-title">A Quiet Morning at Home</div>
-        </div>
-        <div class="day-num">Day 14</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-25/">
-        <div class="day-left">
-          <div class="day-date">2026-03-25</div>
-          <div class="day-title">A Fun Day at the Beach</div>
-        </div>
-        <div class="day-num">Day 13</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-24/">
-        <div class="day-left">
-          <div class="day-date">2026-03-24</div>
-          <div class="day-title">A Quiet Day at Home</div>
-        </div>
-        <div class="day-num">Day 12</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-23/">
-        <div class="day-left">
-          <div class="day-date">2026-03-23</div>
-          <div class="day-title">A Train Trip to the City</div>
-        </div>
-        <div class="day-num">Day 11</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-20/">
-        <div class="day-left">
-          <div class="day-date">2026-03-20</div>
-          <div class="day-title">A Quiet Morning at Home</div>
-        </div>
-        <div class="day-num">Day 10</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-19/">
-        <div class="day-left">
-          <div class="day-date">2026-03-19</div>
-          <div class="day-title">A Day of Sightseeing</div>
-        </div>
-        <div class="day-num">Day 9</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-18/">
-        <div class="day-left">
-          <div class="day-date">2026-03-18</div>
-          <div class="day-title">A Calm Morning at Home</div>
-        </div>
-        <div class="day-num">Day 8</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-17/">
-        <div class="day-left">
-          <div class="day-date">2026-03-17</div>
-          <div class="day-title">Exploring a New City On Your Own</div>
-        </div>
-        <div class="day-num">Day 7</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-16/">
-        <div class="day-left">
-          <div class="day-date">2026-03-16</div>
-          <div class="day-title">A Busy Weekend at Home</div>
-        </div>
-        <div class="day-num">Day 6</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-15/">
-        <div class="day-left">
-          <div class="day-date">2026-03-15</div>
-          <div class="day-title">Planning a Trip</div>
-        </div>
-        <div class="day-num">Day 5</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-13/">
-        <div class="day-left">
-          <div class="day-date">2026-03-13</div>
-          <div class="day-title">A Quiet Day at Home</div>
-        </div>
-        <div class="day-num">Day 4</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-12/">
-        <div class="day-left">
-          <div class="day-date">2026-03-12</div>
-          <div class="day-title">A First Night at the Hotel</div>
-        </div>
-        <div class="day-num">Day 3</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-11/">
-        <div class="day-left">
-          <div class="day-date">2026-03-11</div>
-          <div class="day-title">A Day in the Life of a City Worker</div>
-        </div>
-        <div class="day-num">Day 2</div>
-      </a>
-      <a class="day-item" href="daily/2026-03-10/">
-        <div class="day-left">
-          <div class="day-date">2026-03-10</div>
-          <div class="day-title">A Day at the Airport</div>
-        </div>
-        <div class="day-num">Day 1</div>
-      </a>
-      <!-- DAYS_END -->
-    </div>
-  </div>
-
+</a>
+<div class="card">
+<div class="card-title">📅 學習記錄</div>
+<div class="day-list" id="day-list">
+<!-- DAYS_START -->
+<a class="day-item" href="daily/2026-06-22/">
+<div class="day-left">
+<div class="day-date">2026-06-22</div>
+<div class="day-title">The Blue Receipt · Episode 3</div>
+</div>
+<div class="day-num">Day 61</div>
+</a><a class="day-item" href="daily/2026-06-17/">
+<div class="day-left">
+<div class="day-date">2026-06-17</div>
+<div class="day-title">The Blue Receipt · Episode 2</div>
+</div>
+<div class="day-num">Day 60</div>
+</a>
+<a class="day-item" href="daily/2026-06-16/">
+<div class="day-left">
+<div class="day-date">2026-06-16</div>
+<div class="day-title">The Blue Receipt · Episode 1</div>
+</div>
+<div class="day-num">Day 59</div>
+</a>
+<a class="day-item" href="daily/2026-06-15/">
+<div class="day-left">
+<div class="day-date">2026-06-15</div>
+<div class="day-title">Reading a Cafe Wi-Fi Sign</div>
+</div>
+<div class="day-num">Day 58</div>
+</a>
+<a class="day-item" href="daily/2026-06-12/">
+<div class="day-left">
+<div class="day-date">2026-06-12</div>
+<div class="day-title">Reading a Passport Control Sign</div>
+</div>
+<div class="day-num">Day 57</div>
+</a>
+<a class="day-item" href="daily/2026-06-10/">
+<div class="day-left">
+<div class="day-date">2026-06-10</div>
+<div class="day-title">Reading a Lunch Combo Sign</div>
+</div>
+<div class="day-num">Day 56</div>
+</a>
+<a class="day-item" href="daily/2026-06-09/">
+<div class="day-left">
+<div class="day-date">2026-06-09</div>
+<div class="day-title">Reading the Shuttle Zone Sign</div>
+</div>
+<div class="day-num">Day 55</div>
+</a>
+<a class="day-item" href="daily/2026-06-08/">
+<div class="day-left">
+<div class="day-date">2026-06-08</div>
+<div class="day-title">Reloading a Bus Card</div>
+</div>
+<div class="day-num">Day 54</div>
+</a>
+<a class="day-item" href="daily/2026-06-05/">
+<div class="day-left">
+<div class="day-date">2026-06-05</div>
+<div class="day-title">Checking the Baggage Claim Screen</div>
+</div>
+<div class="day-num">Day 53</div>
+</a>
+<a class="day-item" href="daily/2026-06-04/">
+<div class="day-left">
+<div class="day-date">2026-06-04</div>
+<div class="day-title">Checking a Food Court Pickup Screen</div>
+</div>
+<div class="day-num">Day 52</div>
+</a>
+<a class="day-item" href="daily/2026-06-03/">
+<div class="day-left">
+<div class="day-date">2026-06-03</div>
+<div class="day-title">Finding the Airport Bus Bay</div>
+</div>
+<div class="day-num">Day 51</div>
+</a>
+<a class="day-item" href="daily/2026-06-02/">
+<div class="day-left">
+<div class="day-date">2026-06-02</div>
+<div class="day-title">Reading a Doctor's Message</div>
+</div>
+<div class="day-num">Day 50</div>
+</a>
+<a class="day-item" href="daily/2026-06-01/">
+<div class="day-left">
+<div class="day-date">2026-06-01</div>
+<div class="day-title">Checking a Gate Change</div>
+</div>
+<div class="day-num">Day 49</div>
+</a>
+<a class="day-item" href="daily/2026-05-29/">
+<div class="day-left">
+<div class="day-date">2026-05-29</div>
+<div class="day-title">Reading a Lunch Menu Board</div>
+</div>
+<div class="day-num">Day 48</div>
+</a>
+<a class="day-item" href="daily/2026-05-28/">
+<div class="day-left">
+<div class="day-date">2026-05-28</div>
+<div class="day-title">Reading a Subway Exit Map</div>
+</div>
+<div class="day-num">Day 47</div>
+</a>
+<a class="day-item" href="daily/2026-05-27/">
+<div class="day-left">
+<div class="day-date">2026-05-27</div>
+<div class="day-title">Reading a Self-Checkout Sign</div>
+</div>
+<div class="day-num">Day 46</div>
+</a>
+<a class="day-item" href="daily/2026-05-26/">
+<div class="day-left">
+<div class="day-date">2026-05-26</div>
+<div class="day-title">Confirming Hotel Breakfast</div>
+</div>
+<div class="day-num">Day 45</div>
+</a>
+<a class="day-item" href="daily/2026-05-25/">
+<div class="day-left">
+<div class="day-date">2026-05-25</div>
+<div class="day-title">Using a Cafe Coupon</div>
+</div>
+<div class="day-num">Day 44</div>
+</a>
+<a class="day-item" href="daily/2026-05-21/">
+<div class="day-left">
+<div class="day-date">2026-05-21</div>
+<div class="day-title">Checking the Train Board</div>
+</div>
+<div class="day-num">Day 43</div>
+</a>
+<a class="day-item" href="daily/2026-05-20/">
+<div class="day-left">
+<div class="day-date">2026-05-20</div>
+<div class="day-title">Reading Laundry Room Signs</div>
+</div>
+<div class="day-num">Day 42</div>
+</a>
+<a class="day-item" href="daily/2026-05-19/">
+<div class="day-left">
+<div class="day-date">2026-05-19</div>
+<div class="day-title">Changing to a Window Seat</div>
+</div>
+<div class="day-num">Day 41</div>
+</a>
+<a class="day-item" href="daily/2026-05-18/">
+<div class="day-left">
+<div class="day-date">2026-05-18</div>
+<div class="day-title">Picking Up a Package</div>
+</div>
+<div class="day-num">Day 40</div>
+</a>
+<a class="day-item" href="daily/2026-05-15/">
+<div class="day-left">
+<div class="day-date">2026-05-15</div>
+<div class="day-title">Leaving a Bag at the Hotel</div>
+</div>
+<div class="day-num">Day 39</div>
+</a>
+<a class="day-item" href="daily/2026-05-14/">
+<div class="day-left">
+<div class="day-date">2026-05-14</div>
+<div class="day-title">Reading the Station App</div>
+</div>
+<div class="day-num">Day 38</div>
+</a>
+<a class="day-item" href="daily/2026-05-13/">
+<div class="day-left">
+<div class="day-date">2026-05-13</div>
+<div class="day-title">Finding the Hotel Shuttle</div>
+</div>
+<div class="day-num">Day 37</div>
+</a>
+<a class="day-item" href="daily/2026-05-12/">
+<div class="day-left">
+<div class="day-date">2026-05-12</div>
+<div class="day-title">Checking Cafe Hours</div>
+</div>
+<div class="day-num">Day 36</div>
+</a>
+<a class="day-item" href="daily/2026-05-11/">
+<div class="day-left">
+<div class="day-date">2026-05-11</div>
+<div class="day-title">Finding the Right Bus Stop</div>
+</div>
+<div class="day-num">Day 35</div>
+</a>
+<a class="day-item" href="daily/2026-05-08/">
+<div class="day-left">
+<div class="day-date">2026-05-08</div>
+<div class="day-title">Checking a Return Policy</div>
+</div>
+<div class="day-num">Day 34</div>
+</a>
+<a class="day-item" href="daily/2026-05-07/">
+<div class="day-left">
+<div class="day-date">2026-05-07</div>
+<div class="day-title">Using a Station Locker</div>
+</div>
+<div class="day-num">Day 33</div>
+</a>
+<a class="day-item" href="daily/2026-05-06/">
+<div class="day-left">
+<div class="day-date">2026-05-06</div>
+<div class="day-title">Picking Up Medicine</div>
+</div>
+<div class="day-num">Day 32</div>
+</a>
+<a class="day-item" href="daily/2026-05-05/">
+<div class="day-left">
+<div class="day-date">2026-05-05</div>
+<div class="day-title">Buying a Train Ticket</div>
+</div>
+<div class="day-num">Day 31</div>
+</a>
+<a class="day-item" href="daily/2026-05-04/">
+<div class="day-left">
+<div class="day-date">2026-05-04</div>
+<div class="day-title">Checking the Pickup Time</div>
+</div>
+<div class="day-num">Day 30</div>
+</a>
+<a class="day-item" href="daily/2026-05-01/">
+<div class="day-left">
+<div class="day-date">2026-05-01</div>
+<div class="day-title">Finding the Right Exit</div>
+</div>
+<div class="day-num">Day 29</div>
+</a>
+<a class="day-item" href="daily/2026-04-30/">
+<div class="day-left">
+<div class="day-date">2026-04-30</div>
+<div class="day-title">A Quiet Laundry Night</div>
+</div>
+<div class="day-num">Day 28</div>
+</a>
+<a class="day-item" href="daily/2026-04-29/">
+<div class="day-left">
+<div class="day-date">2026-04-29</div>
+<div class="day-title">Breakfast Near the Hotel</div>
+</div>
+<div class="day-num">Day 27</div>
+</a>
+<a class="day-item" href="daily/2026-04-28/">
+<div class="day-left">
+<div class="day-date">2026-04-28</div>
+<div class="day-title">Ten Minutes Before Bed</div>
+</div>
+<div class="day-num">Day 26</div>
+</a>
+<a class="day-item" href="daily/2026-04-27/">
+<div class="day-left">
+<div class="day-date">2026-04-27</div>
+<div class="day-title">A Bus Ride to the Park</div>
+</div>
+<div class="day-num">Day 25</div>
+</a>
+<a class="day-item" href="daily/2026-04-24/">
+<div class="day-left">
+<div class="day-date">2026-04-24</div>
+<div class="day-title">A Quick Clean After Breakfast</div>
+</div>
+<div class="day-num">Day 24</div>
+</a>
+<a class="day-item" href="daily/2026-04-23/">
+<div class="day-left">
+<div class="day-date">2026-04-23</div>
+<div class="day-title">A Short Walk to the Bakery</div>
+</div>
+<div class="day-num">Day 23</div>
+</a>
+<a class="day-item" href="daily/2026-04-10/">
+<div class="day-left">
+<div class="day-date">2026-04-10</div>
+<div class="day-title">A Quiet Morning on the Balcony</div>
+</div>
+<div class="day-num">Day 22</div>
+</a>
+<a class="day-item" href="daily/2026-04-09/">
+<div class="day-left">
+<div class="day-date">2026-04-09</div>
+<div class="day-title">A Calm Morning by the Harbor</div>
+</div>
+<div class="day-num">Day 21</div>
+</a>
+<a class="day-item" href="daily/2026-04-03/">
+<div class="day-left">
+<div class="day-date">2026-04-03</div>
+<div class="day-title">A Quiet Day at Home</div>
+</div>
+<div class="day-num">Day 20</div>
+</a>
+<a class="day-item" href="daily/2026-04-02/">
+<div class="day-left">
+<div class="day-date">2026-04-02</div>
+<div class="day-title">A Short Trip by Ferry</div>
+</div>
+<div class="day-num">Day 19</div>
+</a>
+<a class="day-item" href="daily/2026-04-01/">
+<div class="day-left">
+<div class="day-date">2026-04-01</div>
+<div class="day-title">A Simple Day at Home</div>
+</div>
+<div class="day-num">Day 18</div>
+</a>
+<a class="day-item" href="daily/2026-03-31/">
+<div class="day-left">
+<div class="day-date">2026-03-31</div>
+<div class="day-title">A Short Ferry Trip</div>
+</div>
+<div class="day-num">Day 17</div>
+</a>
+<a class="day-item" href="daily/2026-03-30/">
+<div class="day-left">
+<div class="day-date">2026-03-30</div>
+<div class="day-title">A Sunny Morning at Home</div>
+</div>
+<div class="day-num">Day 16</div>
+</a>
+<a class="day-item" href="daily/2026-03-27/">
+<div class="day-left">
+<div class="day-date">2026-03-27</div>
+<div class="day-title">A Walk Through the Old Town</div>
+</div>
+<div class="day-num">Day 15</div>
+</a>
+<a class="day-item" href="daily/2026-03-26/">
+<div class="day-left">
+<div class="day-date">2026-03-26</div>
+<div class="day-title">A Quiet Morning at Home</div>
+</div>
+<div class="day-num">Day 14</div>
+</a>
+<a class="day-item" href="daily/2026-03-25/">
+<div class="day-left">
+<div class="day-date">2026-03-25</div>
+<div class="day-title">A Fun Day at the Beach</div>
+</div>
+<div class="day-num">Day 13</div>
+</a>
+<a class="day-item" href="daily/2026-03-24/">
+<div class="day-left">
+<div class="day-date">2026-03-24</div>
+<div class="day-title">A Quiet Day at Home</div>
+</div>
+<div class="day-num">Day 12</div>
+</a>
+<a class="day-item" href="daily/2026-03-23/">
+<div class="day-left">
+<div class="day-date">2026-03-23</div>
+<div class="day-title">A Train Trip to the City</div>
+</div>
+<div class="day-num">Day 11</div>
+</a>
+<a class="day-item" href="daily/2026-03-20/">
+<div class="day-left">
+<div class="day-date">2026-03-20</div>
+<div class="day-title">A Quiet Morning at Home</div>
+</div>
+<div class="day-num">Day 10</div>
+</a>
+<a class="day-item" href="daily/2026-03-19/">
+<div class="day-left">
+<div class="day-date">2026-03-19</div>
+<div class="day-title">A Day of Sightseeing</div>
+</div>
+<div class="day-num">Day 9</div>
+</a>
+<a class="day-item" href="daily/2026-03-18/">
+<div class="day-left">
+<div class="day-date">2026-03-18</div>
+<div class="day-title">A Calm Morning at Home</div>
+</div>
+<div class="day-num">Day 8</div>
+</a>
+<a class="day-item" href="daily/2026-03-17/">
+<div class="day-left">
+<div class="day-date">2026-03-17</div>
+<div class="day-title">Exploring a New City On Your Own</div>
+</div>
+<div class="day-num">Day 7</div>
+</a>
+<a class="day-item" href="daily/2026-03-16/">
+<div class="day-left">
+<div class="day-date">2026-03-16</div>
+<div class="day-title">A Busy Weekend at Home</div>
+</div>
+<div class="day-num">Day 6</div>
+</a>
+<a class="day-item" href="daily/2026-03-15/">
+<div class="day-left">
+<div class="day-date">2026-03-15</div>
+<div class="day-title">Planning a Trip</div>
+</div>
+<div class="day-num">Day 5</div>
+</a>
+<a class="day-item" href="daily/2026-03-13/">
+<div class="day-left">
+<div class="day-date">2026-03-13</div>
+<div class="day-title">A Quiet Day at Home</div>
+</div>
+<div class="day-num">Day 4</div>
+</a>
+<a class="day-item" href="daily/2026-03-12/">
+<div class="day-left">
+<div class="day-date">2026-03-12</div>
+<div class="day-title">A First Night at the Hotel</div>
+</div>
+<div class="day-num">Day 3</div>
+</a>
+<a class="day-item" href="daily/2026-03-11/">
+<div class="day-left">
+<div class="day-date">2026-03-11</div>
+<div class="day-title">A Day in the Life of a City Worker</div>
+</div>
+<div class="day-num">Day 2</div>
+</a>
+<a class="day-item" href="daily/2026-03-10/">
+<div class="day-left">
+<div class="day-date">2026-03-10</div>
+<div class="day-title">A Day at the Airport</div>
+</div>
+<div class="day-num">Day 1</div>
+</a>
+<!-- DAYS_END -->
+</div>
+</div>
 </div>
 <script>
   // 設定「今天」按鈕

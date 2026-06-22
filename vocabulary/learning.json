@@ -1949,6 +1949,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-18",
       "lastReviewedDate": null
+    },
+    {
+      "word": "front",
+      "partOfSpeech": "n./adj.",
+      "chineseMeaning": "前面；前方的",
+      "exampleSentence": "Please get on from the front door.",
+      "dateAdded": "2026-06-22",
+      "reviewCount": 0,
+      "nextReview": "2026-06-23",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "saved",
+      "partOfSpeech": "adj./v.",
+      "chineseMeaning": "保留的；被留著的",
+      "exampleSentence": "This seat is saved for an older passenger.",
+      "dateAdded": "2026-06-22",
+      "reviewCount": 0,
+      "nextReview": "2026-06-23",
+      "lastReviewedDate": "2026-06-22"
+    },
+    {
+      "word": "ride",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "車程；搭乘",
+      "exampleSentence": "This ride to the station takes ten minutes.",
+      "dateAdded": "2026-06-22",
+      "reviewCount": 0,
+      "nextReview": "2026-06-23",
+      "lastReviewedDate": "2026-06-22"
     }
   ]
 }
