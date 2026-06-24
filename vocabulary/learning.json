@@ -2009,6 +2009,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-24",
       "lastReviewedDate": "2026-06-23"
+    },
+    {
+      "word": "arrow",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "箭頭",
+      "exampleSentence": "A blue arrow pointed to the side street.",
+      "dateAdded": "2026-06-24",
+      "reviewCount": 0,
+      "nextReview": "2026-06-25",
+      "lastReviewedDate": "2026-06-24"
+    },
+    {
+      "word": "poster",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "海報",
+      "exampleSentence": "A wet poster was on the stop sign.",
+      "dateAdded": "2026-06-24",
+      "reviewCount": 0,
+      "nextReview": "2026-06-25",
+      "lastReviewedDate": "2026-06-24"
+    },
+    {
+      "word": "photo",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "照片",
+      "exampleSentence": "The old photo showed the same bus stop.",
+      "dateAdded": "2026-06-24",
+      "reviewCount": 0,
+      "nextReview": "2026-06-25",
+      "lastReviewedDate": "2026-06-24"
     }
   ]
 }

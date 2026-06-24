@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 4, `The Blue Receipt · Episode 4`
+- Current episode: Episode 5, `The Blue Receipt · Episode 5`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -30,6 +30,11 @@
   - Lina found a local post from last year written by May Lin.
   - The post title first said: `M.L. missed the last blue bus.`
   - While Mina was reading, the title changed to: `Mina, get off at River Street.`
+  - Mina got off at River Street and found an old stop sign.
+  - A torn poster showed May Lin in an old photo.
+  - A note under the bus map said: `This stop closed last year.`
+  - A blue arrow on the wall matched Lina's newest message.
+  - An old man said there is no station there now, but he also pointed at the same arrow.
 
 ## Open Threads
 
@@ -82,6 +87,17 @@
 - New danger signal: the title changes live to `Mina, get off at River Street.`
 - Hook: the next stop sign turns on and Mina stands up as the bus slows down.
 
+### 2026-06-24 — Episode 5: The Blue Arrow
+
+- Location: River Street bus stop, side wall, and nearby bench.
+- Mina gets off and looks for a real place called River Street Station.
+- Useful sentence: `Where is River Street Station?`
+- New public clue: a torn poster with May Lin and an old bus map.
+- English clue on the note: `This stop closed last year.`
+- New direction clue: `Look for the blue arrow.`
+- A local old man confirms there is no station there now.
+- Hook: he still points at the same blue arrow, so Mina moves closer instead of leaving.
+
 ## Next Episode Pointer
 
-Episode 5 should show what Mina finds at River Street after getting off the bus. Keep the setting ordinary and public: a stop sign, route map, shop window, or station notice. The next step can confirm whether May Lin is a real lead, but it should also raise a bigger question about how the online post changed in real time.
+Episode 6 should follow the blue arrow into an ordinary but slightly hidden place, such as an old entrance, closed stairs, or side passage. The next step should connect May Lin to a physical location, while raising a bigger question about who still keeps that place active.

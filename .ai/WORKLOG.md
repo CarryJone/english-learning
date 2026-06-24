@@ -244,3 +244,12 @@
 - Speaking Bridge 使用 `listed`、`block`、`nearby`、`warning`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s22.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、22 個單句音檔存在、本機 HTTP 200。
+
+## 2026-06-24 — Day 63 正式教材產出
+
+- 先同步遠端 SRS；同步後以最新 `vocabulary/learning.json` 重算 review，今天共 3 個到期複習字。
+- 延續 serial story continuity，新增 `daily/2026-06-24/`，標題為 `The Blue Receipt · Episode 5`。
+- 今日新字：`arrow`、`poster`、`photo`；文章融入複習字：`search`、`post`、`title`。
+- Speaking Bridge 使用 `front`、`ride`、`saved`、`listed`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s21.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、21 個單句音檔存在、本機 HTTP 200。
