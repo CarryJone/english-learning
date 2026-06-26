@@ -263,3 +263,12 @@
 - Speaking Bridge 使用 `post`、`search`、`title`、`front`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s21.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、21 個單句音檔存在、本機 HTTP 200。
+
+## 2026-06-26 — Day 65 正式教材產出
+
+- 先以遠端最新 SRS commit 為底，再合併今天新增單字重算 review，今天共 32 個到期複習字，且無逾期字。
+- 延續 serial story continuity，新增 `daily/2026-06-26/`，標題為 `The Blue Receipt · Episode 7`。
+- 今日新字：`storage`、`folder`、`record`；文章融入複習字：`locked`、`hallway`、`basement`。
+- Speaking Bridge 使用 `arrow`、`photo`、`poster`、`post`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s22.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、22 個單句音檔存在、本機 HTTP 200。

@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 6, `The Blue Receipt · Episode 6`
+- Current episode: Episode 7, `The Blue Receipt · Episode 7`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -41,6 +41,16 @@
   - A sign inside said: `Employees only.`
   - A second arrow led toward old stairs and the basement.
   - The old man did not stop Mina; instead, he quietly pointed her down.
+  - Mina reached a quiet basement room that looked like an old storage room.
+  - A blue folder was waiting on a desk at the end of the hallway.
+  - Inside the folder, Mina found a bus record.
+  - One page showed `Route 8:10 p.m.`
+  - Another line had May Lin's name on it.
+  - A nearby screen turned on by itself and showed the same blue bus again.
+  - The screen then displayed the message: `Please keep this safe.`
+  - Mina found a small key under the folder.
+  - The message chain now suggests someone wanted Mina to find the room on purpose.
+  - The final screen message said: `Come before 8:10 tomorrow.`
 
 ## Open Threads
 
@@ -115,6 +125,17 @@
 - The old man acts like he expects Mina to keep moving.
 - Hook: a light turns on at the bottom of the stairs just as Mina goes down.
 
+### 2026-06-26 — Episode 7: The Bus Record
+
+- Location: basement room / old storage room below the hidden side gate.
+- Mina reaches the bottom and finds a desk with a blue folder.
+- Useful sentence: `What time was the last bus?`
+- English clue in the folder: `Route 8:10 p.m.`
+- Stronger link to May Lin: her name appears on the bus record.
+- New direct message on the screen: `Please keep this safe.`
+- New object clue: a small key is hidden under the folder.
+- Hook: the final message tells Mina, `Come before 8:10 tomorrow.`
+
 ## Next Episode Pointer
 
-Episode 7 should show what waits in the basement: a room, office, platform edge, or storage space that still connects to the old route. The next step should give Mina a stronger physical link to May Lin while raising a bigger question about who turned on the light for her.
+Episode 8 should follow Mina's decision before 8:10 tomorrow. She now has the folder and key, so the next step should reveal who expects her to return, how May Lin used the old route, and whether the key opens something tied to the blue bus.

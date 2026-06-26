@@ -2069,6 +2069,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-26",
       "lastReviewedDate": "2026-06-25"
+    },
+    {
+      "word": "storage",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "儲藏室",
+      "exampleSentence": "The old room looked like a storage area.",
+      "dateAdded": "2026-06-26",
+      "reviewCount": 0,
+      "nextReview": "2026-06-27",
+      "lastReviewedDate": "2026-06-26"
+    },
+    {
+      "word": "folder",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "資料夾",
+      "exampleSentence": "A blue folder was on the desk.",
+      "dateAdded": "2026-06-26",
+      "reviewCount": 0,
+      "nextReview": "2026-06-27",
+      "lastReviewedDate": "2026-06-26"
+    },
+    {
+      "word": "record",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "紀錄、檔案",
+      "exampleSentence": "The record showed the last bus time.",
+      "dateAdded": "2026-06-26",
+      "reviewCount": 0,
+      "nextReview": "2026-06-27",
+      "lastReviewedDate": "2026-06-26"
     }
   ]
 }
