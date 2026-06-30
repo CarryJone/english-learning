@@ -2129,6 +2129,36 @@
       "reviewCount": 0,
       "nextReview": "2026-06-30",
       "lastReviewedDate": "2026-06-29"
+    },
+    {
+      "word": "paper",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "紙；紙張",
+      "exampleSentence": "The ticket was made of thin paper.",
+      "dateAdded": "2026-06-30",
+      "reviewCount": 0,
+      "nextReview": "2026-07-01",
+      "lastReviewedDate": "2026-06-30"
+    },
+    {
+      "word": "date",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "日期",
+      "exampleSentence": "The date on the ticket was tomorrow.",
+      "dateAdded": "2026-06-30",
+      "reviewCount": 0,
+      "nextReview": "2026-07-01",
+      "lastReviewedDate": "2026-06-30"
+    },
+    {
+      "word": "tomorrow",
+      "partOfSpeech": "adv./n.",
+      "chineseMeaning": "明天",
+      "exampleSentence": "The bus ticket was for tomorrow.",
+      "dateAdded": "2026-06-30",
+      "reviewCount": 0,
+      "nextReview": "2026-07-01",
+      "lastReviewedDate": "2026-06-30"
     }
   ]
 }

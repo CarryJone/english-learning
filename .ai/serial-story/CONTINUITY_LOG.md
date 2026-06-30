@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 8, `The Blue Receipt · Episode 8`
+- Current episode: Episode 9, `The Blue Receipt · Episode 9`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -65,6 +65,16 @@
   - Lina reached the gate outside and texted Mina in real time.
   - Lina heard a bus coming while Mina checked the changing result.
   - Mina looked at the clock and saw it was 8:07.
+  - Mina heard the bus stop outside the gate.
+  - The changing result and route history both disappeared from the screen.
+  - A new line told Mina: `Check the last ticket.`
+  - Mina opened the folder and a paper ticket fell out.
+  - The ticket looked clean, but the date on it said `tomorrow`.
+  - Mina asked Lina if the strange ticket date was real.
+  - Lina told Mina to bring the ticket to the gate.
+  - Mina compared the ticket with the record and the time and seat matched.
+  - A final line on the ticket said: `Seat 12. One rider only.`
+  - Blue light moved across the wall before someone knocked on the gate.
 
 ## Open Threads
 
@@ -162,6 +172,18 @@
 - Important mismatch: the map on the page does not match the bus record from Episode 7.
 - Hook: Lina texts that she is outside the gate and hears a bus coming at 8:07.
 
+### 2026-06-30 — Episode 9: The Last Ticket
+
+- Location: basement room and gate area, a few moments after 8:07.
+- Mina hears the blue bus stop outside while she checks the changing screen.
+- Useful sentence: `Is this ticket for tomorrow?`
+- New screen clue: `Check the last ticket.`
+- New object clue: a paper ticket falls from the folder.
+- Strange mismatch: the ticket looks old, but its date says `tomorrow`.
+- Important confirmation: the ticket time and seat match the old record.
+- New rule on the ticket: `Seat 12. One rider only.`
+- Hook: blue light crosses the wall and someone knocks on the gate.
+
 ## Next Episode Pointer
 
-Episode 9 should begin with the bus arriving just after Lina's warning. The next step can reveal whether the changing route history leads to May Lin's missing trip, and whether a ticket or map appears before 8:10 ends.
+Episode 10 should reveal who is at the gate and whether the blue bus driver finally speaks to Mina. The next step can connect `Seat 12` and the tomorrow ticket to May Lin's missing ride.
