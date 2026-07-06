@@ -595,6 +595,7 @@ mkdir -p ./daily/$TODAY
   </div>
 
 </div>
+<script src="../../assets/srs.js"></script>
 <script>
   function getAssetBasePath() {
     const path = window.location.pathname;
@@ -707,14 +708,13 @@ mkdir -p ./daily/$TODAY
       });
     });
 
-    const today = new Date().toISOString().slice(0, 10);
-    const storageKey = 'rq_done_' + today;
+    const today = window.SrsReview.localYmd();
     const score = results.filter(r => r.correct).length;
     const submitBtn = document.getElementById('rq-submit-btn');
     const resultEl = document.getElementById('rq-result');
 
     // Extra practice protection: already submitted today
-    if (localStorage.getItem(storageKey)) {
+    if (window.SrsReview.isAlreadySynced('rq_done_', today)) {
       resultEl.innerHTML = '✅ 今天已完成複習（額外練習）：' + score + '/' + results.length + ' 題答對，SRS 未更新';
       resultEl.className = 'success';
       resultEl.style.display = 'block';
@@ -725,64 +725,11 @@ mkdir -p ./daily/$TODAY
     submitBtn.disabled = true; submitBtn.textContent = '同步中...';
 
     try {
-      // Get GitHub PAT from localStorage (prompt on first use)
-      let token = localStorage.getItem('github_pat');
-      if (!token) {
-        token = prompt('首次使用：請輸入 GitHub Personal Access Token（repo write 權限，儲存在本機）：');
-        if (!token) throw new Error('未提供 Token，無法同步');
-        localStorage.setItem('github_pat', token);
-      }
-
-      const owner = 'CarryJone', repo = 'english-learning', filePath = 'vocabulary/learning.json';
-      const apiBase = 'https://api.github.com/repos/' + owner + '/' + repo + '/contents/' + filePath;
-
-      // Read current learning.json
-      const getResp = await fetch(apiBase, {
-        headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+      await window.SrsReview.syncReviewResults(results, {
+        today,
+        storagePrefix: 'rq_done_',
+        commitPrefix: 'SRS update: review quiz'
       });
-      if (!getResp.ok) throw new Error('讀取 learning.json 失敗 (' + getResp.status + ')');
-      const fileData = await getResp.json();
-      const sha = fileData.sha;
-
-      // Decode UTF-8 base64
-      const raw = atob(fileData.content.replace(/\n/g, ''));
-      const rawBytes = new Uint8Array(raw.length);
-      for (let i = 0; i < raw.length; i++) rawBytes[i] = raw.charCodeAt(i);
-      const vocab = JSON.parse(new TextDecoder('utf-8').decode(rawBytes));
-
-      // SRS intervals: index = reviewCount after correct answer
-      const SRS = [1, 3, 7, 14, 30, 60, 90];
-
-      for (const r of results) {
-        const w = vocab.words.find(x => x.word === r.word);
-        if (!w || w.lastReviewedDate === today) continue; // skip if already reviewed today
-        w.lastReviewedDate = today;
-        const next = new Date();
-        if (r.correct) {
-          w.reviewCount = (w.reviewCount || 0) + 1;
-          next.setDate(next.getDate() + (SRS[Math.min(w.reviewCount, SRS.length - 1)] || 90));
-        } else {
-          w.reviewCount = 0;
-          next.setDate(next.getDate() + 1); // wrong: reset, review tomorrow
-        }
-        w.nextReview = next.toISOString().slice(0, 10);
-      }
-
-      // Encode to UTF-8 base64
-      const newJson = JSON.stringify(vocab, null, 2);
-      const newBytes = new TextEncoder().encode(newJson);
-      let binary = '';
-      newBytes.forEach(b => binary += String.fromCharCode(b));
-      const encoded = btoa(binary);
-
-      const putResp = await fetch(apiBase, {
-        method: 'PUT',
-        headers: { Authorization: 'token ' + token, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: 'SRS update: review quiz ' + today, content: encoded, sha })
-      });
-      if (!putResp.ok) throw new Error('更新失敗 (' + putResp.status + ')');
-
-      localStorage.setItem(storageKey, '1');
       resultEl.innerHTML = '🎉 複習完成！' + score + '/' + results.length + ' 題答對，SRS 記錄已更新 ✅';
       resultEl.className = (score === results.length) ? 'success' : 'partial';
       resultEl.style.display = 'block';

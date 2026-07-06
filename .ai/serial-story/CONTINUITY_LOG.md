@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 12, `The Blue Receipt · Episode 12`
+- Current episode: Episode 13, `The Blue Receipt · Episode 13`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -104,6 +104,18 @@
   - The empty seats did not match the voice Mina kept hearing.
   - The phone screen still showed route history and a saved name: `May Lin.`
   - The driver said: `The truth is on the map.`
+  - Mina compared the old map, the open bus door, and Lina's view from outside the gate.
+  - A small sign by the bus door lit up and said: `Route 8:10. One rider.`
+  - The driver still answered Mina, but Lina still could not see a clear face inside the bus.
+  - A dark shadow crossed Seat 12 while Mina held the map under the light.
+  - The map placed `May Lin` next to Seat 12 and `Mina Lin` next to the gate.
+  - The exact time `8:10` appeared under both names.
+  - Mina heard the driver but still heard no footsteps on the bus floor.
+  - The blue bus screen went black and then came back with a new line.
+  - The new line said: `Two names. One choice.`
+  - Lina warned Mina to come back from the gate.
+  - The driver told Mina: `You can still leave.`
+  - Mina still moved one slow step toward the bus instead of leaving at once.
 
 ## Open Threads
 
@@ -218,6 +230,39 @@
 - Location: inside the gate, with Lina outside and the blue bus waiting nearby.
 - Mina finally hears the blue bus driver speak to her directly.
 - Useful sentence: `Did you get my messages?`
+
+### 2026-07-02 — Episode 11: One Day Early
+
+- Location: inside the side gate, with the blue bus waiting outside.
+- Mina learns the strange `tomorrow` ticket was originally for May Lin.
+- Useful sentence: `Can I go with her?`
+- English clue on the note: `Seat 12 is not for you.`
+- The driver says Mina came one day early and warns her not to repeat May Lin's mistake.
+- Lina cannot see the driver's face clearly, even while he talks to Mina.
+- Hook: Lina suddenly says someone is standing behind her, but the second warning voice comes from somewhere else.
+
+### 2026-07-03 — Episode 12: The Folded Map
+
+- Location: same gate area, with the old phone and blue folder still inside.
+- The second warning voice comes from the old phone speaker, not from behind Lina.
+- Useful sentence: `Who is speaking now?`
+- New object clue: Mina finds a folded old map in the folder.
+- English clue on the map: a red circle marks Seat 12.
+- Important identity clue: the map shows both `M.L.` and Mina's full name.
+- The driver says: `The truth is on the map.`
+- Hook: Episode 13 should compare the map, the bus, and Lina's view, and clarify why Seat 12 is marked before Mina arrived.
+
+### 2026-07-06 — Episode 13: Two Names, One Choice
+
+- Location: the gate, the bus door, and the map under the station light.
+- Mina compares the map with the bus sign and Lina's outside view.
+- Useful sentence: `Can I see the sign again?`
+- New public clue: the lit sign says `Route 8:10. One rider.`
+- New map clue: `May Lin` is printed next to Seat 12, while `Mina Lin` is printed next to the gate.
+- Important timing clue: the exact time `8:10` appears under both names.
+- New warning on the bus screen: `Two names. One choice.`
+- The driver still gives Mina a way out: `You can still leave.`
+- Hook: Episode 14 should reveal what choice Mina is actually being asked to make, and whether leaving is still possible once 8:10 arrives.
 - Spoken clue: the driver uses the same calm voice Mina remembers.
 - New warning note: `Seat 12 is not for you.`
 - Stronger mystery link: the note still points to `Tomorrow`.

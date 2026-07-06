@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>Review Center · Daily English</title>
+<style>
+  :root {
+    --bg: #f5f4ef; --card: #fff; --accent: #4f7cff; --accent2: #f0a500;
+    --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
+    --green: #22c55e; --red: #ef4444; --tag-bg: #eef2ff; --tag-text: #4f7cff;
+    --warn-bg: #fffbeb; --warn-text: #92400e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
+  .container { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.3rem; }
+  .header { background: var(--card); border-radius: 18px; padding: 2rem 1.6rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+  .top-link { display: inline-flex; color: var(--accent); text-decoration: none; font-family: sans-serif; font-size: .84rem; font-weight: 700; margin-bottom: 1rem; }
+  .header h1 { font-size: 1.8rem; line-height: 1.25; }
+  .header h1 span { color: var(--accent); }
+  .subtitle { margin-top: .45rem; color: var(--muted); font-family: sans-serif; font-size: .92rem; line-height: 1.6; }
+  .card { background: var(--card); border-radius: 18px; padding: 1.5rem 1.6rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+  .card-title { font-family: sans-serif; font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; display: flex; align-items: center; gap: .5rem; }
+  .card-title::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+  .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; }
+  .metric { border: 1.5px solid var(--border); border-radius: 12px; padding: .85rem .9rem; font-family: sans-serif; min-height: 82px; }
+  .metric .label { color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+  .metric .value { margin-top: .35rem; font-size: 1.45rem; font-weight: 900; line-height: 1.1; }
+  .metric .note { margin-top: .25rem; color: var(--muted); font-size: .75rem; line-height: 1.35; }
+  .metric.due { border-color: #f59e0b; background: var(--warn-bg); color: var(--warn-text); }
+  .metric.overdue { border-color: var(--red); background: #fef2f2; color: #991b1b; }
+  .system-line { margin-top: 1rem; border-radius: 12px; background: #f8fafc; color: var(--muted); padding: .85rem 1rem; font-family: sans-serif; font-size: .88rem; line-height: 1.6; }
+  .word-list { display: grid; gap: .65rem; }
+  .word-row { border: 1.5px solid var(--border); border-radius: 12px; padding: .85rem .95rem; display: grid; grid-template-columns: 1fr auto; gap: .8rem; align-items: start; font-family: sans-serif; }
+  .word { font-family: Georgia, serif; font-size: 1.05rem; font-weight: 800; }
+  .pos { display: inline-block; margin-left: .35rem; color: var(--muted); font-family: sans-serif; font-size: .75rem; font-weight: 700; }
+  .meaning { margin-top: .25rem; color: #166534; font-size: .9rem; font-weight: 700; }
+  .example { margin-top: .25rem; color: var(--muted); font-size: .84rem; line-height: 1.5; font-style: italic; }
+  .tag { white-space: nowrap; border-radius: 99px; padding: .2rem .6rem; background: var(--tag-bg); color: var(--tag-text); font-size: .72rem; font-weight: 800; }
+  .tag.overdue { background: #fef2f2; color: #991b1b; }
+  .tag.today { background: #fef3c7; color: #92400e; }
+  .empty { padding: 1rem 0; color: var(--muted); text-align: center; font-family: sans-serif; font-size: .92rem; line-height: 1.7; }
+  .quiz-intro { color: var(--muted); font-family: sans-serif; font-size: .88rem; line-height: 1.6; margin-bottom: 1.1rem; }
+  .quiz-item { padding: 1rem 0 1.15rem; border-bottom: 1px solid var(--border); }
+  .quiz-item:last-of-type { border-bottom: 0; }
+  .quiz-zh { font-family: sans-serif; font-size: 1rem; font-weight: 900; }
+  .quiz-hint { margin-top: .35rem; color: var(--muted); font-size: .86rem; line-height: 1.5; font-style: italic; }
+  .options { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; margin-top: .75rem; }
+  .opt { border: 1.5px solid var(--border); border-radius: 10px; background: #fff; padding: .65rem .8rem; cursor: pointer; text-align: left; font-family: Georgia, serif; font-size: .9rem; transition: all .15s; }
+  .opt:hover:not([disabled]) { border-color: var(--accent); background: var(--tag-bg); }
+  .opt.selected { border-color: var(--accent); background: var(--tag-bg); font-weight: 800; }
+  .opt.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 900; }
+  .opt.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; font-weight: 900; }
+  .actions { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin-top: 1.2rem; }
+  .btn { border: 0; border-radius: 12px; padding: .8rem 1rem; font-family: sans-serif; font-size: .92rem; font-weight: 900; cursor: pointer; }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.secondary { background: var(--tag-bg); color: var(--accent); border: 1.5px solid var(--accent); }
+  .btn:disabled { background: #d1d5db; border-color: #d1d5db; color: #6b7280; cursor: default; }
+  .result { display: none; margin-top: 1rem; border-radius: 12px; padding: .9rem 1rem; font-family: sans-serif; font-size: .9rem; line-height: 1.7; }
+  .result.success { display: block; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; }
+  .result.partial { display: block; background: var(--warn-bg); color: var(--warn-text); border: 1.5px solid #fde68a; }
+  .upcoming { display: grid; gap: .45rem; font-family: sans-serif; }
+  .upcoming-row { display: flex; justify-content: space-between; gap: .75rem; padding: .6rem .75rem; border: 1.5px solid var(--border); border-radius: 10px; }
+  .upcoming-date { font-weight: 800; }
+  .upcoming-count { color: var(--muted); }
+  @media (max-width: 620px) {
+    body { padding-top: 1rem; }
+    .header, .card { padding: 1.25rem; border-radius: 16px; }
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+    .options, .actions { grid-template-columns: 1fr; }
+    .word-row { grid-template-columns: 1fr; }
+    .tag { width: fit-content; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <a class="top-link" href="../">← 回首頁</a>
+    <h1>Review <span>Center</span></h1>
+    <p class="subtitle">每天先把到期單字撈出來，做主動回想，再決定是否同步 SRS。這裡是你的複習總控台。</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📊 Review Status</div>
+    <div class="metrics">
+      <div class="metric due"><div class="label">Due</div><div class="value" id="m-due">--</div><div class="note">今天到期</div></div>
+      <div class="metric overdue"><div class="label">Overdue</div><div class="value" id="m-overdue">--</div><div class="note">逾期</div></div>
+      <div class="metric"><div class="label">Active</div><div class="value" id="m-active">--</div><div class="note">仍在複習</div></div>
+      <div class="metric"><div class="label">Mastered</div><div class="value" id="m-mastered">--</div><div class="note">已掌握</div></div>
+    </div>
+    <div class="system-line" id="status-line">正在讀取 SRS...</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔁 Due Words</div>
+    <div class="word-list" id="due-list"><div class="empty">正在整理今日複習單字...</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🧠 Active Recall Quiz</div>
+    <p class="quiz-intro">看中文意思，先從記憶裡抓英文。按「檢查答案」只會本機顯示結果；按「同步 SRS」才會寫回 GitHub。</p>
+    <div id="quiz-list"><div class="empty">正在建立測驗...</div></div>
+    <div class="actions" id="quiz-actions" style="display:none">
+      <button class="btn secondary" id="check-btn" onclick="checkAnswers()">檢查答案</button>
+      <button class="btn primary" id="sync-btn" onclick="syncSrs()" disabled>同步 SRS</button>
+    </div>
+    <div class="result" id="result-box"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📅 Next 7 Days</div>
+    <div class="upcoming" id="upcoming-list"><div class="empty">正在計算未來複習量...</div></div>
+  </div>
+</div>
+
+<script src="../assets/srs.js"></script>
+<script>
+  let allWords = [];
+  let dueWords = [];
+  let checkedResults = null;
+
+  function localYmd(date = new Date()) {
+    return window.SrsReview.localYmd(date);
+  }
+
+  const today = localYmd();
+
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, ch => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[ch]));
+  }
+
+  function addDays(date, days) {
+    const next = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    next.setDate(next.getDate() + days);
+    return localYmd(next);
+  }
+
+  function blankHint(sentence, word) {
+    const source = String(sentence || '');
+    const target = String(word || '');
+    if (!source || !target) return '';
+    const escaped = target.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const exact = new RegExp(escaped, 'i');
+    return source.replace(exact, '____');
+  }
+
+  function shuffle(items) {
+    const copy = [...items];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  }
+
+  function setText(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  }
+
+  function renderStatus() {
+    const active = allWords.filter(w => (w.reviewCount || 0) < 7);
+    const mastered = allWords.filter(w => (w.reviewCount || 0) >= 7);
+    const overdue = dueWords.filter(w => w.nextReview < today);
+    setText('m-due', dueWords.length);
+    setText('m-overdue', overdue.length);
+    setText('m-active', active.length);
+    setText('m-mastered', mastered.length);
+    const next = active.filter(w => w.nextReview > today).sort((a, b) => a.nextReview.localeCompare(b.nextReview))[0];
+    document.getElementById('status-line').textContent = next
+      ? `${today} · ${dueWords.length} 個到期 · ${overdue.length} 個逾期 · 下一個複習：${next.word}（${next.nextReview}）`
+      : `${today} · ${dueWords.length} 個到期 · ${overdue.length} 個逾期`;
+  }
+
+  function renderDueList() {
+    const root = document.getElementById('due-list');
+    if (!dueWords.length) {
+      root.innerHTML = '<div class="empty">今天沒有到期單字。可以進每日教材做聽讀與 Speaking Bridge。</div>';
+      return;
+    }
+    root.innerHTML = dueWords.map(w => {
+      const overdue = w.nextReview < today;
+      const tag = overdue ? `逾期` : `今天`;
+      return `<div class="word-row">
+        <div>
+          <div><span class="word">${escapeHtml(w.word)}</span><span class="pos">${escapeHtml(w.partOfSpeech)}</span></div>
+          <div class="meaning">${escapeHtml(w.chineseMeaning)}</div>
+          <div class="example">${escapeHtml(w.exampleSentence)}</div>
+        </div>
+        <span class="tag ${overdue ? 'overdue' : 'today'}">${tag} · R${w.reviewCount || 0}</span>
+      </div>`;
+    }).join('');
+  }
+
+  function makeOptions(word) {
+    const samePos = allWords.filter(w => w.word !== word.word && w.partOfSpeech === word.partOfSpeech).map(w => w.word);
+    const others = allWords.filter(w => w.word !== word.word && !samePos.includes(w.word)).map(w => w.word);
+    return shuffle([word.word, ...shuffle([...samePos, ...others]).slice(0, 3)]);
+  }
+
+  function renderQuiz() {
+    const root = document.getElementById('quiz-list');
+    const actions = document.getElementById('quiz-actions');
+    checkedResults = null;
+    if (!dueWords.length) {
+      root.innerHTML = '<div class="empty">今天沒有 Review Quiz。你可以把時間留給新文章或口說橋接。</div>';
+      actions.style.display = 'none';
+      return;
+    }
+    root.innerHTML = dueWords.map((w, idx) => {
+      const opts = makeOptions(w).map(opt => `<button class="opt" data-val="${escapeHtml(opt)}" onclick="selectOption(this)">${escapeHtml(opt)}</button>`).join('');
+      return `<div class="quiz-item" data-word="${escapeHtml(w.word)}" data-correct="${escapeHtml(w.word)}">
+        <div class="quiz-zh">${idx + 1}. ${escapeHtml(w.chineseMeaning)} <span class="pos">${escapeHtml(w.partOfSpeech)}</span></div>
+        <div class="quiz-hint">${escapeHtml(blankHint(w.exampleSentence, w.word))}</div>
+        <div class="options">${opts}</div>
+      </div>`;
+    }).join('');
+    actions.style.display = 'grid';
+    document.getElementById('sync-btn').disabled = true;
+  }
+
+  function renderUpcoming() {
+    const root = document.getElementById('upcoming-list');
+    const days = {};
+    for (let i = 1; i <= 7; i++) days[addDays(new Date(), i)] = 0;
+    allWords
+      .filter(w => (w.reviewCount || 0) < 7 && days[w.nextReview] !== undefined)
+      .forEach(w => days[w.nextReview] += 1);
+    root.innerHTML = Object.entries(days)
+      .map(([date, count]) => `<div class="upcoming-row"><span class="upcoming-date">${date}</span><span class="upcoming-count">${count} 個</span></div>`)
+      .join('');
+  }
+
+  function selectOption(btn) {
+    const item = btn.closest('.quiz-item');
+    item.querySelectorAll('.opt').forEach(opt => opt.classList.remove('selected'));
+    btn.classList.add('selected');
+  }
+
+  function checkAnswers() {
+    const items = [...document.querySelectorAll('.quiz-item')];
+    const resultBox = document.getElementById('result-box');
+    const results = [];
+    let allAnswered = true;
+    items.forEach(item => {
+      const selected = item.querySelector('.opt.selected');
+      if (!selected) allAnswered = false;
+      results.push({ word: item.dataset.word, correct: !!selected && selected.dataset.val === item.dataset.correct });
+    });
+    if (!allAnswered) {
+      resultBox.textContent = '請先完成所有題目，再檢查答案。';
+      resultBox.className = 'result partial';
+      return;
+    }
+    items.forEach(item => {
+      const correct = item.dataset.correct;
+      item.querySelectorAll('.opt').forEach(opt => {
+        opt.disabled = true;
+        if (opt.dataset.val === correct) opt.classList.add('correct');
+        else if (opt.classList.contains('selected')) opt.classList.add('wrong');
+        opt.classList.remove('selected');
+      });
+    });
+    checkedResults = results;
+    const score = results.filter(r => r.correct).length;
+    resultBox.textContent = `本機檢查完成：${score}/${results.length} 題答對。確認後可同步 SRS。`;
+    resultBox.className = score === results.length ? 'result success' : 'result partial';
+    document.getElementById('check-btn').disabled = true;
+    document.getElementById('sync-btn').disabled = false;
+  }
+
+  async function syncSrs() {
+    if (!checkedResults || !checkedResults.length) return;
+    const resultBox = document.getElementById('result-box');
+    if (window.SrsReview.isAlreadySynced('review_center_done_', today)) {
+      resultBox.textContent = '今天已同步過 Review Center，本次視為額外練習，不再更新 SRS。';
+      resultBox.className = 'result success';
+      document.getElementById('sync-btn').disabled = true;
+      return;
+    }
+
+    const syncBtn = document.getElementById('sync-btn');
+    syncBtn.disabled = true;
+    syncBtn.textContent = '同步中...';
+    try {
+      await window.SrsReview.syncReviewResults(checkedResults, {
+        today,
+        storagePrefix: 'review_center_done_',
+        commitPrefix: 'SRS update: review center',
+        promptMessage: '首次同步：請輸入 GitHub Personal Access Token（repo write 權限，儲存在本機）：'
+      });
+      resultBox.textContent = 'SRS 已同步完成。明天的教材會讀到新的 review 狀態。';
+      resultBox.className = 'result success';
+      syncBtn.textContent = '已同步';
+    } catch (err) {
+      syncBtn.disabled = false;
+      syncBtn.textContent = '同步 SRS';
+      resultBox.textContent = '同步失敗：' + err.message;
+      resultBox.className = 'result partial';
+    }
+  }
+
+  async function loadReviewCenter() {
+    try {
+      const resp = await fetch('../vocabulary/learning.json', { cache: 'no-store' });
+      if (!resp.ok) throw new Error('learning.json unavailable');
+      const vocab = await resp.json();
+      allWords = Array.isArray(vocab.words) ? vocab.words : [];
+      dueWords = allWords
+        .filter(w => (w.reviewCount || 0) < 7 && w.nextReview && w.nextReview <= today)
+        .sort((a, b) => a.nextReview.localeCompare(b.nextReview) || a.word.localeCompare(b.word));
+      renderStatus();
+      renderDueList();
+      renderQuiz();
+      renderUpcoming();
+    } catch (err) {
+      document.getElementById('status-line').textContent = '無法讀取 SRS。請使用本機 HTTP server 或 GitHub Pages 開啟。';
+      document.getElementById('due-list').innerHTML = '<div class="empty">SRS 資料讀取失敗。</div>';
+      document.getElementById('quiz-list').innerHTML = '<div class="empty">無法建立測驗。</div>';
+      document.getElementById('upcoming-list').innerHTML = '<div class="empty">無法計算未來複習量。</div>';
+    }
+  }
+
+  loadReviewCenter();
+</script>
+</body>
+</html>

@@ -2249,6 +2249,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-04",
       "lastReviewedDate": "2026-07-03"
+    },
+    {
+      "word": "shadow",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "影子；陰影",
+      "exampleSentence": "A dark shadow crossed Seat 12.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": "2026-07-06"
+    },
+    {
+      "word": "careful",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "小心的；謹慎的",
+      "exampleSentence": "Lina told Mina to be careful.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": "2026-07-06"
+    },
+    {
+      "word": "exact",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "確切的；精準的",
+      "exampleSentence": "The exact time was under both names.",
+      "dateAdded": "2026-07-06",
+      "reviewCount": 0,
+      "nextReview": "2026-07-07",
+      "lastReviewedDate": "2026-07-06"
     }
   ]
 }

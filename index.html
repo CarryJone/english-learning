@@ -34,6 +34,21 @@
     }
     .today-btn:hover { opacity: .9; }
     .today-btn .sub { font-size: .8rem; font-weight: 400; opacity: .85; margin-top: .2rem; }
+    .quick-actions { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+    .quick-actions .today-btn { margin: 0; }
+    .review-btn {
+      display: block; width: 100%;
+      padding: 1rem;
+      background: #f0fdf4;
+      color: #166534;
+      border: 1.5px solid #22c55e;
+      border-radius: 16px;
+      font-family: sans-serif; font-size: 1rem; font-weight: 800;
+      cursor: pointer; text-align: center; text-decoration: none;
+      transition: all .15s;
+    }
+    .review-btn:hover { background: #dcfce7; }
+    .review-btn .sub { color: #15803d; font-size: .8rem; font-weight: 500; margin-top: .2rem; }
 
     /* Day list */
     .card { background: var(--card); border-radius: 20px; padding: 1.6rem 1.8rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
@@ -58,6 +73,87 @@
     .day-left { display: flex; flex-direction: column; }
 
     .empty { text-align: center; color: var(--muted); font-family: sans-serif; font-size: .9rem; padding: 1rem 0; }
+
+    /* Dashboard */
+    .dashboard-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+    .metric {
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: .85rem .9rem;
+      background: #fff;
+      font-family: sans-serif;
+      min-height: 86px;
+    }
+    .metric .label { color: var(--muted); font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .metric .value { margin-top: .35rem; font-size: 1.45rem; font-weight: 800; line-height: 1.1; color: var(--text); }
+    .metric .note { margin-top: .25rem; font-size: .76rem; color: var(--muted); line-height: 1.35; }
+    .metric.due { border-color: #f59e0b; background: #fffbeb; }
+    .metric.due .value { color: #92400e; }
+    .metric.good { border-color: #22c55e; background: #f0fdf4; }
+    .metric.good .value { color: #166534; }
+    .metric.warn { border-color: #ef4444; background: #fef2f2; }
+    .metric.warn .value { color: #991b1b; }
+    .system-line {
+      margin-top: 1rem;
+      padding: .85rem 1rem;
+      border-radius: 12px;
+      background: #f8fafc;
+      color: var(--muted);
+      font-family: sans-serif;
+      font-size: .86rem;
+      line-height: 1.6;
+    }
+
+    .training-route { display: grid; gap: .65rem; font-family: sans-serif; }
+    .route-step {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: .75rem;
+      align-items: start;
+      padding: .7rem .8rem;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+    }
+    .route-num {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-weight: 800;
+      font-size: .82rem;
+      flex-shrink: 0;
+    }
+    .route-title { font-size: .92rem; font-weight: 800; line-height: 1.35; }
+    .route-note { margin-top: .15rem; color: var(--muted); font-size: .8rem; line-height: 1.45; }
+    .focus-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .9rem; }
+    .focus-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      padding: .35rem .65rem;
+      border-radius: 99px;
+      background: #f0fdf4;
+      color: #166534;
+      font-family: sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 560px) {
+      .quick-actions { grid-template-columns: 1fr; }
+      .dashboard-grid { grid-template-columns: repeat(2, 1fr); }
+      .metric .value { font-size: 1.25rem; }
+    }
+
+    @media (max-width: 380px) {
+      .dashboard-grid { grid-template-columns: 1fr; }
+      .day-item { align-items: flex-start; gap: .7rem; }
+    }
   </style>
 </head>
 <body>
@@ -67,13 +163,70 @@
 <h1>Daily <span>English</span></h1>
 <p>A2 → B1 · 每天一篇，持續進步</p>
 </div>
+<div class="quick-actions">
 <a class="today-btn" href="#" id="today-link">
     前往今天的學習內容
     <div class="sub" id="today-date-label"></div>
 </a>
+<a class="review-btn" href="review/">
+    前往複習中心
+    <div class="sub">Review Center</div>
+</a>
+</div>
+<div class="card">
+<div class="card-title">📊 系統狀態</div>
+<div class="dashboard-grid" aria-live="polite">
+<div class="metric">
+<div class="label">Total Days</div>
+<div class="value" id="metric-days">--</div>
+<div class="note">累計訓練天數</div>
+</div>
+<div class="metric">
+<div class="label">Words</div>
+<div class="value" id="metric-words">--</div>
+<div class="note">已加入 SRS</div>
+</div>
+<div class="metric good">
+<div class="label">Mastered</div>
+<div class="value" id="metric-mastered">--</div>
+<div class="note">reviewCount ≥ 7</div>
+</div>
+<div class="metric due" id="metric-due-card">
+<div class="label">Due Today</div>
+<div class="value" id="metric-due">--</div>
+<div class="note">今天要複習</div>
+</div>
+<div class="metric" id="metric-overdue-card">
+<div class="label">Overdue</div>
+<div class="value" id="metric-overdue">--</div>
+<div class="note">逾期複習</div>
+</div>
+<div class="metric">
+<div class="label">Episode</div>
+<div class="value" id="metric-episode">--</div>
+<div class="note">目前連載進度</div>
+</div>
+</div>
+<div class="system-line" id="system-line">正在讀取學習狀態...</div>
+</div>
+<div class="card">
+<div class="card-title">🧭 今日訓練路線</div>
+<div class="training-route">
+<div class="route-step"><div class="route-num">1</div><div><div class="route-title">聽全文，抓故事任務</div><div class="route-note">先不查字，確認今天 Mina 要解決什麼問題。</div></div></div>
+<div class="route-step"><div class="route-num">2</div><div><div class="route-title">逐句聽讀，標出卡點</div><div class="route-note">用單句播放處理聽不清楚或讀不順的句子。</div></div></div>
+<div class="route-step"><div class="route-num">3</div><div><div class="route-title">完成 Review Quiz</div><div class="route-note">先做主動回想，再讓 SRS 更新記憶狀態。</div></div></div>
+<div class="route-step"><div class="route-num">4</div><div><div class="route-title">做 Speaking Bridge</div><div class="route-note">把 2–7 天前的字放進新情境，練真正能開口的反應。</div></div></div>
+</div>
+<div class="focus-chips">
+<span class="focus-chip">旅行開口</span>
+<span class="focus-chip">英文資訊判讀</span>
+<span class="focus-chip">主動回想</span>
+<span class="focus-chip">逐句聽力</span>
+</div>
+</div>
 <div class="card">
 <div class="card-title">📅 學習記錄</div>
-<div class="day-list" id="day-list"><a class="day-item" href="daily/2026-07-03/"><div class="day-left"><div class="day-date">2026-07-03</div><div class="day-title">The Blue Receipt · Episode 12</div></div><div class="day-num">Day 70</div></a><a class="day-item" href="daily/2026-07-02/"><div class="day-left"><div class="day-date">2026-07-02</div><div class="day-title">The Blue Receipt · Episode 11</div></div><div class="day-num">Day 69</div></a><a class="day-item" href="daily/2026-07-01/"><div class="day-left"><div class="day-date">2026-07-01</div><div class="day-title">The Blue Receipt · Episode 10</div></div><div class="day-num">Day 68</div></a><a class="day-item" href="daily/2026-06-30/"><div class="day-left"><div class="day-date">2026-06-30</div><div class="day-title">The Blue Receipt · Episode 9</div></div><div class="day-num">Day 67</div></a><a class="day-item" href="daily/2026-06-29/"><div class="day-left"><div class="day-date">2026-06-29</div><div class="day-title">The Blue Receipt · Episode 8</div></div><div class="day-num">Day 66</div></a>
+<div class="day-list" id="day-list"><a class="day-item" href="daily/2026-07-06/"><div class="day-left"><div class="day-date">2026-07-06</div><div class="day-title">The Blue Receipt · Episode 13</div></div><div class="day-num">Day 71</div></a><a class="day-item" href="daily/2026-07-03/"><div class="day-left"><div class="day-date">2026-07-03</div><div class="day-title">The Blue Receipt · Episode 12</div></div><div class="day-num">Day 70</div></a><a class="day-item" href="daily/2026-07-02/"><div class="day-left"><div class="day-date">2026-07-02</div><div class="day-title">The Blue Receipt · Episode 11</div></div><div class="day-num">Day 69</div></a><a class="day-item" href="daily/2026-07-01/"><div class="day-left"><div class="day-date">2026-07-01</div><div class="day-title">The Blue Receipt · Episode 10</div></div><div class="day-num">Day 68</div></a><a class="day-item" href="daily/2026-06-30/"><div class="day-left"><div class="day-date">2026-06-30</div><div class="day-title">The Blue Receipt · Episode 9</div></div><div class="day-num">Day 67</div></a><a class="day-item" href="daily/2026-06-29/"><div class="day-left"><div class="day-date">2026-06-29</div><div class="day-title">The Blue Receipt · Episode 8</div></div><div class="day-num">Day 66</div></a>
 <!-- DAYS_START -->
 <a class="day-item" href="daily/2026-06-26/">
 <div class="day-left">
@@ -531,11 +684,14 @@
 </div>
 <script>
   // 設定「今天」按鈕
-  const today = new Date().toLocaleDateString('zh-TW', {
-    year: 'numeric', month: '2-digit', day: '2-digit'
-  }).replace(/\//g, '-');
+  function localYmd(date = new Date()) {
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, '0');
+    const d = String(date.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  }
 
-  const ymd = new Date().toISOString().slice(0, 10);
+  const ymd = localYmd();
   document.getElementById('today-link').href = `daily/${ymd}/`;
   document.getElementById('today-date-label').textContent = ymd;
 
@@ -547,6 +703,58 @@
       el.classList.remove('today');
     }
   });
+
+  function setText(id, value) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  }
+
+  function parseYmd(value) {
+    if (!value) return null;
+    const [y, m, d] = value.split('-').map(Number);
+    if (!y || !m || !d) return null;
+    return new Date(y, m - 1, d);
+  }
+
+  async function loadDashboard() {
+    const line = document.getElementById('system-line');
+    try {
+      const [profileResp, vocabResp] = await Promise.all([
+        fetch('profile.json', { cache: 'no-store' }),
+        fetch('vocabulary/learning.json', { cache: 'no-store' })
+      ]);
+      if (!profileResp.ok || !vocabResp.ok) throw new Error('json unavailable');
+
+      const profile = await profileResp.json();
+      const vocab = await vocabResp.json();
+      const words = Array.isArray(vocab.words) ? vocab.words : [];
+      const activeWords = words.filter(w => (w.reviewCount || 0) < 7);
+      const due = activeWords.filter(w => w.nextReview && w.nextReview <= ymd);
+      const overdue = activeWords.filter(w => w.nextReview && w.nextReview < ymd);
+      const mastered = words.filter(w => (w.reviewCount || 0) >= 7);
+      const upcoming = activeWords
+        .filter(w => w.nextReview && w.nextReview > ymd)
+        .sort((a, b) => a.nextReview.localeCompare(b.nextReview))[0];
+
+      setText('metric-days', profile.totalDays ?? '--');
+      setText('metric-words', words.length);
+      setText('metric-mastered', mastered.length);
+      setText('metric-due', due.length);
+      setText('metric-overdue', overdue.length);
+      setText('metric-episode', profile.currentEpisode ? `E${profile.currentEpisode}` : '--');
+
+      document.getElementById('metric-overdue-card').classList.toggle('warn', overdue.length > 0);
+      document.getElementById('metric-due-card').classList.toggle('good', due.length === 0);
+
+      const nextText = upcoming ? `下一個複習：${upcoming.word}（${upcoming.nextReview}）` : '目前沒有未來複習排程';
+      const mode = profile.contentMode === 'serial-story' ? '連載故事模式' : '任務式教材模式';
+      line.textContent = `${mode} · ${profile.currentSeries || 'Daily English'} · ${due.length} 個今日到期 · ${overdue.length} 個逾期 · ${nextText}`;
+    } catch (err) {
+      line.textContent = '無法讀取即時學習狀態；若直接用檔案開啟，請改用本機 HTTP server 或 GitHub Pages。';
+    }
+  }
+
+  loadDashboard();
 </script>
 </body>
 </html>
