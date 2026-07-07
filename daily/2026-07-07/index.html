@@ -617,6 +617,273 @@
       line-height: 1.5;
     }
 
+    .context-subtitle {
+      font-family: sans-serif;
+      font-size: .88rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .context-list {
+      display: grid;
+      gap: .85rem;
+      font-family: sans-serif;
+    }
+    .context-item {
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      background: #fff;
+    }
+    .context-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .7rem;
+      margin-bottom: .55rem;
+    }
+    .context-level {
+      display: inline-flex;
+      border-radius: 99px;
+      padding: .18rem .55rem;
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: .7rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .context-prompt {
+      color: var(--text);
+      font-size: .95rem;
+      font-weight: 800;
+      line-height: 1.55;
+    }
+    .context-hint {
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.45;
+      margin-bottom: .65rem;
+    }
+    .context-answer {
+      margin-top: .55rem;
+      padding: .65rem .8rem;
+      background: #f8fafc;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      color: var(--accent);
+      font-size: .9rem;
+      font-weight: 800;
+      line-height: 1.55;
+    }
+    .context-rating {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      margin-top: .75rem;
+    }
+    .context-rate-btn {
+      border: 1.5px solid var(--border);
+      background: #fff;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: .42rem .65rem;
+      font-family: sans-serif;
+      font-size: .78rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .context-rate-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--tag-bg);
+    }
+    .context-rate-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--tag-bg);
+    }
+    .context-item.unrated {
+      border-color: #f59e0b;
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, .12);
+    }
+    .context-sync {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      background: #f8fafc;
+      font-family: sans-serif;
+    }
+    .context-progress {
+      color: var(--muted);
+      font-size: .86rem;
+      font-weight: 800;
+      margin-bottom: .65rem;
+    }
+    .context-sync-btn {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      padding: .75rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      font-family: sans-serif;
+      font-size: .9rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .context-sync-btn:disabled {
+      background: var(--muted);
+      cursor: default;
+    }
+    .context-result {
+      display: none;
+      margin-top: .75rem;
+      padding: .75rem .9rem;
+      border-radius: 10px;
+      font-size: .86rem;
+      line-height: 1.6;
+    }
+    .context-result.success {
+      display: block;
+      background: #f0fdf4;
+      color: #166534;
+      border: 1.5px solid #bbf7d0;
+    }
+    .context-result.warn {
+      display: block;
+      background: #fffbeb;
+      color: #92400e;
+      border: 1.5px solid #fde68a;
+    }
+
+    .feedback-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-family: sans-serif;
+    }
+    .feedback-help {
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.6;
+    }
+    .feedback-group {
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+    }
+    .feedback-label {
+      color: var(--text);
+      font-size: .86rem;
+      font-weight: 800;
+    }
+    .feedback-choice-row,
+    .feedback-check-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .feedback-choice {
+      border: 1.5px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      border-radius: 99px;
+      padding: .5rem .8rem;
+      font-family: sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .feedback-choice.active {
+      border-color: var(--accent);
+      background: var(--tag-bg);
+      color: var(--accent);
+    }
+    .feedback-check {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      border: 1.5px solid var(--border);
+      border-radius: 99px;
+      padding: .45rem .65rem;
+      color: var(--muted);
+      font-size: .82rem;
+      cursor: pointer;
+    }
+    .feedback-check input { accent-color: var(--accent); }
+    .feedback-input,
+    .feedback-note {
+      width: 100%;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: .75rem .85rem;
+      font-family: sans-serif;
+      font-size: .9rem;
+      color: var(--text);
+      background: #fff;
+    }
+    .feedback-note { min-height: 86px; resize: vertical; }
+    .feedback-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      align-items: center;
+    }
+    .feedback-save,
+    .feedback-clear {
+      align-self: flex-start;
+      border-radius: 12px;
+      padding: .75rem 1rem;
+      font-family: sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .feedback-save { border: none; background: var(--accent); color: #fff; }
+    .feedback-clear { border: 1.5px solid var(--border); background: #fff; color: var(--muted); }
+    .feedback-status {
+      min-height: 1.2rem;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.5;
+    }
+    .feedback-status.saved { color: #166534; }
+    .feedback-status.warn { color: #991b1b; }
+    .ability-focus {
+      display: grid;
+      gap: .75rem;
+      font-family: sans-serif;
+    }
+    .ability-focus-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .ability-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      border-radius: 99px;
+      padding: .42rem .68rem;
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: .8rem;
+      font-weight: 800;
+    }
+    .ability-pill.secondary {
+      background: #f0fdf4;
+      color: #166534;
+    }
+    .ability-evidence {
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      background: #f8fafc;
+      padding: .85rem 1rem;
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.65;
+    }
+
     @media (max-width: 500px) {
       html, body { overflow-x: hidden; }
       .card { padding: 1.4rem 1.2rem; }
@@ -640,6 +907,7 @@
 <div class="header"><div class="date-badge">July 7, 2026 · Day 72</div><h1>The <span>Blue Receipt</span> · Episode 14</h1><p class="subtitle">A2 → B1 · Serial English Story</p></div>
 <div class="player-card"><div class="player-label">🎧 Listen to the Story</div><div class="player-title">The Blue Receipt · Episode 14</div><audio controls="" id="article-audio"><source src="article.mp3" type="audio/mpeg"/></audio><div class="player-controls"><button class="loop-btn" onclick="toggleLoop(this)">🔁 循環播放</button></div></div>
 <div id="word-popup"><button class="pop-close" onclick="closePopup()">✕</button><div id="pop-content"></div></div>
+<div class="card"><div class="card-title">🗺️ Ability Focus</div><div class="ability-focus"><div class="ability-focus-row"><span class="ability-pill">旅行開口</span><span class="ability-pill">公共英文</span><span class="ability-pill secondary">英文資訊判讀</span><span class="ability-pill secondary">日常反應</span></div><div class="ability-evidence">今天的能力證據：<strong>Should I leave now?</strong> 練不確定時開口；<strong>safe exit</strong> 與 <strong>Please follow the blue line.</strong> 練看公共指示；<strong>old post on the phone</strong> 練英文資訊判讀。</div></div></div>
 <div class="card"><div class="card-title">📖 Article</div><div class="legend"><div class="legend-item"><div class="legend-dot vocab"></div>今日單字</div><div class="legend-item"><div class="legend-dot review"></div>複習單字</div><div class="legend-item"><div class="legend-dot phrase"></div>重要片語</div><div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 點擊播放單句</div><div class="legend-item sentence-mode"><span class="sentence-mode-label">單句模式</span><span aria-label="單句播放模式" class="sentence-mode-group" role="group"><button class="sentence-mode-btn active" data-mode="once" onclick="setSentenceMode('once')" type="button">單次</button><button class="sentence-mode-btn" data-mode="loop" onclick="setSentenceMode('loop')" type="button">循環</button></span></div></div><div class="article-body" id="article-body"><p>
 <span class="sent" data-idx="1" data-text="Mina stopped at the gate."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Mina stopped at the gate.</span>
 <span class="sent" data-idx="2" data-text="The bus light turned blue again."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The bus light turned blue again.</span>
@@ -674,10 +942,14 @@
 <div class="card"><div class="card-title">📝 Quiz</div><div class="quiz-q"><div class="quiz-question">1. What did the second arrow say?</div><div class="quiz-options"><div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">A</span>Safe exit</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>Last ticket</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>Seat 12 only</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>Wait alone</div></div></div><div class="quiz-q"><div class="quiz-question">2. What does "decide" mean?</div><div class="quiz-options"><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>藏起來</div><div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span>決定</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>回頭看</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>跟丟</div></div></div><div class="quiz-q"><div class="quiz-question">3. What should you say if you are not sure whether to go or leave?</div><div class="quiz-options"><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>Please follow the blue line.</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>You must decide.</div><div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">C</span>Should I leave now?</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>Board here.</div></div></div><button class="answers-btn" onclick="toggleAnswers()">顯示答案</button><div class="answers-reveal" id="answers-reveal">✅  Q1: <strong>A</strong> ｜ Q2: <strong>B</strong> ｜ Q3: <strong>C</strong></div></div>
 <div class="card"><div class="card-title">🧠 Active Recall Quiz</div><p class="rq-subtitle">看中文意思，選出正確的英文單字</p><div class="rq-progress" id="rq-progress">已作答 0 / 5 題</div><div class="rq-item" data-correct="post" data-word="post"><div class="rq-zh">貼文 <span class="rq-pos">n. </span></div><div class="rq-opts"><button class="rq-opt" data-val="charger" onclick="rqSelect(this)">charger</button><button class="rq-opt" data-val="post" onclick="rqSelect(this)">post</button><button class="rq-opt" data-val="detergent" onclick="rqSelect(this)">detergent</button><button class="rq-opt" data-val="ferry" onclick="rqSelect(this)">ferry</button></div></div><div class="rq-item" data-correct="paper" data-word="paper"><div class="rq-zh">紙；紙張 <span class="rq-pos">n. </span></div><div class="rq-opts"><button class="rq-opt" data-val="path" onclick="rqSelect(this)">path</button><button class="rq-opt" data-val="paper" onclick="rqSelect(this)">paper</button><button class="rq-opt" data-val="neighbor" onclick="rqSelect(this)">neighbor</button><button class="rq-opt" data-val="errand" onclick="rqSelect(this)">errand</button></div></div><div class="rq-item" data-correct="shadow" data-word="shadow"><div class="rq-zh">影子；陰影 <span class="rq-pos">n. </span></div><div class="rq-opts"><button class="rq-opt" data-val="departure" onclick="rqSelect(this)">departure</button><button class="rq-opt" data-val="map" onclick="rqSelect(this)">map</button><button class="rq-opt" data-val="paper" onclick="rqSelect(this)">paper</button><button class="rq-opt" data-val="shadow" onclick="rqSelect(this)">shadow</button></div></div><div class="rq-item" data-correct="careful" data-word="careful"><div class="rq-zh">小心的；謹慎的 <span class="rq-pos">adj. </span></div><div class="rq-opts"><button class="rq-opt" data-val="cozy" onclick="rqSelect(this)">cozy</button><button class="rq-opt" data-val="sunny" onclick="rqSelect(this)">sunny</button><button class="rq-opt" data-val="one-way" onclick="rqSelect(this)">one-way</button><button class="rq-opt" data-val="careful" onclick="rqSelect(this)">careful</button></div></div><div class="rq-item" data-correct="exact" data-word="exact"><div class="rq-zh">確切的；精準的 <span class="rq-pos">adj. </span></div><div class="rq-opts"><button class="rq-opt" data-val="wrong" onclick="rqSelect(this)">wrong</button><button class="rq-opt" data-val="exhausted" onclick="rqSelect(this)">exhausted</button><button class="rq-opt" data-val="safe" onclick="rqSelect(this)">safe</button><button class="rq-opt" data-val="exact" onclick="rqSelect(this)">exact</button></div></div><div id="rq-result" style="display:none"></div><button id="rq-submit-btn" onclick="submitReviewQuiz()">提交答案 &amp; 同步 SRS 記錄</button></div>
 <div class="card"><div class="card-title">🌉 Speaking Bridge</div><p class="bridge-subtitle">用 2–7 天前學的單字練習開口<br/>短期記憶已淡，這才是真正的記憶測試 💪</p><div class="bridge-item"><div class="bridge-word-header"><span class="bridge-word">paper</span><span class="bridge-word-zh">紙；紙張 </span><span class="pos-badge">n.</span><span class="bridge-day-badge">7 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「那張紙上只有一個名字。」</div><div class="bridge-scramble">The / ____ / had / only / one / name / on / it</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">The paper had only one name on it.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">「請把那張紙拿給我。」先試著說出英文，再點顯示。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="bridge-answer" style="display:none">Please give me that paper.</div></div></div><div class="bridge-item"><div class="bridge-word-header"><span class="bridge-word">circle</span><span class="bridge-word-zh">圓圈；圈記 </span><span class="pos-badge">n.</span><span class="bridge-day-badge">4 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「紅色圓圈還在 12 號座位上。」</div><div class="bridge-scramble">The / red / ____ / was / still / on / Seat / 12</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">The red circle was still on Seat 12.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">「請在正確出口旁邊畫一個圈。」先試著說出英文，再點顯示。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="bridge-answer" style="display:none">Please draw a circle next to the right exit.</div></div></div><div class="bridge-item"><div class="bridge-word-header"><span class="bridge-word">folded</span><span class="bridge-word-zh">摺起來的 </span><span class="pos-badge">adj.</span><span class="bridge-day-badge">4 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「她口袋裡還有一張摺起來的地圖。」</div><div class="bridge-scramble">She / still / had / a / ____ / map / in / her / pocket</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">She still had a folded map in her pocket.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">「我桌上有一張摺起來的紙。」先試著說出英文，再點顯示。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="bridge-answer" style="display:none">There is a folded piece of paper on my desk.</div></div></div><div class="bridge-item"><div class="bridge-word-header"><span class="bridge-word">speaker</span><span class="bridge-word-zh">喇叭；揚聲器 </span><span class="pos-badge">n.</span><span class="bridge-day-badge">4 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「公車喇叭突然打開了。」</div><div class="bridge-scramble">The / bus / ____ / turned / on / suddenly</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">The bus speaker turned on suddenly.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">「那個喇叭的聲音太大了。」先試著說出英文，再點顯示。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="bridge-answer" style="display:none">That speaker is too loud.</div></div></div></div>
+<div class="card"><div class="card-title">🎯 Context Recall</div><p class="context-subtitle">看中文情境，先自己說出英文，再點開參考答案。最後自評提取狀態，8 題都評完後可同步到句子 SRS。</p><div class="context-list"><div class="context-item" data-sentence-id="2026-07-07-should-i-leave-now"><div class="context-top"><div class="context-prompt">我現在該離開嗎？</div><span class="context-level">Lv.1 有提示</span></div><div class="context-hint">提示：Should I ... now?</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Should I leave now?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-07-follow-the-blue-line"><div class="context-top"><div class="context-prompt">請沿著藍線走。</div><span class="context-level">Lv.1 有提示</span></div><div class="context-hint">提示：Please follow ...</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Please follow the blue line.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-07-is-this-a-safe-exit"><div class="context-top"><div class="context-prompt">這是安全出口嗎？</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">先自己說；不要看英文關鍵字。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Is this a safe exit?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-07-i-need-to-decide"><div class="context-top"><div class="context-prompt">我需要決定。</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">先說短句即可。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">I need to decide.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-07-check-the-old-post"><div class="context-top"><div class="context-prompt">請看手機上的舊貼文。</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">情境：你要對方確認一則資訊。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Please check the old post on the phone.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-07-paper-one-name"><div class="context-top"><div class="context-prompt">那張紙上只有一個名字。</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">複習字：paper</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">The paper had only one name on it.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-07-safe-exit-staff"><div class="context-top"><div class="context-prompt">如果你在車站看到 safe exit，你會怎麼問工作人員？</div><span class="context-level">Lv.3 自由應答</span></div><div class="context-hint">可以用 Is this ...? / Should I ...?</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Is this the safe exit? / Should I follow this exit?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-07-get-on-the-bus"><div class="context-top"><div class="context-prompt">如果你不確定要不要上車，你會怎麼說？</div><span class="context-level">Lv.3 自由應答</span></div><div class="context-hint">用今天的 survival sentence 改寫也可以。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Should I get on the bus? / Should I leave now?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div></div><div class="context-sync"><div class="context-progress" id="context-progress">已評分 0 / 8 題</div><button class="context-sync-btn" id="context-sync-btn" onclick="syncContextRecall()" type="button">同步句子 SRS</button><div class="context-result" id="context-result" aria-live="polite"></div></div></div>
 <div class="card"><div class="card-title">💡 Learning Tips</div><div class="tips-box">今天最值得直接背的是 <strong>Should I leave now?</strong>，遇到不確定要不要繼續、要不要進去時都能直接開口。今天也要記住 <strong>safe exit</strong> 和 <strong>follow the blue line</strong>，因為看指示、看標示、找出口時很常真的會用到。</div></div>
+<div class="card"><div class="card-title">🧭 Daily Feedback</div><div class="feedback-form" data-feedback-form data-feedback-date="2026-07-07"><p class="feedback-help">用 30 秒留下今天的難度與卡點。這會先存在這台瀏覽器，之後可用來調整每日訓練。</p><div class="feedback-group"><div class="feedback-label">今天難度</div><div class="feedback-choice-row"><button class="feedback-choice" data-feedback-difficulty="too-easy" type="button">太簡單</button><button class="feedback-choice" data-feedback-difficulty="just-right" type="button">剛好</button><button class="feedback-choice" data-feedback-difficulty="too-hard" type="button">太難</button></div></div><div class="feedback-group"><div class="feedback-label">今日卡點</div><div class="feedback-check-row"><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="vocabulary"/>單字</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="listening"/>聽力</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="speaking"/>口說</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="reading"/>文章理解</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="sentence"/>句型</label></div></div><div class="feedback-group"><label class="feedback-label" for="feedback-useful">今日最有用一句</label><input class="feedback-input" id="feedback-useful" name="feedback-useful" type="text" value="Should I leave now?"/></div><div class="feedback-group"><label class="feedback-label" for="feedback-note">補充卡點</label><textarea class="feedback-note" id="feedback-note" name="feedback-note" placeholder="例如：文章可以，但聽力第 10 句跟不上。"></textarea></div><div class="feedback-actions"><button class="feedback-save" data-feedback-save type="button">儲存今日回饋</button><button class="feedback-clear" data-feedback-clear type="button">清除今日回饋</button></div><div class="feedback-status" data-feedback-status aria-live="polite"></div></div></div>
 <div class="card"><div class="card-title">🔁 Review Words</div><table class="vocab-table"><thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th><th>狀態</th></tr></thead><tbody><tr><td><strong>post</strong></td><td><span class="pos-badge">n. </span></td><td><div class="zh-meaning">貼文 </div><div class="example-sent">She found a local post about the bus line. </div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>paper</strong></td><td><span class="pos-badge">n. </span></td><td><div class="zh-meaning">紙；紙張 </div><div class="example-sent">The ticket was made of thin paper. </div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>shadow</strong></td><td><span class="pos-badge">n. </span></td><td><div class="zh-meaning">影子；陰影 </div><div class="example-sent">A dark shadow crossed Seat 12. </div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>careful</strong></td><td><span class="pos-badge">adj. </span></td><td><div class="zh-meaning">小心的；謹慎的 </div><div class="example-sent">Lina told Mina to be careful. </div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>exact</strong></td><td><span class="pos-badge">adj. </span></td><td><div class="zh-meaning">確切的；精準的 </div><div class="example-sent">The exact time was under both names. </div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr></tbody></table></div>
 </div>
 <script src="../../assets/srs.js"></script>
+<script src="../../assets/sentence-srs.js"></script>
+<script src="../../assets/feedback.js"></script>
 <script>
   function getAssetBasePath() {
     const path = window.location.pathname;
@@ -862,6 +1134,84 @@
     }
   }
 
+  function getContextRecallItems() {
+    return Array.from(document.querySelectorAll(".context-item[data-sentence-id]"));
+  }
+
+  function getContextRecallResults() {
+    return getContextRecallItems().map((item) => ({
+      id: item.dataset.sentenceId,
+      rating: item.dataset.rating || ""
+    }));
+  }
+
+  function updateContextProgress() {
+    const results = getContextRecallResults();
+    const rated = results.filter((result) => result.rating).length;
+    const progressEl = document.getElementById("context-progress");
+    if (progressEl) progressEl.textContent = `已評分 ${rated} / ${results.length} 題`;
+  }
+
+  function rateContextRecall(btn) {
+    const item = btn.closest(".context-item[data-sentence-id]");
+    if (!item) return;
+    item.dataset.rating = btn.dataset.rating;
+    item.classList.remove("unrated");
+    item.querySelectorAll(".context-rate-btn").forEach((rateBtn) => {
+      rateBtn.classList.toggle("active", rateBtn === btn);
+    });
+    updateContextProgress();
+  }
+
+  async function syncContextRecall() {
+    if (!window.SentenceSrs) {
+      alert("句子 SRS 模組尚未載入，請重新整理後再試。");
+      return;
+    }
+
+    const items = getContextRecallItems();
+    const missing = items.filter((item) => !item.dataset.rating);
+    if (missing.length) {
+      items.forEach((item) => item.classList.remove("unrated"));
+      missing.forEach((item) => item.classList.add("unrated"));
+      missing[0].scrollIntoView({ behavior: "smooth", block: "center" });
+      alert(`還有 ${missing.length} 題尚未自評，已幫你跳到第一題。`);
+      return;
+    }
+
+    const today = window.SentenceSrs.localYmd();
+    const resultEl = document.getElementById("context-result");
+    const syncBtn = document.getElementById("context-sync-btn");
+    const results = getContextRecallResults();
+
+    if (window.SentenceSrs.isAlreadySynced("context_srs_done_", today)) {
+      resultEl.textContent = "今天已同步過句子 SRS；這次當作額外練習，不重複更新。";
+      resultEl.className = "context-result success";
+      syncBtn.disabled = true;
+      syncBtn.textContent = "今天已同步";
+      return;
+    }
+
+    syncBtn.disabled = true;
+    syncBtn.textContent = "同步中...";
+
+    try {
+      const synced = await window.SentenceSrs.syncSentenceResults(results, {
+        today,
+        storagePrefix: "context_srs_done_",
+        commitPrefix: "Sentence SRS update: context recall"
+      });
+      resultEl.textContent = `句子 SRS 已同步：更新 ${synced.updatedCount} 題，略過 ${synced.skippedCount} 題。`;
+      resultEl.className = "context-result success";
+      syncBtn.textContent = "已同步句子 SRS";
+    } catch (err) {
+      resultEl.textContent = "同步失敗：" + err.message;
+      resultEl.className = "context-result warn";
+      syncBtn.disabled = false;
+      syncBtn.textContent = "同步句子 SRS";
+    }
+  }
+
   const VOCAB = {
     "safe": {
         "pos": "adj.",
@@ -1006,7 +1356,9 @@
     articleAudio.preload = "metadata";
     articleAudio.load();
     updateReviewProgress();
+    updateContextProgress();
     syncSentenceModeButtons();
+    window.LearningFeedback.initDailyFeedback();
     document.getElementById("article-body").addEventListener("click", (e) => {
       const v = e.target.closest(".vocab-word");
       const rv = e.target.closest(".review-word");

@@ -5,6 +5,52 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-07-07 — 每日教材驗證腳本
+
+- 新增 `scripts/validate_daily.py`，以 Python stdlib 驗證單日正式教材。
+- 驗證範圍包含必要 HTML 區塊、共用 script、`article.mp3`、逐句 `sNN.mp3`、句子編號連續性、Context Recall 與 `vocabulary/sentences.json` 對齊、`ability_map.json` session、今日新字與 `learning.json` 對齊、Speaking Bridge 不使用今日新字、首頁連結。
+- 更新 `.ai/daily-english-learning/SKILL.md`，要求未來 commit / push 前先執行 `python3 scripts/validate_daily.py [日期]`。
+- 更新 `LEARNING_SYSTEM_ROADMAP.md`，將 P2 產出驗證自動化多數項目標記完成。
+- 驗證：`python3 scripts/validate_daily.py 2026-07-07` 通過，70 checks，0 warnings，0 errors。
+
+---
+## 2026-07-07 — 句子 / 情境 SRS MVP
+
+- 新增 `vocabulary/sentences.json`，以 Day 72 的 8 題 Context Recall 作為句子 SRS 初始資料。
+- 新增 `assets/sentence-srs.js`，沿用 GitHub Contents API 與本機 `github_pat`，支援 `remembered` / `hinted` / `forgot` 三種自評更新規則。
+- 更新 `daily/2026-07-07/index.html`，每題 Context Recall 加入 `data-sentence-id`、自評按鈕、進度與同步入口。
+- 更新 `.ai/daily-english-learning/SKILL.md` 與 `LEARNING_SYSTEM_ROADMAP.md`，將句子 SRS 納入未來正式教材流程。
+- 驗證：JS 語法、JSON parse、HTML parser、排程函式、HTTP 200、in-app browser 自評進度、未評完同步阻擋、390px 手機寬度無水平 overflow。未實際執行 GitHub 寫入。
+
+---
+## 2026-07-07 — Context Recall 情境提取初版
+
+- 更新 `daily/2026-07-07/index.html`，在 Speaking Bridge 後、Learning Tips 前新增 `Context Recall` 區塊。
+- Day 72 補入 8 題情境中翻英，分為 Lv.1 有提示、Lv.2 無提示、Lv.3 自由應答。
+- 更新 `.ai/daily-english-learning/SKILL.md`，未來正式教材每篇至少產出 6 題，建議 8–10 題 Context Recall。
+- 更新 `LEARNING_SYSTEM_ROADMAP.md`，新增 P1 情境提取訓練完成項。
+- 驗證：HTML parser、Context Recall 題數 / 答案數檢查、template marker 檢查、in-app browser 翻牌互動、390px 手機寬度無水平 overflow。
+
+---
+## 2026-07-07 — 能力地圖 P1 初版
+
+- 新增 `ability_map.json`，定義 `travelSpeaking`、`publicEnglish`、`onlineReading`、`dailyResponse` 四條能力主線與最近 session。
+- 更新首頁 `index.html`，新增「本週能力地圖」卡，從 `ability_map.json` 計算本週能力覆蓋狀態。
+- 更新 `daily/2026-07-07/index.html`，新增 `Ability Focus` 區，顯示今日能力標記與 evidence。
+- 更新 `.ai/daily-english-learning/SKILL.md`，未來正式教材產出時需選能力、顯示 Ability Focus，並同步 `ability_map.json`。
+- 驗證：`ability_map.json` JSON parse、HTML parser、HTTP 200、in-app browser 首頁 / Day 72 桌面與 390px 手機寬度檢查，console 無 error / warn。
+
+---
+## 2026-07-07 — 每日難度與卡點回饋 P1 初版
+
+- 新增 `assets/feedback.js`，用 `localStorage` key `english_learning_feedback_v1` 儲存每日難度、卡點、最有用一句與補充卡點。
+- 更新 `daily/2026-07-07/index.html`，在 Learning Tips 後加入 Daily Feedback 區，支援儲存與清除今日回饋。
+- 更新首頁 `index.html`，新增「最近回饋」卡，讀取同一台瀏覽器最近一筆回饋。
+- 更新 `.ai/daily-english-learning/SKILL.md`，讓未來 daily 頁延續同一套回饋表單與共用模組。
+- 更新 `LEARNING_SYSTEM_ROADMAP.md`，標記回饋區與等效資料來源完成，並記錄 localStorage 仍需匯出 / 同步機制才能讓產出 agent 穩定讀取。
+- 驗證：`node --check assets/feedback.js`、HTML parser、本機 HTTP 200、in-app browser 桌面互動、首頁摘要顯示、390px 手機寬度無水平 overflow。
+
+---
 ## 2026-07-07 — Day 72 正式教材產出
 
 - 先 `git fetch origin`，確認遠端多了 `SRS update: review quiz 2026-07-06`，再只同步最新 `vocabulary/learning.json` 後生成今天教材，避免用到過期複習狀態。
@@ -244,68 +290,3 @@
 - 今日新字：`bay`、`express`、`staff`；文章融入複習字：`message`、`busy`、`minute`
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`
 - 驗證：本機頁面載入成功、console 無錯誤、音檔 HTTP 200、句子與單句音檔數量一致
-
----
-## 2026-06-02 — Day 50 正式教材產出
-
-- 先 `git fetch` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`
-- 產出 `daily/2026-06-02/`，主題為 `Reading a Doctor's Message`
-- 新增 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json`
-- 清掉昨天誤重複的 `change` / `wrong` / `late` 三筆 SRS 紀錄
-- 驗證：本機瀏覽器載入成功、console 無 error、音檔 HTTP 200、句子與單句音檔數量一致
-
----
-## 2026-06-01 — 產出 Day 49 正式教材
-
-- 先 `git fetch --all --prune` 並 `git pull --ff-only`，同步遠端 `vocabulary/learning.json` 的最新 SRS 更新。
-- 依 `profile.json.lastTopic = daily` 產出 `travel` 主題，新增 `daily/2026-06-01/`，標題為 `Checking a Gate Change`。
-- 今日新字：`change`、`wrong`、`late`；文章融入複習字：`boarding pass`、`passport`、`gate`。
-- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 45 個到期複習字。
-- Speaking Bridge 使用 `confirm`、`exit`、`subway`、`wallet`。
-- 驗證：檢查 HTML 結構、JSON 更新、音檔檔案存在與本機 HTTP 200。
-
----
-## 2026-05-29 — Day 48 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
-- 新增 `daily/2026-05-29/`，主題 `Reading a Lunch Menu Board`，包含完整 HTML 與 16 個逐句音檔。
-- 新增單字：`special`、`spicy`、`mild`；文章融入複習字：`coupon`、`cashier`、`total`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：JSON parse、句子編號、Review Quiz 6 題、瀏覽器載入、HTTP 200、音檔存在。
-
----
-## 2026-05-28 — Day 47 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = daily` 產出 travel 主題。
-- 新增 `daily/2026-05-28/`，主題 `Reading a Subway Exit Map`，包含完整 HTML 與 17 個逐句音檔。
-- 新增單字：`subway`、`exit`、`escalator`；文章融入複習字：`ticket`、`machine`、`direct`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：JSON parse、句子編號、Review Quiz 12 題、瀏覽器載入、HTTP 200、音檔存在。
-
----
-## 2026-05-27 — Day 46 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
-- 新增 `daily/2026-05-27/`，主題 `Reading a Self-Checkout Sign`，包含完整 HTML 與 16 個逐句音檔。
-- 新增單字：`checkout`、`price`、`wallet`；文章融入複習字：`order`、`available`、`receipt`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：JSON parse、句子編號、Review Quiz 15 題、瀏覽器載入、HTTP 200、音檔存在。
-
----
-## 2026-05-26 — Day 45 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = daily` 產出 travel 主題。
-- 新增 `daily/2026-05-26/`，主題 `Confirming Hotel Breakfast`，包含完整 HTML 與 16 個逐句音檔。
-- 新增單字：`breakfast`、`confirm`、`floor`；文章融入複習字：`screen`、`available`、`fee`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：JSON parse、句子編號、Review Quiz 8 題、瀏覽器載入、HTTP 200、音檔存在。
-
----
-## 2026-05-25 — Day 44 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
-- 新增 `daily/2026-05-25/`，主題 `Using a Cafe Coupon`，包含完整 HTML 與 17 個逐句音檔。
-- 新增單字：`coupon`、`cashier`、`total`；文章融入複習字：`crowded`、`app`、`code`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：JSON parse、句子編號、HTML placeholder 檢查、HTTP 200、音檔存在與 mp3 header。

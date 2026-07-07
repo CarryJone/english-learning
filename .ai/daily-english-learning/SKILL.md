@@ -185,7 +185,38 @@ mkdir -p ./daily/$TODAY
 - Lv.2 新情境若可選，優先偏向旅行口說、問路、購物、搭車、看資訊、確認流程，而不是再次落回房間整理 / 清潔
 - 計算每個單字距今幾天（today − dateAdded），顯示在標題旁（例如「3 天前」）
 
-#### 3i. 連載紀錄更新
+#### 3i. 情境提取（Context Recall）
+- 每篇正式教材必須加入 `Context Recall` 區塊，放在 Speaking Bridge 後、Learning Tips 前。
+- 目的：訓練「看到中文情境 → 從記憶提取英文」；這比辨識或選擇題更接近真實開口。
+- 每篇至少 6 題，建議 8–10 題；題目必須短、真實、可開口。
+- 題目來源至少包含：
+  - 今天的 survival sentence / mini dialogue 可直接套用句。
+  - 今天文章中的公共英文、路線、告示、app / post / sign 等資訊線索。
+  - 2–7 天前或 Review Words 中適合拿來生產句子的舊單字 / 片語。
+- 題型分三層：
+  - **Lv.1 有提示**：中文情境 + 少量英文句型提示，例如 `Should I ... now?`
+  - **Lv.2 無提示**：只給中文情境，學習者先自己說，再點參考答案。
+  - **Lv.3 自由應答**：給真實情境，允許多種英文答案；參考答案可用 `/` 分隔。
+- 參考答案應維持 A2、短句、自然口語；允許多答案，不追求唯一標準答案。
+- 每題都必須有穩定 `data-sentence-id`，格式建議為 `YYYY-MM-DD-short-kebab-answer`。
+- 每題都必須同步寫入或更新 `vocabulary/sentences.json`，作為句子 / 情境 SRS 的 source of truth。
+- 每題都必須提供自評按鈕：`想起來`、`有提示才想起來`、`想不起來`，讓學習者完成後可同步句子 SRS。
+- 句子 SRS 評分規則：
+  - `remembered`：`reviewCount + 1`，依 `[1,3,7,14,30,60,90]` 天間隔排下次複習。
+  - `hinted`：`reviewCount` 不增加，隔天再複習。
+  - `forgot`：`reviewCount = 0`，隔天再複習。
+
+#### 3j. 能力標記（Ability Map）
+- 每篇正式教材必須標記今日訓練能力，並在 Step 6 更新 `ability_map.json`。
+- 可用能力 ID 固定為：
+  - `travelSpeaking`：旅行 / 外出開口、問路、確認、求助
+  - `publicEnglish`：公共場所英文標示、交通、票務、告示
+  - `onlineReading`：手機、網頁、app、搜尋結果、貼文中的英文資訊判讀
+  - `dailyResponse`：日常短句反應、不確定、選擇、等待、求助、確認
+- 每篇至少選 1–2 個 `primary` 能力，並可選 0–2 個 `secondary` 能力。
+- 能力標記必須有 evidence：列出 2–4 個今天文章或練習中的實際句子 / 片語 / 資訊線索。
+
+#### 3k. 連載紀錄更新
 - 連載小說模式下，產出 episode 後更新 `.ai/serial-story/CONTINUITY_LOG.md`
 - 更新內容至少包含：
   - 今日 episode 標題與日期
@@ -383,6 +414,52 @@ mkdir -p ./daily/$TODAY
     .bridge-answer { margin-top: .5rem; padding: .5rem .85rem; background: var(--tag-bg); border-radius: 8px; font-size: .9rem; font-weight: 600; color: var(--accent); font-family: sans-serif; line-height: 1.6; }
     .bridge-none { font-family: sans-serif; font-size: .92rem; color: var(--muted); text-align: center; padding: .8rem 0; }
 
+    /* Context Recall */
+    .context-subtitle { font-family: sans-serif; font-size: .88rem; color: var(--muted); margin-bottom: 1rem; line-height: 1.6; }
+    .context-list { display: grid; gap: .85rem; font-family: sans-serif; }
+    .context-item { border: 1.5px solid var(--border); border-radius: 14px; padding: 1rem 1.1rem; background: #fff; }
+    .context-top { display: flex; align-items: center; justify-content: space-between; gap: .7rem; margin-bottom: .55rem; }
+    .context-level { display: inline-flex; border-radius: 99px; padding: .18rem .55rem; background: var(--tag-bg); color: var(--accent); font-size: .7rem; font-weight: 800; white-space: nowrap; }
+    .context-prompt { color: var(--text); font-size: .95rem; font-weight: 800; line-height: 1.55; }
+    .context-hint { color: var(--muted); font-size: .82rem; line-height: 1.45; margin-bottom: .65rem; }
+    .context-answer { margin-top: .55rem; padding: .65rem .8rem; background: #f8fafc; border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; color: var(--accent); font-size: .9rem; font-weight: 800; line-height: 1.55; }
+    .context-rating { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .75rem; }
+    .context-rate-btn { border: 1.5px solid var(--border); background: #fff; color: var(--muted); border-radius: 999px; padding: .42rem .65rem; font-family: sans-serif; font-size: .78rem; font-weight: 800; cursor: pointer; transition: all .15s; }
+    .context-rate-btn:hover, .context-rate-btn.active { border-color: var(--accent); color: var(--accent); background: var(--tag-bg); }
+    .context-item.unrated { border-color: #f59e0b; box-shadow: 0 0 0 3px rgba(245,158,11,.12); }
+    .context-sync { margin-top: 1rem; padding: 1rem; border: 1.5px solid var(--border); border-radius: 14px; background: #f8fafc; font-family: sans-serif; }
+    .context-progress { color: var(--muted); font-size: .86rem; font-weight: 800; margin-bottom: .65rem; }
+    .context-sync-btn { width: 100%; border: none; border-radius: 12px; padding: .75rem 1rem; background: var(--accent); color: #fff; font-family: sans-serif; font-size: .9rem; font-weight: 800; cursor: pointer; }
+    .context-sync-btn:disabled { background: var(--muted); cursor: default; }
+    .context-result { display: none; margin-top: .75rem; padding: .75rem .9rem; border-radius: 10px; font-size: .86rem; line-height: 1.6; }
+    .context-result.success { display: block; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; }
+    .context-result.warn { display: block; background: #fffbeb; color: #92400e; border: 1.5px solid #fde68a; }
+
+    /* Daily Feedback */
+    .feedback-form { display: flex; flex-direction: column; gap: 1rem; font-family: sans-serif; }
+    .feedback-help { color: var(--muted); font-size: .86rem; line-height: 1.6; }
+    .feedback-group { display: flex; flex-direction: column; gap: .55rem; }
+    .feedback-label { color: var(--text); font-size: .86rem; font-weight: 800; }
+    .feedback-choice-row, .feedback-check-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .feedback-choice { border: 1.5px solid var(--border); background: #fff; color: var(--text); border-radius: 99px; padding: .5rem .8rem; font-family: sans-serif; font-weight: 800; cursor: pointer; }
+    .feedback-choice.active { border-color: var(--accent); background: var(--tag-bg); color: var(--accent); }
+    .feedback-check { display: inline-flex; align-items: center; gap: .35rem; border: 1.5px solid var(--border); border-radius: 99px; padding: .45rem .65rem; color: var(--muted); font-size: .82rem; cursor: pointer; }
+    .feedback-check input { accent-color: var(--accent); }
+    .feedback-input, .feedback-note { width: 100%; border: 1.5px solid var(--border); border-radius: 12px; padding: .75rem .85rem; font-family: sans-serif; font-size: .9rem; color: var(--text); background: #fff; }
+    .feedback-note { min-height: 86px; resize: vertical; }
+    .feedback-actions { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+    .feedback-save, .feedback-clear { align-self: flex-start; border-radius: 12px; padding: .75rem 1rem; font-family: sans-serif; font-weight: 800; cursor: pointer; }
+    .feedback-save { border: none; background: var(--accent); color: #fff; }
+    .feedback-clear { border: 1.5px solid var(--border); background: #fff; color: var(--muted); }
+    .feedback-status { min-height: 1.2rem; color: var(--muted); font-size: .82rem; line-height: 1.5; }
+    .feedback-status.saved { color: #166534; }
+    .feedback-status.warn { color: #991b1b; }
+    .ability-focus { display: grid; gap: .75rem; font-family: sans-serif; }
+    .ability-focus-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .ability-pill { display: inline-flex; align-items: center; gap: .35rem; border-radius: 99px; padding: .42rem .68rem; background: var(--tag-bg); color: var(--accent); font-size: .8rem; font-weight: 800; }
+    .ability-pill.secondary { background: #f0fdf4; color: #166534; }
+    .ability-evidence { border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; background: #f8fafc; padding: .85rem 1rem; color: var(--muted); font-size: .86rem; line-height: 1.65; }
+
     @media (max-width: 500px) {
       .card { padding: 1.4rem 1.2rem; }
       .player-card { padding: 1.3rem 1.2rem; }
@@ -414,6 +491,17 @@ mkdir -p ./daily/$TODAY
   <div id="word-popup">
     <button class="pop-close" onclick="closePopup()">✕</button>
     <div id="pop-content"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🗺️ Ability Focus</div>
+    <div class="ability-focus">
+      <div class="ability-focus-row">
+        <!-- primary abilities use ability-pill; secondary abilities add secondary class -->
+        [ABILITY_PILLS_HTML]
+      </div>
+      <div class="ability-evidence">今天的能力證據：[ABILITY_EVIDENCE_TEXT]</div>
+    </div>
   </div>
 
   <div class="card">
@@ -559,8 +647,83 @@ mkdir -p ./daily/$TODAY
   </div>
 
   <div class="card">
+    <div class="card-title">🎯 Context Recall</div>
+    <p class="context-subtitle">看中文情境，先自己說出英文，再點開參考答案。最後自評提取狀態，全部評完後可同步到句子 SRS。</p>
+    <div class="context-list">
+      <!--
+        每篇至少 6 題，建議 8–10 題。
+        題目格式：
+        <div class="context-item" data-sentence-id="YYYY-MM-DD-short-kebab-answer">
+          <div class="context-top">
+            <div class="context-prompt">我現在該離開嗎？</div>
+            <span class="context-level">Lv.1 有提示</span>
+          </div>
+          <div class="context-hint">提示：Should I ... now?</div>
+          <button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button>
+          <div class="context-answer" style="display:none">Should I leave now?</div>
+          <div class="context-rating">
+            <button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button>
+            <button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button>
+            <button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button>
+          </div>
+        </div>
+
+        Level 使用：
+        - Lv.1 有提示：中文情境 + 少量英文句型提示
+        - Lv.2 無提示：只給中文情境
+        - Lv.3 自由應答：允許多種答案，參考答案可用 / 分隔
+        - data-sentence-id 必須與 vocabulary/sentences.json 的 id 相同
+      -->
+      [CONTEXT_RECALL_HTML]
+    </div>
+    <div class="context-sync">
+      <div class="context-progress" id="context-progress">已評分 0 / [CONTEXT_RECALL_COUNT] 題</div>
+      <button class="context-sync-btn" id="context-sync-btn" onclick="syncContextRecall()" type="button">同步句子 SRS</button>
+      <div class="context-result" id="context-result" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="card">
     <div class="card-title">💡 Learning Tips</div>
     <div class="tips-box">[今日學習建議，繁體中文]</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🧭 Daily Feedback</div>
+    <div class="feedback-form" data-feedback-form data-feedback-date="[日期]">
+      <p class="feedback-help">用 30 秒留下今天的難度與卡點。這會先存在這台瀏覽器，之後可用來調整每日訓練。</p>
+      <div class="feedback-group">
+        <div class="feedback-label">今天難度</div>
+        <div class="feedback-choice-row">
+          <button class="feedback-choice" data-feedback-difficulty="too-easy" type="button">太簡單</button>
+          <button class="feedback-choice" data-feedback-difficulty="just-right" type="button">剛好</button>
+          <button class="feedback-choice" data-feedback-difficulty="too-hard" type="button">太難</button>
+        </div>
+      </div>
+      <div class="feedback-group">
+        <div class="feedback-label">今日卡點</div>
+        <div class="feedback-check-row">
+          <label class="feedback-check"><input name="feedback-friction" type="checkbox" value="vocabulary">單字</label>
+          <label class="feedback-check"><input name="feedback-friction" type="checkbox" value="listening">聽力</label>
+          <label class="feedback-check"><input name="feedback-friction" type="checkbox" value="speaking">口說</label>
+          <label class="feedback-check"><input name="feedback-friction" type="checkbox" value="reading">文章理解</label>
+          <label class="feedback-check"><input name="feedback-friction" type="checkbox" value="sentence">句型</label>
+        </div>
+      </div>
+      <div class="feedback-group">
+        <label class="feedback-label" for="feedback-useful">今日最有用一句</label>
+        <input class="feedback-input" id="feedback-useful" name="feedback-useful" type="text" value="[今日 survival sentence]">
+      </div>
+      <div class="feedback-group">
+        <label class="feedback-label" for="feedback-note">補充卡點</label>
+        <textarea class="feedback-note" id="feedback-note" name="feedback-note" placeholder="例如：文章可以，但聽力第 10 句跟不上。"></textarea>
+      </div>
+      <div class="feedback-actions">
+        <button class="feedback-save" data-feedback-save type="button">儲存今日回饋</button>
+        <button class="feedback-clear" data-feedback-clear type="button">清除今日回饋</button>
+      </div>
+      <div class="feedback-status" data-feedback-status aria-live="polite"></div>
+    </div>
   </div>
 
   <div class="card">
@@ -596,6 +759,8 @@ mkdir -p ./daily/$TODAY
 
 </div>
 <script src="../../assets/srs.js"></script>
+<script src="../../assets/sentence-srs.js"></script>
+<script src="../../assets/feedback.js"></script>
 <script>
   function getAssetBasePath() {
     const path = window.location.pathname;
@@ -751,6 +916,8 @@ mkdir -p ./daily/$TODAY
     articleAudio.load();
 
     syncSentenceModeButtons();
+    updateContextProgress();
+    if (window.LearningFeedback) window.LearningFeedback.initDailyFeedback();
     if (!document.querySelector('.rq-item')) {
       const btn = document.getElementById('rq-submit-btn');
       if (btn) btn.style.display = 'none';
@@ -773,6 +940,84 @@ mkdir -p ./daily/$TODAY
     } else {
       ans.style.display = 'block';
       btn.textContent = btn.textContent.replace('顯示', '隱藏');
+    }
+  }
+
+  function getContextRecallItems() {
+    return Array.from(document.querySelectorAll('.context-item[data-sentence-id]'));
+  }
+
+  function getContextRecallResults() {
+    return getContextRecallItems().map(item => ({
+      id: item.dataset.sentenceId,
+      rating: item.dataset.rating || ''
+    }));
+  }
+
+  function updateContextProgress() {
+    const results = getContextRecallResults();
+    const rated = results.filter(result => result.rating).length;
+    const progressEl = document.getElementById('context-progress');
+    if (progressEl) progressEl.textContent = `已評分 ${rated} / ${results.length} 題`;
+  }
+
+  function rateContextRecall(btn) {
+    const item = btn.closest('.context-item[data-sentence-id]');
+    if (!item) return;
+    item.dataset.rating = btn.dataset.rating;
+    item.classList.remove('unrated');
+    item.querySelectorAll('.context-rate-btn').forEach(rateBtn => {
+      rateBtn.classList.toggle('active', rateBtn === btn);
+    });
+    updateContextProgress();
+  }
+
+  async function syncContextRecall() {
+    if (!window.SentenceSrs) {
+      alert('句子 SRS 模組尚未載入，請重新整理後再試。');
+      return;
+    }
+
+    const items = getContextRecallItems();
+    const missing = items.filter(item => !item.dataset.rating);
+    if (missing.length) {
+      items.forEach(item => item.classList.remove('unrated'));
+      missing.forEach(item => item.classList.add('unrated'));
+      missing[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      alert(`還有 ${missing.length} 題尚未自評，已幫你跳到第一題。`);
+      return;
+    }
+
+    const today = window.SentenceSrs.localYmd();
+    const resultEl = document.getElementById('context-result');
+    const syncBtn = document.getElementById('context-sync-btn');
+    const results = getContextRecallResults();
+
+    if (window.SentenceSrs.isAlreadySynced('context_srs_done_', today)) {
+      resultEl.textContent = '今天已同步過句子 SRS；這次當作額外練習，不重複更新。';
+      resultEl.className = 'context-result success';
+      syncBtn.disabled = true;
+      syncBtn.textContent = '今天已同步';
+      return;
+    }
+
+    syncBtn.disabled = true;
+    syncBtn.textContent = '同步中...';
+
+    try {
+      const synced = await window.SentenceSrs.syncSentenceResults(results, {
+        today,
+        storagePrefix: 'context_srs_done_',
+        commitPrefix: 'Sentence SRS update: context recall'
+      });
+      resultEl.textContent = `句子 SRS 已同步：更新 ${synced.updatedCount} 題，略過 ${synced.skippedCount} 題。`;
+      resultEl.className = 'context-result success';
+      syncBtn.textContent = '已同步句子 SRS';
+    } catch (err) {
+      resultEl.textContent = '同步失敗：' + err.message;
+      resultEl.className = 'context-result warn';
+      syncBtn.disabled = false;
+      syncBtn.textContent = '同步句子 SRS';
     }
   }
 
@@ -1000,6 +1245,47 @@ python3 /tmp/tts_today.py
 - `lastUpdated` = 今天日期
 - `lastTopic` = 今日主題（`daily` 或 `travel`，必須符合上方固定交替規則）
 
+更新 `./ability_map.json`：
+- 若檔案不存在，依下列結構建立；若已存在，保留既有 `abilities` 定義，只在 `sessions` 最前面新增今天紀錄。
+- 每日 session 格式：
+```json
+{
+  "date": "YYYY-MM-DD",
+  "day": 72,
+  "title": "The Blue Receipt · Episode 14",
+  "url": "daily/YYYY-MM-DD/",
+  "primary": ["travelSpeaking", "publicEnglish"],
+  "secondary": ["onlineReading", "dailyResponse"],
+  "evidence": ["Should I leave now?", "safe exit", "Please follow the blue line."]
+}
+```
+- 同一天若已存在 session，先更新該筆，不要重複新增。
+- `primary` / `secondary` 只能使用 Step 3j 定義的四個能力 ID。
+
+更新 `./vocabulary/sentences.json`：
+- 若檔案不存在，依下列結構建立；若已存在，保留既有 `items`，只新增或更新今天 Context Recall 對應項目。
+- 每個 Context Recall 題目都必須有一筆對應 item，且 `id` 必須與 HTML 的 `data-sentence-id` 完全一致。
+- 同一個 `id` 若已存在，更新 `zhPrompt`、`answer`、`sourceDate`、`sourceTitle`、`abilities`、`level`、`hint`；保留既有 `reviewCount`、`nextReview`、`lastReviewedDate`、`lastRating`，避免重置學習進度。
+- 新增 item 格式：
+```json
+{
+  "id": "YYYY-MM-DD-short-kebab-answer",
+  "type": "sentence",
+  "zhPrompt": "我現在該離開嗎？",
+  "answer": "Should I leave now?",
+  "sourceDate": "YYYY-MM-DD",
+  "sourceTitle": "The Blue Receipt · Episode 14",
+  "abilities": ["travelSpeaking", "dailyResponse"],
+  "level": "lv1",
+  "hint": "Should I ... now?",
+  "reviewCount": 0,
+  "nextReview": "YYYY-MM-DD",
+  "lastReviewedDate": null
+}
+```
+- `nextReview` 初始值設為明天（+1 天）。
+- `type` 可用 `sentence` 或 `context`；Lv.3 自由應答通常使用 `context`。
+
 ---
 
 ### Step 7：更新首頁清單並上傳 GitHub
@@ -1018,7 +1304,26 @@ python3 /tmp/tts_today.py
 
 新項目要插在舊項目**上方**（最新的在最頂端）。
 
-#### 7b. git commit 並 push：
+#### 7b. 產出後驗證：
+
+在 commit / push 前，必須先執行每日教材驗證腳本：
+
+```bash
+python3 scripts/validate_daily.py [日期]
+```
+
+驗證必須通過才可視為正式產出完成。此腳本會檢查：
+- 必要 HTML 區塊是否存在。
+- `article.mp3` 與 `sNN.mp3` 是否存在且非空。
+- 句子 `data-idx` 是否從 1 連續編號，並與逐句音檔一致。
+- Context Recall 題目是否有 `data-sentence-id`、自評按鈕，並與 `vocabulary/sentences.json` 對齊。
+- `ability_map.json` 是否有當日 session。
+- 今日新字是否存在於 `vocabulary/learning.json`，且 Speaking Bridge 沒有使用今日新字。
+- 首頁是否連到今日頁。
+
+若驗證失敗，先修正資料或頁面，不可跳過驗證。
+
+#### 7c. git commit 並 push：
 
 ```bash
 PROJECT_ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"

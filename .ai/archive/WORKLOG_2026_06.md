@@ -1,0 +1,24 @@
+# 2026-06 工作日誌歸檔
+
+> 用途：保存已歸檔工作日誌。
+> 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
+
+---
+## 2026-06-01 — 產出 Day 49 正式教材
+
+- 先 `git fetch --all --prune` 並 `git pull --ff-only`，同步遠端 `vocabulary/learning.json` 的最新 SRS 更新。
+- 依 `profile.json.lastTopic = daily` 產出 `travel` 主題，新增 `daily/2026-06-01/`，標題為 `Checking a Gate Change`。
+- 今日新字：`change`、`wrong`、`late`；文章融入複習字：`boarding pass`、`passport`、`gate`。
+- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 45 個到期複習字。
+- Speaking Bridge 使用 `confirm`、`exit`、`subway`、`wallet`。
+- 驗證：檢查 HTML 結構、JSON 更新、音檔檔案存在與本機 HTTP 200。
+
+---
+## 2026-06-02 — Day 50 正式教材產出
+
+- 先 `git fetch` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`
+- 產出 `daily/2026-06-02/`，主題為 `Reading a Doctor's Message`
+- 新增 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json`
+- 清掉昨天誤重複的 `change` / `wrong` / `late` 三筆 SRS 紀錄
+- 驗證：本機瀏覽器載入成功、console 無 error、音檔 HTTP 200、句子與單句音檔數量一致

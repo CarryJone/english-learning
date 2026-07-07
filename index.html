@@ -143,6 +143,78 @@
       font-size: .78rem;
       font-weight: 700;
     }
+    .feedback-summary {
+      display: grid;
+      gap: .65rem;
+      font-family: sans-serif;
+    }
+    .feedback-summary-row {
+      display: flex;
+      justify-content: space-between;
+      gap: .8rem;
+      padding: .65rem .75rem;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      font-size: .88rem;
+      line-height: 1.45;
+    }
+    .feedback-summary-label {
+      color: var(--muted);
+      font-size: .74rem;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .feedback-useful-line,
+    .feedback-empty {
+      padding: .8rem .9rem;
+      border-radius: 12px;
+      background: #fffbeb;
+      color: #78350f;
+      font-family: sans-serif;
+      font-size: .86rem;
+      line-height: 1.55;
+    }
+    .ability-map { display: grid; gap: .65rem; font-family: sans-serif; }
+    .ability-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: .75rem;
+      align-items: center;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: .75rem .85rem;
+      background: #fff;
+    }
+    .ability-item.trained {
+      border-color: #22c55e;
+      background: #f0fdf4;
+    }
+    .ability-name { font-size: .92rem; font-weight: 800; line-height: 1.35; }
+    .ability-goal { margin-top: .18rem; color: var(--muted); font-size: .78rem; line-height: 1.45; }
+    .ability-status {
+      border-radius: 99px;
+      padding: .24rem .55rem;
+      background: #f3f4f6;
+      color: var(--muted);
+      font-size: .72rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .ability-item.trained .ability-status {
+      background: #dcfce7;
+      color: #166534;
+    }
+    .ability-week-note {
+      padding: .75rem .85rem;
+      border-radius: 12px;
+      background: #f8fafc;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.55;
+    }
 
     @media (max-width: 560px) {
       .quick-actions { grid-template-columns: 1fr; }
@@ -222,6 +294,18 @@
 <span class="focus-chip">英文資訊判讀</span>
 <span class="focus-chip">主動回想</span>
 <span class="focus-chip">逐句聽力</span>
+</div>
+</div>
+<div class="card">
+<div class="card-title">🗺️ 本週能力地圖</div>
+<div class="ability-map" id="ability-map" aria-live="polite">
+<div class="ability-week-note">正在讀取能力訓練狀態...</div>
+</div>
+</div>
+<div class="card">
+<div class="card-title">🧩 最近回饋</div>
+<div class="feedback-summary" id="feedback-summary" aria-live="polite">
+<div class="feedback-empty">正在讀取最近回饋...</div>
 </div>
 </div>
 <div class="card">
@@ -682,6 +766,7 @@
 </div>
 </div>
 </div>
+<script src="assets/feedback.js"></script>
 <script>
   // 設定「今天」按鈕
   function localYmd(date = new Date()) {
@@ -714,6 +799,23 @@
     const [y, m, d] = value.split('-').map(Number);
     if (!y || !m || !d) return null;
     return new Date(y, m - 1, d);
+  }
+
+  function weekStart(date) {
+    const start = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    const day = start.getDay() || 7;
+    start.setDate(start.getDate() - day + 1);
+    return start;
+  }
+
+  function escapeHtml(text) {
+    return String(text || '').replace(/[&<>"']/g, ch => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[ch]));
   }
 
   async function loadDashboard() {
@@ -754,7 +856,46 @@
     }
   }
 
+  async function loadAbilityMap() {
+    const target = document.getElementById('ability-map');
+    if (!target) return;
+    try {
+      const resp = await fetch('ability_map.json', { cache: 'no-store' });
+      if (!resp.ok) throw new Error('ability map unavailable');
+      const data = await resp.json();
+      const abilities = data.abilities || {};
+      const sessions = Array.isArray(data.sessions) ? data.sessions : [];
+      const start = weekStart(parseYmd(ymd) || new Date());
+      const weekSessions = sessions.filter(session => {
+        const date = parseYmd(session.date);
+        return date && date >= start && date <= (parseYmd(ymd) || new Date());
+      });
+      const trained = new Set();
+      weekSessions.forEach(session => {
+        [...(session.primary || []), ...(session.secondary || [])].forEach(id => trained.add(id));
+      });
+      const rows = Object.entries(abilities).map(([id, ability]) => {
+        const isTrained = trained.has(id);
+        return `<div class="ability-item ${isTrained ? 'trained' : ''}">
+          <div>
+            <div class="ability-name">${escapeHtml(ability.label || id)}</div>
+            <div class="ability-goal">${escapeHtml(ability.goal || '')}</div>
+          </div>
+          <div class="ability-status">${isTrained ? '本週已練' : '待補'}</div>
+        </div>`;
+      }).join('');
+      const note = weekSessions.length
+        ? `本週已記錄 ${weekSessions.length} 次教材訓練；最近一次：${escapeHtml(weekSessions[0].title || weekSessions[0].date)}。`
+        : '本週尚未記錄能力標記；下一篇教材產出時應補上。';
+      target.innerHTML = rows + `<div class="ability-week-note">${note}</div>`;
+    } catch (err) {
+      target.innerHTML = '<div class="ability-week-note">無法讀取能力地圖；請確認 ability_map.json 可由 HTTP server 取得。</div>';
+    }
+  }
+
   loadDashboard();
+  loadAbilityMap();
+  window.LearningFeedback.renderHomeSummary('#feedback-summary');
 </script>
 </body>
 </html>
