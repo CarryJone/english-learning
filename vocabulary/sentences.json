@@ -9,12 +9,16 @@
       "answer": "Should I leave now?",
       "sourceDate": "2026-07-07",
       "sourceTitle": "The Blue Receipt · Episode 14",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Should I ... now?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-08",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-07",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-07-follow-the-blue-line",
@@ -23,12 +27,16 @@
       "answer": "Please follow the blue line.",
       "sourceDate": "2026-07-07",
       "sourceTitle": "The Blue Receipt · Episode 14",
-      "abilities": ["publicEnglish", "travelSpeaking"],
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "Please follow ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-08",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-07",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-07-is-this-a-safe-exit",
@@ -37,12 +45,16 @@
       "answer": "Is this a safe exit?",
       "sourceDate": "2026-07-07",
       "sourceTitle": "The Blue Receipt · Episode 14",
-      "abilities": ["publicEnglish", "travelSpeaking"],
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "先自己說；不要看英文關鍵字。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-08",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-07",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-07-i-need-to-decide",
@@ -51,12 +63,15 @@
       "answer": "I need to decide.",
       "sourceDate": "2026-07-07",
       "sourceTitle": "The Blue Receipt · Episode 14",
-      "abilities": ["dailyResponse"],
+      "abilities": [
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先說短句即可。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-08",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-07",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-07-check-the-old-post",
@@ -65,12 +80,16 @@
       "answer": "Please check the old post on the phone.",
       "sourceDate": "2026-07-07",
       "sourceTitle": "The Blue Receipt · Episode 14",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "情境：你要對方確認一則資訊。",
       "reviewCount": 0,
       "nextReview": "2026-07-08",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-07",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-07-paper-one-name",
@@ -79,12 +98,16 @@
       "answer": "The paper had only one name on it.",
       "sourceDate": "2026-07-07",
       "sourceTitle": "The Blue Receipt · Episode 14",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "複習字：paper",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-08",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-07",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-07-safe-exit-staff",
@@ -93,12 +116,16 @@
       "answer": "Is this the safe exit? / Should I follow this exit?",
       "sourceDate": "2026-07-07",
       "sourceTitle": "The Blue Receipt · Episode 14",
-      "abilities": ["publicEnglish", "travelSpeaking"],
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
       "level": "lv3",
       "hint": "可以用 Is this ...? / Should I ...?",
       "reviewCount": 0,
       "nextReview": "2026-07-08",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-07",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-07-get-on-the-bus",
@@ -107,12 +134,16 @@
       "answer": "Should I get on the bus? / Should I leave now?",
       "sourceDate": "2026-07-07",
       "sourceTitle": "The Blue Receipt · Episode 14",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "用今天的 survival sentence 改寫也可以。",
       "reviewCount": 0,
       "nextReview": "2026-07-08",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-07",
+      "lastRating": "hinted"
     }
   ]
 }
