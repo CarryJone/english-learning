@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 13, `The Blue Receipt · Episode 13`
+- Current episode: Episode 14, `The Blue Receipt · Episode 14`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -116,6 +116,21 @@
   - Lina warned Mina to come back from the gate.
   - The driver told Mina: `You can still leave.`
   - Mina still moved one slow step toward the bus instead of leaving at once.
+  - The sign at the gate changed and showed two arrows instead of one.
+  - One arrow said: `Board here.`
+  - The other arrow said: `Safe exit.`
+  - Lina told Mina to follow the safe exit instead of going onto the bus.
+  - Mina looked again at the paper ticket and the mark over Seat 12.
+  - Mina asked: `Should I leave now?`
+  - The driver answered: `You must decide.`
+  - When Mina asked what would happen if she got on the bus, the driver said: `You can help her.`
+  - Mina checked the old post on the phone and a new line appeared.
+  - The line said: `May Lin asked for a safe way back.`
+  - Mina realized the messages may be asking for help, not only giving warnings.
+  - The bus speaker turned on and a woman's voice said: `Please follow the blue line.`
+  - A thin blue line lit up on the floor and led from the gate to the exit wall.
+  - Mina chose not to get on the bus and followed the line instead.
+  - Behind a hidden door, someone softly said: `Thank you for coming.`
 
 ## Open Threads
 
@@ -263,6 +278,18 @@
 - New warning on the bus screen: `Two names. One choice.`
 - The driver still gives Mina a way out: `You can still leave.`
 - Hook: Episode 14 should reveal what choice Mina is actually being asked to make, and whether leaving is still possible once 8:10 arrives.
+
+### 2026-07-07 — Episode 14: The Safe Exit
+
+- Location: the gate, the bus door, the floor by the exit wall, and a hidden door behind it.
+- Mina sees a split choice on the sign: `Board here.` or `Safe exit.`
+- Useful sentence: `Should I leave now?`
+- New answer: the driver says Mina can help `her`, which points back to May Lin.
+- New phone clue: the old post changes and says `May Lin asked for a safe way back.`
+- Important turn: Mina starts to see the messages as a request for help, not only a warning.
+- New spoken clue: a woman's voice comes from the bus speaker and says `Please follow the blue line.`
+- New path clue: a thin blue line lights up on the floor and leads Mina away from the bus.
+- Hook: Episode 15 should show who is behind the hidden door and whether Mina is finally meeting the real sender.
 - Spoken clue: the driver uses the same calm voice Mina remembers.
 - New warning note: `Seat 12 is not for you.`
 - Stronger mystery link: the note still points to `Tomorrow`.

@@ -5,6 +5,17 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-07-07 — Day 72 正式教材產出
+
+- 先 `git fetch origin`，確認遠端多了 `SRS update: review quiz 2026-07-06`，再只同步最新 `vocabulary/learning.json` 後生成今天教材，避免用到過期複習狀態。
+- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-07/`，標題為 `The Blue Receipt · Episode 14`。
+- 今日新字：`safe`、`follow`、`decide`；文章融入複習字：`paper`、`shadow`、`post`。
+- Review Quiz / Review Words 依同步後的最新 `learning.json` 生成，共納入 5 個到期複習字。
+- Speaking Bridge 使用 `paper`、`circle`、`folded`、`speaker`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：HTML 結構完整、句子編號連續、25 個單句音檔存在、`article.mp3` 存在、JSON parse 通過。
+
+---
 ## 2026-07-06 — Day 71 正式教材產出
 
 - 先 `git fetch origin`，確認遠端 `origin/main` 有較新的 SRS 更新後，只同步 `vocabulary/learning.json`，避免用過期 review 狀態生成今天教材。

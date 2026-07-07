@@ -2279,6 +2279,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-07",
       "lastReviewedDate": "2026-07-06"
+    },
+    {
+      "word": "safe",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "安全的；平安的",
+      "exampleSentence": "Mina looked for a safe exit.",
+      "dateAdded": "2026-07-07",
+      "reviewCount": 0,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-07-07"
+    },
+    {
+      "word": "follow",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "跟隨；照著走",
+      "exampleSentence": "Please follow the blue line.",
+      "dateAdded": "2026-07-07",
+      "reviewCount": 0,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-07-07"
+    },
+    {
+      "word": "decide",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "決定；下決心",
+      "exampleSentence": "Mina had to decide very fast.",
+      "dateAdded": "2026-07-07",
+      "reviewCount": 0,
+      "nextReview": "2026-07-08",
+      "lastReviewedDate": "2026-07-07"
     }
   ]
 }
