@@ -15,9 +15,10 @@
       ],
       "level": "lv1",
       "hint": "提示：My name is ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-09",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-08",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-08-take-these-to-front-office",
@@ -32,9 +33,10 @@
       ],
       "level": "lv1",
       "hint": "提示：Please take ... to ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-09",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-08",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-08-where-is-the-report",
@@ -51,7 +53,8 @@
       "hint": "先自己說；可用 Where is ...?",
       "reviewCount": 0,
       "nextReview": "2026-07-09",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-08",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-08-night-guard-leaves",
@@ -68,7 +71,8 @@
       "hint": "注意未來時間的說法。",
       "reviewCount": 0,
       "nextReview": "2026-07-09",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-08",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-08-why-send-messages",
@@ -83,9 +87,10 @@
       ],
       "level": "lv2",
       "hint": "先說 Why did you ...?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-09",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-08",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-08-need-station-office",
@@ -100,9 +105,10 @@
       ],
       "level": "lv2",
       "hint": "可以用 I need to go to ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-09",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-08",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-08-return-path-only",
@@ -119,7 +125,8 @@
       "hint": "可以用 Does this mean ...? / Is this only for ...?",
       "reviewCount": 0,
       "nextReview": "2026-07-09",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-08",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-08-i-can-take-it-now",
@@ -134,9 +141,10 @@
       ],
       "level": "lv3",
       "hint": "可用 I can ... now. / Okay, I will ... now.",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-09",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-08",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-07-should-i-leave-now",
