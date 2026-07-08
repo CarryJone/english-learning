@@ -2309,6 +2309,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-08",
       "lastReviewedDate": "2026-07-07"
+    },
+    {
+      "word": "office",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "辦公室；值班室",
+      "exampleSentence": "Mina stepped into a small office behind the wall.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "report",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "報告；通報記錄",
+      "exampleSentence": "May Lin showed Mina an old report.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "guard",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "警衛；守衛",
+      "exampleSentence": "The night guard will leave in ten minutes.",
+      "dateAdded": "2026-07-08",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
     }
   ]
 }

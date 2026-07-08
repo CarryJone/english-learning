@@ -1,37 +1,83 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-07",
+  "updatedAt": "2026-07-08",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
       "label": "旅行開口",
       "goal": "能在旅行或外出時開口問、確認、回應。",
-      "examples": ["問路", "確認出口", "詢問是否該離開", "向工作人員確認資訊"]
+      "examples": [
+        "問路",
+        "確認出口",
+        "詢問是否該離開",
+        "向工作人員確認資訊"
+      ]
     },
     "publicEnglish": {
       "label": "公共英文",
       "goal": "能看懂車站、商店、交通與公共場所的簡短英文提示。",
-      "examples": ["safe exit", "board here", "blue line", "ticket counter"]
+      "examples": [
+        "safe exit",
+        "board here",
+        "blue line",
+        "ticket counter"
+      ]
     },
     "onlineReading": {
       "label": "英文資訊判讀",
       "goal": "能看懂手機、網頁、app、搜尋結果或貼文中的關鍵英文資訊。",
-      "examples": ["post", "line came up", "map result", "notice"]
+      "examples": [
+        "post",
+        "line came up",
+        "map result",
+        "notice"
+      ]
     },
     "dailyResponse": {
       "label": "日常反應",
       "goal": "能用短句處理不確定、選擇、等待、求助與確認。",
-      "examples": ["Should I leave now?", "I need help.", "Can I check this?", "Please wait."]
+      "examples": [
+        "Should I leave now?",
+        "I need help.",
+        "Can I check this?",
+        "Please wait."
+      ]
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-08",
+      "day": 73,
+      "title": "The Blue Receipt · Episode 15",
+      "url": "daily/2026-07-08/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Return path only.",
+        "Please take these to the front office.",
+        "What do you need now?",
+        "night guard"
+      ]
+    },
     {
       "date": "2026-07-07",
       "day": 72,
       "title": "The Blue Receipt · Episode 14",
       "url": "daily/2026-07-07/",
-      "primary": ["travelSpeaking", "publicEnglish"],
-      "secondary": ["onlineReading", "dailyResponse"],
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "evidence": [
         "Should I leave now?",
         "safe exit",
@@ -44,36 +90,70 @@
       "day": 71,
       "title": "The Blue Receipt · Episode 13",
       "url": "daily/2026-07-06/",
-      "primary": ["onlineReading", "dailyResponse"],
-      "secondary": ["publicEnglish"],
-      "evidence": ["exact time", "be careful", "reading a warning"]
+      "primary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "secondary": [
+        "publicEnglish"
+      ],
+      "evidence": [
+        "exact time",
+        "be careful",
+        "reading a warning"
+      ]
     },
     {
       "date": "2026-07-03",
       "day": 70,
       "title": "The Blue Receipt · Episode 12",
       "url": "daily/2026-07-03/",
-      "primary": ["onlineReading", "publicEnglish"],
-      "secondary": ["dailyResponse"],
-      "evidence": ["phone message", "bus sign", "finding the right clue"]
+      "primary": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "phone message",
+        "bus sign",
+        "finding the right clue"
+      ]
     },
     {
       "date": "2026-07-02",
       "day": 69,
       "title": "The Blue Receipt · Episode 11",
       "url": "daily/2026-07-02/",
-      "primary": ["publicEnglish", "travelSpeaking"],
-      "secondary": ["dailyResponse"],
-      "evidence": ["seat information", "asking what to do next"]
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "seat information",
+        "asking what to do next"
+      ]
     },
     {
       "date": "2026-07-01",
       "day": 68,
       "title": "The Blue Receipt · Episode 10",
       "url": "daily/2026-07-01/",
-      "primary": ["onlineReading", "dailyResponse"],
-      "secondary": ["travelSpeaking"],
-      "evidence": ["checking a clue", "short response under pressure"]
+      "primary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "secondary": [
+        "travelSpeaking"
+      ],
+      "evidence": [
+        "checking a clue",
+        "short response under pressure"
+      ]
     }
   ]
 }

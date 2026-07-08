@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 14, `The Blue Receipt · Episode 14`
+- Current episode: Episode 15, `The Blue Receipt · Episode 15`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -319,6 +319,19 @@
 - Screen clue: the route history remains on the phone screen under the saved name `May Lin`.
 - Hook: the driver says the truth is on the map, so Mina must decide whether the map is warning her or leading her onto the bus.
 
+
+
+### 2026-07-08 — Episode 15: The Hidden Office
+
+- Location: behind the hidden door, inside a small office beside the old bus route wall.
+- Mina finally meets the woman behind the voice: May Lin.
+- Useful sentence: `Please take these to the front office.`
+- Important answer: `M.L.` on the map means `May Lin`, not Mina.
+- New object clue: May shows Mina an old report about the last blue route.
+- New public clue: the page says `Return path only.`
+- New urgency: May says the night guard will leave in ten minutes, so Mina must move now.
+- Hook: Episode 16 should test whether Mina can carry the report to the front office before 8:20 and before the blue bus blocks her way again.
+
 ## Next Episode Pointer
 
-Episode 13 should push Mina to compare the map, the bus, and Lina's view of the driver. The next step can reveal whether `M.L.` means May Lin, Mina Lin, or both, and why Seat 12 is marked before Mina ever arrived.
+Episode 16 should move into the front office run, let Mina use the report as proof, and push the mystery into clear endgame territory without opening a second season.

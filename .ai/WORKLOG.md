@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-07-08 — Day 73 正式教材產出
+
+- 先 `git fetch origin`，確認遠端只比本地多 `vocabulary/sentences.json`，先同步句子 SRS 資料後再生成今天教材。
+- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-08/`，標題為 `The Blue Receipt · Episode 15`。
+- 今日新字：`office`、`report`、`guard`；文章正式揭露門後的人是 May Lin，主線進入收束段。
+- Active Recall Quiz 依最新 `learning.json` 生成 5 個今日到期複習字；Speaking Bridge 使用 `voice`、`truth`、`folded`、`careful`。
+- 補齊 `Ability Focus`、8 題 `Context Recall`、`vocabulary/sentences.json`、`ability_map.json`、首頁、`profile.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：`article.mp3` 與 `s01.mp3` 到 `s25.mp3` 已生成；`python3 scripts/validate_daily.py 2026-07-08` 通過；本機 HTTP `/` 與 `/daily/2026-07-08/` 回傳 200。
+
 ## 2026-07-07 — 每日教材驗證腳本
 
 - 新增 `scripts/validate_daily.py`，以 Python stdlib 驗證單日正式教材。

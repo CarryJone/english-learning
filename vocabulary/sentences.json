@@ -3,6 +3,142 @@
   "description": "Sentence and context recall SRS source of truth. Items are short, high-value prompts for Chinese-to-English retrieval.",
   "items": [
     {
+      "id": "2026-07-08-my-name-is-may-lin",
+      "type": "sentence",
+      "zhPrompt": "我叫 May Lin。",
+      "answer": "My name is May Lin.",
+      "sourceDate": "2026-07-08",
+      "sourceTitle": "The Blue Receipt · Episode 15",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "提示：My name is ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-08-take-these-to-front-office",
+      "type": "sentence",
+      "zhPrompt": "請把這些拿到前面辦公室。",
+      "answer": "Please take these to the front office.",
+      "sourceDate": "2026-07-08",
+      "sourceTitle": "The Blue Receipt · Episode 15",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "提示：Please take ... to ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-08-where-is-the-report",
+      "type": "sentence",
+      "zhPrompt": "那份報告在哪裡？",
+      "answer": "Where is the report?",
+      "sourceDate": "2026-07-08",
+      "sourceTitle": "The Blue Receipt · Episode 15",
+      "abilities": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "先自己說；可用 Where is ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-08-night-guard-leaves",
+      "type": "sentence",
+      "zhPrompt": "夜班警衛十分鐘後會離開。",
+      "answer": "The night guard will leave in ten minutes.",
+      "sourceDate": "2026-07-08",
+      "sourceTitle": "The Blue Receipt · Episode 15",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "注意未來時間的說法。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-08-why-send-messages",
+      "type": "sentence",
+      "zhPrompt": "為什麼你把那些訊息傳給我？",
+      "answer": "Why did you send the messages to me?",
+      "sourceDate": "2026-07-08",
+      "sourceTitle": "The Blue Receipt · Episode 15",
+      "abilities": [
+        "dailyResponse",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "先說 Why did you ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-08-need-station-office",
+      "type": "sentence",
+      "zhPrompt": "我需要去站務室。",
+      "answer": "I need to go to the station office.",
+      "sourceDate": "2026-07-08",
+      "sourceTitle": "The Blue Receipt · Episode 15",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "可以用 I need to go to ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-08-return-path-only",
+      "type": "context",
+      "zhPrompt": "如果你看到 return path only，你會怎麼確認意思？",
+      "answer": "Does this mean return path only? / Is this only for the return path?",
+      "sourceDate": "2026-07-08",
+      "sourceTitle": "The Blue Receipt · Episode 15",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "可以用 Does this mean ...? / Is this only for ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-08-i-can-take-it-now",
+      "type": "context",
+      "zhPrompt": "如果對方要你立刻把資料送去前面辦公室，你會怎麼回？",
+      "answer": "I can take it to the front office now. / Okay, I will take it now.",
+      "sourceDate": "2026-07-08",
+      "sourceTitle": "The Blue Receipt · Episode 15",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "可用 I can ... now. / Okay, I will ... now.",
+      "reviewCount": 0,
+      "nextReview": "2026-07-09",
+      "lastReviewedDate": null
+    },
+    {
       "id": "2026-07-07-should-i-leave-now",
       "type": "sentence",
       "zhPrompt": "我現在該離開嗎？",
