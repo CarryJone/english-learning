@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 15, `The Blue Receipt · Episode 15`
+- Current episode: Episode 16, `The Blue Receipt · Episode 16`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -131,6 +131,17 @@
   - A thin blue line lit up on the floor and led from the gate to the exit wall.
   - Mina chose not to get on the bus and followed the line instead.
   - Behind a hidden door, someone softly said: `Thank you for coming.`
+
+- Mina took May Lin's report out of the hidden office and followed the blue line upstairs.
+- A night guard checked the papers in Mina's hands before the front office closed.
+- Mina used the sentence `I need to deliver this now.` to push the report forward.
+- The front clerk said the service window would close at 8:20.
+- Mina showed the old report as proof about Route 8:10.
+- The report had a hidden line that said: `One record was hidden.`
+- The bus engine turned off outside just as the clerk was reading.
+- The service screen came up by itself and showed: `Go to Platform 12.`
+- The clerk opened a locked drawer and found a second map and a blue receipt.
+- The clerk whispered that Mina now needs the last platform key.
 
 ## Open Threads
 
@@ -332,6 +343,16 @@
 - New urgency: May says the night guard will leave in ten minutes, so Mina must move now.
 - Hook: Episode 16 should test whether Mina can carry the report to the front office before 8:20 and before the blue bus blocks her way again.
 
+### 2026-07-09 — Episode 16: The Front Clerk
+
+- Location: upstairs hall, service window, and the front office counter.
+- Mina carries May Lin's report out of the hidden office and tries to get it read before 8:20.
+- Useful sentence: `I need to deliver this now.`
+- New proof clue: the report says `One record was hidden.`
+- New public clue: the screen suddenly shows `Go to Platform 12.`
+- New object clue: the clerk opens a locked drawer and finds a second map and a blue receipt.
+- Hook: Episode 17 should move Mina toward Platform 12, reveal what the last platform key opens, and keep the ending on the current season's path.
+
 ## Next Episode Pointer
 
-Episode 16 should move into the front office run, let Mina use the report as proof, and push the mystery into clear endgame territory without opening a second season.
+Episode 17 should take Mina to Platform 12, reveal what the last platform key opens, and keep the story moving toward a clean Season 1 ending without starting a second season.

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-08",
+  "updatedAt": "2026-07-09",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-09",
+      "day": 74,
+      "title": "The Blue Receipt · Episode 16",
+      "url": "daily/2026-07-09/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "I need to deliver this now.",
+        "Can you read this now?",
+        "One record was hidden.",
+        "Go to Platform 12."
+      ]
+    },
     {
       "date": "2026-07-08",
       "day": 73,
@@ -136,23 +156,6 @@
       "evidence": [
         "seat information",
         "asking what to do next"
-      ]
-    },
-    {
-      "date": "2026-07-01",
-      "day": 68,
-      "title": "The Blue Receipt · Episode 10",
-      "url": "daily/2026-07-01/",
-      "primary": [
-        "onlineReading",
-        "dailyResponse"
-      ],
-      "secondary": [
-        "travelSpeaking"
-      ],
-      "evidence": [
-        "checking a clue",
-        "short response under pressure"
       ]
     }
   ]

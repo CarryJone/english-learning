@@ -2339,6 +2339,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-09",
       "lastReviewedDate": null
+    },
+    {
+      "word": "proof",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "證據；證明",
+      "exampleSentence": "Please show me proof.",
+      "dateAdded": "2026-07-09",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "clerk",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "職員；櫃檯人員",
+      "exampleSentence": "The clerk opened the file.",
+      "dateAdded": "2026-07-09",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "deliver",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "送交；遞送",
+      "exampleSentence": "Mina needed to deliver the report fast.",
+      "dateAdded": "2026-07-09",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null
     }
   ]
 }

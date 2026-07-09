@@ -3,6 +3,149 @@
   "description": "Sentence and context recall SRS source of truth. Items are short, high-value prompts for Chinese-to-English retrieval.",
   "items": [
     {
+      "id": "2026-07-09-deliver-this-now",
+      "type": "sentence",
+      "zhPrompt": "我需要現在送交這個。",
+      "answer": "I need to deliver this now.",
+      "sourceDate": "2026-07-09",
+      "sourceTitle": "The Blue Receipt · Episode 16",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "提示：I need to ... this now.",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-09-proof-about-route-810",
+      "type": "sentence",
+      "zhPrompt": "這是關於 8:10 路線的證據。",
+      "answer": "This is proof about Route 8:10.",
+      "sourceDate": "2026-07-09",
+      "sourceTitle": "The Blue Receipt · Episode 16",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "提示：This is proof about ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-09-front-clerk-leaves",
+      "type": "sentence",
+      "zhPrompt": "前台辦事員八點二十會離開。",
+      "answer": "The front clerk leaves at 8:20.",
+      "sourceDate": "2026-07-09",
+      "sourceTitle": "The Blue Receipt · Episode 16",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "注意 leave at 的時間說法。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-09-can-you-read-this-now",
+      "type": "sentence",
+      "zhPrompt": "你現在可以看這個嗎？",
+      "answer": "Can you read this now?",
+      "sourceDate": "2026-07-09",
+      "sourceTitle": "The Blue Receipt · Episode 16",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先說 Can you ... now?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-09-guard-looking-papers",
+      "type": "sentence",
+      "zhPrompt": "那個警衛正在看那些紙。",
+      "answer": "The guard is looking at the papers.",
+      "sourceDate": "2026-07-09",
+      "sourceTitle": "The Blue Receipt · Episode 16",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "用 is looking at ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-09-screen-came-up",
+      "type": "sentence",
+      "zhPrompt": "那個螢幕自己跳出來了。",
+      "answer": "The service screen came up by itself.",
+      "sourceDate": "2026-07-09",
+      "sourceTitle": "The Blue Receipt · Episode 16",
+      "abilities": [
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "可以用 came up by itself.",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-09-ask-staff-deliver",
+      "type": "context",
+      "zhPrompt": "如果你要把重要資料交給站務人員，你會怎麼開口？",
+      "answer": "I need to give this to the front clerk. / I need to deliver this now.",
+      "sourceDate": "2026-07-09",
+      "sourceTitle": "The Blue Receipt · Episode 16",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "可用 I need to give this ... / I need to deliver this ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-09-one-record-hidden-meaning",
+      "type": "context",
+      "zhPrompt": "如果你看到 one record was hidden，你會怎麼確認意思？",
+      "answer": "Does this mean one record was hidden? / Was one record hidden?",
+      "sourceDate": "2026-07-09",
+      "sourceTitle": "The Blue Receipt · Episode 16",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "可用 Does this mean ...? / Was ... hidden?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-10",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
       "id": "2026-07-08-my-name-is-may-lin",
       "type": "sentence",
       "zhPrompt": "我叫 May Lin。",

@@ -5,6 +5,17 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-07-09 — Day 74 產出錯誤修復
+
+- 同步遠端 `origin/main`，保留 2026-07-08 的 review quiz 與 sentence SRS 更新。
+- 檢查前一輪失敗留下的 `daily/2026-07-09/`，確認內容錯置為 2026-07-08 / Episode 15 複製品。
+- 將 `daily/2026-07-09/index.html` 修正為 Day 74、`The Blue Receipt · Episode 16`，主線為 Mina 帶著 report 到 front office。
+- 今日新字：`proof`、`clerk`、`deliver`；文章融入複習字：`report`、`guard`、`record`。
+- 重新產生 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，確保音檔對應 Episode 16。
+- 更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：`python3 scripts/validate_daily.py 2026-07-09` 通過，70 checks，0 warnings，0 errors。
+
+---
 ## 2026-07-08 — Day 73 正式教材產出
 
 - 先 `git fetch origin`，確認遠端只比本地多 `vocabulary/sentences.json`，先同步句子 SRS 資料後再生成今天教材。
@@ -281,21 +292,3 @@
 - 依 `profile.json.lastTopic = daily` 產出 travel 主題，新增 `daily/2026-06-05/`，標題為 `Checking the Baggage Claim Screen`
 - 今日新字：`claim`、`belt`、`hall`；文章融入複習字：`late`、`wrong`、`staff`
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`
-
----
-## 2026-06-04 — Day 52 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
-- 新增 `daily/2026-06-04/`，主題 `Checking a Food Court Pickup Screen`，包含完整 HTML 與 19 個逐句音檔。
-- 新增單字：`ready`、`queue`、`section`；文章融入複習字：`special`、`spicy`、`mild`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：HTML 區塊完整、句子編號連續、音檔存在、本機 HTTP 200、Playwright 載入成功且 console 無錯誤。
-
----
-## 2026-06-03 — Day 51 正式教材產出
-
-- 先 `git fetch` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`
-- 依 `profile.json.lastTopic = daily` 產出 travel 主題，新增 `daily/2026-06-03/`，標題為 `Finding the Airport Bus Bay`
-- 今日新字：`bay`、`express`、`staff`；文章融入複習字：`message`、`busy`、`minute`
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`
-- 驗證：本機頁面載入成功、console 無錯誤、音檔 HTTP 200、句子與單句音檔數量一致
