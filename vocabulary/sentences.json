@@ -17,8 +17,8 @@
       "hint": "提示：I need to ... this now.",
       "reviewCount": 0,
       "nextReview": "2026-07-10",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-09",
+      "lastRating": "forgot"
     },
     {
       "id": "2026-07-09-proof-about-route-810",
@@ -33,10 +33,10 @@
       ],
       "level": "lv1",
       "hint": "提示：This is proof about ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-10",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-09",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-09-front-clerk-leaves",
@@ -51,10 +51,10 @@
       ],
       "level": "lv2",
       "hint": "注意 leave at 的時間說法。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-10",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-09",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-09-can-you-read-this-now",
@@ -69,10 +69,10 @@
       ],
       "level": "lv2",
       "hint": "先說 Can you ... now?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-10",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-09",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-09-guard-looking-papers",
@@ -87,10 +87,10 @@
       ],
       "level": "lv2",
       "hint": "用 is looking at ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-10",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-09",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-09-screen-came-up",
@@ -106,8 +106,8 @@
       "hint": "可以用 came up by itself.",
       "reviewCount": 0,
       "nextReview": "2026-07-10",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-09",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-09-ask-staff-deliver",
@@ -124,8 +124,8 @@
       "hint": "可用 I need to give this ... / I need to deliver this ...",
       "reviewCount": 0,
       "nextReview": "2026-07-10",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-09",
+      "lastRating": "forgot"
     },
     {
       "id": "2026-07-09-one-record-hidden-meaning",
@@ -142,8 +142,8 @@
       "hint": "可用 Does this mean ...? / Was ... hidden?",
       "reviewCount": 0,
       "nextReview": "2026-07-10",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-09",
+      "lastRating": "forgot"
     },
     {
       "id": "2026-07-08-my-name-is-may-lin",
