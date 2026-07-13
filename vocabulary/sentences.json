@@ -3,6 +3,149 @@
   "description": "Sentence and context recall SRS source of truth. Items are short, high-value prompts for Chinese-to-English retrieval.",
   "items": [
     {
+      "id": "2026-07-13-insert-last-key",
+      "type": "sentence",
+      "zhPrompt": "請插入最後一把鑰匙。",
+      "answer": "Insert the last key.",
+      "sourceDate": "2026-07-13",
+      "sourceTitle": "The Blue Receipt · Episode 17",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv1",
+      "hint": "提示：Insert the last ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-13-do-not-unlock-alone",
+      "type": "sentence",
+      "zhPrompt": "不要自己解鎖它。",
+      "answer": "Do not unlock it alone.",
+      "sourceDate": "2026-07-13",
+      "sourceTitle": "The Blue Receipt · Episode 17",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "提示：Do not ... it alone.",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-13-we-open-together",
+      "type": "sentence",
+      "zhPrompt": "我們一起打開它。",
+      "answer": "We open it together.",
+      "sourceDate": "2026-07-13",
+      "sourceTitle": "The Blue Receipt · Episode 17",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "一起可以用 together。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-13-choose-return-bus",
+      "type": "sentence",
+      "zhPrompt": "選擇回程巴士。",
+      "answer": "Choose the return bus.",
+      "sourceDate": "2026-07-13",
+      "sourceTitle": "The Blue Receipt · Episode 17",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "看螢幕指示時常見的祈使句。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-13-can-we-change-names",
+      "type": "sentence",
+      "zhPrompt": "我們可以改名字嗎？",
+      "answer": "Can we change the names?",
+      "sourceDate": "2026-07-13",
+      "sourceTitle": "The Blue Receipt · Episode 17",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先說 Can we ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-13-new-line-printed",
+      "type": "sentence",
+      "zhPrompt": "那裡印出了一行新的字。",
+      "answer": "A new line was printed there.",
+      "sourceDate": "2026-07-13",
+      "sourceTitle": "The Blue Receipt · Episode 17",
+      "abilities": [
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "可用 A new line was printed ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-13-return-one-rider-meaning",
+      "type": "context",
+      "zhPrompt": "如果你看到 Return one rider, not two，你會怎麼確認意思？",
+      "answer": "Does this mean only one rider can return? / Can only one rider return?",
+      "sourceDate": "2026-07-13",
+      "sourceTitle": "The Blue Receipt · Episode 17",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "可用 Does this mean ...? / Can only one rider ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-13-ask-which-bus",
+      "type": "context",
+      "zhPrompt": "如果螢幕要你選回程巴士，但你不確定，你會怎麼問？",
+      "answer": "Which bus should I choose? / Can you help me choose the return bus?",
+      "sourceDate": "2026-07-13",
+      "sourceTitle": "The Blue Receipt · Episode 17",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "可用 Which bus ...? / Can you help me ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
       "id": "2026-07-09-deliver-this-now",
       "type": "sentence",
       "zhPrompt": "我需要現在送交這個。",

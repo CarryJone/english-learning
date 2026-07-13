@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-09",
+  "updatedAt": "2026-07-13",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-13",
+      "day": 75,
+      "title": "The Blue Receipt · Episode 17",
+      "url": "daily/2026-07-13/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Insert the last key.",
+        "Do not unlock it alone.",
+        "Choose the return bus.",
+        "Can we change the names?"
+      ]
+    },
     {
       "date": "2026-07-09",
       "day": 74,
@@ -139,23 +159,6 @@
         "phone message",
         "bus sign",
         "finding the right clue"
-      ]
-    },
-    {
-      "date": "2026-07-02",
-      "day": 69,
-      "title": "The Blue Receipt · Episode 11",
-      "url": "daily/2026-07-02/",
-      "primary": [
-        "publicEnglish",
-        "travelSpeaking"
-      ],
-      "secondary": [
-        "dailyResponse"
-      ],
-      "evidence": [
-        "seat information",
-        "asking what to do next"
       ]
     }
   ]

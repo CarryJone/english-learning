@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 16, `The Blue Receipt · Episode 16`
+- Current episode: Episode 17, `The Blue Receipt · Episode 17`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -142,6 +142,15 @@
 - The service screen came up by itself and showed: `Go to Platform 12.`
 - The clerk opened a locked drawer and found a second map and a blue receipt.
 - The clerk whispered that Mina now needs the last platform key.
+
+- Mina and Lina reached Platform 12 with the last platform key.
+- A blue sign said: `Insert the last key.`
+- The front clerk warned Mina: `Do not unlock it alone.`
+- Lina insisted they open it together instead of letting Mina act alone.
+- The final screen asked Mina to choose the return bus.
+- The screen showed `8:10` under Mina's name and `tomorrow` under May Lin's name.
+- A new line appeared on the blue receipt: `Return one rider, not two.`
+- May Lin's voice told Mina: `Use your name.`
 
 ## Open Threads
 
@@ -353,6 +362,17 @@
 - New object clue: the clerk opens a locked drawer and finds a second map and a blue receipt.
 - Hook: Episode 17 should move Mina toward Platform 12, reveal what the last platform key opens, and keep the ending on the current season's path.
 
+### 2026-07-13 — Episode 17: The Last Platform Key
+
+- Location: Platform 12, near the small box and final service screen.
+- Mina and Lina reach Platform 12 with the last platform key.
+- Useful sentence: `Do not unlock it alone.`
+- New public clue: `Insert the last key.`
+- New screen clue: `Choose the return bus.`
+- Important rule: the blue receipt says `Return one rider, not two.`
+- New direction from May Lin: `Use your name.`
+- Hook: Episode 18 should reveal what using Mina's name changes and whether Mina can bring May Lin back without taking her place.
+
 ## Next Episode Pointer
 
-Episode 17 should take Mina to Platform 12, reveal what the last platform key opens, and keep the story moving toward a clean Season 1 ending without starting a second season.
+Episode 18 should reveal what using Mina's name changes, whether the return bus can bring May Lin back, and keep the story moving toward a clean Season 1 ending without starting a second season.

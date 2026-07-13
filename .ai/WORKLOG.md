@@ -5,6 +5,17 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-07-13 — Day 75 正式教材產出
+
+- 先 `git fetch origin` 並 `git pull --ff-only origin main`，同步 7/9 單字 SRS 與句子 SRS 遠端更新後再生成今天教材。
+- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-13/`，標題為 `The Blue Receipt · Episode 17`。
+- 今日新字：`key`、`unlock`、`final`；文章融入複習字：`platform`、`clerk`、`tomorrow`、`receipt`、`printed`、`voice`。
+- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 43 個到期複習字。
+- Speaking Bridge 使用 `proof`、`clerk`、`deliver`、`exact`；Context Recall 8 題同步寫入 `vocabulary/sentences.json`。
+- 同步首頁、`profile.json`、`ability_map.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：`article.mp3` 與 `s01.mp3` 到 `s25.mp3` 已生成；`python3 scripts/validate_daily.py 2026-07-13` 通過，70 checks，0 warnings，0 errors。
+
+---
 ## 2026-07-09 — Day 74 產出錯誤修復
 
 - 同步遠端 `origin/main`，保留 2026-07-08 的 review quiz 與 sentence SRS 更新。

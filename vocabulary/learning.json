@@ -2369,6 +2369,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-10",
       "lastReviewedDate": null
+    },
+    {
+      "word": "key",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鑰匙；關鍵",
+      "exampleSentence": "Mina held the last key in her hand.",
+      "dateAdded": "2026-07-13",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "unlock",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "解鎖；打開鎖",
+      "exampleSentence": "Do not unlock it alone.",
+      "dateAdded": "2026-07-13",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "final",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "最後的；最終的",
+      "exampleSentence": "The box showed a final screen.",
+      "dateAdded": "2026-07-13",
+      "reviewCount": 0,
+      "nextReview": "2026-07-14",
+      "lastReviewedDate": null
     }
   ]
 }
