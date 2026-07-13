@@ -15,10 +15,10 @@
       ],
       "level": "lv1",
       "hint": "提示：Insert the last ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-14",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-13",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-13-do-not-unlock-alone",
@@ -33,10 +33,10 @@
       ],
       "level": "lv1",
       "hint": "提示：Do not ... it alone.",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-14",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-13",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-13-we-open-together",
@@ -51,10 +51,10 @@
       ],
       "level": "lv2",
       "hint": "一起可以用 together。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-14",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-13",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-13-choose-return-bus",
@@ -69,10 +69,10 @@
       ],
       "level": "lv2",
       "hint": "看螢幕指示時常見的祈使句。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-14",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-13",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-13-can-we-change-names",
@@ -87,10 +87,10 @@
       ],
       "level": "lv2",
       "hint": "先說 Can we ...?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-14",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-13",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-13-new-line-printed",
@@ -106,8 +106,8 @@
       "hint": "可用 A new line was printed ...",
       "reviewCount": 0,
       "nextReview": "2026-07-14",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-13",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-13-return-one-rider-meaning",
@@ -124,8 +124,8 @@
       "hint": "可用 Does this mean ...? / Can only one rider ...?",
       "reviewCount": 0,
       "nextReview": "2026-07-14",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-13",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-13-ask-which-bus",
@@ -140,10 +140,10 @@
       ],
       "level": "lv3",
       "hint": "可用 Which bus ...? / Can you help me ...?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-14",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-13",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-09-deliver-this-now",
