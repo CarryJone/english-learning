@@ -588,9 +588,10 @@
       ],
       "level": "lv1",
       "hint": "Can this bus ... back?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-14",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-14-i-will-stay-here",
@@ -604,9 +605,10 @@
       ],
       "level": "lv1",
       "hint": "I will ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-14",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-14-screen-switched-between-names",
@@ -622,7 +624,8 @@
       "hint": "先自己說；可用 The screen ...",
       "reviewCount": 0,
       "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-14",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-14-show-proof-from-report",
@@ -639,7 +642,8 @@
       "hint": "複習字：proof；可用 Please show ...",
       "reviewCount": 0,
       "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-14",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-14-one-rider-can-return",
@@ -653,9 +657,10 @@
       ],
       "level": "lv2",
       "hint": "注意 one rider 的人數限制。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-14",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-14-should-i-stay-or-board",
@@ -670,9 +675,10 @@
       ],
       "level": "lv3",
       "hint": "可用 Should I ...?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-14",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-14-route-closed-return-complete",
@@ -687,9 +693,10 @@
       ],
       "level": "lv3",
       "hint": "可用 The route ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-14",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-14-do-this-together",
@@ -706,7 +713,8 @@
       "hint": "可用 Can we ... together?",
       "reviewCount": 0,
       "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-14",
+      "lastRating": "hinted"
     }
   ]
 }
