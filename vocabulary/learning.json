@@ -2399,6 +2399,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-14",
       "lastReviewedDate": null
+    },
+    {
+      "word": "switch",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "切換；轉換",
+      "exampleSentence": "The screen began to switch between two names.",
+      "dateAdded": "2026-07-14",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "rider",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "乘客；搭乘者",
+      "exampleSentence": "One rider can return.",
+      "dateAdded": "2026-07-14",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bring",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "帶來；帶回",
+      "exampleSentence": "Can this bus bring May Lin back?",
+      "dateAdded": "2026-07-14",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
     }
   ]
 }

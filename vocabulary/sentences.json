@@ -574,6 +574,139 @@
       "nextReview": "2026-07-08",
       "lastReviewedDate": "2026-07-07",
       "lastRating": "hinted"
+    },
+    {
+      "id": "2026-07-14-can-this-bus-bring-may-lin-back",
+      "type": "sentence",
+      "zhPrompt": "這班巴士可以把 May Lin 帶回來嗎？",
+      "answer": "Can this bus bring May Lin back?",
+      "sourceDate": "2026-07-14",
+      "sourceTitle": "The Blue Receipt · Episode 18",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can this bus ... back?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-14-i-will-stay-here",
+      "type": "sentence",
+      "zhPrompt": "我會留在這裡。",
+      "answer": "I will stay here.",
+      "sourceDate": "2026-07-14",
+      "sourceTitle": "The Blue Receipt · Episode 18",
+      "abilities": [
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "I will ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-14-screen-switched-between-names",
+      "type": "sentence",
+      "zhPrompt": "螢幕在兩個名字之間切換。",
+      "answer": "The screen switched between two names.",
+      "sourceDate": "2026-07-14",
+      "sourceTitle": "The Blue Receipt · Episode 18",
+      "abilities": [
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "先自己說；可用 The screen ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-14-show-proof-from-report",
+      "type": "sentence",
+      "zhPrompt": "請出示舊報告作為證明。",
+      "answer": "Please show the old report as proof.",
+      "sourceDate": "2026-07-14",
+      "sourceTitle": "The Blue Receipt · Episode 18",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "複習字：proof；可用 Please show ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-14-one-rider-can-return",
+      "type": "sentence",
+      "zhPrompt": "一位乘客可以回來。",
+      "answer": "One rider can return.",
+      "sourceDate": "2026-07-14",
+      "sourceTitle": "The Blue Receipt · Episode 18",
+      "abilities": [
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "注意 one rider 的人數限制。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-14-should-i-stay-or-board",
+      "type": "context",
+      "zhPrompt": "如果你不確定要留下還是上車，你會怎麼問？",
+      "answer": "Should I stay here or get on the bus? / Should I wait here?",
+      "sourceDate": "2026-07-14",
+      "sourceTitle": "The Blue Receipt · Episode 18",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "可用 Should I ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-14-route-closed-return-complete",
+      "type": "context",
+      "zhPrompt": "你看到 Route closed. Return complete.，會怎麼告訴朋友？",
+      "answer": "The route is closed. The return is complete. / The bus route is closed now.",
+      "sourceDate": "2026-07-14",
+      "sourceTitle": "The Blue Receipt · Episode 18",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv3",
+      "hint": "可用 The route ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-14-do-this-together",
+      "type": "context",
+      "zhPrompt": "你要請朋友一起處理這件事，會怎麼說？",
+      "answer": "Can we do this together? / Can you help me with this?",
+      "sourceDate": "2026-07-14",
+      "sourceTitle": "The Blue Receipt · Episode 18",
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "可用 Can we ... together?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-15",
+      "lastReviewedDate": null
     }
   ]
 }

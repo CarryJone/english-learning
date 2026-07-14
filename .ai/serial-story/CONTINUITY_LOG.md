@@ -7,7 +7,7 @@
 ## Current Status
 
 - Series: `The Blue Receipt`
-- Current episode: Episode 17, `The Blue Receipt · Episode 17`
+- Current episode: Episode 18, `The Blue Receipt · Episode 18`
 - Main mystery: unknown messages appear in everyday English text and warn Mina about the blue bus.
 - Current known facts:
   - Mina found a strange printed line at the bottom of her coffee receipt.
@@ -147,10 +147,20 @@
 - A blue sign said: `Insert the last key.`
 - The front clerk warned Mina: `Do not unlock it alone.`
 - Lina insisted they open it together instead of letting Mina act alone.
-- The final screen asked Mina to choose the return bus.
-- The screen showed `8:10` under Mina's name and `tomorrow` under May Lin's name.
-- A new line appeared on the blue receipt: `Return one rider, not two.`
-- May Lin's voice told Mina: `Use your name.`
+  - The final screen asked Mina to choose the return bus.
+  - The screen showed `8:10` under Mina's name and `tomorrow` under May Lin's name.
+  - A new line appeared on the blue receipt: `Return one rider, not two.`
+  - May Lin's voice told Mina: `Use your name.`
+  - Mina typed her full name on the Platform 12 screen.
+  - The screen switched between May Lin's name and Mina's name.
+  - A new line under Mina's name said: `Mina will stay here.`
+  - A new line under May Lin's name said: `One rider can return.`
+  - Mina asked: `Can this bus bring May Lin back?`
+  - The screen told Mina to stay at Platform 12.
+  - May Lin got off the blue bus and returned to the platform.
+  - The final screen said: `Route closed. Return complete.`
+  - The blue bus and blue line disappeared.
+  - Mina's blue receipt became blank, but one word remained: `Remember.`
 
 ## Open Threads
 
@@ -373,6 +383,18 @@
 - New direction from May Lin: `Use your name.`
 - Hook: Episode 18 should reveal what using Mina's name changes and whether Mina can bring May Lin back without taking her place.
 
+### 2026-07-14 — Episode 18: The Return Name
+
+- Location: Platform 12, the return screen, and the blue bus.
+- Mina uses her full name instead of trying to change May Lin's name.
+- Useful sentence: `Can this bus bring May Lin back?`
+- New screen clue: `Mina will stay here.`
+- New return clue: `One rider can return.`
+- May Lin steps off the blue bus and returns to Platform 12.
+- The route closes after the return, and the blue line disappears.
+- The blue receipt becomes blank except for the word `Remember.`
+- Hook: the return is complete, but the last word may point to the source of the messages.
+
 ## Next Episode Pointer
 
-Episode 18 should reveal what using Mina's name changes, whether the return bus can bring May Lin back, and keep the story moving toward a clean Season 1 ending without starting a second season.
+If another episode is requested, follow the quiet clue `Remember` toward the source of the messages. Do not start a second season or invent a new route.

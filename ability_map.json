@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-14",
+      "day": 76,
+      "title": "The Blue Receipt · Episode 18",
+      "url": "daily/2026-07-14/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Can this bus bring May Lin back?",
+        "One rider can return.",
+        "Route closed. Return complete.",
+        "Mina will stay here."
+      ]
+    },
     {
       "date": "2026-07-13",
       "day": 75,
