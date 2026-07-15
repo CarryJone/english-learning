@@ -3,6 +3,7 @@
 > 用途：提供第一季連載方向，避免每日產出跑偏。
 > 規則來源：是。每日 episode 應接續本大綱，但可依使用者興趣微調。
 > 限制：這不是逐字稿；不要把每日內容照抄成固定文本。
+> 狀態：已封存。原始大綱列到 Episode 14，實際劇情後續延伸至 Episode 18，並於 2026-07-14 完成回程；一般每日教材不可依本檔續寫。
 
 ## Season 1 Arc
 
@@ -60,4 +61,3 @@ By the end of Season 1, Mina should learn that the messages are connected to an 
 - Every 3-4 episodes should answer one small question and open one bigger question.
 - Keep the danger quiet and everyday: routes, wrong stops, missed buses, strange screens, unknown messages.
 - The story should still feel useful for travel and daily English.
-

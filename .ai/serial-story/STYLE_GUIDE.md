@@ -3,6 +3,7 @@
 > 用途：規範每日連載小說的語氣、難度與學習融合方式。
 > 規則來源：是。產出連載 episode 時必須遵守。
 > 限制：本檔不保存每日劇情事實；劇情事實請放 `CONTINUITY_LOG.md`。
+> 狀態：已封存。這份風格規則只適用於使用者明確要求的小說回顧或續寫，不適用於一般 `mission-based` 每日教材。
 
 ## Reader Experience
 
@@ -51,4 +52,3 @@ The reader should feel: "I want to know what happens next." The page can still t
 - Do not solve the mystery too quickly.
 - Do not introduce too many characters in one episode.
 - Do not use horror, gore, or intense threat.
-

@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daily English · 2026-07-15</title>
+<style>
+    :root {
+      --bg: #f5f4ef;
+      --card: #ffffff;
+      --accent: #4f7cff;
+      --accent2: #f0a500;
+      --text: #1e1e2e;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --green: #22c55e;
+      --red: #ef4444;
+      --tag-bg: #eef2ff;
+      --tag-text: #4f7cff;
+      --highlight: #fffbeb;
+      --phrase-bg: #f0fdf4;
+      --phrase-border: #22c55e;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Georgia", serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .header {
+      text-align: center;
+      padding: 2rem 1.5rem 1.5rem;
+      background: var(--card);
+      border-radius: 20px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .07);
+    }
+    .date-badge {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-family: sans-serif;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .3rem .9rem;
+      border-radius: 99px;
+      margin-bottom: .9rem;
+    }
+    .header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .header h1 span { color: var(--accent); }
+    .header .subtitle {
+      margin-top: .4rem;
+      font-size: .9rem;
+      color: var(--muted);
+      font-family: sans-serif;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 1.8rem 2rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .07);
+    }
+    .card-title {
+      font-family: sans-serif;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .card-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .player-card {
+      background: linear-gradient(135deg, #4f7cff 0%, #7c5cfc 100%);
+      color: white;
+      border-radius: 20px;
+      padding: 1.6rem 2rem;
+      box-shadow: 0 4px 20px rgba(79, 124, 255, .3);
+    }
+    .player-label {
+      font-family: sans-serif;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      opacity: .75;
+      margin-bottom: .6rem;
+    }
+    .player-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.2rem; }
+    audio { width: 100%; height: 40px; border-radius: 99px; }
+    .player-controls { display: flex; align-items: center; gap: .6rem; margin-top: .7rem; }
+    .loop-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      padding: .35rem .85rem;
+      border: 1.5px solid rgba(255, 255, 255, .45);
+      background: rgba(255, 255, 255, .15);
+      color: white;
+      border-radius: 99px;
+      font-family: sans-serif;
+      font-size: .78rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .loop-btn.active {
+      background: rgba(255, 255, 255, .92);
+      color: #4f7cff;
+      border-color: transparent;
+    }
+
+    .legend {
+      display: flex;
+      gap: 1rem;
+      font-family: sans-serif;
+      font-size: .8rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .legend-item { display: flex; align-items: center; gap: .35rem; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+    .legend-dot.vocab { background: #fef3c7; border-bottom: 2px solid var(--accent2); }
+    .legend-dot.review { background: #f3e8ff; border-bottom: 2px solid #a855f7; }
+    .legend-dot.phrase { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+    .sentence-mode { display: inline-flex; align-items: center; gap: .45rem; }
+    .sentence-mode-label { color: var(--accent); font-weight: 700; }
+    .sentence-mode-group {
+      display: inline-flex;
+      align-items: center;
+      gap: .2rem;
+      padding: .2rem;
+      background: var(--tag-bg);
+      border-radius: 99px;
+    }
+    .sentence-mode-btn {
+      border: none;
+      background: transparent;
+      color: var(--accent);
+      border-radius: 99px;
+      padding: .28rem .72rem;
+      font-family: sans-serif;
+      font-size: .76rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .sentence-mode-btn.active { background: var(--accent); color: white; }
+
+    .article-body { font-size: 1.05rem; line-height: 1.9; }
+    .article-body p { margin-bottom: 1.1rem; }
+    .article-body p:last-child { margin-bottom: 0; }
+    .sent { display: inline; }
+    .sent-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: none;
+      border: 1.5px solid #c7d2fe;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: .55rem;
+      vertical-align: middle;
+      margin: 0 3px 0 0;
+      padding: 0;
+      line-height: 1;
+    }
+    .sent-btn.playing { background: var(--accent); border-color: var(--accent); color: white; }
+
+    .vocab-word,
+    .review-word,
+    .phrase-chunk {
+      padding: 0 2px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .vocab-word {
+      background: var(--highlight);
+      border-bottom: 2px solid var(--accent2);
+      font-weight: 700;
+    }
+    .review-word {
+      background: #f3e8ff;
+      border-bottom: 2px solid #a855f7;
+      font-weight: 700;
+    }
+    .phrase-chunk {
+      background: var(--phrase-bg);
+      border-bottom: 2px solid var(--phrase-border);
+    }
+
+    #word-popup {
+      position: fixed;
+      z-index: 9999;
+      max-width: 300px;
+      min-width: 220px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .18);
+      padding: 1.1rem 1.2rem 1rem;
+      display: none;
+      font-family: sans-serif;
+      border: 1px solid var(--border);
+    }
+    #word-popup .pop-word {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: .25rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      flex-wrap: wrap;
+    }
+    #word-popup .pop-badge {
+      font-size: .7rem;
+      font-weight: 700;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    #word-popup .pop-badge.vocab { background: #fffbeb; color: #92400e; }
+    #word-popup .pop-badge.phrase { background: #f0fdf4; color: #166534; }
+    #word-popup .pop-badge.review { background: #f3e8ff; color: #7e22ce; }
+    #word-popup .pop-def {
+      font-size: .85rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-top: .2rem;
+    }
+    #word-popup .pop-close {
+      position: absolute;
+      top: .5rem;
+      right: .6rem;
+      width: 20px;
+      height: 20px;
+      background: #f3f4f6;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: .7rem;
+      color: var(--muted);
+    }
+    #word-popup .pop-zh-btn {
+      margin-top: .6rem;
+      padding: .35rem .85rem;
+      background: var(--tag-bg);
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+      border-radius: 8px;
+      font-size: .82rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+    }
+    #word-popup .pop-zh {
+      font-size: .95rem;
+      font-weight: 700;
+      margin-top: .5rem;
+      color: #166534;
+      padding: .4rem .6rem;
+      background: #f0fdf4;
+      border-radius: 6px;
+    }
+
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: sans-serif;
+      font-size: .88rem;
+    }
+    .vocab-table thead tr { background: var(--tag-bg); }
+    .vocab-table th {
+      text-align: left;
+      padding: .6rem .9rem;
+      font-weight: 700;
+      color: var(--tag-text);
+      font-size: .75rem;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .vocab-table td {
+      padding: .7rem .9rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .vocab-table tr:last-child td { border-bottom: none; }
+    .pos-badge {
+      display: inline-block;
+      background: #f3f4f6;
+      color: var(--muted);
+      font-size: .72rem;
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .zh-meaning { font-weight: 600; }
+    .example-sent {
+      color: var(--muted);
+      font-style: italic;
+      margin-top: .15rem;
+      font-size: .83rem;
+    }
+    .review-tag {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: .15rem .5rem;
+      border-radius: 99px;
+      white-space: nowrap;
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .phrase-list { display: flex; flex-direction: column; gap: .85rem; }
+    .phrase-item {
+      padding: .8rem 1rem;
+      background: var(--phrase-bg);
+      border-left: 3px solid var(--phrase-border);
+      border-radius: 0 10px 10px 0;
+    }
+    .ph-text { font-weight: 700; font-size: .95rem; font-family: sans-serif; }
+    .ph-type {
+      font-size: .72rem;
+      font-weight: 700;
+      padding: .12rem .45rem;
+      border-radius: 4px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      display: inline-block;
+      margin: .2rem 0 .15rem;
+    }
+    .ph-zh { font-size: .88rem; color: #166534; margin-top: .2rem; }
+    .ph-note { font-size: .82rem; color: var(--muted); margin-top: .25rem; font-style: italic; }
+
+    .quiz-q { margin-bottom: 1.6rem; }
+    .quiz-question { font-size: 1rem; font-weight: 600; margin-bottom: .75rem; line-height: 1.5; }
+    .quiz-options { display: flex; flex-direction: column; gap: .45rem; }
+    .quiz-option {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      padding: .65rem 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: sans-serif;
+      font-size: .9rem;
+      background: white;
+    }
+    .quiz-option.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 600; }
+    .quiz-option.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; }
+    .opt-key {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: .8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .answers-btn {
+      margin-top: 1.2rem;
+      padding: .65rem 1.4rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-family: sans-serif;
+      font-size: .88rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .answers-reveal {
+      display: none;
+      margin-top: 1rem;
+      padding: .9rem 1.1rem;
+      background: #f0fdf4;
+      border: 1.5px solid #bbf7d0;
+      border-radius: 10px;
+      font-family: sans-serif;
+      font-size: .9rem;
+      color: #166534;
+      font-weight: 600;
+    }
+
+    .rq-subtitle,
+    .bridge-subtitle {
+      font-family: sans-serif;
+      font-size: .88rem;
+      color: var(--muted);
+      margin-bottom: 1.3rem;
+      line-height: 1.6;
+    }
+    .rq-progress {
+      margin: -0.45rem 0 1.1rem;
+      font-family: sans-serif;
+      font-size: .88rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .rq-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .rq-item.unanswered {
+      margin-left: -.55rem;
+      margin-right: -.55rem;
+      padding-left: .55rem;
+      padding-right: .55rem;
+      border-radius: 12px;
+      background: #fff5f5;
+      box-shadow: inset 0 0 0 1.5px rgba(185, 28, 28, .14);
+    }
+    .rq-item:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+    .rq-zh { font-size: 1rem; font-weight: 700; margin-bottom: .6rem; }
+    .rq-pos { font-size: .75rem; font-weight: 400; color: var(--muted); font-family: sans-serif; margin-left: .3rem; }
+    .rq-hint { font-size: .85rem; color: var(--muted); font-style: italic; margin-bottom: .6rem; line-height: 1.5; }
+    .rq-opts { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; }
+    .rq-opt {
+      padding: .6rem .8rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      background: white;
+      cursor: pointer;
+      font-family: "Georgia", serif;
+      font-size: .88rem;
+      text-align: left;
+    }
+    .rq-opt.selected { border-color: var(--accent); background: var(--tag-bg); font-weight: 700; }
+    .rq-opt.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 700; }
+    .rq-opt.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; font-weight: 700; }
+    #rq-submit-btn {
+      margin-top: 1.4rem;
+      padding: .75rem 1.4rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-family: sans-serif;
+      font-size: .92rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+    }
+    #rq-submit-btn:disabled { background: var(--muted); cursor: default; }
+    #rq-result {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      font-family: sans-serif;
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+    #rq-result.success { background: #f0fdf4; border: 1.5px solid #bbf7d0; color: #166534; }
+    #rq-result.partial { background: #fffbeb; border: 1.5px solid #fde68a; color: #92400e; }
+
+    .bridge-item {
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1.2rem 1.3rem;
+      margin-bottom: 1.1rem;
+    }
+    .bridge-item:last-child { margin-bottom: 0; }
+    .bridge-word-header {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .bridge-word { font-size: 1.05rem; font-weight: 700; }
+    .bridge-word-zh { font-size: 1.05rem; font-weight: 700; font-family: sans-serif; color: #166534; }
+    .bridge-day-badge {
+      margin-left: auto;
+      font-family: sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: .15rem .55rem;
+      border-radius: 99px;
+      background: #fef3c7;
+      color: #92400e;
+    }
+    .bridge-level {
+      margin-bottom: .85rem;
+      padding-bottom: .85rem;
+      border-bottom: 1px dashed var(--border);
+    }
+    .bridge-level:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .bridge-level-label {
+      font-family: sans-serif;
+      font-size: .7rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: .45rem;
+    }
+    .bridge-zh-prompt {
+      font-family: sans-serif;
+      font-size: .9rem;
+      color: #166534;
+      background: #f0fdf4;
+      padding: .4rem .75rem;
+      border-radius: 8px;
+      margin-bottom: .5rem;
+      line-height: 1.65;
+    }
+    .bridge-scramble {
+      font-family: sans-serif;
+      font-size: .86rem;
+      color: var(--muted);
+      background: #f3f4f6;
+      padding: .45rem .8rem;
+      border-radius: 8px;
+      margin-bottom: .5rem;
+      line-height: 1.85;
+      word-break: break-word;
+    }
+    .bridge-blank { font-weight: 700; color: #9ca3af; letter-spacing: .12em; }
+    .bridge-reveal-btn {
+      padding: .38rem 1rem;
+      border: 1.5px solid var(--accent);
+      color: var(--accent);
+      background: white;
+      border-radius: 8px;
+      font-family: sans-serif;
+      font-size: .82rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .bridge-answer {
+      display: none;
+      margin-top: .5rem;
+      padding: .5rem .85rem;
+      background: var(--tag-bg);
+      border-radius: 8px;
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+
+    .tips-box {
+      background: var(--highlight);
+      border-left: 4px solid var(--accent2);
+      border-radius: 0 12px 12px 0;
+      padding: 1rem 1.2rem;
+      font-family: sans-serif;
+      font-size: .92rem;
+      line-height: 1.7;
+      color: #78350f;
+    }
+
+    .review-word-list { display: flex; flex-direction: column; gap: .85rem; }
+    .review-word-item {
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: .95rem 1rem;
+      background: white;
+    }
+    .review-word-top {
+      display: flex;
+      align-items: center;
+      gap: .55rem;
+      flex-wrap: wrap;
+      margin-bottom: .35rem;
+      font-family: sans-serif;
+    }
+    .review-word-main { font-size: .95rem; font-weight: 700; }
+    .review-word-meaning {
+      color: #166534;
+      font-family: sans-serif;
+      font-size: .88rem;
+      margin-bottom: .2rem;
+    }
+    .review-word-example {
+      color: var(--muted);
+      font-size: .82rem;
+      font-style: italic;
+      font-family: sans-serif;
+      line-height: 1.5;
+    }
+
+    .context-subtitle {
+      font-family: sans-serif;
+      font-size: .88rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .context-list {
+      display: grid;
+      gap: .85rem;
+      font-family: sans-serif;
+    }
+    .context-item {
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      background: #fff;
+    }
+    .context-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .7rem;
+      margin-bottom: .55rem;
+    }
+    .context-level {
+      display: inline-flex;
+      border-radius: 99px;
+      padding: .18rem .55rem;
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: .7rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .context-prompt {
+      color: var(--text);
+      font-size: .95rem;
+      font-weight: 800;
+      line-height: 1.55;
+    }
+    .context-hint {
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.45;
+      margin-bottom: .65rem;
+    }
+    .context-answer {
+      margin-top: .55rem;
+      padding: .65rem .8rem;
+      background: #f8fafc;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      color: var(--accent);
+      font-size: .9rem;
+      font-weight: 800;
+      line-height: 1.55;
+    }
+    .context-rating {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      margin-top: .75rem;
+    }
+    .context-rate-btn {
+      border: 1.5px solid var(--border);
+      background: #fff;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: .42rem .65rem;
+      font-family: sans-serif;
+      font-size: .78rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .context-rate-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--tag-bg);
+    }
+    .context-rate-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--tag-bg);
+    }
+    .context-item.unrated {
+      border-color: #f59e0b;
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, .12);
+    }
+    .context-sync {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      background: #f8fafc;
+      font-family: sans-serif;
+    }
+    .context-progress {
+      color: var(--muted);
+      font-size: .86rem;
+      font-weight: 800;
+      margin-bottom: .65rem;
+    }
+    .context-sync-btn {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      padding: .75rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      font-family: sans-serif;
+      font-size: .9rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .context-sync-btn:disabled {
+      background: var(--muted);
+      cursor: default;
+    }
+    .context-result {
+      display: none;
+      margin-top: .75rem;
+      padding: .75rem .9rem;
+      border-radius: 10px;
+      font-size: .86rem;
+      line-height: 1.6;
+    }
+    .context-result.success {
+      display: block;
+      background: #f0fdf4;
+      color: #166534;
+      border: 1.5px solid #bbf7d0;
+    }
+    .context-result.warn {
+      display: block;
+      background: #fffbeb;
+      color: #92400e;
+      border: 1.5px solid #fde68a;
+    }
+
+    .feedback-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-family: sans-serif;
+    }
+    .feedback-help {
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.6;
+    }
+    .feedback-group {
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+    }
+    .feedback-label {
+      color: var(--text);
+      font-size: .86rem;
+      font-weight: 800;
+    }
+    .feedback-choice-row,
+    .feedback-check-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .feedback-choice {
+      border: 1.5px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      border-radius: 99px;
+      padding: .5rem .8rem;
+      font-family: sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .feedback-choice.active {
+      border-color: var(--accent);
+      background: var(--tag-bg);
+      color: var(--accent);
+    }
+    .feedback-check {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      border: 1.5px solid var(--border);
+      border-radius: 99px;
+      padding: .45rem .65rem;
+      color: var(--muted);
+      font-size: .82rem;
+      cursor: pointer;
+    }
+    .feedback-check input { accent-color: var(--accent); }
+    .feedback-input,
+    .feedback-note {
+      width: 100%;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: .75rem .85rem;
+      font-family: sans-serif;
+      font-size: .9rem;
+      color: var(--text);
+      background: #fff;
+    }
+    .feedback-note { min-height: 86px; resize: vertical; }
+    .feedback-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      align-items: center;
+    }
+    .feedback-save,
+    .feedback-clear {
+      align-self: flex-start;
+      border-radius: 12px;
+      padding: .75rem 1rem;
+      font-family: sans-serif;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .feedback-save { border: none; background: var(--accent); color: #fff; }
+    .feedback-clear { border: 1.5px solid var(--border); background: #fff; color: var(--muted); }
+    .feedback-status {
+      min-height: 1.2rem;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.5;
+    }
+    .feedback-status.saved { color: #166534; }
+    .feedback-status.warn { color: #991b1b; }
+    .ability-focus {
+      display: grid;
+      gap: .75rem;
+      font-family: sans-serif;
+    }
+    .ability-focus-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .ability-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      border-radius: 99px;
+      padding: .42rem .68rem;
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: .8rem;
+      font-weight: 800;
+    }
+    .ability-pill.secondary {
+      background: #f0fdf4;
+      color: #166534;
+    }
+    .ability-evidence {
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      background: #f8fafc;
+      padding: .85rem 1rem;
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.65;
+    }
+    .mission-brief {
+      display: grid;
+      gap: .85rem;
+      font-family: sans-serif;
+    }
+    .mission-goal {
+      border-left: 4px solid var(--accent2);
+      border-radius: 0 12px 12px 0;
+      background: #fffbeb;
+      padding: .85rem 1rem;
+      line-height: 1.65;
+    }
+    .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .65rem;
+    }
+    .mission-check {
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: .75rem;
+      color: var(--muted);
+      font-size: .84rem;
+      line-height: 1.5;
+    }
+    .mission-check strong { display: block; color: var(--text); margin-bottom: .2rem; }
+    .roleplay-list { display: grid; gap: .7rem; font-family: sans-serif; }
+    .roleplay-turn {
+      display: grid;
+      grid-template-columns: 76px 1fr;
+      gap: .7rem;
+      align-items: start;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: .8rem .9rem;
+    }
+    .roleplay-speaker { color: var(--accent); font-size: .75rem; font-weight: 800; text-transform: uppercase; }
+    .roleplay-speaker.you { color: #b45309; }
+    .roleplay-prompt { color: var(--muted); font-size: .86rem; line-height: 1.55; }
+    .roleplay-turn .bridge-reveal-btn { margin-top: .45rem; }
+    .roleplay-turn .bridge-answer { margin-top: .45rem; }
+    @media (max-width: 500px) {
+      .mission-grid { grid-template-columns: 1fr; }
+      .roleplay-turn { grid-template-columns: 1fr; gap: .2rem; }
+    }
+
+    @media (max-width: 500px) {
+      html, body { overflow-x: hidden; }
+      .card { padding: 1.4rem 1.2rem; }
+      .card { overflow-x: auto; }
+      .player-card { padding: 1.3rem 1.2rem; }
+      .header h1 { font-size: 1.3rem; }
+      .rq-opts { grid-template-columns: 1fr; }
+      .vocab-table { width: 100%; table-layout: fixed; }
+      .vocab-table th,
+      .vocab-table td { padding: .55rem .45rem; font-size: .78rem; word-break: break-word; }
+      .vocab-table th:last-child,
+      .vocab-table td:last-child { display: none; }
+      .example-sent { font-size: .72rem; }
+      .review-tag { font-size: .62rem; padding: .12rem .4rem; }
+      .pos-badge { font-size: .62rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+<div class="header"><div class="date-badge">July 15, 2026 · Day 77 · M1</div><h1>Finding the <span>Right Bus</span></h1><p class="subtitle">A2 → B1 · Real-life English Mission</p></div>
+<div class="player-card"><div class="player-label">🎧 Listen to the Mission</div><div class="player-title">Finding the Right Bus</div><audio controls="" id="article-audio"><source src="article.mp3" type="audio/mpeg"/></audio><div class="player-controls"><button class="loop-btn" onclick="toggleLoop(this)">🔁 循環播放</button></div></div>
+<div id="word-popup"><button class="pop-close" onclick="closePopup()">✕</button><div id="pop-content"></div></div>
+<div class="card"><div class="card-title">🗺️ Ability Focus</div><div class="ability-focus"><div class="ability-focus-row"><span class="ability-pill">旅行開口</span><span class="ability-pill">公共英文</span><span class="ability-pill secondary">英文資訊判讀</span><span class="ability-pill secondary">日常反應</span></div><div class="ability-evidence">今天的能力證據：<strong>What should I take instead?</strong> 練交通替代方案；<strong>Can you show me the right stop?</strong> 練現場確認；<strong>The screen switches to Route 8.</strong> 練讀懂 app 資訊變化；<strong>Where should I go now?</strong> 練資訊改變時的反應。</div></div></div>
+<div class="card"><div class="card-title">🎯 Mission</div><div class="mission-brief"><div class="mission-goal"><strong>任務：</strong>你要從住宿地前往城市博物館。Route 12 延誤，你必須讀懂交通 app 提示，向站務人員確認替代路線，並找到正確站牌。</div><div class="mission-grid"><div class="mission-check"><strong>找出資訊</strong>Route 12 延誤；Stop C；下一班車時間。</div><div class="mission-check"><strong>完成判斷</strong>確認改搭 Route 8，並在 Central Street 下車。</div><div class="mission-check"><strong>開口成功</strong>說出目的地、替代方案與確認站牌的一句英文。</div></div><div class="mission-goal"><strong>Survival sentence：</strong>What should I take instead?</div></div></div>
+<div class="card"><div class="card-title">📖 Article</div><div class="legend"><div class="legend-item"><div class="legend-dot vocab"></div>今日單字</div><div class="legend-item"><div class="legend-dot review"></div>複習單字</div><div class="legend-item"><div class="legend-dot phrase"></div>重要片語</div><div class="legend-item" style="color:var(--accent);font-size:.8rem;">🔊 點擊播放單句</div><div class="legend-item sentence-mode"><span class="sentence-mode-label">單句模式</span><span aria-label="單句播放模式" class="sentence-mode-group" role="group"><button class="sentence-mode-btn active" data-mode="once" onclick="setSentenceMode('once')" type="button">單次</button><button class="sentence-mode-btn" data-mode="loop" onclick="setSentenceMode('loop')" type="button">循環</button></span></div></div><div class="article-body" id="article-body"><p>
+<span class="sent" data-idx="1" data-text="Mia plans to visit the city museum today."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Mia plans to visit the city <span class="vocab-word" data-word="museum">museum</span> today.</span>
+<span class="sent" data-idx="2" data-text="She checks a travel app before she leaves."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She <span class="phrase-chunk" data-phrase="check a travel app">checks a travel app</span> before she leaves.</span>
+<span class="sent" data-idx="3" data-text="The app shows a notice: Route 12 is delayed."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The app shows a notice: Route 12 <span class="phrase-chunk" data-phrase="is delayed">is delayed</span>.</span>
+<span class="sent" data-idx="4" data-text="It says, &quot;Use Stop C after six p.m.&quot;"><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>It says, "Use Stop C after six p.m."</span>
+<span class="sent" data-idx="5" data-text="Mia checks the map near the library."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Mia checks the map near the library.</span>
+<span class="sent" data-idx="6" data-text="Stop C is ten minutes from her hotel."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Stop C is ten minutes from her hotel.</span>
+<span class="sent" data-idx="7" data-text="At the station, she sees a blue sign."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>At the station, she sees a blue sign.</span>
+<span class="sent" data-idx="8" data-text="Museum bus: every twenty minutes."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Museum bus: every twenty minutes.</span>
+<span class="sent" data-idx="9" data-text="Mia asks, &quot;Does this bus go to the museum?&quot;"><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Mia asks, "Does this bus go to the museum?"</span>
+<span class="sent" data-idx="10" data-text="The staff member says, &quot;Route 12 is full.&quot;"><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The staff member says, "Route 12 is full."</span>
+<span class="sent" data-idx="11" data-text="Mia asks, &quot;What should I take instead?&quot;"><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>Mia asks, "What should I <span class="phrase-chunk" data-phrase="take ... instead">take <span class="vocab-word" data-word="instead">instead</span></span>?"</span>
+<span class="sent" data-idx="12" data-text="He says, &quot;Take Route 8 and get off at Central Street.&quot;"><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>He says, "Take Route 8 and <span class="phrase-chunk" data-phrase="get off at">get off at</span> Central Street."</span>
+<span class="sent" data-idx="13" data-text="The screen switches to Route 8."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The screen <span class="phrase-chunk" data-phrase="switch to"><span class="review-word" data-word="switch">switches</span> to Route 8</span>.</span>
+<span class="sent" data-idx="14" data-text="A passenger checks the same screen."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>A <span class="vocab-word" data-word="passenger">passenger</span> checks the same screen.</span>
+<span class="sent" data-idx="15" data-text="The next bus leaves in ten minutes."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The next bus leaves <span class="phrase-chunk" data-phrase="in ten minutes">in ten minutes</span>.</span>
+<span class="sent" data-idx="16" data-text="She asks, &quot;Can you show me the right stop?&quot;"><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She asks, "Can you <span class="phrase-chunk" data-phrase="show me the right stop">show me the right stop</span>?"</span>
+<span class="sent" data-idx="17" data-text="The rider points to a green line."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The <span class="review-word" data-word="rider">rider</span> points to a green line.</span>
+<span class="sent" data-idx="18" data-text="The next bus can bring her to the museum."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>The next bus can <span class="review-word" data-word="bring">bring</span> her to the museum.</span>
+<span class="sent" data-idx="19" data-text="She gets on the bus with one clear plan."><button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>She gets on the bus with one clear plan.</span>
+</p></div></div>
+<div class="card"><div class="card-title">📚 New Words Today</div><table class="vocab-table"><thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th></tr></thead><tbody><tr><td><strong>museum</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">博物館</div><div class="example-sent">I want to visit the city museum.</div></td></tr><tr><td><strong>instead</strong></td><td><span class="pos-badge">adv.</span></td><td><div class="zh-meaning">代替；改為</div><div class="example-sent">What should I take instead?</div></td></tr><tr><td><strong>passenger</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">乘客</div><div class="example-sent">A passenger checks the same screen.</div></td></tr></tbody></table></div>
+<div class="card"><div class="card-title">🔗 Key Phrases</div><div class="phrase-list"><div class="phrase-item"><div class="ph-text">check a travel app</div><div class="ph-type">Collocation</div><div class="ph-zh">查看交通 app</div><div class="ph-note">出發前先查看 app 的路線、時間與公告。</div></div><div class="phrase-item"><div class="ph-text">is delayed</div><div class="ph-type">Fixed Expression</div><div class="ph-zh">延誤了</div><div class="ph-note">看到交通公告時，快速辨識路線目前不是準點狀態。</div></div><div class="phrase-item"><div class="ph-text">get off at</div><div class="ph-type">Phrasal Verb</div><div class="ph-zh">在……下車</div><div class="ph-note">確認下車地點時直接套用：get off at Central Street。</div></div><div class="phrase-item"><div class="ph-text">take ... instead</div><div class="ph-type">Fixed Expression</div><div class="ph-zh">改搭……</div><div class="ph-note">原定路線不能使用時，詢問替代交通工具。</div></div><div class="phrase-item"><div class="ph-text">show me the right stop</div><div class="ph-type">Collocation</div><div class="ph-zh">指給我看正確的站牌</div><div class="ph-note">在不確定站牌或月台時，請對方直接指出位置。</div></div><div class="phrase-item"><div class="ph-text">in ten minutes</div><div class="ph-type">Fixed Expression</div><div class="ph-zh">十分鐘後</div><div class="ph-note">讀時刻或回答下一班車時間時常見的時間說法。</div></div></div></div>
+<div class="card"><div class="card-title">📝 Quiz</div><div class="quiz-q"><div class="quiz-question">1. What does the notice say after six p.m.?</div><div class="quiz-options"><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>Use Stop A.</div><div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">B</span>Use Stop C.</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>Use Route 12.</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>Use the library.</div></div></div><div class="quiz-q"><div class="quiz-question">2. What does &quot;instead&quot; mean?</div><div class="quiz-options"><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">A</span>一起</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>已經</div><div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">C</span>代替；改為</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>附近</div></div></div><div class="quiz-q"><div class="quiz-question">3. Route 12 is delayed. What can you ask?</div><div class="quiz-options"><div class="quiz-option" onclick="answer(this,'correct')"><span class="opt-key">A</span>What should I take instead?</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">B</span>Where is my museum?</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">C</span>Can I take the screen?</div><div class="quiz-option" onclick="answer(this,'wrong')"><span class="opt-key">D</span>Is the passenger full?</div></div></div><button class="answers-btn" onclick="toggleAnswers()">顯示答案</button><div class="answers-reveal" id="answers-reveal">✅  Q1: <strong>B</strong> ｜ Q2: <strong>C</strong> ｜ Q3: <strong>A</strong></div></div>
+<div class="card"><div class="card-title">🧠 Active Recall Quiz</div><p class="rq-subtitle">看中文意思，選出前面學過且今天到期的英文單字</p><div class="rq-progress" id="rq-progress">已作答 0 / 12 題</div><div class="rq-item" data-correct="package" data-word="package"><div class="rq-zh">包裹 <span class="rq-pos">n.</span></div><div class="rq-hint">I am here to pick up a ____.</div><div class="rq-opts"><button class="rq-opt" data-val="package" onclick="rqSelect(this)">package</button><button class="rq-opt" data-val="code" onclick="rqSelect(this)">code</button><button class="rq-opt" data-val="card" onclick="rqSelect(this)">card</button><button class="rq-opt" data-val="row" onclick="rqSelect(this)">row</button></div></div><div class="rq-item" data-correct="code" data-word="code"><div class="rq-zh">代碼；取貨碼 <span class="rq-pos">n.</span></div><div class="rq-hint">Please show the pickup ____.</div><div class="rq-opts"><button class="rq-opt" data-val="code" onclick="rqSelect(this)">code</button><button class="rq-opt" data-val="key" onclick="rqSelect(this)">key</button><button class="rq-opt" data-val="scan" onclick="rqSelect(this)">scan</button><button class="rq-opt" data-val="switch" onclick="rqSelect(this)">switch</button></div></div><div class="rq-item" data-correct="scan" data-word="scan"><div class="rq-zh">掃描 <span class="rq-pos">v.</span></div><div class="rq-hint">Can you ____ this code?</div><div class="rq-opts"><button class="rq-opt" data-val="scan" onclick="rqSelect(this)">scan</button><button class="rq-opt" data-val="bring" onclick="rqSelect(this)">bring</button><button class="rq-opt" data-val="load" onclick="rqSelect(this)">load</button><button class="rq-opt" data-val="card" onclick="rqSelect(this)">card</button></div></div><div class="rq-item" data-correct="aisle" data-word="aisle"><div class="rq-zh">走道；走道側座位 <span class="rq-pos">n.</span></div><div class="rq-hint">I have an ____ seat near the back.</div><div class="rq-opts"><button class="rq-opt" data-val="aisle" onclick="rqSelect(this)">aisle</button><button class="rq-opt" data-val="window" onclick="rqSelect(this)">window</button><button class="rq-opt" data-val="row" onclick="rqSelect(this)">row</button><button class="rq-opt" data-val="rider" onclick="rqSelect(this)">rider</button></div></div><div class="rq-item" data-correct="window" data-word="window"><div class="rq-zh">窗邊；窗戶 <span class="rq-pos">n.</span></div><div class="rq-hint">Can I change to a ____ seat?</div><div class="rq-opts"><button class="rq-opt" data-val="window" onclick="rqSelect(this)">window</button><button class="rq-opt" data-val="aisle" onclick="rqSelect(this)">aisle</button><button class="rq-opt" data-val="package" onclick="rqSelect(this)">package</button><button class="rq-opt" data-val="route" onclick="rqSelect(this)">route</button></div></div><div class="rq-item" data-correct="row" data-word="row"><div class="rq-zh">排；一排座位 <span class="rq-pos">n.</span></div><div class="rq-hint">My seat is in ____ 21.</div><div class="rq-opts"><button class="rq-opt" data-val="row" onclick="rqSelect(this)">row</button><button class="rq-opt" data-val="code" onclick="rqSelect(this)">code</button><button class="rq-opt" data-val="card" onclick="rqSelect(this)">card</button><button class="rq-opt" data-val="switch" onclick="rqSelect(this)">switch</button></div></div><div class="rq-item" data-correct="empty" data-word="empty"><div class="rq-zh">空的；沒人在用的 <span class="rq-pos">adj.</span></div><div class="rq-hint">This machine is ____ now.</div><div class="rq-opts"><button class="rq-opt" data-val="empty" onclick="rqSelect(this)">empty</button><button class="rq-opt" data-val="full" onclick="rqSelect(this)">full</button><button class="rq-opt" data-val="closed" onclick="rqSelect(this)">closed</button><button class="rq-opt" data-val="available" onclick="rqSelect(this)">available</button></div></div><div class="rq-item" data-correct="load" data-word="load"><div class="rq-zh">一次的洗衣量；一批衣物 <span class="rq-pos">n.</span></div><div class="rq-hint">I only have one small ____ today.</div><div class="rq-opts"><button class="rq-opt" data-val="load" onclick="rqSelect(this)">load</button><button class="rq-opt" data-val="package" onclick="rqSelect(this)">package</button><button class="rq-opt" data-val="aisle" onclick="rqSelect(this)">aisle</button><button class="rq-opt" data-val="scan" onclick="rqSelect(this)">scan</button></div></div><div class="rq-item" data-correct="card" data-word="card"><div class="rq-zh">卡片；付款卡 <span class="rq-pos">n.</span></div><div class="rq-hint">Does this machine take a ____?</div><div class="rq-opts"><button class="rq-opt" data-val="card" onclick="rqSelect(this)">card</button><button class="rq-opt" data-val="code" onclick="rqSelect(this)">code</button><button class="rq-opt" data-val="row" onclick="rqSelect(this)">row</button><button class="rq-opt" data-val="key" onclick="rqSelect(this)">key</button></div></div><div class="rq-item" data-correct="switch" data-word="switch"><div class="rq-zh">切換；轉換 <span class="rq-pos">v.</span></div><div class="rq-hint">The screen began to ____ between two names.</div><div class="rq-opts"><button class="rq-opt" data-val="switch" onclick="rqSelect(this)">switch</button><button class="rq-opt" data-val="change" onclick="rqSelect(this)">change</button><button class="rq-opt" data-val="follow" onclick="rqSelect(this)">follow</button><button class="rq-opt" data-val="bring" onclick="rqSelect(this)">bring</button></div></div><div class="rq-item" data-correct="rider" data-word="rider"><div class="rq-zh">乘客；搭乘者 <span class="rq-pos">n.</span></div><div class="rq-hint">One ____ can return.</div><div class="rq-opts"><button class="rq-opt" data-val="rider" onclick="rqSelect(this)">rider</button><button class="rq-opt" data-val="staff" onclick="rqSelect(this)">staff</button><button class="rq-opt" data-val="guard" onclick="rqSelect(this)">guard</button><button class="rq-opt" data-val="clerk" onclick="rqSelect(this)">clerk</button></div></div><div class="rq-item" data-correct="bring" data-word="bring"><div class="rq-zh">帶來；帶回 <span class="rq-pos">v.</span></div><div class="rq-hint">Can this bus ____ May Lin back?</div><div class="rq-opts"><button class="rq-opt" data-val="bring" onclick="rqSelect(this)">bring</button><button class="rq-opt" data-val="take" onclick="rqSelect(this)">take</button><button class="rq-opt" data-val="show" onclick="rqSelect(this)">show</button><button class="rq-opt" data-val="follow" onclick="rqSelect(this)">follow</button></div></div><button id="rq-submit-btn" onclick="submitReviewQuiz()" type="button">送出答案並同步複習紀錄</button><div id="rq-result" style="display:none"></div></div>
+<div class="card"><div class="card-title">🌉 Speaking Bridge</div><p class="bridge-subtitle">從 2–7 天前的單字開始，把舊字帶進新的旅行與資訊確認情境。先完成 Lv.1，再做 Lv.2。</p><div class="bridge-item"><div class="bridge-word-header"><div class="bridge-word">proof</div><div class="bridge-word-zh">證據；證明</div><span class="bridge-day-badge">6 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「請給我看證據。」</div><div class="bridge-scramble">Please / show / ____</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">Please show me proof.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">「你需要這張票的證明嗎？」先自己說，再看參考答案。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">Do you need proof for this ticket?</div></div></div><div class="bridge-item"><div class="bridge-word-header"><div class="bridge-word">clerk</div><div class="bridge-word-zh">職員；櫃檯人員</div><span class="bridge-day-badge">6 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「櫃檯人員可以幫我嗎？」</div><div class="bridge-scramble">Can / the / ____ / help / me?</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">Can the clerk help me?</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">「櫃檯人員可以確認我的路線嗎？」先自己說，再看參考答案。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">Can the clerk check my route?</div></div></div><div class="bridge-item"><div class="bridge-word-header"><div class="bridge-word">deliver</div><div class="bridge-word-zh">送交；遞送</div><span class="bridge-day-badge">6 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「請把這個送到前台。」</div><div class="bridge-scramble">Please / ____ / this / to / the / front / desk</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">Please deliver this to the front desk.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">「你今天可以送這個包裹嗎？」先自己說，再看參考答案。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">Can you deliver this package today?</div></div></div><div class="bridge-item"><div class="bridge-word-header"><div class="bridge-word">guard</div><div class="bridge-word-zh">警衛；守衛</div><span class="bridge-day-badge">7 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「警衛指給我看出口。」</div><div class="bridge-scramble">The / ____ / showed / me / the / exit</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">The guard showed me the exit.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">「警衛可以告訴我該在哪裡等嗎？」先自己說，再看參考答案。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer" style="display:none">Can the guard tell me where to wait?</div></div></div></div>
+<div class="card"><div class="card-title">🎭 Role-play</div><p class="roleplay-subtitle">先遮住參考答案，依序說出你的回應。中途路線與月台資訊會改變，你要重新確認下一步。</p><div class="roleplay-list"><div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-prompt">Can I help you?</div></div><div class="roleplay-turn"><div class="roleplay-speaker you">You</div><div class="roleplay-prompt">先自己說：我想去城市博物館。<br/><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><span class="bridge-answer" style="display:none">I need to get to the city museum.</span></div></div><div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-prompt">Route 12 is delayed. Use Stop C after six p.m.</div></div><div class="roleplay-turn"><div class="roleplay-speaker you">You</div><div class="roleplay-prompt">先自己說：那我應該改搭什麼？<br/><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><span class="bridge-answer" style="display:none">What should I take instead?</span></div></div><div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-prompt">Take Route 8 and get off at Central Street.</div></div><div class="roleplay-turn"><div class="roleplay-speaker you">You</div><div class="roleplay-prompt">先自己說：你可以指給我看正確的站牌嗎？<br/><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><span class="bridge-answer" style="display:none">Can you show me the right stop?</span></div></div><div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-prompt">The platform has changed. Go to the green line.</div></div><div class="roleplay-turn"><div class="roleplay-speaker you">You</div><div class="roleplay-prompt">先自己說：我現在應該去哪裡？<br/><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><span class="bridge-answer" style="display:none">Where should I go now?</span></div></div></div></div>
+<div class="card"><div class="card-title">🎯 Context Recall</div><p class="context-subtitle">看中文情境，先自己說出英文，再點開參考答案。最後自評提取狀態，8 題都評完後可同步到句子 SRS。</p><div class="context-list"><div class="context-item" data-sentence-id="2026-07-15-i-want-to-visit-the-city-museum"><div class="context-top"><div class="context-prompt">我想去城市博物館。</div><span class="context-level">Lv.1 有提示</span></div><div class="context-hint">提示：I want to visit the city ...</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">I want to visit the city museum.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-15-route-12-is-delayed"><div class="context-top"><div class="context-prompt">12 號路線延誤了。</div><span class="context-level">Lv.1 有提示</span></div><div class="context-hint">提示：Route 12 is ...</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Route 12 is delayed.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-15-does-this-bus-go-to-the-museum"><div class="context-top"><div class="context-prompt">請問這班車會到博物館嗎？</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">先自己說，不看文章。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Does this bus go to the museum?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-15-what-should-i-take-instead"><div class="context-top"><div class="context-prompt">那我應該改搭什麼？</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">先自己說，不看文章。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">What should I take instead?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-15-next-bus-leaves-in-ten-minutes"><div class="context-top"><div class="context-prompt">下一班車十分鐘後出發。</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">先自己說，不看文章。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">The next bus leaves in ten minutes.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-15-where-should-i-go-now"><div class="context-top"><div class="context-prompt">如果月台改了，你會問工作人員什麼？</div><span class="context-level">Lv.3 自由應答</span></div><div class="context-hint">只給中文情境，自己組句子。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Where should I go now?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-15-show-me-the-right-stop"><div class="context-top"><div class="context-prompt">你要請對方指出正確站牌。</div><span class="context-level">Lv.3 自由應答</span></div><div class="context-hint">只給中文情境，自己組句子。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">Can you show me the right stop?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-item" data-sentence-id="2026-07-15-use-stop-c-after-six-pm"><div class="context-top"><div class="context-prompt">你在網站看到「Use Stop C after six p.m.」，要怎麼向朋友說明？</div><span class="context-level">Lv.3 跨情境</span></div><div class="context-hint">只給中文情境，自己轉述公告。</div><button class="bridge-reveal-btn" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer" style="display:none">The notice says to use Stop C after six p.m.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" onclick="rateContextRecall(this)" type="button">想起來</button><button class="context-rate-btn" data-rating="hinted" onclick="rateContextRecall(this)" type="button">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" onclick="rateContextRecall(this)" type="button">想不起來</button></div></div><div class="context-sync"><div class="context-progress" id="context-progress">已評分 0 / 8 題</div><button class="context-sync-btn" id="context-sync-btn" onclick="syncContextRecall()" type="button">同步句子 SRS</button><div class="context-result" id="context-result" aria-live="polite"></div></div></div></div>
+<div class="card"><div class="card-title">💡 Learning Tips</div><div class="tips-box">今天最值得直接背的是 <strong>What should I take instead?</strong>，在原定路線延誤、餐廳客滿或商品缺貨時都能使用。看到 <strong>Use Stop C after six p.m.</strong> 這類公告，先抓時間與地點，再確認下一步；不確定時直接問 <strong>Where should I go now?</strong>。</div></div>
+<div class="card"><div class="card-title">🧭 Daily Feedback</div><div class="feedback-form" data-feedback-form data-feedback-date="2026-07-15"><p class="feedback-help">用 30 秒留下今天的難度與卡點。這會先存在這台瀏覽器，之後可用來調整每日訓練。</p><div class="feedback-group"><div class="feedback-label">今天難度</div><div class="feedback-choice-row"><button class="feedback-choice" data-feedback-difficulty="too-easy" type="button">太簡單</button><button class="feedback-choice" data-feedback-difficulty="just-right" type="button">剛好</button><button class="feedback-choice" data-feedback-difficulty="too-hard" type="button">太難</button></div></div><div class="feedback-group"><div class="feedback-label">今日卡點</div><div class="feedback-check-row"><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="vocabulary"/>單字</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="listening"/>聽力</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="speaking"/>口說</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="reading"/>文章理解</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="sentence"/>句型</label></div></div><div class="feedback-group"><label class="feedback-label" for="feedback-useful">今日最有用一句</label><input class="feedback-input" id="feedback-useful" name="feedback-useful" type="text" value="What should I take instead?"/></div><div class="feedback-group"><label class="feedback-label" for="feedback-note">補充卡點</label><textarea class="feedback-note" id="feedback-note" name="feedback-note" placeholder="例如：文章可以，但聽力第 12 句跟不上。"></textarea></div><div class="feedback-actions"><button class="feedback-save" data-feedback-save type="button">儲存今日回饋</button><button class="feedback-clear" data-feedback-clear type="button">清除今日回饋</button></div><div class="feedback-status" data-feedback-status aria-live="polite"></div></div></div>
+<div class="card"><div class="card-title">🔁 Review Words</div><table class="vocab-table"><thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th><th>狀態</th></tr></thead><tbody><tr><td><strong>package</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">包裹</div><div class="example-sent">I am here to pick up a package.</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>code</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">代碼；取貨碼</div><div class="example-sent">Please show the pickup code.</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>scan</strong></td><td><span class="pos-badge">v.</span></td><td><div class="zh-meaning">掃描</div><div class="example-sent">Can you scan this code?</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>aisle</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">走道；走道側座位</div><div class="example-sent">I have an aisle seat near the back.</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>window</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">窗邊；窗戶</div><div class="example-sent">Can I change to a window seat?</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>row</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">排；一排座位</div><div class="example-sent">My seat is in row 21.</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>empty</strong></td><td><span class="pos-badge">adj.</span></td><td><div class="zh-meaning">空的；沒人在用的</div><div class="example-sent">This machine is empty now.</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>load</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">一次的洗衣量；一批衣物</div><div class="example-sent">I only have one small load today.</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>card</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">卡片；付款卡</div><div class="example-sent">Does this machine take a card?</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>switch</strong></td><td><span class="pos-badge">v.</span></td><td><div class="zh-meaning">切換；轉換</div><div class="example-sent">The screen began to switch between two names.</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>rider</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">乘客；搭乘者</div><div class="example-sent">One rider can return.</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr><tr><td><strong>bring</strong></td><td><span class="pos-badge">v.</span></td><td><div class="zh-meaning">帶來；帶回</div><div class="example-sent">Can this bus bring May Lin back?</div></td><td><span class="review-tag today">今天複習 🔔</span></td></tr></tbody></table></div>
+<script src="../../assets/srs.js"></script>
+<script src="../../assets/sentence-srs.js"></script>
+<script src="../../assets/feedback.js"></script>
+<script>
+  function getAssetBasePath() {
+    const path = window.location.pathname;
+    if (path.endsWith("/")) return path;
+    if (/\.[^/]+$/.test(path)) return path.replace(/[^/]+$/, "");
+    return path + "/";
+  }
+
+  function buildAssetUrl(filename) {
+    return getAssetBasePath() + filename;
+  }
+
+  const sentAudio = new Audio();
+  let activeSentBtn = null;
+  let sentencePlaybackMode = "once";
+
+  function resetSentBtn(btn) {
+    if (!btn) return;
+    btn.classList.remove("playing");
+    btn.textContent = "🔊";
+  }
+
+  function stopSentencePlayback() {
+    sentAudio.pause();
+    sentAudio.currentTime = 0;
+    sentAudio.loop = false;
+    resetSentBtn(activeSentBtn);
+    activeSentBtn = null;
+  }
+
+  function syncSentenceModeButtons() {
+    document.querySelectorAll(".sentence-mode-btn").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.mode === sentencePlaybackMode);
+    });
+  }
+
+  function setSentenceMode(mode) {
+    sentencePlaybackMode = mode;
+    syncSentenceModeButtons();
+    if (activeSentBtn && !sentAudio.paused) {
+      sentAudio.loop = sentencePlaybackMode === "loop";
+    }
+  }
+
+  function playSent(btn) {
+    const idx = btn.closest(".sent").dataset.idx;
+    const src = buildAssetUrl(`s${String(idx).padStart(2, "0")}.mp3`);
+    if (activeSentBtn === btn && !sentAudio.paused) {
+      stopSentencePlayback();
+      return;
+    }
+    stopSentencePlayback();
+    sentAudio.src = src;
+    sentAudio.loop = sentencePlaybackMode === "loop";
+    activeSentBtn = btn;
+    btn.classList.add("playing");
+    btn.textContent = "⏸";
+    sentAudio.onended = () => {
+      if (sentAudio.loop) return;
+      resetSentBtn(btn);
+      activeSentBtn = null;
+    };
+    sentAudio.onerror = () => {
+      stopSentencePlayback();
+    };
+    sentAudio.play();
+  }
+
+  function toggleLoop(btn) {
+    const audio = document.getElementById("article-audio");
+    audio.loop = !audio.loop;
+    btn.classList.toggle("active", audio.loop);
+  }
+
+  function answer(el, type) {
+    const group = el.closest(".quiz-options");
+    if (group.querySelector(".correct, .wrong")) return;
+    el.classList.add(type);
+  }
+
+  function toggleAnswers() {
+    const el = document.getElementById("answers-reveal");
+    const btn = document.querySelector(".answers-btn");
+    if (el.style.display === "block") {
+      el.style.display = "none";
+      btn.textContent = "顯示答案";
+    } else {
+      el.style.display = "block";
+      btn.textContent = "隱藏答案";
+    }
+  }
+
+  function rqSelect(btn) {
+    const opts = btn.closest(".rq-opts").querySelectorAll(".rq-opt");
+    opts.forEach((item) => item.classList.remove("selected"));
+    btn.classList.add("selected");
+    btn.closest(".rq-item").classList.remove("unanswered");
+    updateReviewProgress();
+  }
+
+  function updateReviewProgress() {
+    const items = Array.from(document.querySelectorAll(".rq-item"));
+    const answered = items.filter((item) => item.querySelector(".rq-opt.selected")).length;
+    const progressEl = document.getElementById("rq-progress");
+    if (progressEl) progressEl.textContent = `已作答 ${answered} / ${items.length} 題`;
+  }
+
+  async function submitReviewQuiz() {
+    const items = Array.from(document.querySelectorAll(".rq-item"));
+    if (!items.length) return;
+
+    const results = [];
+    const unansweredItems = [];
+    items.forEach((item) => {
+      const sel = item.querySelector(".rq-opt.selected");
+      if (!sel) {
+        unansweredItems.push(item);
+        return;
+      }
+      results.push({ word: item.dataset.word, correct: sel.dataset.val === item.dataset.correct });
+    });
+    if (unansweredItems.length) {
+      items.forEach((item) => item.classList.remove("unanswered"));
+      unansweredItems.forEach((item) => item.classList.add("unanswered"));
+      unansweredItems[0].scrollIntoView({ behavior: "smooth", block: "center" });
+      alert(`還有 ${unansweredItems.length} 題未作答，已幫你跳到第一題。`);
+      return;
+    }
+
+    items.forEach((item) => {
+      const correct = item.dataset.correct;
+      item.querySelectorAll(".rq-opt").forEach((btn) => {
+        btn.setAttribute("disabled", "");
+        if (btn.dataset.val === correct) btn.classList.add("correct");
+        else if (btn.classList.contains("selected")) btn.classList.add("wrong");
+        btn.classList.remove("selected");
+      });
+    });
+
+    const today = window.SrsReview.localYmd();
+    const score = results.filter((r) => r.correct).length;
+    const submitBtn = document.getElementById("rq-submit-btn");
+    const resultEl = document.getElementById("rq-result");
+
+    if (window.SrsReview.isAlreadySynced("rq_done_", today)) {
+      resultEl.innerHTML = "✅ 今天已完成複習（額外練習）：" + score + "/" + results.length + " 題答對，SRS 未更新";
+      resultEl.className = "success";
+      resultEl.style.display = "block";
+      submitBtn.textContent = "已完成";
+      submitBtn.disabled = true;
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "同步中...";
+
+    try {
+      await window.SrsReview.syncReviewResults(results, {
+        today,
+        storagePrefix: "rq_done_",
+        commitPrefix: "SRS update: review quiz"
+      });
+      resultEl.innerHTML = "🎉 複習完成！" + score + "/" + results.length + " 題答對，SRS 記錄已更新 ✅";
+      resultEl.className = score === results.length ? "success" : "partial";
+      resultEl.style.display = "block";
+      submitBtn.textContent = "✅ 已同步";
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "提交答案 & 同步 SRS 記錄";
+      alert("同步失敗：" + err.message);
+    }
+  }
+
+  function bridgeReveal(btn) {
+    const ans = btn.nextElementSibling;
+    if (ans.style.display === "block") {
+      ans.style.display = "none";
+      btn.textContent = btn.textContent.replace("隱藏", "顯示");
+    } else {
+      ans.style.display = "block";
+      btn.textContent = btn.textContent.replace("顯示", "隱藏");
+    }
+  }
+
+  function getContextRecallItems() {
+    return Array.from(document.querySelectorAll(".context-item[data-sentence-id]"));
+  }
+
+  function getContextRecallResults() {
+    return getContextRecallItems().map((item) => ({
+      id: item.dataset.sentenceId,
+      rating: item.dataset.rating || ""
+    }));
+  }
+
+  function updateContextProgress() {
+    const results = getContextRecallResults();
+    const rated = results.filter((result) => result.rating).length;
+    const progressEl = document.getElementById("context-progress");
+    if (progressEl) progressEl.textContent = `已評分 ${rated} / ${results.length} 題`;
+  }
+
+  function rateContextRecall(btn) {
+    const item = btn.closest(".context-item[data-sentence-id]");
+    if (!item) return;
+    item.dataset.rating = btn.dataset.rating;
+    item.classList.remove("unrated");
+    item.querySelectorAll(".context-rate-btn").forEach((rateBtn) => {
+      rateBtn.classList.toggle("active", rateBtn === btn);
+    });
+    updateContextProgress();
+  }
+
+  async function syncContextRecall() {
+    if (!window.SentenceSrs) {
+      alert("句子 SRS 模組尚未載入，請重新整理後再試。");
+      return;
+    }
+
+    const items = getContextRecallItems();
+    const missing = items.filter((item) => !item.dataset.rating);
+    if (missing.length) {
+      items.forEach((item) => item.classList.remove("unrated"));
+      missing.forEach((item) => item.classList.add("unrated"));
+      missing[0].scrollIntoView({ behavior: "smooth", block: "center" });
+      alert(`還有 ${missing.length} 題尚未自評，已幫你跳到第一題。`);
+      return;
+    }
+
+    const today = window.SentenceSrs.localYmd();
+    const resultEl = document.getElementById("context-result");
+    const syncBtn = document.getElementById("context-sync-btn");
+    const results = getContextRecallResults();
+
+    if (window.SentenceSrs.isAlreadySynced("context_srs_done_", today)) {
+      resultEl.textContent = "今天已同步過句子 SRS；這次當作額外練習，不重複更新。";
+      resultEl.className = "context-result success";
+      syncBtn.disabled = true;
+      syncBtn.textContent = "今天已同步";
+      return;
+    }
+
+    syncBtn.disabled = true;
+    syncBtn.textContent = "同步中...";
+
+    try {
+      const synced = await window.SentenceSrs.syncSentenceResults(results, {
+        today,
+        storagePrefix: "context_srs_done_",
+        commitPrefix: "Sentence SRS update: context recall"
+      });
+      resultEl.textContent = `句子 SRS 已同步：更新 ${synced.updatedCount} 題，略過 ${synced.skippedCount} 題。`;
+      resultEl.className = "context-result success";
+      syncBtn.textContent = "已同步句子 SRS";
+    } catch (err) {
+      resultEl.textContent = "同步失敗：" + err.message;
+      resultEl.className = "context-result warn";
+      syncBtn.disabled = false;
+      syncBtn.textContent = "同步句子 SRS";
+    }
+  }
+
+  const VOCAB =   {
+    "museum": {
+      "pos": "n.",
+      "zh": "博物館",
+      "example": "I want to visit the city museum."
+    },
+    "instead": {
+      "pos": "adv.",
+      "zh": "代替；改為",
+      "example": "What should I take instead?"
+    },
+    "passenger": {
+      "pos": "n.",
+      "zh": "乘客",
+      "example": "A passenger checks the same screen."
+    }
+  };
+
+  const REVIEW =   {
+    "package": { "pos": "n.", "zh": "包裹", "example": "I am here to pick up a package." },
+    "code": { "pos": "n.", "zh": "代碼；取貨碼", "example": "Please show the pickup code." },
+    "scan": { "pos": "v.", "zh": "掃描", "example": "Can you scan this code?" },
+    "aisle": { "pos": "n.", "zh": "走道；走道側座位", "example": "I have an aisle seat near the back." },
+    "window": { "pos": "n.", "zh": "窗邊；窗戶", "example": "Can I change to a window seat?" },
+    "row": { "pos": "n.", "zh": "排；一排座位", "example": "My seat is in row 21." },
+    "empty": { "pos": "adj.", "zh": "空的；沒人在用的", "example": "This machine is empty now." },
+    "load": { "pos": "n.", "zh": "一次的洗衣量；一批衣物", "example": "I only have one small load today." },
+    "card": { "pos": "n.", "zh": "卡片；付款卡", "example": "Does this machine take a card?" },
+    "switch": { "pos": "v.", "zh": "切換；轉換", "example": "The screen began to switch between two names." },
+    "rider": { "pos": "n.", "zh": "乘客；搭乘者", "example": "One rider can return." },
+    "bring": { "pos": "v.", "zh": "帶來；帶回", "example": "Can this bus bring May Lin back?" }
+  };
+
+  const PHRASES =   {
+    "check a travel app": { "type": "Collocation", "zh": "查看交通 app", "note": "出發前先查看 app 的路線、時間與公告。" },
+    "is delayed": { "type": "Fixed Expression", "zh": "延誤了", "note": "看到交通公告時，快速辨識路線目前不是準點狀態。" },
+    "get off at": { "type": "Phrasal Verb", "zh": "在……下車", "note": "確認下車地點時直接套用：get off at Central Street。" },
+    "take ... instead": { "type": "Fixed Expression", "zh": "改搭……", "note": "原定路線不能使用時，詢問替代交通工具。" },
+    "switch to": { "type": "Phrasal Verb", "zh": "切換到……", "note": "讀 app 畫面變化時，注意它切換到哪一條路線。" },
+    "show me the right stop": { "type": "Collocation", "zh": "指給我看正確的站牌", "note": "在不確定站牌或月台時，請對方直接指出位置。" },
+    "in ten minutes": { "type": "Fixed Expression", "zh": "十分鐘後", "note": "讀時刻或回答下一班車時間時常見的時間說法。" }
+  };
+
+  function closePopup() {
+    document.getElementById("word-popup").style.display = "none";
+  }
+
+  function escapeHtml(text) {
+    return text.replace(/[&<>\"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[ch]));
+  }
+
+  function positionPopup(target) {
+    const popup = document.getElementById("word-popup");
+    popup.style.display = "block";
+    const rect = target.getBoundingClientRect();
+    const pw = popup.offsetWidth;
+    const ph = popup.offsetHeight;
+    let left = rect.left;
+    let top = rect.bottom + 8;
+    if (left + pw > window.innerWidth - 12) left = window.innerWidth - pw - 12;
+    if (left < 12) left = 12;
+    if (rect.bottom + ph + 8 > window.innerHeight) top = rect.top - ph - 8;
+    if (top < 8) top = 8;
+    popup.style.left = left + "px";
+    popup.style.top = top + "px";
+  }
+
+  function showPopup(target, kind) {
+    const pop = document.getElementById("pop-content");
+    let html = "";
+    if (kind === "vocab") {
+      const word = target.dataset.word;
+      const item = VOCAB[word];
+      html = `<div class="pop-word">${escapeHtml(word)} <span class="pop-badge vocab">New Word</span></div>
+        <div class="pop-def">${escapeHtml(item.pos)} · ${escapeHtml(item.example)}</div>
+        <button class="pop-zh-btn" onclick="toggleZh(this, '${escapeHtml(item.zh)}')">顯示中文</button>`;
+    } else if (kind === "review") {
+      const word = target.dataset.word;
+      const item = REVIEW[word];
+      html = `<div class="pop-word">${escapeHtml(word)} <span class="pop-badge review">Review</span></div>
+        <div class="pop-def">${escapeHtml(item.pos)} · ${escapeHtml(item.example)}</div>
+        <button class="pop-zh-btn" onclick="toggleZh(this, '${escapeHtml(item.zh)}')">顯示中文</button>`;
+    } else {
+      const phrase = target.dataset.phrase;
+      const item = PHRASES[phrase];
+      html = `<div class="pop-word">${escapeHtml(phrase)} <span class="pop-badge phrase">${escapeHtml(item.type)}</span></div>
+        <div class="pop-def">${escapeHtml(item.note)}</div>
+        <button class="pop-zh-btn" onclick="toggleZh(this, '${escapeHtml(item.zh)}')">顯示中文</button>`;
+    }
+    pop.innerHTML = html;
+    positionPopup(target);
+  }
+
+  function toggleZh(btn, zh) {
+    let next = btn.nextElementSibling;
+    if (next && next.classList.contains("pop-zh")) {
+      next.remove();
+      btn.textContent = "顯示中文";
+      return;
+    }
+    next = document.createElement("div");
+    next.className = "pop-zh";
+    next.textContent = zh;
+    btn.insertAdjacentElement("afterend", next);
+    btn.textContent = "隱藏中文";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const articleAudio = document.getElementById("article-audio");
+    articleAudio.src = buildAssetUrl("article.mp3");
+    articleAudio.preload = "metadata";
+    articleAudio.load();
+    updateReviewProgress();
+    updateContextProgress();
+    syncSentenceModeButtons();
+    window.LearningFeedback.initDailyFeedback();
+    document.getElementById("article-body").addEventListener("click", (e) => {
+      const v = e.target.closest(".vocab-word");
+      const rv = e.target.closest(".review-word");
+      const ph = e.target.closest(".phrase-chunk");
+      if (v) showPopup(v, "vocab");
+      else if (rv) showPopup(rv, "review");
+      else if (ph) showPopup(ph, "phrase");
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    const popup = document.getElementById("word-popup");
+    if (!popup.contains(event.target) && !event.target.closest(".vocab-word, .review-word, .phrase-chunk")) {
+      closePopup();
+    }
+  });
+</script>
+</body>
+</html>

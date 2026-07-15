@@ -3,6 +3,7 @@
 > 用途：記錄每日 episode 已發生事實、伏筆、角色知道的資訊與下一集接點。
 > 規則來源：否。本檔是接續參考；穩定規則請看 `SERIES_BIBLE.md` 與 `STYLE_GUIDE.md`。
 > 限制：保持短、準、可接手；不要寫完整文章。
+> 狀態：已封存。Episode 18 已完成第一季；一般每日教材不讀取、不更新本檔。
 
 ## Current Status
 
@@ -397,4 +398,4 @@
 
 ## Next Episode Pointer
 
-If another episode is requested, follow the quiet clue `Remember` toward the source of the messages. Do not start a second season or invent a new route.
+There is no next episode for ordinary daily production. The quiet clue `Remember` is an optional epilogue thread only if the user explicitly requests a retrospective or fiction continuation. Do not start a second season or invent a new route for the learning system.

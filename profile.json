@@ -10,11 +10,17 @@
     "daily life",
     "travel"
   ],
-  "totalDays": 76,
-  "lastUpdated": "2026-07-14",
-  "lastTopic": "serial",
+  "totalDays": 77,
+  "lastUpdated": "2026-07-15",
+  "lastTopic": "mission",
   "createdAt": "2026-03-10",
-  "contentMode": "serial-story",
-  "currentSeries": "The Blue Receipt",
-  "currentEpisode": 18
+  "contentMode": "mission-based",
+  "currentProgram": "Real-life English Missions",
+  "currentModule": "Transport & Getting Around",
+  "currentModuleNumber": 1,
+  "archivedSeries": {
+    "title": "The Blue Receipt",
+    "episodes": 18,
+    "endedOn": "2026-07-14"
+  }
 }

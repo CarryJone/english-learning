@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-07-15",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-15",
+      "day": 77,
+      "title": "Finding the Right Bus",
+      "url": "daily/2026-07-15/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "What should I take instead?",
+        "Can you show me the right stop?",
+        "The screen switches to Route 8.",
+        "Where should I go now?"
+      ]
+    },
     {
       "date": "2026-07-14",
       "day": 76,

@@ -2429,6 +2429,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-15",
       "lastReviewedDate": null
+    },
+    {
+      "word": "museum",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "博物館",
+      "exampleSentence": "I want to visit the city museum.",
+      "dateAdded": "2026-07-15",
+      "reviewCount": 0,
+      "nextReview": "2026-07-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "instead",
+      "partOfSpeech": "adv.",
+      "chineseMeaning": "代替；改為",
+      "exampleSentence": "What should I take instead?",
+      "dateAdded": "2026-07-15",
+      "reviewCount": 0,
+      "nextReview": "2026-07-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "passenger",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "乘客",
+      "exampleSentence": "A passenger checks the same screen.",
+      "dateAdded": "2026-07-15",
+      "reviewCount": 0,
+      "nextReview": "2026-07-16",
+      "lastReviewedDate": null
     }
   ]
 }

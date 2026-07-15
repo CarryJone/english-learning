@@ -274,9 +274,9 @@
 <div class="note">逾期複習</div>
 </div>
 <div class="metric">
-<div class="label">Episode</div>
+<div class="label">Module</div>
 <div class="value" id="metric-episode">--</div>
-<div class="note">目前連載進度</div>
+<div class="note">目前訓練模組</div>
 </div>
 </div>
 <div class="system-line" id="system-line">正在讀取學習狀態...</div>
@@ -284,10 +284,10 @@
 <div class="card">
 <div class="card-title">🧭 今日訓練路線</div>
 <div class="training-route">
-<div class="route-step"><div class="route-num">1</div><div><div class="route-title">聽全文，抓故事任務</div><div class="route-note">先不查字，確認今天 Mina 要解決什麼問題。</div></div></div>
-<div class="route-step"><div class="route-num">2</div><div><div class="route-title">逐句聽讀，標出卡點</div><div class="route-note">用單句播放處理聽不清楚或讀不順的句子。</div></div></div>
+<div class="route-step"><div class="route-num">1</div><div><div class="route-title">先看 Mission，確認成功條件</div><div class="route-note">先知道今天要完成什麼，以及要從英文輸入找出哪些資訊。</div></div></div>
+<div class="route-step"><div class="route-num">2</div><div><div class="route-title">聽讀素材，抓出關鍵資訊</div><div class="route-note">找出時間、地點、價格、限制或下一步，再處理聽不清楚的句子。</div></div></div>
 <div class="route-step"><div class="route-num">3</div><div><div class="route-title">完成 Review Quiz</div><div class="route-note">先做主動回想，再讓 SRS 更新記憶狀態。</div></div></div>
-<div class="route-step"><div class="route-num">4</div><div><div class="route-title">做 Speaking Bridge</div><div class="route-note">把 2–7 天前的字放進新情境，練真正能開口的反應。</div></div></div>
+<div class="route-step"><div class="route-num">4</div><div><div class="route-title">做 Role-play 與 Context Recall</div><div class="route-note">先自己產出英文，再處理資訊改變、澄清與替代方案。</div></div></div>
 </div>
 <div class="focus-chips">
 <span class="focus-chip">旅行開口</span>
@@ -310,6 +310,7 @@
 </div>
 <div class="card">
 <div class="card-title">📅 學習記錄</div>
+<a class="day-item today" href="daily/2026-07-15/"><div class="day-left"><div class="day-date">2026-07-15</div><div class="day-title">Finding the Right Bus</div></div><div class="day-num">Day 77</div></a>
 <div class="day-list" id="day-list"><a class="day-item" href="daily/2026-07-14/"><div class="day-left"><div class="day-date">2026-07-14</div><div class="day-title">The Blue Receipt · Episode 18</div></div><div class="day-num">Day 76</div></a><a class="day-item" href="daily/2026-07-13/"><div class="day-left"><div class="day-date">2026-07-13</div><div class="day-title">The Blue Receipt · Episode 17</div></div><div class="day-num">Day 75</div></a><a class="day-item" href="daily/2026-07-09/"><div class="day-left"><div class="day-date">2026-07-09</div><div class="day-title">The Blue Receipt · Episode 16</div></div><div class="day-num">Day 74</div></a><a class="day-item" href="daily/2026-07-08/"><div class="day-left"><div class="day-date">2026-07-08</div><div class="day-title">The Blue Receipt · Episode 15</div></div><div class="day-num">Day 73</div></a><a class="day-item" href="daily/2026-07-07/"><div class="day-left"><div class="day-date">2026-07-07</div><div class="day-title">The Blue Receipt · Episode 14</div></div><div class="day-num">Day 72</div></a><a class="day-item" href="daily/2026-07-06/"><div class="day-left"><div class="day-date">2026-07-06</div><div class="day-title">The Blue Receipt · Episode 13</div></div><div class="day-num">Day 71</div></a><a class="day-item" href="daily/2026-07-03/"><div class="day-left"><div class="day-date">2026-07-03</div><div class="day-title">The Blue Receipt · Episode 12</div></div><div class="day-num">Day 70</div></a><a class="day-item" href="daily/2026-07-02/"><div class="day-left"><div class="day-date">2026-07-02</div><div class="day-title">The Blue Receipt · Episode 11</div></div><div class="day-num">Day 69</div></a><a class="day-item" href="daily/2026-07-01/"><div class="day-left"><div class="day-date">2026-07-01</div><div class="day-title">The Blue Receipt · Episode 10</div></div><div class="day-num">Day 68</div></a><a class="day-item" href="daily/2026-06-30/"><div class="day-left"><div class="day-date">2026-06-30</div><div class="day-title">The Blue Receipt · Episode 9</div></div><div class="day-num">Day 67</div></a><a class="day-item" href="daily/2026-06-29/"><div class="day-left"><div class="day-date">2026-06-29</div><div class="day-title">The Blue Receipt · Episode 8</div></div><div class="day-num">Day 66</div></a>
 <!-- DAYS_START -->
 <a class="day-item" href="daily/2026-06-26/">
@@ -843,14 +844,20 @@
       setText('metric-mastered', mastered.length);
       setText('metric-due', due.length);
       setText('metric-overdue', overdue.length);
-      setText('metric-episode', profile.currentEpisode ? `E${profile.currentEpisode}` : '--');
+      setText('metric-episode', profile.currentModuleNumber ? `M${profile.currentModuleNumber}` : '--');
 
       document.getElementById('metric-overdue-card').classList.toggle('warn', overdue.length > 0);
       document.getElementById('metric-due-card').classList.toggle('good', due.length === 0);
 
       const nextText = upcoming ? `下一個複習：${upcoming.word}（${upcoming.nextReview}）` : '目前沒有未來複習排程';
-      const mode = profile.contentMode === 'serial-story' ? '連載故事模式' : '任務式教材模式';
-      line.textContent = `${mode} · ${profile.currentSeries || 'Daily English'} · ${due.length} 個今日到期 · ${overdue.length} 個逾期 · ${nextText}`;
+      const mode = profile.contentMode === 'serial-story'
+        ? '連載故事模式'
+        : profile.contentMode === 'mission-based'
+          ? '任務型情境英文'
+          : '任務式教材模式';
+      const program = profile.currentProgram || profile.currentSeries || 'Daily English';
+      const moduleText = profile.currentModule ? ` · ${profile.currentModule}` : '';
+      line.textContent = `${mode} · ${program}${moduleText} · ${due.length} 個今日到期 · ${overdue.length} 個逾期 · ${nextText}`;
     } catch (err) {
       line.textContent = '無法讀取即時學習狀態；若直接用檔案開啟，請改用本機 HTTP server 或 GitHub Pages。';
     }

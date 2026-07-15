@@ -10,23 +10,23 @@
 
 - 只要需求涉及「每日英文學習材料」、「英文練習頁」、「正式學習內容產出」，第一步必讀：
   - `.ai/daily-english-learning/SKILL.md`
-- 自 2026-06-16 起，正式每日內容的文章主體改為「連載小說」模式；產出前另需讀取：
+- 自 2026-07-15 起，正式每日內容預設採「任務型情境英文」模式；文章主體要服務真實出遊溝通與英文網路查資料，不再自動產出連載小說。
+- `The Blue Receipt` 第一季已於 Episode 18 封存。除非使用者明確要求回顧或續寫小說，否則不要讀取或更新：
   - `.ai/serial-story/SERIES_BIBLE.md`
   - `.ai/serial-story/SEASON_1_OUTLINE.md`
   - `.ai/serial-story/STYLE_GUIDE.md`
   - `.ai/serial-story/CONTINUITY_LOG.md`
-- 連載小說模式下，文章必須接續上一集劇情，不可每天重新發明角色或設定。
-- 連載小說模式下，`daily / travel` 輪替不再作為文章題材硬限制；旅行溝通、日常外出互動與英文資訊判讀應自然藏入故事情節。
-- 連載小說模式下，下方學習結構維持原樣：New Words、Key Phrases、Quiz、Active Recall Quiz、Speaking Bridge、Learning Tips、Review Words、完整音檔與逐句播放都不可省略。
+- 任務型教材每篇必須有一個可驗收的 real-life mission、一份短英文資訊輸入、一段可開口的 Role-play，以及中文情境到英文的主動提取。
+- 任務型教材的每週平衡為：旅行開口 3 天、英文資訊判讀 2 天、整合任務 1 天、SRS 與模擬複習 1 天；每日仍可同時帶入另一個能力。
+- 正式學習結構維持原樣並新增 Mission、Role-play；Article、New Words、Key Phrases、Quiz、Active Recall Quiz、Speaking Bridge、Context Recall、Learning Tips、Review Words、完整音檔與逐句播放都不可省略。
+- `New Words` 負責先學；`Active Recall Quiz` 負責複習前面已學過且依 SRS 到期的單字。不可用只列出今日新字的獨立區塊取代 Active Recall Quiz。
 - 正式產出必須依上面那份 SKILL 的流程執行，不可自行簡化成 demo。
 - 正式產出的核心目標不是「每天有一篇英文」，而是讓學習者逐步更能：
   - 在旅行中開口、聽懂、應對
   - 在網路上看懂英文標題、提示、教學內容與搜尋結果
-- 非連載小說模式的正式產出主題必須嚴格依 `profile.json.lastTopic` 輪替：
-  - `daily → travel → daily → travel`
-  - 不可連續兩天使用同一主題，除非使用者明確指定覆寫
-- `daily` 題材不可長期偏向居家清潔、房間整理或同質生活場景；應主動分散到更貼近日常真實使用情境的主題，如通勤、購物、點餐、排隊、問路、工作互動、家附近活動。
-- `daily` 題材若與「旅行 / 查資料」回報感偏弱，應優先改寫成資訊取得、外出互動、流程判斷型情境，例如看菜單、看站牌、查路線、看告示、看 app 畫面、問店員、確認時間地點。
+- `profile.json.lastTopic` 在新模式固定為 `mission`，不再使用 `daily / travel` 二選一硬輪替；內容依每週任務平衡與最近訓練能力安排。
+- 任務題材應主動分散到交通、問路、旅館、點餐、購物、付款、改票、求助、搜尋結果、教學步驟、評論與規則，不可長期停留在同質故事或居家情境。
+- 每篇資訊輸入必須讓學習者找出至少 2 個可驗收資訊，例如時間、地點、價格、限制、下一步或所需條件。
 - 文章、片語、單字應優先選高頻、口語、能立即套用的日常英文，不要為了湊題材或湊單字而犧牲自然度。
 - 每日內容至少要讓學習者明確帶走：
   - 1 句旅行或外出時可直接套用的句子
@@ -50,6 +50,9 @@
   - Quiz
   - Active Recall Quiz
   - Speaking Bridge
+  - Context Recall
+  - Mission
+  - Role-play
   - Learning Tips
   - Review Words
 - 不可省略音檔。
@@ -82,9 +85,9 @@
 - Speaking Bridge 的新情境若可選，優先偏向旅行口說、外出互動、資訊確認，而不是再次回到居家整理情境。
 - 正式 SKILL 模板已搬到專案內 `.ai/daily-english-learning/SKILL.md`，後續以這份本地模板為主。
 
-## 連載小說記憶規則
+## 連載小說記憶規則（僅限使用者明確要求續寫時）
 
-- 每次產出連載 episode 後，必須更新 `.ai/serial-story/CONTINUITY_LOG.md`。
+- 只有使用者明確要求產出連載 episode 時，才必須更新 `.ai/serial-story/CONTINUITY_LOG.md`。
 - 若新增穩定設定、角色或故事規則，優先更新 `.ai/serial-story/SERIES_BIBLE.md` 或 `.ai/serial-story/STYLE_GUIDE.md`。
 - 若只是每日事件、伏筆、下一集接點，寫入 `CONTINUITY_LOG.md`，不要塞進 `AGENTS.md`。
 - 若使用者要求調整小說方向，先討論並更新 serial story 文件，再產出新 episode。

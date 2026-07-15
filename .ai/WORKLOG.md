@@ -5,6 +5,32 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-07-15 — Day 77 任務型教材正式產出
+
+- 先 `git fetch origin` / `git pull --ff-only origin main`，同步最新 7/14 review quiz 與 sentence SRS 後生成今天教材。
+- 新增 `daily/2026-07-15/`，主題為 `Finding the Right Bus`；今日新字：`museum`、`instead`、`passenger`。
+- Active Recall Quiz 依最新 SRS 產出 12 個到期複習字；Speaking Bridge 使用前幾日單字；Context Recall 8 題、Role-play 8 回合與 Mission 均已接通。
+- 生成 `article.mp3` 與 `s01.mp3` 到 `s19.mp3`，並更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：`python3 scripts/validate_daily.py 2026-07-15` 通過 73 checks，0 warnings，0 errors。
+
+---
+## 2026-07-15 — 任務型測試版修正單字複習流程
+
+- 將 `test/2026-07-15/` 的單字複習改為 Active Recall Quiz，載入遠端最新 SRS 的 12 個到期單字，使用中文意思、例句挖空與四選一。
+- 依使用者回饋移除文章句子前的可見編號，保留逐句播放與句子資料順序。
+- 更新 `AGENTS.md`、`.ai/daily-english-learning/SKILL.md` 與 `.ai/PROJECT_STATE.md`，確認單字複習沿用既有 Active Recall Quiz 與 SRS 流程。
+- 驗證：HTML/JS 語法、HTTP 200、音檔與 `git diff --check` 通過。
+
+---
+## 2026-07-15 — 每日教材切換為任務型情境英文
+
+- 依使用者確認，將 `The Blue Receipt` Episode 18 標記為第一季結尾，停止每日自動續寫小說。
+- 更新 `.ai/daily-english-learning/SKILL.md`：新增 Mission、英文資訊輸入、Role-play、跨情境 Context Recall 與每週能力平衡規則。
+- 同步更新 `AGENTS.md`、`profile.json`、首頁、`scripts/validate_daily.py`、`LEARNING_SYSTEM_ROADMAP.md` 與 `.ai/DECISIONS.md`。
+- 封存 `.ai/serial-story/` 文件，保留既有小說資料，不重開完整 app。
+- 驗證：舊 Episode 18 通過 70 checks；Python / JSON / 首頁 inline JS / `git diff --check` 通過；新日期的 Mission、Role-play transition guard 通過。
+
+---
 ## 2026-07-13 — Day 75 正式教材產出
 
 - 先 `git fetch origin` 並 `git pull --ff-only origin main`，同步 7/9 單字 SRS 與句子 SRS 遠端更新後再生成今天教材。
@@ -269,37 +295,6 @@
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s20.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
 - 驗證：句子編號連續、20 個單句音檔存在、Review Quiz 36 題、首頁條目存在、本機 HTTP 200。
 
----
-## 2026-06-10 — Day 56 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
-- 新增 `daily/2026-06-10/`，主題 `Reading a Lunch Combo Sign`，包含完整 HTML、`article.mp3` 與 `s01.mp3` 到 `s18.mp3`。
-- 新增單字：`combo`、`sauce`、`allergy`；文章融入複習字：`errand`、`payment`、`section`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：HTML 區塊完整、句子編號連續、18 個單句音檔存在、本機 HTTP 200。
 
 ---
-## 2026-06-09 — Day 55 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = daily` 產出 travel 主題。
-- 新增 `daily/2026-06-09/`，主題 `Reading the Shuttle Zone Sign`，包含完整 HTML、`article.mp3` 與 `s01.mp3` 到 `s18.mp3`。
-- 新增單字：`terminal`、`zone`、`direction`；文章融入複習字：`shuttle`、`staff`、`ready`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：HTML 區塊完整、句子編號連續、18 個單句音檔存在、本機 HTTP 200。
-
 ---
-## 2026-06-08 — Day 54 今日英文練習產出
-
-- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
-- 新增 `daily/2026-06-08/`，主題 `Reloading a Bus Card`，包含完整 HTML、`article.mp3` 與 `s01.mp3` 到 `s18.mp3`。
-- 新增單字：`reload`、`balance`、`payment`；文章融入複習字：`queue`、`minute`、`ready`。
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：HTML 區塊完整、句子編號連續、18 個單句音檔存在、本機 HTTP 200。
-
----
-## 2026-06-05 — Day 53 正式教材產出
-
-- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`
-- 依 `profile.json.lastTopic = daily` 產出 travel 主題，新增 `daily/2026-06-05/`，標題為 `Checking the Baggage Claim Screen`
-- 今日新字：`claim`、`belt`、`hall`；文章融入複習字：`late`、`wrong`、`staff`
-- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`

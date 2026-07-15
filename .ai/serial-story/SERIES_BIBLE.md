@@ -3,6 +3,8 @@
 > 用途：定義每日連載小說的長期設定、主線與不可漂移的故事規則。
 > 規則來源：是。產出每日正式教材時，若採連載小說模式，必須先讀本檔。
 > 限制：本檔只保存穩定設定，不記錄每日流水帳；每日事件請寫入 `CONTINUITY_LOG.md`。
+> 狀態：已封存。`The Blue Receipt` 第一季於 2026-07-14 的 Episode 18 結束；一般任務型每日教材不可讀取或續寫本系列。
+> 例外：只有使用者明確要求回顧或續寫小說時，才將本檔作為該次獨立工作的規則來源。
 
 ## Series Title
 
@@ -77,4 +79,3 @@ The article becomes the next story episode. The lower learning sections stay in 
 - Do not resolve the main mystery too early.
 - Track every clue that needs later payoff.
 - If a detail changes, update the continuity log and explain why.
-

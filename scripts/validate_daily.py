@@ -38,6 +38,8 @@ REQUIRED_SCRIPT_SUFFIXES = [
     "assets/feedback.js",
 ]
 
+MISSION_MODE_START_DATE = "2026-07-15"
+
 ALLOWED_ABILITIES = {
     "travelSpeaking",
     "publicEnglish",
@@ -56,6 +58,7 @@ class ParsedDailyPage:
     context_ids: list[str] = field(default_factory=list)
     context_rate_ratings: list[str] = field(default_factory=list)
     rq_items: int = 0
+    roleplay_turns: int = 0
     script_srcs: list[str] = field(default_factory=list)
 
 
@@ -94,6 +97,9 @@ class DailyHTMLParser(HTMLParser):
 
         if "rq-item" in classes:
             self.page.rq_items += 1
+
+        if "roleplay-turn" in classes:
+            self.page.roleplay_turns += 1
 
         if "card-title" in classes:
             capture = "card-title"
@@ -166,9 +172,13 @@ def normalize_title(title: str) -> str:
     return re.sub(r"\s+", " ", title).strip()
 
 
-def validate_required_sections(page: ParsedDailyPage, validation: Validation) -> None:
+def validate_required_sections(page: ParsedDailyPage, date: str, validation: Validation) -> None:
     joined_titles = "\n".join(page.card_titles)
-    for required in REQUIRED_CARD_TITLES:
+    required_titles = list(REQUIRED_CARD_TITLES)
+    if date >= MISSION_MODE_START_DATE:
+        required_titles.extend(["Mission", "Role-play"])
+
+    for required in required_titles:
         validation.check(
             required in joined_titles,
             f"section present: {required}",
@@ -233,7 +243,12 @@ def validate_audio(day_dir: Path, page: ParsedDailyPage, validation: Validation)
 
 def validate_context_sentences(root: Path, date: str, page: ParsedDailyPage, validation: Validation) -> None:
     context_ids = page.context_ids
-    validation.check(len(context_ids) >= 6, f"Context Recall has {len(context_ids)} items", "Context Recall has fewer than 6 items")
+    minimum_context_items = 8 if date >= MISSION_MODE_START_DATE else 6
+    validation.check(
+        len(context_ids) >= minimum_context_items,
+        f"Context Recall has {len(context_ids)} items",
+        f"Context Recall has fewer than {minimum_context_items} items",
+    )
     validation.check(len(context_ids) == len(set(context_ids)), "Context Recall ids are unique", "Context Recall ids contain duplicates")
 
     allowed_ratings = {"remembered", "hinted", "forgot"}
@@ -248,6 +263,12 @@ def validate_context_sentences(root: Path, date: str, page: ParsedDailyPage, val
         "Context Recall ratings are valid",
         f"invalid Context Recall ratings: {sorted(set(page.context_rate_ratings) - allowed_ratings)}",
     )
+    if date >= MISSION_MODE_START_DATE:
+        validation.check(
+            page.roleplay_turns >= 4,
+            f"Role-play has {page.roleplay_turns} turns",
+            "Role-play has fewer than 4 turns",
+        )
 
     store = load_json(root / "vocabulary" / "sentences.json", validation)
     if not store:
@@ -403,7 +424,7 @@ def main() -> int:
         return 1
 
     page = parse_daily_page(html_path)
-    validate_required_sections(page, validation)
+    validate_required_sections(page, args.date, validation)
     validate_scripts(root, page, validation)
     validate_audio(day_dir, page, validation)
     validate_context_sentences(root, args.date, page, validation)

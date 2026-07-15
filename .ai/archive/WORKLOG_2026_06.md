@@ -4,6 +4,15 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-06-10 — Day 56 今日英文練習產出
+
+- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = travel` 產出 daily 主題。
+- 新增 `daily/2026-06-10/`，主題 `Reading a Lunch Combo Sign`，包含完整 HTML、`article.mp3` 與 `s01.mp3` 到 `s18.mp3`。
+- 新增單字：`combo`、`sauce`、`allergy`；文章融入複習字：`errand`、`payment`、`section`。
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：HTML 區塊完整、句子編號連續、18 個單句音檔存在、本機 HTTP 200。
+
+---
 ## 2026-06-01 — 產出 Day 49 正式教材
 
 - 先 `git fetch --all --prune` 並 `git pull --ff-only`，同步遠端 `vocabulary/learning.json` 的最新 SRS 更新。
@@ -40,3 +49,25 @@
 - 新增單字：`ready`、`queue`、`section`；文章融入複習字：`special`、`spicy`、`mild`。
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
 - 驗證：HTML 區塊完整、句子編號連續、音檔存在、本機 HTTP 200、Playwright 載入成功且 console 無錯誤。
+
+---
+## 2026-06-05 — Day 53 正式教材產出
+
+- 先同步遠端 `vocabulary/learning.json`，依當時的 daily / travel 輪替產出 `Checking the Baggage Claim Screen`。
+- 新增單字：`claim`、`belt`、`hall`；更新首頁、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+
+---
+## 2026-06-08 — Day 54 今日英文練習產出
+
+- 同步遠端 `vocabulary/learning.json` 後產出 `Reloading a Bus Card`，包含完整 HTML、`article.mp3` 與逐句音檔。
+- 新增單字：`reload`、`balance`、`payment`；更新首頁、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：HTML 區塊完整、句子編號連續、音檔存在、本機 HTTP 200。
+
+---
+## 2026-06-09 — Day 55 今日英文練習產出
+
+- 同步遠端 `vocabulary/learning.json` 後，依 `profile.json.lastTopic = daily` 產出 travel 主題。
+- 新增 `daily/2026-06-09/`，主題 `Reading the Shuttle Zone Sign`，包含完整 HTML、`article.mp3` 與 `s01.mp3` 到 `s18.mp3`。
+- 新增單字：`terminal`、`zone`、`direction`；文章融入複習字：`shuttle`、`staff`、`ready`。
+- 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：HTML 區塊完整、句子編號連續、18 個單句音檔存在、本機 HTTP 200。
