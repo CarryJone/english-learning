@@ -723,13 +723,16 @@
       "answer": "I want to visit the city museum.",
       "sourceDate": "2026-07-15",
       "sourceTitle": "Finding the Right Bus",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：I want to visit the city ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-16",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-15",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-15-route-12-is-delayed",
@@ -738,13 +741,16 @@
       "answer": "Route 12 is delayed.",
       "sourceDate": "2026-07-15",
       "sourceTitle": "Finding the Right Bus",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "提示：Route 12 is ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-16",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-15",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-15-does-this-bus-go-to-the-museum",
@@ -753,13 +759,16 @@
       "answer": "Does this bus go to the museum?",
       "sourceDate": "2026-07-15",
       "sourceTitle": "Finding the Right Bus",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
       "reviewCount": 0,
       "nextReview": "2026-07-16",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-15",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-15-what-should-i-take-instead",
@@ -768,13 +777,16 @@
       "answer": "What should I take instead?",
       "sourceDate": "2026-07-15",
       "sourceTitle": "Finding the Right Bus",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-16",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-15",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-15-next-bus-leaves-in-ten-minutes",
@@ -783,13 +795,16 @@
       "answer": "The next bus leaves in ten minutes.",
       "sourceDate": "2026-07-15",
       "sourceTitle": "Finding the Right Bus",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-16",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-15",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-15-where-should-i-go-now",
@@ -798,13 +813,16 @@
       "answer": "Where should I go now?",
       "sourceDate": "2026-07-15",
       "sourceTitle": "Finding the Right Bus",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "只給中文情境，自己組句子。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-16",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-15",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-15-show-me-the-right-stop",
@@ -813,13 +831,16 @@
       "answer": "Can you show me the right stop?",
       "sourceDate": "2026-07-15",
       "sourceTitle": "Finding the Right Bus",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "只給中文情境，自己組句子。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-16",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-15",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-15-use-stop-c-after-six-pm",
@@ -828,13 +849,16 @@
       "answer": "The notice says to use Stop C after six p.m.",
       "sourceDate": "2026-07-15",
       "sourceTitle": "Finding the Right Bus",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "只給中文情境，自己轉述公告。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-16",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-15",
+      "lastRating": "remembered"
     }
   ]
 }
