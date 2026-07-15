@@ -1326,9 +1326,9 @@
       "chineseMeaning": "包裹",
       "exampleSentence": "I am here to pick up a package.",
       "dateAdded": "2026-05-18",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "code",
@@ -1336,9 +1336,9 @@
       "chineseMeaning": "代碼、取貨碼",
       "exampleSentence": "Please show the pickup code.",
       "dateAdded": "2026-05-18",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "scan",
@@ -1346,9 +1346,9 @@
       "chineseMeaning": "掃描",
       "exampleSentence": "Can you scan this code?",
       "dateAdded": "2026-05-18",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "aisle",
@@ -1356,9 +1356,9 @@
       "chineseMeaning": "走道；走道側座位",
       "exampleSentence": "I have an aisle seat near the back.",
       "dateAdded": "2026-05-19",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "window",
@@ -1366,9 +1366,9 @@
       "chineseMeaning": "窗邊；窗戶",
       "exampleSentence": "Can I change to a window seat?",
       "dateAdded": "2026-05-19",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "row",
@@ -1376,9 +1376,9 @@
       "chineseMeaning": "排；一排座位",
       "exampleSentence": "My seat is in row 21.",
       "dateAdded": "2026-05-19",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "empty",
@@ -1386,9 +1386,9 @@
       "chineseMeaning": "空的；沒人在用的",
       "exampleSentence": "This machine is empty now.",
       "dateAdded": "2026-05-20",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "load",
@@ -1396,9 +1396,9 @@
       "chineseMeaning": "一次的洗衣量；一批衣物",
       "exampleSentence": "I only have one small load today.",
       "dateAdded": "2026-05-20",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "card",
@@ -1406,9 +1406,9 @@
       "chineseMeaning": "卡片；付款卡",
       "exampleSentence": "Does this machine take a card?",
       "dateAdded": "2026-05-20",
-      "reviewCount": 4,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": "2026-06-15"
+      "reviewCount": 5,
+      "nextReview": "2026-09-13",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "track",
@@ -2407,8 +2407,8 @@
       "exampleSentence": "The screen began to switch between two names.",
       "dateAdded": "2026-07-14",
       "reviewCount": 0,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "nextReview": "2026-07-16",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "rider",
@@ -2416,9 +2416,9 @@
       "chineseMeaning": "乘客；搭乘者",
       "exampleSentence": "One rider can return.",
       "dateAdded": "2026-07-14",
-      "reviewCount": 0,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-07-18",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "bring",
@@ -2426,9 +2426,9 @@
       "chineseMeaning": "帶來；帶回",
       "exampleSentence": "Can this bus bring May Lin back?",
       "dateAdded": "2026-07-14",
-      "reviewCount": 0,
-      "nextReview": "2026-07-15",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-07-18",
+      "lastReviewedDate": "2026-07-15"
     },
     {
       "word": "museum",
