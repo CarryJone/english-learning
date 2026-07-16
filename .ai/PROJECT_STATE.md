@@ -2,7 +2,7 @@
 
 > 用途：短期狀態與下一步接手資訊。
 > 注意：本檔不是開發規則；正式規則請看專案 `AGENTS.md`、`.ai/DECISIONS.md` 或指定的 `SKILL.md`。
-> 最後更新：2026-07-15
+> 最後更新：2026-07-16
 > 更新者：Agent
 
 ## 目前目標
@@ -20,6 +20,7 @@
 - [x] 已完成 2026-07-15 Day 77 正式教材 `Finding the Right Bus`：3 個新字、12 題 SRS Active Recall、8 題 Context Recall、Role-play、19 個逐句音檔與首頁入口。
 
 ## 驗證狀態
+- [x] 已完成 2026-07-16 Day 78 正式教材 Choosing a Ferry Departure：3 個新字、11 題 SRS Active Recall、10 題 Context Recall、Role-play、16 個逐句音檔與首頁入口。
 - [x] `python3 scripts/validate_daily.py 2026-07-14` 在新驗證器下通過歷史格式相容檢查。
 - [x] Day 77 任務型正式教材已通過 `validate_daily.py`：73 checks、0 warnings、0 errors。
 
@@ -27,8 +28,8 @@
 - 無。
 
 ## 下一步
-- 產出 Day 78：先同步最新 SRS，再依能力輪替安排旅行或英文資訊查詢任務。
-- Day 78 必須包含 Mission、Role-play 至少 4 回合、Context Recall 至少 8 題，並通過 `validate_daily.py`。
+- 產出 Day 79：先同步最新 SRS，再依能力輪替安排旅行或英文資訊查詢任務。
+- Day 79 必須包含 Mission、Role-play 至少 4 回合、Context Recall 至少 8 題，並通過 `validate_daily.py`。
 - 新頁面需讓 Active Recall Quiz 從最新 SRS 動態載入所有到期單字；文章句子編號可保留資料順序，但不應在畫面顯示編號。
 - 每週維持旅行開口 3 天、英文資訊判讀 2 天、整合任務 1 天、SRS／模擬複習 1 天。
 - 不要從 `Remember` 線索續寫 Episode 19，也不要開第二季。
@@ -36,6 +37,7 @@
 ## 活躍工作區
 - `daily/2026-07-14/`（最後一篇小說歷史教材）
 - `daily/2026-07-15/`（第一篇任務型正式教材）
+- `daily/2026-07-16/`（第二篇任務型正式教材）
 - `index.html`
 - `profile.json`
 - `vocabulary/learning.json`

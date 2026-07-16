@@ -859,6 +859,186 @@
       "nextReview": "2026-07-16",
       "lastReviewedDate": "2026-07-15",
       "lastRating": "remembered"
+    },
+    {
+      "id": "2026-07-16-is-the-1010-boat-still-available",
+      "type": "sentence",
+      "zhPrompt": "你要確認 10:10 的船還有票嗎？",
+      "answer": "Is the 10:10 boat still available?",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "提示：Is the ... still available?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-first-boat-leaves-at-920",
+      "type": "sentence",
+      "zhPrompt": "第一班船 9:20 出發。",
+      "answer": "The first boat leaves at 9:20 a.m.",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "提示：The first boat leaves ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-leaves-from-dock-2",
+      "type": "sentence",
+      "zhPrompt": "這艘船從 2 號碼頭出發。",
+      "answer": "The boat leaves from Dock 2.",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-what-can-i-take-instead",
+      "type": "sentence",
+      "zhPrompt": "第一班售罄時，你要問可以改搭什麼。",
+      "answer": "What can I take instead?",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-please-say-boarding-time-again",
+      "type": "sentence",
+      "zhPrompt": "你沒聽清楚登船時間，請對方再說一次。",
+      "answer": "Sorry, I didn't catch that. Could you say the boarding time again?",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-can-i-take-the-1010-boat",
+      "type": "context",
+      "zhPrompt": "9:20 售罄，你要問能不能改搭 10:10。",
+      "answer": "Can I take the 10:10 boat instead? / Is there another boat?",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，自己組句子。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-atm-one-block-away",
+      "type": "context",
+      "zhPrompt": "你發現 ATM 在附近一個街區外。",
+      "answer": "The ATM is one block away. / The ATM is nearby, one block from here.",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，自己組句子。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-clerk-check-return-time",
+      "type": "context",
+      "zhPrompt": "請櫃檯人員確認回程時間。",
+      "answer": "Can the clerk check the return time?",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，自己組句子。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-passengers-arrive-early",
+      "type": "context",
+      "zhPrompt": "你要提醒朋友乘客必須提早 15 分鐘到。",
+      "answer": "Passengers need to arrive 15 minutes early.",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，自己組句子。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-16-tickets-available-online",
+      "type": "context",
+      "zhPrompt": "網站顯示票可以線上購買，你要怎麼轉述？",
+      "answer": "The tickets are available online. / You can buy the tickets online.",
+      "sourceDate": "2026-07-16",
+      "sourceTitle": "Choosing a Ferry Departure",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，自己轉述網頁資訊。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null,
+      "lastRating": null
     }
   ]
 }

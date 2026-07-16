@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-15",
+  "updatedAt": "2026-07-16",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-16",
+      "day": 78,
+      "title": "Choosing a Ferry Departure",
+      "url": "daily/2026-07-16/",
+      "primary": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read a ferry timetable and choose a boat when the first one is sold out.",
+        "Input: ferry timetable, ticket notice, and a counter dialogue.",
+        "The first boat leaves from Dock 2 at 9:20; boarding starts at 9:55.",
+        "Is the 10:10 boat still available? / Where should I go now?"
+      ]
+    },
     {
       "date": "2026-07-15",
       "day": 77,

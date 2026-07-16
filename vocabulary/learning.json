@@ -2459,6 +2459,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-16",
       "lastReviewedDate": null
+    },
+    {
+      "word": "dock",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "碼頭",
+      "exampleSentence": "The ferry leaves from Dock 2.",
+      "dateAdded": "2026-07-16",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "boarding",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "登船；登機",
+      "exampleSentence": "Boarding starts fifteen minutes before departure.",
+      "dateAdded": "2026-07-16",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "option",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "選項；選擇",
+      "exampleSentence": "The later boat is a good option.",
+      "dateAdded": "2026-07-16",
+      "reviewCount": 0,
+      "nextReview": "2026-07-17",
+      "lastReviewedDate": null
     }
   ]
 }
