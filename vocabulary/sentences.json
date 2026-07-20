@@ -1039,6 +1039,186 @@
       "nextReview": "2026-07-17",
       "lastReviewedDate": null,
       "lastRating": null
+    },
+    {
+      "id": "2026-07-20-which-way-exit-4",
+      "type": "sentence",
+      "zhPrompt": "你要確認前往圖書館的 4 號出口。",
+      "answer": "Which way should I go for Exit 4?",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "提示：Which way should I go for ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-take-green-line-platform-2",
+      "type": "sentence",
+      "zhPrompt": "你要告訴朋友搭綠線到 2 號月台。",
+      "answer": "Take the Green Line to Platform 2.",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "提示：Take the Green Line to ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-exit-4-open-until-10",
+      "type": "sentence",
+      "zhPrompt": "你要告訴朋友 4 號出口開放到晚上 10 點。",
+      "answer": "Exit 4 is open until 10 p.m.",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-show-way-city-library",
+      "type": "sentence",
+      "zhPrompt": "你要請站務員指給你去 City Library 的路。",
+      "answer": "Could you show me the way to the City Library?",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-say-exit-again",
+      "type": "sentence",
+      "zhPrompt": "你沒聽清楚出口號碼，請對方再說一次。",
+      "answer": "Sorry, I didn't catch that. Could you say the exit again?",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-where-go-after-change",
+      "type": "sentence",
+      "zhPrompt": "告示改了出口，你要問現在該去哪裡。",
+      "answer": "Where should I go now?",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-use-stairs-instead",
+      "type": "context",
+      "zhPrompt": "電梯不能用，你要問能不能改走樓梯。",
+      "answer": "Can I use the stairs instead? / Should I go upstairs?",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，自己組句子。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-right-way-ticket-office",
+      "type": "context",
+      "zhPrompt": "你在另一個車站，要確認這是不是去售票處的方向。",
+      "answer": "Is this the right way to the ticket office? / Which way should I go?",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，轉移今天的問路句型。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-follow-green-sign",
+      "type": "context",
+      "zhPrompt": "你要告訴朋友直走、右轉，再跟著綠色標誌走。",
+      "answer": "Go straight, turn right, and follow the green sign.",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，轉移今天的方向片語。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-20-another-option-after-change",
+      "type": "context",
+      "zhPrompt": "地圖顯示出口變更，你要詢問是否有替代方案。",
+      "answer": "The exit changed. Is there another option? / What should I do instead?",
+      "sourceDate": "2026-07-20",
+      "sourceTitle": "Finding the Right Station Exit",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，自己轉述資訊改變。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null,
+      "lastRating": null
     }
   ]
 }

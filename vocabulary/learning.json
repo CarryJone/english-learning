@@ -2489,6 +2489,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-17",
       "lastReviewedDate": null
+    },
+    {
+      "word": "turn",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "轉彎；轉向",
+      "exampleSentence": "Turn right after the stairs.",
+      "dateAdded": "2026-07-20",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "straight",
+      "partOfSpeech": "adv./adj.",
+      "chineseMeaning": "直走；直的",
+      "exampleSentence": "Go straight to the green sign.",
+      "dateAdded": "2026-07-20",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "upstairs",
+      "partOfSpeech": "adv.",
+      "chineseMeaning": "往樓上；在樓上",
+      "exampleSentence": "The ticket office is upstairs.",
+      "dateAdded": "2026-07-20",
+      "reviewCount": 0,
+      "nextReview": "2026-07-21",
+      "lastReviewedDate": null
     }
   ]
 }

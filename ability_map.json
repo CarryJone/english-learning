@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-07-20",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-20",
+      "day": 79,
+      "title": "Finding the Right Station Exit",
+      "url": "daily/2026-07-20/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: follow a station map and confirm the right exit for the City Library.",
+        "Input: station map, Exit 4 notice, and an information-desk dialogue.",
+        "Find the Green Line, Platform 2, Exit 4, and the 10 p.m. closing time.",
+        "Which way should I go for Exit 4? / I didn't catch that. / Where should I go now?"
+      ]
+    },
     {
       "date": "2026-07-16",
       "day": 78,
