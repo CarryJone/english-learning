@@ -2519,6 +2519,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-21",
       "lastReviewedDate": null
+    },
+    {
+      "word": "affected",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "受到影響的",
+      "exampleSentence": "The Blue Line is affected by track work.",
+      "dateAdded": "2026-07-21",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "cancelled",
+      "partOfSpeech": "adj./v.",
+      "chineseMeaning": "取消的；被取消",
+      "exampleSentence": "The 8:30 train is cancelled today.",
+      "dateAdded": "2026-07-21",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "replacement",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "替代品；接替的交通工具",
+      "exampleSentence": "A replacement bus leaves from Stop C.",
+      "dateAdded": "2026-07-21",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null
     }
   ]
 }

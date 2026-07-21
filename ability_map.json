@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20",
+  "updatedAt": "2026-07-21",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-21",
+      "day": 80,
+      "title": "Reading a Train Service Notice",
+      "url": "daily/2026-07-21/",
+      "primary": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read a train service alert and confirm the replacement bus location.",
+        "Input: train service notice, station sign, and staff dialogue.",
+        "Find the affected Blue Line, the cancelled 8:30 train, Platform 4, and the updated Stop C location.",
+        "Does the replacement bus go to Central Station? / I didn't catch that. / Where should I go now?"
+      ]
+    },
     {
       "date": "2026-07-20",
       "day": 79,

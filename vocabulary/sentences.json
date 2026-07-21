@@ -1219,6 +1219,186 @@
       "nextReview": "2026-07-21",
       "lastReviewedDate": null,
       "lastRating": null
+    },
+    {
+      "id": "2026-07-21-blue-line-affected",
+      "type": "sentence",
+      "zhPrompt": "公告說藍線受到軌道工程影響。",
+      "answer": "The Blue Line is affected by track work.",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "提示：The Blue Line is ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-train-cancelled",
+      "type": "sentence",
+      "zhPrompt": "8:30 的火車今天取消了。",
+      "answer": "The 8:30 train is cancelled today.",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "提示：The 8:30 train is ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-replacement-bus-platform-4",
+      "type": "sentence",
+      "zhPrompt": "公告說接駁巴士從 4 號月台出發。",
+      "answer": "A replacement bus leaves from Platform 4.",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-arrive-early-ticket",
+      "type": "sentence",
+      "zhPrompt": "乘客應提早十分鐘到，並出示同一張票。",
+      "answer": "Passengers should arrive ten minutes early and show the same ticket.",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-bus-goes-central-station",
+      "type": "sentence",
+      "zhPrompt": "你要確認接駁巴士會不會到 Central Station。",
+      "answer": "Does the replacement bus go to Central Station?",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-bus-picks-up-stop-c",
+      "type": "context",
+      "zhPrompt": "工作人員說巴士在 C 站接乘客。",
+      "answer": "The bus picks up passengers at Stop C.",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，自己說出接載地點。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-didnt-catch-location",
+      "type": "sentence",
+      "zhPrompt": "你沒聽清楚地點，請對方再說一次並問現在該去哪裡。",
+      "answer": "Sorry, I didn't catch that. Where should I go now?",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-turn-left-after-stairs",
+      "type": "context",
+      "zhPrompt": "工作人員告訴你過樓梯後左轉。",
+      "answer": "Turn left after the stairs.",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，轉移今天的方向句型。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-notice-store-closed",
+      "type": "context",
+      "zhPrompt": "你在網頁看到商店今天關閉，要向朋友轉述。",
+      "answer": "The notice says the store is closed today.",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，轉述英文公告。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
+    },
+    {
+      "id": "2026-07-21-another-option-entrance",
+      "type": "context",
+      "zhPrompt": "這個入口關閉了，你要詢問另一個選項。",
+      "answer": "This entrance is closed. Is there another option?",
+      "sourceDate": "2026-07-21",
+      "sourceTitle": "Reading a Train Service Notice",
+      "abilities": [
+        "dailyResponse",
+        "onlineReading"
+      ],
+      "level": "lv3",
+      "hint": "只給中文情境，轉移替代方案句型。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-22",
+      "lastReviewedDate": null,
+      "lastRating": null
     }
   ]
 }
