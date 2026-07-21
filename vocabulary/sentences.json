@@ -1233,10 +1233,10 @@
       ],
       "level": "lv1",
       "hint": "提示：The Blue Line is ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-21-train-cancelled",
@@ -1251,10 +1251,10 @@
       ],
       "level": "lv1",
       "hint": "提示：The 8:30 train is ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-21-replacement-bus-platform-4",
@@ -1269,10 +1269,10 @@
       ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-21-arrive-early-ticket",
@@ -1287,10 +1287,10 @@
       ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-21-bus-goes-central-station",
@@ -1305,10 +1305,10 @@
       ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-21-bus-picks-up-stop-c",
@@ -1325,8 +1325,8 @@
       "hint": "只給中文情境，自己說出接載地點。",
       "reviewCount": 0,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-21-didnt-catch-location",
@@ -1341,10 +1341,10 @@
       ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-21-turn-left-after-stairs",
@@ -1359,10 +1359,10 @@
       ],
       "level": "lv3",
       "hint": "只給中文情境，轉移今天的方向句型。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-21-notice-store-closed",
@@ -1377,10 +1377,10 @@
       ],
       "level": "lv3",
       "hint": "只給中文情境，轉述英文公告。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-21-another-option-entrance",
@@ -1395,10 +1395,10 @@
       ],
       "level": "lv3",
       "hint": "只給中文情境，轉移替代方案句型。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-22",
-      "lastReviewedDate": null,
-      "lastRating": null
+      "lastReviewedDate": "2026-07-21",
+      "lastRating": "remembered"
     }
   ]
 }
