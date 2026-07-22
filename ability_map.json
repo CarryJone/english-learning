@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-21",
+  "updatedAt": "2026-07-22",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,25 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-22",
+      "day": 81,
+      "title": "Checking Hotel Breakfast and Luggage",
+      "url": "daily/2026-07-22/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read hotel guest information and ask about luggage storage after checkout.",
+        "Input: hotel information page and reception dialogue.",
+        "Find breakfast time, Floor 2, the 11:00 checkout time, and luggage storage at reception.",
+        "Can I leave my luggage here after checkout? / Did you say five or six? / I want to make sure breakfast is included."
+      ]
+    },
     {
       "date": "2026-07-21",
       "day": 80,

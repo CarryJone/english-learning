@@ -5,6 +5,24 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-07-22 — Day 81 正式教材產出
+
+- 先同步遠端兩筆 2026-07-21 SRS 更新，再依最新 `vocabulary/learning.json` 產生今日複習內容。
+- 新增 `daily/2026-07-22/`，主題為 `Checking Hotel Breakfast and Luggage`；今日新字為 `included`、`reception`、`store`。
+- 開始語塊深化試行第 1/7 篇：`breakfast is included`、`Can I leave my luggage here?`、`I want to make sure` 貫穿 Article、Key Phrases、Role-play 與 Context Recall，並加入跨情境提取。
+- 教材包含 19 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge、8 回合 Role-play、`article.mp3` 與 `s01.mp3` 到 `s14.mp3`。
+- 同步更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：`validate_daily.py` 通過 79 checks、0 warnings、0 errors；JSON、JavaScript、`git diff --check` 及本機 HTTP 頁面 / 音檔 200 皆通過。
+
+---
+## 2026-07-21 — 詞彙深度與語塊訓練規格
+
+- 依使用者確認，將詞彙學習由孤立字義深化為自然搭配、可重用語塊、Role-play 產出與 Context Recall 跨情境提取。
+- 更新 `AGENTS.md` 與 `.ai/daily-english-learning/SKILL.md`：每篇選 2–3 個目標語塊，區分主動產出與辨識理解，並保留既有 Active Recall、Speaking Bridge 與句子 SRS 邊界。
+- 更新 `.ai/DECISIONS.md` 與 `.ai/PROJECT_STATE.md`，記錄 Day 81 起連續 7 篇試行方式、人工驗收項目與後續評估依據。
+- 本次只調整規格與接手文件，未修改每日頁面、資料 schema、SRS runtime 或驗證器。
+
+---
 ## 2026-07-16 — Day 78 任務型教材正式產出
 
 - 先同步遠端最新 SRS；同步後今日共有 11 個到期複習字。
@@ -274,36 +292,3 @@
 - 新增單字：`listed`、`nearby`、`block`；文章融入複習字：`bottom`、`printed`、`warning`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s17.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、17 個單句音檔存在、Review Quiz 3 題、首頁條目存在、本機 HTTP 200。
-
----
-## 2026-06-16 — Day 59 連載小說模式啟動
-
-- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，確保 review 區塊使用最新 SRS。
-- 建立 `.ai/serial-story/` 文件：`SERIES_BIBLE.md`、`SEASON_1_OUTLINE.md`、`STYLE_GUIDE.md`、`CONTINUITY_LOG.md`。
-- 更新 `AGENTS.md`、`.ai/daily-english-learning/SKILL.md`、`.ai/DECISIONS.md`，將每日文章主體改為連載小說模式，下方練習與 SRS 複習維持原樣。
-- 新增 `daily/2026-06-16/`，標題為 `The Blue Receipt · Episode 1`。
-- 新增單字：`bottom`、`printed`、`warning`；文章融入複習字：`window`、`Wi-Fi code`、`outlet`、`refill`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、18 個單句音檔存在、Review Quiz 3 題、首頁條目存在、本機 HTTP 200。
-
----
-## 2026-06-15 — Day 58 今日英文練習產出
-
-- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，確保 review 區塊使用最新 SRS。
-- 依 `profile.json.lastTopic = travel` 產出 `daily` 主題，新增 `daily/2026-06-15/`，標題為 `Reading a Cafe Wi-Fi Sign`。
-- 新增單字：`Wi-Fi code`、`outlet`、`refill`；文章融入複習字：`busy`、`message`、`card`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
-- 驗證：句子編號連續、18 個單句音檔存在、Review Quiz 24 題、首頁條目存在、本機 HTTP 200。
-
----
-## 2026-06-12 — Day 57 今日英文練習產出
-
-- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，避免用過期 SRS 生成 review。
-- 依 `profile.json.lastTopic = daily` 產出 `travel` 主題，新增 `daily/2026-06-12/`，標題為 `Reading a Passport Control Sign`。
-- 新增單字：`passport control`、`visa`、`stamp`；文章融入複習字：`hall`、`wrong`、`number`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s20.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
-- 驗證：句子編號連續、20 個單句音檔存在、Review Quiz 36 題、首頁條目存在、本機 HTTP 200。
-
-
----
----

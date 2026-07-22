@@ -67,8 +67,11 @@ mkdir -p ./daily/$TODAY
 - **四週模組順序**：M1 `Transport & Getting Around`；M2 `Hotels, Food & Shopping`；M3 `Problems & Repair`；M4 `Online Research & Instructions`。完成 M4 後回到 M1，但換新任務與更高一點的句型難度。
 - **雙目標對齊**：每篇至少包含 1 句旅行 / 外出可直接套用的英文，以及 1 個可在網頁、app、公告、地圖、菜單或搜尋結果中辨識的說法。
 - **資訊輸入**：每篇提供一份短英文素材，例如站牌、時刻表、菜單、訂房規則、搜尋結果、教學步驟、評論或公告；學習者要找出至少 2 個可驗收資訊。
+- **詞彙深度優先**：不要把所有單字等量處理。高頻、可立即套用的字以「能說、能寫」為目標；較低頻但任務必要的字先以「看得懂、認得出」為目標。
+- **目標語塊貫穿**：每天從 Key Phrases 選 2–3 個目標語塊，讓它們依序出現在 Article、Key Phrases、Role-play 與 Context Recall；至少 1 個支援旅行 / 外出開口，至少 1 個支援資訊判讀或搜尋。
 - **主動提取**：每篇至少 8 題 Context Recall，其中至少 4 題讓學習者從中文情境自行產出英文；至少 2 題是沒有提示的跨情境轉移。
 - **任務反應**：每篇必須有 Role-play，至少 4 個回合，包含一次資訊改變、聽不懂、需要澄清或需要替代方案的分支。
+- **SRS 邊界**：Active Recall Quiz 只處理到期舊單字，Speaking Bridge 只使用 2–7 天前單字；目前不新增獨立 Collocation SRS，語塊提取沿用 Role-play、Context Recall 與句子 SRS。
 - **難度控制**：保持 A2，句子短、字彙高頻、自然口語；寧可更簡單，也不要為了題材或單字變難。
 - **必要產物**：必須產出完整 HTML、`article.mp3`、`s01.mp3` 到 `sNN.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`。
 
@@ -104,7 +107,11 @@ mkdir -p ./daily/$TODAY
 - 優先選「今天或近期真的用得到」的高頻生活字，不要選故事專用、過度書面、偏冷門或只適用單一情境的字。
 - 單字應能直接支援任務，例如 `platform`、`available`、`change`、`receipt`、`nearby`、`follow`；若一個字只在故事中有用，應換成更高轉移性的字。
 - 旅行題材優先選交通、地點、時間、價格、票務、求助與問題處理字；網路題材優先選標題、步驟、限制、搜尋、結果與設定字。
-- 每個單字包含：詞性、中文意思、例句
+- 規劃時先判斷學習模式，但目前不新增 `learning.json` 欄位：
+  - **Productive / 主動使用**：高頻、能直接服務任務的字，後續要在片語、Role-play 或 Context Recall 中讓學習者產出。
+  - **Receptive / 辨識理解**：較低頻但看公告、規則或搜尋結果時必要的字，先要求從上下文辨識，不強迫當天自由造句。
+- 每個單字包含：詞性、中文意思、例句；例句必須示範一個自然搭配或短句框架，不可只把單字孤立塞進句子。
+- 字源、隱喻、語義網絡與語氣差異是選用提示，不是每日必備區塊；只有能降低混淆、幫助轉移且已確認正確時才加入 Learning Tips 或片語說明，一天最多 1 點。
 
 #### 3c. 重要片語（5–8 個）
 從文章中挑出重要的**詞塊/片語**，分成以下三類（每類至少 1 個）：
@@ -119,11 +126,19 @@ mkdir -p ./daily/$TODAY
   - 資訊任務優先選搜尋、查看結果、比較選項、遵循步驟、確認限制的說法
   - 每天至少 2 個片語要明顯支援「旅行可說」或「查資料可懂 / 可搜」，避免全部只是一般敘事片語
 
-每個片語包含：完整片語、**類型**（Phrasal Verb / Collocation / Fixed Expression）、中文意思、在文章中的用法說明
+每個片語包含：完整片語、**類型**（Phrasal Verb / Collocation / Fixed Expression）、中文意思、在文章中的用法說明。若有容易受中文直譯影響的錯誤，可補一個短對比，例如 `hang up the phone`，不是 `cut the phone`；每篇最多 1 個，避免變成糾錯清單。
+
+#### 3c.1 今日目標語塊（從 Key Phrases 選 2–3 個）
+- 至少 1 個是學習者可直接說出口的 survival / repair / confirmation chunk；至少 1 個是在公告、網頁、app、菜單、地圖或搜尋結果中可辨識的 information chunk。兩者可以是同一個語塊，但每天仍需選滿 2–3 個。
+- 每個目標語塊都必須出現在 Article 與 Key Phrases，並在 Role-play 的 `You` 回合讓學習者說出，也在 Context Recall 至少出現 1 題。
+- 至少 1 個目標語塊要在 Context Recall 換到不同人物、地點或目的，測試跨情境轉移，而不是逐字重抄文章。
+- 可依句子自然變化時態、單複數或代名詞；核心搭配不可被拆散或換成不自然說法。
+- 目標語塊是當日內容設計標記，目前不新增獨立 UI、JSON schema 或片語 SRS。
+- AI 可用來產生 A2 例句與換情境草稿；不確定的搭配、介系詞或語氣必須再用可靠學習字典或語料例句確認，不能只因 AI 生成就採用。
 
 #### 3d. 測驗（3 題）
 - Q1：英文輸入理解題（四選一），測時間、地點、價格、限制或下一步
-- Q2：單字或片語意思題（四選一）
+- Q2：預設為自然搭配或情境用法題（四選一），讓學習者選出適合的目標語塊；只有當天有重要但只需辨識的 receptive word 時，才改為單字 / 片語意思題。不要考脫離任務的文法術語。
 - Q3：任務反應題（四選一），測旅行時怎麼說、如何澄清、看到英文資訊時下一步怎麼做
 - 含正確答案標記
 
@@ -141,6 +156,7 @@ mkdir -p ./daily/$TODAY
 - 每題 4 個選項：1 個正確答案 + 3 個干擾選項（從 learning.json 其他單字中隨機選 3 個，盡量選詞性相近的）
 - 選項**隨機排列**（正確答案不要固定在同一個位置）
 - 若今天沒有到期複習單字，顯示提示訊息（無需題目）
+- 不可放入今天的新單字，也不可改成只測今日目標語塊；若 learning.json 的例句本來含有自然搭配，挖空後保留其餘搭配線索即可。
 
 #### 3g. Learning Tips
 - 1–2 句針對今日主題的繁體中文學習建議
@@ -148,6 +164,7 @@ mkdir -p ./daily/$TODAY
   - 今天哪一句最值得直接背起來拿去用
   - 今天哪個字 / 片語在看英文資訊時特別有用
 - 今天的任務成功條件是什麼，以及遇到資訊改變時應先問哪一句
+- 明確指出今天 2–3 個目標語塊中，哪一句要主動說出、哪一個主要用於看懂資訊；不額外堆疊大量字源或抽象語言學說明。
 
 #### 3h. 橋接訓練（Speaking Bridge）
 - 從 learning.json 中篩選 `dateAdded` 在 **2–7 天前**的單字（最多取 4 個，優先選 reviewCount 較低的，即較不熟悉的）
@@ -158,6 +175,7 @@ mkdir -p ./daily/$TODAY
   - **Lv.2 中翻英（新情境）**：設計一個**與 exampleSentence 不同**的中文情境句，讓學習者用同一個單字自由生產英文，搭配參考答案。目的是讓 Lv.2 對 Lv.1 的答案無提示效果
 - Lv.2 新情境若可選，優先偏向旅行口說、問路、購物、搭車、看資訊、確認流程，而不是再次落回房間整理 / 清潔
 - Speaking Bridge 的 Lv.2 不可只換名詞；必須改變人物、地點或目的，讓學習者真的重新組織句子
+- Lv.1 與 Lv.2 的完整答案都應讓目標單字位於自然搭配或可重用短句框架中，避免只測單字能否孤立填入。
 - 計算每個單字距今幾天（today − dateAdded），顯示在標題旁（例如「3 天前」）
 
 #### 3i. 情境提取（Context Recall）
@@ -170,6 +188,7 @@ mkdir -p ./daily/$TODAY
   - 今天 Role-play 的資訊改變、澄清或替代方案，至少 2 題。
   - 2–7 天前或 Review Words 中適合拿來生產句子的舊單字 / 片語，至少 2 題。
 - 題目不得全部依賴同一篇素材；至少 2 題要把今天的句型轉移到不同的旅行或網路情境。
+- 每個今日目標語塊至少安排 1 題中文情境到英文的提取；其中至少 1 個目標語塊要出現在跨情境轉移題。
 - 題型分三層：
   - **Lv.1 有提示**：中文情境 + 少量英文句型提示，例如 `Should I ... now?`
   - **Lv.2 無提示**：只給中文情境，學習者先自己說，再點參考答案。
@@ -656,7 +675,7 @@ mkdir -p ./daily/$TODAY
     <p class="context-subtitle">看中文情境，先自己說出英文，再點開參考答案。最後自評提取狀態，全部評完後可同步到句子 SRS。</p>
     <div class="context-list">
       <!--
-        每篇至少 6 題，建議 8–10 題。
+        每篇至少 8 題，建議 8–10 題。
         題目格式：
         <div class="context-item" data-sentence-id="YYYY-MM-DD-short-kebab-answer">
           <div class="context-top">
@@ -1143,13 +1162,15 @@ mkdir -p ./daily/$TODAY
 - `[MISSION_SUCCESS_CRITERIA]`：列出 2–3 個可驗收條件，例如「找出出發時間、確認月台、說出替代方案」。
 - `[MISSION_INPUT_TYPE]`：標示主要英文輸入，例如「車站公告 + 短對話」、「搜尋結果 + 教學步驟」或「菜單 + 點餐對話」。
 - `[VOCAB_DATA]`：填入今日新單字的 JS 物件，格式：`'word': { pos:'n.', zh:'中文', example:'例句' },`
+  - `example` 必須示範該字的自然搭配或可重用短句框架；不要只顯示孤立字義。
 - `[REVIEW_DATA]`：填入文章中融入的 2–3 個複習單字資料，從 learning.json 讀取對應欄位，格式同 VOCAB_DATA：`'word': { pos:'n.', zh:'中文', example:'例句' },`
 - `[PHRASE_DATA]`：填入所有片語的 JS 物件，格式：`'go through': { zh:'通過', note:'文章用法：go through security → 通過安檢', type:'Phrasal Verb' },`
   - `type` 只能是 `'Phrasal Verb'`、`'Collocation'`、`'Fixed Expression'` 三者之一
+  - 今日 2–3 個目標語塊的 `note` 要說明文章用法與可套用情境；若有經確認的直譯陷阱，可在其中 1 個補短對比。
 - 文章中的 `vocab-word` span 的 `data-word` 要與 VOCAB 的 key 完全一致（小寫）
 - 文章中的 `review-word` span 的 `data-word` 要與 REVIEW 的 key 完全一致（小寫）
 - 文章中的 `phrase-chunk` span 的 `data-phrase` 要與 PHRASES 的 key 完全一致
-- `[ROLEPLAY_HTML]`：填入至少 4 個回合的 Role-play，每回合使用 `<div class="roleplay-turn"><div class="roleplay-speaker">Staff / You</div><div class="roleplay-line">英文句子</div></div>`；第三或第四回合必須加入資訊改變、聽不懂、澄清或替代方案分支，並讓 `You` 至少有 2 次需要自己產出英文。
+- `[ROLEPLAY_HTML]`：填入至少 4 個回合的 Role-play，每回合使用 `<div class="roleplay-turn"><div class="roleplay-speaker">Staff / You</div><div class="roleplay-line">英文句子</div></div>`；第三或第四回合必須加入資訊改變、聽不懂、澄清或替代方案分支，並讓 `You` 至少有 2 次需要自己產出英文。`You` 的回合合計必須自然使用今天的 2–3 個目標語塊，不可只讓 Staff 說出。
 - `[REVIEW_QUIZ_HTML]`：針對 3e 找到的所有到期複習單字（排除 reviewCount >= 7），每個出一題。每題 4 個選項（1 正確 + 3 干擾），隨機排序。格式：
   ```html
   <div class="rq-item" data-word="exhausted" data-correct="exhausted">
@@ -1319,6 +1340,14 @@ python3 /tmp/tts_today.py
 新項目要插在舊項目**上方**（最新的在最頂端）。
 
 #### 7b. 產出後驗證：
+
+先做人工內容驗收；下列項目目前不一定由 `validate_daily.py` 自動判定：
+- 已選 2–3 個今日目標語塊，且至少 1 個支援開口、至少 1 個支援資訊判讀 / 搜尋。
+- 每個目標語塊都已出現在 Article、Key Phrases、Role-play 的 `You` 回合與 Context Recall。
+- 至少 1 個目標語塊已換到不同人物、地點或目的做跨情境提取。
+- 三個 New Words 的例句都有自然搭配或短句框架；Q2 預設測自然用法，不考無關文法術語。
+- Active Recall Quiz 仍只包含所有到期舊單字，Speaking Bridge 仍只使用 2–7 天前單字，沒有另建 Collocation SRS。
+- AI 生成但拿不準的搭配、介系詞或語氣已用可靠字典或語料例句確認。
 
 在 commit / push 前，必須先執行每日教材驗證腳本：
 

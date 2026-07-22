@@ -2549,6 +2549,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-22",
       "lastReviewedDate": null
+    },
+    {
+      "word": "included",
+      "partOfSpeech": "adj./v.",
+      "chineseMeaning": "包含在內的",
+      "exampleSentence": "Breakfast is included with every stay.",
+      "dateAdded": "2026-07-22",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "reception",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "接待櫃檯",
+      "exampleSentence": "Please leave your luggage at reception.",
+      "dateAdded": "2026-07-22",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "store",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "存放；寄放",
+      "exampleSentence": "Can you store my luggage until six?",
+      "dateAdded": "2026-07-22",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
     }
   ]
 }

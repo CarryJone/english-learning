@@ -7,6 +7,11 @@
 
 ---
 
+## 2026-07-21
+- 正式教材的詞彙策略由「單字與中文意思」深化為「單字、自然搭配、可重用語塊與情境提取」；高頻且能直接支援任務的字以主動產出為目標，較低頻但公告 / 網頁理解必要的字先以辨識理解為目標。
+- 每篇從 Key Phrases 選 2–3 個今日目標語塊，至少 1 個支援旅行 / 外出開口、至少 1 個支援資訊判讀或搜尋，並貫穿 Article、Key Phrases、Role-play 的學習者回合與 Context Recall；至少 1 個要接受跨情境轉移。
+- 保留每天 3 個 New Words、既有 Active Recall Quiz、Speaking Bridge 與句子 SRS；暫不新增 Collocation SRS、額外 JSON schema 或獨立大型 UI。自 Day 81 起先連續試行 7 篇，再依回饋與提取表現判斷是否需要擴充。
+
 ## 2026-07-15
 - `The Blue Receipt` 第一季在 Episode 18 封存；一般每日英文教材不再以連載小說為主體，也不自動啟動第二季。
 - 正式每日教材切換為 `mission-based` 任務型情境英文，核心目標是旅行開口與英文網路資訊判讀；每篇必須有 Mission、英文資訊輸入、Role-play、Context Recall 與 SRS。

@@ -1399,6 +1399,175 @@
       "nextReview": "2026-07-22",
       "lastReviewedDate": "2026-07-21",
       "lastRating": "remembered"
+    },
+    {
+      "id": "2026-07-22-breakfast-included",
+      "type": "sentence",
+      "zhPrompt": "旅館資訊寫著早餐包含在住宿內。",
+      "answer": "Breakfast is included with the stay.",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "提示：Breakfast is ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-leave-luggage-after-checkout",
+      "type": "sentence",
+      "zhPrompt": "你要問退房後能不能把行李寄放在這裡。",
+      "answer": "Can I leave my luggage here after checkout?",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-breakfast-seven-to-ten",
+      "type": "sentence",
+      "zhPrompt": "早餐供應時間是七點到十點。",
+      "answer": "Breakfast is served from 7:00 to 10:00.",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "onlineReading"
+      ],
+      "level": "lv1",
+      "hint": "提示：Breakfast is served from ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-breakfast-floor-two",
+      "type": "sentence",
+      "zhPrompt": "早餐室在二樓。",
+      "answer": "The breakfast room is on Floor 2.",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-storage-at-reception",
+      "type": "sentence",
+      "zhPrompt": "行李寄放服務在接待櫃檯。",
+      "answer": "Luggage storage is available at reception.",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-did-you-say-five-six",
+      "type": "sentence",
+      "zhPrompt": "你沒聽清楚領取時間是五點還是六點。",
+      "answer": "Sorry, did you say five or six?",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-confirm-breakfast-storage-five",
+      "type": "context",
+      "zhPrompt": "最後確認：早餐有包含，行李可以寄放到五點。",
+      "answer": "I want to make sure: breakfast is included, and I can leave my luggage here until five.",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "用 I want to make sure 開頭。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-upstairs-straight-ahead",
+      "type": "context",
+      "zhPrompt": "早餐室在樓上。上樓後直走。",
+      "answer": "The breakfast room is upstairs. Go straight after the stairs.",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "使用 2 天前的 upstairs 和 straight。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-museum-leave-luggage",
+      "type": "context",
+      "zhPrompt": "在博物館參觀前，你要問能不能把行李寄放在這裡。",
+      "answer": "Can I leave my luggage here during the tour?",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "把今天的寄放句型移到博物館。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-22-direct-train-confirm",
+      "type": "context",
+      "zhPrompt": "在車站，你想確認這班火車是直達車。",
+      "answer": "I want to make sure this train is direct.",
+      "sourceDate": "2026-07-22",
+      "sourceTitle": "Checking Hotel Breakfast and Luggage",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "把 I want to make sure 移到交通情境。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-23",
+      "lastReviewedDate": null
     }
   ]
 }

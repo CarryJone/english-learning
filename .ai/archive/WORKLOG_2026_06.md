@@ -71,3 +71,32 @@
 - 新增單字：`terminal`、`zone`、`direction`；文章融入複習字：`shuttle`、`staff`、`ready`。
 - 更新首頁清單、`profile.json`、`vocabulary/learning.json` 與 `.ai/PROJECT_STATE.md`。
 - 驗證：HTML 區塊完整、句子編號連續、18 個單句音檔存在、本機 HTTP 200。
+
+---
+## 2026-06-12 — Day 57 今日英文練習產出
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，避免用過期 SRS 生成 review。
+- 依 `profile.json.lastTopic = daily` 產出 `travel` 主題，新增 `daily/2026-06-12/`，標題為 `Reading a Passport Control Sign`。
+- 新增單字：`passport control`、`visa`、`stamp`；文章融入複習字：`hall`、`wrong`、`number`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s20.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
+- 驗證：句子編號連續、20 個單句音檔存在、Review Quiz 36 題、首頁條目存在、本機 HTTP 200。
+
+---
+## 2026-06-15 — Day 58 今日英文練習產出
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，確保 review 區塊使用最新 SRS。
+- 依 `profile.json.lastTopic = travel` 產出 `daily` 主題，新增 `daily/2026-06-15/`，標題為 `Reading a Cafe Wi-Fi Sign`。
+- 新增單字：`Wi-Fi code`、`outlet`、`refill`；文章融入複習字：`busy`、`message`、`card`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`。
+- 驗證：句子編號連續、18 個單句音檔存在、Review Quiz 24 題、首頁條目存在、本機 HTTP 200。
+
+---
+## 2026-06-16 — Day 59 連載小說模式啟動
+
+- 先 `git fetch --all --prune` / `git pull --ff-only` 同步遠端 `vocabulary/learning.json`，確保 review 區塊使用最新 SRS。
+- 建立 `.ai/serial-story/` 文件：`SERIES_BIBLE.md`、`SEASON_1_OUTLINE.md`、`STYLE_GUIDE.md`、`CONTINUITY_LOG.md`。
+- 更新 `AGENTS.md`、`.ai/daily-english-learning/SKILL.md`、`.ai/DECISIONS.md`，將每日文章主體改為連載小說模式，下方練習與 SRS 複習維持原樣。
+- 新增 `daily/2026-06-16/`，標題為 `The Blue Receipt · Episode 1`。
+- 新增單字：`bottom`、`printed`、`warning`；文章融入複習字：`window`、`Wi-Fi code`、`outlet`、`refill`。
+- 補齊 `article.mp3` 與 `s01.mp3` 到 `s18.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：句子編號連續、18 個單句音檔存在、Review Quiz 3 題、首頁條目存在、本機 HTTP 200。
