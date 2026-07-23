@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22",
+  "updatedAt": "2026-07-23",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,25 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-23",
+      "day": 82,
+      "title": "Reading a Café Menu and Ordering Lunch",
+      "url": "daily/2026-07-23/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read an online café menu and complete a lunch order.",
+        "Input: café menu and counter dialogue.",
+        "Find the NT$180 price, service time until 2:00, included drink, and 12:20 pickup time.",
+        "I need to check the menu first. / Could I get the lunch set, please? / Sorry, did you say 12:20 or 12:30?"
+      ]
+    },
     {
       "date": "2026-07-22",
       "day": 81,

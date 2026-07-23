@@ -2579,6 +2579,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-23",
       "lastReviewedDate": null
+    },
+    {
+      "word": "topping",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "配料；加料",
+      "exampleSentence": "You can choose one topping.",
+      "dateAdded": "2026-07-23",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "choice",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "選擇",
+      "exampleSentence": "The soup is another choice for lunch.",
+      "dateAdded": "2026-07-23",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "size",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "尺寸；份量",
+      "exampleSentence": "Which size would you like?",
+      "dateAdded": "2026-07-23",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -1568,6 +1568,175 @@
       "reviewCount": 0,
       "nextReview": "2026-07-23",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-check-menu-phone",
+      "type": "sentence",
+      "zhPrompt": "你在手機上先查看咖啡店菜單。",
+      "answer": "I need to check the menu first.",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "提示：I need to ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-get-lunch-set",
+      "type": "sentence",
+      "zhPrompt": "你要向咖啡店點一份午餐套餐。",
+      "answer": "Could I get the lunch set, please?",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "提示：Could I get ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-included-with-set",
+      "type": "sentence",
+      "zhPrompt": "你想確認飲料是否包含在套餐裡。",
+      "answer": "Is a drink included with the set?",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-lunch-set-price",
+      "type": "sentence",
+      "zhPrompt": "你要告訴朋友午餐套餐的價格。",
+      "answer": "The lunch set costs NT$180.",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-one-topping",
+      "type": "sentence",
+      "zhPrompt": "你要說套餐可以選一種配料。",
+      "answer": "The set includes one topping.",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-pickup-time",
+      "type": "sentence",
+      "zhPrompt": "你要告訴朋友取餐時間是 12:20。",
+      "answer": "Pickup is at 12:20.",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-repeat-size",
+      "type": "sentence",
+      "zhPrompt": "你沒聽清楚對方說的尺寸，請他再說一次。",
+      "answer": "Sorry, I didn't catch that. Could you say the size again?",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，不看文章。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-water-airport",
+      "type": "context",
+      "zhPrompt": "在機場咖啡店，你想要一杯水。",
+      "answer": "Could I get a glass of water, please?",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "把 Could I get ...? 移到新的地點。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-another-option",
+      "type": "context",
+      "zhPrompt": "如果午餐套餐賣完了，你要問另一個選項。",
+      "answer": "If the lunch set is sold out, what is another option?",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "使用今天複習的 option。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-23-notice-included",
+      "type": "context",
+      "zhPrompt": "你在網頁上注意到飲料包含在套餐裡，要轉述給朋友。",
+      "answer": "I notice that a drink is included with the set. / The menu says a drink is included with the set.",
+      "sourceDate": "2026-07-23",
+      "sourceTitle": "Reading a Café Menu and Ordering Lunch",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "使用 notice 和 included with the set；答案可有不同說法。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-24",
+      "lastReviewedDate": null
     }
   ]
 }
