@@ -1582,9 +1582,10 @@
       ],
       "level": "lv1",
       "hint": "提示：I need to ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-23-get-lunch-set",
@@ -1599,9 +1600,10 @@
       ],
       "level": "lv1",
       "hint": "提示：Could I get ...?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-23-included-with-set",
@@ -1616,9 +1618,10 @@
       ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-23-lunch-set-price",
@@ -1632,9 +1635,10 @@
       ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-23-one-topping",
@@ -1649,9 +1653,10 @@
       ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-23-pickup-time",
@@ -1666,9 +1671,10 @@
       ],
       "level": "lv2",
       "hint": "先自己說，不看文章。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-23-repeat-size",
@@ -1685,7 +1691,8 @@
       "hint": "先自己說，不看文章。",
       "reviewCount": 0,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-07-23-water-airport",
@@ -1700,9 +1707,10 @@
       ],
       "level": "lv3",
       "hint": "把 Could I get ...? 移到新的地點。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-07-23-another-option",
@@ -1719,7 +1727,8 @@
       "hint": "使用今天複習的 option。",
       "reviewCount": 0,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "forgot"
     },
     {
       "id": "2026-07-23-notice-included",
@@ -1734,9 +1743,10 @@
       ],
       "level": "lv3",
       "hint": "使用 notice 和 included with the set；答案可有不同說法。",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-07-24",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-07-23",
+      "lastRating": "remembered"
     }
   ]
 }
