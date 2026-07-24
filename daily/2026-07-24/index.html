@@ -10,6 +10,7 @@
       --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
       --green: #22c55e; --red: #ef4444; --tag-bg: #eef2ff;
       --review-bg: #f3e8ff; --highlight: #fffbeb;
+      --phrase-bg: #f0fdf4; --phrase-border: #22c55e;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Georgia, serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
@@ -124,21 +125,111 @@
     .pop-close { position: absolute; right: .5rem; top: .45rem; border: none; background: transparent; color: var(--muted); cursor: pointer; }
     .pop-zh-btn { margin-top: .6rem; border: 1px solid var(--border); border-radius: 7px; background: #fff; color: var(--accent); padding: .35rem .55rem; cursor: pointer; font-size: .78rem; font-weight: 800; } .pop-zh { margin-top: .45rem; color: #166534; font-weight: 800; }
     @media (max-width: 520px) { .card, .player-card { padding: 1.3rem 1.15rem; } h1 { font-size: 1.3rem; } .quiz-options, .rq-opts { grid-template-columns: 1fr; } .roleplay-turn { grid-template-columns: 4.5rem 1fr; } }
+
+    /* Keep the daily lesson surface aligned with the previous day's shared layout. */
+    .header, .card { background: var(--card); border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .subtitle { margin-top: .4rem; color: var(--muted); font: .9rem sans-serif; }
+    .player-card { background: linear-gradient(135deg, #4f7cff, #7c5cfc); color: #fff; border-radius: 20px; padding: 1.6rem 2rem; box-shadow: 0 4px 20px rgba(79,124,255,.3); }
+    .player-label { color: #fff; font-size: .75rem; font-weight: 700; letter-spacing: .1em; opacity: .75; margin-bottom: .6rem; }
+    .player-title { font-size: 1.05rem; font-weight: 600; margin: 0 0 1.2rem; }
+    .player-controls { display: block; margin-top: 0; }
+    audio { width: 100%; height: 40px; }
+    .loop-btn { margin-top: .7rem; padding: .4rem .9rem; border: 1.5px solid rgba(255,255,255,.45); background: rgba(255,255,255,.15); color: #fff; font: 700 .78rem sans-serif; }
+    .loop-btn.active { background: #fff; color: var(--accent); }
+    .mission-box { display: grid; gap: .6rem; padding: 1rem 1.1rem; border-left: 4px solid var(--accent2); border-radius: 0 12px 12px 0; background: var(--highlight); color: #92400e; line-height: 1.6; font-size: .9rem; }
+    .mission-title { color: #78350f; font-size: 1.05rem; font-weight: 800; }
+    .legend { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; color: var(--muted); font: .8rem sans-serif; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 2px; }
+    .legend-dot.vocab { background: #fef3c7; border-bottom: 2px solid var(--accent2); }
+    .legend-dot.review { background: var(--review-bg); border-bottom: 2px solid #a855f7; }
+    .legend-dot.phrase { background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+    .sentence-mode { display: flex; align-items: center; gap: .4rem; color: var(--accent); font-weight: 700; }
+    .sentence-mode button { border: 0; border-radius: 99px; padding: .25rem .65rem; color: var(--accent); background: var(--tag-bg); cursor: pointer; font-weight: 700; }
+    .sentence-mode button.active { background: var(--accent); color: #fff; }
+    .article-body { font-size: 1.05rem; line-height: 1.9; }
+    .article-body p { margin-bottom: 1.1rem; }
+    .article-body p:last-child { margin-bottom: 0; }
+    .sent-btn { width: 19px; height: 19px; margin-right: 3px; border: 1.5px solid #c7d2fe; border-radius: 50%; background: none; color: var(--accent); cursor: pointer; font-size: .58rem; line-height: normal; vertical-align: middle; padding: 0; }
+    .sent-btn.playing { background: var(--accent); color: #fff; }
+    .vocab-word, .review-word, .phrase-chunk { padding: 0 2px; border-radius: 2px; font-weight: 700; cursor: pointer; }
+    .vocab-word { color: inherit; background: var(--highlight); border-bottom: 2px solid var(--accent2); }
+    .review-word { color: inherit; background: var(--review-bg); border-bottom: 2px solid #a855f7; }
+    .phrase-chunk { color: inherit; background: var(--phrase-bg); border-bottom: 2px solid var(--phrase-border); }
+    table.vocab-table, table.review-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: .88rem; }
+    table.vocab-table th, table.review-table th { text-align: left; padding: .6rem .8rem; background: var(--tag-bg); color: var(--accent); font-size: .75rem; text-transform: uppercase; }
+    table.vocab-table td, table.review-table td { padding: .7rem .8rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+    table.vocab-table tr:last-child td, table.review-table tr:last-child td { border-bottom: 0; }
+    .pos-badge, .review-tag { display: inline-block; padding: .15rem .5rem; border-radius: 5px; font: 700 .72rem sans-serif; }
+    .pos-badge { background: #f3f4f6; color: var(--muted); }
+    .zh-meaning { font-weight: 700; }
+    .example-sent, .ph-note, .rq-hint { color: var(--muted); font-size: .83rem; font-style: italic; margin-top: .15rem; }
+    .phrase-list { display: grid; gap: .75rem; font-family: Georgia, serif; }
+    .phrase-item { padding: .8rem 1rem; background: var(--phrase-bg); border-left: 3px solid var(--phrase-border); border-radius: 0 10px 10px 0; font-family: sans-serif; }
+    .ph-text { font-family: sans-serif; font-size: 1rem; font-weight: 800; margin: 0; }
+    .ph-type { display: inline-block; margin-left: .35rem; background: transparent; color: #166534; font: 700 .7rem sans-serif; padding: 0; border-radius: 0; }
+    .ph-zh { color: #166534; font-size: .88rem; margin-top: .2rem; }
+    .quiz-list { display: grid; gap: 1rem; font-family: Georgia, serif; }
+    .quiz-question { font-family: Georgia, serif; font-weight: 700; line-height: 1.5; margin-bottom: .65rem; }
+    .quiz-options { display: grid; grid-template-columns: 1fr; gap: .45rem; margin-top: 0; }
+    .quiz-option { display: flex; gap: .6rem; align-items: center; padding: .65rem .8rem; border: 1.5px solid var(--border); border-radius: 10px; background: #fff; cursor: pointer; text-align: left; font: .9rem sans-serif; }
+    .answers-btn { margin-top: .4rem; padding: .65rem 1.1rem; border: 0; background: var(--accent); color: #fff; font: .88rem sans-serif; }
+    .answers-reveal { display: none; margin-top: .8rem; padding: .8rem 1rem; border-radius: 10px; background: #f0fdf4; color: #166534; font: 700 .9rem sans-serif; }
+    .rq-list { display: block; font-family: sans-serif; }
+    .rq-item { margin-bottom: 1.35rem; padding: 0 0 1.35rem; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; }
+    .rq-item:last-child { margin-bottom: 0; border-bottom: 0; }
+    .rq-zh { font-weight: 700; line-height: 1.5; margin-bottom: .65rem; }
+    .rq-hint { margin-top: .15rem; }
+    .rq-opts { gap: .45rem; margin-top: 0; }
+    .rq-opt { border-radius: 0; padding: .6rem .8rem; font: .88rem Georgia, serif; }
+    .bridge-list { display: block; }
+    .bridge-item { margin-bottom: 1rem; padding: 1.1rem 1.2rem; }
+    .bridge-item:last-child { margin-bottom: 0; }
+    .bridge-level { margin-top: 0; padding-top: 0; padding-bottom: .8rem; margin-bottom: .8rem; border-top: 0; border-bottom: 1px dashed var(--border); font-family: Georgia, serif; }
+    .bridge-level:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+    .bridge-level-label { font-family: sans-serif; font-size: .7rem; margin-bottom: .4rem; }
+    .bridge-zh-prompt { padding: .4rem .7rem; margin-bottom: .45rem; border-radius: 8px; background: var(--phrase-bg); color: #166534; font: .9rem Georgia, serif; line-height: 1.55; }
+    .bridge-scramble { padding: .45rem .7rem; margin-bottom: .45rem; border-radius: 8px; background: #f3f4f6; color: var(--muted); font: .86rem Georgia, serif; line-height: 1.8; }
+    .bridge-reveal-btn { margin-top: 0; padding: .4rem .85rem; border: 1.5px solid var(--accent); border-radius: 10px; background: #fff; color: var(--accent); font: .82rem sans-serif; }
+    .roleplay-turn { grid-template-columns: 5rem 1fr; padding: .75rem .85rem; border-radius: 12px; }
+    .roleplay-speaker.you { color: #b45309; }
+    .roleplay-line { font-size: .92rem; line-height: 1.55; }
+    .roleplay-branch { grid-column: 2; margin-top: .25rem; padding: .5rem .7rem; border-radius: 8px; background: #f8fafc; color: var(--muted); font-size: .82rem; line-height: 1.5; }
+    .context-list { gap: .8rem; }
+    .context-top { margin-bottom: .45rem; }
+    .context-prompt { font-size: .94rem; line-height: 1.5; }
+    .context-hint { margin: 0 0 .5rem; }
+    .context-answer { margin-top: .5rem; border-radius: 0 9px 9px 0; }
+    .context-rate-btn { padding: .4rem .6rem; font-weight: 700; }
+    .context-sync { padding: 1rem; border: 0; border-radius: 14px; }
+    .context-progress { font-size: .82rem; font-weight: 700; margin-bottom: 1rem; }
+    .context-sync-btn { padding: .75rem; font: .9rem sans-serif; font-weight: 400; }
+    .feedback-form { font-size: .86rem; }
+    .feedback-label { line-height: normal; }
+    .feedback-choice-row, .feedback-check-row { gap: .45rem; }
+    .feedback-choice { color: #000; padding: .45rem .75rem; }
+    .feedback-check { background: transparent; font-weight: 400; gap: .3rem; padding: .4rem .6rem; }
+    .feedback-save, .feedback-clear { padding: .7rem .9rem; font: .85rem sans-serif; font-weight: 400; }
+    #rq-result, .context-result { display: none; }
+    #rq-result.success, .context-result.success { display: block; }
+    #rq-result.partial, .context-result.warn { display: block; }
+    .tips-box { padding: 1rem 1.2rem; border-left: 4px solid var(--accent2); border-radius: 0 12px 12px 0; background: var(--highlight); color: #78350f; font: .92rem sans-serif; line-height: 1.7; }
+    .tips-box ul { padding-left: 1.2rem; }
+    @media (max-width: 500px) { .card, .player-card { padding: 1.3rem 1.15rem; } h1 { font-size: 1.3rem; } .rq-opts { grid-template-columns: 1fr; } .roleplay-turn { grid-template-columns: 1fr; gap: .2rem; } .context-top { display: block; } .context-level { display: inline-block; margin-top: .35rem; } }
   </style>
 </head>
 <body>
 <div class="container">
   <header class="header">
-    <div class="date-badge">July 24, 2026 · Day 83</div>
+    <div class="date-badge">July 24, 2026 · Day 83 · M2</div>
     <h1>Checking a Store <span>Return Policy</span></h1>
-    <p class="subtitle">A2 → B1 · Daily English Reading</p>
+    <p class="subtitle">A2 → B1 · Real-life English Mission</p>
   </header>
 
   <div class="player-card">
     <div class="player-label">🎧 Listen to the Article</div>
     <div class="player-title">Checking a Store Return Policy</div>
     <audio id="article-audio" controls><source src="article.mp3" type="audio/mpeg" /></audio>
-    <div class="player-controls"><button class="loop-btn" type="button" onclick="toggleLoop(this)">🔁 循環播放</button></div>
+    <button class="loop-btn" type="button" onclick="toggleLoop(this)">🔁 循環播放</button>
   </div>
 
   <div id="word-popup"><button class="pop-close" type="button" onclick="closePopup()">✕</button><div id="pop-content"></div></div>
@@ -173,6 +264,7 @@
       <span class="legend-item"><span class="legend-dot review"></span>複習單字</span>
       <span class="legend-item"><span class="legend-dot phrase"></span>重要片語</span>
       <span class="legend-item">🔊 點擊播放單句</span>
+      <span class="sentence-mode">單句：<button type="button" class="sentence-mode-btn active" data-mode="once" onclick="setSentenceMode('once')">單次</button><button type="button" class="sentence-mode-btn" data-mode="loop" onclick="setSentenceMode('loop')">循環</button></span>
     </div>
     <div class="article-body" id="article-body">
       <p>
@@ -337,14 +429,17 @@
 <script>
   const sentAudio = new Audio();
   let activeSentBtn = null;
+  let sentencePlaybackMode = 'once';
   function getAssetUrl(name) { return name; }
   function resetSentBtn(btn) { if (btn) { btn.classList.remove('playing'); btn.textContent = '🔊'; } }
-  function stopSentencePlayback() { sentAudio.pause(); sentAudio.currentTime = 0; resetSentBtn(activeSentBtn); activeSentBtn = null; }
+  function stopSentencePlayback() { sentAudio.pause(); sentAudio.currentTime = 0; sentAudio.loop = false; resetSentBtn(activeSentBtn); activeSentBtn = null; }
+  function syncSentenceModeButtons() { document.querySelectorAll('.sentence-mode-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.mode === sentencePlaybackMode)); }
+  function setSentenceMode(mode) { sentencePlaybackMode = mode; syncSentenceModeButtons(); if (activeSentBtn && !sentAudio.paused) sentAudio.loop = mode === 'loop'; }
   function playSent(btn) {
     const idx = btn.closest('.sent').dataset.idx;
     if (activeSentBtn === btn && !sentAudio.paused) { stopSentencePlayback(); return; }
-    stopSentencePlayback(); sentAudio.src = getAssetUrl(`s${String(idx).padStart(2, '0')}.mp3`); activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
-    sentAudio.onended = () => { resetSentBtn(btn); activeSentBtn = null; }; sentAudio.onerror = () => stopSentencePlayback(); sentAudio.play();
+    stopSentencePlayback(); sentAudio.src = getAssetUrl(`s${String(idx).padStart(2, '0')}.mp3`); sentAudio.loop = sentencePlaybackMode === 'loop'; activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
+    sentAudio.onended = () => { if (sentAudio.loop) return; resetSentBtn(btn); activeSentBtn = null; }; sentAudio.onerror = () => stopSentencePlayback(); sentAudio.play();
   }
   function toggleLoop(btn) { const audio = document.getElementById('article-audio'); audio.loop = !audio.loop; btn.classList.toggle('active', audio.loop); }
   function answer(el, type) { const group = el.closest('.quiz-options'); if (group.querySelector('.correct,.wrong')) return; el.classList.add(type); }
@@ -379,7 +474,7 @@
   function closePopup() { popup.style.display = 'none'; }
   function showPopup(value, anchor, kind) { popupAnchor = anchor; const key = value.toLowerCase(); const item = kind === 'vocab' ? VOCAB[key] : kind === 'review' ? REVIEW[key] : PHRASES[key]; if (!item) return; popContent.innerHTML = `<div class="pop-word">${value}</div><div class="pop-note"><strong>${kind === 'phrase' ? item.type : item.pos}</strong><br>${item.example || item.note}</div><button class="pop-zh-btn" type="button" onclick="revealZh(this)">👁 看中文</button><div class="pop-zh" style="display:none">${item.zh}</div>`; popup.style.display = 'block'; const rect = anchor.getBoundingClientRect(); popup.style.left = Math.max(12, Math.min(rect.left, window.innerWidth - popup.offsetWidth - 12)) + 'px'; popup.style.top = Math.max(8, rect.bottom + 8) + 'px'; }
   function revealZh(btn) { btn.nextElementSibling.style.display = 'block'; btn.style.display = 'none'; }
-  document.addEventListener('DOMContentLoaded', () => { const articleAudio = document.getElementById('article-audio'); articleAudio.preload = 'metadata'; articleAudio.load(); updateContextProgress(); if (window.LearningFeedback) window.LearningFeedback.initDailyFeedback(); document.getElementById('article-body').addEventListener('click', event => { const vocab = event.target.closest('.vocab-word'); const review = event.target.closest('.review-word'); const phrase = event.target.closest('.phrase-chunk'); if (vocab) showPopup(vocab.dataset.word, vocab, 'vocab'); else if (review) showPopup(review.dataset.word, review, 'review'); else if (phrase) showPopup(phrase.dataset.phrase, phrase, 'phrase'); }); document.addEventListener('click', event => { if (!popup.contains(event.target) && !event.target.closest('.vocab-word,.review-word,.phrase-chunk')) closePopup(); }); });
+  document.addEventListener('DOMContentLoaded', () => { const articleAudio = document.getElementById('article-audio'); articleAudio.preload = 'metadata'; articleAudio.load(); syncSentenceModeButtons(); updateContextProgress(); if (window.LearningFeedback) window.LearningFeedback.initDailyFeedback(); document.getElementById('article-body').addEventListener('click', event => { const vocab = event.target.closest('.vocab-word'); const review = event.target.closest('.review-word'); const phrase = event.target.closest('.phrase-chunk'); if (vocab) showPopup(vocab.dataset.word, vocab, 'vocab'); else if (review) showPopup(review.dataset.word, review, 'review'); else if (phrase) showPopup(phrase.dataset.phrase, phrase, 'phrase'); }); document.addEventListener('click', event => { if (!popup.contains(event.target) && !event.target.closest('.vocab-word,.review-word,.phrase-chunk')) closePopup(); }); });
 </script>
 </body>
 </html>
