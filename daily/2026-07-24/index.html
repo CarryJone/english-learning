@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily English · 2026-07-24</title>
+  <style>
+    :root {
+      --bg: #f5f4ef; --card: #fff; --accent: #4f7cff; --accent2: #f0a500;
+      --text: #1e1e2e; --muted: #6b7280; --border: #e5e7eb;
+      --green: #22c55e; --red: #ef4444; --tag-bg: #eef2ff;
+      --review-bg: #f3e8ff; --highlight: #fffbeb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 2rem 1rem 4rem; }
+    .container { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+    .header, .card, .player-card { background: var(--card); border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .header { text-align: center; padding: 2rem 1.5rem 1.5rem; }
+    .date-badge, .card-title, .player-label, .mission-box, .ability-focus, .roleplay-list, .context-list, .feedback-form { font-family: sans-serif; }
+    .date-badge { display: inline-block; background: var(--tag-bg); color: var(--accent); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .3rem .9rem; border-radius: 99px; margin-bottom: .9rem; }
+    h1 { font-size: 1.6rem; line-height: 1.3; } h1 span { color: var(--accent); }
+    .subtitle { margin-top: .4rem; font-size: .9rem; color: var(--muted); font-family: sans-serif; }
+    .card { padding: 1.8rem 2rem; }
+    .card-title { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; display: flex; align-items: center; gap: .5rem; }
+    .card-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .player-card { padding: 1.4rem 2rem; }
+    .player-label { color: var(--accent); font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .player-title { font-size: 1.15rem; font-weight: 700; margin: .45rem 0 .9rem; }
+    audio { width: 100%; }
+    .player-controls { margin-top: .75rem; display: flex; justify-content: flex-end; }
+    button { font: inherit; }
+    .loop-btn, .sent-btn, .answers-btn, .bridge-reveal-btn, .context-rate-btn, .context-sync-btn, .feedback-save, .feedback-clear { cursor: pointer; }
+    .loop-btn { border: 1.5px solid var(--border); background: #fff; color: var(--muted); border-radius: 10px; padding: .45rem .8rem; font-family: sans-serif; font-size: .8rem; font-weight: 700; }
+    .loop-btn.active { border-color: var(--accent); color: var(--accent); background: var(--tag-bg); }
+    .mission-box { display: grid; gap: .65rem; padding: 1rem 1.1rem; border-left: 4px solid var(--accent2); border-radius: 0 12px 12px 0; background: var(--highlight); }
+    .mission-title { color: #78350f; font-size: 1.05rem; font-weight: 800; line-height: 1.45; }
+    .mission-goal, .mission-success, .mission-input { color: #92400e; font-size: .9rem; line-height: 1.6; }
+    .ability-focus { display: grid; gap: .8rem; }
+    .ability-focus-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .ability-pill { display: inline-flex; border-radius: 99px; padding: .42rem .68rem; background: var(--tag-bg); color: var(--accent); font-size: .8rem; font-weight: 800; }
+    .ability-pill.secondary { background: #f0fdf4; color: #166534; }
+    .ability-evidence { border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; background: #f8fafc; padding: .85rem 1rem; color: var(--muted); font-size: .86rem; line-height: 1.65; }
+    .legend { display: flex; flex-wrap: wrap; gap: .6rem 1rem; margin-bottom: 1.1rem; font-family: sans-serif; font-size: .78rem; color: var(--muted); }
+    .legend-item { display: inline-flex; align-items: center; gap: .35rem; }
+    .legend-dot { width: .65rem; height: .65rem; border-radius: 50%; display: inline-block; }
+    .legend-dot.vocab { background: #f59e0b; } .legend-dot.review { background: #a855f7; } .legend-dot.phrase { background: #22c55e; }
+    .article-body { font-size: 1.05rem; line-height: 2; }
+    .article-body p { margin-bottom: 1rem; }
+    .sent { display: inline; }
+    .sent-btn { border: none; background: transparent; color: var(--accent); font-size: .9rem; padding: 0 .25rem 0 0; vertical-align: .08em; }
+    .sent-btn.playing { color: #16a34a; }
+    .vocab-word, .review-word, .phrase-chunk { cursor: pointer; border-radius: 4px; padding: 0 .08rem; }
+    .vocab-word { color: #b45309; background: #fef3c7; } .review-word { color: #7e22ce; background: var(--review-bg); }
+    .phrase-chunk { color: #166534; background: #dcfce7; }
+    .vocab-table, .review-table { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: .88rem; }
+    .vocab-table th, .vocab-table td, .review-table th, .review-table td { text-align: left; padding: .7rem .45rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .vocab-table th, .review-table th { color: var(--muted); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+    .vocab-table tr:last-child td, .review-table tr:last-child td { border-bottom: none; }
+    .pos-badge, .ph-type, .rq-pos { display: inline-block; border-radius: 99px; padding: .15rem .45rem; background: var(--tag-bg); color: var(--accent); font-size: .7rem; font-weight: 800; white-space: nowrap; }
+    .zh-meaning, .ph-zh { color: #166534; font-weight: 700; margin-bottom: .25rem; }
+    .example-sent, .ph-note { color: var(--muted); line-height: 1.55; }
+    .phrase-list { display: grid; gap: .75rem; font-family: sans-serif; }
+    .phrase-item { border: 1.5px solid var(--border); border-radius: 12px; padding: .85rem 1rem; }
+    .ph-text { font-family: Georgia, serif; font-size: 1.05rem; font-weight: 700; margin-bottom: .28rem; }
+    .ph-type { margin-left: .35rem; background: #f0fdf4; color: #166534; }
+    .quiz-list { display: grid; gap: 1rem; font-family: sans-serif; }
+    .quiz-question { font-weight: 800; line-height: 1.55; }
+    .quiz-options, .rq-opts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; margin-top: .6rem; }
+    .quiz-option, .rq-opt { border: 1.5px solid var(--border); background: #fff; color: var(--text); border-radius: 10px; padding: .6rem .7rem; text-align: left; cursor: pointer; font-size: .88rem; }
+    .quiz-option.correct, .rq-opt.correct { border-color: var(--green); background: #f0fdf4; color: #166534; font-weight: 800; }
+    .quiz-option.wrong, .rq-opt.wrong { border-color: var(--red); background: #fef2f2; color: #991b1b; font-weight: 800; }
+    .answers-btn, .bridge-reveal-btn { margin-top: 1rem; border: 1.5px solid var(--accent); color: var(--accent); background: #fff; border-radius: 9px; padding: .55rem .9rem; font-family: sans-serif; font-size: .82rem; font-weight: 800; }
+    .answers-reveal, .bridge-answer { display: none; margin-top: .7rem; padding: .7rem .85rem; border-radius: 9px; background: var(--tag-bg); color: var(--accent); font-family: sans-serif; font-size: .86rem; line-height: 1.6; }
+    .rq-subtitle, .bridge-subtitle, .context-subtitle, .roleplay-subtitle { color: var(--muted); font-family: sans-serif; font-size: .88rem; line-height: 1.6; margin-bottom: 1rem; }
+    .rq-list { display: grid; gap: .9rem; font-family: sans-serif; }
+    .rq-item { border: 1.5px solid var(--border); border-radius: 12px; padding: .9rem 1rem; }
+    .rq-zh { font-weight: 800; line-height: 1.5; } .rq-hint { color: var(--muted); font-size: .82rem; margin-top: .3rem; }
+    .rq-opt.selected { border-color: var(--accent); background: var(--tag-bg); }
+    #rq-submit-btn { width: 100%; margin-top: 1rem; border: none; border-radius: 10px; padding: .75rem 1rem; background: var(--accent); color: #fff; font-family: sans-serif; font-weight: 800; cursor: pointer; }
+    #rq-result, .context-result { margin-top: .8rem; padding: .75rem .9rem; border-radius: 9px; font-family: sans-serif; font-size: .86rem; line-height: 1.55; }
+    #rq-result.success, .context-result.success { background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; }
+    #rq-result.partial, .context-result.warn { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+    .bridge-list, .context-list { display: grid; gap: .85rem; }
+    .bridge-item, .context-item { border: 1.5px solid var(--border); border-radius: 14px; padding: 1rem 1.1rem; }
+    .bridge-word-header, .context-top { display: flex; align-items: center; justify-content: space-between; gap: .6rem; flex-wrap: wrap; }
+    .bridge-word { font-size: 1.05rem; font-weight: 800; } .bridge-word-zh { color: #166534; font-weight: 800; }
+    .bridge-day-badge { margin-left: auto; border-radius: 99px; padding: .15rem .55rem; background: #fef3c7; color: #92400e; font-size: .72rem; font-weight: 800; }
+    .bridge-level { margin-top: .85rem; padding-top: .85rem; border-top: 1px dashed var(--border); font-family: sans-serif; }
+    .bridge-level-label { color: var(--accent); font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; margin-bottom: .45rem; }
+    .bridge-zh-prompt, .bridge-scramble { color: var(--muted); font-size: .86rem; line-height: 1.6; margin-bottom: .45rem; }
+    .bridge-zh-prompt { color: #166534; background: #f0fdf4; border-radius: 8px; padding: .4rem .65rem; }
+    .bridge-scramble { background: #f3f4f6; border-radius: 8px; padding: .45rem .65rem; }
+    .bridge-blank { color: #9ca3af; font-weight: 800; letter-spacing: .12em; }
+    .roleplay-list { display: grid; gap: .6rem; }
+    .roleplay-turn { display: grid; grid-template-columns: 5.5rem 1fr; gap: .7rem; padding: .7rem .85rem; border: 1.5px solid var(--border); border-radius: 11px; }
+    .roleplay-speaker { color: var(--accent); font-size: .78rem; font-weight: 800; } .roleplay-line { line-height: 1.55; }
+    .roleplay-branch { grid-column: 2; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+    .context-item { font-family: sans-serif; } .context-prompt { font-weight: 800; line-height: 1.55; }
+    .context-level { border-radius: 99px; padding: .18rem .55rem; background: var(--tag-bg); color: var(--accent); font-size: .7rem; font-weight: 800; white-space: nowrap; }
+    .context-hint { color: var(--muted); font-size: .82rem; line-height: 1.5; margin: .45rem 0; }
+    .context-answer { display: none; margin-top: .55rem; padding: .6rem .75rem; border-left: 4px solid var(--accent); background: #f8fafc; color: var(--accent); font-size: .88rem; font-weight: 800; line-height: 1.55; }
+    .context-rating { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .65rem; }
+    .context-rate-btn { border: 1.5px solid var(--border); background: #fff; color: var(--muted); border-radius: 99px; padding: .4rem .65rem; font-size: .76rem; font-weight: 800; }
+    .context-rate-btn.active { border-color: var(--accent); color: var(--accent); background: var(--tag-bg); }
+    .context-item.unrated { border-color: #f59e0b; box-shadow: 0 0 0 3px rgba(245,158,11,.12); }
+    .context-sync { margin-top: 1rem; padding: .9rem; border: 1.5px solid var(--border); border-radius: 12px; background: #f8fafc; font-family: sans-serif; }
+    .context-progress { color: var(--muted); font-size: .84rem; font-weight: 800; margin-bottom: .6rem; }
+    .context-sync-btn { width: 100%; border: none; border-radius: 10px; padding: .7rem 1rem; background: var(--accent); color: #fff; font-size: .88rem; font-weight: 800; }
+    .tips-box { padding: 1rem 1.1rem; border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; background: #f8fafc; font-family: sans-serif; font-size: .9rem; line-height: 1.7; }
+    .tips-box ul { padding-left: 1.2rem; } .tips-box li + li { margin-top: .45rem; }
+    .feedback-form { display: grid; gap: 1rem; }
+    .feedback-help, .feedback-label { font-size: .86rem; line-height: 1.6; } .feedback-help { color: var(--muted); }
+    .feedback-label { font-weight: 800; margin-bottom: .45rem; display: block; }
+    .feedback-choice-row, .feedback-check-row, .feedback-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .feedback-choice, .feedback-check { border: 1.5px solid var(--border); background: #fff; color: var(--muted); border-radius: 99px; padding: .45rem .7rem; font-size: .8rem; font-weight: 800; }
+    .feedback-choice { cursor: pointer; } .feedback-choice.active { border-color: var(--accent); color: var(--accent); background: var(--tag-bg); }
+    .feedback-check { display: inline-flex; gap: .35rem; align-items: center; } .feedback-input, .feedback-note { width: 100%; border: 1.5px solid var(--border); border-radius: 10px; padding: .7rem .8rem; font-family: sans-serif; font-size: .88rem; }
+    .feedback-note { min-height: 80px; resize: vertical; } .feedback-save, .feedback-clear { border-radius: 10px; padding: .65rem .85rem; font-size: .82rem; font-weight: 800; }
+    .feedback-save { border: none; background: var(--accent); color: #fff; } .feedback-clear { border: 1.5px solid var(--border); background: #fff; color: var(--muted); }
+    .feedback-status { color: var(--muted); font-size: .8rem; min-height: 1.2rem; }
+    .review-tag { display: inline-block; border-radius: 99px; padding: .18rem .5rem; background: #fef3c7; color: #92400e; font-size: .72rem; font-weight: 800; white-space: nowrap; }
+    #word-popup { display: none; position: fixed; z-index: 20; width: min(300px, calc(100vw - 24px)); padding: 1rem; border: 1px solid var(--border); border-radius: 12px; background: #fff; box-shadow: 0 8px 28px rgba(0,0,0,.16); font-family: sans-serif; }
+    #word-popup .pop-word { font-family: Georgia, serif; font-size: 1.05rem; font-weight: 800; margin-bottom: .35rem; } #word-popup .pop-note { color: var(--muted); line-height: 1.55; font-size: .86rem; }
+    .pop-close { position: absolute; right: .5rem; top: .45rem; border: none; background: transparent; color: var(--muted); cursor: pointer; }
+    .pop-zh-btn { margin-top: .6rem; border: 1px solid var(--border); border-radius: 7px; background: #fff; color: var(--accent); padding: .35rem .55rem; cursor: pointer; font-size: .78rem; font-weight: 800; } .pop-zh { margin-top: .45rem; color: #166534; font-weight: 800; }
+    @media (max-width: 520px) { .card, .player-card { padding: 1.3rem 1.15rem; } h1 { font-size: 1.3rem; } .quiz-options, .rq-opts { grid-template-columns: 1fr; } .roleplay-turn { grid-template-columns: 4.5rem 1fr; } }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="date-badge">July 24, 2026 · Day 83</div>
+    <h1>Checking a Store <span>Return Policy</span></h1>
+    <p class="subtitle">A2 → B1 · Daily English Reading</p>
+  </header>
+
+  <div class="player-card">
+    <div class="player-label">🎧 Listen to the Article</div>
+    <div class="player-title">Checking a Store Return Policy</div>
+    <audio id="article-audio" controls><source src="article.mp3" type="audio/mpeg" /></audio>
+    <div class="player-controls"><button class="loop-btn" type="button" onclick="toggleLoop(this)">🔁 循環播放</button></div>
+  </div>
+
+  <div id="word-popup"><button class="pop-close" type="button" onclick="closePopup()">✕</button><div id="pop-content"></div></div>
+
+  <div class="card">
+    <div class="card-title">🎯 Mission</div>
+    <div class="mission-box">
+      <div class="mission-title">讀懂退換貨規則並換一件合身的衣服</div>
+      <div class="mission-goal">你在旅行中買了一件衣服。先看手機上的商店規則，再向店員詢問換尺寸；如果缺貨，要能選擇退款或其他商品。</div>
+      <div class="mission-success"><strong>成功條件：</strong>找出 30 天期限與收據／吊牌要求；說出換大一號；遇到缺貨時確認退款或店內購物金。</div>
+      <div class="mission-input"><strong>英文輸入：</strong>線上退換貨規則 + 店內短對話</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🗺️ Ability Focus</div>
+    <div class="ability-focus">
+      <div class="ability-focus-row">
+        <span class="ability-pill">旅行開口 · travelSpeaking</span>
+        <span class="ability-pill">資訊判讀 · onlineReading</span>
+        <span class="ability-pill secondary">應對變化 · dailyResponse</span>
+        <span class="ability-pill secondary">公共場所英文 · publicEnglish</span>
+      </div>
+      <div class="ability-evidence">今天的能力證據：從退換貨規則找出 30 天、收據、吊牌與特價品限制；向店員說 <strong>Could I exchange this for a larger size?</strong>；看到 <strong>out of stock</strong> 後確認退款或店內購物金。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📖 Article</div>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-dot vocab"></span>今日單字</span>
+      <span class="legend-item"><span class="legend-dot review"></span>複習單字</span>
+      <span class="legend-item"><span class="legend-dot phrase"></span>重要片語</span>
+      <span class="legend-item">🔊 點擊播放單句</span>
+    </div>
+    <div class="article-body" id="article-body">
+      <p>
+        <span class="sent" data-idx="1" data-text="Mina checks a store's return policy on her phone."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Mina checks a <span class="review-word" data-word="store">store</span>'s <span class="phrase-chunk" data-phrase="return policy">return policy</span> on her phone.</span>
+        <span class="sent" data-idx="2" data-text="Items can be returned within thirty days with the receipt."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Items can be returned <span class="phrase-chunk" data-phrase="within thirty days">within thirty days</span> with the receipt.</span>
+        <span class="sent" data-idx="3" data-text="Please keep the label on the item."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Please <span class="phrase-chunk" data-phrase="keep the label on">keep the <span class="vocab-word" data-word="label">label</span> on</span> the item.</span>
+        <span class="sent" data-idx="4" data-text="Sale items can only be exchanged, not refunded."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Sale items can only be exchanged, not refunded.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="5" data-text="Mina bought a shirt yesterday, but it does not fit."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Mina bought a shirt yesterday, but it does not <span class="vocab-word" data-word="fit">fit</span>.</span>
+        <span class="sent" data-idx="6" data-text="She goes back to the store and speaks with a clerk."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>She <span class="phrase-chunk" data-phrase="goes back to">goes back to</span> the <span class="review-word" data-word="store">store</span> and speaks with a clerk.</span>
+        <span class="sent" data-idx="7" data-text="Mina: Could I exchange this for a larger size?"><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Mina: Could I <span class="phrase-chunk" data-phrase="exchange this for a larger size">exchange this for a <span class="vocab-word" data-word="larger">larger</span> <span class="review-word" data-word="size">size</span></span>?</span>
+        <span class="sent" data-idx="8" data-text="Clerk: Sure. Let me check the stock."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Clerk: Sure. Let me <span class="phrase-chunk" data-phrase="check the stock">check the stock</span>.</span>
+      </p>
+      <p>
+        <span class="sent" data-idx="9" data-text="Clerk: Sorry, the larger size is out of stock today."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Clerk: Sorry, the larger <span class="review-word" data-word="size">size</span> is <span class="phrase-chunk" data-phrase="out of stock">out of stock</span> today.</span>
+        <span class="sent" data-idx="10" data-text="Mina: Sorry, did you say refund or store credit?"><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Mina: Sorry, did you say refund or <span class="phrase-chunk" data-phrase="store credit">store credit</span>?</span>
+        <span class="sent" data-idx="11" data-text="Clerk: You can get a refund with the receipt."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Clerk: You can get a refund with the receipt.</span>
+        <span class="sent" data-idx="12" data-text="Mina: Could I get store credit instead?"><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Mina: Could I get <span class="phrase-chunk" data-phrase="store credit">store credit</span> instead?</span>
+        <span class="sent" data-idx="13" data-text="Clerk: The blue shirt is another choice."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Clerk: The blue shirt is another <span class="review-word" data-word="choice">choice</span>.</span>
+        <span class="sent" data-idx="14" data-text="Mina checks the label before taking it."><button class="sent-btn" type="button" onclick="playSent(this)" title="播放這句">🔊</button>Mina checks the <span class="vocab-word" data-word="label">label</span> before taking it.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📚 New Words Today</div>
+    <table class="vocab-table">
+      <thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th></tr></thead>
+      <tbody>
+        <tr><td><strong>fit</strong></td><td><span class="pos-badge">v.</span></td><td><div class="zh-meaning">合身；適合</div><div class="example-sent">This shirt does not fit me.</div></td></tr>
+        <tr><td><strong>label</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">標籤；吊牌</div><div class="example-sent">Please keep the label on the shirt.</div></td></tr>
+        <tr><td><strong>larger</strong></td><td><span class="pos-badge">adj.</span></td><td><div class="zh-meaning">比較大的</div><div class="example-sent">Could I try a larger size?</div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔗 Key Phrases</div>
+    <div class="phrase-list">
+      <div class="phrase-item"><div class="ph-text">return policy <span class="ph-type">Collocation</span></div><div class="ph-zh">退換貨規則</div><div class="ph-note">在網站或店內規則中找期限與條件；今天主要用來看懂資訊。</div></div>
+      <div class="phrase-item"><div class="ph-text">within thirty days <span class="ph-type">Fixed Expression</span></div><div class="ph-zh">在三十天內</div><div class="ph-note">看到期限時直接抓整塊，不必逐字翻譯。</div></div>
+      <div class="phrase-item"><div class="ph-text">keep the label on <span class="ph-type">Phrasal Verb</span></div><div class="ph-zh">把吊牌留在上面</div><div class="ph-note">keep + 物品 + on，常用來提醒衣物或包裝的狀態。</div></div>
+      <div class="phrase-item"><div class="ph-text">goes back to <span class="ph-type">Phrasal Verb</span></div><div class="ph-zh">回到</div><div class="ph-note">goes back to the store = 回到商店處理問題。</div></div>
+      <div class="phrase-item"><div class="ph-text">check the stock <span class="ph-type">Collocation</span></div><div class="ph-zh">查庫存</div><div class="ph-note">向店員確認某個尺寸或商品還有沒有。</div></div>
+      <div class="phrase-item"><div class="ph-text">out of stock <span class="ph-type">Fixed Expression</span></div><div class="ph-zh">缺貨；沒有庫存</div><div class="ph-note">資訊目標語塊：看到它就知道要找替代品或改變安排。</div></div>
+      <div class="phrase-item"><div class="ph-text">exchange this for a larger size <span class="ph-type">Fixed Expression</span></div><div class="ph-zh">把這件換成大一號</div><div class="ph-note">直接套用的購物 survival sentence：Could I exchange this for a larger size?</div></div>
+      <div class="phrase-item"><div class="ph-text">store credit <span class="ph-type">Collocation</span></div><div class="ph-zh">店內購物金</div><div class="ph-note">退款以外的常見替代方案，可接 instead 或 as an option。</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">✏️ Quiz</div>
+    <div class="quiz-list">
+      <div><div class="quiz-question">1. How long can the item be returned?</div><div class="quiz-options"><button class="quiz-option" type="button" onclick="answer(this,'wrong')">Within seven days</button><button class="quiz-option" type="button" onclick="answer(this,'correct')">Within thirty days</button><button class="quiz-option" type="button" onclick="answer(this,'wrong')">After one year</button><button class="quiz-option" type="button" onclick="answer(this,'wrong')">Only today</button></div></div>
+      <div><div class="quiz-question">2. The size you want is not available. Which phrase fits?</div><div class="quiz-options"><button class="quiz-option" type="button" onclick="answer(this,'wrong')">within thirty days</button><button class="quiz-option" type="button" onclick="answer(this,'wrong')">keep the label on</button><button class="quiz-option" type="button" onclick="answer(this,'correct')">out of stock</button><button class="quiz-option" type="button" onclick="answer(this,'wrong')">go back to</button></div></div>
+      <div><div class="quiz-question">3. What should you say to ask for a bigger size?</div><div class="quiz-options"><button class="quiz-option" type="button" onclick="answer(this,'wrong')">Can I check the stock tomorrow?</button><button class="quiz-option" type="button" onclick="answer(this,'correct')">Could I exchange this for a larger size?</button><button class="quiz-option" type="button" onclick="answer(this,'wrong')">Do I go back to the receipt?</button><button class="quiz-option" type="button" onclick="answer(this,'wrong')">Is the label out of the shop?</button></div></div>
+    </div>
+    <button class="answers-btn" type="button" onclick="toggleAnswers()">顯示答案</button>
+    <div class="answers-reveal" id="answers-reveal">✅ Q1: <strong>Within thirty days</strong> ｜ Q2: <strong>out of stock</strong> ｜ Q3: <strong>Could I exchange this for a larger size?</strong></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🧠 Active Recall Quiz</div>
+    <p class="rq-subtitle">看中文意思，選出正確的英文單字。今天到期的舊單字全部放入複習。</p>
+    <div class="rq-list">
+      <div class="rq-item" data-word="passenger" data-correct="passenger"><div class="rq-zh">乘客 <span class="rq-pos">n.</span></div><div class="rq-hint">A ____ checks the same screen.</div><div class="rq-opts"><button class="rq-opt" data-val="platform" type="button" onclick="rqSelect(this)">platform</button><button class="rq-opt" data-val="passenger" type="button" onclick="rqSelect(this)">passenger</button><button class="rq-opt" data-val="receipt" type="button" onclick="rqSelect(this)">receipt</button><button class="rq-opt" data-val="route" type="button" onclick="rqSelect(this)">route</button></div></div>
+      <div class="rq-item" data-word="dock" data-correct="dock"><div class="rq-zh">碼頭 <span class="rq-pos">n.</span></div><div class="rq-hint">The ferry leaves from ____ 2.</div><div class="rq-opts"><button class="rq-opt" data-val="track" type="button" onclick="rqSelect(this)">track</button><button class="rq-opt" data-val="counter" type="button" onclick="rqSelect(this)">counter</button><button class="rq-opt" data-val="platform" type="button" onclick="rqSelect(this)">platform</button><button class="rq-opt" data-val="dock" type="button" onclick="rqSelect(this)">dock</button></div></div>
+      <div class="rq-item" data-word="turn" data-correct="turn"><div class="rq-zh">轉彎；轉向 <span class="rq-pos">v.</span></div><div class="rq-hint">____ right after the stairs.</div><div class="rq-opts"><button class="rq-opt" data-val="turn" type="button" onclick="rqSelect(this)">turn</button><button class="rq-opt" data-val="follow" type="button" onclick="rqSelect(this)">follow</button><button class="rq-opt" data-val="change" type="button" onclick="rqSelect(this)">change</button><button class="rq-opt" data-val="deliver" type="button" onclick="rqSelect(this)">deliver</button></div></div>
+      <div class="rq-item" data-word="straight" data-correct="straight"><div class="rq-zh">直走；直的 <span class="rq-pos">adv./adj.</span></div><div class="rq-hint">Go ____ to the green sign.</div><div class="rq-opts"><button class="rq-opt" data-val="nearby" type="button" onclick="rqSelect(this)">nearby</button><button class="rq-opt" data-val="direct" type="button" onclick="rqSelect(this)">direct</button><button class="rq-opt" data-val="straight" type="button" onclick="rqSelect(this)">straight</button><button class="rq-opt" data-val="outside" type="button" onclick="rqSelect(this)">outside</button></div></div>
+      <div class="rq-item" data-word="upstairs" data-correct="upstairs"><div class="rq-zh">往樓上；在樓上 <span class="rq-pos">adv.</span></div><div class="rq-hint">The ticket office is ____.</div><div class="rq-opts"><button class="rq-opt" data-val="upstairs" type="button" onclick="rqSelect(this)">upstairs</button><button class="rq-opt" data-val="straight" type="button" onclick="rqSelect(this)">straight</button><button class="rq-opt" data-val="nearby" type="button" onclick="rqSelect(this)">nearby</button><button class="rq-opt" data-val="outside" type="button" onclick="rqSelect(this)">outside</button></div></div>
+      <div class="rq-item" data-word="store" data-correct="store"><div class="rq-zh">存放；寄放 <span class="rq-pos">v.</span></div><div class="rq-hint">Can you ____ my luggage until six?</div><div class="rq-opts"><button class="rq-opt" data-val="change" type="button" onclick="rqSelect(this)">change</button><button class="rq-opt" data-val="deliver" type="button" onclick="rqSelect(this)">deliver</button><button class="rq-opt" data-val="follow" type="button" onclick="rqSelect(this)">follow</button><button class="rq-opt" data-val="store" type="button" onclick="rqSelect(this)">store</button></div></div>
+      <div class="rq-item" data-word="topping" data-correct="topping"><div class="rq-zh">配料；加料 <span class="rq-pos">n.</span></div><div class="rq-hint">You can choose one ____.</div><div class="rq-opts"><button class="rq-opt" data-val="choice" type="button" onclick="rqSelect(this)">choice</button><button class="rq-opt" data-val="receipt" type="button" onclick="rqSelect(this)">receipt</button><button class="rq-opt" data-val="topping" type="button" onclick="rqSelect(this)">topping</button><button class="rq-opt" data-val="option" type="button" onclick="rqSelect(this)">option</button></div></div>
+      <div class="rq-item" data-word="choice" data-correct="choice"><div class="rq-zh">選擇 <span class="rq-pos">n.</span></div><div class="rq-hint">The soup is another ____ for lunch.</div><div class="rq-opts"><button class="rq-opt" data-val="choice" type="button" onclick="rqSelect(this)">choice</button><button class="rq-opt" data-val="option" type="button" onclick="rqSelect(this)">option</button><button class="rq-opt" data-val="size" type="button" onclick="rqSelect(this)">size</button><button class="rq-opt" data-val="route" type="button" onclick="rqSelect(this)">route</button></div></div>
+      <div class="rq-item" data-word="size" data-correct="size"><div class="rq-zh">尺寸；份量 <span class="rq-pos">n.</span></div><div class="rq-hint">Which ____ would you like?</div><div class="rq-opts"><button class="rq-opt" data-val="price" type="button" onclick="rqSelect(this)">price</button><button class="rq-opt" data-val="size" type="button" onclick="rqSelect(this)">size</button><button class="rq-opt" data-val="choice" type="button" onclick="rqSelect(this)">choice</button><button class="rq-opt" data-val="topping" type="button" onclick="rqSelect(this)">topping</button></div></div>
+    </div>
+    <div id="rq-result" style="display:none"></div>
+    <button id="rq-submit-btn" type="button" onclick="submitReviewQuiz()">提交答案 &amp; 同步 SRS 記錄</button>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🌉 Speaking Bridge</div>
+    <p class="bridge-subtitle">用 2–7 天前學的單字練習開口；今天的新單字不會出現在這裡。</p>
+    <div class="bridge-list">
+      <div class="bridge-item"><div class="bridge-word-header"><span class="bridge-word">store</span><span class="bridge-word-zh">存放；寄放</span><span class="pos-badge">v.</span><span class="bridge-day-badge">2 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「你可以把我的行李寄放到六點嗎？」</div><div class="bridge-scramble">Can / you / <span class="bridge-blank">____</span> / my / luggage / until / six?</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer">Can you store my luggage until six?</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">你想問商店能不能暫時寄放你的購物袋。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="bridge-answer">Can you store my shopping bag here?</div></div></div>
+      <div class="bridge-item"><div class="bridge-word-header"><span class="bridge-word">turn</span><span class="bridge-word-zh">轉彎；轉向</span><span class="pos-badge">v.</span><span class="bridge-day-badge">4 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「樓梯後向右轉。」</div><div class="bridge-scramble">after / right / the / <span class="bridge-blank">____</span> / stairs</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer">Turn right after the stairs.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">你要告訴旅伴在下一個路口左轉。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="bridge-answer">Turn left at the next corner.</div></div></div>
+      <div class="bridge-item"><div class="bridge-word-header"><span class="bridge-word">straight</span><span class="bridge-word-zh">直走；直的</span><span class="pos-badge">adv./adj.</span><span class="bridge-day-badge">4 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「直走到綠色標誌。」</div><div class="bridge-scramble">to / green / go / sign / the / <span class="bridge-blank">____</span></div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer">Go straight to the green sign.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">你要告訴同伴從機場出口直走。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="bridge-answer">Go straight from the airport exit.</div></div></div>
+      <div class="bridge-item"><div class="bridge-word-header"><span class="bridge-word">upstairs</span><span class="bridge-word-zh">往樓上；在樓上</span><span class="pos-badge">adv.</span><span class="bridge-day-badge">4 天前</span></div><div class="bridge-level"><div class="bridge-level-label">Lv.1 重組＋填空</div><div class="bridge-zh-prompt">「售票處在樓上。」</div><div class="bridge-scramble">office / is / ticket / <span class="bridge-blank">____</span> / the</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示答案</button><div class="bridge-answer">The ticket office is upstairs.</div></div><div class="bridge-level"><div class="bridge-level-label">Lv.2 中翻英（新情境）</div><div class="bridge-zh-prompt">你要告訴旅館客人早餐室在樓上。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="bridge-answer">The breakfast room is upstairs.</div></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🎭 Role-play</div>
+    <p class="roleplay-subtitle">你在旅行中回到服飾店。先遮住參考答案，依序說出你的回應。</p>
+    <div class="roleplay-list">
+      <div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-line">Welcome back. How can I help?</div></div>
+      <div class="roleplay-turn"><div class="roleplay-speaker">You</div><div class="roleplay-line">Could I exchange this for a larger size?</div></div>
+      <div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-line">Sure. Let me check the stock.</div></div>
+      <div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-line">Sorry, the larger size is out of stock.</div><div class="roleplay-branch">資訊改變：你想要的尺寸沒有庫存。</div></div>
+      <div class="roleplay-turn"><div class="roleplay-speaker">You</div><div class="roleplay-line">I see. The larger size is out of stock. Sorry, did you say refund or store credit?</div></div>
+      <div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-line">You can get a refund with the receipt.</div></div>
+      <div class="roleplay-turn"><div class="roleplay-speaker">You</div><div class="roleplay-line">Could you explain the return policy, please?</div></div>
+      <div class="roleplay-turn"><div class="roleplay-speaker">Staff</div><div class="roleplay-line">You can return it within thirty days.</div></div>
+      <div class="roleplay-turn"><div class="roleplay-speaker">You</div><div class="roleplay-line">Then I would like store credit instead.</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🎯 Context Recall</div>
+    <p class="context-subtitle">看中文情境，先自己說英文，再看參考答案並自評。全部評完後同步句子 SRS。</p>
+    <div class="context-list">
+      <div class="context-item" data-sentence-id="2026-07-24-return-policy"><div class="context-top"><div class="context-prompt">你在手機上查看退換貨規則，怎麼說你要先看規則？</div><span class="context-level">Lv.1 有提示</span></div><div class="context-hint">提示：I need to check the ... first.</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">I need to check the return policy first.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-within-thirty-days"><div class="context-top"><div class="context-prompt">告訴同伴商品必須在三十天內退回。</div><span class="context-level">Lv.1 有提示</span></div><div class="context-hint">提示：The item must be returned ...</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">The item must be returned within thirty days.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-exchange-larger-size"><div class="context-top"><div class="context-prompt">你想把這件衣服換成大一號，請說一次。</div><span class="context-level">Lv.1 有提示</span></div><div class="context-hint">提示：Could I exchange this ...?</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">Could I exchange this for a larger size?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-out-of-stock"><div class="context-top"><div class="context-prompt">店員告知大尺寸缺貨，你怎麼轉述？</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">先自己說，再看答案。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">The larger size is out of stock.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-hear-refund-credit"><div class="context-top"><div class="context-prompt">你沒聽清楚是退款還是購物金，怎麼確認？</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">先自己說，再看答案。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">Sorry, did you say refund or store credit?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-keep-label"><div class="context-top"><div class="context-prompt">提醒同伴吊牌要留在衣服上。</div><span class="context-level">Lv.1 有提示</span></div><div class="context-hint">提示：Please keep the label ...</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">Please keep the label on the shirt.</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-airport-return-policy"><div class="context-top"><div class="context-prompt">在機場商店買東西前，你想先查看退換貨規則。</div><span class="context-level">Lv.3 自由應答</span></div><div class="context-hint">可有不同自然答案。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">I need to check the return policy before I buy it. / Can I see the return policy?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-shoe-larger-size"><div class="context-top"><div class="context-prompt">在鞋店，你想把鞋子換成大一號。</div><span class="context-level">Lv.3 自由應答</span></div><div class="context-hint">把今天的換尺寸句型移到不同商品。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">Could I exchange these shoes for a larger size? / Could I try a larger size?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-phone-out-of-stock"><div class="context-top"><div class="context-prompt">手機店沒有藍色手機，你想確認是不是缺貨並問另一個選擇。</div><span class="context-level">Lv.3 自由應答</span></div><div class="context-hint">可用 out of stock 和 another choice。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">Is the blue phone out of stock? Do you have another choice?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+      <div class="context-item" data-sentence-id="2026-07-24-receipt-refund"><div class="context-top"><div class="context-prompt">咖啡店給錯飲料，你拿著收據詢問退款。</div><span class="context-level">Lv.2 無提示</span></div><div class="context-hint">先自己說，再看答案。</div><button class="bridge-reveal-btn" type="button" onclick="bridgeReveal(this)">顯示參考答案</button><div class="context-answer">Could I get a refund with this receipt?</div><div class="context-rating"><button class="context-rate-btn" data-rating="remembered" type="button" onclick="rateContextRecall(this)">想起來</button><button class="context-rate-btn" data-rating="hinted" type="button" onclick="rateContextRecall(this)">有提示才想起來</button><button class="context-rate-btn" data-rating="forgot" type="button" onclick="rateContextRecall(this)">想不起來</button></div></div>
+    </div>
+    <div class="context-sync"><div class="context-progress" id="context-progress">已評分 0 / 10 題</div><button class="context-sync-btn" id="context-sync-btn" type="button" onclick="syncContextRecall()">同步句子 SRS</button><div class="context-result" id="context-result" aria-live="polite"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💡 Learning Tips</div>
+    <div class="tips-box"><ul><li>今天最值得直接背的是 <strong>Could I exchange this for a larger size?</strong>；遇到缺貨就先說 <strong>out of stock</strong>，再問替代方案。</li><li>看退換貨頁面時，先圈出期限、收據、吊牌與特價品限制；<strong>return policy</strong> 是很常見的查資料關鍵詞。</li><li>任務成功的標準是：能說出換尺寸、能確認退款／購物金，並在資訊改變時問 <strong>Sorry, did you say ...?</strong></li></ul></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📝 Daily Feedback</div>
+    <div class="feedback-form" data-feedback-form data-feedback-date="2026-07-24">
+      <div class="feedback-help">完成今天任務後，留下難度與卡點，幫助下一篇調整練習比例。</div>
+      <div><span class="feedback-label">今天的難度</span><div class="feedback-choice-row"><button class="feedback-choice" data-feedback-difficulty="too-easy" type="button">太簡單</button><button class="feedback-choice" data-feedback-difficulty="just-right" type="button">剛好</button><button class="feedback-choice" data-feedback-difficulty="too-hard" type="button">太難</button></div></div>
+      <div><span class="feedback-label">主要卡點（可複選）</span><div class="feedback-check-row"><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="vocabulary" />單字</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="listening" />聽力</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="speaking" />口說</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="reading" />文章理解</label><label class="feedback-check"><input name="feedback-friction" type="checkbox" value="sentence" />句型</label></div></div>
+      <div><label class="feedback-label" for="feedback-useful">今日最有用一句</label><input class="feedback-input" id="feedback-useful" name="feedback-useful" type="text" value="Could I exchange this for a larger size?" /></div>
+      <div><label class="feedback-label" for="feedback-note">補充卡點</label><textarea class="feedback-note" id="feedback-note" name="feedback-note" placeholder="例如：我能看懂期限，但想再練習問退款。"></textarea></div>
+      <div class="feedback-actions"><button class="feedback-save" data-feedback-save type="button">儲存今日回饋</button><button class="feedback-clear" data-feedback-clear type="button">清除今日回饋</button></div><div class="feedback-status" data-feedback-status aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔁 Review Words</div>
+    <table class="review-table"><thead><tr><th>Word</th><th>詞性</th><th>中文 / Example</th><th>狀態</th></tr></thead><tbody>
+      <tr><td><strong>passenger</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">乘客</div><div class="example-sent">A passenger checks the same screen.</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+      <tr><td><strong>dock</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">碼頭</div><div class="example-sent">The ferry leaves from Dock 2.</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+      <tr><td><strong>turn</strong></td><td><span class="pos-badge">v.</span></td><td><div class="zh-meaning">轉彎；轉向</div><div class="example-sent">Turn right after the stairs.</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+      <tr><td><strong>straight</strong></td><td><span class="pos-badge">adv./adj.</span></td><td><div class="zh-meaning">直走；直的</div><div class="example-sent">Go straight to the green sign.</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+      <tr><td><strong>upstairs</strong></td><td><span class="pos-badge">adv.</span></td><td><div class="zh-meaning">往樓上；在樓上</div><div class="example-sent">The ticket office is upstairs.</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+      <tr><td><strong>store</strong></td><td><span class="pos-badge">v.</span></td><td><div class="zh-meaning">存放；寄放</div><div class="example-sent">Can you store my luggage until six?</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+      <tr><td><strong>topping</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">配料；加料</div><div class="example-sent">You can choose one topping.</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+      <tr><td><strong>choice</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">選擇</div><div class="example-sent">The soup is another choice for lunch.</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+      <tr><td><strong>size</strong></td><td><span class="pos-badge">n.</span></td><td><div class="zh-meaning">尺寸；份量</div><div class="example-sent">Which size would you like?</div></td><td><span class="review-tag">今天複習 🔔</span></td></tr>
+    </tbody></table>
+  </div>
+</div>
+
+<script src="../../assets/srs.js"></script>
+<script src="../../assets/sentence-srs.js"></script>
+<script src="../../assets/feedback.js"></script>
+<script>
+  const sentAudio = new Audio();
+  let activeSentBtn = null;
+  function getAssetUrl(name) { return name; }
+  function resetSentBtn(btn) { if (btn) { btn.classList.remove('playing'); btn.textContent = '🔊'; } }
+  function stopSentencePlayback() { sentAudio.pause(); sentAudio.currentTime = 0; resetSentBtn(activeSentBtn); activeSentBtn = null; }
+  function playSent(btn) {
+    const idx = btn.closest('.sent').dataset.idx;
+    if (activeSentBtn === btn && !sentAudio.paused) { stopSentencePlayback(); return; }
+    stopSentencePlayback(); sentAudio.src = getAssetUrl(`s${String(idx).padStart(2, '0')}.mp3`); activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
+    sentAudio.onended = () => { resetSentBtn(btn); activeSentBtn = null; }; sentAudio.onerror = () => stopSentencePlayback(); sentAudio.play();
+  }
+  function toggleLoop(btn) { const audio = document.getElementById('article-audio'); audio.loop = !audio.loop; btn.classList.toggle('active', audio.loop); }
+  function answer(el, type) { const group = el.closest('.quiz-options'); if (group.querySelector('.correct,.wrong')) return; el.classList.add(type); }
+  function toggleAnswers() { const box = document.getElementById('answers-reveal'); const btn = document.querySelector('.answers-btn'); const show = box.style.display !== 'block'; box.style.display = show ? 'block' : 'none'; btn.textContent = show ? '隱藏答案' : '顯示答案'; }
+  function rqSelect(btn) { btn.closest('.rq-opts').querySelectorAll('.rq-opt').forEach(opt => opt.classList.remove('selected')); btn.classList.add('selected'); }
+  async function submitReviewQuiz() {
+    const items = [...document.querySelectorAll('.rq-item')]; const results = [];
+    for (const item of items) { const selected = item.querySelector('.rq-opt.selected'); if (!selected) { alert('請先回答所有複習題！'); return; } results.push({ word: item.dataset.word, correct: selected.dataset.val === item.dataset.correct }); }
+    items.forEach(item => item.querySelectorAll('.rq-opt').forEach(btn => { btn.disabled = true; if (btn.dataset.val === item.dataset.correct) btn.classList.add('correct'); else if (btn.classList.contains('selected')) btn.classList.add('wrong'); btn.classList.remove('selected'); }));
+    const today = window.SrsReview.localYmd(); const score = results.filter(result => result.correct).length; const resultEl = document.getElementById('rq-result'); const submitBtn = document.getElementById('rq-submit-btn');
+    if (window.SrsReview.isAlreadySynced('rq_done_', today)) { resultEl.textContent = `今天已完成複習（額外練習）：${score}/${results.length} 題答對，SRS 未更新。`; resultEl.className = 'success'; resultEl.style.display = 'block'; submitBtn.disabled = true; return; }
+    submitBtn.disabled = true; submitBtn.textContent = '同步中...';
+    try { await window.SrsReview.syncReviewResults(results, { today, storagePrefix: 'rq_done_', commitPrefix: 'SRS update: review quiz' }); resultEl.textContent = `複習完成！${score}/${results.length} 題答對，SRS 記錄已更新。`; resultEl.className = score === results.length ? 'success' : 'partial'; resultEl.style.display = 'block'; submitBtn.textContent = '✅ 已同步'; } catch (err) { submitBtn.disabled = false; submitBtn.textContent = '提交答案 & 同步 SRS 記錄'; alert('同步失敗：' + err.message); }
+  }
+  function bridgeReveal(btn) { const ans = btn.nextElementSibling; const show = ans.style.display !== 'block'; ans.style.display = show ? 'block' : 'none'; btn.textContent = show ? btn.textContent.replace('顯示', '隱藏') : btn.textContent.replace('隱藏', '顯示'); }
+  function getContextItems() { return [...document.querySelectorAll('.context-item[data-sentence-id]')]; }
+  function updateContextProgress() { const items = getContextItems(); const rated = items.filter(item => item.dataset.rating).length; document.getElementById('context-progress').textContent = `已評分 ${rated} / ${items.length} 題`; }
+  function rateContextRecall(btn) { const item = btn.closest('.context-item'); item.dataset.rating = btn.dataset.rating; item.classList.remove('unrated'); item.querySelectorAll('.context-rate-btn').forEach(rateBtn => rateBtn.classList.toggle('active', rateBtn === btn)); updateContextProgress(); }
+  async function syncContextRecall() {
+    if (!window.SentenceSrs) { alert('句子 SRS 模組尚未載入，請重新整理後再試。'); return; }
+    const items = getContextItems(); const missing = items.filter(item => !item.dataset.rating);
+    if (missing.length) { missing.forEach(item => item.classList.add('unrated')); missing[0].scrollIntoView({ behavior: 'smooth', block: 'center' }); alert(`還有 ${missing.length} 題尚未自評。`); return; }
+    const today = window.SentenceSrs.localYmd(); const resultEl = document.getElementById('context-result'); const syncBtn = document.getElementById('context-sync-btn'); const results = items.map(item => ({ id: item.dataset.sentenceId, rating: item.dataset.rating }));
+    if (window.SentenceSrs.isAlreadySynced('context_srs_done_', today)) { resultEl.textContent = '今天已同步過句子 SRS；這次當作額外練習，不重複更新。'; resultEl.className = 'context-result success'; syncBtn.disabled = true; return; }
+    syncBtn.disabled = true; syncBtn.textContent = '同步中...';
+    try { const synced = await window.SentenceSrs.syncSentenceResults(results, { today, storagePrefix: 'context_srs_done_', commitPrefix: 'Sentence SRS update: context recall' }); resultEl.textContent = `句子 SRS 已同步：更新 ${synced.updatedCount} 題，略過 ${synced.skippedCount} 題。`; resultEl.className = 'context-result success'; syncBtn.textContent = '已同步句子 SRS'; } catch (err) { resultEl.textContent = '同步失敗：' + err.message; resultEl.className = 'context-result warn'; syncBtn.disabled = false; syncBtn.textContent = '同步句子 SRS'; }
+  }
+  const VOCAB = { fit: { pos: 'v.', zh: '合身；適合', example: 'This shirt does not fit me.' }, label: { pos: 'n.', zh: '標籤；吊牌', example: 'Please keep the label on the shirt.' }, larger: { pos: 'adj.', zh: '比較大的', example: 'Could I try a larger size?' } };
+  const REVIEW = { store: { pos: 'v.', zh: '存放；寄放', example: 'Can you store my luggage until six?' }, size: { pos: 'n.', zh: '尺寸；份量', example: 'Which size would you like?' }, choice: { pos: 'n.', zh: '選擇', example: 'The soup is another choice for lunch.' } };
+  const PHRASES = { 'return policy': { type: 'Collocation', zh: '退換貨規則', note: '在網站或店內規則中找期限與條件。' }, 'within thirty days': { type: 'Fixed Expression', zh: '在三十天內', note: '看到期限時直接抓整塊。' }, 'keep the label on': { type: 'Phrasal Verb', zh: '把吊牌留在上面', note: '提醒物品維持原本狀態。' }, 'goes back to': { type: 'Phrasal Verb', zh: '回到', note: '回到店裡處理問題。' }, 'check the stock': { type: 'Collocation', zh: '查庫存', note: '確認尺寸或商品還有沒有。' }, 'out of stock': { type: 'Fixed Expression', zh: '缺貨；沒有庫存', note: '看到它就要找替代方案。' }, 'exchange this for a larger size': { type: 'Fixed Expression', zh: '把這件換成大一號', note: 'Could I exchange this for a larger size?' }, 'store credit': { type: 'Collocation', zh: '店內購物金', note: '退款以外的替代方案。' } };
+  const popup = document.getElementById('word-popup'); const popContent = document.getElementById('pop-content'); let popupAnchor = null;
+  function closePopup() { popup.style.display = 'none'; }
+  function showPopup(value, anchor, kind) { popupAnchor = anchor; const key = value.toLowerCase(); const item = kind === 'vocab' ? VOCAB[key] : kind === 'review' ? REVIEW[key] : PHRASES[key]; if (!item) return; popContent.innerHTML = `<div class="pop-word">${value}</div><div class="pop-note"><strong>${kind === 'phrase' ? item.type : item.pos}</strong><br>${item.example || item.note}</div><button class="pop-zh-btn" type="button" onclick="revealZh(this)">👁 看中文</button><div class="pop-zh" style="display:none">${item.zh}</div>`; popup.style.display = 'block'; const rect = anchor.getBoundingClientRect(); popup.style.left = Math.max(12, Math.min(rect.left, window.innerWidth - popup.offsetWidth - 12)) + 'px'; popup.style.top = Math.max(8, rect.bottom + 8) + 'px'; }
+  function revealZh(btn) { btn.nextElementSibling.style.display = 'block'; btn.style.display = 'none'; }
+  document.addEventListener('DOMContentLoaded', () => { const articleAudio = document.getElementById('article-audio'); articleAudio.preload = 'metadata'; articleAudio.load(); updateContextProgress(); if (window.LearningFeedback) window.LearningFeedback.initDailyFeedback(); document.getElementById('article-body').addEventListener('click', event => { const vocab = event.target.closest('.vocab-word'); const review = event.target.closest('.review-word'); const phrase = event.target.closest('.phrase-chunk'); if (vocab) showPopup(vocab.dataset.word, vocab, 'vocab'); else if (review) showPopup(review.dataset.word, review, 'review'); else if (phrase) showPopup(phrase.dataset.phrase, phrase, 'phrase'); }); document.addEventListener('click', event => { if (!popup.contains(event.target) && !event.target.closest('.vocab-word,.review-word,.phrase-chunk')) closePopup(); }); });
+</script>
+</body>
+</html>

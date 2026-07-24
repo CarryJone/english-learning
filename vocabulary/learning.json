@@ -2609,6 +2609,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-24",
       "lastReviewedDate": null
+    },
+    {
+      "word": "fit",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "合身；適合",
+      "exampleSentence": "This shirt does not fit me.",
+      "dateAdded": "2026-07-24",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "label",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "標籤；吊牌",
+      "exampleSentence": "Please keep the label on the shirt.",
+      "dateAdded": "2026-07-24",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "larger",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "比較大的",
+      "exampleSentence": "Could I try a larger size?",
+      "dateAdded": "2026-07-24",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
     }
   ]
 }

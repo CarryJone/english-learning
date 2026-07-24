@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-07-24",
+      "day": 83,
+      "title": "Checking a Store Return Policy",
+      "url": "daily/2026-07-24/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
+      "evidence": [
+        "Mission: read a store return policy and exchange a shirt size.",
+        "Input: online return policy and shop-counter dialogue.",
+        "Find the thirty-day window, receipt and label requirements, and the sale-item restriction.",
+        "Could I exchange this for a larger size? / The larger size is out of stock. / Sorry, did you say refund or store credit?"
+      ]
+    },
+    {
       "date": "2026-07-23",
       "day": 82,
       "title": "Reading a Café Menu and Ordering Lunch",

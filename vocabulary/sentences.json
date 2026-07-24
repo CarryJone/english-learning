@@ -1747,6 +1747,176 @@
       "nextReview": "2026-07-24",
       "lastReviewedDate": "2026-07-23",
       "lastRating": "remembered"
+    },
+    {
+      "id": "2026-07-24-return-policy",
+      "type": "context",
+      "zhPrompt": "你在手機上查看退換貨規則，怎麼說你要先看規則？",
+      "answer": "I need to check the return policy first.",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "提示：I need to check the ... first.",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-within-thirty-days",
+      "type": "context",
+      "zhPrompt": "告訴同伴商品必須在三十天內退回。",
+      "answer": "The item must be returned within thirty days.",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "提示：The item must be returned ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-exchange-larger-size",
+      "type": "sentence",
+      "zhPrompt": "你想把這件衣服換成大一號，請說一次。",
+      "answer": "Could I exchange this for a larger size?",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "提示：Could I exchange this ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-out-of-stock",
+      "type": "context",
+      "zhPrompt": "店員告知大尺寸缺貨，你怎麼轉述？",
+      "answer": "The larger size is out of stock.",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，再看答案。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-hear-refund-credit",
+      "type": "context",
+      "zhPrompt": "你沒聽清楚是退款還是購物金，怎麼確認？",
+      "answer": "Sorry, did you say refund or store credit?",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，再看答案。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-keep-label",
+      "type": "sentence",
+      "zhPrompt": "提醒同伴吊牌要留在衣服上。",
+      "answer": "Please keep the label on the shirt.",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "提示：Please keep the label ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-airport-return-policy",
+      "type": "context",
+      "zhPrompt": "在機場商店買東西前，你想先查看退換貨規則。",
+      "answer": "I need to check the return policy before I buy it. / Can I see the return policy?",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv3",
+      "hint": "可有不同自然答案。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-shoe-larger-size",
+      "type": "context",
+      "zhPrompt": "在鞋店，你想把鞋子換成大一號。",
+      "answer": "Could I exchange these shoes for a larger size? / Could I try a larger size?",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "把今天的換尺寸句型移到不同商品。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-phone-out-of-stock",
+      "type": "context",
+      "zhPrompt": "手機店沒有藍色手機，你想確認是不是缺貨並問另一個選擇。",
+      "answer": "Is the blue phone out of stock? Do you have another choice?",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv3",
+      "hint": "可用 out of stock 和 another choice。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-24-receipt-refund",
+      "type": "context",
+      "zhPrompt": "咖啡店給錯飲料，你拿著收據詢問退款。",
+      "answer": "Could I get a refund with this receipt?",
+      "sourceDate": "2026-07-24",
+      "sourceTitle": "Checking a Store Return Policy",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，再看答案。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-25",
+      "lastReviewedDate": null
     }
   ]
 }
