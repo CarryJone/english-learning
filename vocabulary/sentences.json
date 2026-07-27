@@ -1917,6 +1917,176 @@
       "reviewCount": 0,
       "nextReview": "2026-07-25",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-report-broken-bike",
+      "type": "sentence",
+      "zhPrompt": "你發現租來的腳踏車鎖壞了，先向服務人員求助。",
+      "answer": "The lock is broken. Can you help me?",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "提示：The lock is ... Can you ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-choose-replacement-bike",
+      "type": "sentence",
+      "zhPrompt": "你要說你要在 Station 3 選一台替代腳踏車。",
+      "answer": "I need to choose a replacement bike at Station 3.",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "提示：I need to choose ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-scan-code",
+      "type": "sentence",
+      "zhPrompt": "提醒旅伴騎車前先掃描代碼。",
+      "answer": "Please scan the code before you ride.",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "提示：Please ... before you ride.",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-say-again-station",
+      "type": "sentence",
+      "zhPrompt": "你沒聽清楚工作人員說的是 3 號還是 4 號站。",
+      "answer": "Could you say that again? Station 3 or Station 4?",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，再看答案。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-station-four",
+      "type": "sentence",
+      "zhPrompt": "你要說替代腳踏車改在 Station 4 取車。",
+      "answer": "I need to pick up the replacement bike at Station 4.",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，再看答案。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-replace-rental-bike",
+      "type": "context",
+      "zhPrompt": "你在另一個城市租車，想確認能不能更換壞掉的車。",
+      "answer": "Can you replace this bike?",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "可以用 replace a bike。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-affected-lock-problem",
+      "type": "context",
+      "zhPrompt": "你在租借 App 看到車輛狀態異常，要告訴朋友這台車受到鎖故障影響。",
+      "answer": "Bike 18 is affected by a lock problem.",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "使用 affected 和 lock problem。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-airport-say-again",
+      "type": "context",
+      "zhPrompt": "你在機場聽不清楚登機門號碼，請工作人員再說一次。",
+      "answer": "Could you say that again? Gate 12 or Gate 20?",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "跨到機場情境，先用 Could you say that again?。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-keep-label-package",
+      "type": "sentence",
+      "zhPrompt": "提醒同伴包裹上的標籤要留著。",
+      "answer": "Please keep the label on the package.",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "dailyResponse",
+        "onlineReading"
+      ],
+      "level": "lv1",
+      "hint": "提示：Please keep the label ...",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-07-27-return-bike-by-ten",
+      "type": "sentence",
+      "zhPrompt": "你要確認是否必須在晚上十點前還車。",
+      "answer": "Do I need to return the bike by 10 p.m.?",
+      "sourceDate": "2026-07-27",
+      "sourceTitle": "Fixing a Broken Rental Bike",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "先自己說，再看答案。",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
     }
   ]
 }

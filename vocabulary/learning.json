@@ -2639,6 +2639,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-25",
       "lastReviewedDate": null
+    },
+    {
+      "word": "broken",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "壞掉的；損壞的",
+      "exampleSentence": "The lock is broken.",
+      "dateAdded": "2026-07-27",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "lock",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鎖；鎖具",
+      "exampleSentence": "Please check the bike lock.",
+      "dateAdded": "2026-07-27",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "replace",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "更換；替代",
+      "exampleSentence": "They can replace the broken bike.",
+      "dateAdded": "2026-07-27",
+      "reviewCount": 0,
+      "nextReview": "2026-07-28",
+      "lastReviewedDate": null
     }
   ]
 }

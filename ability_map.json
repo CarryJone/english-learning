@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23",
+  "updatedAt": "2026-07-27",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-27",
+      "day": 84,
+      "title": "Fixing a Broken Rental Bike",
+      "url": "daily/2026-07-27/",
+      "primary": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "secondary": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "evidence": [
+        "Mission: report a broken rental-bike lock and get a replacement.",
+        "Input: bike-rental app notice and help-desk dialogue.",
+        "Find Bike 18's problem, the replacement-bike station, the scan instruction, and the 10 p.m. return time.",
+        "Say \"The lock is broken. Can you help me?\" / \"Could you say that again?\" / \"Please scan the code before you ride.\""
+      ]
+    },
     {
       "date": "2026-07-24",
       "day": 83,
