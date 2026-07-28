@@ -2669,6 +2669,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-28",
       "lastReviewedDate": null
+    },
+    {
+      "word": "baggage",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "行李（機場用語）",
+      "exampleSentence": "Please report damaged baggage at the service desk.",
+      "dateAdded": "2026-07-28",
+      "reviewCount": 0,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "damaged",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "損壞的",
+      "exampleSentence": "The damaged suitcase has a broken wheel.",
+      "dateAdded": "2026-07-28",
+      "reviewCount": 0,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "suitcase",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "行李箱",
+      "exampleSentence": "My suitcase has a broken lock.",
+      "dateAdded": "2026-07-28",
+      "reviewCount": 0,
+      "nextReview": "2026-07-29",
+      "lastReviewedDate": null
     }
   ]
 }

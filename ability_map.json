@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-27",
+  "updatedAt": "2026-07-28",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-28",
+      "day": 85,
+      "title": "Reporting a Damaged Suitcase",
+      "url": "daily/2026-07-28/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: report damaged baggage and complete the repair form.",
+        "Input: airport baggage-service notice and counter dialogue.",
+        "Find the photo instruction, baggage-tag instruction, and Desk 5 destination.",
+        "Say \"I need to report damaged baggage.\" / \"Could you say that again?\" / \"Should I bring the form there?\""
+      ]
+    },
     {
       "date": "2026-07-27",
       "day": 84,
