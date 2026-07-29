@@ -1626,9 +1626,9 @@
       "chineseMeaning": "訊息",
       "exampleSentence": "I got a message from the store today.",
       "dateAdded": "2026-06-02",
-      "reviewCount": 4,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": "2026-06-29"
+      "reviewCount": 5,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "busy",
@@ -1636,9 +1636,9 @@
       "chineseMeaning": "忙碌的",
       "exampleSentence": "The cafe is busy at lunch time.",
       "dateAdded": "2026-06-02",
-      "reviewCount": 4,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": "2026-06-29"
+      "reviewCount": 5,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "minute",
@@ -1646,9 +1646,9 @@
       "chineseMeaning": "分鐘",
       "exampleSentence": "The bus stop is five minutes from here.",
       "dateAdded": "2026-06-02",
-      "reviewCount": 4,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": "2026-06-29"
+      "reviewCount": 5,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "bay",
@@ -1666,9 +1666,9 @@
       "chineseMeaning": "直達的；快速的",
       "exampleSentence": "This is the express train to the city.",
       "dateAdded": "2026-06-03",
-      "reviewCount": 4,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": "2026-06-29"
+      "reviewCount": 0,
+      "nextReview": "2026-07-30",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "staff",
@@ -1676,9 +1676,9 @@
       "chineseMeaning": "工作人員",
       "exampleSentence": "The station staff can help you.",
       "dateAdded": "2026-06-03",
-      "reviewCount": 4,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": "2026-06-29"
+      "reviewCount": 5,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "ready",
@@ -1686,9 +1686,9 @@
       "chineseMeaning": "準備好的；可取的",
       "exampleSentence": "Your food is ready now.",
       "dateAdded": "2026-06-04",
-      "reviewCount": 4,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": "2026-06-29"
+      "reviewCount": 5,
+      "nextReview": "2026-09-27",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "queue",
@@ -2676,9 +2676,9 @@
       "chineseMeaning": "行李（機場用語）",
       "exampleSentence": "Please report damaged baggage at the service desk.",
       "dateAdded": "2026-07-28",
-      "reviewCount": 0,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-08-01",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "damaged",
@@ -2687,8 +2687,8 @@
       "exampleSentence": "The damaged suitcase has a broken wheel.",
       "dateAdded": "2026-07-28",
       "reviewCount": 0,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": null
+      "nextReview": "2026-07-30",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "suitcase",
@@ -2696,9 +2696,9 @@
       "chineseMeaning": "行李箱",
       "exampleSentence": "My suitcase has a broken lock.",
       "dateAdded": "2026-07-28",
-      "reviewCount": 0,
-      "nextReview": "2026-07-29",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-08-01",
+      "lastReviewedDate": "2026-07-29"
     },
     {
       "word": "miss",
