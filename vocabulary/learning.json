@@ -2699,6 +2699,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-29",
       "lastReviewedDate": null
+    },
+    {
+      "word": "miss",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "錯過；沒趕上",
+      "exampleSentence": "I don't want to miss the last train.",
+      "dateAdded": "2026-07-29",
+      "reviewCount": 0,
+      "nextReview": "2026-07-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "valid",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有效的；仍可使用的",
+      "exampleSentence": "Is this ticket still valid?",
+      "dateAdded": "2026-07-29",
+      "reviewCount": 0,
+      "nextReview": "2026-07-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "flexible",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有彈性的；可變通的",
+      "exampleSentence": "This ticket is flexible, so I can take a later train.",
+      "dateAdded": "2026-07-29",
+      "reviewCount": 0,
+      "nextReview": "2026-07-30",
+      "lastReviewedDate": null
     }
   ]
 }

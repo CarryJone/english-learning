@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28",
+  "updatedAt": "2026-07-29",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-29",
+      "day": 86,
+      "title": "Changing a Train Ticket After a Delay",
+      "url": "daily/2026-07-29/",
+      "primary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "secondary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: read a rail-app delay notice and change the train plan.",
+        "Input: delay notice and ticket-counter dialogue.",
+        "Find the 20-minute delay, ticket validity, no change fee, and Platform 3.",
+        "Say \"Is this ticket still valid?\" / \"Could you say that again?\" / \"I will take a later train.\""
+      ]
+    },
     {
       "date": "2026-07-28",
       "day": 85,
