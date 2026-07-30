@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-29",
+  "updatedAt": "2026-07-30",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-30",
+      "day": 87,
+      "title": "Fixing a Hotel Key Card Problem",
+      "url": "daily/2026-07-30/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: fix a hotel key-card problem and regain room access.",
+        "Input: hotel notice and front-desk dialogue.",
+        "Find the blocked/expired-card rule, ID + free reset, desk hours, and the new-room option.",
+        "Say \"My card does not work. Could you reset the card?\" / \"I can show my ID.\" / \"What is another option?\""
+      ]
+    },
     {
       "date": "2026-07-29",
       "day": 86,

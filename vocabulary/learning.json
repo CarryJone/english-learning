@@ -2729,6 +2729,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-30",
       "lastReviewedDate": null
+    },
+    {
+      "word": "expired",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "過期的；失效的",
+      "exampleSentence": "My room key has expired.",
+      "dateAdded": "2026-07-30",
+      "reviewCount": 0,
+      "nextReview": "2026-07-31",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "reset",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "重設；重新設定",
+      "exampleSentence": "The staff can reset the key card.",
+      "dateAdded": "2026-07-30",
+      "reviewCount": 0,
+      "nextReview": "2026-07-31",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "access",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "進入；使用",
+      "exampleSentence": "You need this card to access your room.",
+      "dateAdded": "2026-07-30",
+      "reviewCount": 0,
+      "nextReview": "2026-07-31",
+      "lastReviewedDate": null
     }
   ]
 }

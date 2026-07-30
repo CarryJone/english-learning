@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-07-30 — Day 87 正式教材產出
+
+- 先 `git fetch origin`，確認遠端有 2026-07-29 的 SRS 更新後，以 `git pull --ff-only origin main` 同步最新 `vocabulary/learning.json`。
+- 新增 `daily/2026-07-30/`，主題為 `Fixing a Hotel Key Card Problem`；今日新字：`expired`、`reset`、`access`。
+- 文章融入到期複習字 `speaker`、`deliver`、`option`；Active Recall Quiz 納入同步後全部 15 個到期字；Speaking Bridge 使用 `damaged`、`baggage`、`label`、`larger`。
+- 完成 10 題 Context Recall、8 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s14.mp3`。
+- 驗證：`python3 scripts/validate_daily.py 2026-07-30` 通過 79 checks、0 warnings、0 errors；句子皆不超過 12 字、JSON parse、SRS 對齊與 `git diff --check` 亦通過。
+
+---
 ## 2026-07-22 — Day 81 正式教材產出
 
 - 先同步遠端兩筆 2026-07-21 SRS 更新，再依最新 `vocabulary/learning.json` 產生今日複習內容。
