@@ -2759,6 +2759,36 @@
       "reviewCount": 0,
       "nextReview": "2026-07-31",
       "lastReviewedDate": null
+    },
+    {
+      "word": "missing",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "缺少的；不見的",
+      "exampleSentence": "One item is missing from my order.",
+      "dateAdded": "2026-07-31",
+      "reviewCount": 0,
+      "nextReview": "2026-08-01",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "item",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "品項；物品",
+      "exampleSentence": "Please check each item in the bag.",
+      "dateAdded": "2026-07-31",
+      "reviewCount": 0,
+      "nextReview": "2026-08-01",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "remake",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "重新製作",
+      "exampleSentence": "They can remake the sandwich in ten minutes.",
+      "dateAdded": "2026-07-31",
+      "reviewCount": 0,
+      "nextReview": "2026-08-01",
+      "lastReviewedDate": null
     }
   ]
 }

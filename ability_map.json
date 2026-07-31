@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-30",
+  "updatedAt": "2026-07-31",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-07-31",
+      "day": 88,
+      "title": "Fixing a Missing Café Item",
+      "url": "daily/2026-07-31/",
+      "primary": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "secondary": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "evidence": [
+        "Mission: fix a missing item in a café takeaway order.",
+        "Input: café pickup notice and counter dialogue.",
+        "Find Counter 2, the ten-minute remake time, and the replacement/refund option.",
+        "Say \"I need to report a missing item.\" / \"Could you remake it?\" / \"I can show the receipt.\""
+      ]
+    },
     {
       "date": "2026-07-30",
       "day": 87,

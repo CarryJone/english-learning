@@ -2,7 +2,7 @@
 
 > 用途：短期狀態與下一步接手資訊。
 > 注意：本檔不是開發規則；正式規則請看專案 `AGENTS.md`、`.ai/DECISIONS.md` 或指定的 `SKILL.md`。
-> 最後更新：2026-07-30
+> 最後更新：2026-07-31
 > 更新者：Agent
 
 ## 目前目標
@@ -11,15 +11,15 @@
 ## 目前進度
 - [x] `The Blue Receipt` 已於 2026-07-14 Day 76 封存；正式內容已切換為 `mission-based`，不可自動續寫 Episode 19。
 - [x] Mission、英文資訊輸入、Role-play、Context Recall、能力地圖、單字 / 句子 SRS 與音檔流程均已接通。
-- [x] Day 77–87 已完成十一篇正式任務型教材；最新為 `daily/2026-07-30/` 的 `Fixing a Hotel Key Card Problem`。
-- [x] Day 81–87 已完成 7 篇語塊深化試行（7/7）；Day 87 目標語塊為 `show your ID`、`Could you reset the card?`、`another option`。
-- [x] 目標語塊已貫穿 Article、Key Phrases、Role-play 的 `You` 回合與 Context Recall，並以機場商店、鞋店與手機店做跨情境提取。
+- [x] Day 77–88 已完成十二篇正式任務型教材；最新為 `daily/2026-07-31/` 的 `Fixing a Missing Café Item`。
+- [x] Day 81–87 已完成 7 篇語塊深化試行（7/7）；Day 88 延續相同人工驗收，目標語塊為 `show the receipt`、`report a missing item`、`Could you remake it?`。
+- [x] 目標語塊已貫穿 Article、Key Phrases、Role-play 的 `You` 回合與 Context Recall，Day 88 以機場商店與飯店早餐做跨情境提取。
 - [x] Active Recall Quiz、Speaking Bridge、`vocabulary/learning.json` 與 `vocabulary/sentences.json` 保持 source-of-truth 與既有 SRS 邊界；未新增 Collocation SRS。
 
 ## 驗證狀態
-- [x] Day 87 通過 `python3 scripts/validate_daily.py 2026-07-30`：79 checks、0 warnings、0 errors。
-- [x] Day 87 包含 3 個新字、15 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge、8 回合 Role-play 與 15 個非空音檔。
-- [x] Day 87 的 3 個目標語塊已分布在 Article、Key Phrases、Role-play 的 You 回合與 Context Recall，並把 reset / access 移到博物館導覽與機場休息室做跨情境提取。
+- [x] Day 88 通過 `python3 scripts/validate_daily.py 2026-07-31`：79 checks、0 warnings、0 errors。
+- [x] Day 88 包含 3 個新字、15 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge、10 回合 Role-play 與 15 個非空音檔。
+- [x] Day 88 的 3 個目標語塊已分布在 Article、Key Phrases、Role-play 的 You 回合與 Context Recall，並完成收據、櫃檯與替代方案的跨情境提取。
 
 ## 目前 Blocker
 - 無。
@@ -31,7 +31,7 @@
 - 每日頁必須通過 `python3 scripts/validate_daily.py [日期]`；試行 7 篇後再依回饋與卡點評估是否需要 UI、資料欄位或 Collocation SRS。
 
 ## 活躍工作區
-- `daily/2026-07-30/`
+- `daily/2026-07-31/`
 - `index.html`
 - `profile.json`
 - `vocabulary/learning.json`
