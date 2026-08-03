@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-31",
+  "updatedAt": "2026-08-03",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-03",
+      "day": 89,
+      "title": "Handling a Stuck Hotel Laundry Machine",
+      "url": "daily/2026-08-03/",
+      "primary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: handle a stuck hotel laundry machine.",
+        "Input: hotel laundry notice and front-desk dialogue.",
+        "Find Laundry Room B on Floor 2, the 7 a.m.–10 p.m. hours, the do-not-pull rule, and the thirty-minute repair time.",
+        "Say \"The washer is stuck.\" / \"Is it working?\" / \"Could you call for a repair?\""
+      ]
+    },
     {
       "date": "2026-07-31",
       "day": 88,

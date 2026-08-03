@@ -2789,6 +2789,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-01",
       "lastReviewedDate": null
+    },
+    {
+      "word": "stuck",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "卡住的；動不了的",
+      "exampleSentence": "The laundry-room door is stuck.",
+      "dateAdded": "2026-08-03",
+      "reviewCount": 0,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "repair",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "修理；維修",
+      "exampleSentence": "The staff will call for a repair.",
+      "dateAdded": "2026-08-03",
+      "reviewCount": 0,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "working",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "運作中的；正常的",
+      "exampleSentence": "Is the dryer working?",
+      "dateAdded": "2026-08-03",
+      "reviewCount": 0,
+      "nextReview": "2026-08-04",
+      "lastReviewedDate": null
     }
   ]
 }
