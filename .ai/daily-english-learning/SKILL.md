@@ -8,6 +8,8 @@ description: 每天產生任務型英文學習材料（HTML + 語音）
 **目前正式模式（2026-07-15 起）：**
 - 預設 `contentMode` 是 `mission-based`，每日文章不是連載小說，而是一個可完成、可驗收的真實生活任務。
 - 學習者的兩個核心目標同等重要：出遊時能開口溝通，以及上網查資料時能找出、理解、使用英文資訊。
+- 自 2026-08-03 起，所有新任務都以出國旅遊為總體情境；資訊判讀日也要處理行前準備或旅途中會用到的網站、app、公告、規則、評論與教學步驟。
+- Article 的任務敘事預設採第一人稱現場視角，讓學習者直接代入旅客並跟讀 `I / my` 句型；外部英文資訊與工作人員說法保留自然語氣，不要求全文每句都使用第一人稱。
 - `The Blue Receipt` 已在 2026-07-14 的 Episode 18 封存。一般每日產出不可續寫 Episode 19，也不可讀取或更新 `.ai/serial-story/`。
 - 只有使用者明確要求回顧或續寫小說時，才暫時讀取 serial story 文件；該次完成後仍回到 `mission-based`，不可自行開啟第二季。
 - 舊小說頁面、音檔、單字與句子 SRS 都是歷史學習資料，保留但不作為新教材的內容模板。
@@ -63,8 +65,10 @@ mkdir -p ./daily/$TODAY
 
 - **唯一正式規格**：正式每日教材以本檔為準；`AGENTS.md` 只提供高層守則，`PROJECT_STATE.md` / `WORKLOG.md` 不作為內容規格。
 - **預設內容模式**：每篇是一個 `real-life mission`，不是連載 episode；`profile.json.lastTopic` 固定為 `mission`。
+- **主題範圍**：所有新教材都必須落在出國旅遊的行前準備或旅途中；不可回到一般居家日常題材。英文資訊判讀仍保留，但素材必須服務訂票、交通、住宿、餐飲、購物、景點、通訊、健康、安全或問題處理。
+- **敘事視角**：Article 的任務骨架預設使用第一人稱、以現場可直接套用的句子推進；公告、規則、按鈕、菜單與 Staff 說法維持原本自然人稱。mini dialogue 直接呈現 `Me / Staff` 等說話者，不再用固定角色的 `Mina says / she asks` 包住學習者要說的句子。
 - **每週能力平衡**：旅行開口 3 天、英文資訊判讀 2 天、查資料後開口的整合任務 1 天、SRS 與短模擬 1 天。日期可依實際排程平移，但七天內要補齊。
-- **四週模組順序**：M1 `Transport & Getting Around`；M2 `Hotels, Food & Shopping`；M3 `Problems & Repair`；M4 `Online Research & Instructions`。完成 M4 後回到 M1，但換新任務與更高一點的句型難度。
+- **四週模組順序**：M1 `Transport & Getting Around`；M2 `Hotels, Food & Shopping`；M3 `Problems & Repair`；M4 `Travel Research & Instructions`。完成 M4 後回到 M1，但換新任務與更高一點的句型難度。
 - **雙目標對齊**：每篇至少包含 1 句旅行 / 外出可直接套用的英文，以及 1 個可在網頁、app、公告、地圖、菜單或搜尋結果中辨識的說法。
 - **資訊輸入**：每篇提供一份短英文素材，例如站牌、時刻表、菜單、訂房規則、搜尋結果、教學步驟、評論或公告；學習者要找出至少 2 個可驗收資訊。
 - **詞彙深度優先**：不要把所有單字等量處理。高頻、可立即套用的字以「能說、能寫」為目標；較低頻但任務必要的字先以「看得懂、認得出」為目標。
@@ -73,6 +77,7 @@ mkdir -p ./daily/$TODAY
 - **任務反應**：每篇必須有 Role-play，至少 4 個回合，包含一次資訊改變、聽不懂、需要澄清或需要替代方案的分支。
 - **SRS 邊界**：Active Recall Quiz 只處理到期舊單字，Speaking Bridge 只使用 2–7 天前單字；目前不新增獨立 Collocation SRS，語塊提取沿用 Role-play、Context Recall 與句子 SRS。
 - **難度控制**：保持 A2，句子短、字彙高頻、自然口語；寧可更簡單，也不要為了題材或單字變難。
+- **三分鐘主音檔**：自 2026-08-04 起，`article.mp3` 的正式目標為 2 分 45 秒到 3 分 15 秒。維持自然的 A2 語速，以增加有用的任務內容、控制式重複與情境變化拉長，不可只靠降低 TTS 語速或堆疊生詞。
 - **必要產物**：必須產出完整 HTML、`article.mp3`、`s01.mp3` 到 `sNN.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`。
 
 ---
@@ -82,20 +87,24 @@ mkdir -p ./daily/$TODAY
 根據讀取的資料，在腦中規劃好以下所有內容，**不要個別輸出檔案**，全部填入 Step 4 的 HTML 模板：
 
 #### 3a. 任務與英文輸入
-- 先選定一個 `real-life mission`，任務必須能用 2–3 個可觀察條件驗收，例如「確認正確月台、找出發車時間、向工作人員問替代方案」。
+- 先選定一個出國旅遊的 `real-life mission`，任務必須能用 2–3 個可觀察條件驗收，例如「確認正確月台、找出發車時間、向工作人員問替代方案」。行前資訊任務也必須能指出它會支援哪一個真實旅程決策或現場行動。
 - 為任務指定一種主要英文輸入：站牌、時刻表、地圖、菜單、訂房頁、搜尋結果、教學步驟、評論、規則、公告或短對話。
 - Mission Brief 必須寫清楚：
   - 今天要完成的任務
   - 學習者要從英文輸入找出的 2–3 個資訊
   - 完成任務後要說出的 1 句 survival sentence
-- Article 區塊改用「任務英文素材」，可由短文章、對話、公告加說明、搜尋結果加使用者反應組成；不要寫成連載小說或只靠懸念推進。
-- 英文素材建議 90–140 字、8–14 句；每句最多 12 個字，避免複雜子句與被動語態。若素材是公告或搜尋結果，可保留短標題、按鈕、價格、時間與規則原文。
+- Article 區塊改用「第一人稱任務英文素材」，可由旅客的現場反應、直接對話、公告加說明、搜尋結果加使用者反應組成；任務骨架預設用 `I / my`，並優先使用現在式或即將採取的行動，讓學習者可直接跟讀與套用。
+- 公告、菜單、網站、app、訂房規則、時刻表及 Staff 的句子依真實情境保留自然的祈使句、第二人稱或其他必要人稱；不要把全文機械式改成 `I`，也不要再以固定第三人稱主角包住 mini dialogue。
+- mini dialogue 直接標示 `Me / Staff`、`Me / Officer` 等說話者；學習者台詞應是完整可說出口的第一人稱句子，而不是 `Mina asks, “...”` 或 `She says, “...”`。
+- 英文素材目標 390–430 字、36–44 句，讓目前 `RATE = "-10%"` 的 `article.mp3` 落在 2 分 45 秒到 3 分 15 秒；每句最多 12 個字，避免複雜子句與被動語態。若素材是公告或搜尋結果，可保留短標題、按鈕、價格、時間與規則原文。
+- 長篇幅要切成三個容易跟讀的任務段落：① 到場與讀取資訊，② 開口確認與採取行動，③ 資訊改變、澄清或替代方案。每段約一分鐘，段落之間保持同一任務，不拼接三個無關小故事。
+- 用控制式重複鞏固 2–3 個目標語塊：在不同回合或資訊變化中自然重現 2–4 次，但不可逐句原樣灌水。今日新單字仍維持正好 3 個；篇幅增加不代表增加生詞量或文法難度。
 - 每篇至少出現：
   - 1 句可直接套用在旅行 / 外出互動的英文
   - 1 個可在網頁、app、地圖、菜單或公告中辨識的資訊說法
   - 1 段 2–4 句的 mini dialogue
   - 1 句處理聽不懂、資訊改變或需要澄清的 repair sentence
-- 旅行日優先訓練問路、確認、求助、改變安排；資訊日優先訓練搜尋字串、標題、摘要、步驟、限制與下一步；整合日必須先查資料再開口。
+- 旅行開口日優先訓練問路、確認、求助、改變安排；旅行資訊日優先訓練搜尋字串、標題、摘要、步驟、限制與下一步；整合日必須先查旅行資料再開口。
 - 每篇文章完成後要能回答：「這篇會讓學習者在什麼真實場景多做對一件事？」若回答不清楚，換題材。
 - 難度標準：至少 90% 使用 A1–A2 高頻字；今日 3 個新單字與 2–3 個複習字以外，不刻意加入低回報生詞。
 - **融入複習單字**：從 3e 的到期複習單字中挑選 2–3 個，自然放入任務素材，並用 `review-word` class 標記；不要為了故事連貫硬塞。
@@ -484,7 +493,7 @@ mkdir -p ./daily/$TODAY
   </div>
 
   <div class="player-card">
-    <div class="player-label">🎧 Listen to the Article</div>
+    <div class="player-label">🎧 3-Minute Listening Practice</div>
     <div class="player-title">[文章標題]</div>
     <audio id="article-audio" controls>
       <source src="article.mp3" type="audio/mpeg" />
@@ -1192,8 +1201,10 @@ mkdir -p ./daily/$TODAY
 ### Step 5：產生語音檔
 
 用 edge-tts 產生 MP3。需要產生兩種檔案：
-1. `article.mp3`：整篇文章完整朗讀
+1. `article.mp3`：整篇文章完整朗讀；自 2026-08-04 起必須落在 2 分 45 秒到 3 分 15 秒
 2. `s01.mp3`, `s02.mp3`, ...：每個句子個別朗讀（對應 Step 4 中 data-idx 的編號）
+
+時長必須由實際生成的檔案驗收，不可只用字數推估。保留 `RATE = "-10%"`；若不足 2 分 45 秒，優先補足同一任務中的資訊確認、repair 與替代方案內容，不可刻意把語速降得不自然。若超過 3 分 15 秒，先刪除重複或低回報句子，不刪任務成功所需資訊。
 
 **SENTENCES 陣列**：將文章每個句子依序列出純文字（順序必須與 HTML 中 data-idx 完全一致）：
 
@@ -1277,7 +1288,7 @@ python3 /tmp/tts_today.py
 - `contentMode` 維持 `mission-based`
 - `lastTopic` 固定為 `mission`
 - `currentProgram` 維持 `Real-life English Missions`
-- `currentModule` 更新為今天所屬模組，例如 `Transport & Getting Around`、`Hotels & Food`、`Problems & Repair`、`Online Research`
+- `currentModule` 更新為今天所屬模組，例如 `Transport & Getting Around`、`Hotels & Food`、`Problems & Repair`、`Travel Research & Instructions`
 - 保留 `archivedSeries` 歷史欄位，不新增 `currentSeries` 或 `currentEpisode`
 
 更新 `./ability_map.json`：
@@ -1342,6 +1353,8 @@ python3 /tmp/tts_today.py
 #### 7b. 產出後驗證：
 
 先做人工內容驗收；下列項目目前不一定由 `validate_daily.py` 自動判定：
+- 今日任務確實屬於出國旅遊的行前準備或旅途中情境；Article 的任務骨架採第一人稱現場視角，沒有再用固定第三人稱角色包住學習者台詞，真實英文輸入則保留自然人稱與語氣。
+- Article 已分成到場讀資訊、開口行動、資訊改變 / repair 三段；增加的篇幅仍維持 A2、正好 3 個新字，並以目標語塊的控制式重複為主，不是填充句或額外生詞。
 - 已選 2–3 個今日目標語塊，且至少 1 個支援開口、至少 1 個支援資訊判讀 / 搜尋。
 - 每個目標語塊都已出現在 Article、Key Phrases、Role-play 的 `You` 回合與 Context Recall。
 - 至少 1 個目標語塊已換到不同人物、地點或目的做跨情境提取。
@@ -1359,6 +1372,7 @@ python3 scripts/validate_daily.py [日期]
 - 必要 HTML 區塊是否存在。
 - 2026-07-15 起的新教材是否包含 Mission 與 Role-play 區塊；舊小說頁面仍依歷史格式驗證。
 - `article.mp3` 與 `sNN.mp3` 是否存在且非空。
+- 自 2026-08-04 起，`article.mp3` 的實際時長是否為 165–195 秒（2:45–3:15）。
 - 句子 `data-idx` 是否從 1 連續編號，並與逐句音檔一致。
 - Context Recall 題目是否有 `data-sentence-id`、自評按鈕，並與 `vocabulary/sentences.json` 對齊。
 - `ability_map.json` 是否有當日 session。
@@ -1390,6 +1404,7 @@ commit message 格式：`Day [累計天數]：[文章標題]`
 📁 路徑：./daily/[日期]/
 🌐 index.html  - 今日學習頁面（含文章、單字、片語、測驗）
 🔊 article.mp3 - 語音朗讀
+⏱️ 主音檔時長：[實際分鐘與秒數；正式目標 2:45–3:15]
 ☁️  GitHub     - https://github.com/CarryJone/english-learning
 
 🎯 今日任務：[任務名稱]

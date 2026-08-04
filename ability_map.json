@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-04",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-04",
+      "day": 90,
+      "title": "Choosing an Airport Ride After a Stop Change",
+      "url": "daily/2026-08-04/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: compare airport transport and handle a changed shuttle stop.",
+        "Input: airport transport page, information-desk dialogue, and service update.",
+        "Find the $12 / 35-minute / Terminal 1 B1 train and the $8 / 50-minute / Stop 6 shuttle, then update to Stop 8 near Door 4.",
+        "Say \"How long does it take?\" / \"Where does it leave from?\" / \"Could you say that again?\""
+      ]
+    },
     {
       "date": "2026-08-03",
       "day": 89,

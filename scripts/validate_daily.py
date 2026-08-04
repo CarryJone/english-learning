@@ -39,6 +39,51 @@ REQUIRED_SCRIPT_SUFFIXES = [
 ]
 
 MISSION_MODE_START_DATE = "2026-07-15"
+THREE_MINUTE_AUDIO_START_DATE = "2026-08-04"
+ARTICLE_AUDIO_MIN_SECONDS = 165
+ARTICLE_AUDIO_MAX_SECONDS = 195
+
+MPEG1_LAYER3_BITRATES_KBPS = [
+    0,
+    32,
+    40,
+    48,
+    56,
+    64,
+    80,
+    96,
+    112,
+    128,
+    160,
+    192,
+    224,
+    256,
+    320,
+    0,
+]
+MPEG2_LAYER3_BITRATES_KBPS = [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    80,
+    96,
+    112,
+    128,
+    144,
+    160,
+    0,
+]
+MPEG_SAMPLE_RATES = {
+    3: [44100, 48000, 32000],
+    2: [22050, 24000, 16000],
+    0: [11025, 12000, 8000],
+}
 
 ALLOWED_ABILITIES = {
     "travelSpeaking",
@@ -172,6 +217,74 @@ def normalize_title(title: str) -> str:
     return re.sub(r"\s+", " ", title).strip()
 
 
+def parse_layer3_frame_header(header: int) -> tuple[int, int, int] | None:
+    """Return frame length, samples per frame, and sample rate."""
+    if header & 0xFFE00000 != 0xFFE00000:
+        return None
+
+    version_id = (header >> 19) & 0b11
+    layer_id = (header >> 17) & 0b11
+    bitrate_index = (header >> 12) & 0b1111
+    sample_rate_index = (header >> 10) & 0b11
+    padding = (header >> 9) & 0b1
+
+    if version_id == 1 or layer_id != 1 or sample_rate_index == 3:
+        return None
+
+    bitrates = MPEG1_LAYER3_BITRATES_KBPS if version_id == 3 else MPEG2_LAYER3_BITRATES_KBPS
+    bitrate_kbps = bitrates[bitrate_index]
+    if bitrate_kbps == 0:
+        return None
+
+    sample_rate = MPEG_SAMPLE_RATES[version_id][sample_rate_index]
+    samples_per_frame = 1152 if version_id == 3 else 576
+    coefficient = 144 if version_id == 3 else 72
+    frame_length = (coefficient * bitrate_kbps * 1000) // sample_rate + padding
+    return frame_length, samples_per_frame, sample_rate
+
+
+def mp3_duration_seconds(path: Path) -> float | None:
+    """Read MPEG Layer III frames and return their total playback duration."""
+    data = path.read_bytes()
+    if len(data) < 4:
+        return None
+
+    start = 0
+    if data.startswith(b"ID3") and len(data) >= 10:
+        tag_size = 0
+        for byte in data[6:10]:
+            tag_size = (tag_size << 7) | (byte & 0x7F)
+        footer_size = 10 if data[5] & 0x10 else 0
+        start = 10 + tag_size + footer_size
+
+    first_frame = None
+    scan_end = min(len(data) - 3, start + 65536)
+    for offset in range(start, scan_end):
+        header = int.from_bytes(data[offset : offset + 4], "big")
+        if parse_layer3_frame_header(header):
+            first_frame = offset
+            break
+    if first_frame is None:
+        return None
+
+    total_seconds = 0.0
+    frame_count = 0
+    offset = first_frame
+    while offset + 4 <= len(data):
+        header = int.from_bytes(data[offset : offset + 4], "big")
+        frame = parse_layer3_frame_header(header)
+        if frame is None:
+            break
+        frame_length, samples_per_frame, sample_rate = frame
+        if offset + frame_length > len(data):
+            break
+        total_seconds += samples_per_frame / sample_rate
+        frame_count += 1
+        offset += frame_length
+
+    return total_seconds if frame_count else None
+
+
 def validate_required_sections(page: ParsedDailyPage, date: str, validation: Validation) -> None:
     joined_titles = "\n".join(page.card_titles)
     required_titles = list(REQUIRED_CARD_TITLES)
@@ -201,13 +314,27 @@ def validate_scripts(root: Path, page: ParsedDailyPage, validation: Validation) 
         )
 
 
-def validate_audio(day_dir: Path, page: ParsedDailyPage, validation: Validation) -> None:
+def validate_audio(day_dir: Path, date: str, page: ParsedDailyPage, validation: Validation) -> None:
     article = day_dir / "article.mp3"
+    article_ready = article.exists() and article.stat().st_size > 0
     validation.check(
-        article.exists() and article.stat().st_size > 0,
+        article_ready,
         "article.mp3 exists and is non-empty",
         "missing or empty article.mp3",
     )
+    if article_ready and date >= THREE_MINUTE_AUDIO_START_DATE:
+        duration = mp3_duration_seconds(article)
+        if duration is None:
+            validation.errors.append("could not read article.mp3 duration from MPEG Layer III frames")
+        else:
+            validation.check(
+                ARTICLE_AUDIO_MIN_SECONDS <= duration <= ARTICLE_AUDIO_MAX_SECONDS,
+                f"article.mp3 duration is {duration:.1f} seconds",
+                (
+                    f"article.mp3 duration is {duration:.1f} seconds; expected "
+                    f"{ARTICLE_AUDIO_MIN_SECONDS}–{ARTICLE_AUDIO_MAX_SECONDS} seconds"
+                ),
+            )
 
     indices = page.sentence_indices
     validation.check(bool(indices), "sentence spans exist", "no .sent data-idx sentence spans found")
@@ -426,7 +553,7 @@ def main() -> int:
     page = parse_daily_page(html_path)
     validate_required_sections(page, args.date, validation)
     validate_scripts(root, page, validation)
-    validate_audio(day_dir, page, validation)
+    validate_audio(day_dir, args.date, page, validation)
     validate_context_sentences(root, args.date, page, validation)
     validate_ability_map(root, args.date, page, validation)
     validate_vocabulary(root, args.date, page, validation)
