@@ -2849,6 +2849,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-05",
       "lastReviewedDate": null
+    },
+    {
+      "word": "data",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "行動數據；資料",
+      "exampleSentence": "I use mobile data for maps and messages.",
+      "dateAdded": "2026-08-05",
+      "reviewCount": 0,
+      "nextReview": "2026-08-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "activate",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "啟用",
+      "exampleSentence": "Can you activate the eSIM for me?",
+      "dateAdded": "2026-08-05",
+      "reviewCount": 0,
+      "nextReview": "2026-08-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "unlimited",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "無限量的",
+      "exampleSentence": "The unlimited plan costs twenty-five dollars.",
+      "dateAdded": "2026-08-05",
+      "reviewCount": 0,
+      "nextReview": "2026-08-06",
+      "lastReviewedDate": null
     }
   ]
 }

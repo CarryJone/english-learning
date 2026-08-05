@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-04",
+  "updatedAt": "2026-08-05",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-05",
+      "day": 91,
+      "title": "Buying Mobile Data at the Airport",
+      "url": "daily/2026-08-05/",
+      "primary": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: compare, buy, and activate a seven-day mobile data plan at the airport.",
+        "Input: mobile plan sign and phone-shop conversation.",
+        "Find the 10 GB / $18 plan, the unlimited / $25 plan, and the free-setup condition.",
+        "Say \"How much is it altogether?\" / \"Could you check it?\" / \"What should I do if it stops working?\""
+      ]
+    },
     {
       "date": "2026-08-04",
       "day": 90,

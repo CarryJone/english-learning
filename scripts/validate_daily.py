@@ -40,8 +40,11 @@ REQUIRED_SCRIPT_SUFFIXES = [
 
 MISSION_MODE_START_DATE = "2026-07-15"
 THREE_MINUTE_AUDIO_START_DATE = "2026-08-04"
-ARTICLE_AUDIO_MIN_SECONDS = 165
-ARTICLE_AUDIO_MAX_SECONDS = 195
+TWO_MINUTE_AUDIO_START_DATE = "2026-08-05"
+THREE_MINUTE_AUDIO_MIN_SECONDS = 165
+THREE_MINUTE_AUDIO_MAX_SECONDS = 195
+TWO_MINUTE_AUDIO_MIN_SECONDS = 105
+TWO_MINUTE_AUDIO_MAX_SECONDS = 135
 
 MPEG1_LAYER3_BITRATES_KBPS = [
     0,
@@ -98,6 +101,8 @@ class ParsedDailyPage:
     title_text: str = ""
     card_titles: list[str] = field(default_factory=list)
     sentence_indices: list[int] = field(default_factory=list)
+    sentence_speakers: list[str] = field(default_factory=list)
+    sentence_texts: list[str] = field(default_factory=list)
     vocab_words: list[str] = field(default_factory=list)
     bridge_words: list[str] = field(default_factory=list)
     context_ids: list[str] = field(default_factory=list)
@@ -130,6 +135,7 @@ class DailyHTMLParser(HTMLParser):
                 self.page.sentence_indices.append(int(attrs["data-idx"]))
             except ValueError:
                 self.page.sentence_indices.append(-1)
+            self.page.sentence_speakers.append(attrs.get("data-speaker", "").strip())
 
         if "vocab-word" in classes and attrs.get("data-word"):
             self.page.vocab_words.append(attrs["data-word"].strip().lower())
@@ -150,6 +156,8 @@ class DailyHTMLParser(HTMLParser):
             capture = "card-title"
         elif "bridge-word" in classes:
             capture = "bridge-word"
+        elif "sent" in classes:
+            capture = "sentence"
         elif tag == "h1":
             capture = "h1"
 
@@ -165,6 +173,8 @@ class DailyHTMLParser(HTMLParser):
             self.page.card_titles.append(text)
         elif node["capture"] == "bridge-word" and text:
             self.page.bridge_words.append(text.strip().lower())
+        elif node["capture"] == "sentence" and text:
+            self.page.sentence_texts.append(text)
         elif node["capture"] == "h1" and text:
             self.page.title_text = text
 
@@ -327,12 +337,18 @@ def validate_audio(day_dir: Path, date: str, page: ParsedDailyPage, validation: 
         if duration is None:
             validation.errors.append("could not read article.mp3 duration from MPEG Layer III frames")
         else:
+            if date >= TWO_MINUTE_AUDIO_START_DATE:
+                minimum_seconds = TWO_MINUTE_AUDIO_MIN_SECONDS
+                maximum_seconds = TWO_MINUTE_AUDIO_MAX_SECONDS
+            else:
+                minimum_seconds = THREE_MINUTE_AUDIO_MIN_SECONDS
+                maximum_seconds = THREE_MINUTE_AUDIO_MAX_SECONDS
             validation.check(
-                ARTICLE_AUDIO_MIN_SECONDS <= duration <= ARTICLE_AUDIO_MAX_SECONDS,
+                minimum_seconds <= duration <= maximum_seconds,
                 f"article.mp3 duration is {duration:.1f} seconds",
                 (
                     f"article.mp3 duration is {duration:.1f} seconds; expected "
-                    f"{ARTICLE_AUDIO_MIN_SECONDS}–{ARTICLE_AUDIO_MAX_SECONDS} seconds"
+                    f"{minimum_seconds}–{maximum_seconds} seconds"
                 ),
             )
 
@@ -347,6 +363,34 @@ def validate_audio(day_dir: Path, date: str, page: ParsedDailyPage, validation: 
         f"sentence indices are continuous 1..{max(indices)}",
         f"sentence indices are not continuous: {indices[:10]}...",
     )
+    if date >= TWO_MINUTE_AUDIO_START_DATE:
+        allowed_speakers = {"traveler", "staff"}
+        speakers = page.sentence_speakers
+        validation.check(
+            len(speakers) == len(indices) and all(speakers),
+            "all sentence spans include speaker metadata",
+            "one or more sentence spans are missing data-speaker metadata",
+        )
+        validation.check(
+            set(speakers).issubset(allowed_speakers),
+            "sentence speaker metadata values are valid",
+            f"invalid sentence speakers: {sorted(set(speakers) - allowed_speakers)}",
+        )
+        validation.check(
+            set(speakers) == allowed_speakers,
+            "article uses both traveler and staff speaker roles",
+            f"article must use both speaker roles; found {sorted(set(speakers))}",
+        )
+        role_prefixes = [
+            text
+            for text in page.sentence_texts
+            if re.search(r"\b(?:Staff|Me):", text, flags=re.IGNORECASE)
+        ]
+        validation.check(
+            not role_prefixes,
+            "article dialogue does not display Staff:/Me: prefixes",
+            f"article dialogue displays forbidden role prefixes: {role_prefixes[:3]}",
+        )
 
     missing_audio = []
     empty_audio = []
