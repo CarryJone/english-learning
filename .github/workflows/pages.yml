@@ -37,6 +37,7 @@ jobs:
           cp -R assets public/
           cp -R daily public/
           cp -R review public/
+          cp -R sentences public/
           cp -R vocabulary public/
           touch public/.nojekyll
 
