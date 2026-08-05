@@ -273,10 +273,15 @@ mkdir -p ./daily/$TODAY
     .player-label { font-family: sans-serif; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .75; margin-bottom: .6rem; }
     .player-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.2rem; }
     audio { width: 100%; height: 40px; border-radius: 99px; }
-    .player-controls { display: flex; align-items: center; gap: .6rem; margin-top: .7rem; }
+    .player-controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .65rem; margin-top: .7rem; }
     .loop-btn { display: inline-flex; align-items: center; gap: .35rem; padding: .35rem .85rem; border: 1.5px solid rgba(255,255,255,.45); background: rgba(255,255,255,.15); color: white; border-radius: 99px; font-family: sans-serif; font-size: .78rem; font-weight: 600; cursor: pointer; transition: all .2s; }
     .loop-btn:hover { background: rgba(255,255,255,.25); }
     .loop-btn.active { background: rgba(255,255,255,.92); color: #4f7cff; border-color: transparent; }
+    .speed-control { display: flex; align-items: center; gap: .45rem; font-family: sans-serif; }
+    .speed-label { font-size: .76rem; font-weight: 700; opacity: .85; }
+    .speed-group { display: inline-flex; gap: .2rem; padding: .2rem; border-radius: 99px; background: rgba(255,255,255,.15); }
+    .speed-btn { min-width: 3rem; border: 0; border-radius: 99px; padding: .28rem .55rem; background: transparent; color: white; font-family: sans-serif; font-size: .76rem; font-weight: 700; cursor: pointer; }
+    .speed-btn.active { background: white; color: var(--accent); }
 
     /* Article */
     .article-body { font-size: 1.05rem; line-height: 1.9; }
@@ -499,7 +504,15 @@ mkdir -p ./daily/$TODAY
       <source src="article.mp3" type="audio/mpeg" />
     </audio>
     <div class="player-controls">
-      <button class="loop-btn" onclick="toggleLoop(this)">🔁 循環播放</button>
+      <button class="loop-btn" type="button" onclick="toggleLoop(this)">🔁 循環播放</button>
+      <div class="speed-control">
+        <span class="speed-label">播放速度</span>
+        <div class="speed-group" role="group" aria-label="播放速度">
+          <button class="speed-btn" type="button" data-rate="0.75" aria-pressed="false" onclick="setPlaybackSpeed(0.75)">0.75×</button>
+          <button class="speed-btn active" type="button" data-rate="1" aria-pressed="true" onclick="setPlaybackSpeed(1)">1×</button>
+          <button class="speed-btn" type="button" data-rate="1.25" aria-pressed="false" onclick="setPlaybackSpeed(1.25)">1.25×</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -811,6 +824,7 @@ mkdir -p ./daily/$TODAY
   const sentAudio = new Audio();
   let activeSentBtn = null;
   let sentencePlaybackMode = 'once';
+  let playbackSpeed = 1;
 
   function resetSentBtn(btn) {
     if (!btn) return;
@@ -824,6 +838,22 @@ mkdir -p ./daily/$TODAY
     sentAudio.loop = false;
     resetSentBtn(activeSentBtn);
     activeSentBtn = null;
+  }
+
+  function syncPlaybackSpeedButtons() {
+    document.querySelectorAll('.speed-btn').forEach(btn => {
+      const active = Math.abs(Number(btn.dataset.rate) - playbackSpeed) < 0.001;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', String(active));
+    });
+  }
+
+  function setPlaybackSpeed(rate) {
+    playbackSpeed = Number(rate);
+    const articleAudio = document.getElementById('article-audio');
+    articleAudio.playbackRate = playbackSpeed;
+    sentAudio.playbackRate = playbackSpeed;
+    syncPlaybackSpeedButtons();
   }
 
   function syncSentenceModeButtons() {
@@ -850,6 +880,7 @@ mkdir -p ./daily/$TODAY
     stopSentencePlayback();
     sentAudio.src = src;
     sentAudio.loop = sentencePlaybackMode === 'loop';
+    sentAudio.playbackRate = playbackSpeed;
     activeSentBtn = btn; btn.classList.add('playing'); btn.textContent = '⏸';
     sentAudio.onended = () => {
       if (sentAudio.loop) return;
@@ -948,6 +979,12 @@ mkdir -p ./daily/$TODAY
     articleAudio.src = articleSrc;
     articleAudio.preload = 'metadata';
     articleAudio.load();
+    articleAudio.addEventListener('ratechange', () => {
+      playbackSpeed = articleAudio.playbackRate;
+      sentAudio.playbackRate = playbackSpeed;
+      syncPlaybackSpeedButtons();
+    });
+    setPlaybackSpeed(1);
 
     syncSentenceModeButtons();
     updateContextProgress();
