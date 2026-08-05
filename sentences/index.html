@@ -105,6 +105,116 @@
       line-height: 1.65;
     }
 
+    .playlist-card {
+      padding: 1.15rem 1.2rem 1rem;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #4f7cff 0%, #7c5cfc 100%);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(79, 124, 255, .28);
+    }
+
+    .playlist-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: .8rem;
+    }
+
+    .playlist-kicker {
+      font-family: sans-serif;
+      font-size: .68rem;
+      font-weight: 900;
+      letter-spacing: .1em;
+      opacity: .78;
+      text-transform: uppercase;
+    }
+
+    .playlist-title {
+      margin-top: .2rem;
+      font-size: 1.12rem;
+      line-height: 1.3;
+    }
+
+    .playlist-count {
+      padding: .28rem .6rem;
+      border: 1px solid rgba(255, 255, 255, .35);
+      border-radius: 999px;
+      font-family: sans-serif;
+      font-size: .72rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .playlist-copy {
+      margin-top: .45rem;
+      color: rgba(255, 255, 255, .86);
+      font-family: sans-serif;
+      font-size: .82rem;
+      line-height: 1.55;
+    }
+
+    .playlist-actions,
+    .playlist-options {
+      display: flex;
+      gap: .45rem;
+      flex-wrap: wrap;
+    }
+
+    .playlist-actions { margin-top: .85rem; }
+    .playlist-options { margin-top: .55rem; }
+
+    .playlist-button,
+    .playlist-toggle {
+      min-height: 2.35rem;
+      border-radius: 10px;
+      font-family: sans-serif;
+      font-size: .78rem;
+      font-weight: 900;
+      transition: .15s ease;
+    }
+
+    .playlist-button { padding: .48rem .85rem; }
+
+    .playlist-button.primary {
+      border: 1.5px solid #fff;
+      background: #fff;
+      color: var(--accent-dark);
+    }
+
+    .playlist-button.primary:hover { background: #eef2ff; }
+
+    .playlist-button.secondary {
+      border: 1.5px solid rgba(255, 255, 255, .55);
+      background: rgba(255, 255, 255, .13);
+      color: #fff;
+    }
+
+    .playlist-button.secondary:hover:not(:disabled) { background: rgba(255, 255, 255, .24); }
+
+    .playlist-button:disabled {
+      cursor: default;
+      opacity: .45;
+    }
+
+    .playlist-toggle {
+      padding: .42rem .7rem;
+      border: 1.5px solid rgba(255, 255, 255, .42);
+      background: rgba(255, 255, 255, .1);
+      color: rgba(255, 255, 255, .92);
+    }
+
+    .playlist-toggle:hover { background: rgba(255, 255, 255, .2); }
+    .playlist-toggle.active { background: #fff; border-color: #fff; color: var(--accent-dark); }
+
+    .playlist-status {
+      min-height: 1.1rem;
+      margin-top: .65rem;
+      color: rgba(255, 255, 255, .86);
+      font-family: sans-serif;
+      font-size: .74rem;
+      line-height: 1.45;
+    }
+
     .tool-card {
       padding: 1rem;
       border: 1.5px solid var(--border);
@@ -315,8 +425,11 @@
     @media (max-width: 500px) {
       body { padding-inline: .75rem; }
       .hero { padding: 1.4rem 1rem 1.25rem; }
+      .playlist-card { padding-inline: 1rem; }
       .tool-card { padding: .85rem; }
       .sentence-card { padding-inline: .9rem; }
+      .playlist-button,
+      .playlist-toggle,
       .action-button { flex: 1 1 9rem; }
     }
   </style>
@@ -327,6 +440,26 @@
       <a class="back-link" href="../">← 回到首頁</a>
       <span class="count-label" id="count-label">載入中…</span>
     </div>
+
+    <section class="playlist-card" aria-label="播放全部日常口語句子">
+      <div class="playlist-heading">
+        <div>
+          <div class="playlist-kicker">Listen &amp; Repeat</div>
+          <h2 class="playlist-title">全部日常口語句子</h2>
+        </div>
+        <span class="playlist-count" id="playlist-count">載入中…</span>
+      </div>
+      <p class="playlist-copy">一次聽完全部句子；可以重複整批播放，也可以打亂順序練習。</p>
+      <div class="playlist-actions">
+        <button class="playlist-button primary" id="play-all" type="button">▶ 播放全部</button>
+        <button class="playlist-button secondary" id="stop-all" type="button" disabled>■ 停止</button>
+      </div>
+      <div class="playlist-options">
+        <button class="playlist-toggle" id="repeat-all" type="button" aria-pressed="false">🔁 重複全部：關</button>
+        <button class="playlist-toggle" id="random-all" type="button" aria-pressed="false">🔀 隨機順序：關</button>
+      </div>
+      <div class="playlist-status" id="playlist-status" aria-live="polite">尚未開始播放</div>
+    </section>
 
     <header class="hero">
       <div class="hero-kicker">Everyday English · US casual</div>
@@ -364,10 +497,23 @@
     const searchBox = document.getElementById('search-box');
     const countLabel = document.getElementById('count-label');
     const sentenceAudio = document.getElementById('sentence-audio');
+    const playlistCount = document.getElementById('playlist-count');
+    const playAllButton = document.getElementById('play-all');
+    const stopAllButton = document.getElementById('stop-all');
+    const repeatAllButton = document.getElementById('repeat-all');
+    const randomAllButton = document.getElementById('random-all');
+    const playlistStatus = document.getElementById('playlist-status');
     let sentences = [];
     let activeCard = null;
     let activePlayButton = null;
     let activeFilter = '全部';
+    let playlistSequence = [];
+    let playlistIndex = -1;
+    let playlistPlaying = false;
+    let repeatPlaylist = false;
+    let randomPlaylist = false;
+
+    playAllButton.disabled = true;
 
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, (char) => ({
@@ -407,9 +553,47 @@
       });
     }
 
+    function shuffleItems(items) {
+      for (let index = items.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [items[index], items[randomIndex]] = [items[randomIndex], items[index]];
+      }
+      return items;
+    }
+
+    function buildPlaylistSequence() {
+      const sequence = [...sentences];
+      return randomPlaylist ? shuffleItems(sequence) : sequence;
+    }
+
+    function updatePlaylistOptions() {
+      repeatAllButton.classList.toggle('active', repeatPlaylist);
+      repeatAllButton.setAttribute('aria-pressed', String(repeatPlaylist));
+      repeatAllButton.textContent = `🔁 重複全部：${repeatPlaylist ? '開' : '關'}`;
+      randomAllButton.classList.toggle('active', randomPlaylist);
+      randomAllButton.setAttribute('aria-pressed', String(randomPlaylist));
+      randomAllButton.textContent = `🔀 隨機順序：${randomPlaylist ? '開' : '關'}`;
+    }
+
+    function updatePlaylistButtons() {
+      playAllButton.disabled = sentences.length === 0;
+      playAllButton.textContent = playlistPlaying ? '↻ 重新播放全部' : '▶ 播放全部';
+      stopAllButton.disabled = !playlistPlaying;
+    }
+
+    function setPlaylistStatus(message) {
+      playlistStatus.textContent = message;
+    }
+
+    function findSentenceCard(sentence) {
+      return Array.from(sentenceList.querySelectorAll('.sentence-card'))
+        .find((card) => card.dataset.id === sentence.id) || null;
+    }
+
     function renderSentences() {
       const visible = getVisibleSentences();
       countLabel.textContent = `顯示 ${visible.length} / ${sentences.length} 句`;
+      playlistCount.textContent = `全部 ${sentences.length} 句`;
       if (!visible.length) {
         sentenceList.innerHTML = '<div class="empty-state">找不到符合條件的句子。</div>';
         return;
@@ -435,9 +619,7 @@
       bindSentenceActions();
     }
 
-    function stopPlayback() {
-      sentenceAudio.pause();
-      sentenceAudio.currentTime = 0;
+    function resetActiveCard() {
       if (activePlayButton) {
         activePlayButton.classList.remove('is-playing');
         activePlayButton.textContent = '🔊 播放英文';
@@ -449,6 +631,105 @@
       }
       activePlayButton = null;
       activeCard = null;
+    }
+
+    function stopPlayback(message = '已停止播放') {
+      playlistPlaying = false;
+      playlistSequence = [];
+      playlistIndex = -1;
+      sentenceAudio.pause();
+      sentenceAudio.currentTime = 0;
+      resetActiveCard();
+      updatePlaylistButtons();
+      setPlaylistStatus(message);
+    }
+
+    function markPlaylistCard(sentence) {
+      resetActiveCard();
+      const card = findSentenceCard(sentence);
+      if (!card) return;
+      const button = card.querySelector('.play-button');
+      activeCard = card;
+      activePlayButton = button;
+      card.classList.add('is-playing');
+      if (button) {
+        button.classList.add('is-playing');
+        button.textContent = '⏸ 播放中';
+      }
+      const status = card.querySelector('.play-status');
+      if (status) status.textContent = '正在播放英文…';
+    }
+
+    function playPlaylistItem() {
+      if (!playlistPlaying || playlistIndex < 0 || !playlistSequence[playlistIndex]) return;
+      const sentence = playlistSequence[playlistIndex];
+      const originalNumber = sentences.indexOf(sentence) + 1;
+      const orderLabel = randomPlaylist ? '隨機' : '依序';
+      markPlaylistCard(sentence);
+      setPlaylistStatus(`${orderLabel}播放：第 ${playlistIndex + 1} / ${playlistSequence.length} 句（原編號 ${originalNumber}）`);
+      sentenceAudio.src = sentence.audio;
+      sentenceAudio.play().catch(() => {
+        if (playlistPlaying) stopPlayback('播放失敗，請再按一次播放全部。');
+      });
+    }
+
+    function finishPlaylist() {
+      const total = playlistSequence.length || sentences.length;
+      playlistPlaying = false;
+      playlistSequence = [];
+      playlistIndex = -1;
+      sentenceAudio.pause();
+      sentenceAudio.currentTime = 0;
+      resetActiveCard();
+      updatePlaylistButtons();
+      setPlaylistStatus(`全部 ${total} 句播放完成。`);
+    }
+
+    function handleAudioEnded() {
+      if (!playlistPlaying) {
+        stopPlayback('單句播放完成。');
+        return;
+      }
+      playlistIndex += 1;
+      if (playlistIndex >= playlistSequence.length) {
+        if (!repeatPlaylist) {
+          finishPlaylist();
+          return;
+        }
+        playlistSequence = buildPlaylistSequence();
+        playlistIndex = 0;
+      }
+      playPlaylistItem();
+    }
+
+    function startPlaylist() {
+      if (!sentences.length) return;
+      stopPlayback('');
+      playlistSequence = buildPlaylistSequence();
+      playlistIndex = 0;
+      playlistPlaying = true;
+      updatePlaylistButtons();
+      playPlaylistItem();
+    }
+
+    function toggleRepeatPlaylist() {
+      repeatPlaylist = !repeatPlaylist;
+      updatePlaylistOptions();
+      const timing = playlistPlaying ? '本輪播完後套用' : '下次播放全部時套用';
+      setPlaylistStatus(`重複全部已${repeatPlaylist ? '開啟' : '關閉'}；${timing}。`);
+    }
+
+    function toggleRandomPlaylist() {
+      randomPlaylist = !randomPlaylist;
+      if (playlistPlaying && playlistSequence.length) {
+        const currentSentence = playlistSequence[playlistIndex];
+        const remaining = sentences.filter((sentence) => sentence.id !== currentSentence.id);
+        playlistSequence = [currentSentence, ...(randomPlaylist ? shuffleItems(remaining) : remaining)];
+        playlistIndex = 0;
+      }
+      updatePlaylistOptions();
+      const timing = playlistPlaying ? '目前句子結束後會依新順序繼續' : '下次播放全部時套用';
+      setPlaylistStatus(`隨機順序已${randomPlaylist ? '開啟' : '關閉'}；${timing}。`);
     }
 
     function playSentence(button) {
@@ -464,10 +745,10 @@
       button.textContent = '⏸ 播放中';
       card.classList.add('is-playing');
       card.querySelector('.play-status').textContent = '正在播放英文…';
+      setPlaylistStatus(`單句播放：第 ${sentences.findIndex((sentence) => sentence.audio === button.dataset.audio) + 1} 句`);
       sentenceAudio.src = button.dataset.audio;
       sentenceAudio.play().catch(() => {
-        card.querySelector('.play-status').textContent = '播放失敗，請再按一次。';
-        stopPlayback();
+        stopPlayback('播放失敗，請再按一次。');
       });
     }
 
@@ -496,10 +777,16 @@
       });
     }
 
-    sentenceAudio.addEventListener('ended', () => stopPlayback());
+    sentenceAudio.addEventListener('ended', handleAudioEnded);
+    playAllButton.addEventListener('click', startPlaylist);
+    stopAllButton.addEventListener('click', () => stopPlayback('已停止播放。'));
+    repeatAllButton.addEventListener('click', toggleRepeatPlaylist);
+    randomAllButton.addEventListener('click', toggleRandomPlaylist);
     document.getElementById('show-all').addEventListener('click', () => setAllAnswers(true));
     document.getElementById('hide-all').addEventListener('click', () => setAllAnswers(false));
     searchBox.addEventListener('input', renderSentences);
+    updatePlaylistOptions();
+    updatePlaylistButtons();
 
     fetch('data.json', { cache: 'no-store' })
       .then((response) => {
@@ -510,9 +797,12 @@
         sentences = Array.isArray(data) ? data : [];
         renderFilters();
         renderSentences();
+        updatePlaylistButtons();
       })
       .catch(() => {
         countLabel.textContent = '';
+        playlistCount.textContent = '';
+        playAllButton.disabled = true;
         sentenceList.innerHTML = '<div class="empty-state">句子資料載入失敗，請用本機 HTTP server 或 GitHub Pages 開啟。</div>';
       });
   </script>
