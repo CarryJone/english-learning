@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>日常口語句子 · Daily English</title>
+  <style>
+    :root {
+      --bg: #f5f4ef;
+      --card: #ffffff;
+      --accent: #4f7cff;
+      --accent-dark: #315bd6;
+      --green: #15803d;
+      --green-bg: #f0fdf4;
+      --orange: #c2410c;
+      --orange-bg: #fff7ed;
+      --text: #1e1e2e;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --answer-bg: #eef2ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      padding: 1.25rem 1rem 4rem;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, serif;
+    }
+
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .container {
+      width: min(100%, 720px);
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem;
+      font-family: sans-serif;
+    }
+
+    .back-link {
+      color: var(--accent);
+      font-size: .88rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    .count-label {
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 1.7rem 1.35rem 1.5rem;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #e9efff 0%, #f6f1ff 100%);
+      box-shadow: 0 3px 16px rgba(79, 124, 255, .12);
+    }
+
+    .hero-kicker {
+      color: var(--accent-dark);
+      font-family: sans-serif;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin-top: .45rem;
+      font-size: clamp(1.65rem, 6vw, 2.2rem);
+      line-height: 1.2;
+    }
+
+    .hero-copy {
+      max-width: 36rem;
+      margin-top: .65rem;
+      color: #4b5563;
+      font-family: sans-serif;
+      font-size: .92rem;
+      line-height: 1.65;
+    }
+
+    .tool-card {
+      padding: 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      background: var(--card);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .05);
+    }
+
+    .tool-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .7rem;
+      flex-wrap: wrap;
+    }
+
+    .tool-title {
+      color: var(--text);
+      font-family: sans-serif;
+      font-size: .84rem;
+      font-weight: 800;
+    }
+
+    .tool-buttons {
+      display: flex;
+      gap: .45rem;
+      flex-wrap: wrap;
+    }
+
+    .small-button,
+    .filter-button {
+      border: 1.5px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-family: sans-serif;
+      font-size: .76rem;
+      font-weight: 800;
+      transition: .15s ease;
+    }
+
+    .small-button { padding: .43rem .72rem; }
+    .small-button:hover,
+    .filter-button:hover { border-color: var(--accent); color: var(--accent); }
+
+    .filter-row {
+      display: flex;
+      gap: .45rem;
+      margin-top: .85rem;
+      overflow-x: auto;
+      padding-bottom: .1rem;
+    }
+
+    .filter-button { padding: .43rem .78rem; white-space: nowrap; }
+    .filter-button.active { border-color: var(--accent); background: var(--accent); color: #fff; }
+
+    .search-box {
+      width: 100%;
+      margin-top: .85rem;
+      padding: .7rem .85rem;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      outline: none;
+      background: #fafafa;
+      color: var(--text);
+      font-family: sans-serif;
+      font-size: .88rem;
+    }
+
+    .search-box:focus { border-color: var(--accent); background: #fff; box-shadow: 0 0 0 3px rgba(79,124,255,.12); }
+
+    .sentence-list { display: grid; gap: .8rem; }
+
+    .sentence-card {
+      padding: 1.05rem 1.1rem 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: 17px;
+      background: var(--card);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
+      transition: border-color .15s ease, box-shadow .15s ease;
+    }
+
+    .sentence-card:hover { border-color: #c7d2fe; box-shadow: 0 4px 16px rgba(79,124,255,.08); }
+
+    .sentence-card.is-playing { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(79,124,255,.12); }
+
+    .sentence-meta {
+      display: flex;
+      align-items: center;
+      gap: .45rem;
+      margin-bottom: .65rem;
+      font-family: sans-serif;
+    }
+
+    .sentence-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.7rem;
+      height: 1.7rem;
+      border-radius: 50%;
+      background: var(--answer-bg);
+      color: var(--accent);
+      font-size: .72rem;
+      font-weight: 900;
+    }
+
+    .category-label {
+      color: var(--muted);
+      font-size: .72rem;
+      font-weight: 800;
+    }
+
+    .sentence-zh {
+      font-size: 1.14rem;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .english-answer {
+      margin-top: .75rem;
+      padding: .75rem .85rem;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 11px 11px 0;
+      background: var(--answer-bg);
+    }
+
+    .english-answer[hidden] { display: none; }
+
+    .answer-label {
+      display: block;
+      margin-bottom: .25rem;
+      color: var(--accent-dark);
+      font-family: sans-serif;
+      font-size: .68rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .answer-text {
+      color: var(--accent-dark);
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.55;
+    }
+
+    .sentence-actions {
+      display: flex;
+      gap: .5rem;
+      margin-top: .85rem;
+      flex-wrap: wrap;
+    }
+
+    .action-button {
+      min-height: 2.35rem;
+      padding: .48rem .82rem;
+      border-radius: 10px;
+      font-family: sans-serif;
+      font-size: .8rem;
+      font-weight: 900;
+      transition: .15s ease;
+    }
+
+    .play-button {
+      border: 1.5px solid var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .play-button:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+    .play-button.is-playing { background: #1d4ed8; }
+
+    .reveal-button {
+      border: 1.5px solid #93c5fd;
+      background: #fff;
+      color: var(--accent-dark);
+    }
+
+    .reveal-button:hover { background: var(--answer-bg); }
+
+    .play-status {
+      min-height: 1.1rem;
+      margin-top: .42rem;
+      color: var(--muted);
+      font-family: sans-serif;
+      font-size: .73rem;
+    }
+
+    .empty-state {
+      padding: 1.5rem 1rem;
+      border: 1.5px dashed var(--border);
+      border-radius: 14px;
+      color: var(--muted);
+      font-family: sans-serif;
+      font-size: .88rem;
+      text-align: center;
+    }
+
+    .footer-note {
+      color: var(--muted);
+      font-family: sans-serif;
+      font-size: .75rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    @media (max-width: 500px) {
+      body { padding-inline: .75rem; }
+      .hero { padding: 1.4rem 1rem 1.25rem; }
+      .tool-card { padding: .85rem; }
+      .sentence-card { padding-inline: .9rem; }
+      .action-button { flex: 1 1 9rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="topbar">
+      <a class="back-link" href="../">← 回到首頁</a>
+      <span class="count-label" id="count-label">載入中…</span>
+    </div>
+
+    <header class="hero">
+      <div class="hero-kicker">Everyday English · US casual</div>
+      <h1>日常口語句子</h1>
+      <p class="hero-copy">先看中文，先自己想英文；需要時再播放或顯示答案。句子會以自然的美國口語呈現。</p>
+    </header>
+
+    <section class="tool-card" aria-label="句子工具">
+      <div class="tool-row">
+        <div class="tool-title">英文答案</div>
+        <div class="tool-buttons">
+          <button class="small-button" id="show-all" type="button">顯示全部英文</button>
+          <button class="small-button" id="hide-all" type="button">隱藏全部英文</button>
+        </div>
+      </div>
+      <div class="filter-row" id="filter-row" aria-label="句子分類"></div>
+      <label>
+        <span class="sr-only">搜尋句子</span>
+        <input class="search-box" id="search-box" type="search" placeholder="搜尋中文或英文…" autocomplete="off" />
+      </label>
+    </section>
+
+    <section class="sentence-list" id="sentence-list" aria-live="polite">
+      <div class="empty-state">正在載入句子…</div>
+    </section>
+
+    <p class="footer-note">播放按鈕會朗讀英文；英文答案預設隱藏，方便先做主動回想。</p>
+  </main>
+
+  <audio id="sentence-audio" preload="none"></audio>
+
+  <script>
+    const sentenceList = document.getElementById('sentence-list');
+    const filterRow = document.getElementById('filter-row');
+    const searchBox = document.getElementById('search-box');
+    const countLabel = document.getElementById('count-label');
+    const sentenceAudio = document.getElementById('sentence-audio');
+    let sentences = [];
+    let activeCard = null;
+    let activePlayButton = null;
+    let activeFilter = '全部';
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      })[char]);
+    }
+
+    function getCategories() {
+      return ['全部', ...new Set(sentences.map((sentence) => sentence.category))];
+    }
+
+    function renderFilters() {
+      filterRow.innerHTML = getCategories().map((category) => `
+        <button class="filter-button ${category === activeFilter ? 'active' : ''}" type="button" data-category="${escapeHtml(category)}">
+          ${escapeHtml(category)}
+        </button>
+      `).join('');
+      filterRow.querySelectorAll('.filter-button').forEach((button) => {
+        button.addEventListener('click', () => {
+          activeFilter = button.dataset.category;
+          renderFilters();
+          renderSentences();
+        });
+      });
+    }
+
+    function getVisibleSentences() {
+      const query = searchBox.value.trim().toLowerCase();
+      return sentences.filter((sentence) => {
+        const matchesCategory = activeFilter === '全部' || sentence.category === activeFilter;
+        const searchable = `${sentence.zh} ${sentence.en} ${sentence.category}`.toLowerCase();
+        return matchesCategory && (!query || searchable.includes(query));
+      });
+    }
+
+    function renderSentences() {
+      const visible = getVisibleSentences();
+      countLabel.textContent = `顯示 ${visible.length} / ${sentences.length} 句`;
+      if (!visible.length) {
+        sentenceList.innerHTML = '<div class="empty-state">找不到符合條件的句子。</div>';
+        return;
+      }
+      sentenceList.innerHTML = visible.map((sentence, index) => `
+        <article class="sentence-card" data-id="${escapeHtml(sentence.id)}">
+          <div class="sentence-meta">
+            <span class="sentence-number">${String(sentences.indexOf(sentence) + 1).padStart(2, '0')}</span>
+            <span class="category-label">${escapeHtml(sentence.category)}</span>
+          </div>
+          <div class="sentence-zh">${escapeHtml(sentence.zh)}</div>
+          <div class="english-answer" hidden>
+            <span class="answer-label">Natural American English</span>
+            <div class="answer-text">${escapeHtml(sentence.en)}</div>
+          </div>
+          <div class="sentence-actions">
+            <button class="action-button play-button" type="button" data-audio="${escapeHtml(sentence.audio)}" aria-label="播放第 ${sentences.indexOf(sentence) + 1} 句英文">🔊 播放英文</button>
+            <button class="action-button reveal-button" type="button" data-action="toggle-answer" aria-expanded="false">顯示英文</button>
+          </div>
+          <div class="play-status" aria-live="polite"></div>
+        </article>
+      `).join('');
+      bindSentenceActions();
+    }
+
+    function stopPlayback() {
+      sentenceAudio.pause();
+      sentenceAudio.currentTime = 0;
+      if (activePlayButton) {
+        activePlayButton.classList.remove('is-playing');
+        activePlayButton.textContent = '🔊 播放英文';
+      }
+      if (activeCard) {
+        activeCard.classList.remove('is-playing');
+        const status = activeCard.querySelector('.play-status');
+        if (status) status.textContent = '';
+      }
+      activePlayButton = null;
+      activeCard = null;
+    }
+
+    function playSentence(button) {
+      const card = button.closest('.sentence-card');
+      if (activePlayButton === button && !sentenceAudio.paused) {
+        stopPlayback();
+        return;
+      }
+      stopPlayback();
+      activePlayButton = button;
+      activeCard = card;
+      button.classList.add('is-playing');
+      button.textContent = '⏸ 播放中';
+      card.classList.add('is-playing');
+      card.querySelector('.play-status').textContent = '正在播放英文…';
+      sentenceAudio.src = button.dataset.audio;
+      sentenceAudio.play().catch(() => {
+        card.querySelector('.play-status').textContent = '播放失敗，請再按一次。';
+        stopPlayback();
+      });
+    }
+
+    function toggleAnswer(button) {
+      const answer = button.closest('.sentence-card').querySelector('.english-answer');
+      const willShow = answer.hidden;
+      answer.hidden = !willShow;
+      button.textContent = willShow ? '隱藏英文' : '顯示英文';
+      button.setAttribute('aria-expanded', String(willShow));
+    }
+
+    function bindSentenceActions() {
+      sentenceList.querySelectorAll('.play-button').forEach((button) => {
+        button.addEventListener('click', () => playSentence(button));
+      });
+      sentenceList.querySelectorAll('[data-action="toggle-answer"]').forEach((button) => {
+        button.addEventListener('click', () => toggleAnswer(button));
+      });
+    }
+
+    function setAllAnswers(show) {
+      sentenceList.querySelectorAll('.english-answer').forEach((answer) => { answer.hidden = !show; });
+      sentenceList.querySelectorAll('[data-action="toggle-answer"]').forEach((button) => {
+        button.textContent = show ? '隱藏英文' : '顯示英文';
+        button.setAttribute('aria-expanded', String(show));
+      });
+    }
+
+    sentenceAudio.addEventListener('ended', () => stopPlayback());
+    document.getElementById('show-all').addEventListener('click', () => setAllAnswers(true));
+    document.getElementById('hide-all').addEventListener('click', () => setAllAnswers(false));
+    searchBox.addEventListener('input', renderSentences);
+
+    fetch('data.json', { cache: 'no-store' })
+      .then((response) => {
+        if (!response.ok) throw new Error('data unavailable');
+        return response.json();
+      })
+      .then((data) => {
+        sentences = Array.isArray(data) ? data : [];
+        renderFilters();
+        renderSentences();
+      })
+      .catch(() => {
+        countLabel.textContent = '';
+        sentenceList.innerHTML = '<div class="empty-state">句子資料載入失敗，請用本機 HTTP server 或 GitHub Pages 開啟。</div>';
+      });
+  </script>
+</body>
+</html>

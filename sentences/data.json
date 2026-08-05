@@ -1,0 +1,219 @@
+[
+  {
+    "id": "morning-01",
+    "category": "早晨與睡眠",
+    "zh": "你今天幾點起床？",
+    "en": "What time did you get up today?",
+    "audio": "s01.mp3"
+  },
+  {
+    "id": "morning-02",
+    "category": "早晨與睡眠",
+    "zh": "昨晚睡得好嗎？",
+    "en": "Did you sleep well last night?",
+    "audio": "s02.mp3"
+  },
+  {
+    "id": "morning-03",
+    "category": "早晨與睡眠",
+    "zh": "早安。",
+    "en": "Morning!",
+    "audio": "s03.mp3"
+  },
+  {
+    "id": "meals-04",
+    "category": "吃飯與點餐",
+    "zh": "我要一個三明治跟紅茶無糖。",
+    "en": "Can I get a sandwich and an unsweetened black tea?",
+    "audio": "s04.mp3"
+  },
+  {
+    "id": "morning-05",
+    "category": "早晨與睡眠",
+    "zh": "昨天睡得很好。",
+    "en": "I slept really well last night.",
+    "audio": "s05.mp3"
+  },
+  {
+    "id": "morning-06",
+    "category": "早晨與睡眠",
+    "zh": "我昨晚沒睡好。",
+    "en": "I didn't sleep well last night.",
+    "audio": "s06.mp3"
+  },
+  {
+    "id": "daily-07",
+    "category": "日常聊天",
+    "zh": "你今天忙嗎？",
+    "en": "Are you busy today?",
+    "audio": "s07.mp3"
+  },
+  {
+    "id": "meals-08",
+    "category": "吃飯與點餐",
+    "zh": "你早餐吃什麼？",
+    "en": "What are you having for breakfast?",
+    "audio": "s08.mp3"
+  },
+  {
+    "id": "daily-09",
+    "category": "日常聊天",
+    "zh": "今天有點忙，很多小事情。",
+    "en": "I'm a little busy today—just a bunch of little things.",
+    "audio": "s09.mp3"
+  },
+  {
+    "id": "daily-10",
+    "category": "日常聊天",
+    "zh": "今天沒啥事。",
+    "en": "I don't have much going on today.",
+    "audio": "s10.mp3"
+  },
+  {
+    "id": "meals-11",
+    "category": "吃飯與點餐",
+    "zh": "你午餐要吃啥？",
+    "en": "What are you having for lunch?",
+    "audio": "s11.mp3"
+  },
+  {
+    "id": "meals-12",
+    "category": "吃飯與點餐",
+    "zh": "我吃排骨便當。",
+    "en": "I'm having a pork chop bento.",
+    "audio": "s12.mp3"
+  },
+  {
+    "id": "weather-13",
+    "category": "天氣與安全",
+    "zh": "今天太陽好大。",
+    "en": "It's so sunny out today.",
+    "audio": "s13.mp3"
+  },
+  {
+    "id": "travel-14",
+    "category": "計畫與旅遊",
+    "zh": "感覺很適合去爬山。",
+    "en": "It feels like a great day to go hiking.",
+    "audio": "s14.mp3"
+  },
+  {
+    "id": "weather-15",
+    "category": "天氣與安全",
+    "zh": "外面天氣很黑，感覺要下雨了。",
+    "en": "It's really dark outside. Looks like it's going to rain.",
+    "audio": "s15.mp3"
+  },
+  {
+    "id": "weather-16",
+    "category": "天氣與安全",
+    "zh": "騎車小心。",
+    "en": "Ride safe!",
+    "audio": "s16.mp3"
+  },
+  {
+    "id": "weather-17",
+    "category": "天氣與安全",
+    "zh": "你有穿防曬外套嗎？",
+    "en": "Are you wearing a sun-protective jacket?",
+    "audio": "s17.mp3"
+  },
+  {
+    "id": "daily-18",
+    "category": "日常聊天",
+    "zh": "我忘記帶便當了。",
+    "en": "I forgot to bring my lunch.",
+    "audio": "s18.mp3"
+  },
+  {
+    "id": "weather-19",
+    "category": "天氣與安全",
+    "zh": "今天感覺有點累。",
+    "en": "I feel kind of tired today.",
+    "audio": "s19.mp3"
+  },
+  {
+    "id": "weather-20",
+    "category": "天氣與安全",
+    "zh": "眼睛有點酸。",
+    "en": "My eyes feel a little strained.",
+    "audio": "s20.mp3"
+  },
+  {
+    "id": "plans-21",
+    "category": "計畫與旅遊",
+    "zh": "晚上要不要去外面吃？",
+    "en": "Do you want to go out for dinner tonight?",
+    "audio": "s21.mp3"
+  },
+  {
+    "id": "plans-22",
+    "category": "計畫與旅遊",
+    "zh": "週末要去看電影嗎？",
+    "en": "Do you want to go see a movie this weekend?",
+    "audio": "s22.mp3"
+  },
+  {
+    "id": "plans-23",
+    "category": "計畫與旅遊",
+    "zh": "這禮拜去爬山要嗎？",
+    "en": "Do you want to go hiking this week?",
+    "audio": "s23.mp3"
+  },
+  {
+    "id": "plans-24",
+    "category": "計畫與旅遊",
+    "zh": "最近行程很滿。",
+    "en": "My schedule's been packed lately.",
+    "audio": "s24.mp3"
+  },
+  {
+    "id": "plans-25",
+    "category": "計畫與旅遊",
+    "zh": "下禮拜要去露營烤肉。",
+    "en": "We're going camping and having a barbecue next week.",
+    "audio": "s25.mp3"
+  },
+  {
+    "id": "travel-26",
+    "category": "計畫與旅遊",
+    "zh": "我們下次出國是什麼時候？",
+    "en": "When's our next trip abroad?",
+    "audio": "s26.mp3"
+  },
+  {
+    "id": "travel-27",
+    "category": "計畫與旅遊",
+    "zh": "明年義大利旅遊我有找幾個景點。",
+    "en": "I've found a few places I want to visit on our trip to Italy next year.",
+    "audio": "s27.mp3"
+  },
+  {
+    "id": "travel-28",
+    "category": "計畫與旅遊",
+    "zh": "我已經安排好住宿了。",
+    "en": "I've already booked our place to stay.",
+    "audio": "s28.mp3"
+  },
+  {
+    "id": "travel-29",
+    "category": "計畫與旅遊",
+    "zh": "很久沒去潛水了。",
+    "en": "It's been a long time since I went scuba diving.",
+    "audio": "s29.mp3"
+  },
+  {
+    "id": "travel-30",
+    "category": "計畫與旅遊",
+    "zh": "好想去爬山。",
+    "en": "I really want to go hiking.",
+    "audio": "s30.mp3"
+  },
+  {
+    "id": "meals-31",
+    "category": "吃飯與點餐",
+    "zh": "今天想吃牛肉麵。",
+    "en": "I feel like having beef noodle soup today.",
+    "audio": "s31.mp3"
+  }
+]

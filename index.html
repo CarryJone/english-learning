@@ -34,7 +34,7 @@
     }
     .today-btn:hover { opacity: .9; }
     .today-btn .sub { font-size: .8rem; font-weight: 400; opacity: .85; margin-top: .2rem; }
-    .quick-actions { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+    .quick-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
     .quick-actions .today-btn { margin: 0; }
     .review-btn {
       display: block; width: 100%;
@@ -49,6 +49,19 @@
     }
     .review-btn:hover { background: #dcfce7; }
     .review-btn .sub { color: #15803d; font-size: .8rem; font-weight: 500; margin-top: .2rem; }
+    .sentence-btn {
+      display: block; width: 100%;
+      padding: 1rem;
+      background: #fff7ed;
+      color: #9a3412;
+      border: 1.5px solid #fb923c;
+      border-radius: 16px;
+      font-family: sans-serif; font-size: 1rem; font-weight: 800;
+      cursor: pointer; text-align: center; text-decoration: none;
+      transition: all .15s;
+    }
+    .sentence-btn:hover { background: #ffedd5; }
+    .sentence-btn .sub { color: #c2410c; font-size: .8rem; font-weight: 500; margin-top: .2rem; }
 
     /* Day list */
     .card { background: var(--card); border-radius: 20px; padding: 1.6rem 1.8rem; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
@@ -243,6 +256,10 @@
 <a class="review-btn" href="review/">
     前往複習中心
     <div class="sub">Review Center</div>
+</a>
+<a class="sentence-btn" href="sentences/">
+    日常口語句子
+    <div class="sub">Everyday Sentences</div>
 </a>
 </div>
 <div class="card">
