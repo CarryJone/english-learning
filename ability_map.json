@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-05",
+  "updatedAt": "2026-08-06",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-06",
+      "day": 92,
+      "title": "Using a Timed Ticket at the Museum",
+      "url": "daily/2026-08-06/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read museum entry rules and handle a missed admission time.",
+        "Input: museum ticket page, entry rules, and entrance conversation.",
+        "Find the weekend timed-admission rule, the 2:30 slot, and the large-bag locker rule; then move to 3:30.",
+        "Say \"Am I allowed to bring this bag inside?\" / \"Could you say it more slowly?\" / \"Is there another time available?\""
+      ]
+    },
     {
       "date": "2026-08-05",
       "day": 91,

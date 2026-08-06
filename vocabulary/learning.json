@@ -2879,6 +2879,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-06",
       "lastReviewedDate": null
+    },
+    {
+      "word": "admission",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "入場；入場許可",
+      "exampleSentence": "Timed admission is required on weekends.",
+      "dateAdded": "2026-08-06",
+      "reviewCount": 0,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "slot",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "時段",
+      "exampleSentence": "I booked a 2:30 time slot.",
+      "dateAdded": "2026-08-06",
+      "reviewCount": 0,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "allowed",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "被允許的；可以的",
+      "exampleSentence": "Small bags are allowed inside.",
+      "dateAdded": "2026-08-06",
+      "reviewCount": 0,
+      "nextReview": "2026-08-07",
+      "lastReviewedDate": null
     }
   ]
 }
