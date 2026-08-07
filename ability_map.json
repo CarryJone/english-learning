@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-06",
+  "updatedAt": "2026-08-07",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-07",
+      "day": 93,
+      "title": "Mailing a Postcard from Abroad",
+      "url": "daily/2026-08-07/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read international postage information and mail a postcard from abroad.",
+        "Input: international postage sign, machine notice, and post-office conversation.",
+        "Find the $2 / $3.50 postcard rates, the 7–10-business-day delivery time, and Counter Four; then handle an out-of-service machine and an oversized postcard.",
+        "Say \"How much postage do I need?\" / \"How long will it take?\" / \"Could you write it down for me?\""
+      ]
+    },
     {
       "date": "2026-08-06",
       "day": 92,

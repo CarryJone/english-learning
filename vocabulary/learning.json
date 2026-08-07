@@ -2909,6 +2909,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-07",
       "lastReviewedDate": null
+    },
+    {
+      "word": "postage",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "郵資",
+      "exampleSentence": "How much postage do I need?",
+      "dateAdded": "2026-08-07",
+      "reviewCount": 0,
+      "nextReview": "2026-08-08",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "address",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "地址",
+      "exampleSentence": "Please write the address clearly.",
+      "dateAdded": "2026-08-07",
+      "reviewCount": 0,
+      "nextReview": "2026-08-08",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "mailbox",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "郵筒；信箱",
+      "exampleSentence": "Drop the postcard in the blue mailbox.",
+      "dateAdded": "2026-08-07",
+      "reviewCount": 0,
+      "nextReview": "2026-08-08",
+      "lastReviewedDate": null
     }
   ]
 }
