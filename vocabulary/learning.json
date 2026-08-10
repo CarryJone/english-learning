@@ -2939,6 +2939,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-08",
       "lastReviewedDate": null
+    },
+    {
+      "word": "pass",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "票券；通行證",
+      "exampleSentence": "I would like a day pass, please.",
+      "dateAdded": "2026-08-10",
+      "reviewCount": 0,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tap",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "輕觸；感應",
+      "exampleSentence": "Please tap your card here.",
+      "dateAdded": "2026-08-10",
+      "reviewCount": 0,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "button",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "按鈕",
+      "exampleSentence": "Press the button before your stop.",
+      "dateAdded": "2026-08-10",
+      "reviewCount": 0,
+      "nextReview": "2026-08-11",
+      "lastReviewedDate": null
     }
   ]
 }

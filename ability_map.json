@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-07",
+  "updatedAt": "2026-08-10",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-10",
+      "day": 94,
+      "title": "Using a City Bus Day Pass",
+      "url": "daily/2026-08-10/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: buy a city bus day pass and get off at the correct stop.",
+        "Input: bus-stop sign and short driver conversation.",
+        "Find Bus 8, the fifteen-minute interval, the $6 day pass, and the midnight end time; then use the City Library when the market stop is closed.",
+        "Say \"Does this bus go to Central Market?\" / \"Could you say that again?\" / \"Please tell me when we get to the library.\""
+      ]
+    },
     {
       "date": "2026-08-07",
       "day": 93,
