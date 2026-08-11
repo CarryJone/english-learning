@@ -2969,6 +2969,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-11",
       "lastReviewedDate": null
+    },
+    {
+      "word": "pier",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "碼頭；突堤",
+      "exampleSentence": "The ferry leaves from Pier Five.",
+      "dateAdded": "2026-08-11",
+      "reviewCount": 0,
+      "nextReview": "2026-08-12",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "delayed",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "延誤的；延遲的",
+      "exampleSentence": "Our train is delayed by ten minutes.",
+      "dateAdded": "2026-08-11",
+      "reviewCount": 0,
+      "nextReview": "2026-08-12",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "deck",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "船的甲板",
+      "exampleSentence": "We sit on the upper deck.",
+      "dateAdded": "2026-08-11",
+      "reviewCount": 0,
+      "nextReview": "2026-08-12",
+      "lastReviewedDate": null
     }
   ]
 }
