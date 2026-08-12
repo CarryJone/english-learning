@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11",
+  "updatedAt": "2026-08-12",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-12",
+      "day": 96,
+      "title": "Choosing a Safe Hotel Breakfast",
+      "url": "daily/2026-08-12/",
+      "primary": ["travelSpeaking", "onlineReading"],
+      "secondary": ["dailyResponse", "publicEnglish"],
+      "evidence": [
+        "Mission: read hotel breakfast information and order safely with a nut allergy.",
+        "Input: hotel breakfast menu, allergy warning, and cafe conversation.",
+        "Find the 7:00–10:00 hours, $12 adult price, and free-refill rule; then choose nut-free oatmeal when eggs are unavailable.",
+        "Say \"Does this contain nuts?\" / \"What can I have instead?\" / \"Does coffee have free refills?\""
+      ]
+    },
     {
       "date": "2026-08-11",
       "day": 95,

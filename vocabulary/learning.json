@@ -2999,6 +2999,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-12",
       "lastReviewedDate": null
+    },
+    {
+      "word": "buffet",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "自助餐",
+      "exampleSentence": "The breakfast buffet opens at seven.",
+      "dateAdded": "2026-08-12",
+      "reviewCount": 0,
+      "nextReview": "2026-08-13",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "contain",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "含有；包含",
+      "exampleSentence": "Does this soup contain nuts?",
+      "dateAdded": "2026-08-12",
+      "reviewCount": 0,
+      "nextReview": "2026-08-13",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "substitute",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "替代品",
+      "exampleSentence": "Fruit is a good substitute for cake.",
+      "dateAdded": "2026-08-12",
+      "reviewCount": 0,
+      "nextReview": "2026-08-13",
+      "lastReviewedDate": null
     }
   ]
 }
