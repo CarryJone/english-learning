@@ -3029,6 +3029,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-13",
       "lastReviewedDate": null
+    },
+    {
+      "word": "sunscreen",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "防曬乳；防曬用品",
+      "exampleSentence": "I put on sunscreen before going outside.",
+      "dateAdded": "2026-08-13",
+      "reviewCount": 0,
+      "nextReview": "2026-08-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "sensitive",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "敏感的",
+      "exampleSentence": "This soap is made for sensitive skin.",
+      "dateAdded": "2026-08-13",
+      "reviewCount": 0,
+      "nextReview": "2026-08-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "reapply",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "再次塗抹；補擦",
+      "exampleSentence": "Please reapply sunscreen after swimming.",
+      "dateAdded": "2026-08-13",
+      "reviewCount": 0,
+      "nextReview": "2026-08-14",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-13",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-13",
+      "day": 97,
+      "title": "Buying Sunscreen for a Beach Day",
+      "url": "daily/2026-08-13/",
+      "primary": ["travelSpeaking", "onlineReading"],
+      "secondary": ["dailyResponse", "publicEnglish"],
+      "evidence": [
+        "Mission: read sunscreen labels and buy a travel-size product for a beach day.",
+        "Input: pharmacy shelf sign, product labels, and a short store conversation.",
+        "Find SPF 30 / $12, SPF 50 / $18, water-resistance times, and the two-hour reapplication rule; then choose a $10 SPF 50 stick when the small bottle is sold out.",
+        "Say \"How often should I reapply it?\" / \"Is this okay for sensitive skin?\" / \"Do you have a smaller bottle?\""
+      ]
+    },
     {
       "date": "2026-08-12",
       "day": 96,
