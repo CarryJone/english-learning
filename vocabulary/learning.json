@@ -3059,6 +3059,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-14",
       "lastReviewedDate": null
+    },
+    {
+      "word": "noise",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "噪音；聲響",
+      "exampleSentence": "The air conditioner makes a loud noise.",
+      "dateAdded": "2026-08-14",
+      "reviewCount": 0,
+      "nextReview": "2026-08-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "maintenance",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "維護；維修服務",
+      "exampleSentence": "Please call the maintenance desk for help.",
+      "dateAdded": "2026-08-14",
+      "reviewCount": 0,
+      "nextReview": "2026-08-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "fan",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "電風扇",
+      "exampleSentence": "The hotel can bring a fan to my room.",
+      "dateAdded": "2026-08-14",
+      "reviewCount": 0,
+      "nextReview": "2026-08-15",
+      "lastReviewedDate": null
     }
   ]
 }

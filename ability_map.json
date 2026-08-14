@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-13",
+  "updatedAt": "2026-08-14",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-14",
+      "day": 98,
+      "title": "Fixing a Noisy Hotel Air Conditioner",
+      "url": "daily/2026-08-14/",
+      "primary": ["travelSpeaking", "dailyResponse"],
+      "secondary": ["onlineReading", "publicEnglish"],
+      "evidence": [
+        "Mission: read a hotel maintenance notice and report a noisy air conditioner that does not cool the room.",
+        "Input: hotel room help card, maintenance notice, and front-desk conversation.",
+        "Find quiet hours, the 10 p.m. desk closing time, and dial zero for urgent repairs; then change to room 314 when the repair needs a new part.",
+        "Say \"The air conditioner isn’t working.\" / \"Is the maintenance desk still open?\" / \"Can I change rooms?\""
+      ]
+    },
     {
       "date": "2026-08-13",
       "day": 97,
