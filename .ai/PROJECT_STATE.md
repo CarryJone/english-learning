@@ -2,7 +2,7 @@
 
 > 用途：短期狀態與下一步接手資訊。
 > 注意：本檔不是開發規則；正式規則請看專案 `AGENTS.md`、`.ai/DECISIONS.md` 或指定的 `SKILL.md`。
-> 最後更新：2026-08-14
+> 最後更新：2026-08-17
 > 更新者：Agent
 
 ## 目前目標
@@ -11,7 +11,7 @@
 ## 目前進度
 - [x] `The Blue Receipt` 已於 2026-07-14 Day 76 封存；正式內容已切換為 `mission-based`，不可自動續寫 Episode 19。
 - [x] Mission、英文資訊輸入、Role-play、Context Recall、能力地圖、單字 / 句子 SRS 與音檔流程均已接通。
-- [x] Day 77–98 已完成二十二篇正式任務型教材；最新為 `daily/2026-08-14/` 的 `Fixing a Noisy Hotel Air Conditioner`。
+- [x] Day 77–99 已完成二十三篇正式任務型教材；最新為 `daily/2026-08-17/` 的 `Reporting a Missing Suitcase at Baggage Claim`。
 - [x] Day 91 是第一篇兩分鐘雙聲線教材：正文不顯示 `Staff:` / `Me:`，以 `traveler` / `staff` metadata 分別套用 Jenny 與 Guy。
 - [x] Day 91 主播放器已加入跨裝置 `0.75× / 1× / 1.25×` 速度控制，完整文章與逐句播放共用同一速度；正式教材模板已同步。
 - [x] Day 98 目標語塊 `maintenance desk`、`The air conditioner isn’t working.`、`Can I change rooms?` 已貫穿 Article、Key Phrases、Role-play 的「你」回合與 Context Recall。
@@ -25,18 +25,20 @@
 - [x] Day 97 包含 3 個新字、21 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；390×844 手機版無橫向溢位，0.75× 實際生效，單字彈窗與逐句播放正常，console 0 errors。
 - [x] Day 98 通過 `python3 scripts/validate_daily.py 2026-08-14`：84 checks、0 warnings、0 errors；主音檔 129.4 秒，36 句 / 273 字、每句最多 10 字，37 個 MP3 均存在且可讀。
 - [x] Day 98 包含 3 個新字、9 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；390×844 手機版無橫向溢位，0.75× 實際生效，單字彈窗與逐句播放正常，console 0 errors。
+- [x] Day 99 通過 `python3 scripts/validate_daily.py 2026-08-17`：84 checks、0 warnings、0 errors；主音檔 130.56 秒，36 句 / 258 字、每句最多 11 字，37 個 MP3 均存在且可讀。
+- [x] Day 99 包含 3 個新字、37 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；390×844 手機版無橫向溢位，0.75× 與逐句播放正常，單字彈窗正常，console 0 errors。
 
 ## 目前 Blocker
 - 無。
 
 ## 下一步
-- 下一篇先看 Day 98 的理解回饋；若聽力仍低於約六成，優先再減少資訊密度與陌生搭配，不直接降低自然 A2 語速。
+- 下一篇先看 Day 99 的理解回饋；若聽力仍低於約六成，優先再減少資訊密度與陌生搭配，不直接降低自然 A2 語速。
 - 每篇維持 2–3 個目標語塊，至少 1 個支援開口、1 個支援資訊判讀，且至少 1 個要換人物、地點或目的做跨情境提取。
 - Q2 預設測自然搭配 / 情境用法；Active Recall 納入所有到期舊字；Speaking Bridge 只選 2–7 天前且不可使用今日新字。
 - 每日頁必須通過 `python3 scripts/validate_daily.py [日期]`；持續依回饋與卡點評估是否需要 UI、資料欄位或 Collocation SRS。
 
 ## 活躍工作區
-- `daily/2026-08-14/`
+- `daily/2026-08-17/`
 - `index.html`
 - `profile.json`
 - `vocabulary/learning.json`

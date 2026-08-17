@@ -3089,6 +3089,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-15",
       "lastReviewedDate": null
+    },
+    {
+      "word": "carousel",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "行李轉盤",
+      "exampleSentence": "My suitcase should arrive on carousel six.",
+      "dateAdded": "2026-08-17",
+      "reviewCount": 0,
+      "nextReview": "2026-08-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "describe",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "描述",
+      "exampleSentence": "Please describe your missing suitcase.",
+      "dateAdded": "2026-08-17",
+      "reviewCount": 0,
+      "nextReview": "2026-08-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "handle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "提把；把手",
+      "exampleSentence": "My suitcase has a blue handle.",
+      "dateAdded": "2026-08-17",
+      "reviewCount": 0,
+      "nextReview": "2026-08-18",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-17 — Day 99 正式教材產出
+
+- 先 `git fetch origin`，以 fast-forward 同步遠端最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
+- 新增 `daily/2026-08-17/`，主題為 `Reporting a Missing Suitcase at Baggage Claim`；今日新字：`carousel`、`describe`、`handle`。
+- 文章融入到期複習字 `passenger`、`nearby`、`delayed`；Active Recall Quiz 納入全部 37 個到期字；Speaking Bridge 使用 `noise`、`maintenance`、`fan`、`delayed`。
+- 完成 10 題 Context Recall、8 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s36.mp3`。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-17` 通過 84 checks、0 warnings、0 errors；主音檔 130.56 秒；390×844 手機版無橫向溢位，0.75× 與逐句播放正常，console 0 errors。
+
+---
 ## 2026-08-03 — Day 89 正式教材產出
 
 - 先執行 `git fetch origin`，確認本地 `HEAD` 與 `origin/main` 同步，使用最新的 `vocabulary/learning.json` 生成複習內容。
@@ -278,26 +287,3 @@
 - Speaking Bridge 使用 `post`、`search`、`title`、`front`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s21.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、21 個單句音檔存在、本機 HTTP 200。
-
----
-## 2026-06-24 — Day 63 正式教材產出
-
-- 先同步遠端 SRS；同步後以最新 `vocabulary/learning.json` 重算 review，今天共 3 個到期複習字。
-- 延續 serial story continuity，新增 `daily/2026-06-24/`，標題為 `The Blue Receipt · Episode 5`。
-- 今日新字：`arrow`、`poster`、`photo`；文章融入複習字：`search`、`post`、`title`。
-- Speaking Bridge 使用 `front`、`ride`、`saved`、`listed`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s21.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、21 個單句音檔存在、本機 HTTP 200。
-
----
-## 2026-06-23 — Day 62 正式教材產出
-
-- 先同步遠端 SRS；同步過程中第一次 `git fetch` 出現 remote ref 鎖衝突，但後續 `git pull --ff-only` 已成功更新到最新 `vocabulary/learning.json`。
-- 延續 serial story continuity，新增 `daily/2026-06-23/`，標題為 `The Blue Receipt · Episode 4`。
-- 今日新字：`search`、`post`、`title`；文章融入複習字：`front`、`saved`、`ride`。
-- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 4 個到期複習字。
-- Speaking Bridge 使用 `listed`、`block`、`nearby`、`warning`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s22.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、22 個單句音檔存在、本機 HTTP 200。
-
----

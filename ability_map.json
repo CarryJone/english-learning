@@ -46,6 +46,20 @@
   },
   "sessions": [
     {
+      "date": "2026-08-17",
+      "day": 99,
+      "title": "Reporting a Missing Suitcase at Baggage Claim",
+      "url": "daily/2026-08-17/",
+      "primary": ["travelSpeaking", "publicEnglish"],
+      "secondary": ["onlineReading", "dailyResponse"],
+      "evidence": [
+        "Mission: report a missing suitcase and confirm the delivery plan.",
+        "Input: baggage claim screen, help-desk notice, and airport service conversation.",
+        "Find carousel six, carousel eight for oversized bags, and the 11:30 p.m. desk closing time.",
+        "Say \"My suitcase is missing.\" / \"Where is the baggage claim desk?\" / \"Could you help me find it?\""
+      ]
+    },
+    {
       "date": "2026-08-14",
       "day": 98,
       "title": "Fixing a Noisy Hotel Air Conditioner",
