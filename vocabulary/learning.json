@@ -3119,6 +3119,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-18",
       "lastReviewedDate": null
+    },
+    {
+      "word": "liquid",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "液體",
+      "exampleSentence": "All liquids must fit inside one clear bag.",
+      "dateAdded": "2026-08-18",
+      "reviewCount": 0,
+      "nextReview": "2026-08-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "container",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "容器",
+      "exampleSentence": "Each container has a limit of one hundred milliliters.",
+      "dateAdded": "2026-08-18",
+      "reviewCount": 0,
+      "nextReview": "2026-08-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "limit",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "限制；上限",
+      "exampleSentence": "The bottle is over the one-hundred-milliliter limit.",
+      "dateAdded": "2026-08-18",
+      "reviewCount": 0,
+      "nextReview": "2026-08-19",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -46,6 +46,20 @@
   },
   "sessions": [
     {
+      "date": "2026-08-18",
+      "day": 100,
+      "title": "Checking Carry-on Liquid Rules Before Security",
+      "url": "daily/2026-08-18/",
+      "primary": ["onlineReading", "publicEnglish"],
+      "secondary": ["travelSpeaking", "dailyResponse"],
+      "evidence": [
+        "Mission: read carry-on liquid rules and handle an oversized bottle before airport security.",
+        "Input: airport website rules, security sign, and airport screening conversation.",
+        "Find the 100 ml container limit, one clear one-liter bag rule, and the instruction to remove the bag.",
+        "Say \"Can I take this through security?\" / \"Is it one hundred milliliters or less?\" / \"Do I need to take it out?\""
+      ]
+    },
+    {
       "date": "2026-08-17",
       "day": 99,
       "title": "Reporting a Missing Suitcase at Baggage Claim",

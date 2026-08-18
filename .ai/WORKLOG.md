@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-18 — Day 100 正式教材與首頁清單修復
+
+- 先 `git fetch origin` 並以 fast-forward 同步 2026-08-17 最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
+- 新增 `daily/2026-08-18/`，主題為 `Checking Carry-on Liquid Rules Before Security`；今日新字：`liquid`、`container`、`limit`。
+- Active Recall Quiz 納入全部 3 個到期字；Speaking Bridge 使用 `contain`、`sensitive`、`delayed`、`deck`；完成 10 題 Context Recall 與 8 回合 Role-play。
+- 修正首頁學習記錄容器錯位：Day 99 原本落在 Day 66 後方，現已將全部日期統一放回 `#day-list`，依日期新到舊排序。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-18` 通過 84 checks、0 warnings、0 errors；主音檔 117.94 秒，31 句 / 251 字；390×844 手機版首頁與教材均無橫向溢位，首頁前三筆為 Day 100、99、98。
+
+---
 ## 2026-08-17 — Day 99 正式教材產出
 
 - 先 `git fetch origin`，以 fast-forward 同步遠端最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
@@ -276,14 +285,3 @@
 - Speaking Bridge 使用 `arrow`、`photo`、`poster`、`post`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s22.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、22 個單句音檔存在、本機 HTTP 200。
-
----
-## 2026-06-25 — Day 64 正式教材產出
-
-- 先同步遠端 SRS；第一次 `pull` 因 repo 設定失敗，改用 `git merge --ff-only FETCH_HEAD` 補到最新遠端狀態。
-- 依最新 `vocabulary/learning.json` 重算 review，今天共 9 個到期複習字。
-- 延續 serial story continuity，新增 `daily/2026-06-25/`，標題為 `The Blue Receipt · Episode 6`。
-- 今日新字：`locked`、`hallway`、`basement`；文章融入複習字：`arrow`、`poster`、`photo`。
-- Speaking Bridge 使用 `post`、`search`、`title`、`front`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s21.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、21 個單句音檔存在、本機 HTTP 200。
