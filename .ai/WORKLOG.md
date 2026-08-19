@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-19 — Day 101 正式教材產出
+
+- 先 `git fetch origin` 並以 fast-forward 同步 2026-08-18 最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
+- 新增 `daily/2026-08-19/`，主題為 `Finding the Walking Tour Meeting Point`；今日新字：`meeting point`、`fountain`、`tour`。
+- Active Recall Quiz 納入全部 11 個到期字；Speaking Bridge 使用 `carousel`、`describe`、`handle`、`noise`；完成 10 題 Context Recall 與 8 回合 Role-play。
+- 完成 Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s32.mp3`。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-19` 通過 84 checks、0 warnings、0 errors；主音檔 118.25 秒，32 句 / 257 字；390×844 手機版無橫向溢位，首頁前三筆為 Day 101、100、99，音檔可載入。
+
+---
 ## 2026-08-18 — Day 100 正式教材與首頁清單修復
 
 - 先 `git fetch origin` 並以 fast-forward 同步 2026-08-17 最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
@@ -275,13 +284,3 @@
 - 新增單字：`result`、`history`、`match`；文章融入複習字：`folder`、`photo`、`record`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、25 個單句音檔存在、Review Quiz 65 題、Speaking Bridge 4 題、本機 HTTP 200。
-
----
-## 2026-06-26 — Day 65 正式教材產出
-
-- 先以遠端最新 SRS commit 為底，再合併今天新增單字重算 review，今天共 32 個到期複習字，且無逾期字。
-- 延續 serial story continuity，新增 `daily/2026-06-26/`，標題為 `The Blue Receipt · Episode 7`。
-- 今日新字：`storage`、`folder`、`record`；文章融入複習字：`locked`、`hallway`、`basement`。
-- Speaking Bridge 使用 `arrow`、`photo`、`poster`、`post`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s22.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、22 個單句音檔存在、本機 HTTP 200。

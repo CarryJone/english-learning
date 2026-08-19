@@ -3149,6 +3149,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-19",
       "lastReviewedDate": null
+    },
+    {
+      "word": "meeting point",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "集合地點",
+      "exampleSentence": "The fountain is our meeting point.",
+      "dateAdded": "2026-08-19",
+      "reviewCount": 0,
+      "nextReview": "2026-08-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "fountain",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "噴水池",
+      "exampleSentence": "We meet by the fountain outside City Hall.",
+      "dateAdded": "2026-08-19",
+      "reviewCount": 0,
+      "nextReview": "2026-08-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tour",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "導覽；旅行行程",
+      "exampleSentence": "I booked a walking tour for Saturday morning.",
+      "dateAdded": "2026-08-19",
+      "reviewCount": 0,
+      "nextReview": "2026-08-20",
+      "lastReviewedDate": null
     }
   ]
 }

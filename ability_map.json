@@ -46,6 +46,20 @@
   },
   "sessions": [
     {
+      "date": "2026-08-19",
+      "day": 101,
+      "title": "Finding the Walking Tour Meeting Point",
+      "url": "daily/2026-08-19/",
+      "primary": ["onlineReading", "travelSpeaking"],
+      "secondary": ["publicEnglish", "dailyResponse"],
+      "evidence": [
+        "Mission: read a walking-tour confirmation and find the meeting point after a rain change.",
+        "Input: confirmation email, map result, rain update, and guide conversation.",
+        "Find the 9:30 start, City Hall fountain, fifteen-minute early-arrival rule, and yellow umbrella.",
+        "Say \"Is this the meeting point?\" / \"How can I find the guide?\"; move to the museum entrance at 9:20 after the update."
+      ]
+    },
+    {
       "date": "2026-08-18",
       "day": 100,
       "title": "Checking Carry-on Liquid Rules Before Security",
