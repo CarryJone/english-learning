@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-14",
+  "updatedAt": "2026-08-20",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-20",
+      "day": 102,
+      "title": "Getting an Airport Tax Refund",
+      "url": "daily/2026-08-20/",
+      "primary": ["onlineReading", "travelSpeaking"],
+      "secondary": ["publicEnglish", "dailyResponse"],
+      "evidence": [
+        "Mission: read airport tax-refund instructions and complete the refund after a counter move.",
+        "Input: tax refund guide, airport notice, customs conversation, and refund-counter conversation.",
+        "Find the $100 minimum purchase, Customs Desk B before security, Level Three, and the Gate Twelve update.",
+        "Say \"Where can I get a tax refund?\" / \"Do I need the original receipt?\"; ask for a cash option when card refunds take five days."
+      ]
+    },
     {
       "date": "2026-08-19",
       "day": 101,

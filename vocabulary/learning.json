@@ -3179,6 +3179,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-20",
       "lastReviewedDate": null
+    },
+    {
+      "word": "eligible",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "符合資格的",
+      "exampleSentence": "This purchase is eligible for a tax refund.",
+      "dateAdded": "2026-08-20",
+      "reviewCount": 0,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "purchase",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "購買的物品；購買",
+      "exampleSentence": "Please keep the receipt for every purchase.",
+      "dateAdded": "2026-08-20",
+      "reviewCount": 0,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "original",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "原本的；正本的",
+      "exampleSentence": "Bring the original receipt, not a photo.",
+      "dateAdded": "2026-08-20",
+      "reviewCount": 0,
+      "nextReview": "2026-08-21",
+      "lastReviewedDate": null
     }
   ]
 }
