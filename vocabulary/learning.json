@@ -3209,6 +3209,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-21",
       "lastReviewedDate": null
+    },
+    {
+      "word": "fuel",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "燃料；汽油",
+      "exampleSentence": "Please check the fuel level before returning the car.",
+      "dateAdded": "2026-08-21",
+      "reviewCount": 0,
+      "nextReview": "2026-08-22",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "damage",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "損壞；損傷",
+      "exampleSentence": "Please report any damage before leaving.",
+      "dateAdded": "2026-08-21",
+      "reviewCount": 0,
+      "nextReview": "2026-08-22",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "deposit",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "押金",
+      "exampleSentence": "The deposit returns after the car inspection.",
+      "dateAdded": "2026-08-21",
+      "reviewCount": 0,
+      "nextReview": "2026-08-22",
+      "lastReviewedDate": null
     }
   ]
 }

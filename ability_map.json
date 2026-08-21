@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20",
+  "updatedAt": "2026-08-21",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-21",
+      "day": 103,
+      "title": "Returning a Rental Car with a Full Tank",
+      "url": "daily/2026-08-21/",
+      "primary": ["travelSpeaking", "onlineReading"],
+      "secondary": ["publicEnglish", "dailyResponse"],
+      "evidence": [
+        "Mission: read a rental confirmation and return notice, then complete a car return after Lot B fills.",
+        "Input: rental confirmation, fuel policy, parking notice, and rental-desk conversations.",
+        "Find the 8 p.m. deadline, full-tank rule, Lot B, the Lot C change, and the printed-receipt step.",
+        "Say \"Where do I return the car?\" / \"Does the tank need to be full?\"; describe damage, take clear photos, and confirm the deposit return."
+      ]
+    },
     {
       "date": "2026-08-20",
       "day": 102,
