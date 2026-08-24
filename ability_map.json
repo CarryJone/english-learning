@@ -46,6 +46,20 @@
   },
   "sessions": [
     {
+      "date": "2026-08-24",
+      "day": 104,
+      "title": "Finding the Right Airport Train After a Platform Change",
+      "url": "daily/2026-08-24/",
+      "primary": ["travelSpeaking", "publicEnglish"],
+      "secondary": ["onlineReading", "dailyResponse"],
+      "evidence": [
+        "Mission: find the Airport Express platform and handle a platform change.",
+        "Input: departure screen, station notice, and staff conversation.",
+        "Find Airport Express, 6:30, Platform Four, the twenty-minute delay, and Platform Six.",
+        "Say \"Which platform does it leave from?\" / \"When does it depart?\"; confirm the day pass works for the replacement train."
+      ]
+    },
+    {
       "date": "2026-08-21",
       "day": 103,
       "title": "Returning a Rental Car with a Full Tank",

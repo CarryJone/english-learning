@@ -5,6 +5,16 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-24 — Day 104 正式教材產出
+
+- 先 `git fetch origin`，以 fast-forward 同步遠端 2026-08-21 的最新單字 SRS，再依最新 `vocabulary/learning.json` 生成今日複習內容。
+- 新增 `daily/2026-08-24/`，主題為 `Finding the Right Airport Train After a Platform Change`；今日新字：`train`、`depart`、`airport`。
+- 文章以車站 departure screen、station notice 與工作人員對話為英文輸入；融入 `station`、`screen`、`line`、`notice`、`delayed`、`valid` 等到期字。
+- Active Recall Quiz 納入全部 39 個到期字；Speaking Bridge 使用 2–7 天前的 `fuel`、`damage`、`deposit`、`eligible`；完成 10 題 Context Recall 與 8 回合 Role-play。
+- 完成 Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s34.mp3`；主音檔實測 121.97 秒。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-24` 通過 84 checks、0 warnings、0 errors；JSON parse、JavaScript syntax、`git diff --check` 與內容對齊檢查通過。
+
+---
 ## 2026-08-19 — Day 101 正式教材產出
 
 - 先 `git fetch origin` 並以 fast-forward 同步 2026-08-18 最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。

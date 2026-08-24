@@ -3239,6 +3239,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-22",
       "lastReviewedDate": null
+    },
+    {
+      "word": "train",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "火車；列車",
+      "exampleSentence": "The airport train stops at Terminal Two.",
+      "dateAdded": "2026-08-24",
+      "reviewCount": 0,
+      "nextReview": "2026-08-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "depart",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "出發；啟程",
+      "exampleSentence": "The next train departs at six thirty.",
+      "dateAdded": "2026-08-24",
+      "reviewCount": 0,
+      "nextReview": "2026-08-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "airport",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "機場",
+      "exampleSentence": "I check the airport train page before leaving.",
+      "dateAdded": "2026-08-24",
+      "reviewCount": 0,
+      "nextReview": "2026-08-25",
+      "lastReviewedDate": null
     }
   ]
 }
