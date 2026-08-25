@@ -41,6 +41,7 @@ REQUIRED_SCRIPT_SUFFIXES = [
 MISSION_MODE_START_DATE = "2026-07-15"
 THREE_MINUTE_AUDIO_START_DATE = "2026-08-04"
 TWO_MINUTE_AUDIO_START_DATE = "2026-08-05"
+THREE_VOICE_START_DATE = "2026-08-25"
 THREE_MINUTE_AUDIO_MIN_SECONDS = 165
 THREE_MINUTE_AUDIO_MAX_SECONDS = 195
 TWO_MINUTE_AUDIO_MIN_SECONDS = 105
@@ -364,7 +365,10 @@ def validate_audio(day_dir: Path, date: str, page: ParsedDailyPage, validation: 
         f"sentence indices are not continuous: {indices[:10]}...",
     )
     if date >= TWO_MINUTE_AUDIO_START_DATE:
-        allowed_speakers = {"traveler", "staff"}
+        allowed_speakers = {"narrator", "traveler", "staff"}
+        required_speakers = {"traveler", "staff"}
+        if date >= THREE_VOICE_START_DATE:
+            required_speakers.add("narrator")
         speakers = page.sentence_speakers
         validation.check(
             len(speakers) == len(indices) and all(speakers),
@@ -377,9 +381,9 @@ def validate_audio(day_dir: Path, date: str, page: ParsedDailyPage, validation: 
             f"invalid sentence speakers: {sorted(set(speakers) - allowed_speakers)}",
         )
         validation.check(
-            set(speakers) == allowed_speakers,
-            "article uses both traveler and staff speaker roles",
-            f"article must use both speaker roles; found {sorted(set(speakers))}",
+            required_speakers.issubset(set(speakers)),
+            "article uses all required speaker roles",
+            f"article must use {sorted(required_speakers)} speaker roles; found {sorted(set(speakers))}",
         )
         role_prefixes = [
             text

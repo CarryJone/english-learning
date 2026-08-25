@@ -77,7 +77,7 @@ mkdir -p ./daily/$TODAY
 - **任務反應**：每篇必須有 Role-play，至少 4 個回合，包含一次資訊改變、聽不懂、需要澄清或需要替代方案的分支。
 - **SRS 邊界**：Active Recall Quiz 只處理到期舊單字，Speaking Bridge 只使用 2–7 天前單字；目前不新增獨立 Collocation SRS，語塊提取沿用 Role-play、Context Recall 與句子 SRS。
 - **難度控制**：保持 A2，句子短、字彙高頻、自然口語；寧可更簡單，也不要為了題材或單字變難。
-- **兩分鐘雙聲線主音檔**：自 2026-08-05 起，`article.mp3` 的正式目標為 1 分 45 秒到 2 分 15 秒。維持自然 A2 語速；旅客／旁白與工作人員使用兩個不同英文聲音，且 Article 正文不顯示 `Staff:`、`Me:` 等角色前綴。
+- **兩分鐘三聲線主音檔**：自 2026-08-25 起，`article.mp3` 的正式目標為 1 分 45 秒到 2 分 15 秒。維持自然 A2 語速；旁白、旅客與工作人員使用三個不同英文聲音，且 Article 正文不顯示 `Staff:`、`Me:` 等角色前綴。
 - **必要產物**：必須產出完整 HTML、`article.mp3`、`s01.mp3` 到 `sNN.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`。
 
 ---
@@ -95,7 +95,7 @@ mkdir -p ./daily/$TODAY
   - 完成任務後要說出的 1 句 survival sentence
 - Article 區塊改用「第一人稱任務英文素材」，可由旅客的現場反應、直接對話、公告加說明、搜尋結果加使用者反應組成；任務骨架預設用 `I / my`，並優先使用現在式或即將採取的行動，讓學習者可直接跟讀與套用。
 - 公告、菜單、網站、app、訂房規則、時刻表及 Staff 的句子依真實情境保留自然的祈使句、第二人稱或其他必要人稱；不要把全文機械式改成 `I`，也不要再以固定第三人稱主角包住 mini dialogue。
-- mini dialogue 在正文只顯示自然台詞，不顯示 `Staff:`、`Me:`、`Officer:` 等角色前綴；每個 `.sent` 以 `data-speaker="traveler"` 或 `data-speaker="staff"` 保存角色，旁白歸入 `traveler` 聲線。Role-play 可用中文「店員／你」提示回合。
+- mini dialogue 在正文只顯示自然台詞，不顯示 `Staff:`、`Me:`、`Officer:` 等角色前綴；每個 `.sent` 以 `data-speaker="narrator"`、`data-speaker="traveler"` 或 `data-speaker="staff"` 保存角色，旁白使用 `narrator` 聲線。Role-play 可用中文「店員／你」提示回合。
 - 英文素材目標 250–290 字、28–36 句，讓目前 `RATE = "-10%"` 的 `article.mp3` 落在 1 分 45 秒到 2 分 15 秒；每句最多 12 個字，避免複雜子句與被動語態。若素材是公告或搜尋結果，可保留短標題、按鈕、價格、時間與規則原文。
 - 文章切成二到三個容易跟讀的同一任務階段：① 到場與讀取資訊，② 開口確認與採取行動，③ 資訊改變、澄清或替代方案。對話優先使用旅途中可直接套用的日常口語，不拼接無關小故事。
 - 用控制式重複鞏固 2–3 個目標語塊：在不同回合或資訊變化中自然重現 2–4 次，但不可逐句原樣灌水。今日新單字仍維持正好 3 個；篇幅增加不代表增加生詞量或文法難度。
@@ -559,7 +559,7 @@ mkdir -p ./daily/$TODAY
     </div>
     <div class="article-body" id="article-body">
       <!--
-        每個句子用 <span class="sent" data-idx="N" data-speaker="traveler|staff" data-text="純文字句子（不含 HTML 或角色前綴）"> 包住。
+        每個句子用 <span class="sent" data-idx="N" data-speaker="narrator|traveler|staff" data-text="純文字句子（不含 HTML 或角色前綴）"> 包住。
         句子內的單字和片語仍用 vocab-word / phrase-chunk span。
         每句開頭放一個播放按鈕：<button class="sent-btn" onclick="playSent(this)" title="播放這句">🔊</button>
 
@@ -578,7 +578,7 @@ mkdir -p ./daily/$TODAY
         - 重要片語：phrase-chunk（綠色）
         - data-idx 從 1 開始連續編號（跨段落不重設）
         - data-text 必須是純文字，不含任何 HTML tag
-        - 對話正文不顯示 Staff: / Me:；用 data-speaker 提供雙聲線生成所需角色
+        - 對話正文不顯示 Staff: / Me:；用 data-speaker 提供三聲線生成所需角色
       -->
       [文章段落 HTML]
     </div>
@@ -1239,7 +1239,7 @@ mkdir -p ./daily/$TODAY
 ### Step 5：產生語音檔
 
 用 edge-tts 產生 MP3。需要產生兩種檔案：
-1. `article.mp3`：整篇文章雙聲線完整朗讀；自 2026-08-05 起必須落在 1 分 45 秒到 2 分 15 秒
+1. `article.mp3`：整篇文章三聲線完整朗讀；自 2026-08-25 起必須落在 1 分 45 秒到 2 分 15 秒
 2. `s01.mp3`, `s02.mp3`, ...：每個句子依 speaker 使用對應聲音個別朗讀（對應 Step 4 中 data-idx 的編號）
 
 時長必須由實際生成的檔案驗收，不可只用字數推估。保留 `RATE = "-10%"`；若不足 1 分 45 秒，優先補足同一任務中的資訊確認、repair 與替代方案內容。若超過 2 分 15 秒，先刪除重複或低回報句子，不刪任務成功所需資訊。
@@ -1252,14 +1252,15 @@ import asyncio, subprocess, edge_tts
 FOLDER = "./daily/[TODAY 替換成今天日期]"
 RATE = "-10%"
 VOICES = {
+    "narrator": "en-US-AriaNeural",
     "traveler": "en-US-JennyNeural",
     "staff": "en-US-GuyNeural",
 }
 
 SENTENCES = [
-    {"text": "[S1 純文字，不含 Staff: / Me:]", "speaker": "traveler"},
-    {"text": "[S2 純文字，不含 Staff: / Me:]", "speaker": "staff"},
-    {"text": "[S3 純文字]", "speaker": "traveler"},
+    {"text": "[S1 純文字，不含 Staff: / Me:]", "speaker": "narrator"},
+    {"text": "[S2 純文字，不含 Staff: / Me:]", "speaker": "traveler"},
+    {"text": "[S3 純文字]", "speaker": "staff"},
     # ... 所有句子
 ]
 
@@ -1274,7 +1275,7 @@ async def main():
         await gen(item["text"], item["speaker"], path)
         paths.append(path)
 
-    # 將已套用兩種聲線的逐句音檔依序合成完整文章。
+    # 將已套用三種聲線的逐句音檔依序合成完整文章。
     command = ["ffmpeg", "-y"]
     for path in paths:
         command.extend(["-i", path])
@@ -1425,7 +1426,7 @@ python3 scripts/validate_daily.py [日期]
 - 2026-07-15 起的新教材是否包含 Mission 與 Role-play 區塊；舊小說頁面仍依歷史格式驗證。
 - `article.mp3` 與 `sNN.mp3` 是否存在且非空。
 - 2026-08-04 的三分鐘教材維持 165–195 秒；自 2026-08-05 起，`article.mp3` 的實際時長必須為 105–135 秒（1:45–2:15）。
-- 自 2026-08-05 起，每個 Article 句子都有 `traveler` 或 `staff` speaker metadata，至少同時使用兩種角色；正文不顯示 `Staff:`、`Me:` 前綴。
+- 自 2026-08-25 起，每個 Article 句子都有 `narrator`、`traveler` 或 `staff` speaker metadata，且當日正式教材至少同時使用三種聲線；正文不顯示 `Staff:`、`Me:` 前綴。
 - 句子 `data-idx` 是否從 1 連續編號，並與逐句音檔一致。
 - Context Recall 題目是否有 `data-sentence-id`、自評按鈕，並與 `vocabulary/sentences.json` 對齊。
 - `ability_map.json` 是否有當日 session。

@@ -13,6 +13,7 @@
 - [x] Mission、英文資訊輸入、Role-play、Context Recall、能力地圖、單字 / 句子 SRS 與音檔流程均已接通。
 - [x] Day 77–105 已完成二十九篇正式任務型教材；最新為 `daily/2026-08-25/` 的 `Finding the Hotel After a Station Exit Change`。
 - [x] Day 91 是第一篇兩分鐘雙聲線教材：正文不顯示 `Staff:` / `Me:`，以 `traveler` / `staff` metadata 分別套用 Jenny 與 Guy。
+- [x] Day 105 起正式教材改用三聲線：`narrator` 負責場景與動作，`traveler` 負責旅客台詞，`staff` 負責工作人員台詞；正文仍不顯示角色前綴。
 - [x] Day 91 主播放器已加入跨裝置 `0.75× / 1× / 1.25×` 速度控制，完整文章與逐句播放共用同一速度；正式教材模板已同步。
 - [x] Active Recall Quiz、Speaking Bridge、`vocabulary/learning.json` 與 `vocabulary/sentences.json` 保持 source-of-truth 與既有 SRS 邊界；未新增 Collocation SRS。
 - [x] 使用者已確認後續教材統一採出國旅遊情境；Article 改以第一人稱現場任務為預設，真實資訊與 Staff 說法維持自然語氣。
