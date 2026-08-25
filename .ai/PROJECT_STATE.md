@@ -33,8 +33,9 @@
 - [x] Day 103 包含 3 個新字、16 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；三個目標語塊均貫穿 Article、Key Phrases、Role-play 與 Context Recall。
 - [x] Day 104 通過 `python3 scripts/validate_daily.py 2026-08-24`：84 checks、0 warnings、0 errors；主音檔 121.97 秒，34 句 / 272 字、35 個 MP3 均存在且可讀。
 - [x] Day 104 包含 3 個新字、39 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；三個目標語塊均貫穿 Article、Key Phrases、Role-play 與 Context Recall。
-- [x] Day 105 通過 `python3 scripts/validate_daily.py 2026-08-25`：84 checks、0 warnings、0 errors；主音檔 122.11 秒，34 句 / 281 字、35 個 MP3 均存在且可讀。
+- [x] Day 105 通過 `python3 scripts/validate_daily.py 2026-08-25`：84 checks、0 warnings、0 errors；主音檔 119.78 秒，34 句 / 262 字、35 個 MP3 均存在且可讀。
 - [x] Day 105 包含 3 個新字、5 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；三個目標語塊均貫穿 Article、Key Phrases、Role-play 與 Context Recall。
+- [x] Day 105 依回饋再修正 Article：旁白、旅客台詞與工作人員台詞改為清楚分句，不再把 `I ask` / `She says` 報導句混進直接台詞。
 - [x] 首頁 Day 105、Day 104、Day 103 依日期新到舊排列。
 
 ## 目前 Blocker
