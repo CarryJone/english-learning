@@ -3269,6 +3269,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-25",
       "lastReviewedDate": null
+    },
+    {
+      "word": "directions",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "方向；路線指示",
+      "exampleSentence": "Could you give me directions to the hotel.",
+      "dateAdded": "2026-08-25",
+      "reviewCount": 0,
+      "nextReview": "2026-08-26",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "walk",
+      "partOfSpeech": "v./n.",
+      "chineseMeaning": "走路；步行",
+      "exampleSentence": "It takes eight minutes to walk there.",
+      "dateAdded": "2026-08-25",
+      "reviewCount": 0,
+      "nextReview": "2026-08-26",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "cross",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "穿越；過馬路",
+      "exampleSentence": "Cross the street at the traffic light.",
+      "dateAdded": "2026-08-25",
+      "reviewCount": 0,
+      "nextReview": "2026-08-26",
+      "lastReviewedDate": null
     }
   ]
 }

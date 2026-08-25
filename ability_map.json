@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21",
+  "updatedAt": "2026-08-25",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-25",
+      "day": 105,
+      "title": "Finding the Hotel After a Station Exit Change",
+      "url": "daily/2026-08-25/",
+      "primary": ["travelSpeaking", "publicEnglish"],
+      "secondary": ["onlineReading", "dailyResponse"],
+      "evidence": [
+        "Mission: find the hotel after Exit Three closes and the route changes to Exit Five.",
+        "Input: station notice, map result, and information-desk conversation.",
+        "Find Exit Three closed, Exit Five, the eight-minute walk, the blue signs, and the side entrance.",
+        "Say \"Which exit should I use?\" / \"Could you show me the way?\"; follow the route and cross at the traffic light."
+      ]
+    },
     {
       "date": "2026-08-24",
       "day": 104,

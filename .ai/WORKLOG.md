@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-25 — Day 105 正式教材產出
+
+- 先 `git fetch origin` 並以 fast-forward 同步遠端最新 SRS；依同步後的 `vocabulary/learning.json` 產生今天 5 個到期複習字。
+- 新增 `daily/2026-08-25/`，主題為 `Finding the Hotel After a Station Exit Change`；今日新字：`directions`、`walk`、`cross`。
+- 文章以 station notice、map result 與 information-desk conversation 為英文輸入；任務是出口變更後找到飯店側門，融入 `notice`、`miss`、`fountain` 等路線字。
+- 完成 10 題 Context Recall、4 組 Speaking Bridge、8 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及完整文章與逐句音檔。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-25` 通過 84 checks、0 warnings、0 errors；主音檔 122.11 秒，34 句 / 281 字、35 個 MP3 均存在且可讀；未修改既有未追蹤的 `test/`。
+
+---
 ## 2026-08-24 — Day 104 正式教材產出
 
 - 先 `git fetch origin`，以 fast-forward 同步遠端 2026-08-21 的最新單字 SRS，再依最新 `vocabulary/learning.json` 生成今日複習內容。
