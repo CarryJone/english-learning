@@ -5,6 +5,15 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-26 — Day 106 正式教材產出
+
+- 先 `git fetch origin` 確認遠端沒有較新的 SRS 更新；依 `vocabulary/learning.json` 產生今天 15 個到期複習字。
+- 新增 `daily/2026-08-26/`，主題為 `Taking the Right City Bus During a Road Detour`；今日新字：`bus`、`detour`、`opposite`。
+- 文章以 map result、bus detour notice 與 driver conversation 為英文輸入；任務是找到臨時站牌、確認 Bus Twelve，並在 Museum Square 下車。
+- 完成 10 題 Context Recall、4 組 Speaking Bridge、8 回合 Role-play、Ability Map、句子 SRS 與首頁入口；Speaking Bridge 使用 `train`、`depart`、`airport`、`eligible`，未使用今日新字。
+- 文章使用旁白、旅客、工作人員三聲線，34 句 / 268 字；完成主音檔與 34 個逐句音檔，主音檔實測 120.31 秒。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-26` 通過 84 checks、0 warnings、0 errors；JSON、JavaScript syntax、`git diff --check` 與內容對齊檢查通過；未修改既有未追蹤的 `test/`。
+
 ## 2026-08-25 — Day 105 正式教材產出
 
 - 先 `git fetch origin` 並以 fast-forward 同步遠端最新 SRS；依同步後的 `vocabulary/learning.json` 產生今天 5 個到期複習字。

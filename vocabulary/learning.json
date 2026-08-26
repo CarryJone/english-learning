@@ -3299,6 +3299,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-26",
       "lastReviewedDate": null
+    },
+    {
+      "word": "bus",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "公車；巴士",
+      "exampleSentence": "Bus Twelve goes to the museum.",
+      "dateAdded": "2026-08-26",
+      "reviewCount": 0,
+      "nextReview": "2026-08-27",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "detour",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "迂迴路線；繞道",
+      "exampleSentence": "The bus is on a detour today.",
+      "dateAdded": "2026-08-26",
+      "reviewCount": 0,
+      "nextReview": "2026-08-27",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "opposite",
+      "partOfSpeech": "adj./prep.",
+      "chineseMeaning": "對面的；相反的",
+      "exampleSentence": "The temporary stop is opposite the bookstore.",
+      "dateAdded": "2026-08-26",
+      "reviewCount": 0,
+      "nextReview": "2026-08-27",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-08-26",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-26",
+      "day": 106,
+      "title": "Taking the Right City Bus During a Road Detour",
+      "url": "daily/2026-08-26/",
+      "primary": ["travelSpeaking", "publicEnglish"],
+      "secondary": ["onlineReading", "dailyResponse"],
+      "evidence": [
+        "Mission: read a bus detour notice, find the temporary stop, and reach the city museum.",
+        "Input: map result, bus detour notice, and driver conversation.",
+        "Find Bus Twelve, the temporary stop opposite the bookstore, Museum Square, and three stops.",
+        "Say \"Which bus goes to the museum?\" / \"Where should I get off?\"; confirm the route after the road-work change."
+      ]
+    },
     {
       "date": "2026-08-25",
       "day": 105,
