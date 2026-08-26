@@ -14,6 +14,7 @@
 - [x] Day 77–106 已完成三十篇正式任務型教材；最新為 `daily/2026-08-26/` 的 `Taking the Right City Bus During a Road Detour`。
 - [x] Day 91 是第一篇兩分鐘雙聲線教材：正文不顯示 `Staff:` / `Me:`，以 `traveler` / `staff` metadata 分別套用 Jenny 與 Guy。
 - [x] Day 105 起正式教材改用三聲線：`narrator` 負責場景與動作，`traveler` 負責旅客台詞，`staff` 負責工作人員台詞；正文仍不顯示角色前綴。
+- [x] 依使用者回饋，旁白聲線改用 Jenny、旅客（我的台詞）改用 Aria，工作人員維持 Guy；正式教材模板已同步。
 - [x] Day 91 主播放器已加入跨裝置 `0.75× / 1× / 1.25×` 速度控制，完整文章與逐句播放共用同一速度；正式教材模板已同步。
 - [x] Active Recall Quiz、Speaking Bridge、`vocabulary/learning.json` 與 `vocabulary/sentences.json` 保持 source-of-truth 與既有 SRS 邊界；未新增 Collocation SRS。
 - [x] 使用者已確認後續教材統一採出國旅遊情境；Article 改以第一人稱現場任務為預設，真實資訊與 Staff 說法維持自然語氣。
@@ -36,7 +37,7 @@
 - [x] Day 105 通過 `python3 scripts/validate_daily.py 2026-08-25`：84 checks、0 warnings、0 errors；主音檔 119.78 秒，34 句 / 262 字、35 個 MP3 均存在且可讀。
 - [x] Day 105 包含 3 個新字、5 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；三個目標語塊均貫穿 Article、Key Phrases、Role-play 與 Context Recall。
 - [x] Day 105 依回饋再修正 Article：旁白、旅客台詞與工作人員台詞改為清楚分句，不再把 `I ask` / `She says` 報導句混進直接台詞。
-- [x] Day 106 通過 `python3 scripts/validate_daily.py 2026-08-26`：84 checks、0 warnings、0 errors；主音檔 120.31 秒，34 句 / 268 字、每句最多 11 字，35 個 MP3 均存在且可讀。
+- [x] Day 106 通過 `python3 scripts/validate_daily.py 2026-08-26`：84 checks、0 warnings、0 errors；對調聲線後主音檔 117.50 秒，34 句 / 268 字、每句最多 11 字，35 個 MP3 均存在且可讀。
 - [x] Day 106 包含 3 個新字、15 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；三個目標語塊均貫穿 Article、Key Phrases、Role-play 與 Context Recall。
 - [x] 首頁 Day 106、Day 105、Day 104 依日期新到舊排列。
 

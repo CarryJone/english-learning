@@ -1252,8 +1252,8 @@ import asyncio, subprocess, edge_tts
 FOLDER = "./daily/[TODAY 替換成今天日期]"
 RATE = "-10%"
 VOICES = {
-    "narrator": "en-US-AriaNeural",
-    "traveler": "en-US-JennyNeural",
+    "narrator": "en-US-JennyNeural",
+    "traveler": "en-US-AriaNeural",
     "staff": "en-US-GuyNeural",
 }
 

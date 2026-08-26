@@ -11,7 +11,8 @@
 - 新增 `daily/2026-08-26/`，主題為 `Taking the Right City Bus During a Road Detour`；今日新字：`bus`、`detour`、`opposite`。
 - 文章以 map result、bus detour notice 與 driver conversation 為英文輸入；任務是找到臨時站牌、確認 Bus Twelve，並在 Museum Square 下車。
 - 完成 10 題 Context Recall、4 組 Speaking Bridge、8 回合 Role-play、Ability Map、句子 SRS 與首頁入口；Speaking Bridge 使用 `train`、`depart`、`airport`、`eligible`，未使用今日新字。
-- 文章使用旁白、旅客、工作人員三聲線，34 句 / 268 字；完成主音檔與 34 個逐句音檔，主音檔實測 120.31 秒。
+- 文章使用旁白、旅客、工作人員三聲線，34 句 / 268 字；完成主音檔與 34 個逐句音檔，對調聲線後主音檔實測 117.50 秒。
+- 依使用者回饋對調聲線：旁白改用 Jenny、旅客（我的台詞）改用 Aria，工作人員維持 Guy；重新生成今天的旁白與旅客逐句音檔及完整主音檔。
 - 驗證：`python3 scripts/validate_daily.py 2026-08-26` 通過 84 checks、0 warnings、0 errors；JSON、JavaScript syntax、`git diff --check` 與內容對齊檢查通過；未修改既有未追蹤的 `test/`。
 
 ## 2026-08-25 — Day 105 正式教材產出
