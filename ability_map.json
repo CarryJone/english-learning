@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-27",
+      "day": 107,
+      "title": "Ordering a Safe Café Meal with a Food Allergy",
+      "url": "daily/2026-08-27/",
+      "primary": ["onlineReading", "travelSpeaking"],
+      "secondary": ["publicEnglish", "dailyResponse"],
+      "evidence": [
+        "Mission: read a café menu, check dairy information, and complete a safe order after the first dish sells out.",
+        "Input: phone menu, allergy notice, and ordering conversation.",
+        "Find the fourteen-dollar chicken bowl, dairy-free information, rice and vegetables, sold out, and the thirteen-dollar tofu bowl before tax.",
+        "Say \"Is this dish dairy-free?\" / \"What does it come with?\" / \"Is there another option?\"; ask for repetition when the new dish name is unclear."
+      ]
+    },
     {
       "date": "2026-08-26",
       "day": 106,

@@ -3329,6 +3329,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-27",
       "lastReviewedDate": null
+    },
+    {
+      "word": "dairy",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "乳製品；奶類",
+      "exampleSentence": "I avoid dairy in my meals.",
+      "dateAdded": "2026-08-27",
+      "reviewCount": 0,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "dish",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "菜餚；一道菜",
+      "exampleSentence": "This dish comes with rice and vegetables.",
+      "dateAdded": "2026-08-27",
+      "reviewCount": 0,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "side",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "配菜；附餐",
+      "exampleSentence": "Can I get the sauce on the side?",
+      "dateAdded": "2026-08-27",
+      "reviewCount": 0,
+      "nextReview": "2026-08-28",
+      "lastReviewedDate": null
     }
   ]
 }

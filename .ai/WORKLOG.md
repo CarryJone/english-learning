@@ -5,6 +5,16 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-27 — Day 107 正式教材產出
+
+- 先 `git fetch origin`，以 fast-forward 同步遠端最新 SRS；同步後今天共有 19 個到期複習字。
+- 新增 `daily/2026-08-27/`，主題為 `Ordering a Safe Café Meal with a Food Allergy`；今日新字：`dairy`、`dish`、`side`。
+- 文章以手機咖啡廳菜單、過敏提示與點餐對話為英文輸入；任務是確認無乳製品、附餐與價格，並在雞肉飯碗售罄後改選豆腐飯碗。
+- 完成 10 題 Context Recall、4 組 Speaking Bridge、10 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及完整文章與逐句音檔。
+- 文章使用旁白、旅客、工作人員三聲線，36 句 / 274 字；主音檔實測 126.98 秒。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-27` 通過 84 checks、0 warnings、0 errors；JSON、JavaScript syntax、`git diff --check` 與內容對齊檢查通過；未修改既有未追蹤的 `test/`。
+
+---
 ## 2026-08-26 — Day 106 正式教材產出
 
 - 先 `git fetch origin` 確認遠端沒有較新的 SRS 更新；依 `vocabulary/learning.json` 產生今天 15 個到期複習字。
