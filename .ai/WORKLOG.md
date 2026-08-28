@@ -5,6 +5,16 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-28 — Day 108 正式教材產出
+
+- 先執行 `git fetch origin`，確認遠端有 2026-08-27 的 SRS 更新後以 fast-forward 同步；同步後今天共有 24 個到期複習字。
+- 新增 `daily/2026-08-28/`，主題為 `Checking a Wrong Price at an Airport Gift Shop`；今日新字：`discount`、`offer`、`amount`。
+- 文章以 airport shop page、offer sign、price tag 與 cashier conversation 為英文輸入；任務是找出特價期限、20% 折扣、含稅與三十天退換條件，並在錯誤標價時確認最後金額。
+- 完成 10 題 Context Recall、4 組 Speaking Bridge、8 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及完整文章與逐句音檔；文章融入到期複習字 `late`、`wrong`、`change`。
+- 文章使用旁白、旅客、工作人員三聲線，36 句 / 257 字；主音檔實測 130.75 秒，另有 36 個逐句音檔。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-28` 通過 84 checks、0 warnings、0 errors；JSON、JavaScript syntax、內容 / SRS 對齊與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
+
+---
 ## 2026-08-27 — Day 107 正式教材產出
 
 - 先 `git fetch origin`，以 fast-forward 同步遠端最新 SRS；同步後今天共有 19 個到期複習字。

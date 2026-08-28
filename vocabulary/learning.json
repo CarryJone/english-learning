@@ -3359,6 +3359,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-28",
       "lastReviewedDate": null
+    },
+    {
+      "word": "discount",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "折扣",
+      "exampleSentence": "The shop gives a twenty percent discount.",
+      "dateAdded": "2026-08-28",
+      "reviewCount": 0,
+      "nextReview": "2026-08-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "offer",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "優惠；提供",
+      "exampleSentence": "This offer ends at eight p.m.",
+      "dateAdded": "2026-08-28",
+      "reviewCount": 0,
+      "nextReview": "2026-08-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "amount",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "金額",
+      "exampleSentence": "Please check the final amount before paying.",
+      "dateAdded": "2026-08-28",
+      "reviewCount": 0,
+      "nextReview": "2026-08-29",
+      "lastReviewedDate": null
     }
   ]
 }

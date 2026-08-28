@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-08-28",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-28",
+      "day": 108,
+      "title": "Checking a Wrong Price at an Airport Gift Shop",
+      "url": "daily/2026-08-28/",
+      "primary": ["onlineReading", "travelSpeaking"],
+      "secondary": ["publicEnglish", "dailyResponse"],
+      "evidence": [
+        "Mission: read an airport gift-shop offer, verify a wrong price, and confirm the final amount before paying.",
+        "Input: airport shop page, in-store offer sign, price tag, and cashier conversation.",
+        "Find local gifts on sale until eight p.m., a twenty percent discount, prices including tax, and a thirty-day exchange condition.",
+        "Say \"Could you check this price?\" / \"Is that the final amount?\"; ask for repetition when the offer or amount changes."
+      ]
+    },
     {
       "date": "2026-08-27",
       "day": 107,
