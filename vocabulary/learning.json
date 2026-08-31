@@ -3389,6 +3389,36 @@
       "reviewCount": 0,
       "nextReview": "2026-08-29",
       "lastReviewedDate": null
+    },
+    {
+      "word": "extend",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "延長；延伸",
+      "exampleSentence": "Can I extend my checkout until noon?",
+      "dateAdded": "2026-08-31",
+      "reviewCount": 0,
+      "nextReview": "2026-09-01",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "charge",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "收費；費用",
+      "exampleSentence": "Is there an extra charge for late checkout?",
+      "dateAdded": "2026-08-31",
+      "reviewCount": 0,
+      "nextReview": "2026-09-01",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "noon",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "中午十二點",
+      "exampleSentence": "I can stay until noon today.",
+      "dateAdded": "2026-08-31",
+      "reviewCount": 0,
+      "nextReview": "2026-09-01",
+      "lastReviewedDate": null
     }
   ]
 }

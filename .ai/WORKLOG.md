@@ -5,6 +5,16 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-08-31 — Day 109 正式教材產出
+
+- 先執行 `git fetch origin`，以 fast-forward 同步遠端 2026-08-28 的 SRS 更新；依最新 `vocabulary/learning.json` 產生 52 個到期複習字。
+- 新增 `daily/2026-08-31/`，主題為 `Requesting a Late Checkout Before a Late Flight`；今日新字：`extend`、`charge`、`noon`。
+- 文章以 hotel app notice 與 front-desk conversation 為英文輸入；任務是讀懂退房時間、申請期限與費用，並在飯店客滿時改用寄放行李方案。
+- 完成 10 題 Context Recall、4 組 Speaking Bridge、10 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及完整文章與逐句音檔；文章使用 `narrator`、`traveler`、`staff` 三聲線。
+- 文章 36 句 / 273 字；主音檔實測 132.69 秒，另有 36 個逐句音檔。
+- 驗證：`python3 scripts/validate_daily.py 2026-08-31` 通過 84 checks、0 warnings、0 errors；內容 / SRS 對齊與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
+
+---
 ## 2026-08-28 — Day 108 正式教材產出
 
 - 先執行 `git fetch origin`，確認遠端有 2026-08-27 的 SRS 更新後以 fast-forward 同步；同步後今天共有 24 個到期複習字。
@@ -281,57 +291,3 @@
 - 驗證：本機 HTTP 首頁與今日頁回傳 200；in-app browser 桌面與手機寬度載入成功、console 無錯誤、今日連結可進入 Day 70。
 
 ---
-## 2026-07-03 — Day 70 正式教材產出
-
-- 先 `git fetch origin`，發現遠端有新的 SRS 提交 `601d261`，再 `git pull --rebase origin main` 同步最新 `vocabulary/learning.json`。
-- 延續 serial story continuity，新增 `daily/2026-07-03/`，標題為 `The Blue Receipt · Episode 12`。
-- 今日新字：`speaker`、`folded`、`circle`；文章融入複習字：`match`、`history`、`truth`。
-- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 6 個到期複習字。
-- Speaking Bridge 使用 `history`、`match`、`result`、`date`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：HTML 完整區塊存在、句子編號連續、25 個單句音檔存在、本機 HTTP 200。
-
----
-## 2026-07-03 — Review Center P1 初版
-
-- 完成：新增 `review/index.html`，作為獨立 Review Center，讀取 `vocabulary/learning.json` 即時計算今日到期、逾期、active、mastered 與未來 7 天複習量。
-- 完成：Review Center 會列出到期單字並動態產生 Active Recall Quiz；使用者可先本機檢查答案，再手動同步 SRS。
-- 修改：首頁 `index.html` 新增「前往複習中心」入口；`LEARNING_SYSTEM_ROADMAP.md` 更新 P1 複習中心完成狀態。
-- 驗證：HTML parser、`git diff --check`、HTTP `/review/` 200；in-app browser 桌面與手機寬度載入成功、console 無錯誤、6 題本機檢查互動通過。
-- 注意：驗證時未按「同步 SRS」，避免測試過程寫回 GitHub。
-
----
-## 2026-07-02 — Day 69 正式教材產出
-
-- 先 `git fetch origin main` 確認遠端狀態，因 `origin/main` 與本地一致，直接用目前最新的 `vocabulary/learning.json` 生成今日教材。
-- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-02/`，標題為 `The Blue Receipt · Episode 11`。
-- 新增單字：`truth`、`alone`、`early`；文章融入複習字：`voice`、`inside`、`outside`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、25 個單句音檔存在、Review Quiz 11 題、Speaking Bridge 4 題、本機 HTTP 200。
-
----
-## 2026-07-01 — Day 68 正式教材產出
-
-- 先 `git fetch origin main`，確認遠端多了 `SRS update: review quiz 2026-06-30` 後，再 `git pull --ff-only origin main` 同步最新 `vocabulary/learning.json`。
-- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-01/`，標題為 `The Blue Receipt · Episode 10`。
-- 新增單字：`voice`、`inside`、`outside`；文章融入複習字：`paper`、`date`、`tomorrow`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、25 個單句音檔存在、Review Quiz 5 題、Speaking Bridge 4 題、本機 HTTP 200。
-
----
-## 2026-06-30 — Day 67 正式教材產出
-
-- 先 `git fetch origin main`，確認遠端多了 `SRS update: review quiz 2026-06-29` 後，再 `git pull --ff-only origin main` 同步最新 `vocabulary/learning.json`。
-- 延續 `The Blue Receipt` 主線，新增 `daily/2026-06-30/`，標題為 `The Blue Receipt · Episode 9`。
-- 新增單字：`paper`、`date`、`tomorrow`；文章融入複習字：`result`、`history`、`match`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、25 個單句音檔存在、Review Quiz 3 題、Speaking Bridge 4 題、本機 HTTP 200。
-
----
-## 2026-06-29 — Day 66 正式教材產出
-
-- 先 `git fetch --all --prune` 同步遠端狀態，確認本地 `HEAD` 與 `origin/main` 一致後再生成今日教材。
-- 延續 `The Blue Receipt` 主線，新增 `daily/2026-06-29/`，標題為 `The Blue Receipt · Episode 8`。
-- 新增單字：`result`、`history`、`match`；文章融入複習字：`folder`、`photo`、`record`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：句子編號連續、25 個單句音檔存在、Review Quiz 65 題、Speaking Bridge 4 題、本機 HTTP 200。

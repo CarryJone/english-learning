@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-31",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-08-31",
+      "day": 109,
+      "title": "Requesting a Late Checkout Before a Late Flight",
+      "url": "daily/2026-08-31/",
+      "primary": ["onlineReading", "travelSpeaking"],
+      "secondary": ["dailyResponse", "publicEnglish"],
+      "evidence": [
+        "Mission: read hotel checkout rules, request a later checkout, and switch to luggage storage when the hotel is full.",
+        "Input: hotel app notice and front-desk conversation.",
+        "Find regular checkout at eleven, the nine a.m. request deadline, the twenty-dollar charge, and free luggage storage until six.",
+        "Say \"Can I extend my checkout until noon?\" / \"Can I pick up my luggage at five thirty?\"; ask for repetition when late checkout is not available."
+      ]
+    },
     {
       "date": "2026-08-28",
       "day": 108,
