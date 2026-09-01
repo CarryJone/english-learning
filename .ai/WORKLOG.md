@@ -5,6 +5,17 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-01 — Day 110 正式教材產出
+
+- 先執行 `git fetch origin`，發現遠端有 2026-08-31 的 SRS 更新，已用 fast-forward 同步後再生成今天的複習內容；今日共有 7 個到期複習字。
+- 新增 `daily/2026-09-01/`，主題為 `Connecting to Airport Wi-Fi Before Activating an eSIM`；今日新字：`connect`、`signal`、`restart`。
+- 文章以 airport website instructions 與 help-desk conversation 為英文輸入；任務是找出 Airport_Guest、三十分鐘 guest access、更新代碼，並在弱訊號或登入失敗時完成修復。
+- 完成 10 題 Context Recall、4 組 Speaking Bridge、10 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及完整文章與逐句音檔；文章使用旁白、旅客、工作人員三聲線。
+- 主音檔首次試行句間停頓：同聲線約 0.05 秒、換人約 0.12 秒、段落切換約 0.25 秒；逐句 MP3 未加入額外停頓。
+- 文章 34 句 / 271 字；主音檔實測 129.67 秒，另有 34 個逐句音檔。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-01` 通過 84 checks、0 warnings、0 errors；JSON parse、inline JavaScript syntax、目標語塊覆蓋與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
+
+---
 ## 2026-08-31 — Day 109 正式教材產出
 
 - 先執行 `git fetch origin`，以 fast-forward 同步遠端 2026-08-28 的 SRS 更新；依最新 `vocabulary/learning.json` 產生 52 個到期複習字。

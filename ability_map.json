@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-01",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,20 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-01",
+      "day": 110,
+      "title": "Connecting to Airport Wi-Fi Before Activating an eSIM",
+      "url": "daily/2026-09-01/",
+      "primary": ["onlineReading", "travelSpeaking"],
+      "secondary": ["dailyResponse", "publicEnglish"],
+      "evidence": [
+        "Mission: read airport Wi-Fi instructions, connect before the gate, and repair a failed sign-in.",
+        "Input: airport website instructions and help-desk conversation.",
+        "Find the Airport_Guest network, thirty-minute guest access, the changed code, and the next restart step.",
+        "Say \"Could you help me connect to Wi-Fi?\" / \"Should I try again?\"; explain a weak signal and confirm the eSIM step."
+      ]
+    },
     {
       "date": "2026-08-31",
       "day": 109,

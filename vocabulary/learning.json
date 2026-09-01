@@ -3419,6 +3419,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-01",
       "lastReviewedDate": null
+    },
+    {
+      "word": "connect",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "連線；連接",
+      "exampleSentence": "Could you help me connect to Wi-Fi?",
+      "dateAdded": "2026-09-01",
+      "reviewCount": 0,
+      "nextReview": "2026-09-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "signal",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "訊號",
+      "exampleSentence": "The signal is weak near my gate.",
+      "dateAdded": "2026-09-01",
+      "reviewCount": 0,
+      "nextReview": "2026-09-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "restart",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "重新啟動",
+      "exampleSentence": "Please restart your phone, then try again.",
+      "dateAdded": "2026-09-01",
+      "reviewCount": 0,
+      "nextReview": "2026-09-02",
+      "lastReviewedDate": null
     }
   ]
 }

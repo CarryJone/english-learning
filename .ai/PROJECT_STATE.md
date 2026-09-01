@@ -2,7 +2,7 @@
 
 > 用途：短期狀態與下一步接手資訊。
 > 注意：本檔不是開發規則；正式規則請看專案 `AGENTS.md`、`.ai/DECISIONS.md` 或指定的 `SKILL.md`。
-> 最後更新：2026-08-31
+> 最後更新：2026-09-01
 > 更新者：Agent
 
 ## 目前目標
@@ -11,7 +11,7 @@
 ## 目前進度
 - [x] `The Blue Receipt` 已於 2026-07-14 Day 76 封存；正式內容已切換為 `mission-based`，不可自動續寫 Episode 19。
 - [x] Mission、英文資訊輸入、Role-play、Context Recall、能力地圖、單字 / 句子 SRS 與音檔流程均已接通。
-- [x] Day 77–109 已完成三十三篇正式任務型教材；最新為 `daily/2026-08-31/` 的 `Requesting a Late Checkout Before a Late Flight`。
+- [x] Day 77–110 已完成三十四篇正式任務型教材；最新為 `daily/2026-09-01/` 的 `Connecting to Airport Wi-Fi Before Activating an eSIM`。
 - [x] Day 91 是第一篇兩分鐘雙聲線教材：正文不顯示 `Staff:` / `Me:`，以 `traveler` / `staff` metadata 分別套用 Jenny 與 Guy。
 - [x] Day 105 起正式教材改用三聲線：`narrator` 負責場景與動作，`traveler` 負責旅客台詞，`staff` 負責工作人員台詞；正文仍不顯示角色前綴。
 - [x] 依使用者回饋，旁白聲線改用 Jenny、旅客（我的台詞）改用 Aria，工作人員維持 Guy；正式教材模板已同步。
@@ -46,18 +46,21 @@
 - [x] Day 108 包含 3 個新字、24 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 8 回合 Role-play；任務聚焦機場商店優惠、錯誤標價與付款前確認，三個目標語塊均貫穿 Article、Key Phrases、Role-play 與 Context Recall。
 - [x] Day 109 通過 `python3 scripts/validate_daily.py 2026-08-31`：84 checks、0 warnings、0 errors；主音檔 132.69 秒，36 句 / 273 字、每句最多 11 字，37 個 MP3 均存在且可讀。
 - [x] Day 109 包含 3 個新字、52 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 10 回合 Role-play；任務聚焦飯店延後退房規則、客滿後的寄放行李替代方案，三個目標語塊均貫穿 Article、Key Phrases、Role-play 與 Context Recall。
+- [x] Day 110 通過 `python3 scripts/validate_daily.py 2026-09-01`：84 checks、0 warnings、0 errors；主音檔 129.67 秒，34 句 / 271 字，35 個 MP3 均存在且可讀。
+- [x] Day 110 包含 3 個新字、7 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge 與 10 回合 Role-play；任務聚焦機場 Wi-Fi 指示、代碼更新、弱訊號與 eSIM 啟用。
+- [x] Day 110 的完整主音檔首次加入對話停頓：同聲線句間約 0.05 秒、換人約 0.12 秒、階段切換約 0.25 秒；逐句音檔保持無額外尾端空白。
 
 ## 目前 Blocker
 - 無。
 
 ## 下一步
-- 下一篇先看 Day 109 的理解回饋；若聽力仍低於約六成，優先再減少資訊密度與陌生搭配，不直接降低自然 A2 語速。
+- 下一篇先看 Day 110 的理解與停頓聆聽回饋；若聽力仍低於約六成，優先再減少資訊密度與陌生搭配，不直接降低自然 A2 語速。
 - 每篇維持 2–3 個目標語塊，至少 1 個支援開口、1 個支援資訊判讀，且至少 1 個要換人物、地點或目的做跨情境提取。
 - Q2 預設測自然搭配 / 情境用法；Active Recall 納入所有到期舊字；Speaking Bridge 只選 2–7 天前且不可使用今日新字。
 - 每日頁必須通過 `python3 scripts/validate_daily.py [日期]`；持續依回饋與卡點評估是否需要 UI、資料欄位或 Collocation SRS。
 
 ## 活躍工作區
-- `daily/2026-08-31/`
+- `daily/2026-09-01/`
 - `index.html`
 - `profile.json`
 - `vocabulary/learning.json`
@@ -65,3 +68,6 @@
 - `ability_map.json`
 - `.ai/daily-english-learning/SKILL.md`
 - `scripts/validate_daily.py`
+
+## 音檔停頓試行
+- Day 110 先以主音檔組合時加入停頓的方式試行，尚未把停頓參數正式寫入每日教材規格；待使用者實際聆聽後，再決定是否固定到後續產出流程。
