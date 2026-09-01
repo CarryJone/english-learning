@@ -136,9 +136,9 @@
       "chineseMeaning": "有效率的",
       "exampleSentence": "She is very efficient and always finishes her work on time.",
       "dateAdded": "2026-03-11",
-      "reviewCount": 0,
-      "nextReview": "2026-09-01",
-      "lastReviewedDate": "2026-08-31"
+      "reviewCount": 1,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": "2026-09-01"
     },
     {
       "word": "neighborhood",
@@ -2836,9 +2836,9 @@
       "chineseMeaning": "目的地",
       "exampleSentence": "Please check the destination before you board.",
       "dateAdded": "2026-08-04",
-      "reviewCount": 0,
-      "nextReview": "2026-09-01",
-      "lastReviewedDate": "2026-08-31"
+      "reviewCount": 1,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": "2026-09-01"
     },
     {
       "word": "duration",
@@ -2866,9 +2866,9 @@
       "chineseMeaning": "啟用",
       "exampleSentence": "Can you activate the eSIM for me?",
       "dateAdded": "2026-08-05",
-      "reviewCount": 0,
-      "nextReview": "2026-09-01",
-      "lastReviewedDate": "2026-08-31"
+      "reviewCount": 1,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": "2026-09-01"
     },
     {
       "word": "unlimited",
@@ -3376,9 +3376,9 @@
       "chineseMeaning": "優惠；提供",
       "exampleSentence": "This offer ends at eight p.m.",
       "dateAdded": "2026-08-28",
-      "reviewCount": 0,
-      "nextReview": "2026-09-01",
-      "lastReviewedDate": "2026-08-31"
+      "reviewCount": 1,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": "2026-09-01"
     },
     {
       "word": "amount",
@@ -3396,9 +3396,9 @@
       "chineseMeaning": "延長；延伸",
       "exampleSentence": "Can I extend my checkout until noon?",
       "dateAdded": "2026-08-31",
-      "reviewCount": 0,
-      "nextReview": "2026-09-01",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": "2026-09-01"
     },
     {
       "word": "charge",
@@ -3407,8 +3407,8 @@
       "exampleSentence": "Is there an extra charge for late checkout?",
       "dateAdded": "2026-08-31",
       "reviewCount": 0,
-      "nextReview": "2026-09-01",
-      "lastReviewedDate": null
+      "nextReview": "2026-09-02",
+      "lastReviewedDate": "2026-09-01"
     },
     {
       "word": "noon",
@@ -3416,9 +3416,9 @@
       "chineseMeaning": "中午十二點",
       "exampleSentence": "I can stay until noon today.",
       "dateAdded": "2026-08-31",
-      "reviewCount": 0,
-      "nextReview": "2026-09-01",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": "2026-09-01"
     },
     {
       "word": "connect",
