@@ -3449,6 +3449,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-02",
       "lastReviewedDate": null
+    },
+    {
+      "word": "cough",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "咳嗽；咳嗽聲",
+      "exampleSentence": "I have a cough and a sore throat.",
+      "dateAdded": "2026-09-02",
+      "reviewCount": 0,
+      "nextReview": "2026-09-03",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "symptom",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "症狀",
+      "exampleSentence": "Please tell the pharmacist about your symptoms.",
+      "dateAdded": "2026-09-02",
+      "reviewCount": 0,
+      "nextReview": "2026-09-03",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tablet",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "錠劑；藥片",
+      "exampleSentence": "The label says to take one tablet after food.",
+      "dateAdded": "2026-09-02",
+      "reviewCount": 0,
+      "nextReview": "2026-09-03",
+      "lastReviewedDate": null
     }
   ]
 }

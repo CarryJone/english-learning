@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-09-02",
+      "day": 111,
+      "title": "Finding Cold Medicine at a Travel Pharmacy",
+      "url": "daily/2026-09-02/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
+      "evidence": [
+        "Mission: read a pharmacy notice, describe symptoms, and choose a safe cold-medicine option.",
+        "Input: pharmacy webpage notice and pharmacist conversation.",
+        "Find the opening time, adult medicine availability, label instructions, and sleepy warning.",
+        "Say \"Could you show me another option?\" and \"Could you say that again more slowly, please?\" when the first choice changes."
+      ]
+    },
+    {
       "date": "2026-09-01",
       "day": 110,
       "title": "Connecting to Airport Wi-Fi Before Activating an eSIM",
