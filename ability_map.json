@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-03",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-03",
+      "day": 112,
+      "title": "Checking a City Bike Before a Museum Ride",
+      "url": "daily/2026-09-03/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read a city-bike rental notice, check the bike, and request a replacement when the first bike needs repair.",
+        "Input: rental app, station notice, and help-desk conversation.",
+        "Find the $8 daily pass, thirty-minute ride limit, small deposit, and nine p.m. return time.",
+        "Say \"Could you help me check the bike for damage?\" and \"Could I ask for another bike?\"; ask for slower repetition when the return location is unclear."
+      ]
+    },
     {
       "date": "2026-09-02",
       "day": 111,

@@ -3479,6 +3479,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-03",
       "lastReviewedDate": null
+    },
+    {
+      "word": "pedal",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "踏板；踩踏板",
+      "exampleSentence": "Press the pedal gently before moving.",
+      "dateAdded": "2026-09-03",
+      "reviewCount": 0,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "brake",
+      "partOfSpeech": "n./v.",
+      "chineseMeaning": "煞車；煞車器",
+      "exampleSentence": "Test the brake before you ride.",
+      "dateAdded": "2026-09-03",
+      "reviewCount": 0,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "helmet",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "安全帽",
+      "exampleSentence": "I always wear a helmet on a bike.",
+      "dateAdded": "2026-09-03",
+      "reviewCount": 0,
+      "nextReview": "2026-09-04",
+      "lastReviewedDate": null
     }
   ]
 }

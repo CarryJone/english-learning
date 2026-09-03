@@ -5,6 +5,18 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-03 — Day 112 正式教材產出
+
+- 先執行 `git fetch origin`，發現遠端有 2026-09-02 的 SRS 更新，已以 fast-forward 同步後再生成今天的複習內容；今日納入 18 個到期舊單字，排除今天新字。
+- 新增 `daily/2026-09-03/`，主題為 `Checking a City Bike Before a Museum Ride`；今日新字：`pedal`、`brake`、`helmet`。
+- 文章以城市單車租借 app、站點公告與服務台對話為英文輸入；任務是找出通票價格、騎乘時間、押金與歸還時間，檢查車況，並在第一台車需要維修時要求替代單車。
+- 完成 10 題 Context Recall、4 組 Speaking Bridge、10 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及完整文章與逐句音檔；文章使用 `narrator`、`traveler`、`staff` 三聲線。
+- 依先前討論的第一階段方案，在今日頁面加入視覺句子重音切換與逐句播放標亮；新字表顯示 `PED-al`、`BRAKE`、`HEL-met`，沒有改動語音的自然重音合成。
+- 主音檔延續句間停頓試行：同聲線約 0.05 秒、換人約 0.12 秒、段落切換約 0.25 秒；逐句 MP3 未加入額外停頓。
+- 文章 34 句 / 280 字；主音檔實測 123.72 秒，另有 34 個逐句音檔。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-03` 通過 84 checks、0 warnings、0 errors；JSON parse、inline JavaScript syntax、頁面互動、內容 / SRS 對齊與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
+
+---
 ## 2026-09-02 — Day 111 正式教材產出
 
 - 先執行 `git fetch origin`，發現遠端有 2026-09-01 的 SRS 更新，已以 fast-forward 同步後再生成今天的複習內容；今日共有 15 個到期複習字。
