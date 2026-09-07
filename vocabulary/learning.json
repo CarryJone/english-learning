@@ -3509,6 +3509,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-04",
       "lastReviewedDate": null
+    },
+    {
+      "word": "insert",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "投入；插入",
+      "exampleSentence": "Insert two coins, then turn the key.",
+      "dateAdded": "2026-09-07",
+      "reviewCount": 0,
+      "nextReview": "2026-09-08",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "medium",
+      "partOfSpeech": "adj./n.",
+      "chineseMeaning": "中型的；中等的",
+      "exampleSentence": "A medium locker fits one small backpack.",
+      "dateAdded": "2026-09-07",
+      "reviewCount": 0,
+      "nextReview": "2026-09-08",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "space",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "空間；空位",
+      "exampleSentence": "Is there any space for one more small bag?",
+      "dateAdded": "2026-09-07",
+      "reviewCount": 0,
+      "nextReview": "2026-09-08",
+      "lastReviewedDate": null
     }
   ]
 }

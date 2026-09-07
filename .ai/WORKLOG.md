@@ -5,6 +5,19 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-07 — Day 113 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-03`，才依最新 `vocabulary/learning.json` 生成今日複習內容；今日納入 60 個到期舊單字（含 `efficient` 等逾期字），排除今天新字。
+- 新增 `daily/2026-09-07/`，主題為 `Storing Bags in a Station Locker Before a Day Trip`；今日新字：`insert`、`medium`、`space`。
+- 任務是讀懂車站置物櫃告示（大／中／小櫃價格、最晚取件時間、只收零錢、寄物處位置與營業時間），大型櫃全滿時改到人工寄物處寄放兩件行李；文章融入複習字 `locker`、`exact`、`hours`。
+- 今日目標語塊：`Is there any space ...?`（開口）、`exact change`（資訊判讀）、`drop off`（替代方案）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，其中 space 與 drop off 各有一題跨情境轉移。
+- 能力標記以 `publicEnglish` + `travelSpeaking` 為 primary（`publicEnglish` 自 Day 106 後首次回到主要能力），`onlineReading`、`dailyResponse` 為次要。
+- 音檔沿用三聲線與句間停頓試行（同聲線 0.05 秒、換人 0.12 秒、階段切換 0.25 秒）；主音檔 129.63 秒、35 句 / 285 字、每句最多 10 字。
+- 因今日到期字達 60 個且含較長單字，Review Words 表格在 390px 會橫向溢位約 53px；已在今日頁 CSS 加入只作用於 `.review-table` 的窄螢幕欄寬規則，共用 CSS 與其他日頁面未變動。
+- 順帶量到 Day 112（2026-09-03）在 390px 下同一表格也有約 13px 橫向溢位，屬既有問題，本次未修改舊頁。
+- `ability_map.json`、`vocabulary/sentences.json` 改以文字插入方式更新，維持原檔既有的行內陣列排版，避免整檔重排產生無關 diff。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-07` 84 checks / 0 warnings / 0 errors；本機 HTTP server 上 375 與 390px 皆無橫向溢位、console 0 errors、`article.mp3` 與 `s01.mp3`–`s35.mp3` 均回 200、首頁最新一筆為 Day 113。
+
 ## 2026-09-03 — Day 112 正式教材產出
 
 - 先執行 `git fetch origin`，發現遠端有 2026-09-02 的 SRS 更新，已以 fast-forward 同步後再生成今天的複習內容；今日納入 18 個到期舊單字，排除今天新字。
@@ -17,6 +30,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-09-03` 通過 84 checks、0 warnings、0 errors；JSON parse、inline JavaScript syntax、頁面互動、內容 / SRS 對齊與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
 
 ---
+
 ## 2026-09-02 — Day 111 正式教材產出
 
 - 先執行 `git fetch origin`，發現遠端有 2026-09-01 的 SRS 更新，已以 fast-forward 同步後再生成今天的複習內容；今日共有 15 個到期複習字。
@@ -28,6 +42,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-09-02` 通過 84 checks、0 warnings、0 errors；JSON parse、inline JavaScript syntax、目標語塊覆蓋與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
 
 ---
+
 ## 2026-09-01 — Day 110 正式教材產出
 
 - 先執行 `git fetch origin`，發現遠端有 2026-08-31 的 SRS 更新，已用 fast-forward 同步後再生成今天的複習內容；今日共有 7 個到期複習字。
@@ -39,6 +54,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-09-01` 通過 84 checks、0 warnings、0 errors；JSON parse、inline JavaScript syntax、目標語塊覆蓋與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
 
 ---
+
 ## 2026-08-31 — Day 109 正式教材產出
 
 - 先執行 `git fetch origin`，以 fast-forward 同步遠端 2026-08-28 的 SRS 更新；依最新 `vocabulary/learning.json` 產生 52 個到期複習字。
@@ -49,6 +65,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-31` 通過 84 checks、0 warnings、0 errors；內容 / SRS 對齊與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
 
 ---
+
 ## 2026-08-28 — Day 108 正式教材產出
 
 - 先執行 `git fetch origin`，確認遠端有 2026-08-27 的 SRS 更新後以 fast-forward 同步；同步後今天共有 24 個到期複習字。
@@ -59,6 +76,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-28` 通過 84 checks、0 warnings、0 errors；JSON、JavaScript syntax、內容 / SRS 對齊與 `git diff --check` 均通過；未修改既有未追蹤的 `test/`。
 
 ---
+
 ## 2026-08-27 — Day 107 正式教材產出
 
 - 先 `git fetch origin`，以 fast-forward 同步遠端最新 SRS；同步後今天共有 19 個到期複習字。
@@ -69,6 +87,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-27` 通過 84 checks、0 warnings、0 errors；JSON、JavaScript syntax、`git diff --check` 與內容對齊檢查通過；未修改既有未追蹤的 `test/`。
 
 ---
+
 ## 2026-08-26 — Day 106 正式教材產出
 
 - 先 `git fetch origin` 確認遠端沒有較新的 SRS 更新；依 `vocabulary/learning.json` 產生今天 15 個到期複習字。
@@ -90,6 +109,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-25` 通過 84 checks、0 warnings、0 errors；主音檔 119.78 秒，34 句 / 262 字、35 個 MP3 均存在且可讀；未修改既有未追蹤的 `test/`。
 
 ---
+
 ## 2026-08-24 — Day 104 正式教材產出
 
 - 先 `git fetch origin`，以 fast-forward 同步遠端 2026-08-21 的最新單字 SRS，再依最新 `vocabulary/learning.json` 生成今日複習內容。
@@ -100,6 +120,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-24` 通過 84 checks、0 warnings、0 errors；JSON parse、JavaScript syntax、`git diff --check` 與內容對齊檢查通過。
 
 ---
+
 ## 2026-08-19 — Day 101 正式教材產出
 
 - 先 `git fetch origin` 並以 fast-forward 同步 2026-08-18 最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
@@ -109,6 +130,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-19` 通過 84 checks、0 warnings、0 errors；主音檔 118.25 秒，32 句 / 257 字；390×844 手機版無橫向溢位，首頁前三筆為 Day 101、100、99，音檔可載入。
 
 ---
+
 ## 2026-08-18 — Day 100 正式教材與首頁清單修復
 
 - 先 `git fetch origin` 並以 fast-forward 同步 2026-08-17 最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
@@ -118,6 +140,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-18` 通過 84 checks、0 warnings、0 errors；主音檔 117.94 秒，31 句 / 251 字；390×844 手機版首頁與教材均無橫向溢位，首頁前三筆為 Day 100、99、98。
 
 ---
+
 ## 2026-08-17 — Day 99 正式教材產出
 
 - 先 `git fetch origin`，以 fast-forward 同步遠端最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
@@ -127,6 +150,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-17` 通過 84 checks、0 warnings、0 errors；主音檔 130.56 秒；390×844 手機版無橫向溢位，0.75× 與逐句播放正常，console 0 errors。
 
 ---
+
 ## 2026-08-03 — Day 89 正式教材產出
 
 - 先執行 `git fetch origin`，確認本地 `HEAD` 與 `origin/main` 同步，使用最新的 `vocabulary/learning.json` 生成複習內容。
@@ -136,6 +160,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-08-03` 通過 79 checks、0 warnings、0 errors；JSON parse、句子字數、目標語塊分布與 `git diff --check` 亦完成檢查。
 
 ---
+
 ## 2026-07-31 — Day 88 正式教材產出
 
 - 先 `git fetch origin`，確認遠端有 2026-07-30 的 SRS 更新後，以 fast-forward 同步最新 `vocabulary/learning.json`。
@@ -145,6 +170,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-07-31` 通過 79 checks、0 warnings、0 errors；JSON parse、目標語塊分布與音檔對齊亦完成檢查。
 
 ---
+
 ## 2026-07-30 — Day 87 正式教材產出
 
 - 先 `git fetch origin`，確認遠端有 2026-07-29 的 SRS 更新後，以 `git pull --ff-only origin main` 同步最新 `vocabulary/learning.json`。
@@ -154,6 +180,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-07-30` 通過 79 checks、0 warnings、0 errors；句子皆不超過 12 字、JSON parse、SRS 對齊與 `git diff --check` 亦通過。
 
 ---
+
 ## 2026-07-22 — Day 81 正式教材產出
 
 - 先同步遠端兩筆 2026-07-21 SRS 更新，再依最新 `vocabulary/learning.json` 產生今日複習內容。
@@ -164,6 +191,7 @@
 - 驗證：`validate_daily.py` 通過 79 checks、0 warnings、0 errors；JSON、JavaScript、`git diff --check` 及本機 HTTP 頁面 / 音檔 200 皆通過。
 
 ---
+
 ## 2026-07-21 — 詞彙深度與語塊訓練規格
 
 - 依使用者確認，將詞彙學習由孤立字義深化為自然搭配、可重用語塊、Role-play 產出與 Context Recall 跨情境提取。
@@ -172,6 +200,7 @@
 - 本次只調整規格與接手文件，未修改每日頁面、資料 schema、SRS runtime 或驗證器。
 
 ---
+
 ## 2026-07-16 — Day 78 任務型教材正式產出
 
 - 先同步遠端最新 SRS；同步後今日共有 11 個到期複習字。
@@ -181,6 +210,7 @@
 - 驗證：python3 scripts/validate_daily.py 2026-07-16 通過 79 checks，0 warnings，0 errors；JSON parse 與 git diff --check 亦通過。
 
 ---
+
 ## 2026-07-15 — Day 77 任務型教材正式產出
 
 - 先 `git fetch origin` / `git pull --ff-only origin main`，同步最新 7/14 review quiz 與 sentence SRS 後生成今天教材。
@@ -190,6 +220,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-07-15` 通過 73 checks，0 warnings，0 errors。
 
 ---
+
 ## 2026-07-15 — 任務型測試版修正單字複習流程
 
 - 將 `test/2026-07-15/` 的單字複習改為 Active Recall Quiz，載入遠端最新 SRS 的 12 個到期單字，使用中文意思、例句挖空與四選一。
@@ -198,6 +229,7 @@
 - 驗證：HTML/JS 語法、HTTP 200、音檔與 `git diff --check` 通過。
 
 ---
+
 ## 2026-07-15 — 每日教材切換為任務型情境英文
 
 - 依使用者確認，將 `The Blue Receipt` Episode 18 標記為第一季結尾，停止每日自動續寫小說。
@@ -207,6 +239,7 @@
 - 驗證：舊 Episode 18 通過 70 checks；Python / JSON / 首頁 inline JS / `git diff --check` 通過；新日期的 Mission、Role-play transition guard 通過。
 
 ---
+
 ## 2026-07-13 — Day 75 正式教材產出
 
 - 先 `git fetch origin` 並 `git pull --ff-only origin main`，同步 7/9 單字 SRS 與句子 SRS 遠端更新後再生成今天教材。
@@ -218,6 +251,7 @@
 - 驗證：`article.mp3` 與 `s01.mp3` 到 `s25.mp3` 已生成；`python3 scripts/validate_daily.py 2026-07-13` 通過，70 checks，0 warnings，0 errors。
 
 ---
+
 ## 2026-07-09 — Day 74 產出錯誤修復
 
 - 同步遠端 `origin/main`，保留 2026-07-08 的 review quiz 與 sentence SRS 更新。
@@ -229,6 +263,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-07-09` 通過，70 checks，0 warnings，0 errors。
 
 ---
+
 ## 2026-07-08 — Day 73 正式教材產出
 
 - 先 `git fetch origin`，確認遠端只比本地多 `vocabulary/sentences.json`，先同步句子 SRS 資料後再生成今天教材。
@@ -247,6 +282,7 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-07-07` 通過，70 checks，0 warnings，0 errors。
 
 ---
+
 ## 2026-07-07 — 句子 / 情境 SRS MVP
 
 - 新增 `vocabulary/sentences.json`，以 Day 72 的 8 題 Context Recall 作為句子 SRS 初始資料。
@@ -256,6 +292,7 @@
 - 驗證：JS 語法、JSON parse、HTML parser、排程函式、HTTP 200、in-app browser 自評進度、未評完同步阻擋、390px 手機寬度無水平 overflow。未實際執行 GitHub 寫入。
 
 ---
+
 ## 2026-07-07 — Context Recall 情境提取初版
 
 - 更新 `daily/2026-07-07/index.html`，在 Speaking Bridge 後、Learning Tips 前新增 `Context Recall` 區塊。
@@ -265,6 +302,7 @@
 - 驗證：HTML parser、Context Recall 題數 / 答案數檢查、template marker 檢查、in-app browser 翻牌互動、390px 手機寬度無水平 overflow。
 
 ---
+
 ## 2026-07-07 — 能力地圖 P1 初版
 
 - 新增 `ability_map.json`，定義 `travelSpeaking`、`publicEnglish`、`onlineReading`、`dailyResponse` 四條能力主線與最近 session。
@@ -274,6 +312,7 @@
 - 驗證：`ability_map.json` JSON parse、HTML parser、HTTP 200、in-app browser 首頁 / Day 72 桌面與 390px 手機寬度檢查，console 無 error / warn。
 
 ---
+
 ## 2026-07-07 — 每日難度與卡點回饋 P1 初版
 
 - 新增 `assets/feedback.js`，用 `localStorage` key `english_learning_feedback_v1` 儲存每日難度、卡點、最有用一句與補充卡點。
@@ -284,44 +323,4 @@
 - 驗證：`node --check assets/feedback.js`、HTML parser、本機 HTTP 200、in-app browser 桌面互動、首頁摘要顯示、390px 手機寬度無水平 overflow。
 
 ---
-## 2026-07-07 — Day 72 正式教材產出
 
-- 先 `git fetch origin`，確認遠端多了 `SRS update: review quiz 2026-07-06`，再只同步最新 `vocabulary/learning.json` 後生成今天教材，避免用到過期複習狀態。
-- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-07/`，標題為 `The Blue Receipt · Episode 14`。
-- 今日新字：`safe`、`follow`、`decide`；文章融入複習字：`paper`、`shadow`、`post`。
-- Review Quiz / Review Words 依同步後的最新 `learning.json` 生成，共納入 5 個到期複習字。
-- Speaking Bridge 使用 `paper`、`circle`、`folded`、`speaker`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：HTML 結構完整、句子編號連續、25 個單句音檔存在、`article.mp3` 存在、JSON parse 通過。
-
----
-## 2026-07-06 — Day 71 正式教材產出
-
-- 先 `git fetch origin`，確認遠端 `origin/main` 有較新的 SRS 更新後，只同步 `vocabulary/learning.json`，避免用過期 review 狀態生成今天教材。
-- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-06/`，標題為 `The Blue Receipt · Episode 13`。
-- 今日新字：`shadow`、`careful`、`exact`；文章融入複習字：`outside`、`voice`、`inside`。
-- Review Quiz / Review Words 依同步後的最新 `learning.json` 生成，共納入 37 個到期複習字。
-- Speaking Bridge 使用 `circle`、`folded`、`speaker`、`date`。
-- 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：HTML 結構完整、句子編號連續、25 個單句音檔存在、`article.mp3` 存在、本機 HTTP 200、JSON parse 通過。
-
----
-## 2026-07-03 — SRS 共用模組抽出
-
-- 完成：新增 `assets/srs.js`，集中本機日期、GitHub Contents API 讀寫、SRS 間隔、同日防重複同步與 review result 套用邏輯。
-- 修改：`review/index.html` 改用 `window.SrsReview.syncReviewResults()` 同步 SRS，不再內嵌 GitHub API 更新流程。
-- 修改：`daily/2026-07-03/index.html` 與 `.ai/daily-english-learning/SKILL.md` 改為引用 `../../assets/srs.js`，未來新 daily 頁會走共用模組。
-- 修改：`LEARNING_SYSTEM_ROADMAP.md` 將「Review Quiz 的同步邏輯整理成可共用模組」標記完成。
-- 驗證：`node --check assets/srs.js`、HTML parser、HTTP asset/review/day70 200、SRS 模組本地單元檢查、in-app browser Review Center 本機檢查 6/6、Day 70 載入無 console 錯誤。
-- 注意：驗證未實際按 GitHub 同步，避免測試過程寫回遠端 `learning.json`。
-
----
-## 2026-07-03 — 學習系統 P0 升級
-
-- 完成：新增 `LEARNING_SYSTEM_ROADMAP.md`，列出不重開系統、沿用現有核心並分階段升級的調整清單。
-- 修改：首頁 `index.html` 升級為入口儀表板，讀取 `profile.json` 與 `vocabulary/learning.json` 顯示累計天數、SRS 單字、已掌握、今日到期、逾期與連載進度。
-- 修改：首頁加入今日訓練路線，並將今日連結日期從 UTC 改成本機日期，避免台灣凌晨連到錯誤日期。
-- 修正：`daily/2026-07-03/index.html` 的 `<title>` 日期由 `2026-07-02` 改為 `2026-07-03`。
-- 驗證：本機 HTTP 首頁與今日頁回傳 200；in-app browser 桌面與手機寬度載入成功、console 無錯誤、今日連結可進入 Day 70。
-
----

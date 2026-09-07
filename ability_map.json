@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03",
+  "updatedAt": "2026-09-07",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-07",
+      "day": 113,
+      "title": "Storing Bags in a Station Locker Before a Day Trip",
+      "url": "daily/2026-09-07/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: store two heavy bags before a day trip.",
+        "Input: station locker sign (sizes, prices, exact change, pick-up time).",
+        "Is there any space in the large lockers?",
+        "Where can I drop off my bags?"
+      ]
+    },
     {
       "date": "2026-09-03",
       "day": 112,
