@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-08",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-08",
+      "day": 114,
+      "title": "Booking a Dinner Table After Reading Reviews",
+      "url": "daily/2026-09-08/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
+      "evidence": [
+        "Mission: read reviews and booking rules, then book a dinner table for tonight.",
+        "Input: map search result, three review snippets, and the booking rules page.",
+        "Find the 15-minute hold, the free cancellation window, and the advice to book early.",
+        "Say \"I would like to book a table for two.\" and \"Could I change it to six forty-five?\""
+      ]
+    },
     {
       "date": "2026-09-07",
       "day": 113,

@@ -4,6 +4,17 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-07-07 — 每日難度與卡點回饋 P1 初版
+
+- 新增 `assets/feedback.js`，用 `localStorage` key `english_learning_feedback_v1` 儲存每日難度、卡點、最有用一句與補充卡點。
+- 更新 `daily/2026-07-07/index.html`，在 Learning Tips 後加入 Daily Feedback 區，支援儲存與清除今日回饋。
+- 更新首頁 `index.html`，新增「最近回饋」卡，讀取同一台瀏覽器最近一筆回饋。
+- 更新 `.ai/daily-english-learning/SKILL.md`，讓未來 daily 頁延續同一套回饋表單與共用模組。
+- 更新 `LEARNING_SYSTEM_ROADMAP.md`，標記回饋區與等效資料來源完成，並記錄 localStorage 仍需匯出 / 同步機制才能讓產出 agent 穩定讀取。
+- 驗證：`node --check assets/feedback.js`、HTML parser、本機 HTTP 200、in-app browser 桌面互動、首頁摘要顯示、390px 手機寬度無水平 overflow。
+
+---
+
 ## 2026-07-07 — Day 72 正式教材產出
 
 - 先 `git fetch origin`，確認遠端多了 `SRS update: review quiz 2026-07-06`，再只同步最新 `vocabulary/learning.json` 後生成今天教材，避免用到過期複習狀態。

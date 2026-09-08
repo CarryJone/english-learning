@@ -5,6 +5,20 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-08 — Day 114 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-07`（昨天 60 題 Active Recall 已作答並更新間隔），才依最新 `vocabulary/learning.json` 生成今日複習內容。
+- 今日到期舊單字只剩 3 個（`insert`、`medium`、`space`，皆為昨日新字），Active Recall 與 Review Words 都是 3 題。
+- 新增 `daily/2026-09-08/`，主題為 `Booking a Dinner Table After Reading Reviews`；今日新字：`review`、`book`、`cancel`。
+- 任務是用手機讀地圖搜尋結果、三則評論與訂位規則頁，找出 15 分鐘保留、三小時前免費取消與「早點訂 / 指定室內座位」建議，再打電話訂位；七點半訂滿與室內座位時段不同各造成一次資訊改變。
+- 今日目標語塊：`book a table`（開口）、`free cancellation`（資訊判讀）、`Could I change it to ...?`（處理資訊改變）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，後兩者各有一題跨情境轉移（機場接送改時間、訂房頁確認免費取消）。
+- 能力標記以 `onlineReading` + `travelSpeaking` 為 primary，`dailyResponse`、`publicEnglish` 為次要；`profile.json.currentModule` 由 `Transport & Getting Around` 轉到 `Travel Research & Instructions`（M4）。
+- 文章只融入 `medium`、`space` 兩個複習字；`insert` 在餐廳訂位情境找不到自然用法，依 SKILL「不要為了故事連貫硬塞」的規則不強行放入，該字仍出現在 Active Recall 與 Review Words。
+- Speaking Bridge 取 `pedal`、`brake`、`helmet`（rc=1，最不熟）與 `signal`（7 天前，明天就離開 2–7 天視窗）；前三個與昨天重疊，Lv.2 情境全部改寫成新的人物、地點與目的。
+- 修正產生器缺陷：複習單字彈窗字典（`const REVIEW`）原本寫死前一天的字，改成從當日文章的 `review-word` 標記自動擷取，並在缺字時直接中止產出。此缺陷只影響本次產出流程，昨日頁面內容未受影響。
+- 音檔沿用三聲線與句間停頓試行（同聲線 0.05 秒、換人 0.12 秒、階段切換 0.25 秒）；主音檔 132.34 秒、35 句 / 274 字、每句最多 10 字。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-08` 84 checks / 0 warnings / 0 errors；本機 HTTP server 上 375px 無橫向溢位、console 0 errors、`article.mp3` 與 `s01.mp3`–`s35.mp3` 均回 200、單字 / 複習字 / 片語彈窗查詢全部命中、首頁最新一筆為 Day 114。
+
 ## 2026-09-07 — Day 113 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-03`，才依最新 `vocabulary/learning.json` 生成今日複習內容；今日納入 60 個到期舊單字（含 `efficient` 等逾期字），排除今天新字。
@@ -310,17 +324,6 @@
 - 更新 `daily/2026-07-07/index.html`，新增 `Ability Focus` 區，顯示今日能力標記與 evidence。
 - 更新 `.ai/daily-english-learning/SKILL.md`，未來正式教材產出時需選能力、顯示 Ability Focus，並同步 `ability_map.json`。
 - 驗證：`ability_map.json` JSON parse、HTML parser、HTTP 200、in-app browser 首頁 / Day 72 桌面與 390px 手機寬度檢查，console 無 error / warn。
-
----
-
-## 2026-07-07 — 每日難度與卡點回饋 P1 初版
-
-- 新增 `assets/feedback.js`，用 `localStorage` key `english_learning_feedback_v1` 儲存每日難度、卡點、最有用一句與補充卡點。
-- 更新 `daily/2026-07-07/index.html`，在 Learning Tips 後加入 Daily Feedback 區，支援儲存與清除今日回饋。
-- 更新首頁 `index.html`，新增「最近回饋」卡，讀取同一台瀏覽器最近一筆回饋。
-- 更新 `.ai/daily-english-learning/SKILL.md`，讓未來 daily 頁延續同一套回饋表單與共用模組。
-- 更新 `LEARNING_SYSTEM_ROADMAP.md`，標記回饋區與等效資料來源完成，並記錄 localStorage 仍需匯出 / 同步機制才能讓產出 agent 穩定讀取。
-- 驗證：`node --check assets/feedback.js`、HTML parser、本機 HTTP 200、in-app browser 桌面互動、首頁摘要顯示、390px 手機寬度無水平 overflow。
 
 ---
 
