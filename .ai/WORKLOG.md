@@ -5,6 +5,18 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-09 — Day 115 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-08`，才依最新 `vocabulary/learning.json` 生成今日複習內容；今日到期舊單字 12 個（9 個小說時期 rc=4 舊字加上昨日 3 個新字）。
+- 新增 `daily/2026-09-09/`，主題為 `Buying a Warm Jacket After the Weather Turns Cold`；今日新字：`stock`、`tight`、`sale`。
+- 任務是旅途變冷後在戶外用品店買外套：從吊牌與店內告示找出 $49、試衣間一次三件、14 天憑收據退換與「特價品不退不換」，再開口試穿；大號深藍缺貨造成一次資訊改變，改問其他顏色。
+- 今日目標語塊：`try it on`（開口）、`out of stock`（資訊判讀）、`Do you have it in ...?`（提出替代方案）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，後兩者各有一題跨情境轉移（紀念品店問顏色、網路商店確認缺貨）。
+- 文章融入複習字 `bring`、`final`、`instead`，三個都能自然落在退換規則與換顏色的句子裡。
+- 能力標記以 `travelSpeaking` + `dailyResponse` 為 primary（`dailyResponse` 久未當主要能力），`publicEnglish`、`onlineReading` 為次要；`profile.json.currentModule` 由 `Travel Research & Instructions` 轉到 `Hotels, Food & Shopping`（M2）。
+- Speaking Bridge 取 `insert`、`medium`、`space`（2 天前，rc=1，尚未入選過）與 `brake`（6 天前，rc=1，明天離開 2–7 天視窗）。六個候選 reviewCount 同為 1，故在同層級中優先選尚未練過的字，藉此避開連三天重複 `pedal` / `brake` / `helmet`。
+- 音檔沿用三聲線與句間停頓試行（同聲線 0.05 秒、換人 0.12 秒、階段切換 0.25 秒）；主音檔 124.92 秒、35 句 / 273 字、每句最多 11 字。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-09` 84 checks / 0 warnings / 0 errors；本機 HTTP server 上 375px 無橫向溢位、console 0 errors、`article.mp3` 與 `s01.mp3`–`s35.mp3` 均回 200、單字 / 複習字 / 片語彈窗查詢全部命中、首頁最新一筆為 Day 115。
+
 ## 2026-09-08 — Day 114 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-07`（昨天 60 題 Active Recall 已作答並更新間隔），才依最新 `vocabulary/learning.json` 生成今日複習內容。
@@ -314,16 +326,6 @@
 - 更新 `.ai/daily-english-learning/SKILL.md`，未來正式教材每篇至少產出 6 題，建議 8–10 題 Context Recall。
 - 更新 `LEARNING_SYSTEM_ROADMAP.md`，新增 P1 情境提取訓練完成項。
 - 驗證：HTML parser、Context Recall 題數 / 答案數檢查、template marker 檢查、in-app browser 翻牌互動、390px 手機寬度無水平 overflow。
-
----
-
-## 2026-07-07 — 能力地圖 P1 初版
-
-- 新增 `ability_map.json`，定義 `travelSpeaking`、`publicEnglish`、`onlineReading`、`dailyResponse` 四條能力主線與最近 session。
-- 更新首頁 `index.html`，新增「本週能力地圖」卡，從 `ability_map.json` 計算本週能力覆蓋狀態。
-- 更新 `daily/2026-07-07/index.html`，新增 `Ability Focus` 區，顯示今日能力標記與 evidence。
-- 更新 `.ai/daily-english-learning/SKILL.md`，未來正式教材產出時需選能力、顯示 Ability Focus，並同步 `ability_map.json`。
-- 驗證：`ability_map.json` JSON parse、HTML parser、HTTP 200、in-app browser 首頁 / Day 72 桌面與 390px 手機寬度檢查，console 無 error / warn。
 
 ---
 

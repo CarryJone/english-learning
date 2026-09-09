@@ -3569,6 +3569,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-09",
       "lastReviewedDate": null
+    },
+    {
+      "word": "stock",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "存貨；庫存",
+      "exampleSentence": "Navy in large is out of stock.",
+      "dateAdded": "2026-09-09",
+      "reviewCount": 0,
+      "nextReview": "2026-09-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tight",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "緊的；合身到不舒服",
+      "exampleSentence": "It is a little tight on me.",
+      "dateAdded": "2026-09-09",
+      "reviewCount": 0,
+      "nextReview": "2026-09-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "sale",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "特價；拍賣",
+      "exampleSentence": "Sale items are final.",
+      "dateAdded": "2026-09-09",
+      "reviewCount": 0,
+      "nextReview": "2026-09-10",
+      "lastReviewedDate": null
     }
   ]
 }

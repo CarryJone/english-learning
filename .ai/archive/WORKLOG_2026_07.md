@@ -4,6 +4,16 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-07-07 — 能力地圖 P1 初版
+
+- 新增 `ability_map.json`，定義 `travelSpeaking`、`publicEnglish`、`onlineReading`、`dailyResponse` 四條能力主線與最近 session。
+- 更新首頁 `index.html`，新增「本週能力地圖」卡，從 `ability_map.json` 計算本週能力覆蓋狀態。
+- 更新 `daily/2026-07-07/index.html`，新增 `Ability Focus` 區，顯示今日能力標記與 evidence。
+- 更新 `.ai/daily-english-learning/SKILL.md`，未來正式教材產出時需選能力、顯示 Ability Focus，並同步 `ability_map.json`。
+- 驗證：`ability_map.json` JSON parse、HTML parser、HTTP 200、in-app browser 首頁 / Day 72 桌面與 390px 手機寬度檢查，console 無 error / warn。
+
+---
+
 ## 2026-07-07 — 每日難度與卡點回饋 P1 初版
 
 - 新增 `assets/feedback.js`，用 `localStorage` key `english_learning_feedback_v1` 儲存每日難度、卡點、最有用一句與補充卡點。

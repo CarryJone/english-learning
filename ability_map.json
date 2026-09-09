@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-09",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-09",
+      "day": 115,
+      "title": "Buying a Warm Jacket After the Weather Turns Cold",
+      "url": "daily/2026-09-09/",
+      "primary": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: buy a warm jacket, try it on, and handle an out-of-stock size.",
+        "Input: price tag, fitting room sign, and return rules sign.",
+        "Find the $49 price, the 14-day return window, and the final-sale rule.",
+        "Say \"Can I try it on?\" and \"Do you have it in another colour?\""
+      ]
+    },
     {
       "date": "2026-09-08",
       "day": 114,
