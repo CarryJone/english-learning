@@ -2095,7 +2095,10 @@
       "answer": "I need to report damaged baggage.",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "提示：I need to ...",
       "reviewCount": 0,
@@ -2109,7 +2112,10 @@
       "answer": "Please keep the baggage tag.",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Please ... the baggage tag.",
       "reviewCount": 0,
@@ -2123,7 +2129,10 @@
       "answer": "Could you say that again? Desk 5 or Desk 7?",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Could you ...?",
       "reviewCount": 0,
@@ -2137,7 +2146,10 @@
       "answer": "The suitcase has a broken lock.",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2151,7 +2163,10 @@
       "answer": "Can you replace the lock? What should I do now?",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2165,7 +2180,10 @@
       "answer": "Should I bring the form to Desk 7?",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2179,7 +2197,10 @@
       "answer": "Could you say that again? The second floor or the third floor?",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "跨到旅館情境，先用 Could you say that again?。",
       "reviewCount": 0,
@@ -2193,7 +2214,10 @@
       "answer": "I need to report damaged luggage. / My luggage is damaged.",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "換成另一個外出地點，先自己組句。",
       "reviewCount": 0,
@@ -2207,7 +2231,10 @@
       "answer": "Please keep the label on your bag.",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["dailyResponse", "onlineReading"],
+      "abilities": [
+        "dailyResponse",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2221,7 +2248,10 @@
       "answer": "The lock is broken. Can you help me?",
       "sourceDate": "2026-07-28",
       "sourceTitle": "Reporting a Damaged Suitcase",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "使用昨天的複習字，再看答案。",
       "reviewCount": 0,
@@ -2235,7 +2265,10 @@
       "answer": "You can take a later train.",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "提示：You can ...",
       "reviewCount": 0,
@@ -2249,7 +2282,10 @@
       "answer": "Is this ticket still valid?",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Is this ticket ...?",
       "reviewCount": 0,
@@ -2263,7 +2299,10 @@
       "answer": "I need to look up the change rule.",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：I need to ...",
       "reviewCount": 0,
@@ -2277,7 +2316,10 @@
       "answer": "The 6:10 express train is delayed twenty minutes.",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2291,7 +2333,10 @@
       "answer": "I may miss my next train.",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["dailyResponse", "travelSpeaking"],
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2305,7 +2350,10 @@
       "answer": "Could you say that again? The 7:30 or 8:00 train?",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Could you ...?",
       "reviewCount": 0,
@@ -2319,7 +2367,10 @@
       "answer": "Where should I go now?",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2333,7 +2384,10 @@
       "answer": "Is there a change fee for the later train?",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2347,7 +2401,10 @@
       "answer": "The station is busy, but the staff can help.",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["dailyResponse", "travelSpeaking"],
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
       "level": "lv3",
       "hint": "使用今天的複習字 busy 和 staff。",
       "reviewCount": 0,
@@ -2361,7 +2418,10 @@
       "answer": "Is this day pass still valid?",
       "sourceDate": "2026-07-29",
       "sourceTitle": "Changing a Train Ticket After a Delay",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "把今天的 valid 移到另一種票券。",
       "reviewCount": 0,
@@ -2375,7 +2435,10 @@
       "answer": "If your card is expired, bring it to the front desk.",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "If your card is ..., bring it to ...",
       "reviewCount": 0,
@@ -2389,7 +2452,10 @@
       "answer": "Could you reset the card?",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could you ...?",
       "reviewCount": 0,
@@ -2403,7 +2469,10 @@
       "answer": "I can show my ID.",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "I can ...",
       "reviewCount": 0,
@@ -2417,7 +2486,10 @@
       "answer": "My card does not work.",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2431,7 +2503,10 @@
       "answer": "The staff can reset the card for free.",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2445,7 +2520,10 @@
       "answer": "Too many wrong tries can block the card.",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2459,7 +2537,10 @@
       "answer": "What is another option?",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "What is ...?",
       "reviewCount": 0,
@@ -2473,7 +2554,10 @@
       "answer": "Could you reset the audio guide? / Can you reset the audio guide?",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "把 reset 移到另一種裝置。",
       "reviewCount": 0,
@@ -2487,7 +2571,10 @@
       "answer": "Now I can access the lounge.",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "把 access 移到另一個旅行地點。",
       "reviewCount": 0,
@@ -2501,7 +2588,10 @@
       "answer": "I heard our number from the restaurant speaker.",
       "sourceDate": "2026-07-30",
       "sourceTitle": "Fixing a Hotel Key Card Problem",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv3",
       "hint": "用 speaker 說明你聽到的廣播。",
       "reviewCount": 0,
@@ -2515,7 +2605,10 @@
       "answer": "I need to report a missing item.",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "I need to ...",
       "reviewCount": 0,
@@ -2529,7 +2622,10 @@
       "answer": "I can show the receipt.",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "I can ...",
       "reviewCount": 0,
@@ -2543,7 +2639,10 @@
       "answer": "Could you remake it?",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could you ... it?",
       "reviewCount": 0,
@@ -2557,7 +2656,10 @@
       "answer": "If something is missing, show the receipt at Counter 2.",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2571,7 +2673,10 @@
       "answer": "It will be ready in ten minutes.",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2585,7 +2690,10 @@
       "answer": "Is there another option?",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2599,7 +2707,10 @@
       "answer": "We can replace the sandwich with a salad.",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2613,7 +2724,10 @@
       "answer": "I can show the receipt.",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "把 show the receipt 移到另一個地點。",
       "reviewCount": 0,
@@ -2627,7 +2741,10 @@
       "answer": "I need to report a missing item.",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "把 report a missing item 移到另一個地點。",
       "reviewCount": 0,
@@ -2641,7 +2758,10 @@
       "answer": "Can you deliver it to our table? / Could you deliver it to our table?",
       "sourceDate": "2026-07-31",
       "sourceTitle": "Fixing a Missing Café Item",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "用 deliver 說明你需要的下一步。",
       "reviewCount": 0,
@@ -2655,7 +2775,10 @@
       "answer": "The washer is stuck.",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：The washer is ...",
       "reviewCount": 0,
@@ -2669,7 +2792,10 @@
       "answer": "Could you call for a repair?",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Could you ...?",
       "reviewCount": 0,
@@ -2683,7 +2809,10 @@
       "answer": "Is it working?",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Is it ...?",
       "reviewCount": 0,
@@ -2697,7 +2826,10 @@
       "answer": "The laundry room is on the second floor.",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2711,7 +2843,10 @@
       "answer": "It is open from 7 a.m. to 10 p.m.",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2725,7 +2860,10 @@
       "answer": "If the door is stuck, do not pull it.",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["publicEnglish", "dailyResponse"],
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2739,7 +2877,10 @@
       "answer": "How long will the repair take?",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2753,7 +2894,10 @@
       "answer": "Is there another option?",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "把 another option 移到另一個住宿情境。",
       "reviewCount": 0,
@@ -2767,7 +2911,10 @@
       "answer": "Is another machine available?",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "用 available 詢問設備是否可用。",
       "reviewCount": 0,
@@ -2781,7 +2928,10 @@
       "answer": "I will wait at reception. / I can wait at reception.",
       "sourceDate": "2026-08-03",
       "sourceTitle": "Handling a Stuck Hotel Laundry Machine",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "用 reception 說明你要等待的地點。",
       "reviewCount": 0,
@@ -2795,7 +2945,10 @@
       "answer": "I want to compare the options first.",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "提示：I want to ... first.",
       "reviewCount": 0,
@@ -2809,7 +2962,10 @@
       "answer": "How long does it take?",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：How long ...?",
       "reviewCount": 0,
@@ -2823,7 +2979,10 @@
       "answer": "Where does it leave from?",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Where does ...?",
       "reviewCount": 0,
@@ -2837,7 +2996,10 @@
       "answer": "Stop Six is closed. Shuttles leave from Stop Eight.",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2851,7 +3013,10 @@
       "answer": "I need to update my pickup point.",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2865,7 +3030,10 @@
       "answer": "Could you say that again? Door Four or Door Five?",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2879,7 +3047,10 @@
       "answer": "My airport bus ticket has expired.",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "使用 expired，先自己說。",
       "reviewCount": 0,
@@ -2893,7 +3064,10 @@
       "answer": "Could you reset the Wi-Fi password?",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "使用 reset，先自己說。",
       "reviewCount": 0,
@@ -2907,7 +3081,10 @@
       "answer": "I need to compare the ferry options. / Let me compare the options.",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv3",
       "hint": "把 compare the options 轉移到渡輪情境。",
       "reviewCount": 0,
@@ -2921,7 +3098,10 @@
       "answer": "The hotel window is damaged. Could you check it?",
       "sourceDate": "2026-08-04",
       "sourceTitle": "Choosing an Airport Ride After a Stop Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "使用 damaged，換到旅館求助情境。",
       "reviewCount": 0,
@@ -2935,7 +3115,10 @@
       "answer": "Does this plan include free setup?",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["publicEnglish", "travelSpeaking"],
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "提示：Does this plan include ...?",
       "reviewCount": 0,
@@ -2949,7 +3132,10 @@
       "answer": "How much is it altogether?",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：How much ... altogether?",
       "reviewCount": 0,
@@ -2963,7 +3149,10 @@
       "answer": "It is not working yet. Could you check it?",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2977,7 +3166,10 @@
       "answer": "I mostly use data for maps and messages.",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -2991,7 +3183,10 @@
       "answer": "The ten-gigabyte plan costs eighteen dollars.",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3005,7 +3200,10 @@
       "answer": "Is the price the same for an eSIM?",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3019,7 +3217,10 @@
       "answer": "Turn airplane mode on, then turn it off.",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["dailyResponse", "travelSpeaking"],
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3033,7 +3234,10 @@
       "answer": "I want to compare the two phone plans first.",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv3",
       "hint": "使用 compare，換到手機方案情境。",
       "reviewCount": 0,
@@ -3047,7 +3251,10 @@
       "answer": "Is the mobile data working now?",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "使用 working，先自己說。",
       "reviewCount": 0,
@@ -3061,7 +3268,10 @@
       "answer": "How much is it altogether?",
       "sourceDate": "2026-08-05",
       "sourceTitle": "Buying Mobile Data at the Airport",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "把總價問句轉移到購物情境。",
       "reviewCount": 0,
@@ -3075,7 +3285,10 @@
       "answer": "Timed admission is required on weekends.",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Timed admission is ... on weekends.",
       "reviewCount": 0,
@@ -3089,7 +3302,10 @@
       "answer": "I booked the 2:30 time slot.",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "提示：I booked the ... time slot.",
       "reviewCount": 0,
@@ -3103,7 +3319,10 @@
       "answer": "Am I allowed to bring this bag inside?",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Am I allowed to ...?",
       "reviewCount": 0,
@@ -3117,7 +3336,10 @@
       "answer": "Large bags must go in a locker.",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3131,7 +3353,10 @@
       "answer": "Can I still use this ticket today?",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3145,7 +3370,10 @@
       "answer": "Could you say it more slowly?",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3159,7 +3387,10 @@
       "answer": "Is there another time available?",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3173,7 +3404,10 @@
       "answer": "My suitcase is missing at baggage claim.",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "使用 missing，先自己說。",
       "reviewCount": 0,
@@ -3187,7 +3421,10 @@
       "answer": "How long will the bike repair take?",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "使用 repair，先自己說。",
       "reviewCount": 0,
@@ -3201,7 +3438,10 @@
       "answer": "I want to book the 7 p.m. time slot.",
       "sourceDate": "2026-08-06",
       "sourceTitle": "Using a Timed Ticket at the Museum",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv3",
       "hint": "把 book a time slot 轉移到接駁車情境。",
       "reviewCount": 0,
@@ -3215,7 +3455,10 @@
       "answer": "The sign shows international postage.",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "提示：The sign shows ...",
       "reviewCount": 0,
@@ -3229,7 +3472,10 @@
       "answer": "Standard postcards cost two dollars.",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "提示：Standard postcards cost ...",
       "reviewCount": 0,
@@ -3243,7 +3489,10 @@
       "answer": "How much postage do I need?",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：How much postage ...?",
       "reviewCount": 0,
@@ -3257,7 +3506,10 @@
       "answer": "How long will it take?",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3271,7 +3523,10 @@
       "answer": "The stamp machine is not working.",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "使用 working，先自己說。",
       "reviewCount": 0,
@@ -3285,7 +3540,10 @@
       "answer": "Could you write it down for me?",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3299,7 +3557,10 @@
       "answer": "The country name must be in English.",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3313,7 +3574,10 @@
       "answer": "I want to compare two walking tours first.",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv3",
       "hint": "使用 compare，先自己說。",
       "reviewCount": 0,
@@ -3327,7 +3591,10 @@
       "answer": "Does this ferry go to my destination?",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "使用 destination，先自己說。",
       "reviewCount": 0,
@@ -3341,7 +3608,10 @@
       "answer": "I need international postage for this package.",
       "sourceDate": "2026-08-07",
       "sourceTitle": "Mailing a Postcard from Abroad",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "把 international postage 轉移到包裹情境。",
       "reviewCount": 0,
@@ -3355,7 +3625,10 @@
       "answer": "Bus 8 comes every fifteen minutes.",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "提示：Bus 8 comes ...",
       "reviewCount": 0,
@@ -3369,7 +3642,10 @@
       "answer": "The day pass is valid until midnight.",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "提示：The day pass is ...",
       "reviewCount": 0,
@@ -3383,7 +3659,10 @@
       "answer": "Does this bus go to Central Market?",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Does this bus ...?",
       "reviewCount": 0,
@@ -3397,7 +3676,10 @@
       "answer": "The market stop is closed today.",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["publicEnglish", "dailyResponse"],
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3411,7 +3693,10 @@
       "answer": "Could you say that again?",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3425,7 +3710,10 @@
       "answer": "Please tell me when we get to the library.",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "先自己說，再看答案。",
       "reviewCount": 0,
@@ -3439,7 +3727,10 @@
       "answer": "I need to get off at the City Library.",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "使用 get off at。",
       "reviewCount": 0,
@@ -3453,7 +3744,10 @@
       "answer": "Does this bus go to the airport?",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "把目的地換成 airport。",
       "reviewCount": 0,
@@ -3467,7 +3761,10 @@
       "answer": "Do I need timed admission?",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv3",
       "hint": "使用 timed admission。",
       "reviewCount": 0,
@@ -3481,7 +3778,10 @@
       "answer": "Please tell me when we get to the hotel.",
       "sourceDate": "2026-08-10",
       "sourceTitle": "Using a City Bus Day Pass",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "把地點換成 hotel。",
       "reviewCount": 0,
@@ -3495,7 +3795,10 @@
       "answer": "Which pier does it leave from?",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Which pier ...?",
       "reviewCount": 0,
@@ -3509,7 +3812,10 @@
       "answer": "I'd like one round-trip ticket, please.",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：I'd like one ...",
       "reviewCount": 0,
@@ -3523,7 +3829,10 @@
       "answer": "Could you show me on the map?",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Could you show ...?",
       "reviewCount": 0,
@@ -3537,7 +3846,10 @@
       "answer": "The last return ferry leaves at five.",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3551,7 +3863,10 @@
       "answer": "The ferry is delayed by ten minutes.",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["publicEnglish", "dailyResponse"],
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3565,7 +3880,10 @@
       "answer": "Sorry, which pier does it leave from now?",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3579,7 +3897,10 @@
       "answer": "Could you show me another route on the map?",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3593,7 +3914,10 @@
       "answer": "Is admission free on Sundays?",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3607,7 +3931,10 @@
       "answer": "Please write the address clearly.",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["dailyResponse", "travelSpeaking"],
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3621,7 +3948,10 @@
       "answer": "Which gate does the tour bus leave from? / Could you show me on the map?",
       "sourceDate": "2026-08-11",
       "sourceTitle": "Taking a Harbor Ferry After a Pier Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -3635,7 +3965,10 @@
       "answer": "Does this contain nuts?",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Does this ...?",
       "reviewCount": 0,
@@ -3649,7 +3982,10 @@
       "answer": "Does coffee have free refills?",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "提示：Does coffee have ...?",
       "reviewCount": 0,
@@ -3663,7 +3999,10 @@
       "answer": "What can I have instead?",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：What can I ...?",
       "reviewCount": 0,
@@ -3677,7 +4016,10 @@
       "answer": "The breakfast buffet is open from seven to ten on weekdays.",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3691,7 +4033,10 @@
       "answer": "Breakfast costs twelve dollars for adults.",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3705,7 +4050,10 @@
       "answer": "The oatmeal does not contain nuts.",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3719,7 +4067,10 @@
       "answer": "Does this soup contain milk?",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3733,7 +4084,10 @@
       "answer": "What can I take instead?",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3747,7 +4101,10 @@
       "answer": "Could you send me the restaurant address?",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3761,7 +4118,10 @@
       "answer": "I cannot eat nuts. What can I have instead? / Does the fruit contain nuts?",
       "sourceDate": "2026-08-12",
       "sourceTitle": "Choosing a Safe Hotel Breakfast",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -3775,7 +4135,10 @@
       "answer": "How often should I reapply it?",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "提示：How often should I ...?",
       "reviewCount": 0,
@@ -3789,7 +4152,10 @@
       "answer": "Is this okay for sensitive skin?",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Is this okay for ...?",
       "reviewCount": 0,
@@ -3803,7 +4169,10 @@
       "answer": "Do you have a smaller bottle?",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Do you have ...?",
       "reviewCount": 0,
@@ -3817,7 +4186,10 @@
       "answer": "This sunscreen is water resistant for eighty minutes.",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3831,7 +4203,10 @@
       "answer": "Reapply it every two hours.",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3845,7 +4220,10 @@
       "answer": "The small bottle is sold out.",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3859,7 +4237,10 @@
       "answer": "Do you have a smaller bottle of shampoo?",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3873,7 +4254,10 @@
       "answer": "The pharmacy is one block from the hotel.",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3887,7 +4271,10 @@
       "answer": "Please tap your card here.",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3901,7 +4288,10 @@
       "answer": "Do you have another option? / Is it okay for sensitive skin?",
       "sourceDate": "2026-08-13",
       "sourceTitle": "Buying Sunscreen for a Beach Day",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -3915,7 +4305,10 @@
       "answer": "The air conditioner isn’t working.",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：The air conditioner ...",
       "reviewCount": 0,
@@ -3929,7 +4322,10 @@
       "answer": "Is the maintenance desk still open?",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "提示：Is the maintenance desk ...?",
       "reviewCount": 0,
@@ -3943,7 +4339,10 @@
       "answer": "Can I change rooms?",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Can I ...?",
       "reviewCount": 0,
@@ -3957,7 +4356,10 @@
       "answer": "Quiet hours start at ten p.m.",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3971,7 +4373,10 @@
       "answer": "Dial zero for urgent repairs.",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3985,7 +4390,10 @@
       "answer": "We can bring a fan for tonight.",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["dailyResponse", "travelSpeaking"],
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -3999,7 +4407,10 @@
       "answer": "The Wi-Fi isn’t working.",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4013,7 +4424,10 @@
       "answer": "Is my flight delayed?",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4027,7 +4441,10 @@
       "answer": "Which button should I press?",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4041,7 +4458,10 @@
       "answer": "Can I change rooms? / Is the new room quiet?",
       "sourceDate": "2026-08-14",
       "sourceTitle": "Fixing a Noisy Hotel Air Conditioner",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -4055,7 +4475,10 @@
       "answer": "My suitcase is missing.",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：My suitcase ...",
       "reviewCount": 0,
@@ -4069,7 +4492,10 @@
       "answer": "Where is the baggage claim desk?",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Where is ...?",
       "reviewCount": 0,
@@ -4083,7 +4509,10 @@
       "answer": "Could you help me find it?",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Could you help me ...?",
       "reviewCount": 0,
@@ -4097,7 +4526,10 @@
       "answer": "Bags from Flight 428 arrive on carousel six.",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4111,7 +4543,10 @@
       "answer": "Use carousel eight for oversized bags.",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4125,7 +4560,10 @@
       "answer": "The help desk is open until eleven thirty p.m.",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4139,7 +4577,10 @@
       "answer": "It is black with a blue handle.",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4153,7 +4594,10 @@
       "answer": "My phone is missing.",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4167,7 +4611,10 @@
       "answer": "Is there a nearby help desk?",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4181,7 +4628,10 @@
       "answer": "Can you deliver it tomorrow morning? / Will it arrive before ten?",
       "sourceDate": "2026-08-17",
       "sourceTitle": "Reporting a Missing Suitcase at Baggage Claim",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -4198,7 +4648,10 @@
       "answer": "Can I take this through security?",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Can I take ...?"
     },
@@ -4212,7 +4665,10 @@
       "answer": "Is it one hundred milliliters or less?",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "Is it one hundred ...?"
     },
@@ -4226,7 +4682,10 @@
       "answer": "Do I need to take it out?",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Do I need to ...?"
     },
@@ -4240,7 +4699,10 @@
       "answer": "Liquids must be in small containers.",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": ""
     },
@@ -4254,7 +4716,10 @@
       "answer": "Each container has a limit of one hundred milliliters.",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": ""
     },
@@ -4268,7 +4733,10 @@
       "answer": "All liquids must fit inside one clear one-liter bag.",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": ""
     },
@@ -4282,7 +4750,10 @@
       "answer": "Large bottles cannot go through security.",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["publicEnglish", "dailyResponse"],
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": ""
     },
@@ -4296,7 +4767,10 @@
       "answer": "The container size matters, not the amount inside.",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": ""
     },
@@ -4310,7 +4784,10 @@
       "answer": "Can I take this through museum security?",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": ""
     },
@@ -4324,7 +4801,10 @@
       "answer": "What should I do with this bottle? / Can I buy one after security?",
       "sourceDate": "2026-08-18",
       "sourceTitle": "Checking Carry-on Liquid Rules Before Security",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": ""
     },
@@ -4335,7 +4815,10 @@
       "answer": "Is this the meeting point?",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Is this ...?",
       "reviewCount": 0,
@@ -4349,7 +4832,10 @@
       "answer": "How can I find the guide?",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "How can I ...?",
       "reviewCount": 0,
@@ -4363,7 +4849,10 @@
       "answer": "The tour starts at nine thirty a.m.",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4377,7 +4866,10 @@
       "answer": "Please arrive fifteen minutes early.",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4391,7 +4883,10 @@
       "answer": "The blue arrow points toward the main square.",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4405,7 +4900,10 @@
       "answer": "I save a photo of the correct fountain.",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4419,7 +4917,10 @@
       "answer": "Rain update: the meeting point has changed.",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4433,7 +4934,10 @@
       "answer": "Meet under the museum entrance at nine twenty.",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["publicEnglish", "dailyResponse"],
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4447,7 +4951,10 @@
       "answer": "Is this the meeting point for the airport shuttle?",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4461,7 +4968,10 @@
       "answer": "How can I find the guide after our break?",
       "sourceDate": "2026-08-19",
       "sourceTitle": "Finding the Walking Tour Meeting Point",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -4475,7 +4985,10 @@
       "answer": "Where can I get a tax refund?",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Where can I get ...?",
       "reviewCount": 0,
@@ -4489,7 +5002,10 @@
       "answer": "Do I need the original receipt?",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Do I need ...?",
       "reviewCount": 0,
@@ -4503,7 +5019,10 @@
       "answer": "My purchase is eligible for a tax refund.",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "My purchase is eligible ...",
       "reviewCount": 0,
@@ -4517,7 +5036,10 @@
       "answer": "The minimum purchase is one hundred dollars at one store.",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4531,7 +5053,10 @@
       "answer": "Before security, visit Customs Desk B with the items.",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4545,7 +5070,10 @@
       "answer": "The refund counter moved to Gate Twelve.",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4559,7 +5087,10 @@
       "answer": "Sorry, could you say that again more slowly?",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4573,7 +5104,10 @@
       "answer": "Is this purchase eligible for free delivery?",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4587,7 +5121,10 @@
       "answer": "The fan makes a loud noise.",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4601,7 +5138,10 @@
       "answer": "Please call maintenance about the fan. / Where can I get a cash refund instead?",
       "sourceDate": "2026-08-20",
       "sourceTitle": "Getting an Airport Tax Refund",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -4615,7 +5155,10 @@
       "answer": "Where do I return the car?",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "Where do I ...?",
       "reviewCount": 0,
@@ -4629,7 +5172,10 @@
       "answer": "Does the tank need to be full?",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "Does the tank ...?",
       "reviewCount": 0,
@@ -4643,7 +5189,10 @@
       "answer": "Please fill up the tank before entering the lot.",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "Please fill ...",
       "reviewCount": 0,
@@ -4657,7 +5206,10 @@
       "answer": "Please describe the damage and take clear photos.",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4671,7 +5223,10 @@
       "answer": "Put the keys and receipt in the return box.",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4685,7 +5240,10 @@
       "answer": "The new notice says Lot B is full this evening.",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4699,7 +5257,10 @@
       "answer": "Can I return the car in Lot C tonight?",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4713,7 +5274,10 @@
       "answer": "The deposit returns to your card after inspection.",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4727,7 +5291,10 @@
       "answer": "Where do I return the bike?",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4741,7 +5308,11 @@
       "answer": "Can I return the car in Lot C tonight? / Which button should I press? Keep the printed receipt.",
       "sourceDate": "2026-08-21",
       "sourceTitle": "Returning a Rental Car with a Full Tank",
-      "abilities": ["travelSpeaking", "publicEnglish", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -4755,7 +5326,10 @@
       "answer": "Which platform does it leave from?",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Which platform does it ...?",
       "reviewCount": 0,
@@ -4769,7 +5343,10 @@
       "answer": "When does it depart?",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：When does it ...?",
       "reviewCount": 0,
@@ -4783,7 +5360,10 @@
       "answer": "I will check the screen before I board.",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：I will check the ...",
       "reviewCount": 0,
@@ -4797,7 +5377,10 @@
       "answer": "The notice says the airport train is delayed by twenty minutes.",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4811,7 +5394,10 @@
       "answer": "Is the train still going to the airport?",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4825,7 +5411,10 @@
       "answer": "Could you say that again more slowly?",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4839,7 +5428,10 @@
       "answer": "Which pier does it leave from?",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4853,7 +5445,10 @@
       "answer": "Is this ticket still valid?",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4867,7 +5462,10 @@
       "answer": "When does the replacement train depart? / When does the next train leave?",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -4881,7 +5479,10 @@
       "answer": "Which platform does the airport train leave from? / Could you show me the way?",
       "sourceDate": "2026-08-24",
       "sourceTitle": "Finding the Right Airport Train After a Platform Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -4895,7 +5496,10 @@
       "answer": "Which exit should I use?",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Which exit should I ...?",
       "reviewCount": 0,
@@ -4909,7 +5513,10 @@
       "answer": "Could you show me the way?",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Could you show me ...?",
       "reviewCount": 0,
@@ -4923,7 +5530,10 @@
       "answer": "I will follow the blue signs.",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：I will follow the ...",
       "reviewCount": 0,
@@ -4937,7 +5547,10 @@
       "answer": "The notice says Exit Three is closed today.",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4951,7 +5564,10 @@
       "answer": "It takes eight minutes to walk there.",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4965,7 +5581,10 @@
       "answer": "Turn left after the bookstore.",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4979,7 +5598,10 @@
       "answer": "Cross the street at the traffic light.",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -4993,7 +5615,10 @@
       "answer": "Could you give me directions to the hotel?",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5007,7 +5632,10 @@
       "answer": "Hotel guests use the side entrance.",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5021,7 +5649,10 @@
       "answer": "Is this the hotel entrance? / Could you check this entrance?",
       "sourceDate": "2026-08-25",
       "sourceTitle": "Finding the Hotel After a Station Exit Change",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5035,7 +5666,10 @@
       "answer": "Which bus goes to the museum?",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Which bus goes to the ...?",
       "reviewCount": 0,
@@ -5049,7 +5683,10 @@
       "answer": "Is this the temporary stop?",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Is this the temporary ...?",
       "reviewCount": 0,
@@ -5063,7 +5700,10 @@
       "answer": "Where should I get off?",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Where should I ...?",
       "reviewCount": 0,
@@ -5077,7 +5717,10 @@
       "answer": "The notice says the bus is on a detour.",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5091,7 +5734,10 @@
       "answer": "The temporary stop is opposite the bookstore.",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5105,7 +5751,10 @@
       "answer": "How long does the ride take without traffic?",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5119,7 +5768,10 @@
       "answer": "I will get off at Museum Square.",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5133,7 +5785,10 @@
       "answer": "The museum is three stops away.",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5147,7 +5802,10 @@
       "answer": "The route number is a match for my saved result.",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5161,7 +5819,10 @@
       "answer": "Does this bus go to the museum?",
       "sourceDate": "2026-08-26",
       "sourceTitle": "Taking the Right City Bus During a Road Detour",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5175,7 +5836,10 @@
       "answer": "Is this dish dairy-free?",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "提示：Is this ...?",
       "reviewCount": 0,
@@ -5189,7 +5853,10 @@
       "answer": "Could you tell me about the ingredients in this dish?",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5203,7 +5870,10 @@
       "answer": "What does it come with?",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "提示：What does it ... with?",
       "reviewCount": 0,
@@ -5217,7 +5887,10 @@
       "answer": "This dish contains no dairy.",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5231,7 +5904,10 @@
       "answer": "Is there another option?",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5245,7 +5921,10 @@
       "answer": "Could you say that again, please?",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "提示：Could you ... again?",
       "reviewCount": 0,
@@ -5259,7 +5938,10 @@
       "answer": "The menu item matches the screen.",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5273,7 +5955,10 @@
       "answer": "Can I get the sauce on the side?",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5287,7 +5972,10 @@
       "answer": "Is this breakfast dish dairy-free?",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5301,7 +5989,10 @@
       "answer": "What does this set come with?",
       "sourceDate": "2026-08-27",
       "sourceTitle": "Ordering a Safe Café Meal with a Food Allergy",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5315,7 +6006,10 @@
       "answer": "Is this scarf on sale?",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "Is this ...?",
       "reviewCount": 0,
@@ -5329,7 +6023,10 @@
       "answer": "Could you check this price?",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5343,7 +6040,10 @@
       "answer": "Is that the final amount?",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "Is that the ...?",
       "reviewCount": 0,
@@ -5357,7 +6057,10 @@
       "answer": "The offer gives a twenty percent discount.",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5371,7 +6074,10 @@
       "answer": "The gifts are on sale until eight p.m.",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5385,7 +6091,10 @@
       "answer": "The price tag shows the wrong amount.",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["dailyResponse", "travelSpeaking"],
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5399,7 +6108,10 @@
       "answer": "The offer changed this morning. Could you say that again, please?",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5413,7 +6125,10 @@
       "answer": "Can I exchange this within thirty days?",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5427,7 +6142,10 @@
       "answer": "Could you check this price?",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5441,7 +6159,10 @@
       "answer": "Is that the final amount? / Does that amount include tax?",
       "sourceDate": "2026-08-28",
       "sourceTitle": "Checking a Wrong Price at an Airport Gift Shop",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5455,7 +6176,10 @@
       "answer": "Can I extend my checkout until noon?",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Can I ... until noon?",
       "reviewCount": 0,
@@ -5469,7 +6193,10 @@
       "answer": "The hotel offers late checkout until noon.",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5483,7 +6210,10 @@
       "answer": "Can I pick up my luggage at five thirty?",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Can I pick up ...?",
       "reviewCount": 0,
@@ -5497,7 +6227,10 @@
       "answer": "Late checkout is not available today.",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["travelSpeaking", "onlineReading"],
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5511,7 +6244,10 @@
       "answer": "Please ask at the front desk before nine a.m.",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5525,7 +6261,10 @@
       "answer": "Late checkout costs twenty dollars.",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv1",
       "hint": "Late checkout costs ...",
       "reviewCount": 0,
@@ -5539,7 +6278,10 @@
       "answer": "The hotel is full, so late checkout is not available today.",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5553,7 +6295,10 @@
       "answer": "Could you say that again more slowly, please?",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could you say that again ...?",
       "reviewCount": 0,
@@ -5567,7 +6312,10 @@
       "answer": "Can I pick up my coat at five?",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5581,7 +6329,10 @@
       "answer": "That time is not available today. / That time is full today.",
       "sourceDate": "2026-08-31",
       "sourceTitle": "Requesting a Late Checkout Before a Late Flight",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5595,7 +6346,10 @@
       "answer": "Could you help me connect to Wi-Fi?",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could you help me ...?",
       "reviewCount": 0,
@@ -5609,7 +6363,10 @@
       "answer": "Select guest access.",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5623,7 +6380,10 @@
       "answer": "The network name is Airport_Guest.",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "The network name is ...",
       "reviewCount": 0,
@@ -5637,7 +6397,10 @@
       "answer": "The airport offers free Wi-Fi.",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5651,7 +6414,10 @@
       "answer": "Guest access lasts for thirty minutes.",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5665,7 +6431,10 @@
       "answer": "The code changed this morning.",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5679,7 +6448,10 @@
       "answer": "Should I try again?",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Should I ...?",
       "reviewCount": 0,
@@ -5693,7 +6465,10 @@
       "answer": "Please restart your phone first.",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5707,7 +6482,10 @@
       "answer": "The signal is weak near my gate.",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5721,7 +6499,10 @@
       "answer": "I will try again.",
       "sourceDate": "2026-09-01",
       "sourceTitle": "Connecting to Airport Wi-Fi Before Activating an eSIM",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5735,7 +6516,10 @@
       "answer": "Could you help me find a safe cold medicine?",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could you help me find a ...?",
       "reviewCount": 0,
@@ -5749,7 +6533,10 @@
       "answer": "I have a cough, but no fever.",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5763,7 +6550,10 @@
       "answer": "Please ask about your symptoms before choosing.",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5777,7 +6567,10 @@
       "answer": "I will follow the label carefully.",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "I will ... carefully.",
       "reviewCount": 0,
@@ -5791,7 +6584,10 @@
       "answer": "Could you show me another option?",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5805,7 +6601,10 @@
       "answer": "Could you say that again more slowly, please?",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could you ...?",
       "reviewCount": 0,
@@ -5819,7 +6618,10 @@
       "answer": "This tablet medicine is available without a prescription.",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5833,7 +6635,10 @@
       "answer": "This one may make you sleepy during the day.",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5847,7 +6652,10 @@
       "answer": "Is there an extra charge for this medicine?",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5861,7 +6669,10 @@
       "answer": "Does this bus go to the airport?",
       "sourceDate": "2026-09-02",
       "sourceTitle": "Finding Cold Medicine at a Travel Pharmacy",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5875,7 +6686,10 @@
       "answer": "I read the rental notice.",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "I ... the rental notice.",
       "reviewCount": 0,
@@ -5889,7 +6703,10 @@
       "answer": "The daily pass is eight dollars.",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5903,7 +6720,10 @@
       "answer": "Each ride lasts for thirty minutes.",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "Each ride lasts for ...",
       "reviewCount": 0,
@@ -5917,7 +6737,10 @@
       "answer": "I will wear a helmet.",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "I will wear a ...",
       "reviewCount": 0,
@@ -5931,7 +6754,10 @@
       "answer": "I will check the bike for damage.",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -5945,7 +6771,10 @@
       "answer": "Could I ask for another bike?",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could I ...?",
       "reviewCount": 0,
@@ -5959,7 +6788,10 @@
       "answer": "I will check the car for damage.",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5973,7 +6805,10 @@
       "answer": "Could I return the bike at another station? / Where can I return this bike?",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -5987,7 +6822,10 @@
       "answer": "Could you say that again more slowly, please?",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could you ...?",
       "reviewCount": 0,
@@ -6001,7 +6839,10 @@
       "answer": "When does the deposit return? / When will I get my deposit back?",
       "sourceDate": "2026-09-03",
       "sourceTitle": "Checking a City Bike Before a Museum Ride",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -6015,7 +6856,10 @@
       "answer": "Is there any space in the large lockers?",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "Is there any space ...?",
       "reviewCount": 0,
@@ -6029,7 +6873,10 @@
       "answer": "A large locker costs nine dollars a day.",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6043,7 +6890,10 @@
       "answer": "The machines take exact change only.",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "The machines take ... only.",
       "reviewCount": 0,
@@ -6057,7 +6907,10 @@
       "answer": "I have to pick up my bags before eleven.",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["publicEnglish", "dailyResponse"],
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6071,7 +6924,10 @@
       "answer": "Where can I drop off my bags?",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Where can I ...?",
       "reviewCount": 0,
@@ -6085,7 +6941,10 @@
       "answer": "Could you say that again more slowly, please?",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6099,7 +6958,10 @@
       "answer": "What are the opening hours today?",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6113,7 +6975,10 @@
       "answer": "Is there any space on the luggage rack? / Is there any space for my suitcase?",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -6127,7 +6992,10 @@
       "answer": "Can I drop off my bags here until the afternoon? / Where can I drop off my bags until three?",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -6141,7 +7009,10 @@
       "answer": "I will test the brake before I ride.",
       "sourceDate": "2026-09-07",
       "sourceTitle": "Storing Bags in a Station Locker Before a Day Trip",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6155,7 +7026,10 @@
       "answer": "I would like to book a table for two.",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "I would like to ...",
       "reviewCount": 0,
@@ -6169,7 +7043,10 @@
       "answer": "They hold the table for fifteen minutes.",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6183,7 +7060,10 @@
       "answer": "Free cancellation until three hours before.",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "Free cancellation until ...",
       "reviewCount": 0,
@@ -6197,7 +7077,10 @@
       "answer": "Could I change it to six forty-five?",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Could I change it to ...?",
       "reviewCount": 0,
@@ -6211,7 +7094,10 @@
       "answer": "Could I ask for an indoor table, please?",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6225,7 +7111,10 @@
       "answer": "The medium plates feed two people.",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["onlineReading", "dailyResponse"],
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6239,7 +7128,10 @@
       "answer": "One review says to book early.",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6253,7 +7145,10 @@
       "answer": "Could I change it to eight in the morning? / Could I change the pickup to eight a.m.?",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -6267,7 +7162,10 @@
       "answer": "Does this room have free cancellation? / Is there free cancellation for this room?",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -6281,7 +7179,10 @@
       "answer": "There is no space at seven thirty.",
       "sourceDate": "2026-09-08",
       "sourceTitle": "Booking a Dinner Table After Reading Reviews",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6295,7 +7196,10 @@
       "answer": "Can I try it on?",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Can I ... it on?",
       "reviewCount": 0,
@@ -6309,7 +7213,10 @@
       "answer": "You can bring items back within fourteen days.",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6323,7 +7230,10 @@
       "answer": "Navy in large is out of stock.",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["dailyResponse", "onlineReading"],
+      "abilities": [
+        "dailyResponse",
+        "onlineReading"
+      ],
       "level": "lv1",
       "hint": "... is out of ...",
       "reviewCount": 0,
@@ -6337,7 +7247,10 @@
       "answer": "Do you have it in a large?",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "Do you have it in ...?",
       "reviewCount": 0,
@@ -6351,7 +7264,10 @@
       "answer": "It is a little tight on me.",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6365,7 +7281,10 @@
       "answer": "Sale items are final.",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["publicEnglish", "onlineReading"],
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6379,7 +7298,10 @@
       "answer": "Could I try the grey one instead?",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6393,7 +7315,10 @@
       "answer": "Do you have it in blue? / Do you have this mug in blue?",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -6407,7 +7332,10 @@
       "answer": "Are these shoes out of stock? / Is this size out of stock online?",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["onlineReading", "travelSpeaking"],
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
       "level": "lv3",
       "hint": "",
       "reviewCount": 0,
@@ -6421,7 +7349,10 @@
       "answer": "Could you say the days again, please?",
       "sourceDate": "2026-09-09",
       "sourceTitle": "Buying a Warm Jacket After the Weather Turns Cold",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
@@ -6435,12 +7366,16 @@
       "answer": "I left my phone in your car.",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "I left my ... in ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-09-10-drivers-reply-24-hours",
@@ -6449,12 +7384,16 @@
       "answer": "Drivers reply within twenty-four hours.",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-09-10-when-get-it-back",
@@ -6463,12 +7402,16 @@
       "answer": "When can I get it back?",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv1",
       "hint": "When can I ...?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-09-10-lost-and-found-office",
@@ -6477,12 +7420,16 @@
       "answer": "Which lost and found office do you mean?",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv1",
       "hint": "Which ... office do you mean?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-09-10-return-fee-fifteen",
@@ -6491,12 +7438,16 @@
       "answer": "The return fee is fifteen dollars.",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["onlineReading", "publicEnglish"],
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-09-10-say-road-name-again",
@@ -6505,12 +7456,16 @@
       "answer": "Could you say the road name again?",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv2",
       "hint": "",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-09-10-time-is-tight",
@@ -6519,12 +7474,16 @@
       "answer": "I fly out tomorrow, so time is tight.",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["dailyResponse", "travelSpeaking"],
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-09-10-left-bag-on-the-train",
@@ -6533,12 +7492,16 @@
       "answer": "I left my bag on the train. / I left my backpack on the train.",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["travelSpeaking", "publicEnglish"],
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
       "level": "lv3",
       "hint": "",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-09-10-get-suitcase-back",
@@ -6547,12 +7510,16 @@
       "answer": "When can I get my suitcase back? / When can I get it back?",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["travelSpeaking", "dailyResponse"],
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "level": "lv3",
       "hint": "",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-09-10-check-amount-before-paying",
@@ -6561,12 +7528,16 @@
       "answer": "I check the amount before I pay.",
       "sourceDate": "2026-09-10",
       "sourceTitle": "Getting Back a Phone Left in a Taxi",
-      "abilities": ["dailyResponse", "onlineReading"],
+      "abilities": [
+        "dailyResponse",
+        "onlineReading"
+      ],
       "level": "lv2",
       "hint": "",
       "reviewCount": 0,
       "nextReview": "2026-09-11",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-09-10",
+      "lastRating": "hinted"
     }
   ]
 }
