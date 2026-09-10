@@ -15,8 +15,8 @@
 - Article 的任務敘事預設採第一人稱現場視角，讓學習者能直接跟讀並套用 `I / my` 句型；公告、菜單、訂房規則、網站文字與工作人員說法保留自然語氣，mini dialogue 以內部 speaker metadata 標示說話者。不可為了第一人稱而改寫真實輸入，也不要再以固定第三人稱主角包住整段對話。
 - 自 2026-09-11 起，正式 `article.mp3` 目標時長為 1 分 45 秒到 2 分 30 秒（105–150 秒）。以約 250–290 字、28–36 個短句與任務對話構成；對話比例提高會自然拉長時長，屬預期。保留自然 A2 語速與每天正好 3 個新字。
 - Article 對話正文不顯示 `Staff:`、`Me:` 等角色前綴；以內部 speaker metadata 區分角色，完整朗讀與逐句音檔必須依角色使用不同英文聲音。
-- **角色與聲線的唯一事實來源是 `assets/voices.json`**，任何 session 都不可在腳本裡自行寫死聲線或發明角色名稱。目前定義：`narrator`＝Jenny（旁白）、`traveler`＝Aria（我）、`staff`＝Guy（服務方）、`companion`＝Brian（同行朋友，選用）。**同一篇內一個 role 只能代表一個人**；若必須出現第二個服務方，該篇不得使用 `companion`，且旁白要在切換前點名。要改聲線先改該 JSON，再同步 `.ai/daily-english-learning/SKILL.md` 的 3a.2 與本檔。
-- 自 2026-09-11 起，Article 必須聽起來像真人講話，不是課文朗讀。三條硬規則：① 全篇使用口語縮寫（`it's`、`can't`、`don't`、`there's`、`we've got`），只有引用公告 / 規則 / 按鈕原文的句子保留書面完整型；② 對話句至少佔全篇 60%，旁白最多 40%，且旁白不可逐條唸出 Mission input snippet 已有的價格、時間、規則、步驟；③ 工作人員台詞使用真實服務業口語，每篇有且只有 1 處「資訊藏在句中」的聽力挑戰句，其後緊接 repair 句與 10 字以內的簡短重述。細節以 `.ai/daily-english-learning/SKILL.md` 的 3a.1 為準。
+- **角色與聲線的唯一事實來源是 `assets/voices.json`**，任何 session 都不可在腳本裡自行寫死聲線或發明角色名稱。目前定義：`narrator`＝Jenny（旁白）、`traveler`＝Aria（我）、`staff`＝Guy（主要服務方）、`companion`＝Brian（本篇第二個說話者，選用；可以是同行朋友，也可以是第二個場景的另一位服務人員）。**同一篇內一個 role 只能代表一個人**；出現第二個服務方時必須用 `companion`，不可讓兩人共用 `staff`，旁白仍要在切換前點名。一篇最多 4 個聲線，若同時需要朋友與第二個服務方就得重構情境。要改聲線先改該 JSON，再同步 `.ai/daily-english-learning/SKILL.md` 的 3a.2 與本檔。
+- 自 2026-09-11 起，Article 必須聽起來像真人講話，不是課文朗讀。三條硬規則：① 全篇使用口語縮寫（`it's`、`can't`、`don't`、`there's`、`we've got`），只有引用公告 / 規則 / 按鈕原文的句子保留書面完整型；② 對話句至少佔全篇 60%，旁白最多 40%，且旁白不可逐條唸出 Mission input snippet 已有的價格、時間、規則、步驟；③ 工作人員台詞使用真實服務業口語，每篇有且只有 1 處「資訊藏在句中」的聽力挑戰句，其後緊接 repair 句與 10 字以內的簡短重述；④ 動詞優先選日常口語片語而非標準單動詞（`get off work` 不用 `finish work`、`drop off` 不用 `bring it to`、`pick up` 不用 `collect`），但不可為了口語而選少見俚語。細節以 `.ai/daily-english-learning/SKILL.md` 的 3a.1 為準。
 - `The Blue Receipt` 第一季已於 Episode 18 封存。除非使用者明確要求回顧或續寫小說，否則不要讀取或更新：
   - `.ai/serial-story/SERIES_BIBLE.md`
   - `.ai/serial-story/SEASON_1_OUTLINE.md`
