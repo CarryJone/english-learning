@@ -5,6 +5,18 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-10 — Day 116 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-09`，才依最新 `vocabulary/learning.json` 生成今日複習內容；今日到期舊單字 12 個。
+- 新增 `daily/2026-09-10/`，主題為 `Getting Back a Phone Left in a Taxi`；今日新字：`lost`、`contact`、`reply`。
+- 本週能力平衡補上「整合任務」這一格：先用朋友的手機讀叫車 app 的 Lost item help 頁（四個步驟、24 小時回覆、$15 歸還費、失物招領處 9–18 點），再照步驟回報並與司機通話；司機今晚無法送回造成一次資訊改變，改約失物招領處。
+- 今日目標語塊：`I left my ... in ...`（開口）、`lost and found`（資訊判讀）、`get it back`（處理後續）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，前兩者各有一題跨情境轉移（背包忘在火車上、行李箱送錯飯店）。
+- 能力標記以 `onlineReading` + `travelSpeaking` 為 primary，`dailyResponse`、`publicEnglish` 為次要；`profile.json.currentModule` 由 `Hotels, Food & Shopping` 轉到 `Problems & Repair`（M3）。
+- 今日 12 個到期字集中在舊主題（飯店冷氣 noise / maintenance / fan、單車 pedal / brake / helmet、購物 stock / tight / sale），與計程車失物情境不合。依 SKILL「不要為了故事連貫硬塞」只自然融入 `amount` 與 `tight`（時間很趕的用法），其餘 10 個仍照常進 Active Recall 與 Review Words。
+- Speaking Bridge 取 `review`、`book`、`cancel`（2 天前，尚未入選過）與 `helmet`（7 天前，明天離開 2–7 天視窗）。九個候選 reviewCount 同為 1，沿用 Day 115 的做法：同層級優先選沒練過的字，再補即將離開視窗的字。
+- 音檔沿用三聲線與句間停頓試行（同聲線 0.05 秒、換人 0.12 秒、階段切換 0.25 秒）；主音檔 127.95 秒、35 句 / 281 字、每句最多 10 字。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-10` 84 checks / 0 warnings / 0 errors；本機 HTTP server 上 375px 無橫向溢位、console 0 errors、`article.mp3` 與 `s01.mp3`–`s35.mp3` 均回 200、單字 / 複習字 / 片語彈窗查詢全部命中、首頁最新一筆為 Day 116。
+
 ## 2026-09-09 — Day 115 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-08`，才依最新 `vocabulary/learning.json` 生成今日複習內容；今日到期舊單字 12 個（9 個小說時期 rc=4 舊字加上昨日 3 個新字）。
@@ -316,16 +328,6 @@
 - 更新 `daily/2026-07-07/index.html`，每題 Context Recall 加入 `data-sentence-id`、自評按鈕、進度與同步入口。
 - 更新 `.ai/daily-english-learning/SKILL.md` 與 `LEARNING_SYSTEM_ROADMAP.md`，將句子 SRS 納入未來正式教材流程。
 - 驗證：JS 語法、JSON parse、HTML parser、排程函式、HTTP 200、in-app browser 自評進度、未評完同步阻擋、390px 手機寬度無水平 overflow。未實際執行 GitHub 寫入。
-
----
-
-## 2026-07-07 — Context Recall 情境提取初版
-
-- 更新 `daily/2026-07-07/index.html`，在 Speaking Bridge 後、Learning Tips 前新增 `Context Recall` 區塊。
-- Day 72 補入 8 題情境中翻英，分為 Lv.1 有提示、Lv.2 無提示、Lv.3 自由應答。
-- 更新 `.ai/daily-english-learning/SKILL.md`，未來正式教材每篇至少產出 6 題，建議 8–10 題 Context Recall。
-- 更新 `LEARNING_SYSTEM_ROADMAP.md`，新增 P1 情境提取訓練完成項。
-- 驗證：HTML parser、Context Recall 題數 / 答案數檢查、template marker 檢查、in-app browser 翻牌互動、390px 手機寬度無水平 overflow。
 
 ---
 

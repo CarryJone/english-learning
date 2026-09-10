@@ -4,6 +4,16 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-07-07 — Context Recall 情境提取初版
+
+- 更新 `daily/2026-07-07/index.html`，在 Speaking Bridge 後、Learning Tips 前新增 `Context Recall` 區塊。
+- Day 72 補入 8 題情境中翻英，分為 Lv.1 有提示、Lv.2 無提示、Lv.3 自由應答。
+- 更新 `.ai/daily-english-learning/SKILL.md`，未來正式教材每篇至少產出 6 題，建議 8–10 題 Context Recall。
+- 更新 `LEARNING_SYSTEM_ROADMAP.md`，新增 P1 情境提取訓練完成項。
+- 驗證：HTML parser、Context Recall 題數 / 答案數檢查、template marker 檢查、in-app browser 翻牌互動、390px 手機寬度無水平 overflow。
+
+---
+
 ## 2026-07-07 — 能力地圖 P1 初版
 
 - 新增 `ability_map.json`，定義 `travelSpeaking`、`publicEnglish`、`onlineReading`、`dailyResponse` 四條能力主線與最近 session。
