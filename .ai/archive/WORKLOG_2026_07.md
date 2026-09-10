@@ -4,6 +4,16 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-07-07 — 句子 / 情境 SRS MVP
+
+- 新增 `vocabulary/sentences.json`，以 Day 72 的 8 題 Context Recall 作為句子 SRS 初始資料。
+- 新增 `assets/sentence-srs.js`，沿用 GitHub Contents API 與本機 `github_pat`，支援 `remembered` / `hinted` / `forgot` 三種自評更新規則。
+- 更新 `daily/2026-07-07/index.html`，每題 Context Recall 加入 `data-sentence-id`、自評按鈕、進度與同步入口。
+- 更新 `.ai/daily-english-learning/SKILL.md` 與 `LEARNING_SYSTEM_ROADMAP.md`，將句子 SRS 納入未來正式教材流程。
+- 驗證：JS 語法、JSON parse、HTML parser、排程函式、HTTP 200、in-app browser 自評進度、未評完同步阻擋、390px 手機寬度無水平 overflow。未實際執行 GitHub 寫入。
+
+---
+
 ## 2026-07-07 — Context Recall 情境提取初版
 
 - 更新 `daily/2026-07-07/index.html`，在 Speaking Bridge 後、Learning Tips 前新增 `Context Recall` 區塊。

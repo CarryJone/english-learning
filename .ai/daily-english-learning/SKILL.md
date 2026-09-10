@@ -76,8 +76,9 @@ mkdir -p ./daily/$TODAY
 - **主動提取**：每篇至少 8 題 Context Recall，其中至少 4 題讓學習者從中文情境自行產出英文；至少 2 題是沒有提示的跨情境轉移。
 - **任務反應**：每篇必須有 Role-play，至少 4 個回合，包含一次資訊改變、聽不懂、需要澄清或需要替代方案的分支。
 - **SRS 邊界**：Active Recall Quiz 只處理到期舊單字，Speaking Bridge 只使用 2–7 天前單字；目前不新增獨立 Collocation SRS，語塊提取沿用 Role-play、Context Recall 與句子 SRS。
+- **自然口語優先（2026-09-11 起）**：Article 必須聽起來像真人在講話，不是課文朗讀。三條硬規則：① 全篇一律使用口語縮寫（`it's`、`can't`、`don't`、`I'll`、`there's`、`we've got`）；② 對話句（`traveler` + `staff`）至少佔全篇句數 60%，旁白最多 40%；③ 工作人員台詞使用真實服務業口語，不是逐條唸規則。細節與例外見 3a.1。
 - **難度控制**：保持 A2，句子短、字彙高頻、自然口語；寧可更簡單，也不要為了題材或單字變難。
-- **兩分鐘三聲線主音檔**：自 2026-08-25 起，`article.mp3` 的正式目標為 1 分 45 秒到 2 分 15 秒。維持自然 A2 語速；旁白、旅客與工作人員使用三個不同英文聲音，且 Article 正文不顯示 `Staff:`、`Me:` 等角色前綴。
+- **主音檔與聲線**：自 2026-09-11 起，`article.mp3` 的正式範圍為 **1 分 45 秒到 2 分 30 秒（105–150 秒）**；對話變多會自然拉長時長，這是預期的。維持自然 A2 語速。角色與聲線的唯一事實來源是 `assets/voices.json`，不可在腳本裡自行寫死別的聲線；詳見 3a.2。Article 正文不顯示 `Staff:`、`Me:` 等角色前綴。
 - **必要產物**：必須產出完整 HTML、`article.mp3`、`s01.mp3` 到 `sNN.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`。
 
 ---
@@ -96,7 +97,7 @@ mkdir -p ./daily/$TODAY
 - Article 區塊改用「第一人稱任務英文素材」，可由旅客的現場反應、直接對話、公告加說明、搜尋結果加使用者反應組成；任務骨架預設用 `I / my`，並優先使用現在式或即將採取的行動，讓學習者可直接跟讀與套用。
 - 公告、菜單、網站、app、訂房規則、時刻表及 Staff 的句子依真實情境保留自然的祈使句、第二人稱或其他必要人稱；不要把全文機械式改成 `I`，也不要再以固定第三人稱主角包住 mini dialogue。
 - mini dialogue 在正文只顯示自然台詞，不顯示 `Staff:`、`Me:`、`Officer:` 等角色前綴；每個 `.sent` 以 `data-speaker="narrator"`、`data-speaker="traveler"` 或 `data-speaker="staff"` 保存角色，旁白使用 `narrator` 聲線。Role-play 可用中文「店員／你」提示回合。
-- 英文素材目標 250–290 字、28–36 句，讓目前 `RATE = "-10%"` 的 `article.mp3` 落在 1 分 45 秒到 2 分 15 秒；每句最多 12 個字，避免複雜子句與被動語態。若素材是公告或搜尋結果，可保留短標題、按鈕、價格、時間與規則原文。
+- 英文素材目標 250–290 字、28–36 句，讓目前 `RATE = "-10%"` 的 `article.mp3` 落在 1 分 45 秒到 2 分 30 秒；每句最多 12 個字，避免複雜子句與被動語態（唯一例外見 3a.1 的聽力挑戰句）。若素材是公告或搜尋結果，可保留短標題、按鈕、價格、時間與規則原文。
 - 文章切成二到三個容易跟讀的同一任務階段：① 到場與讀取資訊，② 開口確認與採取行動，③ 資訊改變、澄清或替代方案。對話優先使用旅途中可直接套用的日常口語，不拼接無關小故事。
 - 用控制式重複鞏固 2–3 個目標語塊：在不同回合或資訊變化中自然重現 2–4 次，但不可逐句原樣灌水。今日新單字仍維持正好 3 個；篇幅增加不代表增加生詞量或文法難度。
 - 每篇至少出現：
@@ -109,6 +110,71 @@ mkdir -p ./daily/$TODAY
 - 難度標準：至少 90% 使用 A1–A2 高頻字；今日 3 個新單字與 2–3 個複習字以外，不刻意加入低回報生詞。
 - **融入複習單字**：從 3e 的到期複習單字中挑選 2–3 個，自然放入任務素材，並用 `review-word` class 標記；不要為了故事連貫硬塞。
 - 在腦中將英文素材分成個別句子，按順序編號 S1、S2、S3，記下純文字版本，供 HTML 與音檔使用。
+
+#### 3a.1 自然口語規則（2026-09-11 起）
+
+這一節的目的是讓 Article 從「學習課文」變回「真人講話」。三條規則都必須同時滿足。
+
+**A. 縮寫（強制）**
+
+- `traveler` 與 `staff` 的每一句台詞，只要語法允許就用縮寫：`I'm`、`it's`、`that's`、`don't`、`doesn't`、`can't`、`isn't`、`won't`、`I'll`、`we'll`、`there's`、`here's`、`we've got`、`I've got`、`let's`、`till`。
+- `narrator` 同樣使用縮寫，**唯一例外**是直接引用公告、規則、按鈕、標籤原文的句子——那些保留書面完整型，因為真實告示本來就這樣寫。
+- 只有在需要語氣強調時才刻意寫完整型（例如 `I did not order this.`），每篇最多 1 處，並且要是刻意的。
+- 理由：學習者回報的聽力卡點主要在縮讀。教材若全用完整型，等於完全沒有訓練到最常聽漏的部分；縮寫不增加資訊量與生詞量，只改變表面形式。
+
+**B. 對話比例（強制）**
+
+- 對話句（`data-speaker` 為 `traveler` 或 `staff`）至少佔全篇句數 **60%**，建議 60–70%；旁白最多 40%。
+- 旁白只能用於三種功能：① 開場一到兩句交代情境與任務動機；② 階段切換一句；③ 結尾一句收束任務結果。
+- **禁止用旁白逐條唸出 Mission input snippet 已經呈現的資訊。** 價格、時間、規則、步驟一律改由對話帶出：旅客唸出來確認，或工作人員講出來。
+  - 反例：`The page says drivers reply within twenty-four hours.`
+  - 正例（旅客確認）：`It says drivers reply within 24 hours, right?`
+  - 正例（工作人員）：`The driver's got 24 hours to get back to you.`
+- 禁止連續 4 句以上的 `I + 動詞` 旁白流水帳。
+- 理由：旁白句在真實生活中永遠不會說出口。跟讀與背誦的時間應該花在可以拿去用的句子上。
+
+**C. 工作人員語域（強制）**
+
+- `staff` 台詞要像真實服務業口語，優先使用 `there's` / `we've got` / `Let me check` / `Let me see` / `Sure` / `Of course` / `No problem` / `Sorry about that` / `Actually` / `So` / `Yeah`。
+  - 反例：`Grey and green are in stock in large.`
+  - 正例：`We've got grey and green in a large.`
+  - 反例：`I found a black phone on the back seat.`
+  - 正例：`Yeah, there's a black phone in the back.`
+- 每篇必須有 **正好 1 處聽力挑戰句**：把關鍵資訊藏在句中而不是單獨成句，長度可放寬到 14 字。
+- 這句挑戰句之後**必須緊接**：① 旅客的 repair 句，② 工作人員用 **10 字以內**的簡短重述。這樣 repair sentence 才真的有存在必要，學習者也不會卡死。
+  - 例：
+    - staff：`Indoor's not free till seven, but six forty-five works if you want.`（14 字，挑戰）
+    - traveler：`Sorry, what time did you say?`（repair）
+    - staff：`Six forty-five, or seven for indoor.`（8 字，簡短重述）
+- 仍維持 A2 可懂：不使用俚語、不使用少見片語動詞、不增加生詞。挑戰只來自語速與結構，不來自字彙。
+
+**與難度的關係**
+
+A 與 C 會讓聽力表面難度上升，這是刻意的：學習者原本就聽不懂真實語速下的縮讀與服務業口語。但難度只能來自「真實形式」，不能來自資訊密度或生詞量——今日新字仍是正好 3 個，句子仍以短句為主，挑戰句每篇只有一句且後面一定有簡短重述。
+
+---
+
+#### 3a.2 角色與聲線（唯一事實來源：`assets/voices.json`）
+
+**產出音檔前必須先讀 `assets/voices.json`，並以該檔的 `roles` 為準。** 不可在 TTS 腳本裡自行寫死聲線，也不可自行新增角色名稱。
+
+| `data-speaker` | 角色 | 聲線 | 用途 | 必用 |
+|---|---|---|---|---|
+| `narrator` | 旁白 | `en-US-JennyNeural`（女） | 場景、動作、心裡話；不是說出口的台詞 | 是 |
+| `traveler` | 我（旅客） | `en-US-AriaNeural`（女） | 學習者要開口說的每一句 | 是 |
+| `staff` | 對方（服務方） | `en-US-GuyNeural`（男） | 站務員、店員、司機、櫃檯、客服等任務中要應對的人 | 是 |
+| `companion` | 同行者（朋友） | `en-US-BrianNeural`（男） | 與我同一邊、一起查資料或討論的人 | 否 |
+
+**硬規則**
+
+- **同一篇教材內，一個 role 只能代表一個人。** 不可用同一個 `staff` 同時演「朋友」和「司機」——那會讓兩個人共用一個聲音，學習者分不出誰在講話。
+- 一篇最多 4 個聲線。
+- 若某篇任務真的必須出現第二個服務方（例如先問飯店櫃檯，再打電話給司機），該篇**不得同時使用 `companion`**，並且旁白必須在切換前明確點名（例如 `I call the driver.`），讓學習者知道換人了。
+- `companion` 的用途是把「旁白唸資訊」轉成對話（見 3a.1 規則 B）。研究、查資料、討論選項的場景優先讓 `companion` 出場；不需要時就不要硬加角色。
+- 要更換聲線或新增角色：先改 `assets/voices.json`，再同步本表與 `AGENTS.md`，最後才改腳本。
+- 產出的 `index.html` 的 `<head>` 必須有 `<meta name="voice-map" content="role=voice;...">`，只列本篇用到的角色，內容與 `assets/voices.json` 一致。驗證腳本會交叉比對，用錯聲線會直接報錯。
+
+---
 
 #### 3b. 學習單字（3 個）
 - 不能與 learning.json 中已有的重複
@@ -243,6 +309,8 @@ mkdir -p ./daily/$TODAY
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 角色/聲線宣告：內容必須與 assets/voices.json 完全一致，只列本篇實際用到的角色。驗證腳本會交叉比對。 -->
+  <meta name="voice-map" content="narrator=en-US-JennyNeural;traveler=en-US-AriaNeural;staff=en-US-GuyNeural" />
   <title>Daily English · [日期]</title>
   <style>
     :root {
@@ -578,7 +646,7 @@ mkdir -p ./daily/$TODAY
         - 重要片語：phrase-chunk（綠色）
         - data-idx 從 1 開始連續編號（跨段落不重設）
         - data-text 必須是純文字，不含任何 HTML tag
-        - 對話正文不顯示 Staff: / Me:；用 data-speaker 提供三聲線生成所需角色
+        - 對話正文不顯示 Staff: / Me:；用 data-speaker 提供各角色聲線生成所需資訊（角色見 assets/voices.json）
       -->
       [文章段落 HTML]
     </div>
@@ -1239,25 +1307,29 @@ mkdir -p ./daily/$TODAY
 ### Step 5：產生語音檔
 
 用 edge-tts 產生 MP3。需要產生兩種檔案：
-1. `article.mp3`：整篇文章三聲線完整朗讀；自 2026-08-25 起必須落在 1 分 45 秒到 2 分 15 秒
+1. `article.mp3`：整篇文章多聲線完整朗讀；自 2026-09-11 起必須落在 1 分 45 秒到 2 分 30 秒（105–150 秒）
 2. `s01.mp3`, `s02.mp3`, ...：每個句子依 speaker 使用對應聲音個別朗讀（對應 Step 4 中 data-idx 的編號）
 
-時長必須由實際生成的檔案驗收，不可只用字數推估。保留 `RATE = "-10%"`；若不足 1 分 45 秒，優先補足同一任務中的資訊確認、repair 與替代方案內容。若超過 2 分 15 秒，先刪除重複或低回報句子，不刪任務成功所需資訊。
+時長必須由實際生成的檔案驗收，不可只用字數推估。保留 `RATE = "-10%"`；若不足 1 分 45 秒，優先補足同一任務中的資訊確認、repair 與替代方案內容。若超過 2 分 30 秒，先刪除重複或低回報句子，不刪任務成功所需資訊、也不刪社交潤滑句。
 
 **SENTENCES 陣列**：將文章每個句子依序列出純文字（順序必須與 HTML 中 data-idx 完全一致）：
 
 ```python
-import asyncio, subprocess, edge_tts
+import asyncio, json, subprocess, edge_tts
+from pathlib import Path
 
 FOLDER = "./daily/[TODAY 替換成今天日期]"
 RATE = "-10%"
+# 聲線一律從 assets/voices.json 讀取，不可在此寫死。
 VOICES = {
-    "narrator": "en-US-JennyNeural",
-    "traveler": "en-US-AriaNeural",
-    "staff": "en-US-GuyNeural",
+    role: cfg["voice"]
+    for role, cfg in json.loads(
+        Path("assets/voices.json").read_text(encoding="utf-8")
+    )["roles"].items()
 }
 
 SENTENCES = [
+    # speaker 只能是 assets/voices.json 的 roles：narrator / traveler / staff / companion
     {"text": "[S1 純文字，不含 Staff: / Me:]", "speaker": "narrator"},
     {"text": "[S2 純文字，不含 Staff: / Me:]", "speaker": "traveler"},
     {"text": "[S3 純文字]", "speaker": "staff"},
@@ -1275,7 +1347,7 @@ async def main():
         await gen(item["text"], item["speaker"], path)
         paths.append(path)
 
-    # 將已套用三種聲線的逐句音檔依序合成完整文章。
+    # 將已套用各角色聲線的逐句音檔依序合成完整文章。
     command = ["ffmpeg", "-y"]
     for path in paths:
         command.extend(["-i", path])
@@ -1289,6 +1361,12 @@ async def main():
 
 asyncio.run(main())
 ```
+
+**句間停頓（2026-09-10 現行做法，尚未定案）**
+
+自 Day 110 起，合成 `article.mp3` 時會在句與句之間插入靜音：同一聲線約 **0.05 秒**、換人約 **0.12 秒**、階段切換約 **0.25 秒**；逐句 `sNN.mp3` 不加任何額外停頓。做法是用 `ffmpeg -f lavfi -i anullsrc` 產生對應長度的靜音檔，插進 concat 的輸入序列。
+
+⚠️ 這組參數是試行值，尚未經使用者確認定案。**在使用者拍板前，後續 session 請沿用相同數值，不要自行調整**，以免每天的聽感不一致。對話比例提高後換人次數會明顯增加，這也是主音檔變長的原因之一。
 
 將上方程式碼寫入 `/tmp/tts_today.py`，然後執行：
 ```bash
@@ -1408,6 +1486,10 @@ python3 /tmp/tts_today.py
 先做人工內容驗收；下列項目目前不一定由 `validate_daily.py` 自動判定：
 - 今日任務確實屬於出國旅遊的行前準備或旅途中情境；Article 的任務骨架採第一人稱現場視角，沒有再用固定第三人稱角色包住學習者台詞，真實英文輸入則保留自然人稱與語氣。
 - Article 已分成到場讀資訊、開口行動、資訊改變 / repair 三段；增加的篇幅仍維持 A2、正好 3 個新字，並以目標語塊的控制式重複為主，不是填充句或額外生詞。
+- 全篇已使用口語縮寫；只有直接引用公告 / 規則 / 按鈕原文的句子保留書面完整型。
+- 對話句佔全篇句數 60% 以上，旁白 40% 以下，且旁白沒有逐條唸出 Mission input snippet 已有的資訊。
+- `staff` 台詞使用真實服務業口語；全篇有且只有 1 處「資訊藏在句中」的聽力挑戰句，其後緊接 repair 句與 10 字以內的簡短重述。
+- 每個 `data-speaker` 在本篇只代表一個人；沒有出現「同一個聲音演兩個角色」。聲線全部取自 `assets/voices.json`。
 - 已選 2–3 個今日目標語塊，且至少 1 個支援開口、至少 1 個支援資訊判讀 / 搜尋。
 - 每個目標語塊都已出現在 Article、Key Phrases、Role-play 的 `You` 回合與 Context Recall。
 - 至少 1 個目標語塊已換到不同人物、地點或目的做跨情境提取。
@@ -1425,9 +1507,10 @@ python3 scripts/validate_daily.py [日期]
 - 必要 HTML 區塊是否存在。
 - 2026-07-15 起的新教材是否包含 Mission 與 Role-play 區塊；舊小說頁面仍依歷史格式驗證。
 - `article.mp3` 與 `sNN.mp3` 是否存在且非空。
-- 2026-08-04 的三分鐘教材維持 165–195 秒；自 2026-08-05 起，`article.mp3` 的實際時長必須為 105–135 秒（1:45–2:15）。
+- 2026-08-04 的三分鐘教材維持 165–195 秒；自 2026-08-05 起，`article.mp3` 的實際時長必須為 105–150 秒（1:45–2:30）。
 - 自 2026-08-25 起，每個 Article 句子都有 `narrator`、`traveler` 或 `staff` speaker metadata，且當日正式教材至少同時使用三種聲線；正文不顯示 `Staff:`、`Me:` 前綴。
 - 句子 `data-idx` 是否從 1 連續編號，並與逐句音檔一致。
+- 頁面的 `voice-map` meta 是否涵蓋所有使用到的角色，且聲線與 `assets/voices.json` 完全一致。
 - Context Recall 題目是否有 `data-sentence-id`、自評按鈕，並與 `vocabulary/sentences.json` 對齊。
 - `ability_map.json` 是否有當日 session。
 - 今日新字是否存在於 `vocabulary/learning.json`，且 Speaking Bridge 沒有使用今日新字。
@@ -1458,7 +1541,7 @@ commit message 格式：`Day [累計天數]：[文章標題]`
 📁 路徑：./daily/[日期]/
 🌐 index.html  - 今日學習頁面（含文章、單字、片語、測驗）
 🔊 article.mp3 - 語音朗讀
-⏱️ 主音檔時長：[實際分鐘與秒數；正式目標 1:45–2:15]
+⏱️ 主音檔時長：[實際分鐘與秒數；正式範圍 1:45–2:30]
 ☁️  GitHub     - https://github.com/CarryJone/english-learning
 
 🎯 今日任務：[任務名稱]

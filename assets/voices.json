@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-10",
+  "note": "每日教材 article.mp3 與 sNN.mp3 的角色／聲線唯一事實來源。要新增角色或更換聲線，必須先改本檔，再同步 .ai/daily-english-learning/SKILL.md 的角色表與 AGENTS.md。任何 session 都不可在腳本裡自行寫死別的聲線。",
+  "rate": "-10%",
+  "maxRolesPerLesson": 4,
+  "rules": [
+    "同一篇教材內，一個 role 只能代表一個人；不可用同一個 role 演兩個不同角色。",
+    "narrator、traveler、staff 為必用；companion 為選用。",
+    "若某篇任務必須出現第二個服務方（例如先問櫃檯再打電話給司機），該篇不得使用 companion，且旁白必須在切換前明確點名。",
+    "Article 正文不顯示 Staff:、Me: 等角色前綴；角色只存在 data-speaker metadata 與音檔聲線。"
+  ],
+  "roles": {
+    "narrator": {
+      "voice": "en-US-JennyNeural",
+      "gender": "female",
+      "label": "旁白",
+      "use": "場景、動作、心裡話；不是說出口的台詞",
+      "required": true
+    },
+    "traveler": {
+      "voice": "en-US-AriaNeural",
+      "gender": "female",
+      "label": "我（旅客）",
+      "use": "學習者要開口說的每一句",
+      "required": true
+    },
+    "staff": {
+      "voice": "en-US-GuyNeural",
+      "gender": "male",
+      "label": "對方（服務方）",
+      "use": "站務員、店員、司機、櫃檯、客服等任務中要應對的人",
+      "required": true
+    },
+    "companion": {
+      "voice": "en-US-BrianNeural",
+      "gender": "male",
+      "label": "同行者（朋友）",
+      "use": "與我同一邊、一起查資料或討論的人",
+      "required": false
+    }
+  }
+}

@@ -42,10 +42,14 @@ MISSION_MODE_START_DATE = "2026-07-15"
 THREE_MINUTE_AUDIO_START_DATE = "2026-08-04"
 TWO_MINUTE_AUDIO_START_DATE = "2026-08-05"
 THREE_VOICE_START_DATE = "2026-08-25"
+NATURAL_SPEECH_START_DATE = "2026-09-11"
+MIN_DIALOGUE_RATIO = 0.60
+MIN_CONTRACTION_RATIO = 0.15
+MAX_NARRATOR_RUN = 3
 THREE_MINUTE_AUDIO_MIN_SECONDS = 165
 THREE_MINUTE_AUDIO_MAX_SECONDS = 195
 TWO_MINUTE_AUDIO_MIN_SECONDS = 105
-TWO_MINUTE_AUDIO_MAX_SECONDS = 135
+TWO_MINUTE_AUDIO_MAX_SECONDS = 150
 
 MPEG1_LAYER3_BITRATES_KBPS = [
     0,
@@ -111,6 +115,7 @@ class ParsedDailyPage:
     rq_items: int = 0
     roleplay_turns: int = 0
     script_srcs: list[str] = field(default_factory=list)
+    voice_map: str = ""
 
 
 class DailyHTMLParser(HTMLParser):
@@ -130,6 +135,9 @@ class DailyHTMLParser(HTMLParser):
 
         if tag == "script" and attrs.get("src"):
             self.page.script_srcs.append(attrs["src"])
+
+        if tag == "meta" and attrs.get("name") == "voice-map":
+            self.page.voice_map = attrs.get("content", "").strip()
 
         if "sent" in classes and attrs.get("data-idx"):
             try:
@@ -325,6 +333,30 @@ def validate_scripts(root: Path, page: ParsedDailyPage, validation: Validation) 
         )
 
 
+def load_voice_roles(root: Path, validation: Validation) -> set[str] | None:
+    """assets/voices.json 是角色/聲線的唯一事實來源。"""
+    path = root / "assets" / "voices.json"
+    if not path.exists():
+        validation.errors.append("missing assets/voices.json (role/voice source of truth)")
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        validation.errors.append(f"assets/voices.json is not valid JSON: {exc}")
+        return None
+    roles = data.get("roles", {})
+    if not roles:
+        validation.errors.append("assets/voices.json declares no roles")
+        return None
+    voices = [cfg.get("voice") for cfg in roles.values()]
+    validation.check(
+        len(set(voices)) == len(voices) and all(voices),
+        f"voice map declares {len(roles)} roles with distinct voices",
+        f"assets/voices.json roles must each have a distinct voice; got {voices}",
+    )
+    return set(roles)
+
+
 def validate_audio(day_dir: Path, date: str, page: ParsedDailyPage, validation: Validation) -> None:
     article = day_dir / "article.mp3"
     article_ready = article.exists() and article.stat().st_size > 0
@@ -365,7 +397,11 @@ def validate_audio(day_dir: Path, date: str, page: ParsedDailyPage, validation: 
         f"sentence indices are not continuous: {indices[:10]}...",
     )
     if date >= TWO_MINUTE_AUDIO_START_DATE:
+        root = day_dir.parents[1]
         allowed_speakers = {"narrator", "traveler", "staff"}
+        if date >= NATURAL_SPEECH_START_DATE:
+            # 角色以 assets/voices.json 為唯一事實來源，避免各 session 自行發明角色或聲線。
+            allowed_speakers = load_voice_roles(root, validation) or allowed_speakers
         required_speakers = {"traveler", "staff"}
         if date >= THREE_VOICE_START_DATE:
             required_speakers.add("narrator")
@@ -413,6 +449,112 @@ def validate_audio(day_dir: Path, date: str, page: ParsedDailyPage, validation: 
         extra_audio == expected_names,
         "sentence mp3 file set matches sentence indices",
         f"sentence mp3 set mismatch: expected {expected_names}, found {extra_audio}",
+    )
+
+
+# 縮寫只認不會與所有格混淆的形式，避免把 friend's 誤判為 friend is。
+CONTRACTION_PATTERN = re.compile(
+    r"(?:n't\b|'re\b|'ll\b|'ve\b|'m\b|'d\b"
+    r"|\b(?:it|that|there|here|what|let|he|she|who|how)'s\b)",
+    flags=re.IGNORECASE,
+)
+
+
+def validate_natural_speech(date: str, page: ParsedDailyPage, validation: Validation) -> None:
+    """Article 必須像真人講話：對話比例、口語縮寫、旁白流水帳長度。"""
+    if date < NATURAL_SPEECH_START_DATE:
+        return
+
+    speakers = page.sentence_speakers
+    texts = page.sentence_texts
+    if not speakers or not texts:
+        return
+
+    # 除了旁白，其餘角色（traveler / staff / companion…）都算說出口的對話。
+    dialogue = sum(1 for speaker in speakers if speaker and speaker != "narrator")
+    ratio = dialogue / len(speakers)
+    validation.check(
+        ratio >= MIN_DIALOGUE_RATIO,
+        f"dialogue ratio is {ratio:.0%} ({dialogue}/{len(speakers)} sentences)",
+        (
+            f"dialogue ratio is {ratio:.0%} ({dialogue}/{len(speakers)}); "
+            f"expected at least {MIN_DIALOGUE_RATIO:.0%} spoken lines"
+        ),
+    )
+
+    with_contractions = [text for text in texts if CONTRACTION_PATTERN.search(text)]
+    c_ratio = len(with_contractions) / len(texts)
+    validation.check(
+        c_ratio >= MIN_CONTRACTION_RATIO,
+        f"contractions appear in {c_ratio:.0%} of sentences ({len(with_contractions)}/{len(texts)})",
+        (
+            f"only {c_ratio:.0%} of sentences use contractions ({len(with_contractions)}/{len(texts)}); "
+            f"expected at least {MIN_CONTRACTION_RATIO:.0%} — write it's / can't / don't / there's"
+        ),
+    )
+
+    longest_run = 0
+    run = 0
+    for speaker in speakers:
+        run = run + 1 if speaker == "narrator" else 0
+        longest_run = max(longest_run, run)
+    validation.warn(
+        longest_run <= MAX_NARRATOR_RUN,
+        f"article has {longest_run} narrator sentences in a row; "
+        f"keep runs to {MAX_NARRATOR_RUN} or fewer and let dialogue carry the information",
+    )
+
+
+def validate_voice_map(root: Path, date: str, page: ParsedDailyPage, validation: Validation) -> None:
+    """頁面宣告的角色/聲線必須與 assets/voices.json 完全一致。"""
+    if date < NATURAL_SPEECH_START_DATE:
+        return
+
+    path = root / "assets" / "voices.json"
+    if not path.exists():
+        return
+    declared = json.loads(path.read_text(encoding="utf-8")).get("roles", {})
+
+    validation.check(
+        bool(page.voice_map),
+        "page declares a voice-map meta tag",
+        'missing <meta name="voice-map" content="role=voice;..."> in the page head',
+    )
+    if not page.voice_map:
+        return
+
+    used = {speaker for speaker in page.sentence_speakers if speaker}
+    pairs: dict[str, str] = {}
+    for chunk in page.voice_map.split(";"):
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        role, _, voice = chunk.partition("=")
+        pairs[role.strip()] = voice.strip()
+
+    missing = sorted(used - set(pairs))
+    validation.check(
+        not missing,
+        f"voice-map covers every speaker used ({len(used)} roles)",
+        f"voice-map does not declare the roles used in the article: {missing}",
+    )
+
+    mismatched = [
+        f"{role}={voice} (expected {declared[role]['voice']})"
+        for role, voice in pairs.items()
+        if role in declared and voice != declared[role].get("voice")
+    ]
+    validation.check(
+        not mismatched,
+        "voice-map matches assets/voices.json",
+        f"voice-map disagrees with assets/voices.json: {mismatched}",
+    )
+
+    unknown = sorted(set(pairs) - set(declared))
+    validation.check(
+        not unknown,
+        "voice-map declares no unknown roles",
+        f"voice-map declares roles missing from assets/voices.json: {unknown}",
     )
 
 
@@ -602,6 +744,8 @@ def main() -> int:
     validate_required_sections(page, args.date, validation)
     validate_scripts(root, page, validation)
     validate_audio(day_dir, args.date, page, validation)
+    validate_natural_speech(args.date, page, validation)
+    validate_voice_map(root, args.date, page, validation)
     validate_context_sentences(root, args.date, page, validation)
     validate_ability_map(root, args.date, page, validation)
     validate_vocabulary(root, args.date, page, validation)

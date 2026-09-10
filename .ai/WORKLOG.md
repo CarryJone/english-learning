@@ -5,6 +5,22 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-10 — 教材口語自然度規則與角色聲線契約
+
+- 使用者要求評估「產出的文章是否為日常對話會用到的英文，還是比較像學習課文」。實測最近六天 206 句：旁白佔 57%（其中 43 句只是在唸畫面上的字）、含縮寫的句子 0%、34 個問句中 `Could I/you` 佔 35%。判定為偏學習課文。
+- 使用者確認 A（縮寫）、B（對話比例）、C（工作人員語域）三項全做，規則寫入 `.ai/daily-english-learning/SKILL.md` 新增的 3a.1，並同步 Step 2.5、Step 7b 與 `AGENTS.md`；2026-09-11 起生效。
+- `scripts/validate_daily.py` 新增 `validate_natural_speech()`：對話句 <60% 與含縮寫句 <15% 直接報錯，旁白連續 >3 句發警告。以 `NATURAL_SPEECH_START_DATE = 2026-09-11` 為閘門，已實測舊頁面不受影響。
+- 在對話中產出兩版示範文章供使用者審閱，未寫入任何 `daily/` 頁面。第一版仍有殘留課文感：`as soon as possible` 被硬塞進司機台詞、為了塞複習字 `amount` 造出假動作、0 個短回應與 0 個 back-channel。第二版修掉後短語單位 7→12、社交潤滑句 3→9、書面語殘留 2→0。
+- 發現並記錄一個規則漏洞：部分單字天生屬書面語域（例如 `reply`），放在螢幕文字與旅客問句自然，放進服務人員嘴裡就假。修法是換位置，不是拿掉該字。
+- **使用者指出示範文章中朋友與司機共用 `staff`＝Guy，同一個聲音演兩個人。** 確認屬實，是引入朋友角色時造成的缺陷。
+- 新增 `assets/voices.json` 作為角色／聲線唯一事實來源，新增第四角色 `companion`（同行朋友）＝`en-US-BrianNeural`；使用者聽過 Brian / Roger / Eric / Emma 四個候選後選定 Brian。
+- 防止後續 session 亂用的三層機制：① `assets/voices.json` 單一來源，SKILL 的 TTS 範例改為從該檔讀取、不再寫死；② 驗證腳本從該檔讀角色白名單，自創角色名稱直接報錯；③ 頁面 `<head>` 必須宣告 `<meta name="voice-map">`，驗證腳本與 JSON 逐項交叉比對。已實測可擋下「漏宣告角色」「聲線用錯」「缺 meta」三種錯誤。
+- 使用者同意時長放寬，`article.mp3` 正式範圍由 105–135 秒改為 **105–150 秒**，SKILL、`AGENTS.md`、驗證腳本三處同步。
+- 順帶修掉自己引入的 bug：對話比例原本只計 `traveler` + `staff`，`companion` 未計入，導致比例由 83% 誤報為 69%。
+- 把 Day 110 起實際在用的句間停頓（同聲線 0.05 / 換人 0.12 / 階段切換 0.25 秒）記入 SKILL Step 5，並標明尚未定案、後續 session 不得自行調整，避免規格與實際產出脫節。
+- 發現既有問題（非本次造成）：驗證腳本檢查「今日新字 `nextReview` = 建立日 +1」，但複習後 SRS 會把日期往後推，因此舊頁面隔天以後重跑必定失敗。已記入 `PROJECT_STATE.md` 已知問題，未處理。
+- 驗證：Day 115、116 於規則變更後仍 PASS；`assets/voices.json` JSON 合法；SKILL 內嵌 TTS 範例程式通過 `ast.parse`；四種 voice-map 錯誤情境行為符合預期。本次未產出每日教材，未修改任何 `daily/` 頁面。
+
 ## 2026-09-10 — Day 116 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-09`，才依最新 `vocabulary/learning.json` 生成今日複習內容；今日到期舊單字 12 個。
@@ -318,16 +334,6 @@
 - 更新 `.ai/daily-english-learning/SKILL.md`，要求未來 commit / push 前先執行 `python3 scripts/validate_daily.py [日期]`。
 - 更新 `LEARNING_SYSTEM_ROADMAP.md`，將 P2 產出驗證自動化多數項目標記完成。
 - 驗證：`python3 scripts/validate_daily.py 2026-07-07` 通過，70 checks，0 warnings，0 errors。
-
----
-
-## 2026-07-07 — 句子 / 情境 SRS MVP
-
-- 新增 `vocabulary/sentences.json`，以 Day 72 的 8 題 Context Recall 作為句子 SRS 初始資料。
-- 新增 `assets/sentence-srs.js`，沿用 GitHub Contents API 與本機 `github_pat`，支援 `remembered` / `hinted` / `forgot` 三種自評更新規則。
-- 更新 `daily/2026-07-07/index.html`，每題 Context Recall 加入 `data-sentence-id`、自評按鈕、進度與同步入口。
-- 更新 `.ai/daily-english-learning/SKILL.md` 與 `LEARNING_SYSTEM_ROADMAP.md`，將句子 SRS 納入未來正式教材流程。
-- 驗證：JS 語法、JSON parse、HTML parser、排程函式、HTTP 200、in-app browser 自評進度、未評完同步阻擋、390px 手機寬度無水平 overflow。未實際執行 GitHub 寫入。
 
 ---
 
