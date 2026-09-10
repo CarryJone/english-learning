@@ -1,0 +1,728 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-10",
+  "description": "核心生存句（Survival Lines）清單與 SRS 狀態。每日教材從 activateOn <= 今天的句子中挑選；排序為 SRS 到期優先、其次最久未出現。第二批 activateOn 設為 2026-10-01，屆時自動加入輪替，不需人工開啟。",
+  "dailyCount": 5,
+  "countdownSeconds": 5,
+  "intervals": [
+    1,
+    2,
+    4,
+    7,
+    14,
+    30,
+    60
+  ],
+  "voiceRole": "traveler",
+  "audioDir": "assets/core",
+  "items": [
+    {
+      "id": "core-didnt-catch",
+      "frame": null,
+      "zh": "抱歉，我沒聽清楚。",
+      "category": "repair",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "店員講了一串，你完全沒聽清楚。",
+          "en": "Sorry, I didn't catch that."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-say-again",
+      "frame": null,
+      "zh": "可以再說一次嗎？",
+      "category": "repair",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "對方講完你還是不確定，想請他再說一次。",
+          "en": "Sorry, can you say that again?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-speak-slowly",
+      "frame": null,
+      "zh": "可以講慢一點嗎？",
+      "category": "repair",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "對方講太快，你想請他放慢速度。",
+          "en": "Can you speak more slowly, please?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-what-do-you-mean",
+      "frame": null,
+      "zh": "你是什麼意思？",
+      "category": "repair",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "每個字你都聽懂，但不懂對方到底要表達什麼。",
+          "en": "What do you mean?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-how-spell",
+      "frame": null,
+      "zh": "那個怎麼拼？",
+      "category": "repair",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "對方講了一個地名，你想請他拼出來寫下。",
+          "en": "How do you spell that?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-do-you-speak-english",
+      "frame": null,
+      "zh": "你會說英文嗎？",
+      "category": "repair",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "在非英語系國家，你要先確認對方會不會英文。",
+          "en": "Sorry, do you speak English?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-where-restroom",
+      "frame": null,
+      "zh": "洗手間在哪裡？",
+      "category": "emergency",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "你在商場裡急著找洗手間。",
+          "en": "Excuse me, where is the restroom?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-could-you-help",
+      "frame": null,
+      "zh": "可以幫我一下嗎？",
+      "category": "emergency",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "你卡住了，需要找人幫忙。",
+          "en": "Could you help me, please?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-how-much",
+      "frame": null,
+      "zh": "這個多少錢？",
+      "category": "transaction",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "你看中一個東西，想問價錢。",
+          "en": "How much is it?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-pay-by-card",
+      "frame": null,
+      "zh": "可以刷卡嗎？",
+      "category": "transaction",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "你身上沒現金，想確認能不能刷卡。",
+          "en": "Can I pay by card?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-here-you-go",
+      "frame": null,
+      "zh": "（遞東西）給你。",
+      "category": "transaction",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "櫃檯跟你要護照，你遞過去。",
+          "en": "Here you go."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-can-i-have",
+      "frame": "Can I have ..., please?",
+      "zh": "可以給我……嗎？",
+      "category": "transaction",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "你在餐廳坐下，想要菜單。",
+          "en": "Can I have the menu, please?"
+        },
+        {
+          "zh": "結帳時你想跟店員要一個袋子。",
+          "en": "Can I have a bag, please?"
+        },
+        {
+          "zh": "吃完了，你想請店員拿帳單。",
+          "en": "Can I have the bill, please?"
+        },
+        {
+          "zh": "你口渴，想跟店員要一杯水。",
+          "en": "Can I have some water, please?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-id-like-this-one",
+      "frame": null,
+      "zh": "我要這個。",
+      "category": "restaurant",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "菜名唸不出來，你指著菜單點餐。",
+          "en": "I'd like this one, please."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-what-recommend",
+      "frame": null,
+      "zh": "你們推薦什麼？",
+      "category": "restaurant",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "菜單看不懂，你想請店員推薦。",
+          "en": "What do you recommend?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-check-please",
+      "frame": null,
+      "zh": "請幫我買單。",
+      "category": "restaurant",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "吃完了，你想結帳。（英式說 Bill, please.）",
+          "en": "Check, please."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-wheres-nearest",
+      "frame": "Where's the nearest ...?",
+      "zh": "最近的……在哪裡？",
+      "category": "directions",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "你需要領錢，想找最近的提款機。",
+          "en": "Where's the nearest ATM?"
+        },
+        {
+          "zh": "你想找最近的公車站。",
+          "en": "Where's the nearest bus stop?"
+        },
+        {
+          "zh": "你不舒服，想找最近的藥局。",
+          "en": "Where's the nearest pharmacy?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-how-do-i-get-to",
+      "frame": "How do I get to ...?",
+      "zh": "我要怎麼去……？",
+      "category": "directions",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "你想問怎麼去火車站。",
+          "en": "How do I get to the station?"
+        },
+        {
+          "zh": "你想問怎麼去機場。",
+          "en": "How do I get to the airport?"
+        },
+        {
+          "zh": "你想問怎麼去這間博物館。",
+          "en": "How do I get to the museum?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-walking-distance",
+      "frame": null,
+      "zh": "走路走得到嗎？",
+      "category": "directions",
+      "batch": 1,
+      "activateOn": "2026-09-11",
+      "variants": [
+        {
+          "zh": "對方給了地址，你想知道走不走得到。",
+          "en": "Is it within walking distance?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-09-11",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-write-it-down",
+      "frame": null,
+      "zh": "可以幫我寫下來嗎？",
+      "category": "repair",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "你怎麼聽都聽不懂，想請對方寫下來。",
+          "en": "Can you write it down for me?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-right-way",
+      "frame": null,
+      "zh": "這樣走對嗎？",
+      "category": "directions",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "你走了一段路，想確認方向對不對。",
+          "en": "Is this the right way to the station?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-how-long-take",
+      "frame": null,
+      "zh": "要花多久？",
+      "category": "directions",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "對方指了路，你想知道要走多久。",
+          "en": "How long does it take?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-left-or-right",
+      "frame": null,
+      "zh": "是左邊還是右邊？",
+      "category": "directions",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "對方指完路你還是不確定方向。",
+          "en": "Is it left or right?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-ill-take-it",
+      "frame": null,
+      "zh": "我要買這個。",
+      "category": "transaction",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "你試過後決定要買。",
+          "en": "I'll take it."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-just-looking",
+      "frame": null,
+      "zh": "我只是看看，謝謝。",
+      "category": "transaction",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "店員上前問要不要幫忙，你只想自己逛。",
+          "en": "I'm just looking, thanks."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-no-worries",
+      "frame": null,
+      "zh": "沒關係。",
+      "category": "social",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "對方為了小事跟你道歉。",
+          "en": "No worries."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-is-this-vegetarian",
+      "frame": null,
+      "zh": "這個是素的嗎？",
+      "category": "restaurant",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "你吃素，想確認這道菜。",
+          "en": "Is this vegetarian?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-is-this-spicy",
+      "frame": null,
+      "zh": "這個會辣嗎？",
+      "category": "restaurant",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "你怕辣，想先確認。",
+          "en": "Is this spicy?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-reservation-under",
+      "frame": null,
+      "zh": "我用……的名字訂的。",
+      "category": "hotel",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "櫃檯找不到你的訂房記錄。",
+          "en": "I have a reservation under Lin."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-check-in",
+      "frame": null,
+      "zh": "我要辦理入住。",
+      "category": "hotel",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "你到飯店櫃檯要辦入住。",
+          "en": "I'd like to check in, please."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-leave-luggage",
+      "frame": null,
+      "zh": "可以寄放行李嗎？",
+      "category": "hotel",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "退房後你想把行李放在飯店。",
+          "en": "Can I leave my luggage here?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-check-out-time",
+      "frame": null,
+      "zh": "退房時間是幾點？",
+      "category": "hotel",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "你想確認明天幾點前要退房。",
+          "en": "What time is check-out?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-hows-it-going",
+      "frame": null,
+      "zh": "最近好嗎？",
+      "category": "social",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "遇到旅館認識的人，你想打招呼。",
+          "en": "How's it going?"
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-thanks-so-much",
+      "frame": null,
+      "zh": "真的很謝謝你。",
+      "category": "social",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "對方幫了你一個大忙。",
+          "en": "Thanks so much."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    },
+    {
+      "id": "core-have-a-good-one",
+      "frame": null,
+      "zh": "祝你有美好的一天。",
+      "category": "social",
+      "batch": 2,
+      "activateOn": "2026-10-01",
+      "variants": [
+        {
+          "zh": "結完帳離開店裡，你跟店員道別。",
+          "en": "Have a good one."
+        }
+      ],
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null,
+      "lastRating": null,
+      "lastUsedOn": null,
+      "useCount": 0
+    }
+  ]
+}

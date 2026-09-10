@@ -25,6 +25,7 @@
 - 任務型教材每篇必須有一個可驗收的 real-life mission、一份短英文資訊輸入、一段可開口的 Role-play，以及中文情境到英文的主動提取。
 - 任務型教材的每週平衡為：旅行開口 3 天、英文資訊判讀 2 天、整合任務 1 天、SRS 與模擬複習 1 天；每日仍可同時帶入另一個能力。
 - 正式學習結構維持原樣並新增 Mission、Role-play；Article、New Words、Key Phrases、Quiz、Active Recall Quiz、Speaking Bridge、Context Recall、Learning Tips、Review Words、完整音檔與逐句播放都不可省略。
+- 自 2026-09-11 起新增 `Survival Lines` 核心句訓練區塊（Speaking Bridge 之後、Role-play 之前）：每天從 `vocabulary/core-phrases.json` 抽 5 句旅行核心句，看中文情境、倒數 5 秒後才顯示答案，練「反射夠不夠快」。清單與 `assets/core/*.mp3` 是**共用資產，音檔不用每天重生**；第二批句子用 `activateOn` 設為 2026-10-01，時間到自動加入輪替，不需人工開啟。細節見 SKILL 3h.1。
 - `New Words` 負責先學；`Active Recall Quiz` 負責複習前面已學過且依 SRS 到期的單字。不可用只列出今日新字的獨立區塊取代 Active Recall Quiz。
 - 正式產出必須依上面那份 SKILL 的流程執行，不可自行簡化成 demo。
 - 正式產出的核心目標不是「每天有一篇英文」，而是讓學習者逐步更能：

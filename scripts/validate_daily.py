@@ -116,6 +116,7 @@ class ParsedDailyPage:
     roleplay_turns: int = 0
     script_srcs: list[str] = field(default_factory=list)
     voice_map: str = ""
+    core_ids: list[str] = field(default_factory=list)
 
 
 class DailyHTMLParser(HTMLParser):
@@ -138,6 +139,11 @@ class DailyHTMLParser(HTMLParser):
 
         if tag == "meta" and attrs.get("name") == "voice-map":
             self.page.voice_map = attrs.get("content", "").strip()
+
+        if attrs.get("id") == "core-drill" and attrs.get("data-core-ids"):
+            self.page.core_ids = [
+                part.strip() for part in attrs["data-core-ids"].split(",") if part.strip()
+            ]
 
         if "sent" in classes and attrs.get("data-idx"):
             try:
@@ -309,6 +315,8 @@ def validate_required_sections(page: ParsedDailyPage, date: str, validation: Val
     required_titles = list(REQUIRED_CARD_TITLES)
     if date >= MISSION_MODE_START_DATE:
         required_titles.extend(["Mission", "Role-play"])
+    if date >= NATURAL_SPEECH_START_DATE:
+        required_titles.append("Survival Lines")
 
     for required in required_titles:
         validation.check(
@@ -558,6 +566,60 @@ def validate_voice_map(root: Path, date: str, page: ParsedDailyPage, validation:
     )
 
 
+def validate_core_phrases(root: Path, date: str, page: ParsedDailyPage, validation: Validation) -> None:
+    """Survival Lines 的句子必須存在於 vocabulary/core-phrases.json，且當天已標記使用。"""
+    if date < NATURAL_SPEECH_START_DATE:
+        return
+
+    validation.check(
+        bool(page.core_ids),
+        f"Survival Lines declares {len(page.core_ids)} core phrases",
+        'Survival Lines block is missing data-core-ids on #core-drill',
+    )
+    if not page.core_ids:
+        return
+
+    validation.check(
+        len(page.core_ids) == len(set(page.core_ids)),
+        "Survival Lines phrases are unique",
+        f"Survival Lines repeats a phrase: {page.core_ids}",
+    )
+
+    store = load_json(root / "vocabulary" / "core-phrases.json", validation)
+    if not store:
+        return
+    by_id = {item.get("id"): item for item in store.get("items", [])}
+
+    missing = [core_id for core_id in page.core_ids if core_id not in by_id]
+    validation.check(
+        not missing,
+        "all Survival Lines phrases exist in core-phrases.json",
+        f"core phrases missing from core-phrases.json: {missing}",
+    )
+
+    not_active = [
+        core_id
+        for core_id in page.core_ids
+        if core_id in by_id and (by_id[core_id].get("activateOn") or "9999-12-31") > date
+    ]
+    validation.check(
+        not not_active,
+        "all Survival Lines phrases are already active",
+        f"core phrases used before their activateOn date: {not_active}",
+    )
+
+    stale = [
+        core_id
+        for core_id in page.core_ids
+        if core_id in by_id and by_id[core_id].get("lastUsedOn") != date
+    ]
+    validation.check(
+        not stale,
+        "core-phrases.json lastUsedOn is up to date",
+        f"core phrases not marked as used on {date}: {stale}",
+    )
+
+
 def validate_context_sentences(root: Path, date: str, page: ParsedDailyPage, validation: Validation) -> None:
     context_ids = page.context_ids
     minimum_context_items = 8 if date >= MISSION_MODE_START_DATE else 6
@@ -746,6 +808,7 @@ def main() -> int:
     validate_audio(day_dir, args.date, page, validation)
     validate_natural_speech(args.date, page, validation)
     validate_voice_map(root, args.date, page, validation)
+    validate_core_phrases(root, args.date, page, validation)
     validate_context_sentences(root, args.date, page, validation)
     validate_ability_map(root, args.date, page, validation)
     validate_vocabulary(root, args.date, page, validation)

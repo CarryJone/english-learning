@@ -16,6 +16,7 @@
 - [x] Day 110 起主音檔加入句間停頓試行：同聲線約 0.05 秒、換人約 0.12 秒、階段切換約 0.25 秒；逐句音檔不加停頓。2026-09-10 已把現行參數記入 SKILL Step 5 並標明「尚未定案、後續 session 不得自行調整」，仍待使用者拍板。
 - [x] 2026-09-10 依使用者評估「文章偏學習課文而非真實口語」，導入自然口語規則（SKILL 3a.1）：① 全篇口語縮寫；② 對話句 ≥60%、旁白 ≤40% 且不得逐條唸 input snippet；③ staff 用真實服務業口語，每篇 1 處聽力挑戰句後接 repair 與 10 字內重述。2026-09-11 起生效。
 - [x] 2026-09-10 建立 `assets/voices.json` 作為角色／聲線唯一事實來源，新增第四聲線 `companion`（Brian）＝**本篇第二個說話者**（同行朋友，或第二個場景的另一位服務人員）；`article.mp3` 範圍放寬為 105–150 秒。同日另加規則：動詞優先選日常口語片語（`get off work` / `drop off` / `pick up`），不用標準單動詞。
+- [x] 2026-09-10 新增 `Survival Lines` 核心句訓練區塊（2026-09-11 起生效）：`vocabulary/core-phrases.json` 收 34 句旅行核心句（第一批 18 句立即啟用，第二批 16 句 `activateOn` 設 2026-10-01 自動加入），每天抽 5 句做倒數反射練習；音檔 41 個一次性存於 `assets/core/`，不需每天重生。選句用 `scripts/pick_core_phrases.py`。
 - [x] 上述兩項已寫入 `.ai/DECISIONS.md`（2026-09-10）作為長期決策；規則細節以 SKILL 3a.1 / 3a.2 為準。
 
 ## 驗證狀態
@@ -50,4 +51,6 @@
 - `ability_map.json`
 - `.ai/daily-english-learning/SKILL.md`
 - `assets/voices.json`
+- `vocabulary/core-phrases.json`
+- `scripts/pick_core_phrases.py`
 - `scripts/validate_daily.py`

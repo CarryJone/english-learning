@@ -79,7 +79,8 @@ mkdir -p ./daily/$TODAY
 - **自然口語優先（2026-09-11 起）**：Article 必須聽起來像真人在講話，不是課文朗讀。三條硬規則：① 全篇一律使用口語縮寫（`it's`、`can't`、`don't`、`I'll`、`there's`、`we've got`）；② 對話句（`traveler` + `staff`）至少佔全篇句數 60%，旁白最多 40%；③ 工作人員台詞使用真實服務業口語，不是逐條唸規則。細節與例外見 3a.1。
 - **難度控制**：保持 A2，句子短、字彙高頻、自然口語；寧可更簡單，也不要為了題材或單字變難。
 - **主音檔與聲線**：自 2026-09-11 起，`article.mp3` 的正式範圍為 **1 分 45 秒到 2 分 30 秒（105–150 秒）**；對話變多會自然拉長時長，這是預期的。維持自然 A2 語速。角色與聲線的唯一事實來源是 `assets/voices.json`，不可在腳本裡自行寫死別的聲線；詳見 3a.2。Article 正文不顯示 `Staff:`、`Me:` 等角色前綴。
-- **必要產物**：必須產出完整 HTML、`article.mp3`、`s01.mp3` 到 `sNN.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`。
+- **核心句訓練（2026-09-11 起）**：每篇必須有 `Survival Lines` 區塊，從 `vocabulary/core-phrases.json` 抽 5 句旅行核心句做倒數反射練習。清單與音檔是共用資產，**音檔不用每天重生**；細節見 3h.1。
+- **必要產物**：必須產出完整 HTML、`article.mp3`、`s01.mp3` 到 `sNN.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/core-phrases.json`。
 
 ---
 
@@ -274,6 +275,56 @@ A 與 C 會讓聽力表面難度上升，這是刻意的：學習者原本就聽
 - Speaking Bridge 的 Lv.2 不可只換名詞；必須改變人物、地點或目的，讓學習者真的重新組織句子
 - Lv.1 與 Lv.2 的完整答案都應讓目標單字位於自然搭配或可重用短句框架中，避免只測單字能否孤立填入。
 - 計算每個單字距今幾天（today − dateAdded），顯示在標題旁（例如「3 天前」）
+
+#### 3h.1 核心句訓練（Survival Lines）
+
+**目的**：把旅行最高頻的「反射句」練到不用想就說得出來。這一區跟 Context Recall 的分工是：
+
+| | Context Recall | Survival Lines |
+|---|---|---|
+| 題目來源 | 當天文章的句子 | 固定清單 `vocabulary/core-phrases.json` |
+| 週期 | 一次性，當天測 | 跨天循環，長期累積 |
+| 測什麼 | 今天學到沒 | **反射夠不夠快** |
+| 機制 | 自己控速 | **倒數計時，時間到才顯示答案** |
+
+**頁面位置**：Speaking Bridge 之後、Role-play 之前（先練反射 → 再實戰對打）。
+
+**選句規則**（每天 5 句，`dailyCount` 可在 JSON 調整）
+
+1. 只從 `activateOn <= 今天` 的句子中挑；第二批句子設有較晚的 `activateOn`，時間到會自動加入輪替，**不需要人工開啟**。
+2. 排序：`nextReview <= 今天`（SRS 到期）優先 → 其次 `lastUsedOn` 最舊 → 其次 `useCount` 最少。
+3. 框架句（`frame` 非 null，例如 `Can I have ..., please?`）有多個 `variants`，用 `useCount % len(variants)` 決定今天用哪個情境，讓同一個句型輪流換受詞。
+4. 選完後把選中句子的 `lastUsedOn` 設為今天、`useCount` +1，寫回 JSON。
+
+**選句一律用 repo 內的腳本，不要自己重寫邏輯：**
+
+```bash
+python3 scripts/pick_core_phrases.py [日期]            # 預覽，不寫檔
+python3 scripts/pick_core_phrases.py [日期] --commit   # 標記 lastUsedOn / useCount 並寫回
+```
+
+輸出是 `[{id, zh, en, audio}]` 的 JSON，可直接填入頁面的 `window.CORE_LINES`。
+
+**音檔**
+
+- 全部存在 `assets/core/<id>-<變化序號>.mp3`，聲線用 `assets/voices.json` 的 `traveler`（學習者要說的句子）。
+- **一次性生成，之後每天都不用重做**；只有新增句子或改寫句子時才補生成。
+
+**頁面需要的東西**
+
+- `<div class="card">` 標題必須是 `🗣️ Survival Lines`（驗證腳本會找這個區塊）。
+- 容器 `id="core-drill"`，內含 `core-position`、`core-prompt`、`core-count`、`core-start`、`core-reveal`、`core-answer`、`core-rating`、`core-next`、`core-progress`、`core-sync-btn`、`core-result` 這些 id。
+- `window.CORE_LINES = [{id, zh, en, audio}]`（注意要掛在 `window`，用 `const` 不會生效）。
+- 引入 `<script src="../../assets/core-drill.js"></script>`，且必須排在設定 `CORE_LINES` 的 inline script **之後**或同頁任意位置皆可（初始化綁在 `DOMContentLoaded`）。
+- 對應 CSS 已併入每日頁的 `<style>`；以前一天頁面為模板時會自動帶過來。
+
+**邊界**
+
+- 核心句**不佔今日 3 個新字的額度**，也**不強制進 Key Phrases**（避免擠掉當天任務真正需要的片語）。
+- SRS 沿用 `assets/sentence-srs.js` 的引擎，只把 `filePath` 換成 `vocabulary/core-phrases.json`、間隔換成 `[1,2,4,7,14,30,60]`（反射句要比一般句子更常回來）。
+- 倒數預設 5 秒，學習者可在頁面切 3 / 5 / 8 秒。**不要把預設改成 3 秒**：A2 從零產出一整句需要的時間比 Pimsleur 原始設計（聽完再回想）更長，3 秒會變成每題都失敗。
+
+---
 
 #### 3i. 情境提取（Context Recall）
 - 每篇正式教材必須加入 `Context Recall` 區塊，放在 Speaking Bridge 與 Role-play 後、Learning Tips 前。
@@ -1514,6 +1565,7 @@ python3 /tmp/tts_today.py
 - 每個 `data-speaker` 在本篇只代表一個人；沒有出現「同一個聲音演兩個角色」。聲線全部取自 `assets/voices.json`。
 - 若本篇有第二個服務方，該角色已用 `companion` 而不是共用 `staff`。
 - 動詞已優先採用日常口語片語（`get off work` / `drop off` / `pick up` / `take back`），沒有殘留 `finish work`、`bring it to`、`collect` 這類書面說法。
+- `Survival Lines` 區塊已產出 5 句，且 `vocabulary/core-phrases.json` 中對應句子的 `lastUsedOn` / `useCount` 已更新。
 - 已選 2–3 個今日目標語塊，且至少 1 個支援開口、至少 1 個支援資訊判讀 / 搜尋。
 - 每個目標語塊都已出現在 Article、Key Phrases、Role-play 的 `You` 回合與 Context Recall。
 - 至少 1 個目標語塊已換到不同人物、地點或目的做跨情境提取。
@@ -1535,6 +1587,7 @@ python3 scripts/validate_daily.py [日期]
 - 自 2026-08-25 起，每個 Article 句子都有 `narrator`、`traveler` 或 `staff` speaker metadata，且當日正式教材至少同時使用三種聲線；正文不顯示 `Staff:`、`Me:` 前綴。
 - 句子 `data-idx` 是否從 1 連續編號，並與逐句音檔一致。
 - 頁面的 `voice-map` meta 是否涵蓋所有使用到的角色，且聲線與 `assets/voices.json` 完全一致。
+- `Survival Lines` 區塊是否存在，且每個 `data-core-id` 都能在 `vocabulary/core-phrases.json` 找到。
 - Context Recall 題目是否有 `data-sentence-id`、自評按鈕，並與 `vocabulary/sentences.json` 對齊。
 - `ability_map.json` 是否有當日 session。
 - 今日新字是否存在於 `vocabulary/learning.json`，且 Speaking Bridge 沒有使用今日新字。

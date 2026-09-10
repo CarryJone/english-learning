@@ -24,6 +24,13 @@
 - 依使用者指示先做兩項：① `companion` 定義由「同行者（朋友）」放寬為「**本篇第二個說話者**」，可以是同行朋友或第二個場景的另一位服務人員；出現第二個服務方時必須用 companion，不可共用 staff；若同時需要朋友與第二服務方（5 個說話者）則須重構情境。② 新增 SKILL 3a.1 規則 D「動詞優先選日常口語片語」，附 6 組對照表與「不得為了口語選少見俚語」的但書。
 - 四份文件（`assets/voices.json`、SKILL 3a.1／3a.2／3c／Step 7b、`AGENTS.md`、`.ai/DECISIONS.md`）已同步，實測無舊敘述殘留。DECISIONS 的同日條目直接標註修正原因，保留為何改的脈絡。
 - 使用者暫緩的三項：Role-play 獨立規則（多句回合、兩個場景）、語氣詞加密、地區變體處理原則（`cab`）。
+- 使用者提出「每天一句高頻日常句、重複出現加深記憶」的想法。實測 116 篇文章後發現這個效果**已經存在但是意外產生的**：SKILL 規定每篇要有 repair 句，導致 `say that again` 出現 16 篇（09-07／09-09／09-10 連三天），但 `What do you mean?` 只 1 篇、`Here you go`／`How are you` 各 0 篇——有效果，但分配極不均。
+- 使用者選擇做成獨立練習區塊而非放進文章，並補充 12 句（餐廳／住宿／方向／應急）。評估後採納 10 句、`Can I have the menu` 升級為框架句 `Can I have ..., please?`（一格換六種用法）、`I'd like to check in` 補 `I have a reservation under ...`；**`Turn left / Go straight` 不採納**——那是聽的不是說的，放進產出練習會錯位，改成 `Is it left or right?`。
+- 新增 `Survival Lines` 區塊（Speaking Bridge 之後、Role-play 之前）：中文情境 → 倒數 5 秒 → 顯示答案並自動播音 → 三段自評 → 同步 SRS。倒數可切 3／5／8 秒，預設 5 秒（不用影片建議的 3 秒：A2 從零產出整句需要更久，3 秒會每題都失敗）。
+- 資料與資產：`vocabulary/core-phrases.json`（34 句，第一批 18 句立即生效、第二批 16 句 `activateOn` 2026-10-01 自動加入輪替）、`assets/core/*.mp3`（41 個變化，Aria 聲線，一次性生成）、`assets/core-drill.js`（170 行）、`scripts/pick_core_phrases.py`（選句 CLI，避免邏輯只存在於 session）。
+- SRS 直接複用 `assets/sentence-srs.js` 引擎，只換 `filePath` 與間隔 `[1,2,4,7,14,30,60]`（反射句要比一般句子更常回來），沒有另寫一套。
+- 驗證腳本新增 `validate_core_phrases()`：Survival Lines 區塊必須存在、`data-core-ids` 不重複、句子必須存在於 JSON、不可使用未到 `activateOn` 的第二批句子、當天 `lastUsedOn` 必須已更新。四種錯誤情境實測皆正確攔截。
+- 瀏覽器實測（375px）：倒數→揭示→評分→下一句→同步鈕解鎖全流程正常，音檔回 200，console 0 errors，無橫向溢位；`applySentenceResults` 對 remembered／forgot 產生的間隔正確。
 - 驗證：voice-map 交叉比對實測「司機=staff／櫃檯=companion」PASS、「兩個服務方共用 Guy」報錯；Day 116 仍 PASS。
 - 驗證：Day 115、116 於規則變更後仍 PASS；`assets/voices.json` JSON 合法；SKILL 內嵌 TTS 範例程式通過 `ast.parse`；四種 voice-map 錯誤情境行為符合預期。本次未產出每日教材，未修改任何 `daily/` 頁面。
 
