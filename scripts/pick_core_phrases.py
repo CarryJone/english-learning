@@ -28,6 +28,11 @@ def select(today: str, store: dict, count: int | None = None) -> list[dict]:
     if not active:
         return []
 
+    # 今天已經選過就回傳同一批，讓重新產生頁面是冪等的，不會重複累加 useCount。
+    already = [item for item in active if item.get("lastUsedOn") == today]
+    if already:
+        return sorted(already, key=lambda item: item["id"])[:count]
+
     def sort_key(item: dict):
         due = 0 if (item.get("nextReview") or FAR_FUTURE) <= today else 1
         return (due, item.get("lastUsedOn") or "", item.get("useCount", 0), item["id"])
@@ -35,12 +40,19 @@ def select(today: str, store: dict, count: int | None = None) -> list[dict]:
     return sorted(active, key=sort_key)[:count]
 
 
-def to_lines(picked: list[dict], store: dict) -> list[dict]:
+def variant_index(item: dict, today: str) -> int:
+    """今天已選過就沿用當時的變化序號，否則依 useCount 輪替。"""
+    if item.get("lastUsedOn") == today and item.get("lastVariant") is not None:
+        return int(item["lastVariant"]) % len(item["variants"])
+    return item.get("useCount", 0) % len(item["variants"])
+
+
+def to_lines(picked: list[dict], store: dict, today: str) -> list[dict]:
     audio_dir = store.get("audioDir", "assets/core")
     lines = []
     for item in picked:
         variants = item["variants"]
-        index = item.get("useCount", 0) % len(variants)
+        index = variant_index(item, today)
         variant = variants[index]
         lines.append(
             {
@@ -55,6 +67,9 @@ def to_lines(picked: list[dict], store: dict) -> list[dict]:
 
 def mark_used(picked: list[dict], today: str) -> None:
     for item in picked:
+        if item.get("lastUsedOn") == today:
+            continue  # 已標記過，不重複累加
+        item["lastVariant"] = variant_index(item, today)
         item["lastUsedOn"] = today
         item["useCount"] = item.get("useCount", 0) + 1
 
@@ -76,7 +91,7 @@ def main() -> int:
         print("no active core phrases for this date", file=sys.stderr)
         return 1
 
-    lines = to_lines(picked, store)
+    lines = to_lines(picked, store, args.date)
     if args.commit:
         mark_used(picked, args.date)
         store["updatedAt"] = args.date

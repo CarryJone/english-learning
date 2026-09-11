@@ -5,6 +5,18 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-11 — Day 117 正式教材產出（首篇套用新規則）
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `Sentence SRS update: context recall 2026-09-10`；該次同步由瀏覽器以 `JSON.stringify(v, null, 2)` 覆寫整檔，`sentences.json` 的行內陣列排版已被展開，往後不需再特意保留。
+- 新增 `daily/2026-09-11/`，主題為 `Making a Tight Connection in Hong Kong`；今日新字：`connection`、`make`（趕上）、`through`。
+- 首篇同時套用：自然口語規則（縮寫／對話比例／服務業語域／口語片語）、四聲線、Survival Lines、105–150 秒音檔範圍。實測對話 77%、含縮寫句 55%、最長旁白連續 3 句、主音檔 139.51 秒（舊上限 135 秒會被擋下）。
+- 首次使用 `companion` 的「第二個服務方」用法：`staff` 是轉機櫃檯人員、`companion` 是登機門地勤，兩個服務方用不同聲線，旁白在換場景前點名。
+- 聽力挑戰句三連實測可用：櫃檯 `Gate 68's in Terminal 2, so you'll take the train after security.`（12 字，資訊藏在句中）→ 旅客 `Sorry, I didn't catch that. Which gate?` → 櫃檯 `Gate 68, Terminal 2.`（4 字重述）。
+- 文章融入複習字 `desk`、`tag`、`carousel`（都來自 Day 99 行李轉盤那課，正好能自然落在轉機情境）。
+- Speaking Bridge 取 `stock`、`tight`、`sale`（2 天前，尚未入選過）與 `space`；`tight` 的 Lv.2 刻意換到「時間很趕」的引申義做跨情境轉移。
+- 修掉兩個自己引入的缺陷：① 文章用了 `pick it up`、`get on` 兩個 phrase-chunk 但沒列進 Key Phrases，彈窗會空白——補進去後共 8 個片語，仍在 5–8 規格內；② `scripts/pick_core_phrases.py` 重跑會重複累加 `useCount` 並讓框架句變化序號偏移，改為冪等並新增 `lastVariant` 欄位記錄當天實際使用的變化。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-11` **97 checks / 0 warnings / 0 errors**；瀏覽器 375px 無橫向溢位、console 0 errors、`article.mp3` 與 `s01.mp3`–`s36.mp3` 及核心句音檔均回 200、單字／複習字／片語彈窗全部命中、Survival Lines 全流程正常、首頁最新一筆為 Day 117。
+
 ## 2026-09-10 — 教材口語自然度規則與角色聲線契約
 
 - 使用者要求評估「產出的文章是否為日常對話會用到的英文，還是比較像學習課文」。實測最近六天 206 句：旁白佔 57%（其中 43 句只是在唸畫面上的字）、含縮寫的句子 0%、34 個問句中 `Could I/you` 佔 35%。判定為偏學習課文。
@@ -339,14 +351,4 @@
 - Active Recall Quiz 依最新 `learning.json` 生成 5 個今日到期複習字；Speaking Bridge 使用 `voice`、`truth`、`folded`、`careful`。
 - 補齊 `Ability Focus`、8 題 `Context Recall`、`vocabulary/sentences.json`、`ability_map.json`、首頁、`profile.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：`article.mp3` 與 `s01.mp3` 到 `s25.mp3` 已生成；`python3 scripts/validate_daily.py 2026-07-08` 通過；本機 HTTP `/` 與 `/daily/2026-07-08/` 回傳 200。
-
-## 2026-07-07 — 每日教材驗證腳本
-
-- 新增 `scripts/validate_daily.py`，以 Python stdlib 驗證單日正式教材。
-- 驗證範圍包含必要 HTML 區塊、共用 script、`article.mp3`、逐句 `sNN.mp3`、句子編號連續性、Context Recall 與 `vocabulary/sentences.json` 對齊、`ability_map.json` session、今日新字與 `learning.json` 對齊、Speaking Bridge 不使用今日新字、首頁連結。
-- 更新 `.ai/daily-english-learning/SKILL.md`，要求未來 commit / push 前先執行 `python3 scripts/validate_daily.py [日期]`。
-- 更新 `LEARNING_SYSTEM_ROADMAP.md`，將 P2 產出驗證自動化多數項目標記完成。
-- 驗證：`python3 scripts/validate_daily.py 2026-07-07` 通過，70 checks，0 warnings，0 errors。
-
----
 

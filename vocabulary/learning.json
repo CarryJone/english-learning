@@ -3629,6 +3629,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-11",
       "lastReviewedDate": null
+    },
+    {
+      "word": "connection",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "轉機；銜接的班次",
+      "exampleSentence": "I've got a tight connection in Hong Kong.",
+      "dateAdded": "2026-09-11",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "make",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "趕上（車、船、班機、約）",
+      "exampleSentence": "Will I make it?",
+      "dateAdded": "2026-09-11",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "through",
+      "partOfSpeech": "prep./adv.",
+      "chineseMeaning": "直達終點；穿過",
+      "exampleSentence": "Is my bag checked through to Taipei?",
+      "dateAdded": "2026-09-11",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
     }
   ]
 }

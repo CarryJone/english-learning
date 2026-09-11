@@ -7538,6 +7538,176 @@
       "nextReview": "2026-09-11",
       "lastReviewedDate": "2026-09-10",
       "lastRating": "hinted"
+    },
+    {
+      "id": "2026-09-11-will-i-make-it",
+      "type": "sentence",
+      "zhPrompt": "轉機時間很趕，你想問趕不趕得上。",
+      "answer": "Will I make it?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Will I ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-bag-checked-through",
+      "type": "sentence",
+      "zhPrompt": "你想確認行李有沒有直掛到台北。",
+      "answer": "Is my bag checked through to Taipei?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Is my bag checked ... to ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-where-transfer-desk",
+      "type": "sentence",
+      "zhPrompt": "你下飛機後想問轉機櫃檯在哪裡。",
+      "answer": "Where's the transfer desk?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-gate-and-terminal",
+      "type": "sentence",
+      "zhPrompt": "你的登機門是第二航廈 68 號。",
+      "answer": "Gate 68 is in Terminal 2.",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-didnt-catch-which-gate",
+      "type": "sentence",
+      "zhPrompt": "對方講太快，你想確認是幾號登機門。",
+      "answer": "Sorry, I didn't catch that. Which gate?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-put-me-on-next-one",
+      "type": "sentence",
+      "zhPrompt": "如果趕不上，你想改搭下一班。",
+      "answer": "Can you put me on the next one?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can you put me on ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-go-through-security-again",
+      "type": "sentence",
+      "zhPrompt": "你想問轉機要不要重新過一次安檢。",
+      "answer": "Do I need to go through security again?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-which-carousel",
+      "type": "sentence",
+      "zhPrompt": "你想問行李要在哪個轉盤領。",
+      "answer": "Do you know which carousel?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-make-the-last-train",
+      "type": "context",
+      "zhPrompt": "你在市區趕最後一班地鐵，想問趕不趕得上。",
+      "answer": "Will I make the last train? / Will we make it?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-11-put-me-on-later-tour",
+      "type": "context",
+      "zhPrompt": "你報名的上午導覽滿了，你想改到下午那一場。",
+      "answer": "Can you put me on the afternoon one? / Can you put me on the later tour?",
+      "sourceDate": "2026-09-11",
+      "sourceTitle": "Making a Tight Connection in Hong Kong",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-12",
+      "lastReviewedDate": null
     }
   ]
 }

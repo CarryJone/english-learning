@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-09-11",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-11",
+      "day": 117,
+      "title": "Making a Tight Connection in Hong Kong",
+      "url": "daily/2026-09-11/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: make a 50-minute connection after a late arrival.",
+        "Input: transfer board, bag tag, and transfer desk conversation.",
+        "Find Gate 68 / Terminal 2, the 15-minute security wait, and the 18:00 backup flight.",
+        "Say \"Will I make it?\" and \"Is my bag checked through to Taipei?\""
+      ]
+    },
     {
       "date": "2026-09-10",
       "day": 116,

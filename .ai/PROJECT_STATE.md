@@ -2,7 +2,7 @@
 
 > 用途：短期狀態與下一步接手資訊。
 > 注意：本檔不是開發規則；正式規則請看專案 `AGENTS.md`、`.ai/DECISIONS.md` 或指定的 `SKILL.md`。
-> 最後更新：2026-09-10
+> 最後更新：2026-09-11
 > 更新者：Agent
 
 ## 目前目標
@@ -10,7 +10,7 @@
 
 ## 目前進度
 - [x] `The Blue Receipt` 已於 2026-07-14 Day 76 封存；正式內容為 `mission-based`，不可自動續寫 Episode 19。
-- [x] Day 77–116 已完成四十篇任務型教材；最新為 `daily/2026-09-10/` 的 `Getting Back a Phone Left in a Taxi`。
+- [x] Day 77–117 已完成四十一篇任務型教材；最新為 `daily/2026-09-11/` 的 `Making a Tight Connection in Hong Kong`，是**首篇同時套用自然口語規則、四聲線與 Survival Lines** 的教材。
 - [x] 正式教材格式：角色／聲線以 `assets/voices.json` 為準（narrator=Jenny、traveler=Aria、staff=Guy、companion=Brian，一篇最多 4 個且一個 role 只能代表一個人）、正文不顯示角色前綴、主音檔 1:45–2:30、每天正好 3 個新字、2–3 個目標語塊貫穿 Article / Key Phrases / Role-play / Context Recall。
 - [x] 主播放器支援 `0.75× / 1× / 1.25×`；Day 112 起可切換視覺句子重音。Mission、資訊輸入、Role-play、Context Recall、能力地圖、單字／句子 SRS 與音檔流程均已接通；未新增 Collocation SRS。
 - [x] Day 110 起主音檔加入句間停頓試行：同聲線約 0.05 秒、換人約 0.12 秒、階段切換約 0.25 秒；逐句音檔不加停頓。2026-09-10 已把現行參數記入 SKILL Step 5 並標明「尚未定案、後續 session 不得自行調整」，仍待使用者拍板。
@@ -20,8 +20,9 @@
 - [x] 上述兩項已寫入 `.ai/DECISIONS.md`（2026-09-10）作為長期決策；規則細節以 SKILL 3a.1 / 3a.2 為準。
 
 ## 驗證狀態
-- [x] Day 116（2026-09-10）通過 84 checks / 0 warnings / 0 errors；主音檔 127.95 秒、35 句 / 281 字、36 個 MP3 均可讀；375px 無橫向溢位、console 0 errors。Day 115 亦同樣通過。
-- [x] 2026-09-10 規則變更後回歸測試：Day 115、116 仍 PASS；`voice-map` 交叉比對已實測可擋下「漏宣告角色」「聲線用錯」「缺 meta」三種錯誤。
+- [x] Day 117（2026-09-11）通過 **97 checks** / 0 warnings / 0 errors（新規則帶來 13 項新檢查）；主音檔 139.51 秒、36 句 / 273 字、37 個 MP3 均可讀。
+- [x] Day 117 實測新規則全數達標：對話 **77%**（門檻 60%）、含縮寫句 **55%**（門檻 15%）、最長旁白連續 **3**（上限 3）、四聲線（narrator / traveler / staff＝轉機櫃檯 / companion＝登機門地勤）。
+- [x] Day 117 的 Survival Lines 實測：倒數→揭示→評分→同步鈕解鎖全流程正常、核心句音檔 200、框架句正確取用第 1 個變化；375px 無橫向溢位、console 0 errors。
 - 每日驗證明細見 `.ai/WORKLOG.md`，本檔只保留最近狀態。
 
 ## 目前 Blocker
@@ -43,7 +44,7 @@
 - 每日頁必須通過 `python3 scripts/validate_daily.py [日期]`。
 
 ## 活躍工作區
-- `daily/2026-09-10/`
+- `daily/2026-09-11/`
 - `index.html`
 - `profile.json`
 - `vocabulary/learning.json`

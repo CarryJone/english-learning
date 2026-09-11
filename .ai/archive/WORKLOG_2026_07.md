@@ -4,6 +4,16 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-07-07 — 每日教材驗證腳本
+
+- 新增 `scripts/validate_daily.py`，以 Python stdlib 驗證單日正式教材。
+- 驗證範圍包含必要 HTML 區塊、共用 script、`article.mp3`、逐句 `sNN.mp3`、句子編號連續性、Context Recall 與 `vocabulary/sentences.json` 對齊、`ability_map.json` session、今日新字與 `learning.json` 對齊、Speaking Bridge 不使用今日新字、首頁連結。
+- 更新 `.ai/daily-english-learning/SKILL.md`，要求未來 commit / push 前先執行 `python3 scripts/validate_daily.py [日期]`。
+- 更新 `LEARNING_SYSTEM_ROADMAP.md`，將 P2 產出驗證自動化多數項目標記完成。
+- 驗證：`python3 scripts/validate_daily.py 2026-07-07` 通過，70 checks，0 warnings，0 errors。
+
+---
+
 ## 2026-07-07 — 句子 / 情境 SRS MVP
 
 - 新增 `vocabulary/sentences.json`，以 Day 72 的 8 題 Context Recall 作為句子 SRS 初始資料。
