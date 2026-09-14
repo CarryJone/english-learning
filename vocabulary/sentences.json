@@ -7708,6 +7708,176 @@
       "reviewCount": 0,
       "nextReview": "2026-09-12",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-could-we-swap-seats",
+      "type": "sentence",
+      "zhPrompt": "你和同行的人被分開坐，想在櫃檯換位。",
+      "answer": "Could we swap seats?",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Could we ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-seat-selection-free",
+      "type": "sentence",
+      "zhPrompt": "報到頁說選位是免費的。",
+      "answer": "Seat selection is free of charge.",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-extra-fee-to-change",
+      "type": "sentence",
+      "zhPrompt": "你想問換位要不要另外收費。",
+      "answer": "Is there an extra fee to change them?",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv1",
+      "hint": "Is there an extra fee ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-front-rows-extra",
+      "type": "sentence",
+      "zhPrompt": "前面一到十排要多付二十五美元。",
+      "answer": "The front rows cost an extra twenty-five dollars.",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-didnt-catch-wait-until",
+      "type": "sentence",
+      "zhPrompt": "對方講太快，你想問要等到什麼時候。",
+      "answer": "Sorry, I didn't catch that. Wait until when?",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-only-middle-seats-left",
+      "type": "sentence",
+      "zhPrompt": "十四排只剩中間的位子。",
+      "answer": "Only middle seats are left in Row 14.",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-is-this-seat-free",
+      "type": "sentence",
+      "zhPrompt": "你想問旁邊這個位子有沒有人坐。",
+      "answer": "Is this seat free?",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-aisle-and-window",
+      "type": "sentence",
+      "zhPrompt": "二十二排有一個走道位和一個靠窗位。",
+      "answer": "There's an aisle and a window in Row 22.",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-swap-on-the-train",
+      "type": "context",
+      "zhPrompt": "你在火車上想跟鄰座的人換位子。",
+      "answer": "Could we swap seats? / Would you mind swapping seats?",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-14-free-of-charge-hotel",
+      "type": "context",
+      "zhPrompt": "你在飯店想確認寄放行李免不免費。",
+      "answer": "Is it free of charge? / Is bag storage free of charge?",
+      "sourceDate": "2026-09-14",
+      "sourceTitle": "Picking Seats Together on a Full Flight",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
     }
   ]
 }

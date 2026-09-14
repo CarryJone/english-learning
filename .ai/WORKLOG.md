@@ -5,6 +5,19 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-14 — Day 118 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端兩筆：`Core phrase SRS update 2026-09-11`（Survival Lines 首次被實際使用，5 題全對）與 `SRS update: review quiz 2026-09-11`。
+- 距上次產出隔了 3 天（週末），單字到期量累積到 **43 個**，核心句到期 18 句（每日只抽 5 句，靠 SRS 與最久未用排序自然消化）。
+- 新增 `daily/2026-09-14/`，主題為 `Picking Seats Together on a Full Flight`；今日新字：`free`、`extra`、`swap`。
+- 任務是線上報到選位：從報到頁找出 48 小時免費選位、前排加價 US$25、託運 23 kg；走道位被選完、兩人被分開坐後先打電話問客服，再到機場櫃檯換位。
+- 今日目標語塊：`free of charge`（資訊判讀）、`Could we swap seats?`（開口）、`Is there an extra fee?`（開口＋資訊）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，後兩者各有一題跨情境轉移（火車換位、飯店寄放行李）。
+- 文章融入複習字 `aisle`、`window`、`row`（都來自舊的機位／座位課，正好成一組落在座位圖情境）。
+- `companion` 這次回到「同行朋友」用法：朋友在旁邊一起看座位圖，把「旁白唸座位圖資訊」轉成對話，對話比例拉到 83%。
+- Speaking Bridge 取 `connection`、`make`、`through`（rc=0，最不熟，且尚未入選過）與 `contact`。
+- 實測新規則：對話 83%、含縮寫句 38%、最長旁白連續 2 句、主音檔 137.23 秒。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-14` **97 checks / 0 warnings / 0 errors**；瀏覽器 375px 在 43 題 Active Recall 下仍無橫向溢位、console 0 errors、`article.mp3`、`s01`–`s36` 與核心句音檔均回 200、單字／複習字／片語彈窗全部命中、Survival Lines 已換成另外 5 句、首頁最新一筆為 Day 118。
+
 ## 2026-09-11 — Day 117 正式教材產出（首篇套用新規則）
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `Sentence SRS update: context recall 2026-09-10`；該次同步由瀏覽器以 `JSON.stringify(v, null, 2)` 覆寫整檔，`sentences.json` 的行內陣列排版已被展開，往後不需再特意保留。
@@ -342,13 +355,4 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-07-09` 通過，70 checks，0 warnings，0 errors。
 
 ---
-
-## 2026-07-08 — Day 73 正式教材產出
-
-- 先 `git fetch origin`，確認遠端只比本地多 `vocabulary/sentences.json`，先同步句子 SRS 資料後再生成今天教材。
-- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-08/`，標題為 `The Blue Receipt · Episode 15`。
-- 今日新字：`office`、`report`、`guard`；文章正式揭露門後的人是 May Lin，主線進入收束段。
-- Active Recall Quiz 依最新 `learning.json` 生成 5 個今日到期複習字；Speaking Bridge 使用 `voice`、`truth`、`folded`、`careful`。
-- 補齊 `Ability Focus`、8 題 `Context Recall`、`vocabulary/sentences.json`、`ability_map.json`、首頁、`profile.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：`article.mp3` 與 `s01.mp3` 到 `s25.mp3` 已生成；`python3 scripts/validate_daily.py 2026-07-08` 通過；本機 HTTP `/` 與 `/daily/2026-07-08/` 回傳 200。
 

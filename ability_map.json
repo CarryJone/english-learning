@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-14",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-14",
+      "day": 118,
+      "title": "Picking Seats Together on a Full Flight",
+      "url": "daily/2026-09-14/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
+      "evidence": [
+        "Mission: check in online, then fix a split seat assignment.",
+        "Input: airline check-in page, seat map, and a call to the airline.",
+        "Find the 48-hour free window, the US$25 front-row fee, and the 23 kg bag limit.",
+        "Say \"Is there an extra fee to change them?\" and \"Could we swap seats?\""
+      ]
+    },
     {
       "date": "2026-09-11",
       "day": 117,

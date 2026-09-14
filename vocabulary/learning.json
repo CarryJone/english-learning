@@ -3659,6 +3659,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-12",
       "lastReviewedDate": null
+    },
+    {
+      "word": "free",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "免費的；空著沒人用的",
+      "exampleSentence": "Seat selection is free of charge.",
+      "dateAdded": "2026-09-14",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "extra",
+      "partOfSpeech": "adj./n.",
+      "chineseMeaning": "額外的；額外費用",
+      "exampleSentence": "Is there an extra fee to change them?",
+      "dateAdded": "2026-09-14",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "swap",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "交換；換（位子、東西）",
+      "exampleSentence": "Could we swap seats?",
+      "dateAdded": "2026-09-14",
+      "reviewCount": 0,
+      "nextReview": "2026-09-15",
+      "lastReviewedDate": null
     }
   ]
 }

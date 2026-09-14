@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-14",
   "description": "核心生存句（Survival Lines）清單與 SRS 狀態。每日教材從 activateOn <= 今天的句子中挑選；排序為 SRS 到期優先、其次最久未出現。第二批 activateOn 設為 2026-10-01，屆時自動加入輪替，不需人工開啟。",
   "dailyCount": 5,
   "countdownSeconds": 5,
@@ -114,8 +114,9 @@
       "nextReview": "2026-09-11",
       "lastReviewedDate": null,
       "lastRating": null,
-      "lastUsedOn": null,
-      "useCount": 0
+      "lastUsedOn": "2026-09-14",
+      "useCount": 1,
+      "lastVariant": 0
     },
     {
       "id": "core-do-you-speak-english",
@@ -196,8 +197,9 @@
       "nextReview": "2026-09-11",
       "lastReviewedDate": null,
       "lastRating": null,
-      "lastUsedOn": null,
-      "useCount": 0
+      "lastUsedOn": "2026-09-14",
+      "useCount": 1,
+      "lastVariant": 0
     },
     {
       "id": "core-pay-by-card",
@@ -236,8 +238,9 @@
       "nextReview": "2026-09-11",
       "lastReviewedDate": null,
       "lastRating": null,
-      "lastUsedOn": null,
-      "useCount": 0
+      "lastUsedOn": "2026-09-14",
+      "useCount": 1,
+      "lastVariant": 0
     },
     {
       "id": "core-can-i-have",
@@ -289,8 +292,9 @@
       "nextReview": "2026-09-11",
       "lastReviewedDate": null,
       "lastRating": null,
-      "lastUsedOn": null,
-      "useCount": 0
+      "lastUsedOn": "2026-09-14",
+      "useCount": 1,
+      "lastVariant": 0
     },
     {
       "id": "core-what-recommend",
@@ -386,8 +390,9 @@
       "nextReview": "2026-09-11",
       "lastReviewedDate": null,
       "lastRating": null,
-      "lastUsedOn": null,
-      "useCount": 0
+      "lastUsedOn": "2026-09-14",
+      "useCount": 1,
+      "lastVariant": 0
     },
     {
       "id": "core-walking-distance",
