@@ -4,6 +4,16 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-07-09 — Day 74 產出錯誤修復
+
+- 同步遠端 `origin/main`，保留 2026-07-08 的 review quiz 與 sentence SRS 更新。
+- 檢查前一輪失敗留下的 `daily/2026-07-09/`，確認內容錯置為 2026-07-08 / Episode 15 複製品。
+- 將 `daily/2026-07-09/index.html` 修正為 Day 74、`The Blue Receipt · Episode 16`，主線為 Mina 帶著 report 到 front office。
+- 今日新字：`proof`、`clerk`、`deliver`；文章融入複習字：`report`、`guard`、`record`。
+- 重新產生 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，確保音檔對應 Episode 16。
+- 更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/serial-story/CONTINUITY_LOG.md`。
+- 驗證：`python3 scripts/validate_daily.py 2026-07-09` 通過，70 checks，0 warnings，0 errors。
+
 ## 2026-07-08 — Day 73 正式教材產出
 
 - 先 `git fetch origin`，確認遠端只比本地多 `vocabulary/sentences.json`，先同步句子 SRS 資料後再生成今天教材。

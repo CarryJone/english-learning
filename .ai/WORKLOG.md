@@ -5,6 +5,22 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-15 — Day 119 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-14`（Day 118 的 43 題已作答）；今日到期舊單字只剩 3 個（`free`、`extra`、`swap`，皆為昨日新字）。
+- 新增 `daily/2026-09-15/`，主題為 `Splitting a Dinner Bill with a Service Charge`；今日新字：`bill`、`split`、`service`。模組依近期逐日輪替回到 `Hotels, Food & Shopping`（M2），作為本週的旅行開口日。
+- 任務是和朋友吃完晚餐結帳：從帳單找出總額 $44、10% 服務費已含、自來水免費，刷卡機跳出 `Add a tip?` 時選 No tip；朋友的卡刷不過，改把他那一半刷自己的卡。
+- 今日目標語塊：`split the bill`（開口）、`service charge`（資訊判讀）、`go through`（聽懂／看懂付款結果）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，並各有跨情境轉移（平分計程車資、飯店客房服務費、網路訂票付款失敗）。
+- 文章融入複習字 `free`、`extra`；`swap` 在結帳情境沒有自然用法，未硬塞，改放 Context Recall（把薯條換成沙拉），仍照常進 Active Recall 與 Review Words。
+- `companion` 用作同行朋友，把「旁白唸帳單」轉成對話。聽力挑戰句 `Service is already on the bill, so you can just tap No tip.`（13 字）→ repair `Sorry, so we don't add a tip?` → 重述 `Right, no tip. It's already included.`（6 字）。
+- Speaking Bridge 取 `connection`、`make`、`through`（rc=1，依 reviewCount 優先，與昨天重疊，Lv.2 全部換新情境）與 `lost`（rc=2 同層中唯二尚未入選過的字之一）。
+- Survival Lines 由 `scripts/pick_core_phrases.py 2026-09-15 --commit` 選出 `pay-by-card`、`say-again`、`speak-slowly`、`walking-distance`、`what-do-you-mean`。
+- 產生器沿用上一輪 session scratchpad 的 build_html / tts / update_data，base 改為 Day 118 頁面；缺少的 `core_block.py` 依 Day 118 頁面重建，先以 Day 118 資料回歸測試，Survival Lines 區塊與資料逐位元一致。`split the bill`、`didn't go through` 以 Collins / Reverso 條目與實際用例確認（Cambridge、Oxford Learner's 對 WebFetch 回 403）。
+- 實測：36 句 / 256 字、對話 89%、含縮寫句 47%、最長旁白連續 1、主音檔 137.57 秒（句間停頓沿用 0.05 / 0.12 / 0.25 秒）。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-15` **97 checks / 0 warnings / 0 errors**；瀏覽器 375px 無橫向溢位、console 0 errors、`article.mp3`、`s01`–`s36` 與 5 個核心句音檔均回 200、單字／複習字／片語彈窗全部命中、單句播放與標亮、Survival Lines 倒數揭示正常、首頁最新一筆為 Day 119；`git diff --check` 與 JSON parse 通過；未碰任何同步按鈕，未修改既有未追蹤的 `test/`。
+- 發現既有問題（非本次造成）：首頁學習記錄缺 `daily/2026-07-28/`（Day 85），118 筆連結對應 119 個資料夾；未處理。
+- WORKLOG 達 31 筆，將最舊的 `2026-07-09 — Day 74 產出錯誤修復` 歸檔到 `.ai/archive/WORKLOG_2026_07.md`。
+
 ## 2026-09-14 — Day 118 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端兩筆：`Core phrase SRS update 2026-09-11`（Survival Lines 首次被實際使用，5 題全對）與 `SRS update: review quiz 2026-09-11`。
@@ -343,16 +359,3 @@
 - 驗證：`article.mp3` 與 `s01.mp3` 到 `s25.mp3` 已生成；`python3 scripts/validate_daily.py 2026-07-13` 通過，70 checks，0 warnings，0 errors。
 
 ---
-
-## 2026-07-09 — Day 74 產出錯誤修復
-
-- 同步遠端 `origin/main`，保留 2026-07-08 的 review quiz 與 sentence SRS 更新。
-- 檢查前一輪失敗留下的 `daily/2026-07-09/`，確認內容錯置為 2026-07-08 / Episode 15 複製品。
-- 將 `daily/2026-07-09/index.html` 修正為 Day 74、`The Blue Receipt · Episode 16`，主線為 Mina 帶著 report 到 front office。
-- 今日新字：`proof`、`clerk`、`deliver`；文章融入複習字：`report`、`guard`、`record`。
-- 重新產生 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，確保音檔對應 Episode 16。
-- 更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：`python3 scripts/validate_daily.py 2026-07-09` 通過，70 checks，0 warnings，0 errors。
-
----
-

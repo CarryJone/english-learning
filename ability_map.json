@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-15",
+      "day": 119,
+      "title": "Splitting a Dinner Bill with a Service Charge",
+      "url": "daily/2026-09-15/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: pay a dinner bill with a friend, split it, and fix a card that doesn't go through.",
+        "Input: restaurant bill with a 10% service charge and a card machine tip screen.",
+        "Find the $44 total and that the service charge is already included, then tap No tip.",
+        "Say \"Can we split the bill?\" and \"Can you put his half on my card?\""
+      ]
+    },
     {
       "date": "2026-09-14",
       "day": 118,

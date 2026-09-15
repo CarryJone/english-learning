@@ -7878,6 +7878,176 @@
       "reviewCount": 0,
       "nextReview": "2026-09-15",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-can-we-split-the-bill",
+      "type": "sentence",
+      "zhPrompt": "吃完飯，你和朋友想平分帳單。",
+      "answer": "Can we split the bill?",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can we split ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-service-charge-is-included",
+      "type": "sentence",
+      "zhPrompt": "帳單上寫，服務費已經算在裡面了。",
+      "answer": "The service charge is included.",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-tap-water-is-free",
+      "type": "sentence",
+      "zhPrompt": "朋友問水有沒有收錢，你看完帳單跟他說自來水是免費的。",
+      "answer": "No, the tap water's free.",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-so-we-dont-add-a-tip",
+      "type": "sentence",
+      "zhPrompt": "店員講太快，你想確認是不是不用加小費。",
+      "answer": "Sorry, so we don't add a tip?",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-did-it-go-through",
+      "type": "sentence",
+      "zhPrompt": "你刷完卡，機器沒什麼反應，想問店員有沒有刷成功。",
+      "answer": "Did it go through?",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-put-his-half-on-my-card",
+      "type": "sentence",
+      "zhPrompt": "朋友的卡刷不過，你想請店員把他那一半刷你的卡。",
+      "answer": "Can you put his half on my card?",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can you put ... on my card?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-swap-the-fries-for-a-salad",
+      "type": "sentence",
+      "zhPrompt": "點餐時，你想把套餐的薯條換成沙拉。",
+      "answer": "Can I swap the fries for a salad?",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-payment-didnt-go-through",
+      "type": "context",
+      "zhPrompt": "你在網路上訂火車票，畫面顯示付款失敗，你轉頭跟朋友說。",
+      "answer": "My payment didn't go through. / It didn't go through.",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-split-the-taxi-fare",
+      "type": "context",
+      "zhPrompt": "你和朋友一起搭計程車去機場，想提議平分車資。",
+      "answer": "Let's split the fare. / Can we split the taxi fare?",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-15-room-service-charge",
+      "type": "context",
+      "zhPrompt": "你想點飯店的客房服務，先打電話問會不會另外加服務費。",
+      "answer": "Is there a service charge? / Is the service charge included?",
+      "sourceDate": "2026-09-15",
+      "sourceTitle": "Splitting a Dinner Bill with a Service Charge",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
     }
   ]
 }

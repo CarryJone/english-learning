@@ -3689,6 +3689,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-15",
       "lastReviewedDate": null
+    },
+    {
+      "word": "bill",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "帳單",
+      "exampleSentence": "Can we get the bill, please?",
+      "dateAdded": "2026-09-15",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "split",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "分攤；平分（費用）",
+      "exampleSentence": "Can we split the bill?",
+      "dateAdded": "2026-09-15",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "service",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "服務；服務費",
+      "exampleSentence": "The service charge is included.",
+      "dateAdded": "2026-09-15",
+      "reviewCount": 0,
+      "nextReview": "2026-09-16",
+      "lastReviewedDate": null
     }
   ]
 }
