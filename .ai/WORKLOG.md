@@ -5,6 +5,22 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-16 — Day 120 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端兩筆：`SRS update: review quiz 2026-09-15` 與 `Core phrase SRS update 2026-09-15`（Survival Lines 首次完整作答：4 句 remembered、`walking-distance` forgot）。
+- 今日到期舊單字 19 個（16 個 rc=4 的七月交通／飯店／餐飲字，加上昨天的 `bill`、`split`、`service`）。
+- 新增 `daily/2026-09-16/`，主題為 `Fixing a Missing Hotel Booking at Check-in`；今日新字：`booking`、`confirmation`、`spell`。模組依逐日輪替進到 `Problems & Repair`（M3）。
+- 任務是飯店報到時櫃檯查不到訂房：從確認信找出確認號碼 4821、入住從下午三點開始，以及 `Guest: Mr C. H. Wang`（登記在朋友名下）；房間還沒整理好時先寄放行李。
+- 今日目標語塊：`under the name`（開口）、`confirmation number`（資訊判讀）、`come up`（聽懂／看懂查詢結果）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，並各有跨情境轉移（餐廳訂位報名字、訂房網站搜尋沒結果）。
+- 文章融入複習字 `reception`、`included`、`store`（都落在飯店情境裡）。
+- `companion` 用作同行朋友（實際訂房的人）。聽力挑戰句 `It's under your friend's name, so it didn't come up under yours.`（12 字）→ repair `Sorry, whose name is it under?` → 重述 `Your friend's name. He booked it.`（6 字）。
+- Speaking Bridge 取 `free`、`extra`、`swap`（rc=1，且是尚未入選過的字）與 `through`（rc=1）；`through` 的 Lv.2 刻意換到付款情境 `Did it go through?`，與昨天的目標語塊做跨天交錯。
+- Survival Lines 由 `scripts/pick_core_phrases.py 2026-09-16 --commit` 選出 `can-i-have`（變化 2：Can I have a bag, please?）、`check-please`、`what-recommend`、`where-restroom`、`wheres-nearest`。
+- 修掉一個窄螢幕缺陷：Review Words 在 19 筆、390px 下，「詞性」欄只有 15% 會把 `adv./adj.` 拆成一字一行、`escalator` / `passenger` 斷在字中間。當日頁 CSS 欄寬改為 30/17/31/22% 並縮小左右內距，實測長單字可整行顯示、狀態欄仍在卡片內、頁面無橫向溢位。只影響今天之後的新頁，未回頭改舊頁。
+- 實測：36 句 / 254 字、對話 89%、含縮寫句 31%、最長旁白連續 1、主音檔 136.06 秒（句間停頓沿用 0.05 / 0.12 / 0.25 秒）。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-16` **97 checks / 0 warnings / 0 errors**；瀏覽器 375 與 390px 皆無橫向溢位、console 0 errors、`article.mp3`、`s01`–`s36` 與 5 個核心句音檔均回 200、單字／複習字／片語彈窗全部命中（含 phrase-chunk 內的 `store`）、單句播放與標亮、Active Recall 19 題的克漏字與選項、Survival Lines 倒數揭示正常、首頁最新一筆為 Day 120；`git diff --check` 與 JSON parse 通過；未碰任何同步按鈕，未修改既有未追蹤的 `test/`。
+- WORKLOG 達 31 筆，將最舊的 `2026-07-13 — Day 75 正式教材產出` 歸檔到 `.ai/archive/WORKLOG_2026_07.md`。
+
 ## 2026-09-15 — Day 119 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-14`（Day 118 的 43 題已作答）；今日到期舊單字只剩 3 個（`free`、`extra`、`swap`，皆為昨日新字）。
@@ -345,17 +361,5 @@
 - 同步更新 `AGENTS.md`、`profile.json`、首頁、`scripts/validate_daily.py`、`LEARNING_SYSTEM_ROADMAP.md` 與 `.ai/DECISIONS.md`。
 - 封存 `.ai/serial-story/` 文件，保留既有小說資料，不重開完整 app。
 - 驗證：舊 Episode 18 通過 70 checks；Python / JSON / 首頁 inline JS / `git diff --check` 通過；新日期的 Mission、Role-play transition guard 通過。
-
----
-
-## 2026-07-13 — Day 75 正式教材產出
-
-- 先 `git fetch origin` 並 `git pull --ff-only origin main`，同步 7/9 單字 SRS 與句子 SRS 遠端更新後再生成今天教材。
-- 延續 `The Blue Receipt` 主線，新增 `daily/2026-07-13/`，標題為 `The Blue Receipt · Episode 17`。
-- 今日新字：`key`、`unlock`、`final`；文章融入複習字：`platform`、`clerk`、`tomorrow`、`receipt`、`printed`、`voice`。
-- Review Quiz / Review Words 依最新 `learning.json` 生成，共納入 43 個到期複習字。
-- Speaking Bridge 使用 `proof`、`clerk`、`deliver`、`exact`；Context Recall 8 題同步寫入 `vocabulary/sentences.json`。
-- 同步首頁、`profile.json`、`ability_map.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
-- 驗證：`article.mp3` 與 `s01.mp3` 到 `s25.mp3` 已生成；`python3 scripts/validate_daily.py 2026-07-13` 通過，70 checks，0 warnings，0 errors。
 
 ---

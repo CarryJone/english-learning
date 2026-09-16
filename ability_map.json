@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-16",
+      "day": 120,
+      "title": "Fixing a Missing Hotel Booking at Check-in",
+      "url": "daily/2026-09-16/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
+      "evidence": [
+        "Mission: check in when the front desk cannot find the booking.",
+        "Input: booking confirmation screen plus a front desk conversation.",
+        "Find confirmation number 4821, check-in from 3 p.m., and that the booking is under the friend's name.",
+        "Say \"It's under the name Chen.\" and \"Can you store our bags until then?\""
+      ]
+    },
     {
       "date": "2026-09-15",
       "day": 119,

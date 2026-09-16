@@ -8048,6 +8048,176 @@
       "reviewCount": 0,
       "nextReview": "2026-09-16",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-under-the-name-chen",
+      "type": "sentence",
+      "zhPrompt": "你到飯店櫃檯報到，說訂房是用 Chen 這個名字。",
+      "answer": "It's under the name Chen.",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "It's under ...",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-got-the-confirmation-number",
+      "type": "sentence",
+      "zhPrompt": "櫃檯查不到訂房，你說確認號碼就在手機上。",
+      "answer": "I've got the confirmation number here.",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-whose-name-is-it-under",
+      "type": "sentence",
+      "zhPrompt": "櫃檯講太快，你沒聽清楚是登記在誰的名字下。",
+      "answer": "Sorry, whose name is it under?",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-two-nights-twin-room",
+      "type": "sentence",
+      "zhPrompt": "確認信上寫兩晚、雙床房，含早餐。",
+      "answer": "Two nights, a twin room, breakfast included.",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-what-time-will-it-be-ready",
+      "type": "sentence",
+      "zhPrompt": "櫃檯說房間還沒整理好，你想問幾點可以進房。",
+      "answer": "What time will it be ready?",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "What time ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-store-our-bags-until-three",
+      "type": "sentence",
+      "zhPrompt": "房間三點才好，你想請櫃檯先幫你們寄放行李。",
+      "answer": "Can you store our bags until three?",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-let-me-spell-it-for-you",
+      "type": "sentence",
+      "zhPrompt": "對方一直聽錯你的姓，你主動說要拼給他聽。",
+      "answer": "Let me spell it for you.",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-is-breakfast-included",
+      "type": "sentence",
+      "zhPrompt": "你想確認房價有沒有含早餐。",
+      "answer": "Is breakfast included?",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-nothing-came-up",
+      "type": "context",
+      "zhPrompt": "你在訂房網站搜尋那家飯店，結果什麼都沒跑出來，你跟朋友說。",
+      "answer": "Nothing came up. / It didn't come up.",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-16-restaurant-booking-under-my-name",
+      "type": "context",
+      "zhPrompt": "你到餐廳跟店員說有訂位，是用你的名字訂的。",
+      "answer": "I have a booking under my name. / It's under Chen.",
+      "sourceDate": "2026-09-16",
+      "sourceTitle": "Fixing a Missing Hotel Booking at Check-in",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -3719,6 +3719,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-16",
       "lastReviewedDate": null
+    },
+    {
+      "word": "booking",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "訂房、訂位紀錄",
+      "exampleSentence": "I can't find your booking.",
+      "dateAdded": "2026-09-16",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "confirmation",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "確認信；確認號碼",
+      "exampleSentence": "I've got the confirmation number here.",
+      "dateAdded": "2026-09-16",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "spell",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "拼出（字母）",
+      "exampleSentence": "Can you spell your last name for me?",
+      "dateAdded": "2026-09-16",
+      "reviewCount": 0,
+      "nextReview": "2026-09-17",
+      "lastReviewedDate": null
     }
   ]
 }
