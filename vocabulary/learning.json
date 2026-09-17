@@ -3186,9 +3186,9 @@
       "chineseMeaning": "符合資格的",
       "exampleSentence": "This purchase is eligible for a tax refund.",
       "dateAdded": "2026-08-20",
-      "reviewCount": 3,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-03"
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "purchase",
@@ -3206,9 +3206,9 @@
       "chineseMeaning": "原本的；正本的",
       "exampleSentence": "Bring the original receipt, not a photo.",
       "dateAdded": "2026-08-20",
-      "reviewCount": 3,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-03"
+      "reviewCount": 4,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "fuel",
@@ -3216,9 +3216,9 @@
       "chineseMeaning": "燃料；汽油",
       "exampleSentence": "Please check the fuel level before returning the car.",
       "dateAdded": "2026-08-21",
-      "reviewCount": 3,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-03"
+      "reviewCount": 4,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "damage",
@@ -3226,9 +3226,9 @@
       "chineseMeaning": "損壞；損傷",
       "exampleSentence": "Please report any damage before leaving.",
       "dateAdded": "2026-08-21",
-      "reviewCount": 3,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-03"
+      "reviewCount": 4,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "deposit",
@@ -3236,9 +3236,9 @@
       "chineseMeaning": "押金",
       "exampleSentence": "The deposit returns after the car inspection.",
       "dateAdded": "2026-08-21",
-      "reviewCount": 2,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-10"
+      "reviewCount": 3,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "train",
@@ -3486,9 +3486,9 @@
       "chineseMeaning": "踏板；踩踏板",
       "exampleSentence": "Press the pedal gently before moving.",
       "dateAdded": "2026-09-03",
-      "reviewCount": 2,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-10"
+      "reviewCount": 3,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "brake",
@@ -3496,9 +3496,9 @@
       "chineseMeaning": "煞車；煞車器",
       "exampleSentence": "Test the brake before you ride.",
       "dateAdded": "2026-09-03",
-      "reviewCount": 2,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-10"
+      "reviewCount": 3,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "helmet",
@@ -3506,9 +3506,9 @@
       "chineseMeaning": "安全帽",
       "exampleSentence": "I always wear a helmet on a bike.",
       "dateAdded": "2026-09-03",
-      "reviewCount": 2,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-10"
+      "reviewCount": 3,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "insert",
@@ -3636,9 +3636,9 @@
       "chineseMeaning": "轉機；銜接的班次",
       "exampleSentence": "I've got a tight connection in Hong Kong.",
       "dateAdded": "2026-09-11",
-      "reviewCount": 1,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-14"
+      "reviewCount": 2,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "make",
@@ -3646,9 +3646,9 @@
       "chineseMeaning": "趕上（車、船、班機、約）",
       "exampleSentence": "Will I make it?",
       "dateAdded": "2026-09-11",
-      "reviewCount": 1,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-14"
+      "reviewCount": 2,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "through",
@@ -3656,9 +3656,9 @@
       "chineseMeaning": "直達終點；穿過",
       "exampleSentence": "Is my bag checked through to Taipei?",
       "dateAdded": "2026-09-11",
-      "reviewCount": 1,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": "2026-09-14"
+      "reviewCount": 2,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "free",
@@ -3726,9 +3726,9 @@
       "chineseMeaning": "訂房、訂位紀錄",
       "exampleSentence": "I can't find your booking.",
       "dateAdded": "2026-09-16",
-      "reviewCount": 0,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-09-20",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "confirmation",
@@ -3736,9 +3736,9 @@
       "chineseMeaning": "確認信；確認號碼",
       "exampleSentence": "I've got the confirmation number here.",
       "dateAdded": "2026-09-16",
-      "reviewCount": 0,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-09-20",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "spell",
@@ -3746,9 +3746,9 @@
       "chineseMeaning": "拼出（字母）",
       "exampleSentence": "Can you spell your last name for me?",
       "dateAdded": "2026-09-16",
-      "reviewCount": 0,
-      "nextReview": "2026-09-17",
-      "lastReviewedDate": null
+      "reviewCount": 1,
+      "nextReview": "2026-09-20",
+      "lastReviewedDate": "2026-09-17"
     },
     {
       "word": "announcement",
