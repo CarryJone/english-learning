@@ -5,6 +5,22 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-17 — Day 121 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-16`：Day 120 的 19 題 Active Recall 全對；09-16 的 Survival Lines 未同步。
+- 今日到期舊單字 14 個（八月退稅／租車字 `eligible`、`original`、`fuel`、`damage`、`deposit`，單車字 `pedal`、`brake`、`helmet`，`connection`、`make`、`through`，與昨天的 `booking`、`confirmation`、`spell`）。
+- 新增 `daily/2026-09-17/`，主題為 `Taking the Express by Mistake`；今日新字：`announcement`、`skip`、`mistake`。模組依逐日輪替回到 `Transport & Getting Around`（M1），作為本週的旅行開口日。
+- 任務是去 Old Town 參加十一點導覽，趕車時跳上不停 Old Town 的快車：從月台螢幕看出 10:12 Express、10:15 Local · all stops、`Express trains skip Old Town`，以及轉車告示 `Do not tap out`；問站務員怎麼回去，下一班車誤點時傳訊息給導遊。
+- 今日目標語塊：`Does this train stop at ...?`（開口）、`by mistake`（說明狀況）、`tap out`（看懂轉車告示）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，後兩者各有跨情境轉移（咖啡店不小心刷兩次卡、公車下車要不要刷卡）。已學字 `local`（當地的）在 Key Phrases 補上「各站停車」的新義。
+- 文章融入複習字 `make`、`through`、`booking`（`make` 用 made it / won't make it by eleven 兩種）。
+- `companion` 用作同行朋友。聽力挑戰句 `Get off at Central, then take the local back one stop.`（11 字）→ repair `Sorry, which train do we take back?` → 重述 `The local. It's just one stop.`（6 字）。
+- Speaking Bridge 取 `bill`、`split`、`service`（rc=1 且尚未入選過）與 `connection`（rc=1 中最久沒入選）；`service` 的 Lv.2 換到手機沒訊號 `There's no service here.`。
+- Survival Lines 由 `scripts/pick_core_phrases.py 2026-09-17 --commit` 選出 `could-you-help`、`didnt-catch`、`do-you-speak-english`、`here-you-go`、`how-do-i-get-to`（變化 2：airport）。
+- **scratchpad 被系統清空**，前幾天的 build_html / tts / update_data / core_block 腳本全數遺失。依對話中保留的完整內容重建，再用 Day 120 頁面比對：CSS、inline JS（扣除當日資料）、區塊標題完全一致，唯一差異是當日內容造成的元素種類不同。`tap in / tap out` 以 LA Metro、SEPTA、TransLink 的官方與新聞用例確認。
+- 實測：36 句 / 271 字、對話 86%、含縮寫句 36%、最長旁白連續 1、主音檔 140.25 秒（句間停頓沿用 0.05 / 0.12 / 0.25 秒）。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-17` **97 checks / 0 warnings / 0 errors**；瀏覽器 375 與 390px 皆無橫向溢位、console 0 errors、`article.mp3`、`s01`–`s36` 與 5 個核心句音檔均回 200、單字／複習字／片語彈窗全部命中、單句播放與標亮、Survival Lines 倒數揭示正常、首頁最新一筆為 Day 121；`git diff --check` 與 JSON parse 通過；未碰任何同步按鈕，未修改既有未追蹤的 `test/`。
+- WORKLOG 達 31 筆，將最舊一筆歸檔到 `.ai/archive/WORKLOG_2026_07.md`。
+
 ## 2026-09-16 — Day 120 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端兩筆：`SRS update: review quiz 2026-09-15` 與 `Core phrase SRS update 2026-09-15`（Survival Lines 首次完整作答：4 句 remembered、`walking-distance` forgot）。
@@ -351,15 +367,5 @@
 - 依使用者回饋移除文章句子前的可見編號，保留逐句播放與句子資料順序。
 - 更新 `AGENTS.md`、`.ai/daily-english-learning/SKILL.md` 與 `.ai/PROJECT_STATE.md`，確認單字複習沿用既有 Active Recall Quiz 與 SRS 流程。
 - 驗證：HTML/JS 語法、HTTP 200、音檔與 `git diff --check` 通過。
-
----
-
-## 2026-07-15 — 每日教材切換為任務型情境英文
-
-- 依使用者確認，將 `The Blue Receipt` Episode 18 標記為第一季結尾，停止每日自動續寫小說。
-- 更新 `.ai/daily-english-learning/SKILL.md`：新增 Mission、英文資訊輸入、Role-play、跨情境 Context Recall 與每週能力平衡規則。
-- 同步更新 `AGENTS.md`、`profile.json`、首頁、`scripts/validate_daily.py`、`LEARNING_SYSTEM_ROADMAP.md` 與 `.ai/DECISIONS.md`。
-- 封存 `.ai/serial-story/` 文件，保留既有小說資料，不重開完整 app。
-- 驗證：舊 Episode 18 通過 70 checks；Python / JSON / 首頁 inline JS / `git diff --check` 通過；新日期的 Mission、Role-play transition guard 通過。
 
 ---

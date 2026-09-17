@@ -8218,6 +8218,175 @@
       "reviewCount": 0,
       "nextReview": "2026-09-17",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-does-this-train-stop-at-old-town",
+      "type": "sentence",
+      "zhPrompt": "上車前，你想確認這班車有沒有停 Old Town。",
+      "answer": "Does this train stop at Old Town?",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Does this train ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-we-got-on-by-mistake",
+      "type": "sentence",
+      "zhPrompt": "你跟站務員說，你們不小心搭上了快車。",
+      "answer": "We got on the express by mistake.",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-express-trains-skip-old-town",
+      "type": "sentence",
+      "zhPrompt": "月台螢幕寫：快車不停 Old Town。",
+      "answer": "Express trains skip Old Town.",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-stay-inside-do-not-tap-out",
+      "type": "sentence",
+      "zhPrompt": "轉車告示寫：待在閘門內，不要刷卡出站。",
+      "answer": "Stay inside the gates. Do not tap out.",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-which-train-do-we-take-back",
+      "type": "sentence",
+      "zhPrompt": "站務員講太快，你沒聽清楚要搭哪一班車回去。",
+      "answer": "Sorry, which train do we take back?",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-were-running-late",
+      "type": "sentence",
+      "zhPrompt": "下一班車誤點，你傳訊息跟導遊說你們會晚到。",
+      "answer": "We're running late.",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "We're running ...",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-can-we-still-make-this-train",
+      "type": "sentence",
+      "zhPrompt": "車門快關了，你問站務員你們還趕不趕得上這班車。",
+      "answer": "Can we still make this train?",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-i-have-a-booking-confirmation",
+      "type": "sentence",
+      "zhPrompt": "你到車站櫃檯取票，說你有網路訂票，並拿出確認信。",
+      "answer": "I have a booking. Here's the confirmation.",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-paid-twice-by-mistake",
+      "type": "context",
+      "zhPrompt": "你在咖啡店結帳，發現自己不小心刷了兩次卡。",
+      "answer": "I paid twice by mistake. / I think I paid twice by mistake.",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-17-do-i-need-to-tap-out-bus",
+      "type": "context",
+      "zhPrompt": "你搭公車快到站了，想問司機下車時要不要刷卡。",
+      "answer": "Do I need to tap out? / Do I tap out when I get off?",
+      "sourceDate": "2026-09-17",
+      "sourceTitle": "Taking the Express by Mistake",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
     }
   ]
 }

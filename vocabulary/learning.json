@@ -3749,6 +3749,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-17",
       "lastReviewedDate": null
+    },
+    {
+      "word": "announcement",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "廣播；公告",
+      "exampleSentence": "Did that announcement say express?",
+      "dateAdded": "2026-09-17",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "skip",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "跳過；（車）不停靠",
+      "exampleSentence": "Express trains skip Old Town.",
+      "dateAdded": "2026-09-17",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "mistake",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "錯誤；搞錯",
+      "exampleSentence": "We got on the express by mistake.",
+      "dateAdded": "2026-09-17",
+      "reviewCount": 0,
+      "nextReview": "2026-09-18",
+      "lastReviewedDate": null
     }
   ]
 }

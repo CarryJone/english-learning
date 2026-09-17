@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-17",
+      "day": 121,
+      "title": "Taking the Express by Mistake",
+      "url": "daily/2026-09-17/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "onlineReading"
+      ],
+      "evidence": [
+        "Mission: get back to Old Town after boarding an express train by mistake.",
+        "Input: platform departure screen and a transfer sign.",
+        "Find that the 10:15 local stops at Old Town, express trains skip it, and you should not tap out when changing trains.",
+        "Say \"Does this train stop at Old Town?\" and \"We got on by mistake.\""
+      ]
+    },
     {
       "date": "2026-09-16",
       "day": 120,

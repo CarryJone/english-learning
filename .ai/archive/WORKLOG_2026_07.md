@@ -4,6 +4,14 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-07-15 — 每日教材切換為任務型情境英文
+
+- 依使用者確認，將 `The Blue Receipt` Episode 18 標記為第一季結尾，停止每日自動續寫小說。
+- 更新 `.ai/daily-english-learning/SKILL.md`：新增 Mission、英文資訊輸入、Role-play、跨情境 Context Recall 與每週能力平衡規則。
+- 同步更新 `AGENTS.md`、`profile.json`、首頁、`scripts/validate_daily.py`、`LEARNING_SYSTEM_ROADMAP.md` 與 `.ai/DECISIONS.md`。
+- 封存 `.ai/serial-story/` 文件，保留既有小說資料，不重開完整 app。
+- 驗證：舊 Episode 18 通過 70 checks；Python / JSON / 首頁 inline JS / `git diff --check` 通過；新日期的 Mission、Role-play transition guard 通過。
+
 ## 2026-07-13 — Day 75 正式教材產出
 
 - 先 `git fetch origin` 並 `git pull --ff-only origin main`，同步 7/9 單字 SRS 與句子 SRS 遠端更新後再生成今天教材。
