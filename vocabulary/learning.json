@@ -3779,6 +3779,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-18",
       "lastReviewedDate": null
+    },
+    {
+      "word": "forecast",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "（天氣）預報",
+      "exampleSentence": "The forecast says it's windy tonight.",
+      "dateAdded": "2026-09-18",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "windy",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "風大的；颳風的",
+      "exampleSentence": "It's really windy tonight.",
+      "dateAdded": "2026-09-18",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "text",
+      "partOfSpeech": "v./n.",
+      "chineseMeaning": "傳簡訊；簡訊",
+      "exampleSentence": "We'll text you by four.",
+      "dateAdded": "2026-09-18",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
     }
   ]
 }

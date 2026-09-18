@@ -5,6 +5,22 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-09-18 — Day 122 正式教材產出
+
+- 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-17`：Day 121 的 14 題只錯 `eligible`（重設為 rc=0、今天再考）；09-17 的 Survival Lines 有 3 句同步為 remembered。
+- 今日到期舊單字 10 個：`eligible`、置物櫃課的 `insert`、`medium`、`space`、`free`、`extra`、`swap`，與昨天的 `announcement`、`skip`、`mistake`。
+- 新增 `daily/2026-09-18/`，主題為 `Checking If Our Boat Tour Is Still On`；今日新字：`forecast`、`windy`、`text`。模組依逐日輪替進到 `Travel Research & Instructions`（M4），作為本週第二個資訊判讀日。
+- 任務是傍晚的夕陽遊船遇到強風：從行程頁找出 `rain or shine`、強風取消可改期或 `full refund`、提前 20 分鐘到 Pier 3 報到，並讀天氣預報；打電話確認今晚是否照常，行程取消後改到明天。
+- 今日目標語塊：`Is it still on?`（開口）、`rain or shine`（資訊判讀）、`move it to ...`（改期）；三者都出現在 Article、Key Phrases、Role-play 的「你」回合與 Context Recall，前兩者各有跨情境轉移（颱風天問餐廳訂位、週末市集下雨照常）。
+- 文章融入複習字 `skip`（昨天的新字，換成「乾脆不去」的用法）、`extra`（重現 Day 118 的 Is there an extra fee to change?）、`free`。
+- `companion` 用作同行朋友。聽力挑戰句 `It's on for now, but we'll text you by four if that changes.`（13 字）→ repair `Sorry, when will we know?` → 重述 `By four. We'll text you.`（5 字）。
+- Speaking Bridge 取 `booking`、`confirmation`、`spell`（rc=1 且尚未入選過）與 `swap`（rc=1 中最久沒入選，且不在今天的文章複習字裡）。
+- Survival Lines 由 `scripts/pick_core_phrases.py 2026-09-18 --commit` 選出 `how-much`、`how-spell`、`id-like-this-one`、`pay-by-card`、`say-again`。
+- 產生器沿用 09-17 重建版（scratchpad 這次沒被清空），base 為 Day 121 頁面。行程頁的天氣規定寫法（rain or shine、strong winds、full refund 或改期）以多家遊船業者的公開政策確認。
+- 實測：36 句 / 263 字、對話 89%、含縮寫句 36%、最長旁白連續 1、主音檔 130.47 秒（句間停頓沿用 0.05 / 0.12 / 0.25 秒）。
+- 驗證：`python3 scripts/validate_daily.py 2026-09-18` **97 checks / 0 warnings / 0 errors**；瀏覽器 375 與 390px 皆無橫向溢位、console 0 errors、`article.mp3`、`s01`–`s36` 與 5 個核心句音檔均回 200、單字／複習字／片語彈窗全部命中（含 phrase-chunk 內的 `text`）、單句播放與標亮、Survival Lines 倒數揭示正常、首頁最新一筆為 Day 122；`git diff --check` 與 JSON parse 通過；未碰任何同步按鈕，未修改既有未追蹤的 `test/`。
+- WORKLOG 達 31 筆，將最舊一筆歸檔到 `.ai/archive/WORKLOG_2026_07.md`。
+
 ## 2026-09-17 — Day 121 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-16`：Day 120 的 19 題 Active Recall 全對；09-16 的 Survival Lines 未同步。
@@ -358,14 +374,5 @@
 - Active Recall Quiz 依最新 SRS 產出 12 個到期複習字；Speaking Bridge 使用前幾日單字；Context Recall 8 題、Role-play 8 回合與 Mission 均已接通。
 - 生成 `article.mp3` 與 `s01.mp3` 到 `s19.mp3`，並更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/PROJECT_STATE.md`。
 - 驗證：`python3 scripts/validate_daily.py 2026-07-15` 通過 73 checks，0 warnings，0 errors。
-
----
-
-## 2026-07-15 — 任務型測試版修正單字複習流程
-
-- 將 `test/2026-07-15/` 的單字複習改為 Active Recall Quiz，載入遠端最新 SRS 的 12 個到期單字，使用中文意思、例句挖空與四選一。
-- 依使用者回饋移除文章句子前的可見編號，保留逐句播放與句子資料順序。
-- 更新 `AGENTS.md`、`.ai/daily-english-learning/SKILL.md` 與 `.ai/PROJECT_STATE.md`，確認單字複習沿用既有 Active Recall Quiz 與 SRS 流程。
-- 驗證：HTML/JS 語法、HTTP 200、音檔與 `git diff --check` 通過。
 
 ---

@@ -4,6 +4,13 @@
 > 注意：本檔不是開發規則、不是待辦清單、不是規格來源。
 
 ---
+## 2026-07-15 — 任務型測試版修正單字複習流程
+
+- 將 `test/2026-07-15/` 的單字複習改為 Active Recall Quiz，載入遠端最新 SRS 的 12 個到期單字，使用中文意思、例句挖空與四選一。
+- 依使用者回饋移除文章句子前的可見編號，保留逐句播放與句子資料順序。
+- 更新 `AGENTS.md`、`.ai/daily-english-learning/SKILL.md` 與 `.ai/PROJECT_STATE.md`，確認單字複習沿用既有 Active Recall Quiz 與 SRS 流程。
+- 驗證：HTML/JS 語法、HTTP 200、音檔與 `git diff --check` 通過。
+
 ## 2026-07-15 — 每日教材切換為任務型情境英文
 
 - 依使用者確認，將 `The Blue Receipt` Episode 18 標記為第一季結尾，停止每日自動續寫小說。

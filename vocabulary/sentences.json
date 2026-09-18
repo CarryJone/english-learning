@@ -8387,6 +8387,174 @@
       "reviewCount": 0,
       "nextReview": "2026-09-18",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-is-the-tour-still-on-tonight",
+      "type": "sentence",
+      "zhPrompt": "風很大，你打電話問今晚的遊船還照常嗎。",
+      "answer": "Is the tour still on tonight?",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Is it still ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-tours-run-rain-or-shine",
+      "type": "sentence",
+      "zhPrompt": "行程頁寫：不論晴雨都照常出發。",
+      "answer": "Tours run rain or shine.",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-strong-winds-full-refund",
+      "type": "sentence",
+      "zhPrompt": "行程頁寫：如果強風取消，可以全額退款。",
+      "answer": "If strong winds cancel the tour, you get a full refund.",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-forecast-says-windy",
+      "type": "sentence",
+      "zhPrompt": "你看完天氣預報，跟朋友說今晚風很大。",
+      "answer": "The forecast says it's really windy tonight.",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-sorry-when-will-we-know",
+      "type": "sentence",
+      "zhPrompt": "客服講太快，你沒聽清楚什麼時候會通知你。",
+      "answer": "Sorry, when will we know?",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-can-we-move-it-to-tomorrow",
+      "type": "sentence",
+      "zhPrompt": "行程被取消了，你想改到明天。",
+      "answer": "Can we move it to tomorrow?",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can we move ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-extra-fee-to-change",
+      "type": "sentence",
+      "zhPrompt": "改期之前，你想先問要不要另外收費。",
+      "answer": "Is there an extra fee to change?",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-should-we-just-skip-it",
+      "type": "sentence",
+      "zhPrompt": "天氣太差，你問朋友要不要乾脆不去了。",
+      "answer": "Should we just skip it?",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-is-our-booking-still-on",
+      "type": "context",
+      "zhPrompt": "颱風快來了，你打電話問餐廳今晚的訂位還算不算數。",
+      "answer": "Is our booking still on for tonight? / Are you still open tonight?",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-18-market-rain-or-shine",
+      "type": "context",
+      "zhPrompt": "你在網站上看到週末市集的介紹，跟朋友說下雨也照常舉辦。",
+      "answer": "The market's on rain or shine. / It's rain or shine.",
+      "sourceDate": "2026-09-18",
+      "sourceTitle": "Checking If Our Boat Tour Is Still On",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-19",
+      "lastReviewedDate": null
     }
   ]
 }
