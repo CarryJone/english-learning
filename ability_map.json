@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18",
+  "updatedAt": "2026-09-22",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,27 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-22",
+      "day": 123,
+      "title": "Booking a Luggage Locker Before the Museum",
+      "url": "daily/2026-09-22/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read a luggage-locker booking page and activate the locker at the counter.",
+        "Input: locker prices, open-until-nine rule, and 30-minute code expiry.",
+        "Until what time can I pick it up?",
+        "Medium's sold out.",
+        "I need to look up luggage storage nearby."
+      ]
+    },
     {
       "date": "2026-09-18",
       "day": 122,
@@ -290,8 +311,14 @@
       "day": 110,
       "title": "Connecting to Airport Wi-Fi Before Activating an eSIM",
       "url": "daily/2026-09-01/",
-      "primary": ["onlineReading", "travelSpeaking"],
-      "secondary": ["dailyResponse", "publicEnglish"],
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
       "evidence": [
         "Mission: read airport Wi-Fi instructions, connect before the gate, and repair a failed sign-in.",
         "Input: airport website instructions and help-desk conversation.",
@@ -304,8 +331,14 @@
       "day": 109,
       "title": "Requesting a Late Checkout Before a Late Flight",
       "url": "daily/2026-08-31/",
-      "primary": ["onlineReading", "travelSpeaking"],
-      "secondary": ["dailyResponse", "publicEnglish"],
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
       "evidence": [
         "Mission: read hotel checkout rules, request a later checkout, and switch to luggage storage when the hotel is full.",
         "Input: hotel app notice and front-desk conversation.",
@@ -318,8 +351,14 @@
       "day": 108,
       "title": "Checking a Wrong Price at an Airport Gift Shop",
       "url": "daily/2026-08-28/",
-      "primary": ["onlineReading", "travelSpeaking"],
-      "secondary": ["publicEnglish", "dailyResponse"],
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: read an airport gift-shop offer, verify a wrong price, and confirm the final amount before paying.",
         "Input: airport shop page, in-store offer sign, price tag, and cashier conversation.",
@@ -332,8 +371,14 @@
       "day": 107,
       "title": "Ordering a Safe Café Meal with a Food Allergy",
       "url": "daily/2026-08-27/",
-      "primary": ["onlineReading", "travelSpeaking"],
-      "secondary": ["publicEnglish", "dailyResponse"],
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: read a café menu, check dairy information, and complete a safe order after the first dish sells out.",
         "Input: phone menu, allergy notice, and ordering conversation.",
@@ -346,8 +391,14 @@
       "day": 106,
       "title": "Taking the Right City Bus During a Road Detour",
       "url": "daily/2026-08-26/",
-      "primary": ["travelSpeaking", "publicEnglish"],
-      "secondary": ["onlineReading", "dailyResponse"],
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: read a bus detour notice, find the temporary stop, and reach the city museum.",
         "Input: map result, bus detour notice, and driver conversation.",
@@ -360,8 +411,14 @@
       "day": 105,
       "title": "Finding the Hotel After a Station Exit Change",
       "url": "daily/2026-08-25/",
-      "primary": ["travelSpeaking", "publicEnglish"],
-      "secondary": ["onlineReading", "dailyResponse"],
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: find the hotel after Exit Three closes and the route changes to Exit Five.",
         "Input: station notice, map result, and information-desk conversation.",
@@ -374,8 +431,14 @@
       "day": 104,
       "title": "Finding the Right Airport Train After a Platform Change",
       "url": "daily/2026-08-24/",
-      "primary": ["travelSpeaking", "publicEnglish"],
-      "secondary": ["onlineReading", "dailyResponse"],
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: find the Airport Express platform and handle a platform change.",
         "Input: departure screen, station notice, and staff conversation.",
@@ -388,8 +451,14 @@
       "day": 103,
       "title": "Returning a Rental Car with a Full Tank",
       "url": "daily/2026-08-21/",
-      "primary": ["travelSpeaking", "onlineReading"],
-      "secondary": ["publicEnglish", "dailyResponse"],
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: read a rental confirmation and return notice, then complete a car return after Lot B fills.",
         "Input: rental confirmation, fuel policy, parking notice, and rental-desk conversations.",
@@ -402,8 +471,14 @@
       "day": 102,
       "title": "Getting an Airport Tax Refund",
       "url": "daily/2026-08-20/",
-      "primary": ["onlineReading", "travelSpeaking"],
-      "secondary": ["publicEnglish", "dailyResponse"],
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: read airport tax-refund instructions and complete the refund after a counter move.",
         "Input: tax refund guide, airport notice, customs conversation, and refund-counter conversation.",
@@ -416,8 +491,14 @@
       "day": 101,
       "title": "Finding the Walking Tour Meeting Point",
       "url": "daily/2026-08-19/",
-      "primary": ["onlineReading", "travelSpeaking"],
-      "secondary": ["publicEnglish", "dailyResponse"],
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: read a walking-tour confirmation and find the meeting point after a rain change.",
         "Input: confirmation email, map result, rain update, and guide conversation.",
@@ -430,8 +511,14 @@
       "day": 100,
       "title": "Checking Carry-on Liquid Rules Before Security",
       "url": "daily/2026-08-18/",
-      "primary": ["onlineReading", "publicEnglish"],
-      "secondary": ["travelSpeaking", "dailyResponse"],
+      "primary": [
+        "onlineReading",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: read carry-on liquid rules and handle an oversized bottle before airport security.",
         "Input: airport website rules, security sign, and airport screening conversation.",
@@ -444,8 +531,14 @@
       "day": 99,
       "title": "Reporting a Missing Suitcase at Baggage Claim",
       "url": "daily/2026-08-17/",
-      "primary": ["travelSpeaking", "publicEnglish"],
-      "secondary": ["onlineReading", "dailyResponse"],
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
       "evidence": [
         "Mission: report a missing suitcase and confirm the delivery plan.",
         "Input: baggage claim screen, help-desk notice, and airport service conversation.",
@@ -458,8 +551,14 @@
       "day": 98,
       "title": "Fixing a Noisy Hotel Air Conditioner",
       "url": "daily/2026-08-14/",
-      "primary": ["travelSpeaking", "dailyResponse"],
-      "secondary": ["onlineReading", "publicEnglish"],
+      "primary": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "secondary": [
+        "onlineReading",
+        "publicEnglish"
+      ],
       "evidence": [
         "Mission: read a hotel maintenance notice and report a noisy air conditioner that does not cool the room.",
         "Input: hotel room help card, maintenance notice, and front-desk conversation.",
@@ -472,8 +571,14 @@
       "day": 97,
       "title": "Buying Sunscreen for a Beach Day",
       "url": "daily/2026-08-13/",
-      "primary": ["travelSpeaking", "onlineReading"],
-      "secondary": ["dailyResponse", "publicEnglish"],
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
       "evidence": [
         "Mission: read sunscreen labels and buy a travel-size product for a beach day.",
         "Input: pharmacy shelf sign, product labels, and a short store conversation.",
@@ -486,8 +591,14 @@
       "day": 96,
       "title": "Choosing a Safe Hotel Breakfast",
       "url": "daily/2026-08-12/",
-      "primary": ["travelSpeaking", "onlineReading"],
-      "secondary": ["dailyResponse", "publicEnglish"],
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
       "evidence": [
         "Mission: read hotel breakfast information and order safely with a nut allergy.",
         "Input: hotel breakfast menu, allergy warning, and cafe conversation.",

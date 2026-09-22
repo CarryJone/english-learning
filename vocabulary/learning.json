@@ -3809,6 +3809,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-19",
       "lastReviewedDate": null
+    },
+    {
+      "word": "expire",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "到期；失效",
+      "exampleSentence": "Your locker code expires at nine.",
+      "dateAdded": "2026-09-22",
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "oversized",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "超大尺寸的",
+      "exampleSentence": "This bag is oversized for a medium locker.",
+      "dateAdded": "2026-09-22",
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "barcode",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "條碼",
+      "exampleSentence": "Scan the barcode on your phone.",
+      "dateAdded": "2026-09-22",
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
     }
   ]
 }

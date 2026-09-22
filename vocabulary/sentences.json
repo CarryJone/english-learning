@@ -8555,6 +8555,173 @@
       "reviewCount": 0,
       "nextReview": "2026-09-19",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-look-up-luggage-storage",
+      "type": "sentence",
+      "zhPrompt": "你到美術館附近，想用手機查附近的行李寄放。",
+      "answer": "I need to look up luggage storage nearby.",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "I need to look up ...",
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-until-what-time-pick-up",
+      "type": "sentence",
+      "zhPrompt": "你問店員：最晚幾點可以領回行李？",
+      "answer": "Until what time can I pick it up?",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Until what time can I ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-medium-sold-out",
+      "type": "sentence",
+      "zhPrompt": "店員告訴你：中型置物櫃今天賣完了。",
+      "answer": "Medium's sold out today.",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": null,
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-code-expires-thirty-minutes",
+      "type": "sentence",
+      "zhPrompt": "網頁寫：若三十分鐘內不開櫃，密碼會失效。",
+      "answer": "The code expires in thirty minutes if you don't open it.",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": null,
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-sorry-what-did-you-say",
+      "type": "sentence",
+      "zhPrompt": "對方一次講太多，你沒聽清楚。",
+      "answer": "Sorry, what did you say?",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "dailyResponse",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Sorry, what ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-bag-might-be-oversized",
+      "type": "sentence",
+      "zhPrompt": "你擔心袋子對中型置物櫃來說太大。",
+      "answer": "My bag might be oversized for medium.",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": null,
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-scan-the-barcode",
+      "type": "sentence",
+      "zhPrompt": "店員請你掃描手機上的條碼。",
+      "answer": "Scan the barcode on your phone.",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "publicEnglish",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": null,
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-look-up-train-times",
+      "type": "context",
+      "zhPrompt": "（換情境）在車站，你想查下一班去機場的車次。",
+      "answer": "I need to look up the next train to the airport. / Can I look up airport train times here?",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": null,
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-until-what-time-open",
+      "type": "context",
+      "zhPrompt": "（換情境）你問咖啡店今天開到幾點。",
+      "answer": "Until what time are you open? / Until what time is the cafe open?",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": null,
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-22-its-really-windy",
+      "type": "sentence",
+      "zhPrompt": "（複習）你跟朋友說碼頭風真的很大。",
+      "answer": "It's really windy tonight.",
+      "sourceDate": "2026-09-22",
+      "sourceTitle": "Booking a Luggage Locker Before the Museum",
+      "abilities": [
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": null,
+      "reviewCount": 0,
+      "nextReview": "2026-09-23",
+      "lastReviewedDate": null
     }
   ]
 }
