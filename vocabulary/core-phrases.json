@@ -29,9 +29,9 @@
           "en": "Sorry, I didn't catch that."
         }
       ],
-      "reviewCount": 1,
-      "nextReview": "2026-09-12",
-      "lastReviewedDate": "2026-09-11",
+      "reviewCount": 2,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": "2026-09-23",
       "lastRating": "remembered",
       "lastUsedOn": "2026-09-23",
       "useCount": 3,
@@ -176,9 +176,9 @@
           "en": "Could you help me, please?"
         }
       ],
-      "reviewCount": 1,
-      "nextReview": "2026-09-12",
-      "lastReviewedDate": "2026-09-11",
+      "reviewCount": 2,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": "2026-09-23",
       "lastRating": "remembered",
       "lastUsedOn": "2026-09-23",
       "useCount": 3,
@@ -272,9 +272,9 @@
           "en": "Can I have some water, please?"
         }
       ],
-      "reviewCount": 1,
-      "nextReview": "2026-09-12",
-      "lastReviewedDate": "2026-09-11",
+      "reviewCount": 2,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": "2026-09-23",
       "lastRating": "remembered",
       "lastUsedOn": "2026-09-23",
       "useCount": 3,
@@ -336,9 +336,9 @@
         }
       ],
       "reviewCount": 1,
-      "nextReview": "2026-09-12",
-      "lastReviewedDate": "2026-09-11",
-      "lastRating": "remembered",
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": "2026-09-23",
+      "lastRating": "hinted",
       "lastUsedOn": "2026-09-23",
       "useCount": 3,
       "lastVariant": 0
@@ -365,9 +365,9 @@
         }
       ],
       "reviewCount": 0,
-      "nextReview": "2026-09-11",
-      "lastReviewedDate": null,
-      "lastRating": null,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": "2026-09-23",
+      "lastRating": "hinted",
       "lastUsedOn": "2026-09-23",
       "useCount": 2,
       "lastVariant": 1
