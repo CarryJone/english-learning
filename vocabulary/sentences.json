@@ -8722,6 +8722,141 @@
       "reviewCount": 0,
       "nextReview": "2026-09-23",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-23-breakfast-box-to-go",
+      "type": "sentence",
+      "zhPrompt": "你明天要趕早班車，想問能不能外帶早餐。",
+      "answer": "Can I get breakfast to go tomorrow?",
+      "level": "lv1",
+      "hint": "Can I get ... ?",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "sourceDate": "2026-09-23",
+      "sourceTitle": "Getting Breakfast Before an Early Train",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-23-what-time-pick-up-box",
+      "type": "sentence",
+      "zhPrompt": "你想確認幾點可以領早餐盒。",
+      "answer": "What time can I pick up my box?",
+      "level": "lv1",
+      "hint": "What time can I ... ?",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "sourceDate": "2026-09-23",
+      "sourceTitle": "Getting Breakfast Before an Early Train",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-23-does-coffee-come-with-fruit-box",
+      "type": "sentence",
+      "zhPrompt": "你想問水果優格盒有沒有附咖啡。",
+      "answer": "Does coffee come with the fruit box?",
+      "level": "lv1",
+      "hint": "Does ... come with ...?",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "sourceDate": "2026-09-23",
+      "sourceTitle": "Getting Breakfast Before an Early Train",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-23-card-valid-until-seven-fifteen",
+      "type": "sentence",
+      "zhPrompt": "頁面寫著：早餐卡有效到早上七點十五分。",
+      "answer": "The breakfast card is valid until seven fifteen.",
+      "level": "lv2",
+      "hint": null,
+      "abilities": [
+        "onlineReading"
+      ],
+      "sourceDate": "2026-09-23",
+      "sourceTitle": "Getting Breakfast Before an Early Train",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-23-replace-egg-with-fruit-box",
+      "type": "sentence",
+      "zhPrompt": "蛋三明治賣完了，你想改成水果盒。",
+      "answer": "Can I replace it with the fruit box?",
+      "level": "lv2",
+      "hint": null,
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "sourceDate": "2026-09-23",
+      "sourceTitle": "Getting Breakfast Before an Early Train",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-23-dont-miss-early-train",
+      "type": "sentence",
+      "zhPrompt": "你跟朋友說：我不想錯過早班車。",
+      "answer": "I don't want to miss my early train.",
+      "level": "lv2",
+      "hint": null,
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "sourceDate": "2026-09-23",
+      "sourceTitle": "Getting Breakfast Before an Early Train",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-23-airport-coffee-to-go",
+      "type": "context",
+      "zhPrompt": "（換情境）你在機場咖啡店想把咖啡帶上飛機。",
+      "answer": "Can I get this coffee to go?",
+      "level": "lv3",
+      "hint": null,
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "sourceDate": "2026-09-23",
+      "sourceTitle": "Getting Breakfast Before an Early Train",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-23-pick-up-bag-at-desk",
+      "type": "context",
+      "zhPrompt": "（換情境）你在行李寄放櫃檯，想問幾點可以領回背包。",
+      "answer": "What time can I pick up my bag?",
+      "level": "lv3",
+      "hint": null,
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "sourceDate": "2026-09-23",
+      "sourceTitle": "Getting Breakfast Before an Early Train",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
     }
   ]
 }

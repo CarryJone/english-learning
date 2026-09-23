@@ -3839,6 +3839,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-23",
       "lastReviewedDate": null
+    },
+    {
+      "word": "sandwich",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "三明治",
+      "exampleSentence": "I'd like an egg sandwich, please.",
+      "dateAdded": "2026-09-23",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "fruit",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "水果",
+      "exampleSentence": "The fruit box costs seven dollars.",
+      "dateAdded": "2026-09-23",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "yogurt",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "優格；酸奶",
+      "exampleSentence": "The fruit box comes with yogurt.",
+      "dateAdded": "2026-09-23",
+      "reviewCount": 0,
+      "nextReview": "2026-09-24",
+      "lastReviewedDate": null
     }
   ]
 }
