@@ -3869,6 +3869,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-24",
       "lastReviewedDate": null
+    },
+    {
+      "word": "adapter",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "轉接器；轉接頭",
+      "exampleSentence": "Do you have an adapter for UK plugs?",
+      "dateAdded": "2026-09-24",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "plug",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "插頭",
+      "exampleSentence": "My plug doesn't fit this outlet.",
+      "dateAdded": "2026-09-24",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "voltage",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "電壓",
+      "exampleSentence": "Check the voltage on your charger first.",
+      "dateAdded": "2026-09-24",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
     }
   ]
 }

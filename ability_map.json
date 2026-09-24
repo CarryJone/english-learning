@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-09-24",
+      "day": 125,
+      "title": "Choosing a Plug Adapter for My UK Trip",
+      "url": "daily/2026-09-24/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: choose a UK-compatible adapter that is in stock today, confirm the $10 discounted price and the 14-day unused-item exchange rule.",
+        "Input: product tags list UK outlets, a $2 discount, stock timing, and the receipt condition.",
+        "Will this work with my phone charger?",
+        "The other one's ready tomorrow, but we've got the UK one right here today."
+      ]
+    },
+    {
       "date": "2026-09-23",
       "day": 124,
       "title": "Getting Breakfast Before an Early Train",

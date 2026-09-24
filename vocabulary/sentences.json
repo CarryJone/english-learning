@@ -8857,6 +8857,141 @@
       "reviewCount": 0,
       "nextReview": "2026-09-24",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-24-will-this-work-with-my-charger",
+      "type": "sentence",
+      "zhPrompt": "你要確認這個英國轉接器能不能搭配手機充電器。",
+      "answer": "Will this work with my phone charger?",
+      "sourceDate": "2026-09-24",
+      "sourceTitle": "Choosing a Plug Adapter for My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Will this work with ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-24-is-the-discount-still-on",
+      "type": "sentence",
+      "zhPrompt": "你想確認今天的兩美元折扣還適用嗎？",
+      "answer": "Does the two-dollar discount still apply today?",
+      "sourceDate": "2026-09-24",
+      "sourceTitle": "Choosing a Plug Adapter for My UK Trip",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Does the ... still apply?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-24-is-uk-one-in-stock-today",
+      "type": "sentence",
+      "zhPrompt": "另一款明天才到，你想確認英國款今天能不能買到。",
+      "answer": "Sorry, is the UK one in stock today?",
+      "sourceDate": "2026-09-24",
+      "sourceTitle": "Choosing a Plug Adapter for My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-24-plug-charger-into-adapter",
+      "type": "sentence",
+      "zhPrompt": "你想把自己的充電器插入這個轉接器試試。",
+      "answer": "Can I plug my charger into this adapter?",
+      "sourceDate": "2026-09-24",
+      "sourceTitle": "Choosing a Plug Adapter for My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I plug ... into ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-24-adapter-changes-plug-shape",
+      "type": "sentence",
+      "zhPrompt": "解釋這個轉接器只改變插頭形狀，不改電壓。",
+      "answer": "It changes the plug shape, not the voltage.",
+      "sourceDate": "2026-09-24",
+      "sourceTitle": "Choosing a Plug Adapter for My UK Trip",
+      "abilities": [
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-24-exchange-unused-within-fourteen-days",
+      "type": "sentence",
+      "zhPrompt": "你想確認未使用的商品能否在十四天內換貨。",
+      "answer": "Can I exchange this within fourteen days if it's unused?",
+      "sourceDate": "2026-09-24",
+      "sourceTitle": "Choosing a Plug Adapter for My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-24-will-this-pass-work-with-bus",
+      "type": "context",
+      "zhPrompt": "在另一個城市，你想問這張交通卡能不能搭市區公車。",
+      "answer": "Will this travel card work with the city bus?",
+      "sourceDate": "2026-09-24",
+      "sourceTitle": "Choosing a Plug Adapter for My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-24-amount-down-to-ten-dollars",
+      "type": "sentence",
+      "zhPrompt": "折扣後結帳金額是十美元，你向店員確認金額。",
+      "answer": "The amount comes to ten dollars.",
+      "sourceDate": "2026-09-24",
+      "sourceTitle": "Choosing a Plug Adapter for My UK Trip",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-25",
+      "lastReviewedDate": null
     }
   ]
 }
