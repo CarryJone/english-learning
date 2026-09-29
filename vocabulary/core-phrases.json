@@ -50,9 +50,9 @@
           "en": "Sorry, can you say that again?"
         }
       ],
-      "reviewCount": 1,
-      "nextReview": "2026-09-16",
-      "lastReviewedDate": "2026-09-15",
+      "reviewCount": 2,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": "2026-09-29",
       "lastRating": "remembered",
       "lastUsedOn": "2026-09-29",
       "useCount": 3,
@@ -71,9 +71,9 @@
           "en": "Can you speak more slowly, please?"
         }
       ],
-      "reviewCount": 1,
-      "nextReview": "2026-09-16",
-      "lastReviewedDate": "2026-09-15",
+      "reviewCount": 2,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": "2026-09-29",
       "lastRating": "remembered",
       "lastUsedOn": "2026-09-29",
       "useCount": 3,
@@ -218,9 +218,9 @@
           "en": "Can I pay by card?"
         }
       ],
-      "reviewCount": 1,
-      "nextReview": "2026-09-16",
-      "lastReviewedDate": "2026-09-15",
+      "reviewCount": 2,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": "2026-09-29",
       "lastRating": "remembered",
       "lastUsedOn": "2026-09-29",
       "useCount": 3,
@@ -293,10 +293,10 @@
           "en": "I'd like this one, please."
         }
       ],
-      "reviewCount": 0,
-      "nextReview": "2026-09-11",
-      "lastReviewedDate": null,
-      "lastRating": null,
+      "reviewCount": 1,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": "2026-09-29",
+      "lastRating": "remembered",
       "lastUsedOn": "2026-09-29",
       "useCount": 3,
       "lastVariant": 0
@@ -415,8 +415,8 @@
         }
       ],
       "reviewCount": 0,
-      "nextReview": "2026-09-16",
-      "lastReviewedDate": "2026-09-15",
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": "2026-09-29",
       "lastRating": "forgot",
       "lastUsedOn": "2026-09-29",
       "useCount": 3,
