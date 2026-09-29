@@ -8992,6 +8992,176 @@
       "reviewCount": 0,
       "nextReview": "2026-09-25",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-card-was-declined",
+      "type": "sentence",
+      "zhPrompt": "在車站售票機前刷卡失敗，你要先告訴櫃檯人員。",
+      "answer": "My card was declined at the kiosk.",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "My card was ...",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-payment-declined",
+      "type": "sentence",
+      "zhPrompt": "螢幕上的付款狀態是「付款遭拒」，用英文讀出關鍵提示。",
+      "answer": "Payment declined.",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Payment ...",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-pay-in-cash-instead",
+      "type": "sentence",
+      "zhPrompt": "卡片刷不過，你想問櫃檯可不可以改用現金。",
+      "answer": "Can I pay in cash instead?",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I pay ... instead?",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-buy-single-ticket",
+      "type": "sentence",
+      "zhPrompt": "你只需要單程去機場的車票，向售票員詢問。",
+      "answer": "Can I buy a single ticket to the airport?",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-airport-express-time",
+      "type": "sentence",
+      "zhPrompt": "你要確認機場快線幾點開車。",
+      "answer": "What time does the Airport Express leave?",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-platform-six",
+      "type": "sentence",
+      "zhPrompt": "你要問機場快線從哪個月台出發。",
+      "answer": "Which platform does the Airport Express leave from?",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-charge-my-card",
+      "type": "sentence",
+      "zhPrompt": "剛才刷卡失敗，你想確認機器有沒有向你收款。",
+      "answer": "Did the machine charge my card?",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "dailyResponse",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-get-a-receipt",
+      "type": "sentence",
+      "zhPrompt": "你在旅館櫃檯完成付款，想請對方給你收據。",
+      "answer": "Could I get a receipt, please?",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-cash-at-tour-desk",
+      "type": "context",
+      "zhPrompt": "在遊船售票櫃檯，你的卡片再次刷不過，想改用現金。",
+      "answer": "Can I pay in cash instead?",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-29-card-at-cafe",
+      "type": "context",
+      "zhPrompt": "咖啡店的收銀機拒收你的卡片，你要向店員說明問題。",
+      "answer": "My card was declined at the register.",
+      "sourceDate": "2026-09-29",
+      "sourceTitle": "Fixing a Declined Card Payment at the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
     }
   ]
 }

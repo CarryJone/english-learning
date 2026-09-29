@@ -3899,6 +3899,36 @@
       "reviewCount": 0,
       "nextReview": "2026-09-25",
       "lastReviewedDate": null
+    },
+    {
+      "word": "decline",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "拒絕；（付款）未通過",
+      "exampleSentence": "The kiosk declined my card.",
+      "dateAdded": "2026-09-29",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "kiosk",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "自助服務機",
+      "exampleSentence": "I used the kiosk to buy a train ticket.",
+      "dateAdded": "2026-09-29",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "single",
+      "partOfSpeech": "adj./n.",
+      "chineseMeaning": "單程的；單程票",
+      "exampleSentence": "Can I buy a single ticket to the airport?",
+      "dateAdded": "2026-09-29",
+      "reviewCount": 0,
+      "nextReview": "2026-09-30",
+      "lastReviewedDate": null
     }
   ]
 }

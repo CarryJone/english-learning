@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23",
+  "updatedAt": "2026-09-29",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,25 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-29",
+      "day": 126,
+      "title": "Fixing a Declined Card Payment at the Station",
+      "url": "daily/2026-09-29/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: explain a declined ticket-kiosk payment, buy a single Airport Express ticket, and confirm the departure details.",
+        "Input: kiosk status says PAYMENT DECLINED and no money was taken; Ticket Desk 4 takes cards and cash.",
+        "Can I pay in cash instead?",
+        "The Airport Express leaves at 8:40 p.m. from Platform 6."
+      ]
+    },
     {
       "date": "2026-09-24",
       "day": 125,
