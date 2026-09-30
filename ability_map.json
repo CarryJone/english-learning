@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29",
+  "updatedAt": "2026-09-30",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,25 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-09-30",
+      "day": 127,
+      "title": "Setting Up a Travel eSIM Before My UK Trip",
+      "url": "daily/2026-09-30/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: compare the UK travel eSIM plans and set up the 15-day plan before travel.",
+        "Input: 15-day plan has 5 GB; connect to Wi-Fi, scan the QR code, and keep Data Roaming off until landing.",
+        "Can I scan the QR code now?",
+        "I'll turn it on after I land."
+      ]
+    },
     {
       "date": "2026-09-29",
       "day": 126,

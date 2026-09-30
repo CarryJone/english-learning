@@ -9162,6 +9162,177 @@
       "reviewCount": 0,
       "nextReview": "2026-09-30",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-compare-plan-duration",
+      "type": "sentence",
+      "zhPrompt": "你要旅行十天，正在比較方案。說出你會比較的兩項資料。",
+      "answer": "I'll compare the plan duration and data.",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "I'll compare the plan ... and ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-set-up-esim-before-flying",
+      "type": "sentence",
+      "zhPrompt": "你想在出發前先把旅遊 eSIM 設定好。",
+      "answer": "I want to set it up before I fly.",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "I want to set it up ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-scan-the-qr-code",
+      "type": "sentence",
+      "zhPrompt": "你已連上 Wi-Fi，想確認現在能否掃描 QR 碼。",
+      "answer": "Can I scan the QR code now?",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I scan the QR code ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-keep-roaming-off-until-landing",
+      "type": "sentence",
+      "zhPrompt": "你還沒登機，要說明落地前如何設定 Data Roaming。",
+      "answer": "I'll keep Data Roaming off until I land.",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "I'll keep Data Roaming ... until ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-turn-roaming-on-after-landing",
+      "type": "sentence",
+      "zhPrompt": "你剛抵達英國，現在要開啟資料漫遊。",
+      "answer": "I'll turn it on after I land.",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-choose-esim-for-mobile-data",
+      "type": "sentence",
+      "zhPrompt": "落地後你要把旅遊 eSIM 選為行動數據方案。",
+      "answer": "I'll choose the travel eSIM for mobile data.",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-leave-plan-installed",
+      "type": "sentence",
+      "zhPrompt": "客服提醒你不要刪除方案；你要說會在旅途中保留它。",
+      "answer": "I'll leave the plan installed for my trip.",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-ask-support-to-repeat",
+      "type": "sentence",
+      "zhPrompt": "客服講太快，你想請對方再說一次設定步驟。",
+      "answer": "Sorry, can you say that again?",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-sandwich-to-go",
+      "type": "context",
+      "zhPrompt": "你在機場咖啡店想買一份三明治帶上火車。",
+      "answer": "Could I get a sandwich to go, please?",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-09-30-find-uk-adapter",
+      "type": "context",
+      "zhPrompt": "你在英國旅館發現插座不同，想問能否借轉接器。",
+      "answer": "Is there an adapter I can use in this room?",
+      "sourceDate": "2026-09-30",
+      "sourceTitle": "Setting Up a Travel eSIM Before My UK Trip",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-01",
+      "lastReviewedDate": null
     }
-  ]
+  ],
+  "updatedAt": "2026-09-30"
 }
