@@ -9332,7 +9332,177 @@
       "reviewCount": 0,
       "nextReview": "2026-10-01",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-bus-direction",
+      "type": "sentence",
+      "zhPrompt": "想確認這台公車往博物館方向。",
+      "answer": "Does this bus go towards the museum?",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Does this bus go ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-notify-stop",
+      "type": "sentence",
+      "zhPrompt": "請司機到站時告訴你。",
+      "answer": "Can you let me know when we get there?",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can you let me know ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-get-off-library",
+      "type": "sentence",
+      "zhPrompt": "重述你會在 Library Road 下車。",
+      "answer": "I'll get off at Library Road.",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "I'll get off at ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-payment-limit",
+      "type": "sentence",
+      "zhPrompt": "說出站牌的付款限制。",
+      "answer": "Contactless only.",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-tap-once",
+      "type": "sentence",
+      "zhPrompt": "向司機確認你只需要上車時刷一次。",
+      "answer": "I only tap when I get on, right?",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-repeat-stop",
+      "type": "sentence",
+      "zhPrompt": "你沒聽清楚替代站名，追問一次。",
+      "answer": "Sorry, which stop did you say?",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-walk-time",
+      "type": "sentence",
+      "zhPrompt": "詢問從替代站走到博物館要多久。",
+      "answer": "How far's the walk to the museum?",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-hotel-notify",
+      "type": "context",
+      "zhPrompt": "換到旅館：請櫃檯在房間準備好時通知你。",
+      "answer": "Can you let me know when my room's ready?",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-airport-kiosk",
+      "type": "context",
+      "zhPrompt": "換到機場：詢問自助報到機在哪裡。",
+      "answer": "Where's the check-in kiosk?",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-01-train-single",
+      "type": "context",
+      "zhPrompt": "換到車站：你想買去機場的單程票。",
+      "answer": "Can I get a single ticket to the airport?",
+      "sourceDate": "2026-10-01",
+      "sourceTitle": "Catching the Right Bus to the Museum",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-09-30"
+  "updatedAt": "2026-10-01"
 }

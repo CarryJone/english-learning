@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-01",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-10-01",
+      "day": 128,
+      "title": "Catching the Right Bus to the Museum",
+      "url": "daily/2026-10-01/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: confirm bus direction, payment, and the alternative museum stop.",
+        "Input: Contactless only; Museum Square closed; Library Road plus a five-minute walk.",
+        "Does this bus go towards the museum?",
+        "Can you let me know when we get there?",
+        "I'll get off at Library Road."
+      ]
+    },
     {
       "date": "2026-09-30",
       "day": 127,

@@ -3959,6 +3959,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-01",
       "lastReviewedDate": null
+    },
+    {
+      "word": "towards",
+      "partOfSpeech": "prep.",
+      "chineseMeaning": "朝向；往……方向",
+      "exampleSentence": "Does this bus go towards the museum?",
+      "dateAdded": "2026-10-01",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "contactless",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "感應式的；非接觸式的",
+      "exampleSentence": "Can I use a contactless card on this bus?",
+      "dateAdded": "2026-10-01",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bell",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鈴；公車下車鈴",
+      "exampleSentence": "Press the bell before your stop.",
+      "dateAdded": "2026-10-01",
+      "reviewCount": 0,
+      "nextReview": "2026-10-02",
+      "lastReviewedDate": null
     }
   ]
 }

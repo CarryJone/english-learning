@@ -180,3 +180,13 @@
 - 新增單字：`voice`、`inside`、`outside`；文章融入複習字：`paper`、`date`、`tomorrow`。
 - 補齊 `article.mp3` 與 `s01.mp3` 到 `s25.mp3`，並同步首頁、`profile.json`、`vocabulary/learning.json`、`.ai/PROJECT_STATE.md`、`.ai/serial-story/CONTINUITY_LOG.md`。
 - 驗證：句子編號連續、25 個單句音檔存在、Review Quiz 5 題、Speaking Bridge 4 題、本機 HTTP 200。
+
+## 2026-07-15 — Day 77 任務型教材正式產出
+
+- 先 `git fetch origin` / `git pull --ff-only origin main`，同步最新 7/14 review quiz 與 sentence SRS 後生成今天教材。
+- 新增 `daily/2026-07-15/`，主題為 `Finding the Right Bus`；今日新字：`museum`、`instead`、`passenger`。
+- Active Recall Quiz 依最新 SRS 產出 12 個到期複習字；Speaking Bridge 使用前幾日單字；Context Recall 8 題、Role-play 8 回合與 Mission 均已接通。
+- 生成 `article.mp3` 與 `s01.mp3` 到 `s19.mp3`，並更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：`python3 scripts/validate_daily.py 2026-07-15` 通過 73 checks，0 warnings，0 errors。
+
+---

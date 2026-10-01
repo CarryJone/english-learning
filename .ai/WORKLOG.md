@@ -5,6 +5,14 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-10-01 — Day 128 正式教材產出
+- 使用專案每日教材 SKILL，git fetch 後 fast-forward 同步遠端 SRS 至 c48e163。
+- 產出 `daily/2026-10-01/`：Catching the Right Bus to the Museum；M1 公車方向、感應付款、替代下車站與澄清。
+- 新字 towards／contactless／bell；所有 7 個到期字即時生成複習；Bridge 使用 adapter／decline／kiosk／single；10 題 Context Recall；5 句 Survival Lines 以正式 picker 選取，核心句 34／34 啟用。
+- 32 句／289 字、對話 27／32；三角色聲線讀取 voices.json；主音檔 129.432 秒，沿用試行句間停頓。
+- 驗證：validate_daily.py 97 passed／0 warnings／0 errors；33 個 MP3 皆經 ffmpeg 解碼，inline JS 皆經 node --check。
+- 未執行瀏覽器互動驗證；沿用前日靜態頁版型與既有互動程式。保留原有 test/ 與 PROJECT_STATE 未提交內容。
+
 ## 2026-09-18 — Day 122 正式教材產出
 
 - 先 `git fetch` 再 `git pull --ff-only`，同步遠端 `SRS update: review quiz 2026-09-17`：Day 121 的 14 題只錯 `eligible`（重設為 rc=0、今天再考）；09-17 的 Survival Lines 有 3 句同步為 remembered。
@@ -367,12 +375,3 @@
 
 ---
 
-## 2026-07-15 — Day 77 任務型教材正式產出
-
-- 先 `git fetch origin` / `git pull --ff-only origin main`，同步最新 7/14 review quiz 與 sentence SRS 後生成今天教材。
-- 新增 `daily/2026-07-15/`，主題為 `Finding the Right Bus`；今日新字：`museum`、`instead`、`passenger`。
-- Active Recall Quiz 依最新 SRS 產出 12 個到期複習字；Speaking Bridge 使用前幾日單字；Context Recall 8 題、Role-play 8 回合與 Mission 均已接通。
-- 生成 `article.mp3` 與 `s01.mp3` 到 `s19.mp3`，並更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：`python3 scripts/validate_daily.py 2026-07-15` 通過 73 checks，0 warnings，0 errors。
-
----
