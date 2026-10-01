@@ -9346,9 +9346,10 @@
       ],
       "level": "lv1",
       "hint": "Does this bus go ...?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-10-01-notify-stop",
@@ -9363,9 +9364,10 @@
       ],
       "level": "lv1",
       "hint": "Can you let me know ...?",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-10-01-get-off-library",
@@ -9380,9 +9382,10 @@
       ],
       "level": "lv1",
       "hint": "I'll get off at ...",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-10-01-payment-limit",
@@ -9399,7 +9402,8 @@
       "hint": "",
       "reviewCount": 0,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-10-01-tap-once",
@@ -9416,7 +9420,8 @@
       "hint": "",
       "reviewCount": 0,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-10-01-repeat-stop",
@@ -9433,7 +9438,8 @@
       "hint": "",
       "reviewCount": 0,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-10-01-walk-time",
@@ -9450,7 +9456,8 @@
       "hint": "",
       "reviewCount": 0,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "hinted"
     },
     {
       "id": "2026-10-01-hotel-notify",
@@ -9465,9 +9472,10 @@
       ],
       "level": "lv3",
       "hint": "",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-10-01-airport-kiosk",
@@ -9482,9 +9490,10 @@
       ],
       "level": "lv3",
       "hint": "",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "remembered"
     },
     {
       "id": "2026-10-01-train-single",
@@ -9499,9 +9508,10 @@
       ],
       "level": "lv3",
       "hint": "",
-      "reviewCount": 0,
+      "reviewCount": 1,
       "nextReview": "2026-10-02",
-      "lastReviewedDate": null
+      "lastReviewedDate": "2026-10-01",
+      "lastRating": "remembered"
     }
   ],
   "updatedAt": "2026-10-01"
