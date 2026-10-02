@@ -9512,7 +9512,177 @@
       "nextReview": "2026-10-02",
       "lastReviewedDate": "2026-10-01",
       "lastRating": "remembered"
+    },
+    {
+      "id": "2026-10-02-included",
+      "type": "sentence",
+      "zhPrompt": "詢問雞肉餐是否附飲料。",
+      "answer": "Does it come with a drink?",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Does it come with ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-sauce",
+      "type": "sentence",
+      "zhPrompt": "請醬汁另外放。",
+      "answer": "Can I have the sauce on the side, please?",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I have ... on the side?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-instead",
+      "type": "sentence",
+      "zhPrompt": "重述你要馬鈴薯代替米飯。",
+      "answer": "I'll have potatoes instead of rice.",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "I'll have ... instead of ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-price",
+      "type": "sentence",
+      "zhPrompt": "讀菜單，說出雞肉餐價格。",
+      "answer": "The chicken plate's fourteen pounds.",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-extra",
+      "type": "sentence",
+      "zhPrompt": "確認換配菜不加價。",
+      "answer": "There's no extra cost, right?",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-repair",
+      "type": "sentence",
+      "zhPrompt": "服務員說快了，追問能用什麼代替米飯。",
+      "answer": "Sorry, what can I have instead of rice?",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-card",
+      "type": "sentence",
+      "zhPrompt": "詢問能否用感應卡付款。",
+      "answer": "Do you take contactless cards?",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-space",
+      "type": "sentence",
+      "zhPrompt": "詢問餐廳今晚是否還有一個人的位置。",
+      "answer": "Is there space for one more person tonight?",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-breakfast",
+      "type": "context",
+      "zhPrompt": "換到旅館早餐：請果醬另外放。",
+      "answer": "Can I have the jam on the side, please?",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-02-cafe",
+      "type": "context",
+      "zhPrompt": "換到咖啡店：你要茶代替咖啡。",
+      "answer": "I'll have tea instead of coffee.",
+      "sourceDate": "2026-10-02",
+      "sourceTitle": "Choosing Dinner and Asking for Sauce on the Side",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-01"
+  "updatedAt": "2026-10-02"
 }

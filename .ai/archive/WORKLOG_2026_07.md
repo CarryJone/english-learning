@@ -190,3 +190,13 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-07-15` 通過 73 checks，0 warnings，0 errors。
 
 ---
+
+## 2026-07-16 — Day 78 任務型教材正式產出
+
+- 先同步遠端最新 SRS；同步後今日共有 11 個到期複習字。
+- 新增 daily/2026-07-16/，主題為 Choosing a Ferry Departure；今日新字：dock、boarding、option。
+- Mission 以渡輪時刻表、票務提示與櫃檯對話為輸入，包含 8 回合 Role-play、10 題 Context Recall 與 4 個 2–7 天前單字的 Speaking Bridge。
+- 同步更新首頁、profile.json、vocabulary/learning.json、vocabulary/sentences.json、ability_map.json；生成 article.mp3 與 s01.mp3 到 s16.mp3。
+- 驗證：python3 scripts/validate_daily.py 2026-07-16 通過 79 checks，0 warnings，0 errors；JSON parse 與 git diff --check 亦通過。
+
+---

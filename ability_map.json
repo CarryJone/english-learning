@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-02",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,25 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-10-02",
+      "day": 129,
+      "title": "Choosing Dinner and Asking for Sauce on the Side",
+      "url": "daily/2026-10-02/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: order dinner, ask for sauce on the side, confirm a free side substitution.",
+        "Input: chicken £14; rice included, drinks extra; potatoes instead at no extra cost.",
+        "Can I have the sauce on the side, please?",
+        "I'll have potatoes instead of rice."
+      ]
+    },
     {
       "date": "2026-10-01",
       "day": 128,

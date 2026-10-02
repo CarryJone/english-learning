@@ -3989,6 +3989,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-02",
       "lastReviewedDate": null
+    },
+    {
+      "word": "portion",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "一份的量；份量",
+      "exampleSentence": "Is this portion enough for one person?",
+      "dateAdded": "2026-10-02",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "starter",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "前菜",
+      "exampleSentence": "I'd like the soup as a starter.",
+      "dateAdded": "2026-10-02",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "separate",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "分開的；個別的",
+      "exampleSentence": "Can we get separate plates, please?",
+      "dateAdded": "2026-10-02",
+      "reviewCount": 0,
+      "nextReview": "2026-10-03",
+      "lastReviewedDate": null
     }
   ]
 }

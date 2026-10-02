@@ -5,6 +5,14 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-10-02 — Day 129 正式教材產出
+- 依每日教材 SKILL，git fetch／fast-forward 至 82dd33a，同步最新單字、核心句與句子 SRS。
+- 新增 `daily/2026-10-02/`：Choosing Dinner and Asking for Sauce on the Side；M2 旅行餐廳點餐、附餐確認、醬汁分開與免費替代配菜。模擬菜單不代表真實餐廳規則。
+- 新字 portion／starter／separate；9 個到期字全數即時生成 Active Recall 與 Review Words；Speaking Bridge 使用 eSIM／install／roaming／single，各有新情境；10 題 Context Recall、5 句核心句由正式 picker 選取。
+- 32 句、對話 27／32；三聲線自 voices.json 讀取，主音檔 128.806 秒；沿用既有語速與 0.05／0.12／0.25 秒句間停頓。
+- 驗證：97 checks／0 warnings／0 errors；33 個 MP3 ffmpeg 解碼通過，inline JS node --check 與共用 scripts／核心音檔路徑確認通過。未做瀏覽器互動驗證。
+- 暫存產生器因系統清除而重建，沿用 Day 128 完整版型與互動程式；保留原有 test/ 與未提交 PROJECT_STATE。
+
 ## 2026-10-01 — Day 128 正式教材產出
 - 使用專案每日教材 SKILL，git fetch 後 fast-forward 同步遠端 SRS 至 c48e163。
 - 產出 `daily/2026-10-01/`：Catching the Right Bus to the Museum；M1 公車方向、感應付款、替代下車站與澄清。
@@ -364,14 +372,3 @@
 - 本次只調整規格與接手文件，未修改每日頁面、資料 schema、SRS runtime 或驗證器。
 
 ---
-
-## 2026-07-16 — Day 78 任務型教材正式產出
-
-- 先同步遠端最新 SRS；同步後今日共有 11 個到期複習字。
-- 新增 daily/2026-07-16/，主題為 Choosing a Ferry Departure；今日新字：dock、boarding、option。
-- Mission 以渡輪時刻表、票務提示與櫃檯對話為輸入，包含 8 回合 Role-play、10 題 Context Recall 與 4 個 2–7 天前單字的 Speaking Bridge。
-- 同步更新首頁、profile.json、vocabulary/learning.json、vocabulary/sentences.json、ability_map.json；生成 article.mp3 與 s01.mp3 到 s16.mp3。
-- 驗證：python3 scripts/validate_daily.py 2026-07-16 通過 79 checks，0 warnings，0 errors；JSON parse 與 git diff --check 亦通過。
-
----
-
