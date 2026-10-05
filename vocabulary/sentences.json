@@ -9682,7 +9682,177 @@
       "reviewCount": 0,
       "nextReview": "2026-10-03",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-leak",
+      "type": "sentence",
+      "zhPrompt": "告訴旅館櫃檯：你的房間漏水。",
+      "answer": "There's a leak in my room.",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "There's a ... in my room.",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-move",
+      "type": "sentence",
+      "zhPrompt": "詢問今晚能否換到另一間房。",
+      "answer": "Can I move to another room tonight?",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I move to ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-key",
+      "type": "sentence",
+      "zhPrompt": "詢問是否到櫃檯領新鑰匙。",
+      "answer": "Can I pick up the new key at reception?",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I pick up ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-cost",
+      "type": "sentence",
+      "zhPrompt": "讀懂協助頁面，說出換房不加價。",
+      "answer": "Room changes are at no extra cost.",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-old-key",
+      "type": "sentence",
+      "zhPrompt": "告訴櫃檯你會帶舊鑰匙下樓。",
+      "answer": "I'll bring my old key down.",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚哪間房能入住，請櫃檯再說一次。",
+      "answer": "Sorry, which room can I move to now?",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-single",
+      "type": "sentence",
+      "zhPrompt": "雙人房還沒準備好，你接受單人房。",
+      "answer": "A single room's fine for me.",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-charger",
+      "type": "sentence",
+      "zhPrompt": "離開舊房間前，說你也要拿走充電器。",
+      "answer": "I'll take my charger out of the old room too.",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-storage",
+      "type": "context",
+      "zhPrompt": "換到車站：確認寄放行李是否不加價。",
+      "answer": "Can I leave my bag here at no extra cost?",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-05-tickets",
+      "type": "context",
+      "zhPrompt": "換到景點：問工作人員在哪裡領票。",
+      "answer": "Where can I pick up my tickets?",
+      "sourceDate": "2026-10-05",
+      "sourceTitle": "Changing Rooms After a Ceiling Leak",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-02"
+  "updatedAt": "2026-10-05"
 }

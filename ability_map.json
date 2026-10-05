@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02",
+  "updatedAt": "2026-10-05",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,25 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-10-05",
+      "day": 130,
+      "title": "Changing Rooms After a Ceiling Leak",
+      "url": "daily/2026-10-05/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: report a ceiling leak, accept a ready single room, and confirm the key pickup steps.",
+        "Input: room changes at no extra cost; pick up the new key at reception and bring the old key.",
+        "Can I move to another room tonight?",
+        "Can I pick up the new key at reception?"
+      ]
+    },
     {
       "date": "2026-10-02",
       "day": 129,

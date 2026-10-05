@@ -4019,6 +4019,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-03",
       "lastReviewedDate": null
+    },
+    {
+      "word": "leak",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "漏水；漏水處",
+      "exampleSentence": "There's a leak in my hotel room.",
+      "dateAdded": "2026-10-05",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "wet",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "濕的",
+      "exampleSentence": "The floor near my bed is wet.",
+      "dateAdded": "2026-10-05",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "ceiling",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "天花板",
+      "exampleSentence": "Water is coming from the ceiling.",
+      "dateAdded": "2026-10-05",
+      "reviewCount": 0,
+      "nextReview": "2026-10-06",
+      "lastReviewedDate": null
     }
   ]
 }
