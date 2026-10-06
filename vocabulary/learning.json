@@ -4049,6 +4049,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-06",
       "lastReviewedDate": null
+    },
+    {
+      "word": "audio",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "聲音的；音訊的",
+      "exampleSentence": "Can I use the audio guide on my phone?",
+      "dateAdded": "2026-10-06",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "headphones",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "耳機",
+      "exampleSentence": "Do I need to bring my own headphones?",
+      "dateAdded": "2026-10-06",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "rental",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "租借；租金",
+      "exampleSentence": "The rental fee is five pounds.",
+      "dateAdded": "2026-10-06",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
     }
   ]
 }

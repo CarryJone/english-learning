@@ -9852,7 +9852,177 @@
       "reviewCount": 0,
       "nextReview": "2026-10-06",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-included",
+      "type": "sentence",
+      "zhPrompt": "詢問耳機是否包含在價格內。",
+      "answer": "Are headphones included in the price?",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Are ... included in ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-phone",
+      "type": "sentence",
+      "zhPrompt": "說你要改用手機聽語音導覽。",
+      "answer": "I'll use the audio guide on my phone instead.",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "I'll use ... on my phone ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-own",
+      "type": "sentence",
+      "zhPrompt": "確認自己需不需要自備耳機。",
+      "answer": "Do I need to bring my own headphones?",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Do I need to bring ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-fee",
+      "type": "sentence",
+      "zhPrompt": "從協助頁面說出租借費用。",
+      "answer": "The rental fee's five pounds.",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-start",
+      "type": "sentence",
+      "zhPrompt": "說出手機方案的第一個操作步驟。",
+      "answer": "Scan the code at the entrance.",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚領取時間，問何時能拿租借導覽機。",
+      "answer": "Sorry, when can I pick up a rental guide?",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-separate",
+      "type": "sentence",
+      "zhPrompt": "詢問導覽是否另收費。",
+      "answer": "Is there a separate charge for the guide?",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-book",
+      "type": "sentence",
+      "zhPrompt": "告訴工作人員你已訂了上午的票。",
+      "answer": "I've booked a morning ticket.",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-train",
+      "type": "context",
+      "zhPrompt": "換到車站：說你可以在手機上出示車票。",
+      "answer": "I can show my ticket on my phone.",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-06-pool",
+      "type": "context",
+      "zhPrompt": "換到旅館：確認游泳池費用是否包含在房價內。",
+      "answer": "Is the pool included in the price?",
+      "sourceDate": "2026-10-06",
+      "sourceTitle": "Choosing a Museum Audio Guide Online",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-07",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-05"
+  "updatedAt": "2026-10-06"
 }
