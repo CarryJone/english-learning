@@ -13,3 +13,7 @@ __pycache__/
 
 # Claude 本地設定（含權限記錄，不需版控）
 .claude/
+
+# Local offline TTS runtime and downloaded models
+.venv-tts/
+.tts-cache/

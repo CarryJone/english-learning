@@ -10022,7 +10022,187 @@
       "reviewCount": 0,
       "nextReview": "2026-10-07",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-pickup",
+      "type": "sentence",
+      "zhPrompt": "問機場客運的上車處是否在候車亭旁。",
+      "answer": "Is the pickup point by this shelter?",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Is the pickup point ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-pay",
+      "type": "sentence",
+      "zhPrompt": "問能不能上車時付款。",
+      "answer": "Can I pay when I get on?",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I pay ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-interval",
+      "type": "sentence",
+      "zhPrompt": "看站牌後，說客運每二十分鐘一班。",
+      "answer": "The coach comes every twenty minutes.",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-card",
+      "type": "sentence",
+      "zhPrompt": "告示只接受卡片，確認不能付現金。",
+      "answer": "The sign says card only, so you don't take cash?",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-repair",
+      "type": "sentence",
+      "zhPrompt": "你沒聽清楚哪扇門，請對方再說。",
+      "answer": "Sorry, which door did you say?",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-wait",
+      "type": "sentence",
+      "zhPrompt": "確認你會在紅門旁等十點二十分那班。",
+      "answer": "I'll wait by the red door for ten twenty.",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-tap",
+      "type": "sentence",
+      "zhPrompt": "用複習字 tap 問可不可以感應卡片。",
+      "answer": "Can I tap my card?",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I tap ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-ride",
+      "type": "sentence",
+      "zhPrompt": "用複習字 ride 問車程多長。",
+      "answer": "How long is the ride?",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "How long ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-tour",
+      "type": "context",
+      "zhPrompt": "換到景點接送：問接送地點是否在售票處旁。",
+      "answer": "Is the pickup point by the ticket office?",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-13-cafe",
+      "type": "context",
+      "zhPrompt": "換到咖啡店：看到 card only，確認不收現金。",
+      "answer": "It's card only, so you don't take cash?",
+      "sourceDate": "2026-10-13",
+      "sourceTitle": "Finding the Airport Coach Pickup Point",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-14",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-06"
+  "updatedAt": "2026-10-13"
 }

@@ -116,6 +116,7 @@ class ParsedDailyPage:
     roleplay_turns: int = 0
     script_srcs: list[str] = field(default_factory=list)
     voice_map: str = ""
+    audio_provider: str = "edge"
     core_ids: list[str] = field(default_factory=list)
 
 
@@ -139,6 +140,8 @@ class DailyHTMLParser(HTMLParser):
 
         if tag == "meta" and attrs.get("name") == "voice-map":
             self.page.voice_map = attrs.get("content", "").strip()
+        if tag == "meta" and attrs.get("name") == "audio-provider":
+            self.page.audio_provider = attrs.get("content", "").strip()
 
         if attrs.get("id") == "core-drill" and attrs.get("data-core-ids"):
             self.page.core_ids = [
@@ -521,7 +524,19 @@ def validate_voice_map(root: Path, date: str, page: ParsedDailyPage, validation:
     path = root / "assets" / "voices.json"
     if not path.exists():
         return
-    declared = json.loads(path.read_text(encoding="utf-8")).get("roles", {})
+    config = json.loads(path.read_text(encoding="utf-8"))
+    declared = config.get("roles", {})
+    providers = config.get("providers", {"edge": {"voiceField": "voice"}})
+    if page.audio_provider not in providers:
+        validation.errors.append(f"unknown audio-provider: {page.audio_provider}")
+        return
+    voice_field = providers[page.audio_provider]["voiceField"]
+    provider_voices = [cfg.get(voice_field) for cfg in declared.values()]
+    validation.check(
+        all(provider_voices) and len(set(provider_voices)) == len(provider_voices),
+        f"{page.audio_provider} has distinct configured role voices",
+        f"{page.audio_provider} has missing or duplicate role voices",
+    )
 
     validation.check(
         bool(page.voice_map),
@@ -548,9 +563,9 @@ def validate_voice_map(root: Path, date: str, page: ParsedDailyPage, validation:
     )
 
     mismatched = [
-        f"{role}={voice} (expected {declared[role]['voice']})"
+        f"{role}={voice} (expected {declared[role].get(voice_field)})"
         for role, voice in pairs.items()
-        if role in declared and voice != declared[role].get("voice")
+        if role in declared and voice != declared[role].get(voice_field)
     ]
     validation.check(
         not mismatched,

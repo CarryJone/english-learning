@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10",
+  "updatedAt": "2026-10-13",
   "note": "每日教材 article.mp3 與 sNN.mp3 的角色／聲線唯一事實來源。要新增角色或更換聲線，必須先改本檔，再同步 .ai/daily-english-learning/SKILL.md 的角色表與 AGENTS.md。任何 session 都不可在腳本裡自行寫死別的聲線。",
   "rate": "-10%",
   "maxRolesPerLesson": 4,
@@ -18,28 +18,46 @@
       "gender": "female",
       "label": "旁白",
       "use": "場景、動作、心裡話；不是說出口的台詞",
-      "required": true
+      "required": true,
+      "kokoroVoice": "af_sarah"
     },
     "traveler": {
       "voice": "en-US-AriaNeural",
       "gender": "female",
       "label": "我（旅客）",
       "use": "學習者要開口說的每一句",
-      "required": true
+      "required": true,
+      "kokoroVoice": "af_heart"
     },
     "staff": {
       "voice": "en-US-GuyNeural",
       "gender": "male",
       "label": "對方（服務方）",
       "use": "站務員、店員、司機、櫃檯、客服等任務中要應對的人",
-      "required": true
+      "required": true,
+      "kokoroVoice": "am_michael"
     },
     "companion": {
       "voice": "en-US-BrianNeural",
       "gender": "male",
       "label": "本篇第二個說話者",
       "use": "同行朋友，或第二個場景的另一位服務人員（例如先跟司機通話、再到櫃檯領件）",
-      "required": false
+      "required": false,
+      "kokoroVoice": "am_fenrir"
+    }
+  },
+  "defaultProvider": "kokoro",
+  "providers": {
+    "edge": {
+      "voiceField": "voice",
+      "rate": "-10%"
+    },
+    "kokoro": {
+      "voiceField": "kokoroVoice",
+      "speed": 0.8,
+      "language": "en-us",
+      "modelPath": ".tts-cache/kokoro-v1.0.onnx",
+      "voicesPath": ".tts-cache/voices-v1.0.bin"
     }
   }
 }
