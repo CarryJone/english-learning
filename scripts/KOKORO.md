@@ -27,7 +27,7 @@ curl -fL -o .tts-cache/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-on
 python3 scripts/validate_daily.py YYYY-MM-DD
 ```
 
-生成器直接讀 HTML 的逐句文字／speaker，產生 s01…sNN.mp3、article.mp3 與 audio-manifest.json。角色聲線、speed=0.8、模型路徑均來自 voices.json，不在脚本寫死。句間停頓沿用 0.05／0.12／0.25 秒，全文時長仍必須 105–150 秒；若不合格優先調整內容，不為通過而改弱驗證。
+生成器直接讀 HTML 的逐句文字／speaker，產生 s01…sNN.mp3、article.mp3 與 audio-manifest.json。角色聲線、speed=0.8、模型路徑均來自 voices.json，不在脚本寫死。2026-10-13 使用者要求加長句間停頓，改用同角色 0.15／換人 0.25／段落切換 0.4 秒（providers.kokoro.pauses），全文時長仍必須 105–150 秒；若不合格優先調整內容，不為通過而改弱驗證。
 
 ## 聲線與歷史資產
 

@@ -104,6 +104,7 @@
 
 - **2026-10-13 語音方案更新（使用者指定不用帳號）**：後續每日教材預設使用本機 Kokoro，設定在 `assets/voices.json` 的 `defaultProvider`／`providers`／`roles.kokoroVoice`；舊 `roles.voice` 留給 edge 與歷史頁。此項取代前文「目前定義」的新教材聲線：narrator=af_sarah、traveler=af_heart、staff=am_michael、companion=am_fenrir。角色唯一性與最多四聲線規則不變。
 - 使用 `.venv-tts/bin/python scripts/generate_daily_kokoro.py [日期]`；設定步驟見 `scripts/KOKORO.md`。頁面必須有 `audio-provider=kokoro` 與匹配的 `voice-map`。edge 的 `RATE=-10%` 不直接等同 Kokoro speed；本機依實際時長採 `speed=0.8`，以 JSON 為準。
+- 2026-10-13 使用者要求加長句間停頓：Kokoro 同角色 0.15／換人 0.25／段落切換 0.4 秒，設定在 providers.kokoro.pauses；逐句音檔不加額外停頓。
 - 舊每日頁與共用核心句音檔維持原聲線，不批次重生。無 provider meta 的歷史頁按 edge 驗證。
 
 - 音檔生成使用 `edge_tts` 時，若失敗，優先檢查：

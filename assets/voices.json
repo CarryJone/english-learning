@@ -57,7 +57,12 @@
       "speed": 0.8,
       "language": "en-us",
       "modelPath": ".tts-cache/kokoro-v1.0.onnx",
-      "voicesPath": ".tts-cache/voices-v1.0.bin"
+      "voicesPath": ".tts-cache/voices-v1.0.bin",
+      "pauses": {
+        "sameSpeaker": 0.15,
+        "speakerChange": 0.25,
+        "stageChange": 0.4
+      }
     }
   }
 }

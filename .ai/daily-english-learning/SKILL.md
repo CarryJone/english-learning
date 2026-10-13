@@ -178,7 +178,7 @@ A 與 C 會讓聽力表面難度上升，這是刻意的：學習者原本就聽
 
 新頁 head 增加 `<meta name="audio-provider" content="kokoro">`，`voice-map` 列當篇使用的 Kokoro 聲線；不可把 Microsoft 名稱宣告成 Kokoro 實際聲線。Step 5 改執行 `.venv-tts/bin/python scripts/generate_daily_kokoro.py [日期]`，環境／模型下載見 `scripts/KOKORO.md`。生成器直接讀 HTML 逐句文字與 speaker，不另維護可能失配的陣列；輸出完整 MP3、逐句 MP3、audio-manifest.json。
 
-角色唯一性、句間停頓 0.05／0.12／0.25 秒、全文 105–150 秒、正式驗證皆不變。舊每日頁與共用 `assets/core/*.mp3` 保留原音，不批次重生；無 provider meta 的歷史頁依 edge 驗證。
+角色唯一性、全文 105–150 秒、正式驗證皆不變。2026-10-13 使用者回饋句子接續太黏，Kokoro 句間停頓改為同角色 0.15／換人 0.25／段落切換 0.4 秒，由 providers.kokoro.pauses 讀取；逐句音檔不加額外停頓。此更新優先於下方舊 edge 停頓範例。舊每日頁與共用 `assets/core/*.mp3` 保留原音，不批次重生；無 provider meta 的歷史頁依 edge 驗證。
 
 
 **產出音檔前必須先讀 `assets/voices.json`，並以該檔的 `roles` 為準。** 不可在 TTS 腳本裡自行寫死聲線，也不可自行新增角色名稱。

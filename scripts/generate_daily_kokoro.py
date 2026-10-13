@@ -69,7 +69,8 @@ def main() -> None:
             if i < len(page.sentence_texts):
                 next_role = page.sentence_speakers[i]
                 # Stage transition: narration starts after a spoken turn.
-                gap = 0.25 if next_role == 'narrator' and role != 'narrator' else 0.05 if next_role == role else 0.12
+                kind = 'stageChange' if next_role == 'narrator' and role != 'narrator' else 'sameSpeaker' if next_role == role else 'speakerChange'
+                gap = cfg['pauses'][kind]
                 full.append(np.zeros(round(gap * rate), dtype=np.float32))
             manifest.append({'index': i, 'speaker': role, 'voice': voice_map[role], 'text': text, 'seconds': len(samples) / rate})
             print(f'generated s{i:02d}.mp3 ({len(samples) / rate:.2f}s)', flush=True)
@@ -82,7 +83,7 @@ def main() -> None:
     evidence = {'provider': 'kokoro', 'speed': cfg['speed'], 'language': cfg['language'],
                 'modelSHA256': hashlib.sha256(model_path.read_bytes()).hexdigest(),
                 'voicesSHA256': hashlib.sha256(voices_path.read_bytes()).hexdigest(),
-                'sentences': manifest, 'articleSeconds': len(audio) / 24000}
+                'pauses': cfg['pauses'], 'sentences': manifest, 'articleSeconds': len(audio) / 24000}
     (folder / 'audio-manifest.json').write_text(json.dumps(evidence, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Full audio: {len(audio) / 24000:.3f}s')
 

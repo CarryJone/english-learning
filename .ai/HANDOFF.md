@@ -12,3 +12,5 @@
 - audio-manifest.json 記錄聲線、模型 hash、純文字與時長；移除 pending JSON。
 - edge_tts 7.2.7／7.2.8 仍 HTTP 403；網路與聲線清單正常，校時重試失敗。上游 10-10 討論 #489 症狀相同。
 - 原有 test/ 未碰；PROJECT_STATE 原有使用者變更保留，不併入本次提交。
+
+- 後續使用者要求停頓多一點：句間改 0.15／0.25／0.4 秒，設定在 providers.kokoro.pauses；語速不變。重新生成後全文 115.598 秒，98 checks、33 MP3 解碼通過。
