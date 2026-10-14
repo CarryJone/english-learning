@@ -4109,6 +4109,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-14",
       "lastReviewedDate": null
+    },
+    {
+      "word": "cycle",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "（洗衣等機器的）一次運轉程序",
+      "exampleSentence": "How long does the wash cycle take?",
+      "dateAdded": "2026-10-14",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "basket",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "籃子",
+      "exampleSentence": "Can I use this basket for my clothes?",
+      "dateAdded": "2026-10-14",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "iron",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "熨斗",
+      "exampleSentence": "Can I borrow an iron from reception?",
+      "dateAdded": "2026-10-14",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
     }
   ]
 }

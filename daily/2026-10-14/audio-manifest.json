@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at my hotel after several days away.",
+      "seconds": 3.156625
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "My clothes need washing, so I ask at reception.",
+      "seconds": 3.8493333333333335
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, can I use the laundry room tonight?",
+      "seconds": 2.968625
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, it's downstairs, past the door to the garden.",
+      "seconds": 4.352
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, how much is it to wash my clothes?",
+      "seconds": 3.0752916666666668
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It's four pounds, and the detergent's included in the price.",
+      "seconds": 4.8853333333333335
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I've got liquid detergent in a small container.",
+      "seconds": 3.5973333333333333
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's fine, but you won't need your own.",
+      "seconds": 3.1406666666666667
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Does that include drying my clothes as well?",
+      "seconds": 3.160625
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No, the dryer's two pounds extra for each cycle.",
+      "seconds": 4.307958333333334
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I check the hotel's laundry page before paying.",
+      "seconds": 3.550666666666667
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "The page says last wash at eight, is that right?",
+      "seconds": 3.512
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yeah, start before eight so you've got time to finish.",
+      "seconds": 4.030666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, how long does the wash cycle usually take?",
+      "seconds": 3.820666666666667
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "About thirty minutes, then you can move to a dryer.",
+      "seconds": 4.245333333333333
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I use this basket to carry my clothes downstairs?",
+      "seconds": 4.246
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, just bring it back when you're done.",
+      "seconds": 3.2213333333333334
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, and can I borrow an iron after the wash?",
+      "seconds": 3.544625
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, we've got one here, just ask later.",
+      "seconds": 3.52
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll pick it up later, after my clothes are dry.",
+      "seconds": 3.6173333333333333
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No problem, and keep the iron in your room overnight.",
+      "seconds": 4.536
+    },
+    {
+      "index": 22,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Before I leave, the receptionist mentions a change.",
+      "seconds": 3.872
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The dryer's out of order, but the garden one's two pounds.",
+      "seconds": 4.776
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, which dryer can I use for my clothes tonight?",
+      "seconds": 3.855958333333333
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The one by the garden, two pounds a cycle.",
+      "seconds": 3.925333333333333
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Got it, I'll use the dryer by the garden instead.",
+      "seconds": 3.6939583333333332
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, take your basket with you too.",
+      "seconds": 3.231333333333333
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I pay for both here, or do I pay downstairs?",
+      "seconds": 3.7539583333333333
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Pay here, and we'll give you coins for the machines.",
+      "seconds": 3.7546666666666666
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, one wash and one dry cycle, please.",
+      "seconds": 3.788
+    },
+    {
+      "index": 31,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's six pounds, and here's your change.",
+      "seconds": 3.2
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've checked the cost and found a working dryer.",
+      "seconds": 3.199291666666667
+    }
+  ],
+  "articleSeconds": 127.48891666666667
+}

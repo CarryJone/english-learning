@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-14",
+      "day": 133,
+      "title": "Using the Hotel Laundry Room",
+      "url": "daily/2026-10-14/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: check laundry fees and last wash time, find a working dryer, borrow and return an iron.",
+        "Input: wash £4 with detergent; dry £2; last wash 8 p.m.; working dryer by garden.",
+        "Is detergent included in the price?",
+        "Can I borrow an iron?",
+        "I’ll bring it back tomorrow morning."
+      ]
+    },
+    {
       "date": "2026-10-13",
       "day": 132,
       "title": "Finding the Airport Coach Pickup Point",

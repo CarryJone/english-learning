@@ -10202,7 +10202,187 @@
       "reviewCount": 0,
       "nextReview": "2026-10-14",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-included",
+      "type": "sentence",
+      "zhPrompt": "問洗劑是否包含在價格內。",
+      "answer": "Is detergent included in the price?",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Is ... included in the price?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-borrow",
+      "type": "sentence",
+      "zhPrompt": "向旅館櫃檯借熨斗。",
+      "answer": "Can I borrow an iron?",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I borrow ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-return",
+      "type": "sentence",
+      "zhPrompt": "說你明天早上會把熨斗還回來。",
+      "answer": "I’ll bring it back tomorrow morning.",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-cost",
+      "type": "sentence",
+      "zhPrompt": "看完資訊，說洗一次加烘一次共六英鎊。",
+      "answer": "One wash and one dry cycle cost six pounds.",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-lastwash",
+      "type": "sentence",
+      "zhPrompt": "說你要在晚上八點前開始洗衣。",
+      "answer": "I’ll start the wash before eight.",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-alternative",
+      "type": "sentence",
+      "zhPrompt": "原本的烘衣機壞了，問哪一台可以用。",
+      "answer": "Which dryer can I use instead?",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-liquid",
+      "type": "sentence",
+      "zhPrompt": "用複習字 liquid 說這個容器裡有液體。",
+      "answer": "There’s liquid in this container.",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "There’s ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-limit",
+      "type": "sentence",
+      "zhPrompt": "換到機場安檢，用複習字 limit 問液體限制。",
+      "answer": "What’s the limit for liquids?",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-hotelpool",
+      "type": "context",
+      "zhPrompt": "換到旅館游泳池：問毛巾是否包含在價格內。",
+      "answer": "Is a towel included in the price?",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-14-umbrella",
+      "type": "context",
+      "zhPrompt": "換到下雨天：向櫃檯借傘，並說晚上會歸還。",
+      "answer": "Can I borrow an umbrella? I’ll bring it back tonight.",
+      "sourceDate": "2026-10-14",
+      "sourceTitle": "Using the Hotel Laundry Room",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-15",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-13"
+  "updatedAt": "2026-10-14"
 }
