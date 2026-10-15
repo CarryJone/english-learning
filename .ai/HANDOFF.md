@@ -18,3 +18,10 @@
 ## 2026-10-14 Day 133 完成
 - Using the Hotel Laundry Room：cycle／basket／iron；10 到期字、10 Context Recall、5 核心句；2–7 天前無字，Bridge 明確顯示提示，未使用昨天新字。
 - 32 句／291 字，主音檔 127.489 秒，沿用 Kokoro speed 0.8 與 0.15／0.25／0.4 停頓；98 checks、33 MP3 解碼／文字對照、JS 語法、375／390px 無溢位、核心句倒數／播放器通過。
+
+## 2026-10-15 Day 134 完成
+- Getting a Replacement for a Faulty Hotel Iron：faulty／cord／heat；3 到期字、3 Bridge（10-13 coach／curb／shelter）、10 Context Recall、5 核心句。
+- 32 句／290 字，全文 124.528 秒；Kokoro speed 0.8、停頓 0.15／0.25／0.4 不變。98 checks、33 MP3 解碼／純文字對照、JS 語法、375／390px 版面、倒數與播放器通過。
+- Day 134 提交／推送：先前 auto-review 拒絕學習資料上傳；使用者已在本輪明確要求「上傳git」，授權今日教材、學習紀錄與語音規則上傳 CarryJone/english-learning。
+
+- 2026-10-15 新指示：每次先試 edge_tts，失敗才用 Kokoro；defaultProvider=edge／fallbackProviders=[kokoro]，AGENTS／SKILL 已同步。規則隨本輪提交上傳；不是新增自動切換器。原方案今日 Hello 與校時重試仍 403；另以今天三角色台詞重測，三角色皆 HTTP 403。今日教材音檔未替換。

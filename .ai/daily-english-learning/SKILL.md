@@ -174,9 +174,12 @@ A 與 C 會讓聽力表面難度上升，這是刻意的：學習者原本就聽
 
 #### 3a.2 角色與聲線（唯一事實來源：`assets/voices.json`）
 
-**2026-10-13 生效更新，優先於下方 edge 歷史範例與 Step 5：** 使用者已指定改用不需帳號的本機 Kokoro。新每日頁預設 provider `kokoro`；角色聲線由 `roles.kokoroVoice` 讀取（narrator=af_sarah、traveler=af_heart、staff=am_michael、companion=am_fenrir），speed 由 `providers.kokoro.speed` 讀取（0.8）。下表 Microsoft 聲線仍保存在 `roles.voice`，供歷史頁／edge 使用。
+**2026-10-15 生效更新，優先於下方歷史範例與 Step 5：** 使用者指定「先用原本的，若失敗再用 Kokoro」。每次產出都先測 edge_tts，不得直接沿用上一日的故障結論。voices.json 的 defaultProvider=edge、fallbackProviders=[kokoro] 記錄順序；此為 Agent 產出流程規範，現有 generate_daily_kokoro.py 是明確指定的備援入口，不會自動探測或切換。
 
-新頁 head 增加 `<meta name="audio-provider" content="kokoro">`，`voice-map` 列當篇使用的 Kokoro 聲線；不可把 Microsoft 名稱宣告成 Kokoro 實際聲線。Step 5 改執行 `.venv-tts/bin/python scripts/generate_daily_kokoro.py [日期]`，環境／模型下載見 `scripts/KOKORO.md`。生成器直接讀 HTML 逐句文字與 speaker，不另維護可能失配的陣列；輸出完整 MP3、逐句 MP3、audio-manifest.json。
+1. 取當篇 narrator／traveler／staff 各一個短句（有 companion 時也測），使用 roles.voice 與 providers.edge.rate 生成暫存音檔，並實際解碼。遇 sandbox 網路限制先以適當權限重試；仍 403、逾時或無音訊則記錄錯誤並切換 Kokoro。
+2. edge 測試成功才走下方 Step 5 的多聲線生成；完整產物必須驗收。若途中失敗，整篇 article.mp3 與 sNN.mp3 都改用 Kokoro，避免宣告與音檔混雜。
+3. Kokoro 備援讀 roles.kokoroVoice、providers.kokoro.speed；執行 `.venv-tts/bin/python scripts/generate_daily_kokoro.py [日期]`，安裝見 scripts/KOKORO.md。不要在腳本寫死聲線。
+4. 新頁 head 必須宣告實際的 audio-provider（edge 或 kokoro），voice-map 讀取該 provider 對應聲線。edge=roles.voice，kokoro=roles.kokoroVoice；Kokoro 生成器直接讀 HTML 的逐句文字與 speaker。
 
 角色唯一性、全文 105–150 秒、正式驗證皆不變。2026-10-13 使用者回饋句子接續太黏，Kokoro 句間停頓改為同角色 0.15／換人 0.25／段落切換 0.4 秒，由 providers.kokoro.pauses 讀取；逐句音檔不加額外停頓。此更新優先於下方舊 edge 停頓範例。舊每日頁與共用 `assets/core/*.mp3` 保留原音，不批次重生；無 provider meta 的歷史頁依 edge 驗證。
 

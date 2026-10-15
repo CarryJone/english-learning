@@ -10382,7 +10382,187 @@
       "reviewCount": 0,
       "nextReview": "2026-10-15",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-heat",
+      "type": "sentence",
+      "zhPrompt": "說你借來的熨斗不會變熱。",
+      "answer": "The iron doesn’t heat up.",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "The iron doesn’t ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-cost",
+      "type": "sentence",
+      "zhPrompt": "問更換是否不需額外付費。",
+      "answer": "Is that at no extra cost?",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Is that ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-pickup",
+      "type": "sentence",
+      "zhPrompt": "說你會在九點自行領取。",
+      "answer": "I’ll pick it up at nine.",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-rule",
+      "type": "sentence",
+      "zhPrompt": "看完規則，說你會把故障設備留在房間。",
+      "answer": "I’ll leave the faulty item in my room.",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚時間，問你幾點可以自行領取。",
+      "answer": "Sorry, what time can I pick it up?",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-delivery",
+      "type": "sentence",
+      "zhPrompt": "依工作人員說法，說送到房間要等到十點。",
+      "answer": "Room delivery isn’t until ten.",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-basket",
+      "type": "sentence",
+      "zhPrompt": "用複習字 basket 問可否借洗衣籃。",
+      "answer": "Can I borrow a basket for my clothes?",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I borrow ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-cycle",
+      "type": "sentence",
+      "zhPrompt": "用複習字 cycle 問一次洗衣多久。",
+      "answer": "How long does the wash cycle take?",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "How long ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-water",
+      "type": "context",
+      "zhPrompt": "換到旅館淋浴：說熱水不會變熱。",
+      "answer": "The water doesn’t heat up.",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-15-ticket",
+      "type": "context",
+      "zhPrompt": "換到景點售票處：說你會在九點領取門票。",
+      "answer": "I’ll pick it up at nine.",
+      "sourceDate": "2026-10-15",
+      "sourceTitle": "Getting a Replacement for a Faulty Hotel Iron",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-14"
+  "updatedAt": "2026-10-15"
 }

@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-15",
+      "day": 134,
+      "title": "Getting a Replacement for a Faulty Hotel Iron",
+      "url": "daily/2026-10-15/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: report an iron that does not heat up and arrange a free replacement.",
+        "Input: stop using faulty equipment, contact reception, leave the item in the room, replacement at no extra cost.",
+        "The iron doesn’t heat up.",
+        "I’ll pick it up at nine.",
+        "Nine for pickup, ten for room delivery."
+      ]
+    },
+    {
       "date": "2026-10-14",
       "day": 133,
       "title": "Using the Hotel Laundry Room",

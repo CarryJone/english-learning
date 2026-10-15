@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-15",
   "note": "每日教材 article.mp3 與 sNN.mp3 的角色／聲線唯一事實來源。要新增角色或更換聲線，必須先改本檔，再同步 .ai/daily-english-learning/SKILL.md 的角色表與 AGENTS.md。任何 session 都不可在腳本裡自行寫死別的聲線。",
   "rate": "-10%",
   "maxRolesPerLesson": 4,
@@ -46,7 +46,7 @@
       "kokoroVoice": "am_fenrir"
     }
   },
-  "defaultProvider": "kokoro",
+  "defaultProvider": "edge",
   "providers": {
     "edge": {
       "voiceField": "voice",
@@ -64,5 +64,8 @@
         "stageChange": 0.4
       }
     }
-  }
+  },
+  "fallbackProviders": [
+    "kokoro"
+  ]
 }

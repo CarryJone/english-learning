@@ -102,8 +102,10 @@
 
 ## 驗證與音檔
 
-- **2026-10-13 語音方案更新（使用者指定不用帳號）**：後續每日教材預設使用本機 Kokoro，設定在 `assets/voices.json` 的 `defaultProvider`／`providers`／`roles.kokoroVoice`；舊 `roles.voice` 留給 edge 與歷史頁。此項取代前文「目前定義」的新教材聲線：narrator=af_sarah、traveler=af_heart、staff=am_michael、companion=am_fenrir。角色唯一性與最多四聲線規則不變。
-- 使用 `.venv-tts/bin/python scripts/generate_daily_kokoro.py [日期]`；設定步驟見 `scripts/KOKORO.md`。頁面必須有 `audio-provider=kokoro` 與匹配的 `voice-map`。edge 的 `RATE=-10%` 不直接等同 Kokoro speed；本機依實際時長採 `speed=0.8`，以 JSON 為準。
+- **2026-10-15 語音優先順序（使用者指定）**：每次正式產出先測原本 `edge_tts`，成功就使用 Microsoft 聲線；失敗才改用本機 Kokoro。不可沿用昨天故障的結論直接跳過測試。設定以 `assets/voices.json` 的 `defaultProvider=edge`、`fallbackProviders=[kokoro]` 為準；這是產出流程規則，現有 Kokoro 腳本是明確指定的備援入口，尚非自動切換器。
+- 測試至少涵蓋當篇必用的 narrator／traveler／staff：取各角色一個當篇短句，聲線讀取 `roles.voice`，RATE 讀取 providers.edge.rate；檢查檔案可解碼。sandbox 網路限制先以適當權限重試；服務 403／逾時／無音訊等失敗，記錄原因後用 Kokoro。不得無限重試或改弱驗收。
+- 若 edge 完整生成途中失敗，整篇完整與逐句音檔統一改用 Kokoro，不混用不相符的聲線宣告；頁面 audio-provider／voice-map 必須反映實際產出。角色與聲線唯一來源仍是 voices.json：edge 用 roles.voice，Kokoro 用 roles.kokoroVoice。角色唯一性與最多四聲線規則不變。
+- 使用 Kokoro 備援時，執行 `.venv-tts/bin/python scripts/generate_daily_kokoro.py [日期]`；設定步驟見 `scripts/KOKORO.md`。頁面必須有 `audio-provider=kokoro` 與匹配的 `voice-map`。edge 的 `RATE=-10%` 不直接等同 Kokoro speed；本機依實際時長採 `speed=0.8`，以 JSON 為準。
 - 2026-10-13 使用者要求加長句間停頓：Kokoro 同角色 0.15／換人 0.25／段落切換 0.4 秒，設定在 providers.kokoro.pauses；逐句音檔不加額外停頓。
 - 舊每日頁與共用核心句音檔維持原聲線，不批次重生。無 provider meta 的歷史頁按 edge 驗證。
 

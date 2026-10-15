@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at my hotel, ready to go out.",
+      "seconds": 2.7413333333333334
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "My clothes are in a basket, but the iron's cold.",
+      "seconds": 3.6899583333333332
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, I'm in room twelve, and I've got a problem.",
+      "seconds": 3.584625
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sorry about that, what isn't working in your room?",
+      "seconds": 3.9466666666666668
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "The iron I borrowed this afternoon doesn't heat up.",
+      "seconds": 3.8406666666666665
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Okay, thanks for telling me, is anything else wrong?",
+      "seconds": 4.394666666666667
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "The cord looks fine, but the iron stays cold.",
+      "seconds": 3.5019583333333335
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sounds faulty, let's get you a working one instead.",
+      "seconds": 4.181333333333333
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll turn it off and stop using it.",
+      "seconds": 2.906
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, leave it there for now, and I'll check.",
+      "seconds": 3.8813333333333335
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I check the hotel's help page while waiting.",
+      "seconds": 3.092625
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It says faulty equipment is replaced at no extra cost.",
+      "seconds": 4.6626666666666665
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Exactly, you won't need to pay for another iron.",
+      "seconds": 3.855958333333333
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, can I pick up another one at reception?",
+      "seconds": 3.268666666666667
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Let me see when we've got a spare one ready.",
+      "seconds": 3.6053333333333333
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'd like to iron my shirt before dinner.",
+      "seconds": 2.812
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, I'll see what we can do for you.",
+      "seconds": 3.2146666666666666
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, can I leave the faulty one in my room?",
+      "seconds": 3.1519583333333334
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, we'll take it away, so leave it there.",
+      "seconds": 3.502
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, and I'll keep my clothes in the basket meanwhile.",
+      "seconds": 4.021333333333334
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No problem, I'll get the replacement ready soon.",
+      "seconds": 4.123333333333333
+    },
+    {
+      "index": 22,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "The receptionist comes back with two options.",
+      "seconds": 3.124
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The spare's ready at nine, but room delivery won't work till ten.",
+      "seconds": 5.589333333333333
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, what time can I pick it up myself?",
+      "seconds": 3.0539583333333336
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Nine for pickup, ten for room delivery.",
+      "seconds": 3.904
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll pick it up at nine, then, before dinner.",
+      "seconds": 3.1153333333333335
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, come to reception and tell me your room number.",
+      "seconds": 4.198666666666667
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "And that's at no extra cost, right?",
+      "seconds": 2.602
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, we'll swap it for a working one.",
+      "seconds": 3.52
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll come down at nine to pick it up.",
+      "seconds": 2.9599583333333332
+    },
+    {
+      "index": 31,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You're welcome, and sorry again about the faulty iron.",
+      "seconds": 4.373333333333333
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've reported the problem and arranged a replacement.",
+      "seconds": 4.008666666666667
+    }
+  ],
+  "articleSeconds": 124.52833333333334
+}

@@ -4139,6 +4139,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-15",
       "lastReviewedDate": null
+    },
+    {
+      "word": "faulty",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有故障的；不能正常運作的",
+      "exampleSentence": "This iron is faulty, so I need another one.",
+      "dateAdded": "2026-10-15",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "cord",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "電線；電源線",
+      "exampleSentence": "The cord looks fine, but the iron doesn't work.",
+      "dateAdded": "2026-10-15",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "heat",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "加熱；變熱",
+      "exampleSentence": "The iron doesn't heat up.",
+      "dateAdded": "2026-10-15",
+      "reviewCount": 0,
+      "nextReview": "2026-10-16",
+      "lastReviewedDate": null
     }
   ]
 }
