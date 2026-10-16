@@ -25,3 +25,8 @@
 - Day 134 提交／推送：先前 auto-review 拒絕學習資料上傳；使用者已在本輪明確要求「上傳git」，授權今日教材、學習紀錄與語音規則上傳 CarryJone/english-learning。
 
 - 2026-10-15 新指示：每次先試 edge_tts，失敗才用 Kokoro；defaultProvider=edge／fallbackProviders=[kokoro]，AGENTS／SKILL 已同步。規則隨本輪提交上傳；不是新增自動切換器。原方案今日 Hello 與校時重試仍 403；另以今天三角色台詞重測，三角色皆 HTTP 403。今日教材音檔未替換。
+
+## 2026-10-16 Day 135 完成
+- Choosing an Easy City Walk Online：flat／steep／pace；8 到期字、4 Bridge（iron／cycle／basket／coach）、10 Context Recall、5 核心句。先同步遠端 SRS 48a7aa4。
+- 今日文章三角色 edge_tts 7.2.8 測試皆 403，依規則用 Kokoro；32 句／290 字，全文 124.948 秒，speed 0.8 與 0.15／0.25／0.4 停頓不變。
+- 98 checks、33 MP3 解碼／文字與聲線對照、JS 語法、375／390px 無溢位、核心句倒數與播放速度通過。

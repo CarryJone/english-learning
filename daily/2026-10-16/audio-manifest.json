@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I check online for an easy walk before lunch.",
+      "seconds": 3.316
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I find two walks and open the help chat.",
+      "seconds": 2.9233333333333333
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, I'm comparing the riverside and hill walks.",
+      "seconds": 3.691333333333333
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, what kind of walk would you like?",
+      "seconds": 2.832
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Something easy, with time to stop for photos.",
+      "seconds": 3.65
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The riverside walk sounds like a good choice.",
+      "seconds": 3.712
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "The page says flat path, so there aren't any hills?",
+      "seconds": 3.651291666666667
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, it's flat, with seats along the way.",
+      "seconds": 3.8686666666666665
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "And the hill walk has steep steps, is that right?",
+      "seconds": 3.2146666666666666
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yeah, and the group walks at quite a fast pace.",
+      "seconds": 3.648
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I compare both options before choosing my walk.",
+      "seconds": 3.604625
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I walk at my own pace on the riverside route?",
+      "seconds": 3.534666666666667
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, it's an audio walk for your phone.",
+      "seconds": 3.433333333333333
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I won't need to keep up with a group.",
+      "seconds": 2.8946666666666667
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Exactly, stop and start whenever you like.",
+      "seconds": 3.648
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It says bring your own headphones, so mine will work?",
+      "seconds": 3.629958333333333
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, use headphones that work with your phone.",
+      "seconds": 3.6693333333333333
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, and is the riverside walk about forty-five minutes long?",
+      "seconds": 4.768
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, it'll take longer with stops for photos.",
+      "seconds": 3.8586666666666667
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll choose that one for six pounds.",
+      "seconds": 2.5759583333333333
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Good choice, there's a cafe nearby for lunch.",
+      "seconds": 3.736625
+    },
+    {
+      "index": 22,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Before I pay, I ask where the audio walk starts.",
+      "seconds": 3.5832916666666668
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It starts by the library today, not the fountain, if you're coming now.",
+      "seconds": 6.024666666666667
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, where does the walk start today?",
+      "seconds": 2.63
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "By the library, not the fountain.",
+      "seconds": 2.9013333333333335
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "The library, got it, and can I start there at eleven?",
+      "seconds": 3.9712916666666667
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, you can start any time before five today.",
+      "seconds": 4.032
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I'll save the map on my phone before leaving.",
+      "seconds": 3.7253333333333334
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's a good idea, and check your phone's charged too.",
+      "seconds": 4.309333333333333
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll bring my own headphones and walk at my own pace.",
+      "seconds": 4.258666666666667
+    },
+    {
+      "index": 31,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You're welcome, enjoy your walk and take your time.",
+      "seconds": 4.1273333333333335
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've chosen my walk and checked the starting point.",
+      "seconds": 3.424
+    }
+  ],
+  "articleSeconds": 124.948375
+}

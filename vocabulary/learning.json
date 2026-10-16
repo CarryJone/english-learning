@@ -4169,6 +4169,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-16",
       "lastReviewedDate": null
+    },
+    {
+      "word": "flat",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "平坦的",
+      "exampleSentence": "Is the riverside path flat?",
+      "dateAdded": "2026-10-16",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "steep",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "陡峭的",
+      "exampleSentence": "The hill has some steep steps.",
+      "dateAdded": "2026-10-16",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "pace",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "步行或行進的速度",
+      "exampleSentence": "Can I walk at my own pace?",
+      "dateAdded": "2026-10-16",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
     }
   ]
 }

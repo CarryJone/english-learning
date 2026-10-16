@@ -10562,7 +10562,187 @@
       "reviewCount": 0,
       "nextReview": "2026-10-16",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-pace",
+      "type": "sentence",
+      "zhPrompt": "問你能不能按照自己的步調走。",
+      "answer": "Can I walk at my own pace?",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Can I walk ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-headphones",
+      "type": "sentence",
+      "zhPrompt": "說你會自備耳機。",
+      "answer": "I’ll bring my own headphones.",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "I’ll bring ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-map",
+      "type": "sentence",
+      "zhPrompt": "說你出發前會儲存地圖。",
+      "answer": "I’ll save the map before I go.",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-flat",
+      "type": "sentence",
+      "zhPrompt": "比較後，說河岸步道是平坦的。",
+      "answer": "The riverside path is flat.",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-time",
+      "type": "sentence",
+      "zhPrompt": "說河岸散步約需四十五分鐘。",
+      "answer": "The riverside walk takes about forty-five minutes.",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚改動，問今天從哪裡開始。",
+      "answer": "Sorry, where does the walk start today?",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-start",
+      "type": "sentence",
+      "zhPrompt": "說你會在十一點從圖書館出發。",
+      "answer": "I’ll start by the library at eleven.",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-nearby",
+      "type": "sentence",
+      "zhPrompt": "用複習字 nearby 問附近有沒有咖啡店。",
+      "answer": "Is there a cafe nearby?",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Is there ... nearby?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-museum",
+      "type": "context",
+      "zhPrompt": "換到博物館：問可否按照自己的步調參觀。",
+      "answer": "Can I visit at my own pace?",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-16-station",
+      "type": "context",
+      "zhPrompt": "換到車站：用複習字 audio 說你想要語音導覽，並會自備耳機。",
+      "answer": "I’d like the audio guide. I’ll bring my own headphones.",
+      "sourceDate": "2026-10-16",
+      "sourceTitle": "Choosing an Easy City Walk Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-17",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-15"
+  "updatedAt": "2026-10-16"
 }

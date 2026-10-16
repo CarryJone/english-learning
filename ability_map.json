@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-16",
+      "day": 135,
+      "title": "Choosing an Easy City Walk Online",
+      "url": "daily/2026-10-16/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: compare city walks and choose an easy route with a confirmed starting point.",
+        "Input: riverside £6, 45 minutes, flat, own pace, own headphones; hill £12, 90 minutes, steep steps, fast pace.",
+        "Can I walk at my own pace?",
+        "I’ll bring my own headphones and save the map.",
+        "The walk starts by the library today, not the fountain."
+      ]
+    },
+    {
       "date": "2026-10-15",
       "day": 134,
       "title": "Getting a Replacement for a Faulty Hotel Iron",
