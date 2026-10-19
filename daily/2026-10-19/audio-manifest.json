@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at the station, ready to travel to York.",
+      "seconds": 3.2632916666666665
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I get my ticket out and ask a worker.",
+      "seconds": 2.9233333333333333
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, is this the ten forty train to York?",
+      "seconds": 3.203291666666667
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, it's the right platform, and it's on time.",
+      "seconds": 3.8619583333333334
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I've got a reserved seat, but which carriage?",
+      "seconds": 3.6386666666666665
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Let me check your ticket for you.",
+      "seconds": 2.4633333333333334
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It says coach C, seat twenty-four, by the window.",
+      "seconds": 3.8379583333333334
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's carriage C, and your seat's on the left.",
+      "seconds": 3.6693333333333333
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, does reserved mean I can use that seat?",
+      "seconds": 3.332666666666667
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, it's yours for this train, so keep your ticket.",
+      "seconds": 4.272625
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Before the train comes, I ask about my bag.",
+      "seconds": 3.296
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I put my big bag on the luggage rack?",
+      "seconds": 2.9886666666666666
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, there's a large rack near the carriage door.",
+      "seconds": 4.096
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I won't need to lift it above my head.",
+      "seconds": 3.1506666666666665
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, and keep the way to the door clear.",
+      "seconds": 3.776
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I keep my small bag with me at my seat?",
+      "seconds": 3.0879583333333334
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, under the seat in front of you.",
+      "seconds": 2.740666666666667
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, my ticket and phone will go there.",
+      "seconds": 2.8846666666666665
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You'll need your ticket later.",
+      "seconds": 2.474666666666667
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "That arrow points towards the front.",
+      "seconds": 2.426625
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's the usual sign, but today's train is different.",
+      "seconds": 4.392
+    },
+    {
+      "index": 22,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "The worker shows me where to wait instead.",
+      "seconds": 2.8579583333333334
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Carriage C's at the back today, not the front, so wait by me.",
+      "seconds": 5.564
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, is my carriage at the front or the back?",
+      "seconds": 3.3213333333333335
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "At the back, by this sign.",
+      "seconds": 2.374
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "At the back, got it, and do I get on here?",
+      "seconds": 2.966
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, wait here, then check the letter beside the door.",
+      "seconds": 4.314
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll get on at carriage C and find seat twenty-four.",
+      "seconds": 3.7792916666666665
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Exactly, and let people get off before you get on.",
+      "seconds": 4.1386666666666665
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll use the luggage rack and keep my ticket handy.",
+      "seconds": 4.301333333333333
+    },
+    {
+      "index": 31,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You're welcome, have a good trip to York.",
+      "seconds": 3.1146666666666665
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I know where to wait and find my seat.",
+      "seconds": 2.644625
+    }
+  ],
+  "articleSeconds": 117.25625
+}

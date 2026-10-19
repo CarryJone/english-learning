@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-19",
+      "day": 136,
+      "title": "Finding My Train Carriage and Reserved Seat",
+      "url": "daily/2026-10-19/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: find carriage C and reserved seat 24, confirm boarding location and luggage space.",
+        "Input: 10:40 York, platform 4, coach C, seat 24 window; large luggage rack near door.",
+        "I’ve got a reserved seat.",
+        "Carriage C is at the back today.",
+        "Do I get on here?"
+      ]
+    },
+    {
       "date": "2026-10-16",
       "day": 135,
       "title": "Choosing an Easy City Walk Online",

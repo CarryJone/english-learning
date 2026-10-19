@@ -30,3 +30,10 @@
 - Choosing an Easy City Walk Online：flat／steep／pace；8 到期字、4 Bridge（iron／cycle／basket／coach）、10 Context Recall、5 核心句。先同步遠端 SRS 48a7aa4。
 - 今日文章三角色 edge_tts 7.2.8 測試皆 403，依規則用 Kokoro；32 句／290 字，全文 124.948 秒，speed 0.8 與 0.15／0.25／0.4 停頓不變。
 - 98 checks、33 MP3 解碼／文字與聲線對照、JS 語法、375／390px 無溢位、核心句倒數與播放速度通過。
+
+## 2026-10-19 Day 136 完成
+- Finding My Train Carriage and Reserved Seat：carriage／reserved／rack；24 到期字、4 Bridge（flat／steep／pace／shelter）、10 Context Recall、5 核心句。先同步 SRS 583daaa。
+- 當日三角色 edge_tts 7.2.8 皆 HTTP 403，改用 Kokoro；32 句／290 字，全文 117.256 秒，speed 0.8，停頓 0.15／0.25／0.4。edge_tts 現已安裝到 .venv-tts，避免依賴會消失的 /tmp runtime。
+- 98 checks、33 MP3 解碼／純文字與聲線對照、JS 語法、375／390px 無溢位、倒數與播放速度通過。
+- 暫存 build 腳本已清空，本輪從現有正式 HTML 重建內容生成；音檔腳本仍使用 repo scripts/generate_daily_kokoro.py。
+- Day 136 上傳授權：使用者已回覆「上傳git」，明確同意今日教材與 profile／SRS 上傳 CarryJone/english-learning；先前 auto-review 的授權阻塞已取得使用者確認。

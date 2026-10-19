@@ -10742,7 +10742,177 @@
       "reviewCount": 0,
       "nextReview": "2026-10-17",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-reserved",
+      "type": "sentence",
+      "zhPrompt": "說你在這班車有預訂座位。",
+      "answer": "I’ve got a reserved seat on this train.",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "I’ve got ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-back",
+      "type": "sentence",
+      "zhPrompt": "確認 C 車廂是不是在列車尾端。",
+      "answer": "Is carriage C at the back?",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Is carriage C ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-board",
+      "type": "sentence",
+      "zhPrompt": "問你是不是從這裡上車。",
+      "answer": "Do I get on here?",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-seat",
+      "type": "sentence",
+      "zhPrompt": "依票券說你的座位是 C 車廂 24 號。",
+      "answer": "I’m in carriage C, seat twenty-four.",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-rack",
+      "type": "sentence",
+      "zhPrompt": "問大包包可不可以放在行李架。",
+      "answer": "Can I put my bag on the luggage rack?",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚，確認車廂在前面還是後面。",
+      "answer": "Sorry, is my carriage at the front or the back?",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-arrow",
+      "type": "sentence",
+      "zhPrompt": "用複習字 arrow 說箭頭指向左邊。",
+      "answer": "The arrow points to the left.",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "The arrow ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-shelter",
+      "type": "sentence",
+      "zhPrompt": "用複習字 shelter 問你可以在哪個遮雨處等。",
+      "answer": "Which shelter can I wait in?",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-bus",
+      "type": "context",
+      "zhPrompt": "換到巴士：問可否坐後面。",
+      "answer": "Can I sit at the back?",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-19-boat",
+      "type": "context",
+      "zhPrompt": "換到遊船碼頭：確認從這裡上船。",
+      "answer": "Do I get on here?",
+      "sourceDate": "2026-10-19",
+      "sourceTitle": "Finding My Train Carriage and Reserved Seat",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-16"
+  "updatedAt": "2026-10-19"
 }

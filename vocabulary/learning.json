@@ -4199,6 +4199,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-17",
       "lastReviewedDate": null
+    },
+    {
+      "word": "carriage",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "火車車廂",
+      "exampleSentence": "Which carriage is my seat in?",
+      "dateAdded": "2026-10-19",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "reserved",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "已被預訂的；保留的",
+      "exampleSentence": "I've got a reserved seat on this train.",
+      "dateAdded": "2026-10-19",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "rack",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "架子；行李架",
+      "exampleSentence": "Can I put my bag on the luggage rack?",
+      "dateAdded": "2026-10-19",
+      "reviewCount": 0,
+      "nextReview": "2026-10-20",
+      "lastReviewedDate": null
     }
   ]
 }
