@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-20",
+      "day": 137,
+      "title": "Buying and Wrapping a Fragile Gift",
+      "url": "daily/2026-10-20/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: buy two fragile gifts, request wrapping and separate packing, confirm optional box cost.",
+        "Input: mugs £8 each, gift wrap free, extra box price from staff.",
+        "Can you wrap it up, please?",
+        "Please pack them separately.",
+        "The wrap is free; the box is two pounds."
+      ]
+    },
+    {
       "date": "2026-10-19",
       "day": 136,
       "title": "Finding My Train Carriage and Reserved Seat",

@@ -37,3 +37,8 @@
 - 98 checks、33 MP3 解碼／純文字與聲線對照、JS 語法、375／390px 無溢位、倒數與播放速度通過。
 - 暫存 build 腳本已清空，本輪從現有正式 HTML 重建內容生成；音檔腳本仍使用 repo scripts/generate_daily_kokoro.py。
 - Day 136 上傳授權：使用者已回覆「上傳git」，明確同意今日教材與 profile／SRS 上傳 CarryJone/english-learning；先前 auto-review 的授權阻塞已取得使用者確認。
+
+## 2026-10-20 Day 137 完成
+- Buying and Wrapping a Fragile Gift：gift／wrap／fragile；21 到期字、4 Bridge（faulty／flat／steep／pace）、10 Context Recall、5 核心句。同步 SRS 3d1c45d。
+- edge_tts 7.2.8 以今日三角色台詞測試皆 403，使用 Kokoro；32 句／289 字、122.982 秒，原 speed 0.8 與停頓不變。
+- 98 checks、33 MP3 解碼／文字與聲線對照、JS 語法、375／390px 版面、倒數與播放器通過。

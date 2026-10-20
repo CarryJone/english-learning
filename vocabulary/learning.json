@@ -4229,6 +4229,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-20",
       "lastReviewedDate": null
+    },
+    {
+      "word": "gift",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "禮物",
+      "exampleSentence": "This mug is a gift for my sister.",
+      "dateAdded": "2026-10-20",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "wrap",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "包裝；包起來",
+      "exampleSentence": "Can you wrap it up, please?",
+      "dateAdded": "2026-10-20",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "fragile",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "易碎的",
+      "exampleSentence": "These mugs are fragile, so please pack them separately.",
+      "dateAdded": "2026-10-20",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
     }
   ]
 }

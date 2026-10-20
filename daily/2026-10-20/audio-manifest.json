@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm choosing a gift for my sister.",
+      "seconds": 2.506666666666667
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I find two mugs and ask for help.",
+      "seconds": 2.6346666666666665
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, I'd like these two mugs, one for my sister.",
+      "seconds": 3.651291666666667
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Lovely, are they both gifts, or is one for you?",
+      "seconds": 3.8306666666666667
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "The blue one's a gift, and the green one's for me.",
+      "seconds": 3.2672916666666665
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Would you like us to wrap the blue one?",
+      "seconds": 2.965333333333333
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Yes, can you wrap it up, please?",
+      "seconds": 2.454
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, we've got nice paper for gifts.",
+      "seconds": 3.569958333333333
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, and can I check both mugs for damage first?",
+      "seconds": 3.768
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, take your time, I'll get the paper.",
+      "seconds": 3.4606666666666666
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I check the mugs and read the packing sign.",
+      "seconds": 3.232
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "They're fragile, so please pack them separately for the journey.",
+      "seconds": 4.301333333333333
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No problem, we'll put paper around each one.",
+      "seconds": 3.8826666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I don't want them knocking against each other.",
+      "seconds": 3.196
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, separate packing helps keep them safe.",
+      "seconds": 3.8826666666666667
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I put them in my carry-on bag afterwards?",
+      "seconds": 3.3213333333333335
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, just leave enough space so nothing presses against them.",
+      "seconds": 4.881333333333333
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll keep them away from my water bottle too.",
+      "seconds": 3.0653333333333332
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Good idea, keep the bag with you.",
+      "seconds": 2.852
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "The sign says gift wrap is free, is that right?",
+      "seconds": 3.5019583333333335
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, and we've got a box as well.",
+      "seconds": 3.008
+    },
+    {
+      "index": 22,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Before paying, I ask which packing options cost extra.",
+      "seconds": 4.405333333333333
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Gift wrap's free, but the box is two pounds if you want it.",
+      "seconds": 4.864
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, what's free, and what costs two pounds?",
+      "seconds": 3.458
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The wrap's free; the box is two pounds.",
+      "seconds": 3.562666666666667
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Just the free gift wrap, then, without the extra box.",
+      "seconds": 3.878
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's fine, and we'll still pack the mugs separately.",
+      "seconds": 4.096
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, that's eight pounds each, so sixteen pounds altogether?",
+      "seconds": 4.508
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Exactly, and there won't be an extra charge for wrapping.",
+      "seconds": 4.437333333333333
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, please wrap it up and pack them separately.",
+      "seconds": 3.3753333333333333
+    },
+    {
+      "index": 31,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, I'll have them ready for you in a minute.",
+      "seconds": 3.6413333333333333
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've checked the gifts, packing, and final price.",
+      "seconds": 3.4226666666666667
+    }
+  ],
+  "articleSeconds": 122.98183333333333
+}

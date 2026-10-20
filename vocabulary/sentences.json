@@ -10912,7 +10912,177 @@
       "reviewCount": 0,
       "nextReview": "2026-10-20",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-wrap",
+      "type": "sentence",
+      "zhPrompt": "請店員把這個禮物包起來。",
+      "answer": "Can you wrap it up, please?",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can you ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-giftwrap",
+      "type": "sentence",
+      "zhPrompt": "問禮物包裝是否免費。",
+      "answer": "Is gift wrap free?",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Is ... free?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-separate",
+      "type": "sentence",
+      "zhPrompt": "請店員把兩個杯子分開包裝。",
+      "answer": "Please pack them separately.",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-cost",
+      "type": "sentence",
+      "zhPrompt": "說每杯八英鎊，兩杯共十六英鎊。",
+      "answer": "Eight pounds each, sixteen pounds altogether.",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-box",
+      "type": "sentence",
+      "zhPrompt": "說你只要免費包裝，不要額外盒子。",
+      "answer": "Just the free gift wrap, without the extra box.",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚收費，問哪項免費、哪項兩英鎊。",
+      "answer": "Sorry, what’s free, and what costs two pounds?",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-damage",
+      "type": "sentence",
+      "zhPrompt": "用複習字 damage 問能否先檢查商品是否受損。",
+      "answer": "Can I check for damage first?",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I check ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-reserved",
+      "type": "sentence",
+      "zhPrompt": "換到車站，用昨天的 reserved 說你有預訂座位。",
+      "answer": "I’ve got a reserved seat.",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-food",
+      "type": "context",
+      "zhPrompt": "換到外帶餐廳：請把兩份餐點分開包裝。",
+      "answer": "Please pack them separately.",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-20-shop",
+      "type": "context",
+      "zhPrompt": "換到另一家伴手禮店：請店員把一條圍巾包起來。",
+      "answer": "Can you wrap it up, please?",
+      "sourceDate": "2026-10-20",
+      "sourceTitle": "Buying and Wrapping a Fragile Gift",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-21",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-19"
+  "updatedAt": "2026-10-20"
 }
