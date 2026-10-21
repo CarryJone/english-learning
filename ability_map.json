@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-21",
+      "day": 138,
+      "title": "Returning a Damaged Gift and Asking for a Refund",
+      "url": "daily/2026-10-21/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: explain damage, confirm the original color is sold out, request an £8 refund to the original card.",
+        "Input: unused item plus receipt; blue sold out; green available; ask staff about damaged items.",
+        "Can I get a refund?",
+        "Are the blue mugs sold out?",
+        "Eight pounds back to my card, right?"
+      ]
+    },
+    {
       "date": "2026-10-20",
       "day": 137,
       "title": "Buying and Wrapping a Fragile Gift",

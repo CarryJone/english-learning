@@ -11082,7 +11082,177 @@
       "reviewCount": 0,
       "nextReview": "2026-10-21",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-crack",
+      "type": "sentence",
+      "zhPrompt": "說杯子把手旁有一條裂痕。",
+      "answer": "There’s a crack near the handle.",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "There’s a crack ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-refund",
+      "type": "sentence",
+      "zhPrompt": "問你能不能退款。",
+      "answer": "Can I get a refund?",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I get ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-soldout",
+      "type": "sentence",
+      "zhPrompt": "看完標示，確認藍色杯子是否賣完。",
+      "answer": "Are the blue mugs sold out?",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-card",
+      "type": "sentence",
+      "zhPrompt": "確認八英鎊會退回你的卡。",
+      "answer": "Eight pounds back to my card, right?",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-unused",
+      "type": "sentence",
+      "zhPrompt": "說你還沒用過這個杯子，並有收據。",
+      "answer": "The mug is unused, and I have the receipt.",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚選項，問除了藍色還能選什麼。",
+      "answer": "Sorry, what can I get instead of blue?",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-gift",
+      "type": "sentence",
+      "zhPrompt": "用複習字 gift 說這是送給姊妹的禮物。",
+      "answer": "It’s a gift for my sister.",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "It’s a ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-wrap",
+      "type": "sentence",
+      "zhPrompt": "用昨天的 wrap 請店員包裝替代品。",
+      "answer": "Can you wrap it up, please?",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-tour",
+      "type": "context",
+      "zhPrompt": "換到行程櫃檯：原行程取消，問能否退款。",
+      "answer": "Can I get a refund?",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-21-ticket",
+      "type": "context",
+      "zhPrompt": "換到車站：確認明早的票是否賣完。",
+      "answer": "Are tomorrow morning’s tickets sold out?",
+      "sourceDate": "2026-10-21",
+      "sourceTitle": "Returning a Damaged Gift and Asking for a Refund",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-20"
+  "updatedAt": "2026-10-21"
 }

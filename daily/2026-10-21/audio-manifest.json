@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm back at the shop with yesterday's blue mug.",
+      "seconds": 3.2632916666666665
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I show the shop assistant my mug.",
+      "seconds": 2.6133333333333333
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, this mug has a crack.",
+      "seconds": 2.3673333333333333
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sorry about that, can you show me where?",
+      "seconds": 3.1146666666666665
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It's near the handle, and the top's chipped too.",
+      "seconds": 3.192
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "I can see it, thanks for letting us know.",
+      "seconds": 3.4346666666666668
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It's a gift, so I haven't used it at all.",
+      "seconds": 2.7139583333333333
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Have you got your receipt with you?",
+      "seconds": 2.6026666666666665
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Yes, I'm here to bring it back with the receipt.",
+      "seconds": 3.0452916666666665
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Thanks, I'll check it for you.",
+      "seconds": 2.429333333333333
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I read the returns sign while waiting.",
+      "seconds": 2.601958333333333
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It says unused items need a receipt, and mine's unused.",
+      "seconds": 4.482
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, and you've brought everything we need.",
+      "seconds": 3.6266666666666665
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I'd like another blue mug without any damage.",
+      "seconds": 3.99
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Let me check what's on the shelf.",
+      "seconds": 2.496
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "They're fragile, so can I check the next one first?",
+      "seconds": 3.596
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, take your time and have a good look.",
+      "seconds": 3.422
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I don't want to give a broken gift.",
+      "seconds": 2.800666666666667
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "I understand, we'll sort this out for you.",
+      "seconds": 3.648
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "If there's no blue one, can I get a refund?",
+      "seconds": 3.1406666666666667
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "I'll check, then tell you the options.",
+      "seconds": 2.8973333333333335
+    },
+    {
+      "index": 22,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "The assistant comes back with news about the blue mugs.",
+      "seconds": 3.7213333333333334
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Blue's sold out, but we've got green or a refund to your card.",
+      "seconds": 5.312
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, what can I get instead of blue?",
+      "seconds": 2.6926666666666668
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "A green mug, or a refund to your card.",
+      "seconds": 3.648
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I see, the sign says blue mugs are sold out.",
+      "seconds": 3.608625
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, I'm afraid we haven't got any blue ones left.",
+      "seconds": 4.2872916666666665
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll get a refund, then, back to my card, please.",
+      "seconds": 3.6173333333333333
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, that's eight pounds, and I'll give you a refund receipt.",
+      "seconds": 4.736
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, so the full eight pounds goes back to my card?",
+      "seconds": 3.716666666666667
+    },
+    {
+      "index": 31,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Exactly, keep this receipt until you see the money come back.",
+      "seconds": 5.226666666666667
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've explained the damage and checked the refund amount and method.",
+      "seconds": 4.585958333333333
+    }
+  ],
+  "articleSeconds": 118.730375
+}

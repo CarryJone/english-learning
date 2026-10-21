@@ -42,3 +42,8 @@
 - Buying and Wrapping a Fragile Gift：gift／wrap／fragile；21 到期字、4 Bridge（faulty／flat／steep／pace）、10 Context Recall、5 核心句。同步 SRS 3d1c45d。
 - edge_tts 7.2.8 以今日三角色台詞測試皆 403，使用 Kokoro；32 句／289 字、122.982 秒，原 speed 0.8 與停頓不變。
 - 98 checks、33 MP3 解碼／文字與聲線對照、JS 語法、375／390px 版面、倒數與播放器通過。
+
+## 2026-10-21 Day 138 完成
+- Returning a Damaged Gift and Asking for a Refund：crack／chipped／unused；6 到期字、4 Bridge（faulty／carriage／reserved／rack）、10 Context Recall、5 核心句。先同步遠端 SRS 41d7fa6。
+- edge_tts 7.2.8 三角色測試仍 403，使用 Kokoro；32 句／290 字、118.730 秒。speed 0.8 與停頓 0.15／0.25／0.4 不變。
+- 98 checks、33 MP3 解碼／文字與聲線對照、JS 語法、375／390px 無溢位、倒數與播放速度通過。Bridge 優先 faulty（rc0），再選 rc1 中尚未入選的三個字，未用 rc2 字排擠較不熟的字。

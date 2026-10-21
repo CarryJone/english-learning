@@ -4259,6 +4259,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-21",
       "lastReviewedDate": null
+    },
+    {
+      "word": "crack",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "裂痕",
+      "exampleSentence": "There’s a crack near the handle.",
+      "dateAdded": "2026-10-21",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "chipped",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有缺角的；邊緣破損的",
+      "exampleSentence": "The top of this mug is chipped.",
+      "dateAdded": "2026-10-21",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "unused",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "未使用過的",
+      "exampleSentence": "The mug is unused, and I have the receipt.",
+      "dateAdded": "2026-10-21",
+      "reviewCount": 0,
+      "nextReview": "2026-10-22",
+      "lastReviewedDate": null
     }
   ]
 }
