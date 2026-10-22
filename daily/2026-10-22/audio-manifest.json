@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm checking tomorrow's airport bus ticket.",
+      "seconds": 3.0712916666666668
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I open the help chat at my hotel before breakfast.",
+      "seconds": 3.572
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, can I save it to my phone?",
+      "seconds": 2.566
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, open your booking and choose Download ticket.",
+      "seconds": 4.306666666666667
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I can download it while I'm on Wi-Fi.",
+      "seconds": 3.4266666666666667
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Right, keep it in your saved tickets.",
+      "seconds": 2.836
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I open it offline at the bus stop?",
+      "seconds": 2.936
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, this ticket works offline once you've saved it.",
+      "seconds": 3.961333333333333
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Good, I won't need Wi-Fi outside.",
+      "seconds": 2.7552916666666665
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, check it before you leave.",
+      "seconds": 2.469333333333333
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I follow the steps and find my saved ticket.",
+      "seconds": 3.3699583333333334
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I've found it, and I can see the barcode.",
+      "seconds": 2.9913333333333334
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Great, show that when you get on.",
+      "seconds": 2.469333333333333
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Should I turn off Wi-Fi to check it works offline?",
+      "seconds": 3.4606666666666666
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, turn off Wi-Fi and data, then open it again.",
+      "seconds": 4.645291666666667
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, it's still there, and I can show the barcode.",
+      "seconds": 3.977333333333333
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Perfect, you've got your ticket ready.",
+      "seconds": 2.9
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I turn Wi-Fi back on now?",
+      "seconds": 2.522
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, it's only off for that check.",
+      "seconds": 2.88
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll save it to my phone and keep it handy.",
+      "seconds": 3.516
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Great, make sure your phone has enough charge.",
+      "seconds": 3.3
+    },
+    {
+      "index": 22,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I ask about a backup screenshot.",
+      "seconds": 2.506666666666667
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "A screenshot's fine here if the whole barcode shows, not just the number.",
+      "seconds": 6.101333333333334
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, what needs to be visible in the screenshot?",
+      "seconds": 3.416625
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The whole barcode, not just the number.",
+      "seconds": 3.264
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Got it, I'll take a screenshot with the whole barcode.",
+      "seconds": 3.61
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's fine for this bus ticket, and keep it clear.",
+      "seconds": 3.968
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I show the barcode from my saved ticket instead?",
+      "seconds": 3.93
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, either one works here if it's readable.",
+      "seconds": 3.522
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll keep both ready so I can find them quickly.",
+      "seconds": 3.738
+    },
+    {
+      "index": 31,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You're welcome, have a good trip to the airport.",
+      "seconds": 3.498666666666667
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've checked my saved ticket works offline before I leave.",
+      "seconds": 4.190666666666667
+    }
+  ],
+  "articleSeconds": 117.77845833333333
+}

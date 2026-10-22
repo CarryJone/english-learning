@@ -4289,6 +4289,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-22",
       "lastReviewedDate": null
+    },
+    {
+      "word": "download",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "下載",
+      "exampleSentence": "Can I download my ticket now?",
+      "dateAdded": "2026-10-22",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "offline",
+      "partOfSpeech": "adv./adj.",
+      "chineseMeaning": "離線地；離線的",
+      "exampleSentence": "Can I open my saved ticket offline?",
+      "dateAdded": "2026-10-22",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "screenshot",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "螢幕截圖",
+      "exampleSentence": "Does a screenshot work for this ticket?",
+      "dateAdded": "2026-10-22",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
     }
   ]
 }

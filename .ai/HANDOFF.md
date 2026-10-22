@@ -47,3 +47,9 @@
 - Returning a Damaged Gift and Asking for a Refund：crack／chipped／unused；6 到期字、4 Bridge（faulty／carriage／reserved／rack）、10 Context Recall、5 核心句。先同步遠端 SRS 41d7fa6。
 - edge_tts 7.2.8 三角色測試仍 403，使用 Kokoro；32 句／290 字、118.730 秒。speed 0.8 與停頓 0.15／0.25／0.4 不變。
 - 98 checks、33 MP3 解碼／文字與聲線對照、JS 語法、375／390px 無溢位、倒數與播放速度通過。Bridge 優先 faulty（rc0），再選 rc1 中尚未入選的三個字，未用 rc2 字排擠較不熟的字。
+
+## 2026-10-22 Day 139 完成
+- M4 Saving My Airport Bus Ticket for Offline Use：32 句／276 字、117.778 秒，20 到期字全部收錄、gift/wrap/fragile/faulty 四組 Bridge、10 Context Recall、5 核心句。
+- 已先同步 origin/main 最新 SRS（6519142）。今日 edge_tts 7.2.8 三角色均 403，整篇與逐句統一 Kokoro，沿用 speed=0.8 與 0.15／0.25／0.4 秒停頓。
+- 98 checks／0 warnings／0 errors、33 MP3 解碼、manifest 文字／角色／聲線、JS 語法通過；375／390px 無溢位、核心句倒數與 0.75 倍速正常，console 0 errors。
+- 模擬票券服務的截圖允許範圍已註明，不能推廣到所有票券。原有 test/ 與 PROJECT_STATE 使用者變更不納入提交。

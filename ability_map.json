@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-22",
+      "day": 139,
+      "title": "Saving My Airport Bus Ticket for Offline Use",
+      "url": "daily/2026-10-22/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: download an airport bus ticket, test offline access, clarify what must show at boarding.",
+        "Input: booking > Download ticket > Saved tickets > check barcode > turn off Wi-Fi and data and reopen.",
+        "Can I save it to my phone?",
+        "I’ll turn off Wi-Fi and data to check it offline.",
+        "Show the whole barcode, not just the number."
+      ]
+    },
+    {
       "date": "2026-10-21",
       "day": 138,
       "title": "Returning a Damaged Gift and Asking for a Refund",

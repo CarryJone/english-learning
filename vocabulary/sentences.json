@@ -11252,7 +11252,177 @@
       "reviewCount": 0,
       "nextReview": "2026-10-22",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-save",
+      "type": "sentence",
+      "zhPrompt": "問你能不能先把票存到手機。",
+      "answer": "Can I save it to my phone?",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Can I save ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-wifi",
+      "type": "sentence",
+      "zhPrompt": "說你會關閉 Wi-Fi 與數據，測試離線。",
+      "answer": "I’ll turn off Wi-Fi and data to check it offline.",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "I’ll turn off ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-barcode",
+      "type": "sentence",
+      "zhPrompt": "說你會出示條碼。",
+      "answer": "I’ll show the barcode.",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-download",
+      "type": "sentence",
+      "zhPrompt": "看完步驟，說先開啟訂單再下載車票。",
+      "answer": "Open the booking, then download the ticket.",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-offline",
+      "type": "sentence",
+      "zhPrompt": "說你的已存票券可以離線開啟。",
+      "answer": "I can open my saved ticket offline.",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚要求，問要出示條碼還是只有號碼。",
+      "answer": "Should I show the barcode or just the number?",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-backup",
+      "type": "sentence",
+      "zhPrompt": "依客服說法，確認這張巴士票可以用截圖。",
+      "answer": "Does a screenshot work for this bus ticket?",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-directions",
+      "type": "sentence",
+      "zhPrompt": "用複習字 directions 問哪裡能找到前往巴士站的指引。",
+      "answer": "Where can I find directions to the bus stop?",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Where can I find ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-map",
+      "type": "context",
+      "zhPrompt": "換到景點地圖：說你會把地圖存到手機。",
+      "answer": "I’ll save it to my phone.",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-22-museum",
+      "type": "context",
+      "zhPrompt": "換到博物館入口：用複習字 purchase 說你想先購票，再確認出示條碼。",
+      "answer": "I’d like to purchase a ticket. Should I show the barcode?",
+      "sourceDate": "2026-10-22",
+      "sourceTitle": "Saving My Airport Bus Ticket for Offline Use",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-23",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-21"
+  "updatedAt": "2026-10-22"
 }
