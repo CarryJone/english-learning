@@ -11422,6 +11422,176 @@
       "reviewCount": 0,
       "nextReview": "2026-10-23",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-meter",
+      "type": "sentence",
+      "zhPrompt": "問這輛計程車是否按表計費。",
+      "answer": "Does this taxi use the meter?",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Does this taxi ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-card",
+      "type": "sentence",
+      "zhPrompt": "問你可不可以刷卡。",
+      "answer": "Can I pay by card?",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-drop",
+      "type": "sentence",
+      "zhPrompt": "請司機讓你在側門下車。",
+      "answer": "Please drop me off at the side entrance.",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-price",
+      "type": "sentence",
+      "zhPrompt": "看懂 metered, not fixed，說這不是固定總價。",
+      "answer": "It’s not a set price.",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-traffic",
+      "type": "sentence",
+      "zhPrompt": "問車流是否會讓車程變長。",
+      "answer": "Will the traffic make the trip longer?",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-trunk",
+      "type": "sentence",
+      "zhPrompt": "請司機把你的行李箱放到後車廂。",
+      "answer": "Can you put my suitcase in the trunk, please?",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚入口，問今天可以用哪個旅館入口。",
+      "answer": "Sorry, which hotel entrance can you use today?",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-sign",
+      "type": "sentence",
+      "zhPrompt": "從資訊牌找出可刷卡，用一句話說出來。",
+      "answer": "I can pay by card in this taxi.",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-airport",
+      "type": "context",
+      "zhPrompt": "換到機場：請接送司機在第二航廈讓你下車。",
+      "answer": "Can you drop me off at Terminal Two?",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-27-cafe",
+      "type": "context",
+      "zhPrompt": "換到旅途中的咖啡店：點餐後問可否刷卡。",
+      "answer": "Can I pay by card?",
+      "sourceDate": "2026-10-27",
+      "sourceTitle": "Checking a Taxi Fare and Confirming My Hotel Drop-off",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-10-22"

@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm outside the station, ready to go to my hotel.",
+      "seconds": 3.9133333333333336
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've got a suitcase, and I ask a driver.",
+      "seconds": 3.0513333333333335
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, can you take me to the Park Hotel?",
+      "seconds": 2.8946666666666667
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, I'll start the meter when we leave.",
+      "seconds": 3.1786666666666665
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "About how much will the trip cost?",
+      "seconds": 2.2973333333333334
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "About twenty dollars, but it depends on the traffic.",
+      "seconds": 4.245333333333333
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "So that's not a set price for the whole trip?",
+      "seconds": 2.7039583333333335
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Right, we use the meter to work out the price.",
+      "seconds": 3.6906666666666665
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Does this taxi use the meter even when traffic's slow?",
+      "seconds": 4.025333333333333
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, the price can go up in slow traffic.",
+      "seconds": 3.642625
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Before getting in, I notice a card sign.",
+      "seconds": 3.199291666666667
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I pay by card when we get there?",
+      "seconds": 2.6373333333333333
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, you can pay by card here.",
+      "seconds": 2.8533333333333335
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I don't have much cash today.",
+      "seconds": 2.586
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No problem, just keep your card handy for the end.",
+      "seconds": 4.312625
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can you put my suitcase in the trunk, please?",
+      "seconds": 3.044
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, I'll put it in the trunk.",
+      "seconds": 2.8886666666666665
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, and can you drop me off at the main entrance?",
+      "seconds": 3.3113333333333332
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Actually, there's a change at your hotel this morning.",
+      "seconds": 4.501333333333333
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Oh, is there somewhere else you can drop me off?",
+      "seconds": 3.158
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "We can drop you by the side door, since the front's closed till noon.",
+      "seconds": 5.525333333333333
+    },
+    {
+      "index": 22,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, which hotel entrance can you use today?",
+      "seconds": 3.354
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The side entrance, not the front.",
+      "seconds": 2.7993333333333332
+    },
+    {
+      "index": 24,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I check the new location before we leave.",
+      "seconds": 2.953333333333333
+    },
+    {
+      "index": 25,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Is the side entrance far from the main one?",
+      "seconds": 3.066625
+    },
+    {
+      "index": 26,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No, it's just around the corner, next to a bench.",
+      "seconds": 4.103291666666666
+    },
+    {
+      "index": 27,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, please drop me off there, near the bench.",
+      "seconds": 3.421333333333333
+    },
+    {
+      "index": 28,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, I'll help you get your suitcase out there too.",
+      "seconds": 3.8186666666666667
+    },
+    {
+      "index": 29,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, can I have a receipt after I pay by card?",
+      "seconds": 3.6852916666666666
+    },
+    {
+      "index": 30,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, I'll give you one when we get there.",
+      "seconds": 3.332666666666667
+    },
+    {
+      "index": 31,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I've got my card ready.",
+      "seconds": 2.522
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've checked the fare, payment, and where I'll get out.",
+      "seconds": 3.3219583333333333
+    }
+  ],
+  "articleSeconds": 116.139
+}

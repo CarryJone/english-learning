@@ -53,3 +53,10 @@
 - 已先同步 origin/main 最新 SRS（6519142）。今日 edge_tts 7.2.8 三角色均 403，整篇與逐句統一 Kokoro，沿用 speed=0.8 與 0.15／0.25／0.4 秒停頓。
 - 98 checks／0 warnings／0 errors、33 MP3 解碼、manifest 文字／角色／聲線、JS 語法通過；375／390px 無溢位、核心句倒數與 0.75 倍速正常，console 0 errors。
 - 模擬票券服務的截圖允許範圍已註明，不能推廣到所有票券。原有 test/ 與 PROJECT_STATE 使用者變更不納入提交。
+
+## 2026-10-27 Day 140 完成
+- M1 Checking a Taxi Fare and Confirming My Hotel Drop-off；32 句／290 字、116.139 秒，新增 meter／traffic／trunk。64 到期字全部收錄，Bridge 使用 download／offline／screenshot（rc0）與 crack（rc1、此前未入選）。
+- 已同步 origin/main 最新 SRS（70c4b72），未修改舊字學習進度；10 Context Recall、5 共用核心句。
+- edge_tts 7.2.8 三角色連網測試皆 403；整篇與逐句使用設定檔 Kokoro 聲線，speed=0.8，保留 0.15／0.25／0.4 秒停頓。
+- 98 checks／0 warnings／0 errors、33 MP3 解碼與 manifest 文字／聲線、JS 通過；375／390px 無溢位，倒數／速度／Quiz／Active Recall／Bridge 操作通過，console 0 errors。
+- 金額、計費和旅館入口均標示教學模擬；原有 test/ 與 PROJECT_STATE 使用者變更不納入提交。

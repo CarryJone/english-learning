@@ -4319,6 +4319,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-23",
       "lastReviewedDate": null
+    },
+    {
+      "word": "meter",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "計程車計費表；跳表",
+      "exampleSentence": "Does this taxi use the meter?",
+      "dateAdded": "2026-10-27",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "traffic",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "交通；車流",
+      "exampleSentence": "Will the traffic make the trip longer?",
+      "dateAdded": "2026-10-27",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "trunk",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "汽車後車廂",
+      "exampleSentence": "Can you put my suitcase in the trunk, please?",
+      "dateAdded": "2026-10-27",
+      "reviewCount": 0,
+      "nextReview": "2026-10-28",
+      "lastReviewedDate": null
     }
   ]
 }
