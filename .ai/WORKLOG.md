@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-10-28 — Day 141 正式教材產出
+- 同步遠端 6f5e31b 的最新 SRS；產出旅館早餐與外帶任務，3 新字 voucher／cereal／toast、7 到期字、4 Bridge、10 Context Recall、5 核心句。
+- edge_tts 三角色先遇 sandbox DNS，權限重試皆 403；整篇用 Kokoro，32 句／292 字、124.428 秒。
+- 正式驗證 98 checks／0 warnings／0 errors；33 MP3 解碼、文字與聲線對照、JS 語法通過；375／390px 無溢位，核心句倒數、播放速度與測驗操作通過，console 0 errors。
+
 ## 2026-10-02 — Day 129 正式教材產出
 - 依每日教材 SKILL，git fetch／fast-forward 至 82dd33a，同步最新單字、核心句與句子 SRS。
 - 新增 `daily/2026-10-02/`：Choosing Dinner and Asking for Sauce on the Side；M2 旅行餐廳點餐、附餐確認、醬汁分開與免費替代配菜。模擬菜單不代表真實餐廳規則。
@@ -364,11 +369,3 @@
 
 ---
 
-## 2026-07-21 — 詞彙深度與語塊訓練規格
-
-- 依使用者確認，將詞彙學習由孤立字義深化為自然搭配、可重用語塊、Role-play 產出與 Context Recall 跨情境提取。
-- 更新 `AGENTS.md` 與 `.ai/daily-english-learning/SKILL.md`：每篇選 2–3 個目標語塊，區分主動產出與辨識理解，並保留既有 Active Recall、Speaking Bridge 與句子 SRS 邊界。
-- 更新 `.ai/DECISIONS.md` 與 `.ai/PROJECT_STATE.md`，記錄 Day 81 起連續 7 篇試行方式、人工驗收項目與後續評估依據。
-- 本次只調整規格與接手文件，未修改每日頁面、資料 schema、SRS runtime 或驗證器。
-
----

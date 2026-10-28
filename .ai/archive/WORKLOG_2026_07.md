@@ -200,3 +200,12 @@
 - 驗證：python3 scripts/validate_daily.py 2026-07-16 通過 79 checks，0 warnings，0 errors；JSON parse 與 git diff --check 亦通過。
 
 ---
+
+## 2026-07-21 — 詞彙深度與語塊訓練規格
+
+- 依使用者確認，將詞彙學習由孤立字義深化為自然搭配、可重用語塊、Role-play 產出與 Context Recall 跨情境提取。
+- 更新 `AGENTS.md` 與 `.ai/daily-english-learning/SKILL.md`：每篇選 2–3 個目標語塊，區分主動產出與辨識理解，並保留既有 Active Recall、Speaking Bridge 與句子 SRS 邊界。
+- 更新 `.ai/DECISIONS.md` 與 `.ai/PROJECT_STATE.md`，記錄 Day 81 起連續 7 篇試行方式、人工驗收項目與後續評估依據。
+- 本次只調整規格與接手文件，未修改每日頁面、資料 schema、SRS runtime 或驗證器。
+
+---

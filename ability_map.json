@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-28",
+      "day": 141,
+      "title": "Checking My Hotel Breakfast and Getting It to Go",
+      "url": "daily/2026-10-28/",
+      "primary": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: confirm included breakfast and order an early to-go bag.",
+        "Input: breakfast included; order the night before; pickup at reception from 6:45.",
+        "Is breakfast included in my booking?",
+        "Can I get breakfast to go?",
+        "I’ll pick it up at six forty-five."
+      ]
+    },
+    {
       "date": "2026-10-27",
       "day": 140,
       "title": "Checking a Taxi Fare and Confirming My Hotel Drop-off",

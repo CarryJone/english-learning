@@ -4349,6 +4349,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-28",
       "lastReviewedDate": null
+    },
+    {
+      "word": "voucher",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "兌換券；餐券",
+      "exampleSentence": "Do I need a voucher for breakfast?",
+      "dateAdded": "2026-10-28",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "cereal",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "早餐穀片",
+      "exampleSentence": "Can I have cereal with milk?",
+      "dateAdded": "2026-10-28",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "toast",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "烤吐司",
+      "exampleSentence": "Can I get some toast to go?",
+      "dateAdded": "2026-10-28",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
     }
   ]
 }

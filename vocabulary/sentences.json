@@ -11592,6 +11592,176 @@
       "reviewCount": 0,
       "nextReview": "2026-10-28",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-included",
+      "type": "sentence",
+      "zhPrompt": "問你的訂房是否含早餐。",
+      "answer": "Is breakfast included in my booking?",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Is breakfast ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-to-go",
+      "type": "sentence",
+      "zhPrompt": "想提早離開，問能否外帶早餐。",
+      "answer": "Can I get breakfast to go?",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I get ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-pickup",
+      "type": "sentence",
+      "zhPrompt": "確認你明早六點四十五分會領取。",
+      "answer": "I'll pick it up at six forty-five.",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-hours",
+      "type": "sentence",
+      "zhPrompt": "從說明找出內用時間，用英文說。",
+      "answer": "Breakfast's from seven to ten.",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-voucher",
+      "type": "sentence",
+      "zhPrompt": "問早餐是否需要餐券。",
+      "answer": "Do I need a voucher for breakfast?",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清預訂條件，問什麼時候要預訂。",
+      "answer": "Sorry, when do I need to order the breakfast bag?",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-screenshot",
+      "type": "context",
+      "zhPrompt": "換到租車櫃檯，說你有訂單截圖。",
+      "answer": "I've got a screenshot of my booking.",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-download",
+      "type": "context",
+      "zhPrompt": "換到景點官網，問能否現在下載地圖。",
+      "answer": "Can I download the map now?",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-cafe",
+      "type": "context",
+      "zhPrompt": "換到咖啡店：請把咖啡外帶。",
+      "answer": "Can I get my coffee to go?",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-28-change",
+      "type": "sentence",
+      "zhPrompt": "早餐袋沒有穀片，你接受替代選項，並確認領取地點。",
+      "answer": "Toast and fruit are fine. Can I pick it up at reception?",
+      "sourceDate": "2026-10-28",
+      "sourceTitle": "Checking My Hotel Breakfast and Getting It to Go",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-10-22"

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27",
+  "updatedAt": "2026-10-28",
   "description": "核心生存句（Survival Lines）清單與 SRS 狀態。每日教材從 activateOn <= 今天的句子中挑選；排序為 SRS 到期優先、其次最久未出現。第二批 activateOn 設為 2026-10-01，屆時自動加入輪替，不需人工開啟。",
   "dailyCount": 5,
   "countdownSeconds": 5,
@@ -159,8 +159,8 @@
       "nextReview": "2026-10-01",
       "lastReviewedDate": "2026-09-30",
       "lastRating": "remembered",
-      "lastUsedOn": "2026-10-15",
-      "useCount": 4,
+      "lastUsedOn": "2026-10-28",
+      "useCount": 5,
       "lastVariant": 0
     },
     {
@@ -276,9 +276,9 @@
       "nextReview": "2026-10-04",
       "lastReviewedDate": "2026-09-30",
       "lastRating": "remembered",
-      "lastUsedOn": "2026-10-15",
-      "useCount": 5,
-      "lastVariant": 0
+      "lastUsedOn": "2026-10-28",
+      "useCount": 6,
+      "lastVariant": 1
     },
     {
       "id": "core-id-like-this-one",
@@ -318,8 +318,8 @@
       "nextReview": "2026-10-01",
       "lastReviewedDate": "2026-09-30",
       "lastRating": "hinted",
-      "lastUsedOn": "2026-10-15",
-      "useCount": 4,
+      "lastUsedOn": "2026-10-28",
+      "useCount": 5,
       "lastVariant": 0
     },
     {
@@ -368,9 +368,9 @@
       "nextReview": "2026-10-01",
       "lastReviewedDate": "2026-09-30",
       "lastRating": "hinted",
-      "lastUsedOn": "2026-10-15",
-      "useCount": 4,
-      "lastVariant": 0
+      "lastUsedOn": "2026-10-28",
+      "useCount": 5,
+      "lastVariant": 1
     },
     {
       "id": "core-how-do-i-get-to",
@@ -691,8 +691,8 @@
       "nextReview": "2026-10-02",
       "lastReviewedDate": "2026-10-01",
       "lastRating": "forgot",
-      "lastUsedOn": "2026-10-16",
-      "useCount": 2,
+      "lastUsedOn": "2026-10-28",
+      "useCount": 3,
       "lastVariant": 0
     },
     {
