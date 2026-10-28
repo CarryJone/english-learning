@@ -155,9 +155,9 @@
           "en": "Excuse me, where is the restroom?"
         }
       ],
-      "reviewCount": 1,
-      "nextReview": "2026-10-01",
-      "lastReviewedDate": "2026-09-30",
+      "reviewCount": 2,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": "2026-10-28",
       "lastRating": "remembered",
       "lastUsedOn": "2026-10-28",
       "useCount": 5,
@@ -272,9 +272,9 @@
           "en": "Can I have some water, please?"
         }
       ],
-      "reviewCount": 3,
-      "nextReview": "2026-10-04",
-      "lastReviewedDate": "2026-09-30",
+      "reviewCount": 4,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": "2026-10-28",
       "lastRating": "remembered",
       "lastUsedOn": "2026-10-28",
       "useCount": 6,
@@ -314,10 +314,10 @@
           "en": "What do you recommend?"
         }
       ],
-      "reviewCount": 0,
-      "nextReview": "2026-10-01",
-      "lastReviewedDate": "2026-09-30",
-      "lastRating": "hinted",
+      "reviewCount": 1,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": "2026-10-28",
+      "lastRating": "remembered",
       "lastUsedOn": "2026-10-28",
       "useCount": 5,
       "lastVariant": 0
@@ -365,8 +365,8 @@
         }
       ],
       "reviewCount": 0,
-      "nextReview": "2026-10-01",
-      "lastReviewedDate": "2026-09-30",
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": "2026-10-28",
       "lastRating": "hinted",
       "lastUsedOn": "2026-10-28",
       "useCount": 5,
@@ -687,10 +687,10 @@
           "en": "What time is check-out?"
         }
       ],
-      "reviewCount": 0,
-      "nextReview": "2026-10-02",
-      "lastReviewedDate": "2026-10-01",
-      "lastRating": "forgot",
+      "reviewCount": 1,
+      "nextReview": "2026-10-29",
+      "lastReviewedDate": "2026-10-28",
+      "lastRating": "remembered",
       "lastUsedOn": "2026-10-28",
       "useCount": 3,
       "lastVariant": 0
