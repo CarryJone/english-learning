@@ -478,8 +478,8 @@
         }
       ],
       "reviewCount": 0,
-      "nextReview": "2026-10-02",
-      "lastReviewedDate": "2026-10-01",
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": "2026-10-29",
       "lastRating": "hinted",
       "lastUsedOn": "2026-10-29",
       "useCount": 3,
@@ -520,9 +520,9 @@
         }
       ],
       "reviewCount": 0,
-      "nextReview": "2026-10-01",
-      "lastReviewedDate": null,
-      "lastRating": null,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": "2026-10-29",
+      "lastRating": "hinted",
       "lastUsedOn": "2026-10-29",
       "useCount": 3,
       "lastVariant": 0
@@ -603,10 +603,10 @@
           "en": "Is this spicy?"
         }
       ],
-      "reviewCount": 0,
-      "nextReview": "2026-10-01",
-      "lastReviewedDate": null,
-      "lastRating": null,
+      "reviewCount": 1,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": "2026-10-29",
+      "lastRating": "remembered",
       "lastUsedOn": "2026-10-29",
       "useCount": 3,
       "lastVariant": 0
@@ -709,9 +709,9 @@
         }
       ],
       "reviewCount": 1,
-      "nextReview": "2026-10-02",
-      "lastReviewedDate": "2026-10-01",
-      "lastRating": "remembered",
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": "2026-10-29",
+      "lastRating": "hinted",
       "lastUsedOn": "2026-10-29",
       "useCount": 3,
       "lastVariant": 0
@@ -751,8 +751,8 @@
         }
       ],
       "reviewCount": 0,
-      "nextReview": "2026-10-02",
-      "lastReviewedDate": "2026-10-01",
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": "2026-10-29",
       "lastRating": "hinted",
       "lastUsedOn": "2026-10-29",
       "useCount": 3,
