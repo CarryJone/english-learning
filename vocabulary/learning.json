@@ -4379,6 +4379,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-29",
       "lastReviewedDate": null
+    },
+    {
+      "word": "beep",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "嗶聲；短促提示音",
+      "exampleSentence": "There's a beep, but the door won't open.",
+      "dateAdded": "2026-10-29",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "flash",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "閃爍",
+      "exampleSentence": "The light flashes red when I tap my card.",
+      "dateAdded": "2026-10-29",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "spare",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "備用的；多餘的",
+      "exampleSentence": "Can I have a spare key card?",
+      "dateAdded": "2026-10-29",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
     }
   ]
 }

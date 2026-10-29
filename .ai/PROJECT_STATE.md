@@ -1,25 +1,18 @@
 # 專案當前狀態
 > 用途：短期狀態與下一步接手資訊。
 > 注意：本檔不是開發規則；正式規則請看專案 `AGENTS.md`、`.ai/DECISIONS.md` 或指定的 `SKILL.md`。
-> 最後更新：2026-10-28
+> 最後更新：2026-10-29
 ## 目前目標
 - 維持靜態網站架構，將每日教材發展成以真實任務、可重用語塊、主動提取與 SRS 為核心的個人英文訓練系統。
 ## 目前進度
+- [x] Day 142（2026-10-29）完成 Getting Help When My Hotel Key Card Doesn’t Work（M3）；32 句／290 字、114.218 秒；20 到期字、4 Bridge、10 Context Recall、5 核心句。edge 三角色權限重試後皆 403，使用 Kokoro；98 checks／0 warnings／0 errors，33 MP3 解碼、文字／聲線與 JS 通過；375／390px 無溢位、倒數／速度／測驗正常，console 0 errors。
 - [x] Day 141（2026-10-28）完成 Checking My Hotel Breakfast and Getting It to Go（M2）；32 句／292 字、124.428 秒；7 到期字、4 Bridge、10 Context Recall、5 核心句。edge 三角色權限重試後皆 403，使用 Kokoro；98 checks／0 warnings／0 errors，33 MP3 解碼、文字／聲線與 JS 驗證通過；375／390px 無溢位、倒數／速度／測驗正常，console 0 errors。
 - [x] Day 140（2026-10-27）完成 Checking a Taxi Fare and Confirming My Hotel Drop-off（M1）；32 句／290 字、116.139 秒；64 到期字、4 Bridge、10 Context Recall、5 核心句。edge_tts 三角色皆 403，整篇使用 Kokoro，保留既定停頓；98 checks／0 warnings／0 errors、33 MP3 解碼與文字／聲線對照、JS 通過；375／390px 無溢位，倒數／速度／測驗操作正常、console 0 errors。
 - [x] Day 139（2026-10-22）完成 Saving My Airport Bus Ticket for Offline Use（M4）；32 句／276 字、117.778 秒；20 到期字、4 Bridge、10 Context Recall、5 核心句。edge_tts 三角色皆 403，使用 Kokoro；98 checks／0 warnings／0 errors、33 MP3 解碼／文字與聲線對照／JS 通過，375／390px 無溢位、倒數／播放速度正常、console 0 errors。
 - [x] Day 138（2026-10-21）完成 Returning a Damaged Gift and Asking for a Refund（M3）；32 句／290 字、118.730 秒；6 到期字、4 Bridge、10 Context Recall、5 核心句。edge_tts 三角色皆 403，使用 Kokoro；98 checks／0 warnings／0 errors、33 MP3 解碼／文字與聲線對照／JS 通過，375／390px 無溢位、倒數／播放速度正常、console 0 errors。
 - [x] Day 137（2026-10-20）完成 Buying and Wrapping a Fragile Gift（M2）；32 句／289 字、122.982 秒；21 到期字、4 Bridge、10 Context Recall、5 核心句。edge_tts 7.2.8 三角色皆 403，改用 Kokoro；98 checks／0 warnings／0 errors、33 MP3 解碼／文字與聲線對照／JS 通過；375／390px 無溢位、倒數／播放速度正常、console 0 errors。
-- [x] Day 136（2026-10-19）完成 Finding My Train Carriage and Reserved Seat（M1）；32 句／290 字、117.256 秒；24 到期字、4 Bridge、10 Context Recall、5 核心句。今日 edge_tts 7.2.8 三角色皆 403，改用 Kokoro；98 checks／0 warnings／0 errors，33 MP3 解碼／文字與聲線對照／JS 通過；375／390px 無溢位、倒數／播放速度正常、console 0 errors。
-- [x] Day 135（2026-10-16）完成 Choosing an Easy City Walk Online（M4）；32 句／290 字、124.948 秒；8 到期字、4 Bridge、10 Context Recall、5 核心句。今日 edge_tts 三角色皆 403，改用 Kokoro；98 checks／0 warnings／0 errors、33 MP3 解碼／文字對照／JS 通過，375／390px 無溢位、倒數／播放速度正常、console 0 errors。
-- [x] Day 134（2026-10-15）完成 Getting a Replacement for a Faulty Hotel Iron（M3）；Kokoro 三聲線、32 句／290 字、124.528 秒；3 到期字、3 Bridge、10 Context Recall、5 核心句。98 checks／0 warnings／0 errors、33 MP3 解碼／文字對照／JS 語法通過；375／390px 無溢位、倒數與播放速度正常、console 0 errors。
-- [x] Day 133（2026-10-14）完成 Using the Hotel Laundry Room（M2）；Kokoro 三聲線、32 句／291 字、127.489 秒；10 到期字、Bridge 無合資格字（2–7 天視窗為空）、10 Context Recall、5 核心句。98 checks／0 warnings／0 errors、33 MP3 解碼與文字對照通過；375／390px 無溢位、倒數／播放速度正常、console 0 errors。
-- [x] Day 132（2026-10-13）完成 Finding the Airport Coach Pickup Point（M1）；本機 Kokoro 三聲線、32 句／291 字、115.598 秒；70 到期字、3 Bridge、10 Context Recall、5 核心句。98 checks／0 warnings／0 errors、33 MP3 解碼與文字對照、4 個 provider 測試通過；375／390px 無溢位、倒數與播放速度正常、console 0 errors。
-- [x] Day 131（2026-10-06）完成 `Choosing a Museum Audio Guide Online`（M4）；32 句／290 字、三聲線、主音檔 130.726000 秒；25 個到期字、4 組 Bridge、10 題 Context Recall、5 句 Survival Lines。97 checks／0 warnings／0 errors；33 MP3 解碼、JS 語法、逐句文字及共用資產連結通過；本輪未重跑瀏覽器 UI 驗證。
-- [x] Day 130（2026-10-05）完成 `Changing Rooms After a Ceiling Leak`（M3）；32 句／290 字、三聲線、主音檔 126.622 秒；34 個到期字、4 組 Bridge、10 題 Context Recall、5 句 Survival Lines。97 checks／0 warnings／0 errors；33 MP3 解碼、JS 語法、375／390px 無橫向溢位與核心句倒數通過。
-- [x] Day 129（2026-10-02）完成 `Choosing Dinner and Asking for Sauce on the Side`（M2）；主音檔 128.806 秒、32 句、三聲線；9 個到期字、10 題 Context Recall、5 句 Survival Lines。97 checks／0 warnings／0 errors；33 MP3 解碼、inline JS 語法及共用資產連結通過。
 - [x] `The Blue Receipt` 已於 2026-07-14 Day 76 封存；正式內容為 `mission-based`，不可自動續寫 Episode 19。
-- [x] Day 77–141 已完成六十五篇任務型教材；自然口語規則、多聲線與 Survival Lines 自 Day 117 起為常態流程。
+- [x] Day 77–142 已完成六十六篇任務型教材；自然口語規則、多聲線與 Survival Lines 自 Day 117 起為常態流程。
 - [x] 正式教材格式：角色／聲線以 `assets/voices.json` 為準（新頁依 kokoroVoice（af_sarah／af_heart／am_michael／am_fenrir）；歷史 edge 聲線保留，一篇最多 4 個且一個 role 只能代表一個人）、正文不顯示角色前綴、主音檔 1:45–2:30、每天正好 3 個新字、2–3 個目標語塊貫穿 Article / Key Phrases / Role-play / Context Recall。
 - [x] 主播放器支援 `0.75× / 1× / 1.25×`；Day 112 起可切換視覺句子重音。Mission、資訊輸入、Role-play、Context Recall、能力地圖、單字／句子 SRS 與音檔流程均已接通；未新增 Collocation SRS。
 - [x] 2026-09-10 的長期決策（自然口語三規則＋口語片語、角色聲線契約、音檔 105–150 秒、Survival Lines）已寫入 `.ai/DECISIONS.md`；細節以 SKILL 3a.1 / 3a.2 / 3h.1 為準。
@@ -28,7 +21,7 @@
 ## 驗證狀態
 - [x] Survival Lines：09-15 與 09-17 有同步（09-17：could-you-help / didnt-catch / do-you-speak-english 皆 remembered），09-16 未同步。Day 122 換成 how-much / how-spell / id-like-this-one / pay-by-card / say-again。
 - [x] 使用者回饋句子太黏：Kokoro 停頓已改為同角色 0.15／換人 0.25／段落 0.4 秒；語速 0.8 不變，98 checks 與 33 MP3 解碼通過。
-## 目前 Blocker：無；Day 141 完成；提交紀錄以 git log 為準。
+## 目前 Blocker：無；Day 142 完成；提交紀錄以 git log 為準。
 ## 已知問題
 - Day 112 及更早的每日頁在 390px 下，Review Words 表格仍會造成約 13px 橫向溢位（共用 CSS 既有問題）。Day 113 起在當日頁加 `.review-table` 窄螢幕規則規避，尚未回頭修正舊頁。
 - Day 120 起把該規則的欄寬由 26/15/37/22% 調成 30/17/31/22%、縮小左右內距：19 個複習字時「詞性」欄原本會把 `adv./adj.` 拆成一字一行、長單字斷在字中間。只影響 Day 120 之後（以前一天頁面為模板）的新頁。
@@ -46,6 +39,6 @@
 - Kokoro 音檔產生器已收進 scripts/；首頁缺漏的 Day 85 仍待補。
 ## 活躍工作區
 - 本機音檔：scripts/generate_daily_kokoro.py、scripts/KOKORO.md；設定 assets/voices.json。環境 .venv-tts/、模型 .tts-cache/ 已 gitignore。新頁 audio-provider=kokoro，舊頁按 edge 驗證。
-- `daily/2026-10-27/`、`index.html`、`profile.json`、`ability_map.json`
+- `daily/2026-10-29/`、`index.html`、`profile.json`、`ability_map.json`
 - `vocabulary/learning.json`、`vocabulary/sentences.json`、`vocabulary/core-phrases.json`
 - `.ai/daily-english-learning/SKILL.md`、`assets/voices.json`、`scripts/pick_core_phrases.py`、`scripts/validate_daily.py`

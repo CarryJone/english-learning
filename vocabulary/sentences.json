@@ -11762,6 +11762,176 @@
       "reviewCount": 0,
       "nextReview": "2026-10-29",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-not-working",
+      "type": "sentence",
+      "zhPrompt": "向櫃檯說你的房卡無法使用。",
+      "answer": "My key card doesn't work.",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "My key card ...",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-charge",
+      "type": "sentence",
+      "zhPrompt": "問重設房卡是否有額外費用。",
+      "answer": "Is there an extra charge?",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Is there ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-again",
+      "type": "sentence",
+      "zhPrompt": "確認步驟後，說你會再試一次。",
+      "answer": "I'll try again.",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-green",
+      "type": "sentence",
+      "zhPrompt": "看操作說明，用英文說綠燈亮後把門把往下壓。",
+      "answer": "Push the handle down when the light turns green.",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-beep",
+      "type": "sentence",
+      "zhPrompt": "說有嗶聲，但門打不開。",
+      "answer": "There's a beep, but the door won't open.",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-spare",
+      "type": "sentence",
+      "zhPrompt": "詢問可否拿一張備用房卡。",
+      "answer": "Can I have a spare key card?",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚，問綠燈亮時要做什麼。",
+      "answer": "Sorry, what do I do when the light turns green?",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-offline",
+      "type": "context",
+      "zhPrompt": "換到景點入口：說你會試著離線打開車票。",
+      "answer": "I'll try opening my ticket offline.",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-taxi",
+      "type": "context",
+      "zhPrompt": "換到旅館叫車：請櫃檯問司機是否按表計費。",
+      "answer": "Can you ask the driver to use the meter?",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-29-washer",
+      "type": "context",
+      "zhPrompt": "換到旅館洗衣房：說洗衣機不能用，詢問換機器是否加錢。",
+      "answer": "This washing machine doesn't work. Is there an extra charge to use another one?",
+      "sourceDate": "2026-10-29",
+      "sourceTitle": "Getting Help When My Hotel Key Card Doesn't Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-30",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-10-22"

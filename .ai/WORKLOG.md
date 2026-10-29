@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-10-29 — Day 142 正式教材產出
+- 同步遠端 1fb82d5 最新單字與核心句 SRS；產出房卡故障求助任務，3 新字 beep／flash／spare、20 到期字、4 Bridge、10 Context Recall、5 核心句。
+- edge 三角色先遇 sandbox DNS，權限重試皆 403；整篇使用 Kokoro，32 句／290 字、114.218 秒。
+- 98 checks／0 warnings／0 errors；33 MP3 解碼、音檔文字與角色聲線、JS 通過；375／390px 無溢位，倒數／速度／測驗正常，console 0 errors。
+
 ## 2026-10-28 — Day 141 正式教材產出
 - 同步遠端 6f5e31b 的最新 SRS；產出旅館早餐與外帶任務，3 新字 voucher／cereal／toast、7 到期字、4 Bridge、10 Context Recall、5 核心句。
 - edge_tts 三角色先遇 sandbox DNS，權限重試皆 403；整篇用 Kokoro，32 句／292 字、124.428 秒。
@@ -357,15 +362,3 @@
 - 驗證：`python3 scripts/validate_daily.py 2026-07-30` 通過 79 checks、0 warnings、0 errors；句子皆不超過 12 字、JSON parse、SRS 對齊與 `git diff --check` 亦通過。
 
 ---
-
-## 2026-07-22 — Day 81 正式教材產出
-
-- 先同步遠端兩筆 2026-07-21 SRS 更新，再依最新 `vocabulary/learning.json` 產生今日複習內容。
-- 新增 `daily/2026-07-22/`，主題為 `Checking Hotel Breakfast and Luggage`；今日新字為 `included`、`reception`、`store`。
-- 開始語塊深化試行第 1/7 篇：`breakfast is included`、`Can I leave my luggage here?`、`I want to make sure` 貫穿 Article、Key Phrases、Role-play 與 Context Recall，並加入跨情境提取。
-- 教材包含 19 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge、8 回合 Role-play、`article.mp3` 與 `s01.mp3` 到 `s14.mp3`。
-- 同步更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/PROJECT_STATE.md`。
-- 驗證：`validate_daily.py` 通過 79 checks、0 warnings、0 errors；JSON、JavaScript、`git diff --check` 及本機 HTTP 頁面 / 音檔 200 皆通過。
-
----
-

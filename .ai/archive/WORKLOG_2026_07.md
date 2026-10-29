@@ -209,3 +209,14 @@
 - 本次只調整規格與接手文件，未修改每日頁面、資料 schema、SRS runtime 或驗證器。
 
 ---
+
+## 2026-07-22 — Day 81 正式教材產出
+
+- 先同步遠端兩筆 2026-07-21 SRS 更新，再依最新 `vocabulary/learning.json` 產生今日複習內容。
+- 新增 `daily/2026-07-22/`，主題為 `Checking Hotel Breakfast and Luggage`；今日新字為 `included`、`reception`、`store`。
+- 開始語塊深化試行第 1/7 篇：`breakfast is included`、`Can I leave my luggage here?`、`I want to make sure` 貫穿 Article、Key Phrases、Role-play 與 Context Recall，並加入跨情境提取。
+- 教材包含 19 題到期 Active Recall、10 題 Context Recall、4 組 Speaking Bridge、8 回合 Role-play、`article.mp3` 與 `s01.mp3` 到 `s14.mp3`。
+- 同步更新首頁、`profile.json`、`vocabulary/learning.json`、`vocabulary/sentences.json`、`ability_map.json` 與 `.ai/PROJECT_STATE.md`。
+- 驗證：`validate_daily.py` 通過 79 checks、0 warnings、0 errors；JSON、JavaScript、`git diff --check` 及本機 HTTP 頁面 / 音檔 200 皆通過。
+
+---

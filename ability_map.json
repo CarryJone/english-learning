@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-29",
+      "day": 142,
+      "title": "Getting Help When My Hotel Key Card Doesn't Work",
+      "url": "daily/2026-10-29/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: report a failed room key, confirm the reset fee and get a spare.",
+        "Input: tap the reader; green means push the handle down; no extra charge.",
+        "My key card doesn’t work.",
+        "Is there an extra charge?",
+        "I’ll try again."
+      ]
+    },
+    {
       "date": "2026-10-28",
       "day": 141,
       "title": "Checking My Hotel Breakfast and Getting It to Go",
