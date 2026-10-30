@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-10-30",
+      "day": 143,
+      "title": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "url": "daily/2026-10-30/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: compare luggage sizes, choose the desk and return before it closes.",
+        "Input: maximum height 40 cm and width 30 cm; desk closes at 18:30.",
+        "What’s the maximum bag size?",
+        "Can I leave it at the luggage desk instead?",
+        "I’ll pick it up at six."
+      ]
+    },
+    {
       "date": "2026-10-29",
       "day": 142,
       "title": "Getting Help When My Hotel Key Card Doesn't Work",

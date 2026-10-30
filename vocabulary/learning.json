@@ -4409,6 +4409,36 @@
       "reviewCount": 0,
       "nextReview": "2026-10-30",
       "lastReviewedDate": null
+    },
+    {
+      "word": "maximum",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "最大的；上限的",
+      "exampleSentence": "What’s the maximum bag size for this locker?",
+      "dateAdded": "2026-10-30",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "height",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "高度",
+      "exampleSentence": "The maximum height is forty centimeters.",
+      "dateAdded": "2026-10-30",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "width",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "寬度",
+      "exampleSentence": "Can you check the width of this locker?",
+      "dateAdded": "2026-10-30",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -11932,6 +11932,176 @@
       "reviewCount": 0,
       "nextReview": "2026-10-30",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-maximum",
+      "type": "sentence",
+      "zhPrompt": "問小置物櫃的行李尺寸上限。",
+      "answer": "What's the maximum bag size for a small locker?",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "What's the maximum ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-instead",
+      "type": "sentence",
+      "zhPrompt": "小櫃放不下，問能否改在寄放櫃檯放行李。",
+      "answer": "Can I leave it at the luggage desk instead?",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Can I ... instead?",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-pickup",
+      "type": "sentence",
+      "zhPrompt": "說你會六點來領回。",
+      "answer": "I'll pick it up at six.",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-height",
+      "type": "sentence",
+      "zhPrompt": "從網站讀出高度上限是 40 公分。",
+      "answer": "The maximum height is forty centimeters.",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-width",
+      "type": "sentence",
+      "zhPrompt": "從網站讀出寬度上限是 30 公分。",
+      "answer": "The maximum width is thirty centimeters.",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-close",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚，問寄放櫃檯幾點關門。",
+      "answer": "Sorry, what time does the luggage desk close?",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-tag",
+      "type": "sentence",
+      "zhPrompt": "客服提醒要帶行李牌，你確認會帶回來。",
+      "answer": "I'll bring the bag tag back with me.",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-offline",
+      "type": "context",
+      "zhPrompt": "換到車站：問票券能否離線出示。",
+      "answer": "Can I show my ticket offline?",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-taxi",
+      "type": "context",
+      "zhPrompt": "換到旅館門口：提醒計程車司機後車廂還有你的包。",
+      "answer": "My bag's still in the trunk.",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-10-30-cafe",
+      "type": "context",
+      "zhPrompt": "換到咖啡店：想改點茶，並約五點領取。",
+      "answer": "Can I have tea instead? I'll pick it up at five.",
+      "sourceDate": "2026-10-30",
+      "sourceTitle": "Checking Luggage Storage Sizes and Pickup Times Online",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-10-31",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-10-22"
