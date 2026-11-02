@@ -12102,6 +12102,176 @@
       "reviewCount": 0,
       "nextReview": "2026-10-31",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-ticket",
+      "type": "sentence",
+      "zhPrompt": "問原票能否搭下一班。",
+      "answer": "Can I use this ticket for the next sailing?",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I use ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-next",
+      "type": "sentence",
+      "zhPrompt": "向票務員問下一個開航班次是幾點。",
+      "answer": "When's the next sailing?",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "When's ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-notice",
+      "type": "sentence",
+      "zhPrompt": "根據公告說出下一班的時間與碼頭。",
+      "answer": "The next sailing's at ten thirty from Pier Three.",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-upper",
+      "type": "sentence",
+      "zhPrompt": "根據公告說出今天哪一層關閉。",
+      "answer": "The upper deck's closed today.",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚何時要去登船口，請對方再確認。",
+      "answer": "Sorry, when should I head out to the gate?",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-inside",
+      "type": "sentence",
+      "zhPrompt": "上層不能坐，詢問能否改坐室內。",
+      "answer": "Can I sit inside instead?",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-paper",
+      "type": "sentence",
+      "zhPrompt": "想確認紙本票需不需要出示。",
+      "answer": "Do I need to show my paper ticket?",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Do I need ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-safe",
+      "type": "sentence",
+      "zhPrompt": "換到海邊旅行：問工作人員今天游泳是否安全。",
+      "answer": "Is it safe to swim here today?",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-bus",
+      "type": "sentence",
+      "zhPrompt": "換到車站：原訂巴士沒搭上，問原票可否搭下一班。",
+      "answer": "Can I use this ticket for the next bus?",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-02-airport",
+      "type": "context",
+      "zhPrompt": "換到旅館：明早趕飛機，問何時該出發。",
+      "answer": "When should I head out to the airport?",
+      "sourceDate": "2026-11-02",
+      "sourceTitle": "Finding My Next Ferry After a Cancellation",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-03",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-10-22"

@@ -46,6 +46,25 @@
   },
   "sessions": [
     {
+      "date": "2026-11-02",
+      "day": 144,
+      "title": "Finding My Next Ferry After a Cancellation",
+      "url": "daily/2026-11-02/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: find the next ferry, reuse the original ticket and reach Gate B at 10:20.",
+        "Input: cancellation notice; 10:30, Pier 3; upper deck closed.",
+        "Can I use this ticket for the next sailing?",
+        "When should I head out?"
+      ]
+    },
+    {
       "date": "2026-10-30",
       "day": 143,
       "title": "Checking Luggage Storage Sizes and Pickup Times Online",
