@@ -115,6 +115,17 @@
   - 是否需要提升權限執行
 - 若要驗證本機 HTTP server，可注意 sandbox 對 localhost / loopback 可能有限制。
 
+## Git 上傳與權限錯誤處理
+
+- 本專案上傳優先使用本機 Git 與既有 SSH remote；先用 `git remote -v` 確認實際設定，不自行更換 remote、認證方式或憑證。已驗證的 remote 為 `git@github.com:CarryJone/english-learning.git`。
+- 使用者要求上傳時，先檢查工作區與必要驗證，再提交本次相關檔案；不要使用 `git add .` 將無關或未確認的檔案一併提交。每日教材仍須遵守正式 SKILL 的驗證與 commit message 規則。
+- 遇到 `.git/FETCH_HEAD: Operation not permitted`、`.git/index.lock` 無法建立等錯誤，先判斷是否為 sandbox 寫入限制，不直接認定為 GitHub 帳號無權限。若平台允許申請提升執行權限，透過正式核准機制重試該必要 Git 操作；不得繞過核准或修改檔案權限來規避限制。
+- 遇到 `Could not resolve hostname` 等 DNS／連線錯誤，先檢查是否為 sandbox 網路限制；若平台允許，透過正式核准機制重試。核准後仍失敗，才依實際錯誤調查網路或 SSH 設定，不直接推論 SSH 金鑰失效。
+- 不因本機 Git 在 sandbox 內失敗就直接改用 GitHub 整合 API。需要改用整合時，先確認其具備目標 repository 與操作的寫入能力；`403 Resource not accessible by integration` 表示該整合操作被拒絕，不能據此推論本機 SSH 也無法推送。使用者同意操作與 GitHub 整合憑證權限是兩個獨立條件。
+- 若平台不提供提升權限、核准被拒絕或重試仍失敗，明確回報失敗的命令、管道、錯誤與已嘗試步驟，不反覆重試、不宣稱上傳成功，也不要求使用者無依據地擴大 GitHub 權限。
+- 推送前先確認遠端是否有新提交，妥善整合並保留 SRS 與使用者變更；不得以 force push 覆蓋。推送成功後，以 `git ls-remote origin refs/heads/<實際分支>` 與本機 `git rev-parse HEAD` 核對提交；無法核對時應說明驗證限制，不能只依本機追蹤分支宣稱遠端一致。
+- 本節是工作流程規範，不會自行解除 sandbox、網路或整合權限限制；不同 session 仍須依其實際可用能力執行。
+
 ## 補充
 
 - 本專案目前沒有 `README.md`，不要假設 repo 內已有完整操作說明。
