@@ -46,6 +46,25 @@
   },
   "sessions": [
     {
+      "date": "2026-11-03",
+      "day": 145,
+      "title": "Choosing a Bike Rental and Checking the Return Time",
+      "url": "daily/2026-11-03/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: compare a bike rental page, choose a three-hour plan, and confirm return restrictions.",
+        "Input: simulated rental webpage; £8 hourly vs £18 day rate, £20 deposit, same-shop return by 17:30.",
+        "What's the hourly rate? / What time should I bring it back? / Can you adjust the seat for me?",
+        "Repair: distinguish 18:00 shop closing from 17:30 bike return."
+      ]
+    },
+    {
       "date": "2026-11-02",
       "day": 144,
       "title": "Finding My Next Ferry After a Cancellation",

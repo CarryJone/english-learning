@@ -12272,7 +12272,177 @@
       "reviewCount": 0,
       "nextReview": "2026-11-03",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-rate",
+      "type": "sentence",
+      "zhPrompt": "問這輛車的每小時費率。",
+      "answer": "What's the hourly rate for this bike?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "What's the ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-cost",
+      "type": "sentence",
+      "zhPrompt": "根據網頁，說出三小時租借該選哪個較便宜方案。",
+      "answer": "I'll take the day rate. It's eighteen pounds.",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-location",
+      "type": "sentence",
+      "zhPrompt": "根據網頁，問能否在另一間店還車。",
+      "answer": "Can I bring it back to another shop?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-return",
+      "type": "sentence",
+      "zhPrompt": "問今天幾點該還車。",
+      "answer": "What time should I bring it back today?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽懂最晚還車時間，確認是否五點半。",
+      "answer": "Sorry, should I bring it back by five thirty?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-seat",
+      "type": "sentence",
+      "zhPrompt": "請店員幫你調整座椅。",
+      "answer": "Can you adjust the seat for me?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Can you ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-helmet",
+      "type": "sentence",
+      "zhPrompt": "問安全帽是否包含在費用裡。",
+      "answer": "Does the price include a helmet?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-spare",
+      "type": "sentence",
+      "zhPrompt": "行程中手機快沒電，問同行者有沒有備用充電器。",
+      "answer": "Have you got a spare charger?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-hotel",
+      "type": "context",
+      "zhPrompt": "換到旅館：請櫃檯調整房間冷氣溫度。",
+      "answer": "Can you adjust the temperature in my room?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-03-camera",
+      "type": "context",
+      "zhPrompt": "換到相機出租店：問幾點該歸還相機。",
+      "answer": "What time should I bring it back?",
+      "sourceDate": "2026-11-03",
+      "sourceTitle": "Choosing a Bike Rental and Checking the Return Time",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
     }
   ],
-  "updatedAt": "2026-10-22"
+  "updatedAt": "2026-11-03"
 }

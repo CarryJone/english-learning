@@ -1,10 +1,11 @@
 # 專案當前狀態
 > 用途：短期狀態與下一步接手資訊。
 > 注意：本檔不是開發規則；正式規則請看專案 `AGENTS.md`、`.ai/DECISIONS.md` 或指定的 `SKILL.md`。
-> 最後更新：2026-11-02
+> 最後更新：2026-11-03
 ## 目前目標
 - 維持靜態網站架構，將每日教材發展成以真實任務、可重用語塊、主動提取與 SRS 為核心的個人英文訓練系統。
 ## 目前進度
+- [x] Day 145（2026-11-03）既有教材 Choosing a Bike Rental and Checking the Return Time 已完成上傳前驗證；35 句、110.536 秒，98 checks／0 warnings／0 errors，36 MP3 解碼通過。本次僅驗證並提交既有產物，未重生音檔或重跑瀏覽器 UI；profile 的模組仍為 M1，能力紀錄以當篇內容為準。
 - [x] Day 144（2026-11-02）既有教材 Finding My Next Ferry After a Cancellation（M1）已完成上傳前驗證；31 句、119.398 秒，98 checks／0 warnings／0 errors，32 MP3 解碼通過；本次僅驗證並提交既有產物，未重生音檔或重跑瀏覽器 UI。
 - [x] Day 143（2026-10-30）完成 Checking Luggage Storage Sizes and Pickup Times Online（M4）；32 句／291 字、126.638 秒；8 到期字、4 Bridge、10 Context Recall、5 核心句。edge 三角色權限重試皆 403，使用 Kokoro；98 checks／0 warnings／0 errors，33 MP3 解碼、文字／聲線與 JS 通過；375／390px 無溢位，倒數／速度／測驗正常，console 0 errors。
 - [x] Day 142（2026-10-29）完成 Getting Help When My Hotel Key Card Doesn’t Work（M3）；32 句／290 字、114.218 秒；20 到期字、4 Bridge、10 Context Recall、5 核心句。edge 三角色權限重試後皆 403，使用 Kokoro；98 checks／0 warnings／0 errors，33 MP3 解碼、文字／聲線與 JS 通過；375／390px 無溢位、倒數／速度／測驗正常，console 0 errors。
@@ -23,7 +24,7 @@
 ## 驗證狀態
 - [x] Survival Lines：09-15 與 09-17 有同步（09-17：could-you-help / didnt-catch / do-you-speak-english 皆 remembered），09-16 未同步。Day 122 換成 how-much / how-spell / id-like-this-one / pay-by-card / say-again。
 - [x] 使用者回饋句子太黏：Kokoro 停頓已改為同角色 0.15／換人 0.25／段落 0.4 秒；語速 0.8 不變，98 checks 與 33 MP3 解碼通過。
-## 目前 Blocker：無；Day 144 完成；提交紀錄以 git log 為準。
+## 目前 Blocker：無；Day 145 完成；提交紀錄以 git log 為準。
 ## 已知問題
 - Day 112 及更早的每日頁在 390px 下，Review Words 表格仍會造成約 13px 橫向溢位（共用 CSS 既有問題）。Day 113 起在當日頁加 `.review-table` 窄螢幕規則規避，尚未回頭修正舊頁。
 - Day 120 起把該規則的欄寬由 26/15/37/22% 調成 30/17/31/22%、縮小左右內距：19 個複習字時「詞性」欄原本會把 `adv./adj.` 拆成一字一行、長單字斷在字中間。只影響 Day 120 之後（以前一天頁面為模板）的新頁。
@@ -41,6 +42,6 @@
 - Kokoro 音檔產生器已收進 scripts/；首頁缺漏的 Day 85 仍待補。
 ## 活躍工作區
 - 本機音檔：scripts/generate_daily_kokoro.py、scripts/KOKORO.md；設定 assets/voices.json。環境 .venv-tts/、模型 .tts-cache/ 已 gitignore。新頁 audio-provider=kokoro，舊頁按 edge 驗證。
-- `daily/2026-11-02/`、`index.html`、`profile.json`、`ability_map.json`
+- `daily/2026-11-03/`、`index.html`、`profile.json`、`ability_map.json`
 - `vocabulary/learning.json`、`vocabulary/sentences.json`、`vocabulary/core-phrases.json`
 - `.ai/daily-english-learning/SKILL.md`、`assets/voices.json`、`scripts/pick_core_phrases.py`、`scripts/validate_daily.py`

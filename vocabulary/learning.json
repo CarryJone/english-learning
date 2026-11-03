@@ -4469,6 +4469,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-03",
       "lastReviewedDate": null
+    },
+    {
+      "word": "hourly",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "每小時的；按小時計算的",
+      "exampleSentence": "What's the hourly rate for this bike?",
+      "dateAdded": "2026-11-03",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "gear",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "（自行車的）檔位；齒輪",
+      "exampleSentence": "Which gear should I use on this hill?",
+      "dateAdded": "2026-11-03",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "adjust",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "調整",
+      "exampleSentence": "Can you adjust the seat for me?",
+      "dateAdded": "2026-11-03",
+      "reviewCount": 0,
+      "nextReview": "2026-11-04",
+      "lastReviewedDate": null
     }
   ]
 }

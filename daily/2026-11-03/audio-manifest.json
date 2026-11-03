@@ -1,0 +1,260 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at a bike shop near the river.",
+      "seconds": 2.388625
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've checked its rental page before coming in.",
+      "seconds": 3.3272916666666665
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, what's the hourly rate for this bike?",
+      "seconds": 3.034
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It's eight pounds, or eighteen for the day.",
+      "seconds": 3.4193333333333333
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'd like to ride for three hours.",
+      "seconds": 2.392625
+    },
+    {
+      "index": 6,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "So the day rate's cheaper for three hours?",
+      "seconds": 2.715333333333333
+    },
+    {
+      "index": 7,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, and a helmet's included too.",
+      "seconds": 3.4133333333333336
+    },
+    {
+      "index": 8,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, is there a deposit too?",
+      "seconds": 2.5733333333333333
+    },
+    {
+      "index": 9,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yeah, it's twenty pounds, separate from the rental fee.",
+      "seconds": 4.413333333333333
+    },
+    {
+      "index": 10,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "When do I get my deposit back?",
+      "seconds": 2.4026666666666667
+    },
+    {
+      "index": 11,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "When you're back, if there's no damage.",
+      "seconds": 2.8686666666666665
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I bring it back to another shop?",
+      "seconds": 2.4992916666666667
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sorry, you need to bring it back here.",
+      "seconds": 2.9226666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, what time should I bring it back today?",
+      "seconds": 3.203291666666667
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "We're open till six, but bring it back by five thirty, okay?",
+      "seconds": 5.135958333333333
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, what time did you say for bringing it back?",
+      "seconds": 3.384
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Five thirty, right here at this shop.",
+      "seconds": 3.029333333333333
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Got it, I'll bring it back here by five thirty.",
+      "seconds": 3.354
+    },
+    {
+      "index": 19,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Before paying, I try the bike outside.",
+      "seconds": 3.028625
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "This seat's too high for me.",
+      "seconds": 1.9886666666666666
+    },
+    {
+      "index": 21,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can you adjust the seat for me, please?",
+      "seconds": 2.6233333333333335
+    },
+    {
+      "index": 22,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No problem, I'll move it down.",
+      "seconds": 2.9753333333333334
+    },
+    {
+      "index": 23,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, how do I change the gear?",
+      "seconds": 2.5006666666666666
+    },
+    {
+      "index": 24,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Use this button while you're turning the pedals.",
+      "seconds": 3.5086666666666666
+    },
+    {
+      "index": 25,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Which gear should I use on the small hill?",
+      "seconds": 2.694
+    },
+    {
+      "index": 26,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Try a lower gear going up.",
+      "seconds": 2.474666666666667
+    },
+    {
+      "index": 27,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I try it out before paying?",
+      "seconds": 2.31
+    },
+    {
+      "index": 28,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, and check the brake before you head out.",
+      "seconds": 3.6906666666666665
+    },
+    {
+      "index": 29,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It works, and the seat feels better.",
+      "seconds": 2.556
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Does the price include a lock too?",
+      "seconds": 2.5006666666666666
+    },
+    {
+      "index": 31,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, and this key opens it.",
+      "seconds": 2.496
+    },
+    {
+      "index": 32,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll keep the key with me.",
+      "seconds": 1.9232916666666666
+    },
+    {
+      "index": 33,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Here's your helmet, and you're all set.",
+      "seconds": 2.8586666666666667
+    },
+    {
+      "index": 34,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll be back by five thirty.",
+      "seconds": 2.682625
+    },
+    {
+      "index": 35,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've saved the return time on my phone.",
+      "seconds": 2.8466666666666667
+    }
+  ],
+  "articleSeconds": 110.535625
+}
