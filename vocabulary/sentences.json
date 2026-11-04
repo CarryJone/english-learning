@@ -12442,6 +12442,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-04",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-try",
+      "type": "sentence",
+      "zhPrompt": "請店員讓你試穿六號鞋。",
+      "answer": "Can I try them on in a size six?",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I try ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-stock",
+      "type": "sentence",
+      "zhPrompt": "問有沒有六號現貨。",
+      "answer": "Have you got a size six in stock?",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Have you got ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-loose",
+      "type": "sentence",
+      "zhPrompt": "試穿後說鞋子有點鬆。",
+      "answer": "They feel a bit loose.",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-heel",
+      "type": "sentence",
+      "zhPrompt": "說走路時你的腳跟會往上滑動。",
+      "answer": "My heel moves up when I walk.",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-color",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚，問六號有哪種顏色。",
+      "answer": "Sorry, which color have you got in a size six?",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-price",
+      "type": "sentence",
+      "zhPrompt": "從商品牌讀出藍色那雙也是四十英鎊，用問句確認。",
+      "answer": "So the blue ones are forty pounds too?",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-laces",
+      "type": "sentence",
+      "zhPrompt": "問能否自己調整鞋帶。",
+      "answer": "Can I adjust the laces myself?",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-wrap",
+      "type": "sentence",
+      "zhPrompt": "請店員把舊鞋包好，方便放進包包。",
+      "answer": "Can you wrap up my old shoes for my bag?",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-hat",
+      "type": "context",
+      "zhPrompt": "換到帽子店：試戴後說帽子有點鬆。",
+      "answer": "This hat feels a bit loose.",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-04-camera",
+      "type": "context",
+      "zhPrompt": "換到相機店：問有沒有這款相機的現貨。",
+      "answer": "Have you got this camera in stock?",
+      "sourceDate": "2026-11-04",
+      "sourceTitle": "Trying On Walking Shoes and Finding the Right Fit",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

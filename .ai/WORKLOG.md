@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-11-04 — Day 146 正式教材產出
+- 同步遠端 b84bd29 最新 SRS；產出旅行試穿步行鞋任務（M2），3 新字 heel／lace／loose、5 到期字、4 Bridge、10 Context Recall、5 核心句。
+- 當日 edge 三角色皆回傳 403，整篇使用 Kokoro；32 句／290 字、113.865 秒。
+- 98 checks／0 warnings／0 errors；33 MP3 解碼、文字／聲線、JS 通過；375／390px 無溢位，倒數／速度／測驗／情境自評正常，console 0 errors。
+
 ## 2026-10-30 — Day 143 正式教材產出
 - 同步遠端 c0aff23 最新 SRS；產出行李寄放網站尺寸與領取期限判讀任務，3 新字 maximum／height／width、8 到期字、4 Bridge、10 Context Recall、5 核心句。
 - edge 三角色先遇 sandbox DNS，權限重試皆 403；整篇使用 Kokoro，32 句／291 字、126.638 秒。
@@ -345,15 +350,5 @@
 - 文章融入到期複習字 `option`、`choice`、`reception`；Active Recall Quiz 納入全部 46 個到期字；Speaking Bridge 使用 `expired`、`reset`、`item`、`damaged`。
 - 完成 10 題 Context Recall、12 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s16.mp3`。
 - 驗證：`python3 scripts/validate_daily.py 2026-08-03` 通過 79 checks、0 warnings、0 errors；JSON parse、句子字數、目標語塊分布與 `git diff --check` 亦完成檢查。
-
----
-
-## 2026-07-31 — Day 88 正式教材產出
-
-- 先 `git fetch origin`，確認遠端有 2026-07-30 的 SRS 更新後，以 fast-forward 同步最新 `vocabulary/learning.json`。
-- 新增 `daily/2026-07-31/`，主題為 `Fixing a Missing Café Item`；今日新字：`missing`、`item`、`remake`。
-- 文章融入到期複習字 `replace`、`option`、`deliver`；Active Recall Quiz 納入同步後全部 15 個到期字；Speaking Bridge 使用 `damaged`、`baggage`、`miss`、`flexible`。
-- 完成 10 題 Context Recall、10 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s14.mp3`。
-- 驗證：`python3 scripts/validate_daily.py 2026-07-31` 通過 79 checks、0 warnings、0 errors；JSON parse、目標語塊分布與音檔對齊亦完成檢查。
 
 ---

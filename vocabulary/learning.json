@@ -4499,6 +4499,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-04",
       "lastReviewedDate": null
+    },
+    {
+      "word": "heel",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "腳跟；鞋子後跟",
+      "exampleSentence": "My heel moves up when I walk.",
+      "dateAdded": "2026-11-04",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "lace",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "鞋帶",
+      "exampleSentence": "Can I adjust the laces on these shoes?",
+      "dateAdded": "2026-11-04",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "loose",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "鬆的；不緊的",
+      "exampleSentence": "These shoes feel a bit loose.",
+      "dateAdded": "2026-11-04",
+      "reviewCount": 0,
+      "nextReview": "2026-11-05",
+      "lastReviewedDate": null
     }
   ]
 }

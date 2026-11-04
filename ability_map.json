@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-11-04",
+      "day": 146,
+      "title": "Trying On Walking Shoes and Finding the Right Fit",
+      "url": "daily/2026-11-04/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: describe loose shoes, confirm size six in blue and a forty-pound price.",
+        "Input: black size 7; blue sizes 6 and 7; box included.",
+        "Can I try them on in a size six?",
+        "Have you got a size six in stock?",
+        "They feel a bit loose."
+      ]
+    },
+    {
       "date": "2026-11-03",
       "day": 145,
       "title": "Choosing a Bike Rental and Checking the Return Time",
