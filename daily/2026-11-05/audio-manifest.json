@@ -21,8 +21,8 @@
       "index": 2,
       "speaker": "narrator",
       "voice": "af_sarah",
-      "text": "My phone needs a charge, so I plug it in.",
-      "seconds": 3.2533333333333334
+      "text": "My phone isn't charging, so I call reception for help.",
+      "seconds": 4.329958333333333
     },
     {
       "index": 3,
@@ -35,8 +35,8 @@
       "index": 4,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "Does your charger work anywhere else?",
-      "seconds": 3.072
+      "text": "Sorry about that, does your charger work anywhere else?",
+      "seconds": 4.544
     },
     {
       "index": 5,
@@ -49,78 +49,78 @@
       "index": 6,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "Okay, let's check the room before we try another charger.",
-      "seconds": 4.544
+      "text": "Is the lamp plugged into that same socket working?",
+      "seconds": 3.968
     },
     {
       "index": 7,
       "speaker": "traveler",
       "voice": "af_heart",
-      "text": "There's a lamp by the bed, but it's off too.",
-      "seconds": 2.916
+      "text": "No, the lamp's off too, so there's no power there.",
+      "seconds": 3.6613333333333333
     },
     {
       "index": 8,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "Can you check if the lamp's plugged into that socket?",
-      "seconds": 3.7973333333333334
+      "text": "Thanks, we'll send someone up to check that socket.",
+      "seconds": 3.6693333333333333
     },
     {
       "index": 9,
       "speaker": "traveler",
       "voice": "af_heart",
-      "text": "Yes, it's plugged in, but there's no power there.",
-      "seconds": 3.592
+      "text": "What can I do to charge my phone tonight?",
+      "seconds": 2.7993333333333332
     },
     {
       "index": 10,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "Thanks, we'll get someone to look at that socket.",
-      "seconds": 3.541333333333333
+      "text": "Come down to reception, we've got a power bank to lend.",
+      "seconds": 4.608
     },
     {
       "index": 11,
       "speaker": "narrator",
       "voice": "af_sarah",
-      "text": "I head down to speak to the same receptionist.",
-      "seconds": 3.2419583333333333
+      "text": "I go downstairs to speak to the same receptionist.",
+      "seconds": 3.711291666666667
     },
     {
       "index": 12,
       "speaker": "traveler",
       "voice": "af_heart",
-      "text": "Can I borrow an adapter while I wait for help?",
-      "seconds": 3.2333333333333334
+      "text": "Hi, I'm from room twelve, we just spoke on the phone.",
+      "seconds": 3.862
     },
     {
       "index": 13,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "Sure, we've got one here that you can use.",
-      "seconds": 3.4006666666666665
+      "text": "Yes, here's the power bank we talked about.",
+      "seconds": 3.3992916666666666
     },
     {
       "index": 14,
       "speaker": "traveler",
       "voice": "af_heart",
-      "text": "Can I charge my phone down here for a bit?",
-      "seconds": 2.94
+      "text": "Can I borrow a power bank for my room, please?",
+      "seconds": 3.3426666666666667
     },
     {
       "index": 15,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "Of course, there's a socket next to the front desk.",
-      "seconds": 3.7973333333333334
+      "text": "Of course, just connect your charging cable to it.",
+      "seconds": 3.921333333333333
     },
     {
       "index": 16,
       "speaker": "traveler",
       "voice": "af_heart",
-      "text": "Great, I'll sit here until my phone has some power.",
-      "seconds": 3.684
+      "text": "Great, then I won't need the room socket to charge.",
+      "seconds": 3.534666666666667
     },
     {
       "index": 17,
@@ -133,22 +133,22 @@
       "index": 18,
       "speaker": "traveler",
       "voice": "af_heart",
-      "text": "Sorry, what time do you need the adapter back?",
-      "seconds": 3.034
+      "text": "Sorry, what time do you need the power bank back?",
+      "seconds": 3.096625
     },
     {
       "index": 19,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "By ten tomorrow morning.",
-      "seconds": 2.453333333333333
+      "text": "By ten tomorrow morning, here at reception.",
+      "seconds": 3.8826666666666667
     },
     {
       "index": 20,
       "speaker": "narrator",
       "voice": "af_sarah",
-      "text": "I plug my phone in and see the screen light up.",
-      "seconds": 3.3373333333333335
+      "text": "I connect my phone and check that it's charging.",
+      "seconds": 3.444
     },
     {
       "index": 21,
@@ -161,8 +161,8 @@
       "index": 22,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "We'll let you know when someone's checked the socket.",
-      "seconds": 3.541333333333333
+      "text": "No problem, we'll let you know when we've checked the socket.",
+      "seconds": 4.522666666666667
     },
     {
       "index": 23,
@@ -182,15 +182,15 @@
       "index": 25,
       "speaker": "traveler",
       "voice": "af_heart",
-      "text": "Can I leave the adapter in the drawer when I leave?",
-      "seconds": 3.476625
+      "text": "Can I leave the power bank in the drawer tomorrow?",
+      "seconds": 3.3426666666666667
     },
     {
       "index": 26,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "Please bring it back here so we know you've returned it.",
-      "seconds": 3.989333333333333
+      "text": "Please bring it back here, so we know you've returned it.",
+      "seconds": 4.096
     },
     {
       "index": 27,
@@ -203,23 +203,23 @@
       "index": 28,
       "speaker": "staff",
       "voice": "am_michael",
-      "text": "You're welcome to wait here while your phone charges.",
-      "seconds": 4.147333333333333
+      "text": "Great, take the power bank with you to your room.",
+      "seconds": 3.534666666666667
     },
     {
       "index": 29,
       "speaker": "traveler",
       "voice": "af_heart",
-      "text": "Thanks, I'll stay nearby and keep an eye on it.",
-      "seconds": 3.26
+      "text": "Thanks, I can charge my phone while someone checks the socket.",
+      "seconds": 4.3453333333333335
     },
     {
       "index": 30,
       "speaker": "narrator",
       "voice": "af_sarah",
-      "text": "I've got a way to charge my phone tonight.",
-      "seconds": 2.8053333333333335
+      "text": "I've got power for my phone while I wait for help.",
+      "seconds": 3.4026666666666667
     }
   ],
-  "articleSeconds": 112.561875
+  "articleSeconds": 120.52245833333333
 }

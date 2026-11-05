@@ -58,11 +58,11 @@
         "dailyResponse"
       ],
       "evidence": [
-        "Mission: report a socket problem, borrow an adapter and confirm the return deadline.",
-        "Input: charging socket beside reception; return by 10 a.m.",
-        "Can I borrow an adapter?",
-        "What time do you need the adapter back?",
-        "Contact reception."
+        "Mission: report a powerless socket by phone, identify myself at reception and borrow a power bank.",
+        "Input: own charging cable; return the power bank to reception by 10 a.m. tomorrow.",
+        "The socket by my bed doesn't work.",
+        "Can I borrow a power bank?",
+        "We just spoke on the phone."
       ]
     },
     {

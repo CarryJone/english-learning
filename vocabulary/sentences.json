@@ -12616,7 +12616,7 @@
     {
       "id": "2026-11-05-socket",
       "type": "sentence",
-      "zhPrompt": "向櫃檯說床邊插座不能用。",
+      "zhPrompt": "打電話向櫃檯說床邊插座不能用。",
       "answer": "The socket by my bed doesn't work.",
       "sourceDate": "2026-11-05",
       "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
@@ -12633,8 +12633,8 @@
     {
       "id": "2026-11-05-borrow",
       "type": "sentence",
-      "zhPrompt": "問能否借個轉接頭。",
-      "answer": "Can I borrow an adapter?",
+      "zhPrompt": "問能否借行動電源。",
+      "answer": "Can I borrow a power bank?",
       "sourceDate": "2026-11-05",
       "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
       "abilities": [
@@ -12667,8 +12667,8 @@
     {
       "id": "2026-11-05-desk",
       "type": "sentence",
-      "zhPrompt": "依飯店說明問能否在櫃檯旁充電。",
-      "answer": "Can I charge my phone next to the front desk?",
+      "zhPrompt": "下樓找到剛才通電話的接待員，報房號並接上通話。",
+      "answer": "Hi, I'm from room twelve. We just spoke on the phone.",
       "sourceDate": "2026-11-05",
       "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
       "abilities": [
@@ -12684,8 +12684,8 @@
     {
       "id": "2026-11-05-time",
       "type": "sentence",
-      "zhPrompt": "沒聽清楚，問幾點前要還轉接頭。",
-      "answer": "Sorry, what time do you need the adapter back?",
+      "zhPrompt": "沒聽清楚，問幾點前要還行動電源。",
+      "answer": "Sorry, what time do you need the power bank back?",
       "sourceDate": "2026-11-05",
       "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
       "abilities": [
@@ -12701,8 +12701,8 @@
     {
       "id": "2026-11-05-return",
       "type": "sentence",
-      "zhPrompt": "確認明早十點前會還到櫃檯。",
-      "answer": "I'll bring it back here by ten tomorrow morning.",
+      "zhPrompt": "依飯店說明，確認明早十點前會還到櫃檯。",
+      "answer": "I'll bring it back to reception by ten tomorrow morning.",
       "sourceDate": "2026-11-05",
       "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
       "abilities": [
@@ -12735,8 +12735,8 @@
     {
       "id": "2026-11-05-drawer",
       "type": "sentence",
-      "zhPrompt": "問可否把借來的轉接頭留在抽屜裡。",
-      "answer": "Can I leave the adapter in the drawer?",
+      "zhPrompt": "問可否把借來的行動電源留在抽屜裡。",
+      "answer": "Can I leave the power bank in the drawer?",
       "sourceDate": "2026-11-05",
       "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
       "abilities": [

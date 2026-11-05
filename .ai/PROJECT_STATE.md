@@ -5,7 +5,7 @@
 ## 目前目標
 - 維持靜態網站架構，將每日教材發展成以真實任務、可重用語塊、主動提取與 SRS 為核心的個人英文訓練系統。
 ## 目前進度
-- [x] Day 147（2026-11-05）完成 Getting Help When My Hotel Socket Does Not Work（M3）。30 句、281 字、112.562 秒，26 到期字、4 Bridge、10 Context Recall、5 核心句。edge 三角色皆 403，使用 Kokoro。98 項驗證與 31 個 MP3 解碼通過，375／390px 手機排版、播放器及練習互動正常。
+- [x] Day 147（2026-11-05）完成 Getting Help When My Hotel Socket Does Not Work（M3）。30 句、290 字、120.522 秒，26 到期字、4 Bridge、10 Context Recall、5 核心句。已依使用者指正改為借行動電源，明示電話後下樓報房號；題目與音檔同步修正，保留 SRS 進度。edge 三角色皆 403，使用 Kokoro。98 項驗證與 31 個 MP3 解碼通過，375／390px 手機排版、播放器及練習互動正常。
 - [x] Day 146（2026-11-04）完成 Trying On Walking Shoes and Finding the Right Fit（M2）；32 句／290 字、113.865 秒；5 到期字、4 Bridge、10 Context Recall、5 核心句。edge 三角色皆 403，使用 Kokoro；98 checks／0 warnings／0 errors，33 MP3 解碼、文字／聲線與 JS 通過；375／390px 無溢位，倒數／速度／測驗／情境自評正常，console 0 errors。
 - [x] Day 145（2026-11-03）既有教材 Choosing a Bike Rental and Checking the Return Time 已完成上傳前驗證；35 句、110.536 秒，98 checks／0 warnings／0 errors，36 MP3 解碼通過。本次僅驗證並提交既有產物，未重生音檔或重跑瀏覽器 UI；profile 的模組仍為 M1，能力紀錄以當篇內容為準。
 - [x] Day 144（2026-11-02）既有教材 Finding My Next Ferry After a Cancellation（M1）已完成上傳前驗證；31 句、119.398 秒，98 checks／0 warnings／0 errors，32 MP3 解碼通過；本次僅驗證並提交既有產物，未重生音檔或重跑瀏覽器 UI。
