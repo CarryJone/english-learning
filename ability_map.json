@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-11-05",
+      "day": 147,
+      "title": "Getting Help When My Hotel Socket Does Not Work",
+      "url": "daily/2026-11-05/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: report a socket problem, borrow an adapter and confirm the return deadline.",
+        "Input: charging socket beside reception; return by 10 a.m.",
+        "Can I borrow an adapter?",
+        "What time do you need the adapter back?",
+        "Contact reception."
+      ]
+    },
+    {
       "date": "2026-11-04",
       "day": 146,
       "title": "Trying On Walking Shoes and Finding the Right Fit",

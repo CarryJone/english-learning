@@ -4529,6 +4529,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-05",
       "lastReviewedDate": null
+    },
+    {
+      "word": "socket",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "插座",
+      "exampleSentence": "The socket by my bed doesn't work.",
+      "dateAdded": "2026-11-05",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "borrow",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "借用",
+      "exampleSentence": "Can I borrow an adapter?",
+      "dateAdded": "2026-11-05",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "power",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "電力；供電",
+      "exampleSentence": "There's no power at this socket.",
+      "dateAdded": "2026-11-05",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
     }
   ]
 }

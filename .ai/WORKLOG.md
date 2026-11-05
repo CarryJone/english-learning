@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-11-05 — Day 147 正式教材產出
+- 同步遠端 eacc2dd 的 SRS，產出飯店插座故障與借轉接頭任務。新字 socket／borrow／power、26 到期字、4 Bridge、10 Context Recall、5 核心句。
+- 當日 edge 三角色皆 403，使用 Kokoro。30 句、281 字、112.562 秒。
+- 98 項正式驗證通過，31 個 MP3 解碼、文字與聲線對照及 JS 檢查通過。375／390px 無溢位，主音檔、逐句播放、倒數、測驗與情境自評正常。
+
 ## 2026-11-04 — Day 146 正式教材產出
 - 同步遠端 b84bd29 最新 SRS；產出旅行試穿步行鞋任務（M2），3 新字 heel／lace／loose、5 到期字、4 Bridge、10 Context Recall、5 核心句。
 - 當日 edge 三角色皆回傳 403，整篇使用 Kokoro；32 句／290 字、113.865 秒。
@@ -340,15 +345,5 @@
 - 文章融入到期複習字 `passenger`、`nearby`、`delayed`；Active Recall Quiz 納入全部 37 個到期字；Speaking Bridge 使用 `noise`、`maintenance`、`fan`、`delayed`。
 - 完成 10 題 Context Recall、8 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s36.mp3`。
 - 驗證：`python3 scripts/validate_daily.py 2026-08-17` 通過 84 checks、0 warnings、0 errors；主音檔 130.56 秒；390×844 手機版無橫向溢位，0.75× 與逐句播放正常，console 0 errors。
-
----
-
-## 2026-08-03 — Day 89 正式教材產出
-
-- 先執行 `git fetch origin`，確認本地 `HEAD` 與 `origin/main` 同步，使用最新的 `vocabulary/learning.json` 生成複習內容。
-- 新增 `daily/2026-08-03/`，主題為 `Handling a Stuck Hotel Laundry Machine`；今日新字：`stuck`、`repair`、`working`。
-- 文章融入到期複習字 `option`、`choice`、`reception`；Active Recall Quiz 納入全部 46 個到期字；Speaking Bridge 使用 `expired`、`reset`、`item`、`damaged`。
-- 完成 10 題 Context Recall、12 回合 Role-play、Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s16.mp3`。
-- 驗證：`python3 scripts/validate_daily.py 2026-08-03` 通過 79 checks、0 warnings、0 errors；JSON parse、句子字數、目標語塊分布與 `git diff --check` 亦完成檢查。
 
 ---

@@ -12612,6 +12612,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-05",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-socket",
+      "type": "sentence",
+      "zhPrompt": "向櫃檯說床邊插座不能用。",
+      "answer": "The socket by my bed doesn't work.",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "The socket ...",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-borrow",
+      "type": "sentence",
+      "zhPrompt": "問能否借個轉接頭。",
+      "answer": "Can I borrow an adapter?",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-contact",
+      "type": "sentence",
+      "zhPrompt": "問如果插座還是不能用，要不要聯絡櫃檯。",
+      "answer": "Should I contact reception if the socket still doesn't work?",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-desk",
+      "type": "sentence",
+      "zhPrompt": "依飯店說明問能否在櫃檯旁充電。",
+      "answer": "Can I charge my phone next to the front desk?",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-time",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚，問幾點前要還轉接頭。",
+      "answer": "Sorry, what time do you need the adapter back?",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-return",
+      "type": "sentence",
+      "zhPrompt": "確認明早十點前會還到櫃檯。",
+      "answer": "I'll bring it back here by ten tomorrow morning.",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-power",
+      "type": "sentence",
+      "zhPrompt": "說這個插座沒有電。",
+      "answer": "There's no power at this socket.",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-drawer",
+      "type": "sentence",
+      "zhPrompt": "問可否把借來的轉接頭留在抽屜裡。",
+      "answer": "Can I leave the adapter in the drawer?",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-cafe",
+      "type": "context",
+      "zhPrompt": "換到咖啡店，告訴店員桌旁的插座不能用。",
+      "answer": "The socket by my table doesn't work.",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-05-tour",
+      "type": "context",
+      "zhPrompt": "換到旅遊服務中心，問能否借一張地圖。",
+      "answer": "Can I borrow a map?",
+      "sourceDate": "2026-11-05",
+      "sourceTitle": "Getting Help When My Hotel Socket Does Not Work",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-06",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

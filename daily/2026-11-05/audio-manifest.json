@@ -1,0 +1,225 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm back in my hotel room after a long day.",
+      "seconds": 3.4026666666666667
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "My phone needs a charge, so I plug it in.",
+      "seconds": 3.2533333333333334
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, the socket by my bed doesn't work.",
+      "seconds": 3.0553333333333335
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Does your charger work anywhere else?",
+      "seconds": 3.072
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Yes, it worked at the airport this morning.",
+      "seconds": 2.937333333333333
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Okay, let's check the room before we try another charger.",
+      "seconds": 4.544
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "There's a lamp by the bed, but it's off too.",
+      "seconds": 2.916
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Can you check if the lamp's plugged into that socket?",
+      "seconds": 3.7973333333333334
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Yes, it's plugged in, but there's no power there.",
+      "seconds": 3.592
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Thanks, we'll get someone to look at that socket.",
+      "seconds": 3.541333333333333
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I head down to speak to the same receptionist.",
+      "seconds": 3.2419583333333333
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I borrow an adapter while I wait for help?",
+      "seconds": 3.2333333333333334
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, we've got one here that you can use.",
+      "seconds": 3.4006666666666665
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I charge my phone down here for a bit?",
+      "seconds": 2.94
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, there's a socket next to the front desk.",
+      "seconds": 3.7973333333333334
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I'll sit here until my phone has some power.",
+      "seconds": 3.684
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You can borrow it overnight, but we'll need it back by ten tomorrow.",
+      "seconds": 5.674666666666667
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, what time do you need the adapter back?",
+      "seconds": 3.034
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "By ten tomorrow morning.",
+      "seconds": 2.453333333333333
+    },
+    {
+      "index": 20,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I plug my phone in and see the screen light up.",
+      "seconds": 3.3373333333333335
+    },
+    {
+      "index": 21,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It's charging now, thanks for helping me out.",
+      "seconds": 3.3312916666666665
+    },
+    {
+      "index": 22,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "We'll let you know when someone's checked the socket.",
+      "seconds": 3.541333333333333
+    },
+    {
+      "index": 23,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Should I contact reception if the socket still doesn't work?",
+      "seconds": 4.406666666666666
+    },
+    {
+      "index": 24,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, call us from your room and we'll help.",
+      "seconds": 3.2
+    },
+    {
+      "index": 25,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I leave the adapter in the drawer when I leave?",
+      "seconds": 3.476625
+    },
+    {
+      "index": 26,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Please bring it back here so we know you've returned it.",
+      "seconds": 3.989333333333333
+    },
+    {
+      "index": 27,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, I'll bring it back to this desk tomorrow morning.",
+      "seconds": 3.896
+    },
+    {
+      "index": 28,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You're welcome to wait here while your phone charges.",
+      "seconds": 4.147333333333333
+    },
+    {
+      "index": 29,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll stay nearby and keep an eye on it.",
+      "seconds": 3.26
+    },
+    {
+      "index": 30,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've got a way to charge my phone tonight.",
+      "seconds": 2.8053333333333335
+    }
+  ],
+  "articleSeconds": 112.561875
+}
