@@ -12782,6 +12782,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-06",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-weekday",
+      "type": "sentence",
+      "zhPrompt": "問週一能不能用平日票。",
+      "answer": "Can I use a weekday ticket on Monday?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Can I use ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-entry",
+      "type": "sentence",
+      "zhPrompt": "確認你的入場時間是兩點半。",
+      "answer": "Is my entry time two thirty?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Is my ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-download",
+      "type": "sentence",
+      "zhPrompt": "問能否從頁面下載你的票。",
+      "answer": "Can I download my ticket from that page?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-arrival",
+      "type": "sentence",
+      "zhPrompt": "依訂票說明，說你會提早十分鐘到。",
+      "answer": "I'll get there ten minutes early.",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-slot",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚還有哪個時段，請對方再說一次。",
+      "answer": "Sorry, which time can I still book?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-print",
+      "type": "sentence",
+      "zhPrompt": "問需不需要印出門票。",
+      "answer": "Do I need to print my ticket?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-offline",
+      "type": "sentence",
+      "zhPrompt": "問儲存後的票能否離線開啟。",
+      "answer": "Can I open the saved ticket offline?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-loose",
+      "type": "context",
+      "zhPrompt": "換到租車處，說安全帽有點鬆，請問能否換小一點的。",
+      "answer": "This helmet feels a bit loose. Can I try a smaller one?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-train",
+      "type": "context",
+      "zhPrompt": "換到車站客服，問能不能下載火車票。",
+      "answer": "Can I download my train ticket?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-06-museum",
+      "type": "context",
+      "zhPrompt": "換到博物館，問入場時間是不是三點。",
+      "answer": "Is my entry time three o’clock?",
+      "sourceDate": "2026-11-06",
+      "sourceTitle": "Booking a Timed Ticket for the Viewing Deck",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

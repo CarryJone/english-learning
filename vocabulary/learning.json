@@ -4559,6 +4559,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-06",
       "lastReviewedDate": null
+    },
+    {
+      "word": "entry",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "入場；進入",
+      "exampleSentence": "What's my entry time?",
+      "dateAdded": "2026-11-06",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "weekday",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "平日；週一至週五",
+      "exampleSentence": "I booked a weekday ticket for Monday.",
+      "dateAdded": "2026-11-06",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "print",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "列印",
+      "exampleSentence": "Do I need to print my ticket?",
+      "dateAdded": "2026-11-06",
+      "reviewCount": 0,
+      "nextReview": "2026-11-07",
+      "lastReviewedDate": null
     }
   ]
 }

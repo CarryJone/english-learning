@@ -1,0 +1,225 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at my hotel, looking at tickets for the viewing deck.",
+      "seconds": 4.0099583333333335
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'd like to go on Monday, so I open the chat.",
+      "seconds": 3.3173333333333335
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, can I use a weekday ticket on Monday?",
+      "seconds": 3.2146666666666666
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, weekday tickets work from Monday to Friday.",
+      "seconds": 4.108
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, does this ticket have a set entry time?",
+      "seconds": 3.3853333333333335
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, pick an entry time when you book online.",
+      "seconds": 3.8946666666666667
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I choose two in the afternoon for Monday?",
+      "seconds": 3.1933333333333334
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The two o'clock slot's full, but we've still got space at two thirty.",
+      "seconds": 5.596666666666667
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, which time can I still book?",
+      "seconds": 2.682625
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Two thirty on Monday.",
+      "seconds": 2.2613333333333334
+    },
+    {
+      "index": 11,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, I'll book the two thirty entry.",
+      "seconds": 2.852
+    },
+    {
+      "index": 12,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I pick the later time and finish my booking.",
+      "seconds": 3.2632916666666665
+    },
+    {
+      "index": 13,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I've got my ticket number, but where's the ticket?",
+      "seconds": 3.3626666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Open your email and tap the link to your ticket.",
+      "seconds": 3.962625
+    },
+    {
+      "index": 15,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I download my ticket from that page?",
+      "seconds": 2.9812916666666665
+    },
+    {
+      "index": 16,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, tap Download and save the file to your phone.",
+      "seconds": 4.274
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Do I need to print it before I go?",
+      "seconds": 2.502
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No, you can show it on your phone.",
+      "seconds": 2.8633333333333333
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I open the saved ticket offline?",
+      "seconds": 2.820666666666667
+    },
+    {
+      "index": 20,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, once you've saved the file, it'll open offline.",
+      "seconds": 4.750666666666667
+    },
+    {
+      "index": 21,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I turn off Wi-Fi and mobile data after saving the ticket.",
+      "seconds": 4.457958333333333
+    },
+    {
+      "index": 22,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It opens offline, and I can see the whole ticket.",
+      "seconds": 3.8533333333333335
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Great, have it ready when you get to the entrance.",
+      "seconds": 3.5813333333333333
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Should I get there right at my entry time?",
+      "seconds": 2.7679583333333335
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Get there ten minutes before your entry time.",
+      "seconds": 3.4972916666666665
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "So I'll get there at two twenty on Monday.",
+      "seconds": 2.5986666666666665
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, then show your ticket at the entrance.",
+      "seconds": 3.776
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll save the arrival time in my calendar.",
+      "seconds": 3.7579583333333333
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You're all set, enjoy the view on Monday.",
+      "seconds": 3.648
+    },
+    {
+      "index": 30,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've got my ticket and know when to get there.",
+      "seconds": 3.1466666666666665
+    }
+  ],
+  "articleSeconds": 111.981625
+}

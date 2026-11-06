@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-11-06",
+      "day": 148,
+      "title": "Booking a Timed Ticket for the Viewing Deck",
+      "url": "daily/2026-11-06/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: choose a weekday ticket, confirm the available entry time and open the ticket offline.",
+        "Input: weekdays Monday to Friday, arrive ten minutes before entry.",
+        "Can I use a weekday ticket on Monday?",
+        "Sorry, which time can I still book?",
+        "Can I download my ticket from that page?"
+      ]
+    },
+    {
       "date": "2026-11-05",
       "day": 147,
       "title": "Getting Help When My Hotel Socket Does Not Work",
