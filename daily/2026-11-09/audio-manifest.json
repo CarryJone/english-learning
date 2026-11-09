@@ -1,0 +1,225 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at a bus stop with a sign about changes.",
+      "seconds": 3.4339583333333334
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I want to visit the museum, so I read the sign.",
+      "seconds": 3.3912916666666666
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Excuse me, does bus seven stop here today?",
+      "seconds": 3.4592916666666667
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No, this stop's closed today because of work on the road.",
+      "seconds": 4.762
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, where's the temporary stop for bus seven?",
+      "seconds": 3.62
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It's outside the library, just down the street.",
+      "seconds": 3.776
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Is that the library next to the park?",
+      "seconds": 2.6286666666666667
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, it's only a short walk from here.",
+      "seconds": 3.2213333333333334
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Do I need to cross the street to get there?",
+      "seconds": 2.513333333333333
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No, stay on this side and walk past the park.",
+      "seconds": 3.8573333333333335
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I look down the street and see two café signs.",
+      "seconds": 3.604625
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Where exactly should I wait near the library?",
+      "seconds": 2.9599583333333332
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The stop's past the park, across from the café with the blue door.",
+      "seconds": 5.504
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, which café is the stop across from?",
+      "seconds": 3.332666666666667
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The café with the blue door.",
+      "seconds": 2.496
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "So it's across from that café, on this side?",
+      "seconds": 2.936
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Right, stay on this side as you walk to the library.",
+      "seconds": 4.16
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll take a screenshot of the map before I go.",
+      "seconds": 3.768
+    },
+    {
+      "index": 19,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Before I leave, I check which bus to look for.",
+      "seconds": 3.3386666666666667
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Does bus seven go straight to the museum from there?",
+      "seconds": 3.684
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, you don't need to transfer on the way.",
+      "seconds": 3.4133333333333336
+    },
+    {
+      "index": 22,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, what should I look for on the bus?",
+      "seconds": 2.552
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Check the display on the front for Seven Museum.",
+      "seconds": 3.6906666666666665
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "If I see Eight Station, should I let it go?",
+      "seconds": 3.181958333333333
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, wait for bus seven with Museum on the display.",
+      "seconds": 4.736666666666666
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, I'll check the display before I get on.",
+      "seconds": 3.4053333333333335
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, and wait by the yellow sign outside the library.",
+      "seconds": 5.226666666666667
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I know where to wait and what to look for.",
+      "seconds": 3.181958333333333
+    },
+    {
+      "index": 29,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I walk past the park and find the yellow sign.",
+      "seconds": 3.444
+    },
+    {
+      "index": 30,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "The bus display says Seven Museum, so I get on.",
+      "seconds": 3.6886666666666668
+    }
+  ],
+  "articleSeconds": 114.468375
+}

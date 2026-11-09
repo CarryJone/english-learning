@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-11-09 — Day 149 正式教材產出
+- 同步遠端 7e9c24c 最新 SRS，產出臨時公車站任務（M1）。新字 temporary／across／display，48 到期字、4 Bridge、10 Context Recall、5 核心句。
+- 完稿通讀後釐清圖書館附近的等候位置與同側走法，補上核對 7 MUSEUM 再上車。公告、對話與題目資訊一致。
+- edge 三角色皆 403，使用 Kokoro。30 句、286 字、114.468 秒。98 項正式驗證與 31 個 MP3 解碼、文字／聲線對照、JS 通過。375／390px 手機無溢位，主音檔、逐句播放、倒數、測驗與情境自評正常。
+
 ## 2026-11-06 — Day 148 正式教材產出
 - 確認遠端 SRS 已同步，完成模擬景觀台線上訂票任務（M4）。新字 entry／weekday／print、9 到期字、4 Bridge、10 Context Recall、5 核心句。
 - 內容通讀後補清楚先存票再關閉 Wi-Fi 與行動數據的步驟，核對週一兩點半入場、兩點二十到場與出示手機票券的一致性。
@@ -332,15 +337,5 @@
 - Active Recall Quiz 納入全部 11 個到期字；Speaking Bridge 使用 `carousel`、`describe`、`handle`、`noise`；完成 10 題 Context Recall 與 8 回合 Role-play。
 - 完成 Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s32.mp3`。
 - 驗證：`python3 scripts/validate_daily.py 2026-08-19` 通過 84 checks、0 warnings、0 errors；主音檔 118.25 秒，32 句 / 257 字；390×844 手機版無橫向溢位，首頁前三筆為 Day 101、100、99，音檔可載入。
-
----
-
-## 2026-08-18 — Day 100 正式教材與首頁清單修復
-
-- 先 `git fetch origin` 並以 fast-forward 同步 2026-08-17 最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
-- 新增 `daily/2026-08-18/`，主題為 `Checking Carry-on Liquid Rules Before Security`；今日新字：`liquid`、`container`、`limit`。
-- Active Recall Quiz 納入全部 3 個到期字；Speaking Bridge 使用 `contain`、`sensitive`、`delayed`、`deck`；完成 10 題 Context Recall 與 8 回合 Role-play。
-- 修正首頁學習記錄容器錯位：Day 99 原本落在 Day 66 後方，現已將全部日期統一放回 `#day-list`，依日期新到舊排序。
-- 驗證：`python3 scripts/validate_daily.py 2026-08-18` 通過 84 checks、0 warnings、0 errors；主音檔 117.94 秒，31 句 / 251 字；390×844 手機版首頁與教材均無橫向溢位，首頁前三筆為 Day 100、99、98。
 
 ---

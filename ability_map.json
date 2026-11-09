@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-11-09",
+      "day": 149,
+      "title": "Finding the Temporary Bus Stop for the Museum",
+      "url": "daily/2026-11-09/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read the closure notice, find the same-side temporary stop and verify the bus destination.",
+        "Input: library past the park, yellow sign across from the blue-door café, 7 MUSEUM display.",
+        "Where's the temporary stop for bus seven?",
+        "Do I need to cross the street?",
+        "Check the display before getting on."
+      ]
+    },
+    {
       "date": "2026-11-06",
       "day": 148,
       "title": "Booking a Timed Ticket for the Viewing Deck",

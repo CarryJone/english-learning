@@ -12952,6 +12952,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-07",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-temporary",
+      "type": "sentence",
+      "zhPrompt": "看到舊站停用，問七號公車的臨時站在哪。",
+      "answer": "Where's the temporary stop for bus seven?",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Where's the ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-across",
+      "type": "sentence",
+      "zhPrompt": "確認臨時站在藍門咖啡店對面。",
+      "answer": "Is the stop across from the café with the blue door?",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Is the stop ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-display",
+      "type": "sentence",
+      "zhPrompt": "說你會先看車頭顯示再上車。",
+      "answer": "I'll check the display before I get on.",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-side",
+      "type": "sentence",
+      "zhPrompt": "向站務員確認是否要過馬路。",
+      "answer": "Do I need to cross the street?",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-cafe",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚是哪一間店，問臨時站在哪間咖啡店對面。",
+      "answer": "Sorry, which café is the stop across from?",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-map",
+      "type": "sentence",
+      "zhPrompt": "跟旅伴說你會先截圖存地圖。",
+      "answer": "I'll take a screenshot of the map.",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-transfer",
+      "type": "sentence",
+      "zhPrompt": "確認中途是否需要轉車。",
+      "answer": "Do I need to transfer on the way?",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-sign",
+      "type": "sentence",
+      "zhPrompt": "依公告說你會在圖書館外的黃色站牌等。",
+      "answer": "I'll wait by the yellow sign outside the library.",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-pharmacy",
+      "type": "context",
+      "zhPrompt": "換到陌生街區，問藥局是否在旅館對面。",
+      "answer": "Is the pharmacy across from the hotel?",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-09-train",
+      "type": "context",
+      "zhPrompt": "換到火車站，請旅伴看顯示器確認列車去哪裡。",
+      "answer": "Can you check the display to see where the train goes?",
+      "sourceDate": "2026-11-09",
+      "sourceTitle": "Finding the Temporary Bus Stop for the Museum",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

@@ -4589,6 +4589,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-07",
       "lastReviewedDate": null
+    },
+    {
+      "word": "temporary",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "臨時的；暫時的",
+      "exampleSentence": "Where is the temporary stop for bus seven?",
+      "dateAdded": "2026-11-09",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "across",
+      "partOfSpeech": "prep./adv.",
+      "chineseMeaning": "在對面；穿過",
+      "exampleSentence": "The stop is across from the café.",
+      "dateAdded": "2026-11-09",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "display",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "顯示器；顯示畫面",
+      "exampleSentence": "Check the display on the front of the bus.",
+      "dateAdded": "2026-11-09",
+      "reviewCount": 0,
+      "nextReview": "2026-11-10",
+      "lastReviewedDate": null
     }
   ]
 }
