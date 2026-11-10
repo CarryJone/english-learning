@@ -4619,6 +4619,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-10",
       "lastReviewedDate": null
+    },
+    {
+      "word": "loaf",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "一條；一整個麵包",
+      "exampleSentence": "Can I have a loaf of bread?",
+      "dateAdded": "2026-11-10",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "plain",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "原味的；無額外配料的",
+      "exampleSentence": "I'll take the plain loaf, please.",
+      "dateAdded": "2026-11-10",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "slice",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "切成片",
+      "exampleSentence": "Can you slice it for me?",
+      "dateAdded": "2026-11-10",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
     }
   ]
 }

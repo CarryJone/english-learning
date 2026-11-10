@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-11-10 — Day 150 正式教材產出
+- 同步遠端 f49a872 最新 SRS，完成麵包店野餐採買任務（M2）。新字 loaf／plain／slice，15 到期字、4 Bridge、10 Context Recall、5 核心句。
+- 通讀確認起司麵包缺貨後改選原味，先確認免費切片，再確認裝袋、總額 £3 與刷卡。初版時長 104.584 秒，補上請求切薄片後重生至 107.460 秒。
+- edge 三角色皆 403，使用 Kokoro。31 句、271 字。98 項正式驗證與 32 個 MP3 解碼、文字／聲線對照、JS 通過。375／390px 手機無溢位，主音檔、逐句播放、倒數、測驗與情境自評正常。
+
 ## 2026-11-09 — Day 149 正式教材產出
 - 同步遠端 7e9c24c 最新 SRS，產出臨時公車站任務（M1）。新字 temporary／across／display，48 到期字、4 Bridge、10 Context Recall、5 核心句。
 - 完稿通讀後釐清圖書館附近的等候位置與同側走法，補上核對 7 MUSEUM 再上車。公告、對話與題目資訊一致。
@@ -327,15 +332,5 @@
 - Active Recall Quiz 納入全部 39 個到期字；Speaking Bridge 使用 2–7 天前的 `fuel`、`damage`、`deposit`、`eligible`；完成 10 題 Context Recall 與 8 回合 Role-play。
 - 完成 Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s34.mp3`；主音檔實測 121.97 秒。
 - 驗證：`python3 scripts/validate_daily.py 2026-08-24` 通過 84 checks、0 warnings、0 errors；JSON parse、JavaScript syntax、`git diff --check` 與內容對齊檢查通過。
-
----
-
-## 2026-08-19 — Day 101 正式教材產出
-
-- 先 `git fetch origin` 並以 fast-forward 同步 2026-08-18 最新單字 SRS，再依最新 `vocabulary/learning.json` 產生複習內容。
-- 新增 `daily/2026-08-19/`，主題為 `Finding the Walking Tour Meeting Point`；今日新字：`meeting point`、`fountain`、`tour`。
-- Active Recall Quiz 納入全部 11 個到期字；Speaking Bridge 使用 `carousel`、`describe`、`handle`、`noise`；完成 10 題 Context Recall 與 8 回合 Role-play。
-- 完成 Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s32.mp3`。
-- 驗證：`python3 scripts/validate_daily.py 2026-08-19` 通過 84 checks、0 warnings、0 errors；主音檔 118.25 秒，32 句 / 257 字；390×844 手機版無橫向溢位，首頁前三筆為 Day 101、100、99，音檔可載入。
 
 ---

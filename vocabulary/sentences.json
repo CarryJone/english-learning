@@ -13122,6 +13122,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-10",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-plain",
+      "type": "sentence",
+      "zhPrompt": "跟店員說你要買原味麵包。",
+      "answer": "I'll take the plain loaf, please.",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "I'll take ...",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-slice",
+      "type": "sentence",
+      "zhPrompt": "請店員把麵包切片。",
+      "answer": "Can you slice it for me?",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Can you ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-card",
+      "type": "sentence",
+      "zhPrompt": "問這筆小額消費能不能刷卡。",
+      "answer": "Can I pay by card?",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-total",
+      "type": "sentence",
+      "zhPrompt": "看價目牌後，向店員確認總共是三英鎊。",
+      "answer": "Is it three pounds in total?",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-available",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚還有哪種麵包，請對方再說一次。",
+      "answer": "Sorry, which loaf have you still got?",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-charge",
+      "type": "sentence",
+      "zhPrompt": "問切片是否另收費。",
+      "answer": "Is there an extra charge for slicing?",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-bag",
+      "type": "sentence",
+      "zhPrompt": "請店員把麵包裝進紙袋。",
+      "answer": "Can you put it in a paper bag?",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-across",
+      "type": "sentence",
+      "zhPrompt": "跟旅伴說麵包店在旅館對面。",
+      "answer": "The bakery's across from the hotel.",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-basket",
+      "type": "context",
+      "zhPrompt": "換到市集，問能不能借個籃子裝水果。",
+      "answer": "Can I borrow a basket for these apples?",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-10-museum",
+      "type": "context",
+      "zhPrompt": "換到博物館售票處，問門票能不能刷卡。",
+      "answer": "Can I pay by card for my ticket?",
+      "sourceDate": "2026-11-10",
+      "sourceTitle": "Buying a Loaf of Bread for a Picnic",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-11",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

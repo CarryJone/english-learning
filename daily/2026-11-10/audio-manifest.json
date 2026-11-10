@@ -1,0 +1,232 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at a bakery across from my hotel.",
+      "seconds": 3.104
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I want some bread for a picnic in the park.",
+      "seconds": 2.9432916666666666
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, can I have a loaf of bread, please?",
+      "seconds": 3.018666666666667
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, what kind of bread would you like today?",
+      "seconds": 3.3366666666666664
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'd like the cheese loaf on the board, please.",
+      "seconds": 3.172
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sorry, we're out of cheese bread, but we've still got the plain loaf.",
+      "seconds": 5.376
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, which loaf have you still got?",
+      "seconds": 2.6926666666666668
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The plain loaf.",
+      "seconds": 1.728
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Okay, is the plain loaf three pounds like the sign says?",
+      "seconds": 4.204666666666666
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, and there's a small loaf in this basket.",
+      "seconds": 4.1386666666666665
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I look at the loaf and think about our picnic.",
+      "seconds": 2.996
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll take that plain loaf for our picnic, please.",
+      "seconds": 3.480625
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Great, would you like me to slice it for you?",
+      "seconds": 3.352625
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Yes, please, is there an extra charge for that?",
+      "seconds": 3.4353333333333333
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No, we'll slice it for free.",
+      "seconds": 2.538666666666667
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, please slice the whole loaf for our picnic.",
+      "seconds": 3.5033333333333334
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Could you make the slices thin, please?",
+      "seconds": 2.735333333333333
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, I'll cut it into thin slices for sandwiches.",
+      "seconds": 4.309333333333333
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, can you put it in a paper bag too?",
+      "seconds": 3.0126666666666666
+    },
+    {
+      "index": 20,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, I'll put it in a bag for you.",
+      "seconds": 2.8373333333333335
+    },
+    {
+      "index": 21,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I take out my card while the baker packs the bread.",
+      "seconds": 3.6373333333333333
+    },
+    {
+      "index": 22,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I pay by card for just one loaf?",
+      "seconds": 2.9246666666666665
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, you can pay by card for any amount.",
+      "seconds": 3.842
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "So it's three pounds with the slicing and the bag?",
+      "seconds": 3.2146666666666666
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, it's three pounds in total.",
+      "seconds": 2.792
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I'll pay by card, please.",
+      "seconds": 2.707333333333333
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Just tap your card here when you're ready.",
+      "seconds": 2.8586666666666667
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, can I have the receipt as well?",
+      "seconds": 2.586
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, here's your receipt and your bag.",
+      "seconds": 2.8586666666666667
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, that's everything I need for the picnic.",
+      "seconds": 3.1092916666666666
+    },
+    {
+      "index": 31,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I leave with the sliced bread and head to the park.",
+      "seconds": 3.2632916666666665
+    }
+  ],
+  "articleSeconds": 107.45979166666666
+}

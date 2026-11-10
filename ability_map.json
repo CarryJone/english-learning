@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-11-10",
+      "day": 150,
+      "title": "Buying a Loaf of Bread for a Picnic",
+      "url": "daily/2026-11-10/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read the bakery price board, switch to a plain loaf, ask for slicing and pay by card.",
+        "Input: plain loaf £3, cheese loaf £4, free slicing and cards accepted.",
+        "I'll take the plain loaf, please.",
+        "Can you slice it for me?",
+        "Can I pay by card?"
+      ]
+    },
+    {
       "date": "2026-11-09",
       "day": 149,
       "title": "Finding the Temporary Bus Stop for the Museum",
