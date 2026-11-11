@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-11-11",
+      "day": 151,
+      "title": "Asking for the Hot Tea I Ordered",
+      "url": "daily/2026-11-11/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: use the receipt to correct a wrong takeaway drink and confirm the wait before the bus leaves.",
+        "Input: paid £2 for one plain hot tea to go, lids available on request.",
+        "I ordered a plain hot tea to go.",
+        "Can you take it back and make a hot tea?",
+        "Sorry, how many minutes did you say?"
+      ]
+    },
+    {
       "date": "2026-11-10",
       "day": 150,
       "title": "Buying a Loaf of Bread for a Picnic",

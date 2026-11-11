@@ -4649,6 +4649,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-11",
       "lastReviewedDate": null
+    },
+    {
+      "word": "iced",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "冰的；加冰的",
+      "exampleSentence": "Is this the iced tea?",
+      "dateAdded": "2026-11-11",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "lemon",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "檸檬",
+      "exampleSentence": "Can I have it without lemon?",
+      "dateAdded": "2026-11-11",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "lid",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "蓋子；杯蓋",
+      "exampleSentence": "Could you put a lid on the cup?",
+      "dateAdded": "2026-11-11",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
     }
   ]
 }

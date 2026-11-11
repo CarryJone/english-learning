@@ -5,6 +5,11 @@
 > 維護：超過 30 筆時，建議歸檔到 `.ai/archive/WORKLOG_YYYY_MM.md`。
 
 ---
+## 2026-11-11 — Day 151 正式教材產出
+- 同步遠端 036ba55 最新 SRS，完成車站咖啡店更換送錯飲料任務（M3）。新字 iced／lemon／lid，5 到期字、4 Bridge、10 Context Recall、5 核心句。
+- 通讀後確認原訂為 £2 外帶原味熱茶，收回冰檸檬茶後重新泡茶約三分鐘，無須補費，杯蓋確認後離店。
+- edge 三角色皆 403，使用 Kokoro。33 句、276 字、107.706 秒。98 項正式驗證與 34 個 MP3 解碼、文字／聲線對照、JS 通過。375／390px 手機無溢位，主音檔、逐句播放、倒數、測驗與情境自評正常。
+
 ## 2026-11-10 — Day 150 正式教材產出
 - 同步遠端 f49a872 最新 SRS，完成麵包店野餐採買任務（M2）。新字 loaf／plain／slice，15 到期字、4 Bridge、10 Context Recall、5 核心句。
 - 通讀確認起司麵包缺貨後改選原味，先確認免費切片，再確認裝袋、總額 £3 與刷卡。初版時長 104.584 秒，補上請求切薄片後重生至 107.460 秒。
@@ -321,16 +326,5 @@
 - 先以三聲線重新生成音檔：`narrator` 使用 Aria、`traveler` 使用 Jenny、`staff` 使用 Guy，並在頁面加入聲線提示。
 - 依回饋再修正 Article：拿掉 `I ask`、`She says` 等報導式包裝，讓旁白、旅客台詞與工作人員台詞各自成句，再重新生成三聲線音檔。
 - 驗證：`python3 scripts/validate_daily.py 2026-08-25` 通過 84 checks、0 warnings、0 errors；主音檔 119.78 秒，34 句 / 262 字、35 個 MP3 均存在且可讀；未修改既有未追蹤的 `test/`。
-
----
-
-## 2026-08-24 — Day 104 正式教材產出
-
-- 先 `git fetch origin`，以 fast-forward 同步遠端 2026-08-21 的最新單字 SRS，再依最新 `vocabulary/learning.json` 生成今日複習內容。
-- 新增 `daily/2026-08-24/`，主題為 `Finding the Right Airport Train After a Platform Change`；今日新字：`train`、`depart`、`airport`。
-- 文章以車站 departure screen、station notice 與工作人員對話為英文輸入；融入 `station`、`screen`、`line`、`notice`、`delayed`、`valid` 等到期字。
-- Active Recall Quiz 納入全部 39 個到期字；Speaking Bridge 使用 2–7 天前的 `fuel`、`damage`、`deposit`、`eligible`；完成 10 題 Context Recall 與 8 回合 Role-play。
-- 完成 Ability Map、句子 SRS、首頁入口，以及 `article.mp3` 與 `s01.mp3` 到 `s34.mp3`；主音檔實測 121.97 秒。
-- 驗證：`python3 scripts/validate_daily.py 2026-08-24` 通過 84 checks、0 warnings、0 errors；JSON parse、JavaScript syntax、`git diff --check` 與內容對齊檢查通過。
 
 ---

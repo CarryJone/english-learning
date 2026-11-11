@@ -13292,6 +13292,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-11",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-ordered",
+      "type": "sentence",
+      "zhPrompt": "拿到冰茶時，說你點的是原味熱茶外帶。",
+      "answer": "I ordered a plain hot tea to go.",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "I ordered ...",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-take-back",
+      "type": "sentence",
+      "zhPrompt": "請店員收回這杯並改做熱茶。",
+      "answer": "Can you take it back and make a hot tea?",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Can you ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-wait",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚等待時間，問對方剛說幾分鐘。",
+      "answer": "Sorry, how many minutes did you say?",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-receipt",
+      "type": "sentence",
+      "zhPrompt": "出示收據，說你已經付了兩英鎊。",
+      "answer": "I've already paid two pounds.",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-lemon",
+      "type": "sentence",
+      "zhPrompt": "請店員不要加檸檬。",
+      "answer": "Could you make it without lemon, please?",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-lid",
+      "type": "sentence",
+      "zhPrompt": "依菜單說明，請店員幫杯子加蓋。",
+      "answer": "Could you put a lid on the cup?",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-to-go",
+      "type": "context",
+      "zhPrompt": "換到旅館咖啡廳，問能不能外帶一杯咖啡。",
+      "answer": "Can I have a coffee to go?",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-shelter",
+      "type": "sentence",
+      "zhPrompt": "跟旅伴說你會在候車亭等公車。",
+      "answer": "I'll wait for the bus in the shelter.",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-plain",
+      "type": "context",
+      "zhPrompt": "換到飯店餐廳，說你點的是原味優格。",
+      "answer": "I ordered plain yogurt.",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-11-fee",
+      "type": "context",
+      "zhPrompt": "換到車站商店，拿出收據問是否還要付費。",
+      "answer": "Do I need to pay anything else?",
+      "sourceDate": "2026-11-11",
+      "sourceTitle": "Asking for the Hot Tea I Ordered",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-12",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"
