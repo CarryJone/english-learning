@@ -4679,6 +4679,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-12",
       "lastReviewedDate": null
+    },
+    {
+      "word": "trail",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "步道",
+      "exampleSentence": "Is the trail open today?",
+      "dateAdded": "2026-11-12",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "muddy",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "泥濘的",
+      "exampleSentence": "Is the path still muddy after the rain?",
+      "dateAdded": "2026-11-12",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bridge",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "橋",
+      "exampleSentence": "Do we go across the bridge?",
+      "dateAdded": "2026-11-12",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
     }
   ]
 }

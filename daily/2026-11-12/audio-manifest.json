@@ -1,0 +1,218 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at the main park entrance after a night of rain.",
+      "seconds": 3.764
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I want a flat walk to the garden before lunch.",
+      "seconds": 3.177958333333333
+    },
+    {
+      "index": 3,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I open the park website at the information desk.",
+      "seconds": 3.604625
+    },
+    {
+      "index": 4,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, is this the page with today's trail status?",
+      "seconds": 3.61
+    },
+    {
+      "index": 5,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, we keep that page up to date.",
+      "seconds": 2.9313333333333333
+    },
+    {
+      "index": 6,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It says the riverside trail is closed, right?",
+      "seconds": 3.291333333333333
+    },
+    {
+      "index": 7,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, it's still muddy after last night's rain.",
+      "seconds": 4.309333333333333
+    },
+    {
+      "index": 8,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Is there another way to get to the garden?",
+      "seconds": 2.6513333333333335
+    },
+    {
+      "index": 9,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, you can take the garden path from the south gate.",
+      "seconds": 4.160666666666667
+    },
+    {
+      "index": 10,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I walk to the south gate from here?",
+      "seconds": 2.5332916666666665
+    },
+    {
+      "index": 11,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, just follow the road outside the park fence.",
+      "seconds": 4.16
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "How will I know when I'm at the south gate?",
+      "seconds": 2.6513333333333335
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "There's a little blue sign with the gate name on it.",
+      "seconds": 3.8186666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Is the garden path flat once I'm inside?",
+      "seconds": 3.098
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, it's flat, and you won't have to climb any steps.",
+      "seconds": 4.435333333333333
+    },
+    {
+      "index": 16,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I pull up the park map on my phone.",
+      "seconds": 2.676
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Do I go across the bridge to get there?",
+      "seconds": 2.63
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "As you come up to the bridge, turn left just before you reach it.",
+      "seconds": 5.1626666666666665
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, did you say before or after the bridge?",
+      "seconds": 3.4393333333333334
+    },
+    {
+      "index": 20,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Before the bridge, turn left.",
+      "seconds": 2.6026666666666665
+    },
+    {
+      "index": 21,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "So I don't go across the bridge at all?",
+      "seconds": 2.5986666666666665
+    },
+    {
+      "index": 22,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, the road takes you straight to the gate.",
+      "seconds": 3.8186666666666667
+    },
+    {
+      "index": 23,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Will I see a sign for the garden once I'm inside?",
+      "seconds": 3.3853333333333335
+    },
+    {
+      "index": 24,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, look for the green sign on your right.",
+      "seconds": 3.34
+    },
+    {
+      "index": 25,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll check the trail status again before tomorrow's walk.",
+      "seconds": 4.790666666666667
+    },
+    {
+      "index": 26,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Good idea, we update it when a trail opens again.",
+      "seconds": 4.376625
+    },
+    {
+      "index": 27,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I head out and turn left before the bridge.",
+      "seconds": 2.974666666666667
+    },
+    {
+      "index": 28,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "At the blue sign, I go in through the gate.",
+      "seconds": 2.816666666666667
+    },
+    {
+      "index": 29,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I follow the green sign and reach the garden.",
+      "seconds": 3.219333333333333
+    }
+  ],
+  "articleSeconds": 106.9285
+}

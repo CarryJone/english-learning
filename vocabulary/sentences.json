@@ -13462,6 +13462,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-12",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-check-trail-status",
+      "type": "sentence",
+      "zhPrompt": "在公園服務台問今天的步道狀態要去哪裡查。",
+      "answer": "Where can I check today's trail status?",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Where can I check ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-another-way-garden",
+      "type": "sentence",
+      "zhPrompt": "河邊步道關了，問有沒有別條路能到花園。",
+      "answer": "Is there another way to get to the garden?",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Is there another way to ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-muddy-trail",
+      "type": "sentence",
+      "zhPrompt": "看網站後，告訴旅伴步道因為泥濘而關閉。",
+      "answer": "The trail's closed because it's muddy.",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-south-gate",
+      "type": "sentence",
+      "zhPrompt": "依網站資訊，跟旅伴說要走南門。",
+      "answer": "We need to use the south gate.",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-before-or-after",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚是橋前還是過橋後要轉彎，請對方確認。",
+      "answer": "Sorry, did you say before or after the bridge?",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-before-bridge",
+      "type": "sentence",
+      "zhPrompt": "向服務台重述：要在橋前左轉。",
+      "answer": "I turn left before the bridge, right?",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-flat-path",
+      "type": "sentence",
+      "zhPrompt": "旅伴擔心要走上坡，你問服務台花園步道是否平坦。",
+      "answer": "Is the garden path flat?",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-steep-steps",
+      "type": "sentence",
+      "zhPrompt": "走到古城門口，問接下來有沒有很陡的階梯。",
+      "answer": "Are there any steep steps ahead?",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-another-way-platform",
+      "type": "context",
+      "zhPrompt": "車站的電梯壞了，問站務員還有沒有別的方法到二號月台。",
+      "answer": "Is there another way to get to platform two?",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-12-train-status",
+      "type": "context",
+      "zhPrompt": "改到車站服務台，問可以去哪裡查這班火車的狀態。",
+      "answer": "Where can I check the status of this train?",
+      "sourceDate": "2026-11-12",
+      "sourceTitle": "Checking Which Park Path Is Open",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-13",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

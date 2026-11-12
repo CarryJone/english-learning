@@ -46,6 +46,27 @@
   },
   "sessions": [
     {
+      "date": "2026-11-12",
+      "day": 152,
+      "title": "Checking Which Park Path Is Open",
+      "url": "daily/2026-11-12/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "publicEnglish",
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: check park trail status, find the south gate, and confirm the turn before the bridge.",
+        "Input: riverside trail closed after rain; flat garden path open from the south gate.",
+        "Where can I check today's trail status?",
+        "Is there another way to get to the garden?",
+        "Sorry, did you say before or after the bridge?"
+      ]
+    },
+    {
       "date": "2026-11-11",
       "day": 151,
       "title": "Asking for the Hot Tea I Ordered",
