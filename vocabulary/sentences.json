@@ -13632,6 +13632,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-13",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-tram-market",
+      "type": "sentence",
+      "zhPrompt": "上車前問這班電車有沒有到中央市場。",
+      "answer": "Does this tram go to Central Market?",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Does this tram go to ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-toward-park-end",
+      "type": "sentence",
+      "zhPrompt": "依路線圖告訴旅伴要搭往 Park End 的電車。",
+      "answer": "We need the tram toward Park End.",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "We need the tram toward ...",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-two-stops",
+      "type": "sentence",
+      "zhPrompt": "看路線圖，告訴旅伴中央市場離這裡兩站。",
+      "answer": "Central Market is two stops from here.",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-get-off-market",
+      "type": "sentence",
+      "zhPrompt": "跟旅伴確認你們會在中央市場下車。",
+      "answer": "We'll get off at Central Market.",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-which-side",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚月台在哪一側，請站務員再說一次。",
+      "answer": "Sorry, which side of the street did you say?",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-cross-lights",
+      "type": "sentence",
+      "zhPrompt": "告訴旅伴你們會在紅綠燈處過馬路。",
+      "answer": "We'll cross at the lights.",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-check-display",
+      "type": "sentence",
+      "zhPrompt": "請旅伴看車頭顯示器，確認是不是四號線。",
+      "answer": "Check the display for line four.",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-one-block",
+      "type": "sentence",
+      "zhPrompt": "在陌生城市問旅館是不是離車站只有一個街區。",
+      "answer": "Is the hotel one block from the station?",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-tram-airport",
+      "type": "context",
+      "zhPrompt": "換到另一個城市，搭車前問這班電車有沒有到機場。",
+      "answer": "Does this tram go to the airport?",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-13-tram-toward-zoo",
+      "type": "context",
+      "zhPrompt": "跟同行的人說明，要搭往動物園方向的電車，再到公園下車。",
+      "answer": "Let's take the tram toward the zoo and get off at the park.",
+      "sourceDate": "2026-11-13",
+      "sourceTitle": "Taking the Tram in the Right Direction",
+      "abilities": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

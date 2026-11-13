@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-11-13",
+      "day": 153,
+      "title": "Taking the Tram in the Right Direction",
+      "url": "daily/2026-11-13/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read the line 4 map, take the tram toward Park End, and get off at the second stop.",
+        "Input: City Hall → Library → Central Market → Park End.",
+        "Does this tram go to Central Market?",
+        "Across the street, by the clock.",
+        "Central Market is two stops from here."
+      ]
+    },
+    {
       "date": "2026-11-12",
       "day": 152,
       "title": "Checking Which Park Path Is Open",

@@ -4709,6 +4709,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-13",
       "lastReviewedDate": null
+    },
+    {
+      "word": "tram",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "路面電車",
+      "exampleSentence": "Does this tram go to Central Market?",
+      "dateAdded": "2026-11-13",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "toward",
+      "partOfSpeech": "prep.",
+      "chineseMeaning": "朝向；往",
+      "exampleSentence": "Take the tram toward Park End.",
+      "dateAdded": "2026-11-13",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "end",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "終點；末端",
+      "exampleSentence": "Park End is at the end of the line.",
+      "dateAdded": "2026-11-13",
+      "reviewCount": 0,
+      "nextReview": "2026-11-14",
+      "lastReviewedDate": null
     }
   ]
 }
