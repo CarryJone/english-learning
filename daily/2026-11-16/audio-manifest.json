@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I pick up a postcard in a shop by the harbour.",
+      "seconds": 3.3173333333333335
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "There's a little fishing boat on it, like Dad's old boat.",
+      "seconds": 3.998666666666667
+    },
+    {
+      "index": 3,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I want to send Dad a little surprise from my trip.",
+      "seconds": 3.508
+    },
+    {
+      "index": 4,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, do you sell stamps here too?",
+      "seconds": 2.5493333333333332
+    },
+    {
+      "index": 5,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "We do, and we can mail your card from here.",
+      "seconds": 3.648
+    },
+    {
+      "index": 6,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I'd like to send it to Taiwan.",
+      "seconds": 2.8192916666666665
+    },
+    {
+      "index": 7,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, there's a price list right by the till.",
+      "seconds": 3.6266666666666665
+    },
+    {
+      "index": 8,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It says two pounds for postcards going overseas.",
+      "seconds": 3.674
+    },
+    {
+      "index": 9,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, two pounds will get it to Taiwan.",
+      "seconds": 3.8186666666666667
+    },
+    {
+      "index": 10,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll take a stamp for the card, please.",
+      "seconds": 2.7026666666666666
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I take out a photo of myself on the harbour bridge.",
+      "seconds": 3.647291666666667
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I send this photo with the card, too?",
+      "seconds": 2.906
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Oh, you'll need an envelope for that.",
+      "seconds": 2.9226666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I was going to tape it to the back.",
+      "seconds": 2.34
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It could fall off.",
+      "seconds": 1.7706666666666666
+    },
+    {
+      "index": 16,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "This size should fit both the photo and the card.",
+      "seconds": 4.074666666666666
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "How much will it cost with the envelope?",
+      "seconds": 2.6813333333333333
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "With the envelope, it'll be three pounds altogether if you use standard mail.",
+      "seconds": 6.314666666666667
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, how much did you say?",
+      "seconds": 2.199333333333333
+    },
+    {
+      "index": 20,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Three pounds in total.",
+      "seconds": 2.1333333333333333
+    },
+    {
+      "index": 21,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "That works for me, thanks.",
+      "seconds": 1.952
+    },
+    {
+      "index": 22,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Here's a pen if you want to write him a note.",
+      "seconds": 3.498666666666667
+    },
+    {
+      "index": 23,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll tell him this boat made me think of him.",
+      "seconds": 3.194625
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll put his address here on the front.",
+      "seconds": 2.469291666666667
+    },
+    {
+      "index": 25,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I put the card and photo inside and seal the envelope.",
+      "seconds": 4.008666666666667
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "There we go. Can I pay by card?",
+      "seconds": 2.7653333333333334
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, you can tap right here.",
+      "seconds": 2.802
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "When will it go out?",
+      "seconds": 1.6672916666666666
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Our mail goes out this afternoon.",
+      "seconds": 2.944
+    },
+    {
+      "index": 30,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "I'll put the right stamp on for you.",
+      "seconds": 2.8373333333333335
+    },
+    {
+      "index": 31,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I hope he gets it before I get home.",
+      "seconds": 3.014
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I hand over the envelope and watch the stamp go on.",
+      "seconds": 3.8066666666666666
+    }
+  ],
+  "articleSeconds": 107.31245833333334
+}

@@ -4739,6 +4739,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-14",
       "lastReviewedDate": null
+    },
+    {
+      "word": "mail",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "郵寄",
+      "exampleSentence": "Can I mail this from here?",
+      "dateAdded": "2026-11-16",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "overseas",
+      "partOfSpeech": "adv.",
+      "chineseMeaning": "到海外；往國外",
+      "exampleSentence": "Is it more expensive to send a card overseas?",
+      "dateAdded": "2026-11-16",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "envelope",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "信封",
+      "exampleSentence": "Do I need an envelope for this card?",
+      "dateAdded": "2026-11-16",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
     }
   ]
 }

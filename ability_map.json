@@ -46,6 +46,25 @@
   },
   "sessions": [
     {
+      "date": "2026-11-16",
+      "day": 154,
+      "title": "A Postcard for Dad",
+      "url": "daily/2026-11-16/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: mail a postcard and a loose photo to Dad in Taiwan.",
+        "Input: £2 postcard, £2.50 standard letter, 50p envelope.",
+        "I'd like to send it to Taiwan.",
+        "Three pounds in total."
+      ]
+    },
+    {
       "date": "2026-11-13",
       "day": 153,
       "title": "Taking the Tram in the Right Direction",

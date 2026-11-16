@@ -13802,6 +13802,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-14",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-send-taiwan",
+      "type": "sentence",
+      "zhPrompt": "在紀念品店說你想把這張明信片寄到台灣。",
+      "answer": "I'd like to send it to Taiwan.",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "I'd like to ...",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-mail-here",
+      "type": "sentence",
+      "zhPrompt": "問這張明信片能不能在店裡寄。",
+      "answer": "Can I mail this from here?",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-postcard-price",
+      "type": "sentence",
+      "zhPrompt": "看完價目表後，告訴旅伴海外明信片郵資是兩英鎊。",
+      "answer": "It costs two pounds to send a postcard overseas.",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-letter-price",
+      "type": "sentence",
+      "zhPrompt": "依價目表說明，寄一般海外信件的郵資是兩英鎊五十便士。",
+      "answer": "Standard mail for a letter overseas costs two pounds fifty.",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-envelope-photo",
+      "type": "sentence",
+      "zhPrompt": "知道照片可能掉落後，告訴店員你需要一個信封。",
+      "answer": "I'll need an envelope for the photo.",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-mail-repair",
+      "type": "sentence",
+      "zhPrompt": "聽漏裝信封後的總價，請店員重說一次。",
+      "answer": "Sorry, how much did you say?",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-shoe-size",
+      "type": "sentence",
+      "zhPrompt": "在鞋店打工，問客人想要什麼尺寸。",
+      "answer": "Which size would you like?",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-bridge-photo",
+      "type": "sentence",
+      "zhPrompt": "和旅伴看地圖，問要不要過橋去拍照。",
+      "answer": "Do we go across the bridge to take the photo?",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-send-package",
+      "type": "context",
+      "zhPrompt": "在飯店櫃檯，請人幫你把包裹寄到日本。",
+      "answer": "I'd like to send it to Japan.",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-16-standard-at-post-office",
+      "type": "context",
+      "zhPrompt": "到郵局寄信。對方提供較快的服務，你想選一般郵寄。",
+      "answer": "Standard mail's fine, thanks.",
+      "sourceDate": "2026-11-16",
+      "sourceTitle": "A Postcard for Dad",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-17",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"
