@@ -46,6 +46,26 @@
   },
   "sessions": [
     {
+      "date": "2026-11-17",
+      "day": 155,
+      "title": "An Umbrella for the Walk to Lunch",
+      "url": "daily/2026-11-17/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: swap a stuck umbrella and test the replacement before walking to lunch with a gift.",
+        "Input: bring the item and receipt; try the replacement under the roof.",
+        "Can I swap it for another one?",
+        "Sorry, which size have you still got?",
+        "Keep the receipt for the new one."
+      ]
+    },
+    {
       "date": "2026-11-16",
       "day": 154,
       "title": "A Postcard for Dad",

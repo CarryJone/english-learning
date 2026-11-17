@@ -13972,6 +13972,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-17",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-swap-umbrella",
+      "type": "sentence",
+      "zhPrompt": "剛買的傘打不開，問能不能換一把。",
+      "answer": "Can I swap it for another one?",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I swap it for ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-press-button",
+      "type": "sentence",
+      "zhPrompt": "你在試傘，告訴店員你按了按鈕，但傘打不開。",
+      "answer": "I pressed the button, but it won't open.",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-keep-receipt",
+      "type": "sentence",
+      "zhPrompt": "看完店家告示，提醒旅伴要保留收據。",
+      "answer": "Remember to keep the receipt.",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Remember to ...",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-try-under-roof",
+      "type": "sentence",
+      "zhPrompt": "跟旅伴說，告示上寫可以到屋簷下試開新的傘。",
+      "answer": "We can try the new umbrella under the roof.",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-which-size",
+      "type": "sentence",
+      "zhPrompt": "聽漏店員說還有哪個尺寸，請對方再說一次。",
+      "answer": "Sorry, which size have you still got?",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-fan-colour",
+      "type": "sentence",
+      "zhPrompt": "在角色扮演中，店員說某色缺貨，你想問還有哪種顏色。",
+      "answer": "Sorry, which colour have you got?",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-gift-sister",
+      "type": "sentence",
+      "zhPrompt": "在商店告訴店員這本書是送給姊姊的禮物。",
+      "answer": "This book's a gift for my sister.",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-faulty-kettle",
+      "type": "sentence",
+      "zhPrompt": "在旅館請櫃檯換一個熱水壺，說原本的有故障。",
+      "answer": "This kettle's faulty. Can I get another one?",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-swap-headphones",
+      "type": "context",
+      "zhPrompt": "在機場買的耳機只有一邊有聲音，請店員換另一個。",
+      "answer": "Can I swap it for another one?",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-17-receipt-jacket",
+      "type": "context",
+      "zhPrompt": "旅伴買了一件要送人的外套，提醒他留收據，以便更換尺寸。",
+      "answer": "Keep the receipt in case we need another size.",
+      "sourceDate": "2026-11-17",
+      "sourceTitle": "An Umbrella for the Walk to Lunch",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

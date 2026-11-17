@@ -4769,6 +4769,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-17",
       "lastReviewedDate": null
+    },
+    {
+      "word": "umbrella",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "雨傘",
+      "exampleSentence": "Do you sell umbrellas here?",
+      "dateAdded": "2026-11-17",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "press",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "按；壓",
+      "exampleSentence": "Press the button on the handle.",
+      "dateAdded": "2026-11-17",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "dry",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "乾的",
+      "exampleSentence": "I need to keep my bag dry.",
+      "dateAdded": "2026-11-17",
+      "reviewCount": 0,
+      "nextReview": "2026-11-18",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm meeting my sister for lunch on her birthday.",
+      "seconds": 3.199291666666667
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Her gift's in a paper bag, and it's pouring outside.",
+      "seconds": 3.744
+    },
+    {
+      "index": 3,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I buy an umbrella at the station shop before leaving.",
+      "seconds": 3.68
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Here's your receipt, and there's a door to the street there.",
+      "seconds": 4.074666666666666
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll open it just outside the door.",
+      "seconds": 3.183333333333333
+    },
+    {
+      "index": 6,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Under the roof outside, I press the button on the handle.",
+      "seconds": 3.9032916666666666
+    },
+    {
+      "index": 7,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "The umbrella opens halfway and stops.",
+      "seconds": 2.804
+    },
+    {
+      "index": 8,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I take it back to the counter.",
+      "seconds": 2.240666666666667
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Excuse me, I just bought this, and it won't open properly.",
+      "seconds": 4.574666666666666
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Oh, let me try it under the roof.",
+      "seconds": 2.814625
+    },
+    {
+      "index": 11,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yeah, the button's stuck.",
+      "seconds": 2.026666666666667
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I swap it for another one?",
+      "seconds": 2.161958333333333
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, have you still got your receipt?",
+      "seconds": 2.8586666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Here you go, I paid by card a minute ago.",
+      "seconds": 3.1493333333333333
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Thanks, let me check what we've got left.",
+      "seconds": 3.1973333333333334
+    },
+    {
+      "index": 16,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "We're out of the small ones, but you can take a bigger one today.",
+      "seconds": 5.013333333333334
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, which size have you still got?",
+      "seconds": 2.778
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Just the big ones.",
+      "seconds": 1.854625
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "That's fine if it's the same price.",
+      "seconds": 2.522
+    },
+    {
+      "index": 20,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It is, and you'll have more room under it too.",
+      "seconds": 3.6053333333333333
+    },
+    {
+      "index": 21,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Good, I need to keep this bag dry.",
+      "seconds": 2.712625
+    },
+    {
+      "index": 22,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "I'll get one from the back for you.",
+      "seconds": 2.517333333333333
+    },
+    {
+      "index": 23,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "He brings out a blue one and hands it to me.",
+      "seconds": 2.9546666666666668
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I try it under the roof before I go?",
+      "seconds": 2.961333333333333
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course, I'll hold your bag while you try it.",
+      "seconds": 3.562666666666667
+    },
+    {
+      "index": 26,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I step out with the new umbrella and press the button.",
+      "seconds": 3.6373333333333333
+    },
+    {
+      "index": 27,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "There we go, this one opens all the way.",
+      "seconds": 3.139291666666667
+    },
+    {
+      "index": 28,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Great, I'll take back the faulty one.",
+      "seconds": 3.1132916666666666
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Here's your bag, and keep the receipt for the new one.",
+      "seconds": 4.134666666666667
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks for sorting that out so quickly.",
+      "seconds": 2.618625
+    },
+    {
+      "index": 31,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I walk to the café with the bag under my umbrella.",
+      "seconds": 3.6373333333333333
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "My sister pulls her gift out of the dry bag.",
+      "seconds": 3.38
+    }
+  ],
+  "articleSeconds": 109.30495833333333
+}
