@@ -46,6 +46,25 @@
   },
   "sessions": [
     {
+      "date": "2026-11-18",
+      "day": 156,
+      "title": "A Blue Bird Before Lunch",
+      "url": "daily/2026-11-18/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: read the museum activity page and make a card before lunch.",
+        "Input: book ahead for the workshop, or join the £5 drop-in table with materials included.",
+        "Do I need to book for the drop-in table?",
+        "Ten minutes on the rack."
+      ]
+    },
+    {
       "date": "2026-11-17",
       "day": 155,
       "title": "An Umbrella for the Walk to Lunch",

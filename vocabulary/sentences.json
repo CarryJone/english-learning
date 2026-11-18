@@ -14142,6 +14142,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-18",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-book-table",
+      "type": "sentence",
+      "zhPrompt": "在博物館問隨到活動桌需不需要預約。",
+      "answer": "Do I need to book for the drop-in table?",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Do I need to ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-materials-fee",
+      "type": "sentence",
+      "zhPrompt": "向工作人員確認材料是否已包含在費用裡。",
+      "answer": "Are materials included in the fee?",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv1",
+      "hint": "Are materials ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-walk-up",
+      "type": "sentence",
+      "zhPrompt": "看完活動頁後，告訴旅伴隨到活動不需要預約。",
+      "answer": "You don't need to book for the drop-in table.",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-five-pounds",
+      "type": "sentence",
+      "zhPrompt": "跟旅伴說隨到活動費用是五英鎊，含材料。",
+      "answer": "It's five pounds, and materials are included.",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-how-long-flat",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚卡片要擺多久，請問放在那裡的時間。",
+      "answer": "Sorry, how long should I leave it there?",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-box-cookies",
+      "type": "sentence",
+      "zhPrompt": "烘焙活動時，沒聽清楚要帶什麼，請對方再說一次。",
+      "answer": "Sorry, what do I need to bring?",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-rack-bag",
+      "type": "sentence",
+      "zhPrompt": "搭火車時，詢問是否能把包放在行李架上。",
+      "answer": "Can I put my bag on the rack?",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-dry-map",
+      "type": "sentence",
+      "zhPrompt": "跟旅伴說，等地圖乾了再把它放進包包。",
+      "answer": "I'll put the map in my bag when it's dry.",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-book-walk",
+      "type": "context",
+      "zhPrompt": "在另一個景點想參加晨間導覽，詢問是否需要預約。",
+      "answer": "Do I need to book for the morning walk?",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-18-materials-paint",
+      "type": "context",
+      "zhPrompt": "想參加旅途中看到的繪畫活動，問畫筆和紙是不是已包含。",
+      "answer": "Are materials included in the painting class?",
+      "sourceDate": "2026-11-18",
+      "sourceTitle": "A Blue Bird Before Lunch",
+      "abilities": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

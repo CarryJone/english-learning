@@ -4799,6 +4799,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-18",
       "lastReviewedDate": null
+    },
+    {
+      "word": "workshop",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "工作坊",
+      "exampleSentence": "Is there a workshop this morning?",
+      "dateAdded": "2026-11-18",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "drop-in",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "隨到隨參加的",
+      "exampleSentence": "Is this a drop-in activity?",
+      "dateAdded": "2026-11-18",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "ink",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "墨水；印刷用墨",
+      "exampleSentence": "Wait for the ink to dry.",
+      "dateAdded": "2026-11-18",
+      "reviewCount": 0,
+      "nextReview": "2026-11-19",
+      "lastReviewedDate": null
     }
   ]
 }

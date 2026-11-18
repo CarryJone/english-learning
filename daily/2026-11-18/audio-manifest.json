@@ -1,0 +1,246 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I've got an hour before lunch with my friend.",
+      "seconds": 3.0613333333333332
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'd love to make her a card with her favourite bird.",
+      "seconds": 3.552
+    },
+    {
+      "index": 3,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "At the museum desk, I show the worker a workshop photo.",
+      "seconds": 4.0099583333333335
+    },
+    {
+      "index": 4,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, could I make a card like this?",
+      "seconds": 2.5006666666666666
+    },
+    {
+      "index": 5,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Oh, that's from our bird print workshop.",
+      "seconds": 3.004
+    },
+    {
+      "index": 6,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I saw an eleven o'clock class on your website.",
+      "seconds": 3.206
+    },
+    {
+      "index": 7,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That one's full, but we've got space at one.",
+      "seconds": 3.541333333333333
+    },
+    {
+      "index": 8,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll be at lunch then, so I can't stay.",
+      "seconds": 2.6926666666666668
+    },
+    {
+      "index": 9,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "We've got a drop-in table if you've only got a little time.",
+      "seconds": 4.949333333333334
+    },
+    {
+      "index": 10,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Oh, I skipped that part of the page.",
+      "seconds": 2.6586666666666665
+    },
+    {
+      "index": 11,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It's under Try It Yourself.",
+      "seconds": 2.517333333333333
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Do I need to book for the drop-in table?",
+      "seconds": 2.8306666666666667
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No, you can start right now.",
+      "seconds": 2.6853333333333333
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It says materials included.",
+      "seconds": 2.246
+    },
+    {
+      "index": 15,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Does that cover an envelope too?",
+      "seconds": 2.34
+    },
+    {
+      "index": 16,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yep, the paper, ink and envelopes are all on the table.",
+      "seconds": 4.859958333333333
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I'll give it a try.",
+      "seconds": 2.114
+    },
+    {
+      "index": 18,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I pay, and the worker shows me to the table.",
+      "seconds": 3.156625
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "There's the stamp with the blue bird.",
+      "seconds": 2.4479583333333332
+    },
+    {
+      "index": 20,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Press it onto the paper like this.",
+      "seconds": 2.9013333333333335
+    },
+    {
+      "index": 21,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Oh, look at that little line under its feet.",
+      "seconds": 2.9812916666666665
+    },
+    {
+      "index": 22,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's a branch. You can add leaves with this stamp.",
+      "seconds": 4.053333333333334
+    },
+    {
+      "index": 23,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll just add one leaf so there's room to write.",
+      "seconds": 3.2146666666666666
+    },
+    {
+      "index": 24,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Leave it on this rack while the ink dries.",
+      "seconds": 3.4346666666666668
+    },
+    {
+      "index": 25,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I've got to leave before noon.",
+      "seconds": 2.1919583333333335
+    },
+    {
+      "index": 26,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It'll be dry in ten minutes if you leave it flat on the rack.",
+      "seconds": 4.426666666666667
+    },
+    {
+      "index": 27,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, how long should I leave it there?",
+      "seconds": 2.6612916666666666
+    },
+    {
+      "index": 28,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Ten minutes on the rack.",
+      "seconds": 2.1333333333333333
+    },
+    {
+      "index": 29,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Perfect, I've still got twenty minutes.",
+      "seconds": 2.724
+    },
+    {
+      "index": 30,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "While it dries, I write her name on the envelope.",
+      "seconds": 3.4552916666666667
+    },
+    {
+      "index": 31,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It's dry now, so I can put it in here.",
+      "seconds": 2.788
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "At lunch, I hand my friend the card.",
+      "seconds": 2.8053333333333335
+    },
+    {
+      "index": 33,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "She props it up by her plate.",
+      "seconds": 2.2506666666666666
+    }
+  ],
+  "articleSeconds": 108.44566666666667
+}
