@@ -1,0 +1,232 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm cycling to an island to see my cousin's new café.",
+      "seconds": 4.2973333333333334
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "At the ferry dock, I see stairs beside the ticket counter.",
+      "seconds": 4.362666666666667
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, can I take my bike on the ferry?",
+      "seconds": 2.916
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, there's room for bikes on the next one.",
+      "seconds": 3.541333333333333
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I'd like a ticket to the island, please.",
+      "seconds": 3.4266666666666667
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's six pounds, and the bike goes free.",
+      "seconds": 3.3066666666666666
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I'll pay by card.",
+      "seconds": 2.2319583333333335
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Here you go. Just wait behind that yellow line.",
+      "seconds": 4.266666666666667
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I've got a sandwich in this bag on the bike.",
+      "seconds": 2.97
+    },
+    {
+      "index": 10,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Should I take the bag off before getting on?",
+      "seconds": 2.800666666666667
+    },
+    {
+      "index": 11,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You can leave it there if it's fixed on properly.",
+      "seconds": 3.7333333333333334
+    },
+    {
+      "index": 12,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I check the bag, then look back at the stairs.",
+      "seconds": 3.2419583333333333
+    },
+    {
+      "index": 13,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Will I have to carry the bike down those stairs?",
+      "seconds": 2.8846666666666665
+    },
+    {
+      "index": 14,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No, those lead to the small boats.",
+      "seconds": 2.9753333333333334
+    },
+    {
+      "index": 15,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "That's a relief. This bike's quite heavy.",
+      "seconds": 3.0412916666666665
+    },
+    {
+      "index": 16,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "When the ferry comes in, we'll put the ramp down.",
+      "seconds": 4.010666666666666
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "So I can just push the bike onto the ferry?",
+      "seconds": 2.7892916666666667
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Exactly. Walk beside it, and we'll show you where to park.",
+      "seconds": 4.539333333333333
+    },
+    {
+      "index": 19,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "The ferry pulls in, and a few people get off.",
+      "seconds": 3.199291666666667
+    },
+    {
+      "index": 20,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You can get on once the last passenger's off, but wait behind the line.",
+      "seconds": 5.973333333333334
+    },
+    {
+      "index": 21,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, should I go now or wait here?",
+      "seconds": 2.63
+    },
+    {
+      "index": 22,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Wait here till everyone's off.",
+      "seconds": 2.5686666666666667
+    },
+    {
+      "index": 23,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Got it, I'll stay behind the line.",
+      "seconds": 2.5119583333333333
+    },
+    {
+      "index": 24,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Okay, you're good to go now.",
+      "seconds": 2.566
+    },
+    {
+      "index": 25,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I push my bike up the ramp beside the same worker.",
+      "seconds": 3.529333333333333
+    },
+    {
+      "index": 26,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Put it against that rail. I'll tie it on for you.",
+      "seconds": 3.904
+    },
+    {
+      "index": 27,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks. Can I sit upstairs during the trip?",
+      "seconds": 3.088625
+    },
+    {
+      "index": 28,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, take anything you'll need out of your bag first.",
+      "seconds": 4.074666666666666
+    },
+    {
+      "index": 29,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Good idea. I'll take my sandwich and leave the bike here.",
+      "seconds": 4.045333333333334
+    },
+    {
+      "index": 30,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "From upstairs, I spot my cousin's café across the water.",
+      "seconds": 4.521958333333333
+    },
+    {
+      "index": 31,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "She's outside waving, so I wave back with my sandwich.",
+      "seconds": 4.084
+    }
+  ],
+  "articleSeconds": 115.833
+}

@@ -4829,6 +4829,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-19",
       "lastReviewedDate": null
+    },
+    {
+      "word": "ramp",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "斜坡道；上下船斜板",
+      "exampleSentence": "Can I use the ramp with my bike?",
+      "dateAdded": "2026-11-19",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "carry",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "提；搬；攜帶",
+      "exampleSentence": "Do I need to carry my bike?",
+      "dateAdded": "2026-11-19",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "push",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "推",
+      "exampleSentence": "Push your bike up the ramp.",
+      "dateAdded": "2026-11-19",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
     }
   ]
 }

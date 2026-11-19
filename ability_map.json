@@ -46,6 +46,25 @@
   },
   "sessions": [
     {
+      "date": "2026-11-19",
+      "day": 157,
+      "title": "A Bike Ride Across the Water",
+      "url": "daily/2026-11-19/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: take a bike on the ferry to visit a cousin’s café.",
+        "Input: £6 passenger ticket; bike goes free; wait behind the yellow line.",
+        "Can I take my bike on the ferry?",
+        "Wait here till everyone’s off."
+      ]
+    },
+    {
       "date": "2026-11-18",
       "day": 156,
       "title": "A Blue Bird Before Lunch",

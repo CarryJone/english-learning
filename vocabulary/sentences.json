@@ -14312,6 +14312,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-19",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-bike-ferry",
+      "type": "sentence",
+      "zhPrompt": "在碼頭售票處問能不能帶腳踏車上渡輪。",
+      "answer": "Can I take my bike on the ferry?",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Can I take my bike on ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-bike-free",
+      "type": "sentence",
+      "zhPrompt": "看完票價告示，告訴旅伴腳踏車不用加錢。",
+      "answer": "The bike goes free.",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "The bike ...",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-six-pounds",
+      "type": "sentence",
+      "zhPrompt": "你和腳踏車搭單程渡輪。告訴旅伴費用總共是六英鎊。",
+      "answer": "It's six pounds in total.",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-carry-stairs",
+      "type": "sentence",
+      "zhPrompt": "看到樓梯，詢問是否需要把腳踏車扛下去。",
+      "answer": "Do I need to carry my bike down the stairs?",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-push-ramp",
+      "type": "sentence",
+      "zhPrompt": "確認能否把車沿著斜板推上去。",
+      "answer": "Can I push my bike up the ramp?",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-go-wait",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚登船指示，問現在要走還是在這裡等。",
+      "answer": "Sorry, should I go now or wait here?",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-sandwich-bag",
+      "type": "sentence",
+      "zhPrompt": "向旅伴說要先從袋子裡拿出三明治。",
+      "answer": "I'll take my sandwich out of the bag.",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-counter-pay",
+      "type": "sentence",
+      "zhPrompt": "在車站商店買完水，問是否在櫃檯付款。",
+      "answer": "Do I pay at the counter?",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-bike-train",
+      "type": "context",
+      "zhPrompt": "換到火車站，問是否能把腳踏車帶上火車。",
+      "answer": "Can I take my bike on the train?",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-19-free-after-nine",
+      "type": "context",
+      "zhPrompt": "看完火車運送說明，告訴旅伴九點之後腳踏車免費。",
+      "answer": "The bike goes free after nine.",
+      "sourceDate": "2026-11-19",
+      "sourceTitle": "A Bike Ride Across the Water",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-20",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"
