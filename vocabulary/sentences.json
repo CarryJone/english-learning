@@ -14482,6 +14482,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-20",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-sauce-side",
+      "type": "sentence",
+      "zhPrompt": "朋友愛吃辣，你不太吃，請店員把辣醬另外放。",
+      "answer": "Could we have the sauce on the side?",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Could we have ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-extra-bowl",
+      "type": "sentence",
+      "zhPrompt": "湯上桌後，請店員多給一個碗。",
+      "answer": "Could we have an extra bowl?",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Could we have ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-two-slices",
+      "type": "sentence",
+      "zhPrompt": "讀菜單後，告訴旅伴這份湯附兩片麵包。",
+      "answer": "The soup comes with two slices of bread.",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-extra-bread-price",
+      "type": "sentence",
+      "zhPrompt": "看菜單後，告訴旅伴加點麵包是一英鎊。",
+      "answer": "The extra bread is one pound.",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-another-spoon",
+      "type": "sentence",
+      "zhPrompt": "和朋友分食時，問能不能再給一支湯匙。",
+      "answer": "Could we have another spoon, please?",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-bread-repair",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚麵包價錢，請對方再說一次。",
+      "answer": "Sorry, how much is the extra bread?",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-display-menu",
+      "type": "sentence",
+      "zhPrompt": "在機場餐廳，請旅伴看螢幕上的菜單。",
+      "answer": "Have a look at the menu on the display.",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-across-hotel",
+      "type": "sentence",
+      "zhPrompt": "在陌生城市告訴旅伴，咖啡店就在旅館對面。",
+      "answer": "The café's across from our hotel.",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-dressing-side",
+      "type": "context",
+      "zhPrompt": "換到景點旁的餐廳，點沙拉時請人把沙拉醬分開放。",
+      "answer": "Could I have the dressing on the side?",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-20-dessert-bowl",
+      "type": "context",
+      "zhPrompt": "換到冰淇淋店，你要和孩子分著吃，請店員多給一個碗。",
+      "answer": "Could we have an extra bowl?",
+      "sourceDate": "2026-11-20",
+      "sourceTitle": "One Soup, Two Different Tastes",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

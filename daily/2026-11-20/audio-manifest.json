@@ -1,0 +1,239 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "My friend and I stop at a café across from our hotel.",
+      "seconds": 3.7853333333333334
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "After a wet walk, we check the menu display.",
+      "seconds": 3.4026666666666667
+    },
+    {
+      "index": 3,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, we're thinking of sharing the soup and bread.",
+      "seconds": 3.1193333333333335
+    },
+    {
+      "index": 4,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, the large soup comes with two slices of bread.",
+      "seconds": 4.288
+    },
+    {
+      "index": 5,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "That sounds good. Is the soup spicy?",
+      "seconds": 3.03
+    },
+    {
+      "index": 6,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "It's mild, but there's a hot sauce you can add.",
+      "seconds": 3.804666666666667
+    },
+    {
+      "index": 7,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Could we have the sauce on the side?",
+      "seconds": 2.246
+    },
+    {
+      "index": 8,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Of course. Would you like anything to drink?",
+      "seconds": 3.541333333333333
+    },
+    {
+      "index": 9,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Just two glasses of water, please.",
+      "seconds": 2.6399583333333334
+    },
+    {
+      "index": 10,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "No problem. Take a seat and we'll bring everything over.",
+      "seconds": 4.8853333333333335
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "We sit by the window and watch the rain.",
+      "seconds": 2.7939583333333333
+    },
+    {
+      "index": 12,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "The worker sets down one big bowl and the bread.",
+      "seconds": 3.222
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Here you go. Careful, the bowl's quite hot.",
+      "seconds": 3.6053333333333333
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks. Could we have an extra bowl?",
+      "seconds": 2.6519583333333334
+    },
+    {
+      "index": 15,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "We'd like a bowl each, if that's okay.",
+      "seconds": 2.7552916666666665
+    },
+    {
+      "index": 16,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, I'll get you a small bowl and another spoon.",
+      "seconds": 4.073333333333333
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, then we can each add what we like.",
+      "seconds": 2.7039583333333335
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You can add the hot sauce once you've split the soup.",
+      "seconds": 4.032
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Good idea. My friend likes it much hotter than I do.",
+      "seconds": 3.7893333333333334
+    },
+    {
+      "index": 20,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "He brings the extra bowl, then points to a small pot.",
+      "seconds": 3.8392916666666665
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's the hot sauce. Start with a little.",
+      "seconds": 3.4133333333333336
+    },
+    {
+      "index": 22,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I thought that was more soup!",
+      "seconds": 1.9886666666666666
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Careful, even a little can be quite hot.",
+      "seconds": 3.3493333333333335
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I'll leave that to my friend, then.",
+      "seconds": 2.2946666666666666
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "By the way, you can get more bread for a pound at the counter.",
+      "seconds": 4.544
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, how much is the extra bread?",
+      "seconds": 2.735333333333333
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "One pound for two slices.",
+      "seconds": 2.586
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "We'll have that too, please. Can I pay now?",
+      "seconds": 3.2506666666666666
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's nine pounds altogether. You can tap right here.",
+      "seconds": 4.650666666666667
+    },
+    {
+      "index": 30,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I pass my friend the bread while she adds the sauce.",
+      "seconds": 3.625958333333333
+    },
+    {
+      "index": 31,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "This is just what I needed after that walk.",
+      "seconds": 3.192
+    },
+    {
+      "index": 32,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "We finish lunch as the sun comes out over the street.",
+      "seconds": 3.7752916666666665
+    }
+  ],
+  "articleSeconds": 115.665
+}

@@ -46,6 +46,25 @@
   },
   "sessions": [
     {
+      "date": "2026-11-20",
+      "day": 158,
+      "title": "One Soup, Two Different Tastes",
+      "url": "daily/2026-11-20/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: share a soup while keeping hot sauce separate for different tastes.",
+        "Input: £8 soup with two slices; £1 extra bread; sauce on the side.",
+        "Could we have the sauce on the side?",
+        "Could we have an extra bowl?"
+      ]
+    },
+    {
       "date": "2026-11-19",
       "day": 157,
       "title": "A Bike Ride Across the Water",

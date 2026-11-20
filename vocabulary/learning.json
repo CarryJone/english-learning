@@ -4859,6 +4859,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-20",
       "lastReviewedDate": null
+    },
+    {
+      "word": "share",
+      "partOfSpeech": "v.",
+      "chineseMeaning": "分享；分著吃",
+      "exampleSentence": "Can we share the soup?",
+      "dateAdded": "2026-11-20",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "bowl",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "碗",
+      "exampleSentence": "Could we have an extra bowl?",
+      "dateAdded": "2026-11-20",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "spoon",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "湯匙",
+      "exampleSentence": "Could I have another spoon, please?",
+      "dateAdded": "2026-11-20",
+      "reviewCount": 0,
+      "nextReview": "2026-11-21",
+      "lastReviewedDate": null
     }
   ]
 }
