@@ -1,0 +1,232 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm leaving the station when I reach for my scarf.",
+      "seconds": 3.604625
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "It's gone, and it's the one Mum gave me.",
+      "seconds": 2.836625
+    },
+    {
+      "index": 3,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I turn back and spot a Lost Property sign.",
+      "seconds": 3.1666666666666665
+    },
+    {
+      "index": 4,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, has anyone handed in a scarf this afternoon?",
+      "seconds": 3.7906666666666666
+    },
+    {
+      "index": 5,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "A few people have. What does yours look like?",
+      "seconds": 4.010666666666666
+    },
+    {
+      "index": 6,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It's blue and green, and it's made of wool.",
+      "seconds": 2.968625
+    },
+    {
+      "index": 7,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Okay, where do you think you left it?",
+      "seconds": 2.8746666666666667
+    },
+    {
+      "index": 8,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "On a bench near the screen with the train times.",
+      "seconds": 3.2459583333333333
+    },
+    {
+      "index": 9,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Right, let me have a look in the box here.",
+      "seconds": 3.0933333333333333
+    },
+    {
+      "index": 10,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I've got a photo of myself wearing it, if that helps.",
+      "seconds": 3.7666666666666666
+    },
+    {
+      "index": 11,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, that would be useful. Can you show me?",
+      "seconds": 3.510625
+    },
+    {
+      "index": 12,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I open a photo from the first day of my trip.",
+      "seconds": 3.3586666666666667
+    },
+    {
+      "index": 13,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Here, I'm wearing it in front of the museum.",
+      "seconds": 3.022666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "I've got a blue one here, with thin green stripes at both ends.",
+      "seconds": 5.205333333333333
+    },
+    {
+      "index": 15,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, what colour are the stripes?",
+      "seconds": 2.466666666666667
+    },
+    {
+      "index": 16,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Green stripes on a blue scarf.",
+      "seconds": 2.9013333333333335
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "That sounds like mine. It's a long striped scarf.",
+      "seconds": 3.798
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Before I show you, is there anything else I can check?",
+      "seconds": 4.522666666666667
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "My name's on the label, in Mum's handwriting.",
+      "seconds": 3.544625
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "She put it there because I always leave things behind.",
+      "seconds": 3.7579583333333333
+    },
+    {
+      "index": 21,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "What's the name, please?",
+      "seconds": 2.018625
+    },
+    {
+      "index": 22,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It's Lily Chen. The writing's quite small.",
+      "seconds": 3.2986666666666666
+    },
+    {
+      "index": 23,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "He checks one end, then turns the scarf over.",
+      "seconds": 3.3926666666666665
+    },
+    {
+      "index": 24,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, there it is. Lily Chen.",
+      "seconds": 2.8473333333333333
+    },
+    {
+      "index": 25,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Oh, I'm so glad. I thought I'd lost it for good.",
+      "seconds": 3.872
+    },
+    {
+      "index": 26,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Just write your name here to say you've picked it up.",
+      "seconds": 3.714
+    },
+    {
+      "index": 27,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Of course. Can I use this pen?",
+      "seconds": 2.6333333333333333
+    },
+    {
+      "index": 28,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Go ahead. Here you are, and keep warm out there.",
+      "seconds": 3.780666666666667
+    },
+    {
+      "index": 29,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks for looking. Mum will be pleased too.",
+      "seconds": 3.256
+    },
+    {
+      "index": 30,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I put the scarf on before I leave the station.",
+      "seconds": 3.2419583333333333
+    },
+    {
+      "index": 31,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "Outside, I send Mum a photo with it safely round my neck.",
+      "seconds": 4.265958333333334
+    }
+  ],
+  "articleSeconds": 113.31825
+}

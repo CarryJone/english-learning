@@ -46,6 +46,25 @@
   },
   "sessions": [
     {
+      "date": "2026-11-25",
+      "day": 159,
+      "title": "The Scarf with My Name Inside",
+      "url": "daily/2026-11-25/",
+      "primary": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: describe a lost scarf, show a photo and confirm the hidden name on its label.",
+        "Input: ground-floor lost property desk; photo helps identify items.",
+        "Has anyone handed in a scarf?",
+        "My name’s on the label."
+      ]
+    },
+    {
       "date": "2026-11-20",
       "day": 158,
       "title": "One Soup, Two Different Tastes",

@@ -14652,6 +14652,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-21",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-handed-scarf",
+      "type": "sentence",
+      "zhPrompt": "在失物招領處問有沒有人交來圍巾。",
+      "answer": "Has anyone handed in a scarf?",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Has anyone ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-lost-property",
+      "type": "sentence",
+      "zhPrompt": "離開月台時發現東西不見，詢問失物招領處在哪裡。",
+      "answer": "Where's lost property?",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv1",
+      "hint": "Where's ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-desk-location",
+      "type": "sentence",
+      "zhPrompt": "依告示告訴旅伴，服務處在一樓主要入口旁。",
+      "answer": "It's on the ground floor, near the main entrance.",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-photo-help",
+      "type": "sentence",
+      "zhPrompt": "向工作人員表示，你有一張自己穿戴那件物品的照片。",
+      "answer": "I've got a photo of myself wearing it.",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-striped-wool",
+      "type": "sentence",
+      "zhPrompt": "把圍巾描述為羊毛製、有條紋的長圍巾。",
+      "answer": "It's a long striped scarf, made of wool.",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-stripe-colour",
+      "type": "sentence",
+      "zhPrompt": "沒聽清楚條紋顏色，請對方再說一次。",
+      "answer": "Sorry, what colour are the stripes?",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-name-label",
+      "type": "sentence",
+      "zhPrompt": "提供辨認線索，說自己的名字在標籤上。",
+      "answer": "My name's on the label.",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-train-screen",
+      "type": "sentence",
+      "zhPrompt": "跟工作人員說，物品可能留在火車時刻螢幕旁。",
+      "answer": "I think I left it near the screen with the train times.",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-hat-lost-property",
+      "type": "context",
+      "zhPrompt": "在另一個景點找到服務台，確認這裡是否辦理失物招領。",
+      "answer": "Is this the lost property desk?",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-25-handed-camera",
+      "type": "context",
+      "zhPrompt": "在博物館遺失相機，問工作人員有沒有人交來相機。",
+      "answer": "Has anyone handed in a camera?",
+      "sourceDate": "2026-11-25",
+      "sourceTitle": "The Scarf with My Name Inside",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

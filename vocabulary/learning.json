@@ -4889,6 +4889,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-21",
       "lastReviewedDate": null
+    },
+    {
+      "word": "scarf",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "圍巾",
+      "exampleSentence": "Has anyone handed in a scarf?",
+      "dateAdded": "2026-11-25",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "striped",
+      "partOfSpeech": "adj.",
+      "chineseMeaning": "有條紋的",
+      "exampleSentence": "It’s a long striped scarf.",
+      "dateAdded": "2026-11-25",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "wool",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "羊毛",
+      "exampleSentence": "It’s made of wool.",
+      "dateAdded": "2026-11-25",
+      "reviewCount": 0,
+      "nextReview": "2026-11-26",
+      "lastReviewedDate": null
     }
   ]
 }
