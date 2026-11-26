@@ -1,0 +1,232 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm at the aquarium to see the penguins feed.",
+      "seconds": 3.2093333333333334
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'd like to hear about them before feeding time.",
+      "seconds": 3.316
+    },
+    {
+      "index": 3,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I try to open the guide by the entrance.",
+      "seconds": 2.932
+    },
+    {
+      "index": 4,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, is the audio guide included with my ticket?",
+      "seconds": 3.7893333333333334
+    },
+    {
+      "index": 5,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, you can play it on your phone.",
+      "seconds": 2.8473333333333333
+    },
+    {
+      "index": 6,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Good, I've got my headphones with me.",
+      "seconds": 2.8506666666666667
+    },
+    {
+      "index": 7,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Just open the guide in your browser and choose English.",
+      "seconds": 4.331333333333333
+    },
+    {
+      "index": 8,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I think I've opened the wrong page.",
+      "seconds": 2.510666666666667
+    },
+    {
+      "index": 9,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's the ticket page you've got open there.",
+      "seconds": 3.498666666666667
+    },
+    {
+      "index": 10,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Where can I find the link to the guide?",
+      "seconds": 2.4806666666666666
+    },
+    {
+      "index": 11,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Scan the code on the sign next to the kiosk.",
+      "seconds": 3.6053333333333333
+    },
+    {
+      "index": 12,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I scan the code and show him the new page.",
+      "seconds": 3.038666666666667
+    },
+    {
+      "index": 13,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It says I can listen offline if I download it.",
+      "seconds": 3.428
+    },
+    {
+      "index": 14,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's right, and you'll need that for the penguin room.",
+      "seconds": 3.925333333333333
+    },
+    {
+      "index": 15,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "My phone's got a good signal here by the door.",
+      "seconds": 3.512
+    },
+    {
+      "index": 16,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "There's Wi-Fi down there by the stairs, but it doesn't reach the penguins.",
+      "seconds": 5.612666666666667
+    },
+    {
+      "index": 17,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, where does the Wi-Fi stop working?",
+      "seconds": 2.9486666666666665
+    },
+    {
+      "index": 18,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "There's no Wi-Fi in the penguin room.",
+      "seconds": 3.3493333333333335
+    },
+    {
+      "index": 19,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Then I'll download the guide before I go down.",
+      "seconds": 3.5006666666666666
+    },
+    {
+      "index": 20,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Tap Download Audio and wait for the little green tick.",
+      "seconds": 4.650666666666667
+    },
+    {
+      "index": 21,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It's done, but how do I find the penguin part?",
+      "seconds": 3.343958333333333
+    },
+    {
+      "index": 22,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Tap stop four, with the picture of a penguin.",
+      "seconds": 3.904
+    },
+    {
+      "index": 23,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I put my headphones in and try stop four.",
+      "seconds": 2.964625
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I can hear it, but the volume's a little low.",
+      "seconds": 3.117958333333333
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Turn it up a bit with the button on your phone.",
+      "seconds": 3.6266666666666665
+    },
+    {
+      "index": 26,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "That's better, but some words are still hard to catch.",
+      "seconds": 3.512
+    },
+    {
+      "index": 27,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "You can read the transcript right under the play button.",
+      "seconds": 4.245333333333333
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Can I save it to read later?",
+      "seconds": 2.1506666666666665
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, take a screenshot while you've still got a signal.",
+      "seconds": 4.166
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, I've got the words and the audio now.",
+      "seconds": 3.3
+    },
+    {
+      "index": 31,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I listen by the penguin pool before the feeding starts.",
+      "seconds": 3.9032916666666666
+    }
+  ],
+  "articleSeconds": 115.32183333333333
+}

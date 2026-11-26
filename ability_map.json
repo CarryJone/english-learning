@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-11-26",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-11-26",
+      "day": 160,
+      "title": "The Penguin Guide That Works Offline",
+      "url": "daily/2026-11-26/",
+      "primary": [
+        "onlineReading",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: find and save the English aquarium guide before entering the penguin room.",
+        "Input: a simulated aquarium guide page. Confirm inclusion, download the audio, then test stop four.",
+        "Is the audio guide included with my ticket?",
+        "Tap Download Audio to listen offline.",
+        "Sorry, where does the Wi-Fi stop working?"
+      ]
+    },
     {
       "date": "2026-11-25",
       "day": 159,

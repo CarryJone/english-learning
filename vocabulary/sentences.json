@@ -14822,6 +14822,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-26",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-guide-included",
+      "type": "sentence",
+      "zhPrompt": "在水族館問語音導覽是否包含在門票裡。",
+      "answer": "Is the audio guide included with my ticket?",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Is ... included with ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-wrong-page",
+      "type": "sentence",
+      "zhPrompt": "看到手機上是購票畫面，告訴工作人員你可能開錯頁了。",
+      "answer": "I think I've opened the wrong page.",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "I think I've opened ...",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-download-audio",
+      "type": "sentence",
+      "zhPrompt": "把英文說明的操作告訴旅伴：按 Download Audio 才能離線收聽。",
+      "answer": "Tap Download Audio to listen offline.",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-stop-four-penguins",
+      "type": "sentence",
+      "zhPrompt": "根據導覽頁告訴旅伴，企鵝是第 4 站。",
+      "answer": "The penguins are at stop four.",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-wifi-stop",
+      "type": "sentence",
+      "zhPrompt": "只聽到樓梯和企鵝，沒聽清楚哪裡開始沒 Wi-Fi，請對方再說一次。",
+      "answer": "Sorry, where does the Wi-Fi stop working?",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-download-before-leaving",
+      "type": "context",
+      "zhPrompt": "步行導覽說舊隧道沒訊號，問是不是該在離開前先下載。",
+      "answer": "Should I download it here before I leave?",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-ramp-near-lift",
+      "type": "sentence",
+      "zhPrompt": "在渡輪碼頭推著行李，問電梯旁邊有沒有斜坡。",
+      "answer": "Is there a ramp near the lift?",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-spoon-for-yogurt",
+      "type": "sentence",
+      "zhPrompt": "外帶優格時請店員給一支湯匙。",
+      "answer": "Could I have a spoon for the yogurt?",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-breakfast-included",
+      "type": "context",
+      "zhPrompt": "辦理入住時，問這個房價有沒有包含早餐。",
+      "answer": "Is breakfast included with my stay?",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-26-podcast-offline",
+      "type": "context",
+      "zhPrompt": "飛機上沒有網路，問下載這集節目後能不能離線收聽。",
+      "answer": "Can I listen offline if I download this episode?",
+      "sourceDate": "2026-11-26",
+      "sourceTitle": "The Penguin Guide That Works Offline",
+      "abilities": [
+        "travelSpeaking",
+        "onlineReading"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

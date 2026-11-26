@@ -4919,6 +4919,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-26",
       "lastReviewedDate": null
+    },
+    {
+      "word": "browser",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "瀏覽器",
+      "exampleSentence": "Open the guide in your browser.",
+      "dateAdded": "2026-11-26",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "volume",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "音量",
+      "exampleSentence": "Can you turn the volume up?",
+      "dateAdded": "2026-11-26",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "transcript",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "逐字稿",
+      "exampleSentence": "You can read the transcript under the play button.",
+      "dateAdded": "2026-11-26",
+      "reviewCount": 0,
+      "nextReview": "2026-11-27",
+      "lastReviewedDate": null
     }
   ]
 }
