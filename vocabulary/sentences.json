@@ -14992,6 +14992,176 @@
       "reviewCount": 0,
       "nextReview": "2026-11-27",
       "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-airport-trains-this-way",
+      "type": "sentence",
+      "zhPrompt": "你到車站入口，想問這是去搭機場列車的方向嗎？",
+      "answer": "Is this the way to the airport trains?",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Is this the way to ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-another-way-up",
+      "type": "sentence",
+      "zhPrompt": "手扶梯前有故障告示。你提著重行李，想問有沒有別的路上去。",
+      "answer": "Is there another way up?",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv1",
+      "hint": "Is there another way ...?",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-airport-level-two",
+      "type": "sentence",
+      "zhPrompt": "看完告示，告訴旅伴機場列車在第 2 層。",
+      "answer": "The airport trains are on level two.",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-ticket-at-gate",
+      "type": "sentence",
+      "zhPrompt": "提醒旅伴到了閘門要把票準備好。",
+      "answer": "Have your ticket ready at the gate.",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-which-lift-broken",
+      "type": "sentence",
+      "zhPrompt": "博物館有兩座電梯，沒聽清哪一座不能用，請對方再說一次。",
+      "answer": "Sorry, which lift is out of order?",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-take-cafe-lift",
+      "type": "context",
+      "zhPrompt": "館員說咖啡廳旁的電梯可用。跟他說謝謝，你會去搭那一座。",
+      "answer": "Thanks. I'll take the lift near the café.",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-wool-hat",
+      "type": "sentence",
+      "zhPrompt": "旅行時想買一頂帽子，問它是不是羊毛做的。",
+      "answer": "Is this hat made of wool?",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-striped-bag",
+      "type": "sentence",
+      "zhPrompt": "在車站請旅伴幫忙拿你的條紋包。",
+      "answer": "Could you get my striped bag, please?",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv2",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-cash-machine-broken",
+      "type": "context",
+      "zhPrompt": "旅途中看到提款機的故障告示，告訴旅伴這台提款機不能用。",
+      "answer": "This cash machine is out of order.",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "publicEnglish"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "id": "2026-11-27-hotel-lift",
+      "type": "context",
+      "zhPrompt": "拖著行李辦完入住，問櫃檯能不能搭電梯去房間。",
+      "answer": "Can I take the lift up to my room?",
+      "sourceDate": "2026-11-27",
+      "sourceTitle": "The Other Way Up to the Station",
+      "abilities": [
+        "travelSpeaking",
+        "dailyResponse"
+      ],
+      "level": "lv3",
+      "hint": "",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
     }
   ],
   "updatedAt": "2026-11-03"

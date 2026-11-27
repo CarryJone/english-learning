@@ -4949,6 +4949,36 @@
       "reviewCount": 0,
       "nextReview": "2026-11-27",
       "lastReviewedDate": null
+    },
+    {
+      "word": "level",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "樓層；高度",
+      "exampleSentence": "The trains are on the upper level.",
+      "dateAdded": "2026-11-27",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "lift",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "電梯（英式）",
+      "exampleSentence": "I'll take the lift to the station.",
+      "dateAdded": "2026-11-27",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
+    },
+    {
+      "word": "tunnel",
+      "partOfSpeech": "n.",
+      "chineseMeaning": "隧道；地下通道",
+      "exampleSentence": "Go through the tunnel and turn right.",
+      "dateAdded": "2026-11-27",
+      "reviewCount": 0,
+      "nextReview": "2026-11-28",
+      "lastReviewedDate": null
     }
   ]
 }

@@ -1,0 +1,232 @@
+{
+  "provider": "kokoro",
+  "speed": 0.8,
+  "language": "en-us",
+  "modelSHA256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a",
+  "voicesSHA256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d",
+  "pauses": {
+    "sameSpeaker": 0.15,
+    "speakerChange": 0.25,
+    "stageChange": 0.4
+  },
+  "sentences": [
+    {
+      "index": 1,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I'm on my way to the airport with a suitcase.",
+      "seconds": 3.04
+    },
+    {
+      "index": 2,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "It's heavy, and I don't want to carry it upstairs.",
+      "seconds": 3.4552916666666667
+    },
+    {
+      "index": 3,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I follow a sign to the station from the street.",
+      "seconds": 3.2106666666666666
+    },
+    {
+      "index": 4,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Hi, is this the way to the airport trains?",
+      "seconds": 3.130625
+    },
+    {
+      "index": 5,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, they're on the upper\">upper",
+      "seconds": 2.3466666666666667
+    },
+    {
+      "index": 6,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I've got my ticket, so can I go straight up?",
+      "seconds": 3.117958333333333
+    },
+    {
+      "index": 7,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, have your ticket ready when you get to the gate.",
+      "seconds": 3.8826666666666667
+    },
+    {
+      "index": 8,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "I can see the gate at the top of the stairs.",
+      "seconds": 2.917291666666667
+    },
+    {
+      "index": 9,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "That's it. Keep your ticket out till you're through.",
+      "seconds": 3.5086666666666666
+    },
+    {
+      "index": 10,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Great, I'll take the escalator and go up that way.",
+      "seconds": 3.6073333333333335
+    },
+    {
+      "index": 11,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "At the bottom, I see a sign across the escalator.",
+      "seconds": 3.6573333333333333
+    },
+    {
+      "index": 12,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "It's out of order. Is there another way up?",
+      "seconds": 2.872
+    },
+    {
+      "index": 13,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Sure, we've got a lift as well.",
+      "seconds": 2.8146666666666667
+    },
+    {
+      "index": 14,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Oh, good. I don't see one from here.",
+      "seconds": 2.570666666666667
+    },
+    {
+      "index": 15,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "If you've got heavy bags, there's a lift just inside the car park.",
+      "seconds": 5.4812916666666665
+    },
+    {
+      "index": 16,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Sorry, where's the lift again?",
+      "seconds": 2.2872916666666665
+    },
+    {
+      "index": 17,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Just inside the car park.",
+      "seconds": 2.6453333333333333
+    },
+    {
+      "index": 18,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "How do I get to the car park from here?",
+      "seconds": 2.63
+    },
+    {
+      "index": 19,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Go through that short tunnel and turn right.",
+      "seconds": 3.192
+    },
+    {
+      "index": 20,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks. I'll take the lift from there.",
+      "seconds": 2.6093333333333333
+    },
+    {
+      "index": 21,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I look through the tunnel from where we're standing.",
+      "seconds": 2.9106666666666667
+    },
+    {
+      "index": 22,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Oh, I can see the sign for the lift now.",
+      "seconds": 3.096625
+    },
+    {
+      "index": 23,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yep, that's it. Press two for the station.",
+      "seconds": 3.611291666666667
+    },
+    {
+      "index": 24,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Does it open right by the ticket gate?",
+      "seconds": 2.7979583333333333
+    },
+    {
+      "index": 25,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "Yes, it opens on the same level as the gate.",
+      "seconds": 3.94
+    },
+    {
+      "index": 26,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The doors on the other side will open upstairs.",
+      "seconds": 3.8073333333333332
+    },
+    {
+      "index": 27,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Good, I can roll my bag straight out that way.",
+      "seconds": 3.2773333333333334
+    },
+    {
+      "index": 28,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Which way do I turn when I get out?",
+      "seconds": 2.405291666666667
+    },
+    {
+      "index": 29,
+      "speaker": "staff",
+      "voice": "am_michael",
+      "text": "The gate's on your left, just past the map.",
+      "seconds": 3.328
+    },
+    {
+      "index": 30,
+      "speaker": "traveler",
+      "voice": "af_heart",
+      "text": "Thanks, that'll save me from carrying this bag upstairs.",
+      "seconds": 3.802
+    },
+    {
+      "index": 31,
+      "speaker": "narrator",
+      "voice": "af_sarah",
+      "text": "I roll my bag through the gate and catch my train.",
+      "seconds": 3.6146666666666665
+    }
+  ],
+  "articleSeconds": 107.11825
+}

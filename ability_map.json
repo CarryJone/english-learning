@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26",
+  "updatedAt": "2026-11-27",
   "weekStartsOn": "monday",
   "abilities": {
     "travelSpeaking": {
@@ -45,6 +45,26 @@
     }
   },
   "sessions": [
+    {
+      "date": "2026-11-27",
+      "day": 161,
+      "title": "The Other Way Up to the Station",
+      "url": "daily/2026-11-27/",
+      "primary": [
+        "publicEnglish",
+        "travelSpeaking"
+      ],
+      "secondary": [
+        "dailyResponse"
+      ],
+      "evidence": [
+        "Mission: reach the airport trains with a heavy suitcase when the escalator is out of order.",
+        "Input: a simulated station sign. Find level two, follow signs to the working lift and use the gate.",
+        "Can I take the lift to the station?",
+        "Escalator out of order.",
+        "Go through that short tunnel and turn right."
+      ]
+    },
     {
       "date": "2026-11-26",
       "day": 160,
